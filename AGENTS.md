@@ -15,6 +15,7 @@ Build a reproducible OpenAlex search and selection workflow for recent literatur
 
 - Treat `html-report/index.html` as the project's main visual result. Keep it concise: current findings, exact searches and filters, reconciled counts, selection/exclusion rules, and material uncertainties. Link detailed logs and evidence instead of repeating them.
 - After every new retrieval result, screening decision, evidence finding, or analysis change, update the saved inputs and selected runs in `work/analysis_config.json` as needed, then run `python3 work/scripts/report.py` and `python3 work/scripts/verify.py`. The report command also regenerates the HTML and its data snapshot. Verify the HTML agrees with the latest results before handing off; edit source inputs or the generator rather than the generated HTML.
+- The website is packaged by `Dockerfile` and served by nginx.
 
 - Work in small, verifiable stages.
 - Prefer simple Python scripts and JSON/CSV outputs. Put reusable retrieval, transformation, and analysis scripts in `work/scripts/`.

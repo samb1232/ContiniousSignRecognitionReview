@@ -1,0 +1,12 @@
+# Run from the project root. Replace YOUR_DOCKERHUB_USER and the version.
+
+# Refresh the website after changing research results.
+python3 work/scripts/report.py
+
+# Build and push to Docker Hub.
+docker login
+docker build -t samb1232/cslr-review-report:1.0 ./html-report
+docker push samb1232/cslr-review-report:1.0
+
+# Optional: build and push for both common server architectures instead.
+docker buildx build --platform linux/amd64,linux/arm64 -t samb1232/cslr-review-report:1.0 --provenance=false --push ./html-report

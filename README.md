@@ -6,6 +6,17 @@ The HTML report is the project's main visual result: recommended reviews, search
 
 Keep it current after every new result or decision: update the saved inputs and selected runs, then run `python3 work/scripts/report.py` and `python3 work/scripts/verify.py`. The report command automatically rebuilds the HTML and its JSON snapshot. Recommendations remain distinct from final researcher decisions. Do not edit generated reports directly.
 
+## Website with Docker
+
+Docker packaging lives in `html-report/`: [Dockerfile](html-report/Dockerfile), [nginx.conf](html-report/nginx.conf), and [build/push commands](html-report/docker-commands.txt).
+
+Regenerate the website, then build its static nginx image:
+
+```sh
+python3 work/scripts/report.py
+docker build -t cslr-report-1 ./html-report
+```
+
 ## Setup
 
 Python 3.9+; this execution used Python 3.14.2. Retrieval, reporting, verification and tests use only the standard library. Optional PDF extraction uses pypdf 6.21.2; DOCX and HTML extraction use the standard library.
