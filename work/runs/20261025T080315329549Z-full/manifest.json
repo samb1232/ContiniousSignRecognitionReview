@@ -1,0 +1,140 @@
+{
+  "run_id": "20261025T080315329549Z-full",
+  "stage": "full",
+  "started_utc": "2026-10-25T08:03:15.362247+00:00",
+  "status": "complete",
+  "task_budget_credits": 300,
+  "credits_reserved": 0,
+  "code_version": "2158a2573b7c14c785e8cadc81f87f6f5f8a1d49",
+  "python": "3.14.2",
+  "dependencies": "Python standard library only",
+  "requests": [
+    {
+      "index": 1,
+      "utc": "2026-10-25T08:03:15.370017+00:00",
+      "endpoint": "/rate-limit",
+      "params": {},
+      "reserved_credits": 0,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0001.json",
+      "sha256": "fc844f6c87096168c011c54f3a71e29cbffff084707b9790afae12b362e4e9f1",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json"
+      },
+      "finished_utc": "2026-10-25T08:03:15.771923+00:00"
+    }
+  ],
+  "events": [],
+  "queries": {
+    "q11": {
+      "pages": [
+        {
+          "body": "raw/reused-q11-0.json",
+          "cursor": "*",
+          "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 24
+    },
+    "q12": {
+      "pages": [
+        {
+          "body": "raw/reused-q12-0.json",
+          "cursor": "*",
+          "sha256": "8c3091717dbc3dc222752d4ec07c089cc6bcc67c7288234945327b721540a3dd",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 11
+    },
+    "q13": {
+      "pages": [
+        {
+          "body": "raw/reused-q13-0.json",
+          "cursor": "*",
+          "sha256": "a8b32ce00bdb8089f79f3002c003c45b91dd4863a4cc781f94c7fe1d5a01f66f",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 3
+    },
+    "q1r": {
+      "pages": [
+        {
+          "body": "raw/reused-q1r-0.json",
+          "cursor": "*",
+          "sha256": "dc6d80343a40d1ade9186918d6baf4d910631dd8c7f76c692c685ccdd1a799c3",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 3
+    },
+    "q21": {
+      "pages": [
+        {
+          "body": "raw/reused-q21-0.json",
+          "cursor": "*",
+          "sha256": "3a4bbefa6b70290a6575a2ca23cb561966187c76e986dbc27f08156e45b1a376",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 26
+    },
+    "q22": {
+      "pages": [
+        {
+          "body": "raw/reused-q22-0.json",
+          "cursor": "*",
+          "sha256": "84baea65ac101990506046824a6ff83b1a7cb3b810a0d9f5cc342b65b14394d6",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 9
+    },
+    "q23": {
+      "pages": [
+        {
+          "body": "raw/reused-q23-0.json",
+          "cursor": "*",
+          "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 4
+    },
+    "q2r": {
+      "pages": [
+        {
+          "body": "raw/reused-q2r-0.json",
+          "cursor": "*",
+          "sha256": "0f20bc34d14781cd2f36d809569d9b7b39a6eae53788e49ff8d916db78b40be5",
+          "origin_run": "20261025T080219770846Z-pilot"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 5
+    }
+  },
+  "parent_run": "20261025T080219770846Z-pilot",
+  "account_remaining_at_start": 9920.0,
+  "finished_utc": "2026-10-25T08:03:15.774594+00:00",
+  "task_credits_reserved_at_finish": 80
+}

@@ -1,0 +1,61 @@
+{
+  "accessed_date": "2026-10-25",
+  "method": "Manual evidence inputs from inspected web-tool responses; not raw response archives.",
+  "purpose": "Locate public copies and verify existing candidates; incidental results excluded.",
+  "checks": [
+    {
+      "source_id": "khan2025-status-web",
+      "openalex_id": "W4408859567",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10937713",
+      "locator": "Publisher publication-status notice",
+      "evidence_level": "metadata_only",
+      "observed": "Publisher states Expression of Concern issued 22 July 2026. Separate notice DOI 10.1109/ACCESS.2026.3715908. Cause not inspected.",
+      "note": "The downloaded HTML shell does not expose this notice as extracted text; the web tool did."
+    },
+    {
+      "source_id": "alyami2024-preview-web",
+      "openalex_id": "W4398763293",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306457324001341",
+      "locator": "Abstract and section snippets",
+      "evidence_level": "abstract_only",
+      "observed": "Reports 126 studies and taxonomy covering languages, acquisition, modalities, cues, methods, datasets and performance. Spatial/temporal/alignment classification and data/model challenges.",
+      "access": "Subscription preview; direct archive 403."
+    },
+    {
+      "source_id": "aloysius2020-author-web",
+      "openalex_id": "W3024060113",
+      "url": "https://www.researchgate.net/publication/346047779_Aloysius-Geetha2020_Article_UnderstandingVision-basedConti",
+      "locator": "Author-uploaded public full-text display",
+      "evidence_level": "full_text",
+      "observed": "Author upload and text visible through web tool, but rights not established. No whole-paper omission claims used.",
+      "access": "Direct archive 403; access uncertainty retained."
+    },
+    {
+      "source_id": "comparative2023-web",
+      "openalex_id": "W4378468504",
+      "url": "https://arxiv.org/pdf/2305.13941",
+      "locator": "PDF pp.1\u20133, Introduction/Related Work",
+      "evidence_level": "full_text",
+      "observed": "Broad glove/vision SLR taxonomy and word-level studies, not centrally CSLR."
+    }
+  ],
+  "targeted_search_terms_used": [
+    "\"Understanding vision-based continuous sign language recognition\"",
+    "\"Reviewing 25 years of continuous sign language recognition research\"",
+    "\"Deep Learning Approaches for Continuous Sign Language Recognition\" \"Expression\"",
+    "\"A Critical Review on Video-Based Continuous Sign Language Recognition\"",
+    "\"Understanding vision-based continuous sign language recognition\" pdf",
+    "\"Deep Learning Approaches for Continuous Sign Language Recognition\" 3554046 pdf",
+    "\"A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition\"",
+    "\"Expression of Concern\" \"3715908\"",
+    "\"Reviewing 25 years\" \"pdf\"",
+    "\"A Critical Study\" \"s12626-025-00180-y\" pdf",
+    "\"Understanding vision-based\" pdf Aloysius Geetha",
+    "\"Reviewing 25 years of continuous\" repository",
+    "\"A Critical Study of Recent Deep Learning-Based\" repository pdf",
+    "\"Understanding vision-based continuous\" amrita pdf",
+    "\"Advances, challenges and opportunities in continuous sign language recognition\" 2020",
+    "\"10.1109/ACCESS.2026.3715908\" IEEE",
+    "\"A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition\" filetype:pdf"
+  ]
+}

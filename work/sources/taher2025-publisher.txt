@@ -1,0 +1,1846 @@
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+            
+            
+
+        
+        
+
+        A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition | The Review of Socionetwork Strategies | Springer Nature Link
+
+        
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+    
+    
+    
+    
+    
+    
+    
+    
+
+        
+
+        
+
+        
+    
+        
+    
+    
+    
+
+    
+
+
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+        
+            
+    
+    
+
+        
+        
+        
+    
+
+        
+
+        
+        
+
+
+        
+    
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+            
+
+        
+        
+        
+
+        
+            
+            
+                
+    
+
+            
+            
+            
+        
+
+        
+
+        
+
+
+        
+    
+        
+    
+
+        
+        
+        
+        
+        
+    
+
+        
+        
+    
+
+    
+        
+
+    
+
+
+
+        
+
+        
+        
+    Skip to main content
+
+    
+        
+    
+        
+
+            
+
+                
+Advertisement
+                
+
+                    
+                    
+                    
+                        
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+    
+
+        
+
+            
+                
+                    
+                        
+                    
+                
+            
+        
+
+        
+            
+                
+    
+        Log in
+    
+
+
+            
+        
+    
+
+    
+        
+            
+
+                
+
+                   
+                        
+                            
+                        Menu
+                    
+                
+
+                
+
+                    
+                        
+                            Find a journal
+                        
+                    
+                        
+                            Publish with us
+                        
+                    
+                        
+                            Track your research
+                        
+                    
+                
+
+                
+
+                    
+                        
+
+                            
+                                
+                                    
+                                Search
+                            
+                        
+                    
+                    
+
+                        
+
+                            
+                                
+                                    
+                                
+                                Saved research
+                            
+                        
+                        
+                            
+
+ 
+  
+   
+  
+  Cart
+ 
+ 
+
+                        
+                    
+                
+            
+        
+    
+
+
+
+
+    
+
+    
+        
+    
+
+        
+            
+
+    
+
+        
+    
+        
+            
+                
+                    
+
+                        Home
+                            
+                                
+                            
+                    
+                
+                    
+
+                        The Review of Socionetwork Strategies
+                            
+                                
+                            
+                    
+                
+                    
+
+                        Article
+                    
+                
+            
+        
+    
+
+        
+A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition
+
+        
+            
+                
+        
+Article
+    
+    
+
+                
+
+                    Published: 18 March 2025
+                
+            
+            
+                
+                    
+
+                        Volume 19, pages 131–161 (2025)
+                    
+                
+                
+
+                    Cite this article
+                
+            
+        
+
+        
+
+            
+
+            
+
+                
+                
+                
+    
+
+        
+            
+                
+                
+                
+                    
+                    Save article
+                
+            
+        
+        
+
+            
+                View saved research
+                
+            
+            
+        
+    
+
+            
+        
+    
+    
+        
+
+            
+                
+                
+                
+                    
+                    
+                
+                The Review of Socionetwork Strategies
+            
+                
+                    
+                        Aims and scope
+                        
+                    
+                
+                
+                    
+                        Submit manuscript
+                        
+                    
+                
+            
+        
+    
+
+
+        
+    
+
+
+        
+
+        
+
+            
+                
+
+                
+
+                    
+                        
+Hanan A. Taher 
+            ORCID: orcid.org/0000-0003-3529-73101,2 & 
+Subhi R. M. Zeebaree3 
+                        
+    
+
+
+                        
+
+                            
+        
+            
+                
+
+                    
+
+                        
+                    432 Accesses
+                
+            
+            
+                
+
+                    
+
+                        
+                    3 Citations
+                
+            
+            
+            
+            
+                
+                    
+
+                        
+Explore all metrics
+                            
+                        
+                    
+                
+            
+        
+    
+                        
+                        
+                        
+    
+    
+
+    
+    
+
+                        
+                    
+                
+
+                
+
+
+                    
+                    
+
+Abstract
+
+With the growing global emphasis on accessibility and inclusion for deaf and hard-of-hearing individuals, research in Sign Language Recognition (SLR) has gained significant momentum. Sign languages have unique grammar and syntax and rely on manual communication to convey meaning, which presents specific challenges for automated recognition systems. Unlike isolated sign language recognition, continuous sign language recognition (CSLR) must accurately interpret sequences of gestures without clear boundaries between signs. This requires advanced techniques for both segmentation and recognition. This paper presents a comprehensive review of Continuous Sign Language Recognition (CSLR), focusing specifically on deep learning (DL) techniques. It addresses key challenges, such as movement epenthesis (ME)—the transitional movements between signs. Implicit models, including Hidden Markov Models (HMMs) and Connectionist Temporal Classification (CTC), have demonstrated superior performance compared to traditional methods. The researchers reviewed 32 studies published by major publishers (IEEE, Elsevier, and Springer) and examined 12 benchmark datasets related to CSLR. This examination included an overview of their linguistic scope, recording setups, vocabulary size, and participant diversity. Additionally, the performance metrics and methods used in these studies were thoroughly analyzed, followed by a discussion of the results and their broader implications. The review highlights several limitations in existing research, underlining the need for ongoing innovation within the CSLR domain. The insights gained from this review not only enhance the understanding of Sign Language Recognition but also provide a foundation for future research aimed at tackling persistent challenges in this evolving field.
+
+                    
+
+                    
+    
+
+
+                    
+                        
+                            
+                                
+
+                                    
+
+                                        
+                                            
+                                        
+                                        
+                                            This is a preview of subscription content, log in via an institution
+                                        
+                                        
+                                            
+                                         to check access.
+                                    
+                                
+                            
+                        
+
+                        
+                            
+                                
+                                    
+
+                                        
+Access this article
+                                        
+                                            
+                                                
+
+                                                    
+                                                        Log in via an institution
+                                                        
+                                                            
+                                                        
+                                                    
+                                                
+                                            
+                                        
+                                        
+                                            
+
+                                                
+
+ 
+ 
+ 
+
+  
+
+   
+
+    
+Subscribe and save
+    
+
+     
+
+      
+
+       
+        
+       
+       Springer+
+      
+      
+from €37.37 /Month
+     
+     
+      
+Starting from 10 chapters or articles per month
+      
+Access and download chapters and articles from more than 300k books and 2,500 journals
+      
+Cancel anytime
+     
+     View plans 
+      
+       
+      
+    
+    
+Buy Now
+   
+   
+
+    
+     
+     
+
+      Buy article PDF 39,95 €
+     
+    
+    
+Price includes VAT (Poland)
+     
+
+    
+Instant access to the full article PDF.
+   
+  
+  
+  
+  
+ 
+ 
+
+  
+Institutional subscriptions 
+    
+     
+    
+ 
+ 
+
+                                            
+                                        
+                                    
+                                
+                            
+                        
+
+                        
+
+                            
+Fig. 1
+
+
+Fig. 2
+
+
+Fig. 3
+
+
+Fig. 4
+
+
+Fig. 5
+
+
+Fig. 6
+
+
+Fig. 7
+
+
+Fig. 8
+
+
+Fig. 9
+
+
+                        
+                    
+
+                    
+
+                        
+                    
+
+                    
+
+                    
+                        
+        
+            
+                
+Similar content being viewed by others
+                
+
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        Understanding vision-based continuous sign language recognition
+                                        
+                                    
+                                    
+
+                                        Article
+                                        
+                                         17 May 2020
+                                    
+                                
+                            
+                        
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        Sign Language Recognition Using Deep Learning and Computer Vision
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2025
+                                    
+                                
+                            
+                        
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        Recent progress in sign language recognition: a review
+                                        
+                                    
+                                    
+
+                                        Article
+                                        
+                                         21 October 2023
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+            
+        
+    
+                    
+
+                        
+    
+        
+Explore related subjects
+        Discover the latest articles, books and news in related subjects, suggested using machine learning.
+        
+        
+            
+
+                Pattern Recognition Receptors
+            
+        
+            
+
+                Research Methods in Language and Linguistics
+            
+        
+            
+
+                Sign Languages
+            
+        
+            
+
+                Automated Pattern Recognition
+            
+        
+            
+
+                Disability Studies
+            
+        
+            
+
+                Computational Linguistics
+            
+        
+            
+
+                Deep Learning Applications in Intelligent Systems
+            
+        
+        
+    
+
+
+                    
+
+                        
+
+                    
+
+                    
+
+                    
+
+Data availability
+
+              
+              
+No new data was generated or analyzed in this study.
+            
+
+
+References
+
+
+
+WHO. (2018). Center media deafness and hearing loss. World Health Organization.
+
+                    Google Scholar 
+                
+
+Jachova, Z., Kovacheva, O., & Karovska, A. (2008). Differences between American sign language (ASL) and British sign language (BSL). The Journal of Special Education and Rehabilitation, 1(2), 41–54.
+
+                    Google Scholar 
+                
+
+Aloysius, N., & Geetha, M. (2020). Understanding vision-based continuous sign language recognition. Multimedia Tools and Applications, 79(31–32), 22177–22209. https://doi.org/10.1007/s11042-020-08961-z
+Article 
+    
+                    Google Scholar 
+                
+
+Wadhawan, A., & Kumar, P. (2021). Sign language recognition systems: A decade systematic literature review. Archives of Computational Methods in Engineering, 28(3), 785–813. https://doi.org/10.1007/s11831-019-09384-2
+Article 
+    
+                    Google Scholar 
+                
+
+Elakkiya, R., & Selvamani, K. (2019). Subunit sign modelling framework for continuous sign language recognition. Computers & Electrical Engineering, 74, 379–390. https://doi.org/10.1016/j.compeleceng.2019.02.012
+Article 
+    
+                    Google Scholar 
+                
+
+Rastgoo, R., Kiani, K., & Escalera, S. (2021). Sign language recognition: A deep survey. Expert Systems with Applications, 164, 113794. https://doi.org/10.1016/j.eswa.2020.113794
+Article 
+    
+                    Google Scholar 
+                
+
+Li, K., Zhou, Z., & Lee, C. H. (2016). Sign transition modelling and a scalable solution to continuous sign language recognition for real-world applications. ACM Transactions on Accessible Computing (TACCESS), 8(2), 1–23. https://doi.org/10.1145/2850421
+Article 
+    
+                    Google Scholar 
+                
+
+Koulierakis, I., Siolas, G., Efthimiou, E., Fotinea, S. E., & Stafylopatis, A. G. (2021). Sign boundary and hand articulation feature recognition in sign language videos. Machine Translation, 35(3), 323–343. https://doi.org/10.1007/s10590-021-09271-3
+Article 
+    
+                    Google Scholar 
+                
+
+Wei, C., Zhao, J., Zhou, W., & Li, H. (2021). Semantic boundary detection with reinforcement learning for continuous sign language recognition. IEEE Transactions on Circuits and Systems for Video Technology, 31(3), 1138–1149. https://doi.org/10.1109/TCSVT.2020.2999384
+Article 
+    
+                    Google Scholar 
+                
+
+Khan, S., Bailey, D. G., & Gupta, G. S. (2014). Pause detection in continuous sign language. International Journal of Computer Applications in Technology, 50, 75–83.
+Article 
+    
+                    Google Scholar 
+                
+
+Amin, O., Said, H., Sarny, A., & Mohammed, H. K. (2015). HMM based automatic Arabic sign language translator using Kinect. In Proceedings of the 2015 10th international conference on computer engineering & systems (ICCES’15), December 23–24, 2015 (pp. 389–392). IEEE.
+
+Baranwal, N., Tripathi, K., & Nandi, G. C. (2015). Possibility theory based continuous Indian Sign Language gesture recognition. In Proceedings of the TENCON 2015 IEEE region 10 conference, November 1–4, 2015 (pp. 1–5). IEEE.
+
+Zadghorban, M., & Nahvi, M. (2018). An algorithm on sign words extraction and recognition of continuous Persian sign language based on motion and shape features of hands. Pattern Analysis and Applications, 21, 323–335.
+Article 
+    
+                    Google Scholar 
+                
+
+Zhang, J., Zhou, W., & Li, H. (2014). A threshold-based HMM-dtw approach for continuous sign language recognition. In ACM international conference proceeding series (pp. 237–240). https://doi.org/10.1145/2632856.2632931.
+
+Bhuyan, M. K., Kumar, D. A., MacDorman, K. F., & Iwahori, Y. (2014). A novel set of features for continuous hand gesture recognition. Journal of Multimodal User Interfaces, 8, 333–343.
+Article 
+    
+                    Google Scholar 
+                
+
+Salvador, S., & Chan, P. (2007). Toward accurate dynamic time warping in linear time and space. Intelligent Data Analysis, 11(5), 561–580.
+Article 
+    
+                    Google Scholar 
+                
+
+Scarselli, F., Gori, M., Tsoi, A. C., Hagenbuchner, M., & Monfardini, G. (2009). The graph neural network model. IEEE Transactions on Neural Networks, 20(1), 61–80. https://doi.org/10.1109/TNN.2008.2005605
+Article 
+    
+                    Google Scholar 
+                
+
+Elad, M., & Aharon, M. (2006). Image denoising via sparse and redundant representations over learned dictionaries. IEEE Transactions on Image Processing, 15(12), 3736–3745. https://doi.org/10.1109/TIP.2006.881969
+Article 
+    
+                    Google Scholar 
+                
+
+Wang, J., Hu, W., Tan, T., Han, P., & Ren, C. (2016). Multi-stream hidden Markov models for continuous sign language recognition. Pattern Recognition, 51, 1–10. https://doi.org/10.1016/j.patcog.2015.08.007
+Article 
+    
+                    Google Scholar 
+                
+
+Cheng, K. L., Yang, Z., Chen, Q., & Tai, Y.-W. (2020). Fully convolutional networks for continuous sign language recognition. In A. Vedaldi, H. Bischof, T. Brox, & J.-M. Frahm (Eds.), Computer vision—ECCV 2020 (pp. 697–714). Springer International Publishing.
+Chapter 
+    
+                    Google Scholar 
+                
+
+Huang, Z., Xue, W., Zhou, Y., Sun, J., Wu, Y., Yuan, T., & Chen, S. (2024). Dual-stage temporal perception network for continuous sign language recognition. The Visual Computer, 41(3), 1971–1986.
+Article 
+    
+                    Google Scholar 
+                
+
+Koller, O., Camgoz, N. C., Ney, H., & Bowden, R. (2019). Weakly supervised learning with multi-stream CNN-LSTM-HMMs to discover sequential parallelism in sign language videos. IEEE Transactions on Pattern Analysis and Machine Intelligence, 42(9), 2306–2320.
+Article 
+    
+                    Google Scholar 
+                
+
+Cui, Z., Zhang, W., Li, Z., & Wang, Z. (2023). Spatial–temporal transformer for end-to-end sign language recognition. Complex & Intelligent Systems, 9(4), 4645–4656.
+Article 
+    
+                    Google Scholar 
+                
+
+Graves, A., Fernández, S., Gomez, F., & Schmidhuber, J. (2006). Connectionist temporal classification: Labelling unsegmented sequence data with recurrent neural networks. In Proceedings of the 23rd international conference on machine learning (ICML) (pp. 369–376). https://doi.org/10.1145/1143844.1143891
+
+Huang, S., & Ye, Z. (2021). Boundary-adaptive encoder with attention method for Chinese sign language recognition. IEEE Access, 9, 70948–70960. https://doi.org/10.1109/ACCESS.2021.3078638
+Article 
+    
+                    Google Scholar 
+                
+
+Slimane, F. B., & Bouguessa, M. (2020). Context matters: Self-attention for sign language recognition. In Proceedings—international conference on pattern recognition (pp. 7884–7891). https://doi.org/10.1109/ICPR48806.2021.9412916.arXiv:2101.04632.
+
+Meng, X., Feng, L., Yin, X., Zhou, H., Sheng, C., Wang, C., et al. (2019). Sentence-level sign language recognition using RF signals. In 2019 6th international conference on behavioral, economic and socio-cultural computing (pp. 1–6). https://doi.org/10.1109/BESC48373.2019.8963177.
+
+Xie, P., Cui, Z., Du, Y., Zhao, M., Cui, J., Wang, B., et al. (2023). Multi-scale local-temporal similarity fusion for continuous sign language recognition. Pattern Recognition, 136, 109233. https://doi.org/10.1016/j.patcog.2022.109233
+Article 
+    
+                    Google Scholar 
+                
+
+Ekiz, D., Kaya, G. E., Bugur, S., Guler, S., Buz, B., Kosucu, B., et al. (2017). Sign sentence recognition with smart watches. In 2017 25th signal processing and communications applications conference. Institute of Electrical and Electronics Engineers Inc., https://doi.org/10.1109/SIU.2017.7960255.
+
+Suri, K., & Gupta, R. (2019). Continuous sign language recognition from wearable IMUs using deep capsule networks and game theory. Computers & Electrical Engineering, 78, 493–503. https://doi.org/10.1016/j.compeleceng.2019.08.006
+Article 
+    
+                    Google Scholar 
+                
+
+Mukushev, M., Ubingazhibov, A., Kydyrbekova, A., Imashev, A., Kimmelman, V., & Sandygulova, A. (2022). FluentSigners-50: A signer independent benchmark dataset for sign language processing. PLoS ONE, 17, 1–19. https://doi.org/10.1371/journal.pone.0273649
+Article 
+    
+                    Google Scholar 
+                
+
+Yang, W., Tao, J., & Ye, Z. (2016). Continuous sign language recognition using level building based on fast hidden Markov model. Pattern Recognition Letters, 78, 28–35. https://doi.org/10.1016/j.patrec.2016.03.030
+Article 
+    
+                    Google Scholar 
+                
+
+Huang, J., Zhou, W., Zhang, Q., Li, H., & Li, W. (2018). Video-based sign language recognition without temporal segmentation. In 32nd AAAI conference on artificial intelligence (pp. 2257–2264). arXiv:1801.1011.
+
+Kagirov, I., Ivanko, D., Ryumin, D., Axyonov, A., & Karpov, A. (2020). TheRuSLan: Database of Russian sign language. In LREC 2020—12th international conference on language resources and evaluation, conference proceedings (pp. 6079–6085).
+
+Jebali, M., Dakhli, A., & Jemni, M. (2021). Vision-based continuous sign language recognition using multimodal sensor fusion. Evolving Systems, 12(4), 1031–1044. https://doi.org/10.1007/s12530-020-09365-y
+Article 
+    
+                    Google Scholar 
+                
+
+Hassan, M., Assaleh, K., & Shanableh, T. (2017). User-dependent sign language recognition using motion detection. In Proceedings—2016 international conference on computational science and computational intelligence (pp. 852–856). https://doi.org/10.1109/CSCI.2016.0165.
+
+Kong, W. W., & Ranganath, S. (2014). Towards subject independent continuous sign language recognition: A segment and merge approach. Pattern Recognition, 47(3), 1294–1308. https://doi.org/10.1016/j.patcog.2013.09.014
+Article 
+    
+                    Google Scholar 
+                
+
+Tubaiz, N., Shanableh, T., & Assaleh, K. (2015). Glove-based continuous arabic sign language recognition in user-dependent mode. IEEE Transactions on Human-Machine Systems, 45(4), 526–533. https://doi.org/10.1109/THMS.2015.2406692
+Article 
+    
+                    Google Scholar 
+                
+
+Fang, G., Gao, W., Chen, X., Wang, C., & Ma, J. (2002). Signer-independent continuous sign language recognition based on SRN/HMM. In I. Wachsmuth & T. Sowa (Eds.), Gesture and sign language in human–computer interaction (pp. 76–85). Springer Berlin Heidelberg.
+Chapter 
+    
+                    Google Scholar 
+                
+
+Zhang, L., Zhang, Y., & Zheng, X. (2020). Wisign: ubiquitous American sign language recognition using commercial Wi-Fi devices. ACM Transactions on Intelligent Systems and Technology, 11(3), 1–24. https://doi.org/10.1145/3377553
+Article 
+    
+                    Google Scholar 
+                
+
+Martínez, A. M., Wilbur, R. B., Shay, R., & Kak, A. C. (2002). Purdue RVL-SLLL ASL database for automatic recognition of American sign language. In Proceedings of the 4th IEEE international conference on multimodal interfaces, ICMI 2002 (pp. 167–172). https://doi.org/10.1109/ICMI.2002.1166987
+
+Athitsos, V., Neidle, C., Sclaroff, S., Nash, J., Stefan, A., Yuan, Q., & Thangali, A. (2008). The American sign language lexicon video dataset. In Proceedings of the IEEE computer society conference on computer vision and pattern recognition workshops, CVPR workshops. https://doi.org/10.1109/CVPRW.2008.4563181
+
+Dreuw, P., Neidle, C., Athitsos, V., Sclaroff, S., & Ney, H. (2008). Benchmark databases for video-based automatic sign language recognition. In Proceedings of the 6th international conference on language resources and evaluation, LREC 2008 (pp. 1115–1120).
+
+Rastgoo, R., Kiani, K., Escalera, S., Athitsos, V., & Sabokrou, M. (2023). A survey on recent advances in sign language production. Expert Systems with Applications, 243, 122846.
+Article 
+    
+                    Google Scholar 
+                
+
+Vasudevan, A., Negri, P., Linares-Barranco, B., & Serrano-Gotarredona, T. (2020). Introduction and analysis of an event-based sign language dataset. In 2020 15th IEEE international conference on automatic face and gesture recognition (FG 2020) (pp. 675–682). IEEE.
+
+Jang, Y., Oh, Y., Cho, J. W., Kim, D.-J., Chung, J. S., & Kweon, I. S. (2022). Signing outside the studio: Benchmarking background robustness for continuous sign language recognition. arXiv preprint arXiv:2211.00448.
+
+Fenlon, J., Schembri, A., Rentelis, R., & Cormier, K. (2013). Variation in handshape and orientation in British Sign Language: The case of the ‘1’ hand configuration. Language & Communication, 33(1), 69–91.
+Article 
+    
+                    Google Scholar 
+                
+
+Shohieb, S. M., Elminir, H. K., & Riad, A. M. (2015). Signs world atlas; a benchmark Arabic sign language database. Journal of King Saud University-Computer and Information Sciences, 27(1), 68–76. https://doi.org/10.1016/j.jksuci.2014.03.011
+Article 
+    
+                    Google Scholar 
+                
+
+Alfonse, M., Ali, A., Elons, A. S., Badr, N. L. & Aboul-Ela, M. (2015). Arabic sign language benchmark database for different heterogeneous sensors. In Proceedings of the 2015 5th international conference on information & communication technology and accessibility (ICTA’15), December 21–23, 2015 (pp. 1–9). IEEE.
+
+Luqman, H. (2023). Arabsign: A multi-modality dataset and benchmark for continuous Arabic sign language recognition. In 2023 IEEE 17th international conference on automatic face and gesture recognition (pp. 1–8). IEEE.
+
+Camgoz, N. C., Hadfield, S., Koller, O., & Bowden, R. (2017). SubUNets: End-to-end hand shape and continuous sign language recognition. In Proceedings of the IEEE international conference on computer vision (Vol. 2017-October, pp. 3075–3084). https://doi.org/10.1109/ICCV.2017.332.
+
+Hu, L., Gao, L., Liu, Z., & Feng, W. (2023). Continuous sign language recognition with correlation network. https://doi.org/10.48550/ARXIV.2303.03202. https://arxiv.org/abs/2303.03202.
+
+Min, Y., Hao, A., Chai, X., & Chen, X. (2021). Visual alignment constraint for continuous sign language recognition. In Proceedings of the IEEE/CVF international conference on computer vision (pp. 11542–11551).
+
+Koller, O., Forster, J., & Ney, H. (2015). Continuous sign language recognition: Towards large vocabulary statistical recognition systems handling multiple signers. Computer Vision and Image Understanding, 141, 108–125. https://doi.org/10.1016/j.cviu.2015.09.013
+Article 
+    
+                    Google Scholar 
+                
+
+Jang, J., Ko, S., Lee, S., & Lee, H. (2022). Scene-PHOENIX: Augmenting CSLR datasets with synthetic backgrounds for robust real-world performance. IEEE Transactions on Pattern Analysis and Machine Intelligence.
+
+Gweth, Y. L., Plahl, C., & Ney, H. (2012). Enhanced continuous sign language recognition using PCA and neural network features. In IEEE computer society conference on computer vision and pattern recognition workshops (pp. 55–60). https://doi.org/10.1109/CVPRW.2012.6239187.
+
+Koller, O., Bowden, R., & Ney, H. (2016). Automatic alignment of hamnosys subunits for continuous sign language recognition. In LREC 2016 proceedings (pp. 121–128).
+
+Koller, O., Zargaran, S., & Ney, H. (2017). Re-sign: Re-aligned end-to-end sequence modelling with deep recurrent CNN-hmms. In Proceedings—30th IEEE conference on computer vision and pattern recognition (Vol. 2017-January, pp. 3416–3424).
+
+Cui, R., Liu, H., & Zhang, C. (2017). Recurrent convolutional neural networks for continuous sign language recognition by staged optimization. In Proceedings—30th IEEE conference on computer vision and pattern recognition (Vol. 2017-January, pp. 1610–1618). https://doi.org/10.1109/CVPR.2017.175.
+
+Pu, J., Zhou, W., Hu, H., & Li, H. (2020). Boosting continuous sign language recognition via cross modality augmentation. In MM 2020—Proceedings of the 28th ACM international conference on multimedia (pp. 1497–1505). https://doi.org/10.1145/3394171.3413931, arXiv:2010.05264.
+
+Hu, H., Pu, J., Zhou, W., Fang, H., & Li, H. (2024). Prior-aware cross modality augmentation learning for continuous sign language recognition. IEEE Transactions on Multimedia, 26, 593–606. https://doi.org/10.1109/TMM.2023.3268368
+Article 
+    
+                    Google Scholar 
+                
+
+Cui, R., Liu, H., & Zhang, C. (2019). A deep neural framework for continuous sign language recognition by iterative training. IEEE Transactions on Multimedia, 21(7), 1880–1891. https://doi.org/10.1109/TMM.2018.2889563
+Article 
+    
+                    Google Scholar 
+                
+
+Hao, A., Min, Y., & Chen, X. (2021). Self-mutual distillation learning for continuous sign language recognition. In Proceedings of the IEEE international conference on computer vision (pp. 11283–11292). https://doi.org/10.1109/ICCV48922.2021.01111.
+
+Hu, L., Gao, L., Liu, Z., & Feng, W. (2022). Temporal lift pooling for continuous sign language recognition. In European conference on computer vision (pp. 511–527). Springer.
+
+Jang, Y., Oh, Y., Cho, J. W., Kim, M., Kim, D.-J., Kweon, I. S., et al. (2023). Self-sufficient framework for continuous sign language recognition. In ICASSP 2023–2023 IEEE international conference on acoustics, speech and signal processing (pp. 1–5). IEEE.
+
+Min, Y., Jiao, P., Li, Y., Wang, X., Lei, L., Chai, X., et al. (2022). Deep radial embedding for visual sequence learning. In European conference on computer vision (pp. 240–256). Springer.
+
+Zhou, Z., Tam, V. W., & Lam, E. Y. (2021). SignBERT: A BERT-based deep learning framework for continuous sign language recognition. IEEE Access, 9, 161669–161682. https://doi.org/10.1109/ACCESS.2021.3132668
+Article 
+    
+                    Google Scholar 
+                
+
+Zhu, Q., Li, J., Yuan, F., & Gan, Q. (2023). Continuous sign language recognition via temporal super-resolution network. Arabian Journal for Science and Engineering. https://doi.org/10.1007/s13369-023-07718-8
+Article 
+    
+                    Google Scholar 
+                
+
+Pu, J., Zhou, W., & Li, H. (2018). Dilated convolutional network with iterative optimization for continuous sign language recognition. In IJCAI international joint conference on artificial intelligence (Vol. 2018-July, pp. 885–891). https://doi.org/10.24963/ijcai.2018/123.
+
+Yang, Z., Shi, Z., Shen, X., & Tai, Y.-W. (2019). SF-net: Structured feature network for continuous sign language recognition. arXiv:1908.01341.
+
+Chen, Y., Zuo, R., Wei, F., Wu, Y., Liu, S., & Mak, B. (2022). Two-stream network for sign language recognition and translation. Advances in Neural Information Processing Systems, 35, 17043–17056.
+
+                    Google Scholar 
+                
+
+Papastratis, I., Dimitropoulos, K., Konstantinidis, D., & Daras, P. (2020). Continuous sign language recognition through cross-modal alignment of video and text embeddings in a joint-latent space. IEEE Access, 8, 91170–91180. https://doi.org/10.1109/ACCESS.2020.2993650
+Article 
+    
+                    Google Scholar 
+                
+
+Hu, L., Gao, L., Liu, Z., Pun, C.-M., & Feng, W. (2023). AdaBrowse: Adaptive video browser for efficient continuous sign language recognition. In Proceedings of the 31st ACM international conference on multimedia (pp. 709–718).
+
+Pu, J., Zhou, W., & Li, H. (2019). Iterative alignment network for continuous sign language recognition. In Proceedings of the IEEE computer society conference on computer vision and pattern recognition (Vol. 2019-June, pp. 4160–4169). https://doi.org/10.1109/CVPR.2019.00429.
+
+Zhou, H., Zhou, W., & Li, H. (2019). Dynamic pseudo label decoding for continuous sign language recognition. In Proceedings—IEEE international conference on multimedia and expo (Vol. 2019-July, pp. 1282–1287). https://doi.org/10.1109/ICME.2019.00223.
+
+Hu, H., Pu, J., Zhou, W., & Li, H. (2023). Collaborative multilingual continuous sign language recognition: A unified framework. IEEE Transactions on Multimedia, 25, 7559–7570. https://doi.org/10.1109/TMM.2022.3223260
+Article 
+    
+                    Google Scholar 
+                
+
+Adaloglou, N., Chatzis, T., Papastratis, I., Stergioulas, A., & Th, G. (2021). A comprehensive study on deep learning-based methods for sign language recognition. IEEE Transactions on Multimedia, 1–14. arXiv:2007.12530v2.
+
+Fang, B., Co, J., & Zhang, M. (2017). Deepasl: Enabling ubiquitous and non-intrusive word and sentence-level sign language translation. In Proceedings of the 15th ACM conference on embedded network sensor systems (pp. 1–13).
+
+Sharma, S., Gupta, R., & Kumar, A. (2021). Continuous sign language recognition using isolated signs data and deep transfer learning. Journal of Ambient Intelligence and Humanized Computing, 14(3), 1531–1542. https://doi.org/10.1007/s12652-021-03418-z
+Article 
+    
+                    Google Scholar 
+                
+
+Brock, H., Farag, I., & Nakadai, K. (2020). Recognition of non-manual content in continuous Japanese sign language. Sensors (Switzerland), 20(19), 1–21. https://doi.org/10.3390/s20195621
+Article 
+    
+                    Google Scholar 
+                
+Download references
+
+Author information
+
+Authors and Affiliations
+
+ITM Department, Technical College of Administration, Duhok Polytechnic University, Duhok, Iraq
+Hanan A. Taher
+
+IT Department, College of Informatics, Akre University of Applied Science, Duhok, Iraq
+Hanan A. Taher
+
+Energy Engineering Department, Technical College of Engineering, Duhok Polytechnic University, Duhok, Iraq
+Subhi R. M. Zeebaree
+Authors
+Hanan A. Taher
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Subhi R. M. Zeebaree
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Contributions
+Hanan A. Taher—Conceptualization and Review Design: Lead the design and structure of the study. Data Comparison Tables: Responsible for creating and compiling the two comparison tables, including dataset descriptions and performance metrics. Manuscript Writing: Draft the introduction, methodology, key findings, and discussion sections. Coordination: Handle all communications with the journal, including submission and responses to reviewer comments. Subhi R. M. Zeebaree—Technical Review: Contribute to reviewing deep learning techniques like CNN−HMM, CNN−BLS™, and CTC in CSLR. Methodology Writing: Assist with writing the sections that focus on model comparisons and performance evaluations. Editing and Proofreading: Provide feedback on the manuscript and ensure technical accuracy.
+Corresponding author
+Correspondence to
+                Hanan A. Taher.
+
+Ethics declarations
+
+              
+              
+                
+Conflict of Interest
+                
+The authors declare no conflicts of interest.
+              
+            
+
+Additional information
+
+Publisher's Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Rights and permissions
+
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.
+Reprints and permissions
+
+About this article
+
+
+
+
+Cite this article
+Taher, H.A., Zeebaree, S.R.M. A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition.
+                    Rev Socionetwork Strat 19, 131–161 (2025). https://doi.org/10.1007/s12626-025-00180-y
+Download citation
+
+Received: 27 September 2024
+
+Accepted: 27 February 2025
+
+Published: 18 March 2025
+
+Version of record: 18 March 2025
+
+Issue date: April 2025
+
+DOI: https://doi.org/10.1007/s12626-025-00180-y
+
+
+Share this article
+Anyone you share the following link with will be able to read this content:Get shareable link
+
+Sorry, a shareable link is not currently available for this article.
+
+Copy shareable link to clipboard
+
+                            Provided by the Springer Nature SharedIt content-sharing initiative
+                        
+Keywords
+Sign language
+CTC
+Deep learning
+Movement epenthesis
+Gesture recognition
+
+
+                    
+
+                    
+                
+            
+
+            
+                
+    
+
+        
+            
+
+            
+
+                
+            
+
+            
+
+            
+                
+
+                    
+    
+
+                
+            
+
+            
+
+                
+
+                    
+                        
+                    
+                    
+                        
+                            
+                                
+
+                                    
+Access this article
+
+                                    
+                                        
+                                            
+
+                                                
+                                                    Log in via an institution
+                                                    
+                                                        
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                    
+
+                                        
+
+ 
+ 
+ 
+
+  
+
+   
+
+    
+Subscribe and save
+    
+
+     
+
+      
+
+       
+        
+       
+       Springer+
+      
+      
+from €37.37 /Month
+     
+     
+      
+Starting from 10 chapters or articles per month
+      
+Access and download chapters and articles from more than 300k books and 2,500 journals
+      
+Cancel anytime
+     
+     View plans 
+      
+       
+      
+    
+    
+Buy Now
+   
+   
+
+    
+     
+     
+
+      Buy article PDF 39,95 €
+     
+    
+    
+Price includes VAT (Poland)
+     
+
+    
+Instant access to the full article PDF.
+   
+  
+  
+  
+  
+ 
+ 
+
+  
+Institutional subscriptions 
+    
+     
+    
+ 
+ 
+
+                                    
+                                
+                            
+                        
+                    
+                    
+
+                        
+
+
+    
+
+        
+Advertisement
+        
+
+        
+    
+
+
+
+
+
+                    
+                    
+
+                    
+
+                
+            
+        
+    
+
+            
+        
+    
+    
+    
+
+    
+
+
+
+    
+        
+
+            
+Search
+            
+
+                
+                    
+                        Search by keyword or author
+                        
+
+                            
+                            
+                                
+                                    
+                                
+                                Search
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+
+
+    
+        
+Navigation
+        
+            
+                
+
+                   
+                        Find a journal
+                    
+                
+            
+                
+
+                   
+                        Publish with us
+                    
+                
+            
+                
+
+                   
+                        Track your research
+                    
+                
+            
+        
+    
+
+
+    
+	
+
+		
+Footer Navigation
+		
+			
+				
+	
+
+		
+		
+
+			
+Discover content
+			
+				
+					
+Journals A-Z
+				
+					
+Books A-Z
+				
+					
+Subjects A-Z
+				
+			
+		
+		
+		
+
+			
+Publish with us
+			
+				
+					
+Journal finder
+				
+					
+Publish your research
+				
+					
+Language editing
+				
+					
+Open access publishing
+				
+			
+		
+		
+		
+
+			
+Products and services
+			
+				
+					
+Our products
+				
+					
+Librarians
+				
+					
+Societies
+				
+					
+Partners and advertisers
+				
+			
+		
+		
+		
+
+			
+Our brands
+			
+				
+					
+Springer
+				
+					
+Nature Portfolio
+				
+					
+BMC
+				
+					
+Palgrave Macmillan
+				
+					
+Apress
+				
+					
+Discover
+				
+			
+		
+		
+	
+
+
+			
+			
+	
+		
+Corporate Navigation
+		
+			
+				
+
+					
+					
+						Your privacy choices/Manage cookies
+					
+				
+			
+				
+
+					
+						Your US state privacy rights
+					
+					
+				
+			
+				
+
+					
+						Accessibility statement
+					
+					
+				
+			
+				
+
+					
+						Terms and conditions
+					
+					
+				
+			
+				
+
+					
+						Privacy policy
+					
+					
+				
+			
+				
+
+					
+						Help and support
+					
+					
+				
+			
+				
+
+					
+						Legal notice
+					
+					
+				
+			
+				
+
+					
+						Cancel contracts here
+					
+					
+				
+			
+		
+	
+
+
+		
+		
+			
+				
+					
+
+						
+
+							
+							78.17.97.76
+						
+						
+Not affiliated
+					
+				
+			
+			
+				
+					
+				
+			
+			
+© 2026 Springer Nature
+		
+	
+
+
+
+
+
+    
+
+
+
+
+
+

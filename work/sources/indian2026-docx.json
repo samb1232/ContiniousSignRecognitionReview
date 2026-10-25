@@ -1,0 +1,13 @@
+{
+  "source_id": "indian2026-docx",
+  "openalex_id": "W7223099906",
+  "url": "https://zenodo.org/api/records/23527486/files/AI-Based%20Real-Time%20Continuous%20Indian%20Sign%20Language%20Recognition%20A%20Review.docx/content",
+  "retrieved_utc": "2026-10-25T08:11:45.341046+00:00",
+  "status": 200,
+  "final_url": "https://zenodo.org/api/records/23527486/files/AI-Based%20Real-Time%20Continuous%20Indian%20Sign%20Language%20Recognition%20A%20Review.docx/content",
+  "content_type": "application/octet-stream",
+  "body": "indian2026-docx.docx",
+  "sha256": "675975a7db76607bb9f91928c7e954207d87e9ab43363d8fc396f86522fb87cf",
+  "extractor": "stdlib zipfile/ElementTree",
+  "text": "indian2026-docx.txt"
+}

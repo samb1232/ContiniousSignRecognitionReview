@@ -1,0 +1,12 @@
+{
+  "source_id": "aloysius2020-publisher",
+  "openalex_id": "W3024060113",
+  "url": "https://link.springer.com/article/10.1007/s11042-020-08961-z",
+  "retrieved_utc": "2026-10-25T08:07:19.647743+00:00",
+  "status": 200,
+  "final_url": "https://link.springer.com/article/10.1007/s11042-020-08961-z?error=cookies_not_supported&code=527918fd-91cd-4f5d-b32d-30e997f8aa83",
+  "content_type": "text/html; charset=utf-8",
+  "body": "aloysius2020-publisher.html",
+  "sha256": "34cb92507403a27e66c9a2f193a5595500399cde659d373d35af597ccfba3439",
+  "text": "aloysius2020-publisher.txt"
+}

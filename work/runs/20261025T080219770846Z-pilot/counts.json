@@ -1,0 +1,49 @@
+{
+  "retrieved_occurrences": 85,
+  "unique_openalex_ids": 33,
+  "unique_after_doi_grouping": 33,
+  "doi_conflicts": {},
+  "metadata_conflicts": 0,
+  "per_query": {
+    "q11": {
+      "retrieved": 24,
+      "reported_total": 24,
+      "complete": true
+    },
+    "q12": {
+      "retrieved": 11,
+      "reported_total": 11,
+      "complete": true
+    },
+    "q13": {
+      "retrieved": 3,
+      "reported_total": 3,
+      "complete": true
+    },
+    "q1r": {
+      "retrieved": 3,
+      "reported_total": 3,
+      "complete": true
+    },
+    "q21": {
+      "retrieved": 26,
+      "reported_total": 26,
+      "complete": true
+    },
+    "q22": {
+      "retrieved": 9,
+      "reported_total": 9,
+      "complete": true
+    },
+    "q23": {
+      "retrieved": 4,
+      "reported_total": 4,
+      "complete": true
+    },
+    "q2r": {
+      "retrieved": 5,
+      "reported_total": 5,
+      "complete": true
+    }
+  }
+}

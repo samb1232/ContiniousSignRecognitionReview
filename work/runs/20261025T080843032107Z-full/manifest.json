@@ -1,0 +1,123 @@
+{
+  "run_id": "20261025T080843032107Z-full",
+  "stage": "full",
+  "started_utc": "2026-10-25T08:08:43.061347+00:00",
+  "status": "complete",
+  "task_budget_credits": 300,
+  "credits_reserved": 20,
+  "code_version": "2158a2573b7c14c785e8cadc81f87f6f5f8a1d49",
+  "python": "3.14.2",
+  "dependencies": "Python standard library only",
+  "requests": [
+    {
+      "index": 1,
+      "utc": "2026-10-25T08:08:43.063252+00:00",
+      "endpoint": "/rate-limit",
+      "params": {},
+      "reserved_credits": 0,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0001.json",
+      "sha256": "ad6450c3b13c39db5e2a46d58cfdd872039a860f52e7cb1948a886087b9be525",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json"
+      },
+      "finished_utc": "2026-10-25T08:08:44.092143+00:00"
+    },
+    {
+      "index": 2,
+      "utc": "2026-10-25T08:08:44.094759+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title": "\"continuous sign language recognition\" AND (review OR survey OR challenges OR understanding OR \"critical study\")",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0002.json",
+      "sha256": "e28009309c55b7f93ac8c13c4f5950afaa72753356978c6595fa02eb38ca1430",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9910",
+        "x-ratelimit-remaining-usd": "0.991",
+        "x-ratelimit-reset": "57076"
+      },
+      "finished_utc": "2026-10-25T08:08:45.021315+00:00"
+    },
+    {
+      "index": 3,
+      "utc": "2026-10-25T08:08:46.033525+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title": "\"continuous sign recognition\" AND (review OR survey OR challenges OR understanding OR \"critical study\")",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0003.json",
+      "sha256": "414a297289f3e9bf9617b774dbc04956f1433f38557db5eb61a7b04979e12108",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9900",
+        "x-ratelimit-remaining-usd": "0.99",
+        "x-ratelimit-reset": "57074"
+      },
+      "finished_utc": "2026-10-25T08:08:46.593839+00:00"
+    }
+  ],
+  "events": [],
+  "queries": {
+    "s1": {
+      "pages": [
+        {
+          "body": "raw/0002.json",
+          "cursor": "*",
+          "sha256": "e28009309c55b7f93ac8c13c4f5950afaa72753356978c6595fa02eb38ca1430"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 7
+    },
+    "s2": {
+      "pages": [
+        {
+          "body": "raw/0003.json",
+          "cursor": "*",
+          "sha256": "414a297289f3e9bf9617b774dbc04956f1433f38557db5eb61a7b04979e12108"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 0
+    }
+  },
+  "account_remaining_at_start": 9920.0,
+  "finished_utc": "2026-10-25T08:08:47.600345+00:00",
+  "task_credits_reserved_at_finish": 100
+}

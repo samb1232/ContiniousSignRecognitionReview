@@ -1,0 +1,165 @@
+
+
+	
+		
+		
+		A Critical Review on Video-Based Continuous Sign Language Recognition | Atlantis Press
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        
+		
+		
+		
+		
+		
+	
+	
+		
+		
+
+
+
+
+
+
+
+
+Proceedings
+Journals
+Books
+
+
+
+
+
+
+
+
+
+Series:Advances in Computer Science Research
+Proceedings of International Conference on Computer Science and Communication Engineering (ICCSCE 2025)
+
+International Conference on Computer Science and Communication Engineering (ICCSCE 2025)
+📍Hyderabad, India🗓️ 25-26 April 2025
+
+
+home
+preface
+articles
+authors
+sessions
+organizers
+peer review & publication ethics
+publishing information
+
+
+
+
+<Previous Article In Volume
+
+Next Article In Volume>
+
+A Critical Review on Video-Based Continuous Sign Language Recognition
+
+
+Authors
+
+Bondalapati SivaKumari1, *, Vijaya Raghavan1
+
+1Vignan’s Foundation for Science, Technology Research, Guntur, Andhra Pradesh, India
+
+*Corresponding author. 
+  Email: sivakumaribondalapati@gmail.com
+
+
+Corresponding Author
+
+Bondalapati SivaKumari
+
+
+Available Online 4 November 2025.DOI10.2991/978-94-6463-858-5_161How to use a DOI?KeywordsSign language recognition; deep learning; computer vision; natural language processing; SLR datasetsAbstract
+
+Sign language bridges communication gaps, enabling hearing impaired people to understand and connect among themselves. Sign language recognition (SLR) is an automated algorithm that translates hand gestures from hearing impaired into text for facilitating interactions with normal people. In recent years with the explosion of research in technologies like computer vision, deep learning and natural language processing, significant advancements have been made in SLR, improving its accuracy and real-world applicability. Specifically, Continuous Sign Language Recognition (CSLR) is a challenging task as it aims to translate video captured gestures into meaningful text sequentially. Unlike word level sign recognition, CSLR should handle complex spatial-temporal dependencies, coarticulation effects, and variations in signer style. This paper provides a critical review of recent advances in CSLR, focusing on deep learning-based approaches, dataset challenges, feature extraction techniques, and evaluation metrics. We conclude the review by providing potential future research directions based on the limitations in the current methodologies.Copyright© 2025 The Author(s)Open AccessOpen Access This chapter is licensed under the terms of the Creative Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/), which permits any noncommercial use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license and indicate if changes were made. 
+
+Download article (PDF)
+
+
+<Previous Article In Volume
+
+Next Article In Volume>
+Volume TitleProceedings of International Conference on Computer Science and Communication Engineering (ICCSCE 2025)SeriesAdvances in Computer Science ResearchPublication Date4 November 2025ISBN978-94-6463-858-5ISSN2352-538XDOI10.2991/978-94-6463-858-5_161How to use a DOI?Copyright© 2025 The Author(s)Open AccessOpen Access This chapter is licensed under the terms of the Creative Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/), which permits any noncommercial use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license and indicate if changes were made. 
+
+
+Cite this article
+
+risenwbib
+
+
+TY  - CONF
+AU  - Bondalapati SivaKumari
+AU  - Vijaya Raghavan
+PY  - 2025
+DA  - 2025/11/04
+TI  - A Critical Review on Video-Based Continuous Sign Language Recognition
+BT  - Proceedings of International Conference on Computer Science and Communication Engineering (ICCSCE 2025)
+PB  - Atlantis Press
+SP  - 1940
+EP  - 1955
+SN  - 2352-538X
+UR  - https://doi.org/10.2991/978-94-6463-858-5_161
+DO  - 10.2991/978-94-6463-858-5_161
+ID  - SivaKumari2025
+ER  -
+
+download .riscopy to clipboard
+
+
+
+Atlantis Press
+
+Atlantis Press – now part of Springer Nature – is a professional publisher of scientific, technical & medical (STM) proceedings, journals and books. We offer world-class services, fast turnaround times and personalised communication. The proceedings and journals on our platform are Open Access and generate millions of downloads every month.
+
+For more information, please contact us at: contact@atlantis-press.com
+ProceedingsJournalsBooksPoliciesManage Cookies/Do Not Sell My Info
+AboutNewsContactSearch
+
+
+Copyright © 2006-2026 Atlantis Press – now part of Springer Nature
+
+HomePrivacy PolicyTerms of use
+
+		
+			  
+		
+		
+		
+				
+				
+		
+		
+		
+		
+	
+

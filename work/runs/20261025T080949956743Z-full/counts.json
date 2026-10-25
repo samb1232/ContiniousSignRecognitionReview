@@ -1,0 +1,14 @@
+{
+  "retrieved_occurrences": 1,
+  "unique_openalex_ids": 1,
+  "unique_after_doi_grouping": 1,
+  "doi_conflicts": {},
+  "metadata_conflicts": 0,
+  "per_query": {
+    "doi-ibrahim": {
+      "retrieved": 1,
+      "reported_total": 1,
+      "complete": true
+    }
+  }
+}

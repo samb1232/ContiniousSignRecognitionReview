@@ -1,0 +1,112 @@
+{
+  "discovery_occurrences": 92,
+  "discovery_unique": 33,
+  "screened_unique_including_verification": 34,
+  "ai_decisions": {
+    "uncertain": 4,
+    "exclude": 27,
+    "include": 3
+  },
+  "human_decisions": {
+    "not_checked": 34
+  },
+  "by_stage": {
+    "title_abstract": 28,
+    "full_text": 6
+  },
+  "search_runs_complete": true,
+  "task_budget_credits": 300,
+  "credits_reserved": 101,
+  "observed_successful_credits": 101.0,
+  "query_counts": [
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q11",
+      "retrieved": 24,
+      "reported_total": 24,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q12",
+      "retrieved": 11,
+      "reported_total": 11,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q13",
+      "retrieved": 3,
+      "reported_total": 3,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q1r",
+      "retrieved": 3,
+      "reported_total": 3,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q21",
+      "retrieved": 26,
+      "reported_total": 26,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q22",
+      "retrieved": 9,
+      "reported_total": 9,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q23",
+      "retrieved": 4,
+      "reported_total": 4,
+      "complete": true
+    },
+    {
+      "run": "20261025T080315329549Z-full",
+      "role": "discovery",
+      "query": "q2r",
+      "retrieved": 5,
+      "reported_total": 5,
+      "complete": true
+    },
+    {
+      "run": "20261025T080843032107Z-full",
+      "role": "discovery",
+      "query": "s1",
+      "retrieved": 7,
+      "reported_total": 7,
+      "complete": true
+    },
+    {
+      "run": "20261025T080843032107Z-full",
+      "role": "discovery",
+      "query": "s2",
+      "retrieved": 0,
+      "reported_total": 0,
+      "complete": true
+    },
+    {
+      "run": "20261025T080949956743Z-full",
+      "role": "targeted DOI verification",
+      "query": "doi-ibrahim",
+      "retrieved": 1,
+      "reported_total": 1,
+      "complete": true
+    }
+  ],
+  "cross_run_doi_conflicts": {}
+}

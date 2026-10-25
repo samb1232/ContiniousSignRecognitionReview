@@ -1,0 +1,14 @@
+{
+  "source_id": "comparative2023",
+  "openalex_id": "W4378468504",
+  "url": "https://arxiv.org/pdf/2305.13941",
+  "retrieved_utc": "2026-10-25T08:13:51.408001+00:00",
+  "status": 200,
+  "final_url": "https://arxiv.org/pdf/2305.13941",
+  "content_type": "application/pdf",
+  "body": "comparative2023.pdf",
+  "sha256": "313f370943b4133ffbc2fe8a0953f2dacb26f9135b61d49f85ebf48ad8d77f34",
+  "extractor": "pypdf 6.21.2",
+  "pages": 6,
+  "text": "comparative2023.txt"
+}

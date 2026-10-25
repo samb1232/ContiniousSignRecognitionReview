@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-25",
+  "commands": [
+    {
+      "command": "python3 work/scripts/report.py",
+      "result": "passed; regenerated corpus, report, summary and screening CSV"
+    },
+    {
+      "command": "python3 work/scripts/verify.py",
+      "result": "passed; four runs, raw/source hashes, pagination termination, export/raw ID agreement, provenance, date filters, deterministic exports, budget and screening reconciliation"
+    },
+    {
+      "command": "python3 -m unittest discover -s work/scripts -p 'test_*.py' -v",
+      "result": "seven tests passed"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    {
+      "command": "one-off Python scan comparing local .env key bytes against work/, README.md, protocol.md and .env.example",
+      "result": "passed; no local API key detected"
+    }
+  ],
+  "not_run": [
+    "Independent replication of every primary-study performance number cited inside reviews",
+    "Final human screening and date/access adjudication",
+    "Additional live searches after offline reliability fixes"
+  ],
+  "limitations": [
+    "Focused candidates behind access barriers remain uncertain.",
+    "Ibrahim issue/online date and lawful-copy status need adjudication.",
+    "All researcher decisions remain not_checked."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "indian2026-zenodo",
+  "openalex_id": "W7223099906",
+  "url": "https://zenodo.org/api/records/23527485",
+  "retrieved_utc": "2026-10-25T08:10:27.994772+00:00",
+  "status": 200,
+  "final_url": "https://zenodo.org/api/records/23527486",
+  "content_type": "application/json",
+  "body": "indian2026-zenodo.html",
+  "sha256": "ddb0e5117231f07cee3bc39f4598c123adc9c2509725126429f75c585c795590",
+  "text": "indian2026-zenodo.txt"
+}

@@ -1,0 +1,1079 @@
+
+--- PDF page 1 ---
+ 
+  
+A Critical Review on Video-Based Continuous Sign 
+Language Recognition 
+Bondalapati SivaKumari* and  Vijaya raghavan 
+Vignan’s Foundation for Science,Technology Research,Guntur,AndhraPradesh,India 
+sivakumaribondalapati@gmail.com 
+Abstract. Sign language bridges communication gaps, enabling hearing 
+impaired people to understand and connect among themselves. Sign language 
+recognition (SLR) is an automated algorithm that translates hand gestures from 
+hearing impaired into text for facilitating interactions with normal people. In 
+recent years with the explosion of research in technologies like computer vision, 
+deep learning and natural language processing, significant advancements have 
+been made in SLR, improving its accuracy and real-world applicability. 
+Specifically, Continuous Sign Language Recognition (CSLR) is a challenging 
+task as it aims to translate video captured gestures into meaningful text 
+sequentially. Unlike word level sign recognition, CSLR should handle complex 
+spatial-temporal dependencies, coarticulation effects, and variations in signer 
+style. This paper provides a critical review of recent advances in CSLR, focusing 
+on deep learning-based approaches, dataset challenges, feature extraction 
+techniques, and evaluation metrics. We conclude the review by providing 
+potential future research directions based on the limitations in the current 
+methodologies. 
+Keywords:Sign language recognition, deep learning, computer vision, natural 
+language processing, SLR datasets. 
+1 Introduction 
+The
+re is an ever-increasing number of people with hearing loss across the world 
+which highlights the need for a better communication medium between hearing and 
+hearing impaired. According to world health organization [1], around 1.5 billion peo-
+ple will suffer with hearing related problems by 2021 and is projected to reach 2.5 
+billion by 2050. Accompanying individual hearing impaired with a dedicated human 
+sign language interpreter for social interactions is not only difficult but also commer-
+cially impossible. Therefore, SLR becomes a crucial tool for bridging gap between 
+normal and hearing-impaired people. SLR effectively address the translation of 
+1/2/3D signals into text. The 1D signals are obtained with hand gloves [2] fixed with 
+motion detection sensors. These signals are pre-processed and classified using ma-
+chine learning algorithms. The 2D signals are video sequences of the gestures which 
+have attracted a huge research interest. This involves image segmentation, key point 
+extraction, hand trajectory tracking, visual feature representations, and temporal mod-
+© The Author(s) 2025
+J. K. Katiyar et al. (eds.), Proceedings of International Conference on Computer Science and Communication
+Engineering (ICCSCE 2025), Advances in Computer Science Research 124,
+https://doi.org/10.2991/978-94-6463-858-5_161
+ 
+
+--- PDF page 2 ---
+ 
+           1941A Critical Review on Video-Based Continuous Sign Language …  
+elling [3]. The skeletal based 3D representations of sign language capture the joint 
+information of the hand movements for processing [4]. Though challenging, the 2D 
+video based SLR is practised extensively across the research communities of comput-
+er vision and machine learning due to data availability and economical viability. 
+SLR models are divided into two categories based on the captured data. The first 
+and less difficult is the word level sign language (WSLR) [5]. The second and hard 
+one is continuous sign language recognition (CSLR) [6]. The core difficulties com-
+mon in both models are sign to text conversion of hand gestures, movement trajecto-
+ries, hand positions with respect to body and facial expressions. Word-level sign lan-
+guage recognition (WSLR) and continuous sign language recognition (CSLR) differ 
+significantly in processing. In WSLR, isolated videos of labelled signs treat each of 
+the following as an independent classification task. Whereas in CSLR the sign video 
+is a sentence requiring additional processing with an alignment module [7]. The 
+alignment module learns context aware temporal segmentation between the visual 
+sequences and the gloss labels. Glosses are sequence of text giving a meaningful rep-
+resentation of the signs in the continuous video sequence. The datasets in WSLR are 
+labelled clearly with each label representing an isolated video sequence. However, the 
+CSLR datasets are continuous video sequences of signs representing a gloss label. 
+Finally, the recognition of WSLR is a done with a classifier whereas in CSLR uses 
+sequence modelling techniques for translating the recognized glosses into full sen-
+tences. This paper presents a critical analysis of datasets, methods, recognition tech-
+niques and evaluation metrics of latest CSLR models. 
+There are significant reviews on sign language recognition as a whole in the past 
+years [8][9][10]. Most of these works lack the basic information on the latest models 
+such as transformers, and other have completely excluded the importance of feature 
+extraction in both visual and text modalities. Additionally, these works restrained 
+from discussing the critical aspects of limitations of the latest models that could help 
+the readers discover their future potential. Fig.1 shows the evolution of sign language 
+representations from its inception to till date. 
+ 
+Fig. 1.Research progress and evolution of sign language representations over the years. 
+
+--- PDF page 3 ---
+ 
+ 
+1942             B. Sivakumari and V. Raghavan
+2 Continuous sign language recognition – Datasets and 
+Evaluation Metrics. 
+2.1 Datasets 
+Large scale and well annotated video datasets are a leverage for SLR with deep learn-
+ing models. The objective of a SL dataset is to train robust deep learning models for 
+generalization across signers, environments and styles. This review examines some of 
+the widely used SL datasets across both WLSLR and CSLR. Table 1 summarizes the 
+video datasets only with their descriptive analysis. These datasets are most widely 
+used by the researchers in the past decade. However, there are around 12 online SL 
+datasets with word level representations which are not frequently used. Only 3 CSLR 
+datasets are available online out of which RWTH-PHOENIX and Chinese SL are 
+most widely used in research. Despite growth made in dataset development, challeng-
+es such as data sample limitations in continuous signing datasets, lack of signers di-
+versity, limited multi modal annotations and real – world applicability. To advance 
+CSLR research, future datasets should have larger and more diverse sign language 
+corpora with open-source standardization and benchmarking. 
+Table 1.Video based sign language datasets in WLSLR and CSLR. 
+Dataset 
+Name 
+Type Language Descrip-
+tions 
+Size Annotations  Chall enges 
+RWTH-
+PHOENIX
+-Weather 
+2014T 
+CSLR G erman Containing 
+weather 
+news 
+bro
+adcasts 
+in real time. 
+ 
+8,257 
+video 
+sequen
+c-
+es, cover-
+ing a 
+vocabu-
+lary of 
+1,066 
+signs and 
+9 signers. 
+Includes 
+gloss ann
+ota-
+tions, sign 
+segmenta-
+tions, and 
+transcrip-
+tions. 
+Limited 
+domain 
+(we
+ather 
+news), 
+relatively 
+small vo-
+cabulary, 
+and fixed 
+back-
+ground. 
+CSL-Daily CSLR Chinese A large-
+sca
+le da-
+taset with 
+fixed back-
+grounds. 
+21,000 
+vid
+eos, 
+covering 
+1,000 
+daily 
+vocabu-
+lary signs 
+with 10 
+signers. 
+Incl udes 
+sentence-
+level annota-
+tions and 
+signer-
+independent 
+splits. 
+Limited 
+signer di-
+versity and 
+lack of 
+contextual 
+conversa-
+tion-based 
+signing. 
+
+--- PDF page 4 ---
+ 
+ 
+ 
+ 
+ 
+        A Critical Review on Video-Based Continuous Sign Language …     1943
+MS-ASL  WLSL
+R 
+American (Microsoft 
+American 
+Sign Lan-
+guage 
+Dataset) 
+Ove r 
+25,000 
+samples 
+from 222 
+signe
+rs, 
+covering 
+1,000 
+unique 
+signs. 
+Gloss-based 
+annotations 
+and signer 
+me
+tadata. 
+ 
+Limited 
+continuous 
+signing 
+samples
+, 
+mostly 
+isolated 
+signs. 
+ 
+WLASL 
+(Word-
+Level 
+American 
+Sign Lan-
+gu
+age) 
+WLSL
+R 
+ A bench-
+mark da-
+taset for 
+isolated 
+ASL
+ 
+recognition. 
+ 
+21,083 
+videos, 
+covering 
+2,
+000 
+words. 
+ 
+Word-level 
+gloss annota-
+tion
+s and 
+signer-
+independent 
+splits. 
+ 
+No continu-
+ous sen-
+tence sig
+n-
+ing and 
+limited 
+facial ex-
+pression 
+infor-
+mation. 
+LSA64 WLSL
+R 
+Argentini-
+an 
+An Argen-
+tinian S ig
+n 
+Language 
+dataset 
+consisting 
+of isolated 
+sign videos. 
+3,200 
+video 
+sam
+ples 
+of 64 
+signs 
+from 10 
+signers. 
+Gloss-based 
+anno
+tations. 
+ 
+Small da-
+taset 
+size 
+and limited 
+variation in 
+signing 
+styles. 
+ 
+2.2 M
+etrics 
+Word level Sign language videos consist of sequential frames, making convolutional 
+neural networks (CNNs) like GoogleNet [11] and ResNet [12] popular for spatial 
+feature extraction. Temporal modelling is achieved using networks such as recurrent 
+neural networks (RNNs) [13] and temporal convolutional networks (TCNs) [14]. 
+Some models, like C3D and I3D, use 3D CNNs to extract spatio-temporal features 
+simultaneously. More recently, Transformer models and their variants have gained 
+attention for sign language recognition, achieving improved performance. Metrics like 
+accuracy, recall, precision and F1 score are used for evaluating the WLSLR models. 
+The most widely used metric for evaluating CSLR is Word Error Rate (WER). It is 
+defined as 
+𝑤𝑒𝑟 =  
+𝑠𝑢𝑏𝑠𝑡𝑖𝑡𝑢𝑡𝑖𝑜𝑛+𝑑𝑒𝑙𝑒𝑡𝑖𝑜𝑛+𝑖𝑛𝑠𝑒𝑟𝑡𝑖𝑜𝑛
+𝑇𝑜𝑡𝑎𝑙 𝑤𝑜𝑟𝑑𝑠 𝑖𝑛 𝐺𝑟𝑜𝑢𝑛𝑑 𝑇𝑟𝑢𝑡ℎ 𝑠𝑒𝑛𝑡𝑒𝑛𝑐𝑒𝑠        (1) 
+The 𝑤𝑒𝑟 measures the deviations in the predicted word sequence from the original 
+ground truth sequence, quantifying the number of errors made by the trained model. 
+
+--- PDF page 5 ---
+ 
+ 
+ 
+ 
+1944             B. Sivakumari and V. Raghavan
+The substitution is the number of words needed to be substituted for incorrect predic-
+tions. Deletions are words that are missed by the model in the predicted sequence. 
+Lastly, insertions are number of extra words added to the target sequence by the mod-
+el. A lower WER indicates better recognition performance. WER in CSLR has limita-
+tions as it ignores sign language grammar, relies on gloss-level evaluation, and lacks 
+context sensitivity, making it less suitable for real-world applications. Additionally, 
+Bilingual Evaluation Understudy (BLEU) [15] evaluates the quality of machine-
+generated text. It measures how closely the generated text matches a set of reference 
+texts by calculating the overlap of n-grams (sequences of words). BLEU is defined as 
+𝐵𝐿𝐸𝑈 =  𝐵𝑟𝑒𝑣𝑖𝑡𝑦 𝑃𝑒𝑛𝑎𝑙𝑡𝑦 ×𝑒𝑥𝑝 (∑ 𝑤𝑛𝑙𝑜𝑔(𝑝𝑛)𝑁𝑛=1 )  (2) 
+where, Brevity Penalty represents the length mismatches between generated and ref-
+erence sentences. 𝑝𝑛 is the n-gram precision calculated as the number of n-grams in 
+the generated text appearing in the reference text. 𝑤𝑛 are the weights assigned to dif-
+ferent n-gram orders. It is particularly useful when CSLR models aim to generate 
+natural language sentences instead of gloss sequences. Relies solely on n-gram match-
+ing, without deep semantic understanding. This metric is used scarcely by the CSLR 
+researchers.  
+3 CSLR – Deep Learning based Recognition Methods 
+Deep learning-based recognition methods for WLSLR and CSLR captures a larger 
+feature space, leading to better recognition accuracy when compared traditional ma-
+chine learning based models. This section reviews the methods for CSLR using spa-
+tial, temporal and hybrid features. In addition to CNNs, RNNs, transformers, we pre-
+sent the latest trend of using multi modal fusion to leverage the characteristics of both 
+visual and text features.  
+3.1 Methods based on CNN and RNNs 
+CNNs have proved to an excellent feature extractio n tool on images which is lever-
+aged to frames of videos in CSLR [16]. They capture good spatial information that is 
+ingrained in the video frames. To extract temporal information that defines the chang-
+es in the hand and body movements of the signer, recurrent phenomena is engaged on 
+the spatial features. This builds a combination of both CNN – RNN model for CSLR 
+[17][18]. The combination has shown to extract spatio – temporal visual features rep-
+resenting the sign videos. Models like Resnet – 18 [19] and Resnet – 50 [20] were 
+used as baseline models in CSLR. Similarly, RNN models that follow the CNN are 
+long short-term memory (LSTM) [21] and gated recurrent units (GRU) [22]. Table 2 
+shows the latest CNN – RNN models used in building CSLR. Subsequently, pre-
+trained models like GoogleNet [11] and hybrid approaches, such as CNN-LSTM-
+HMM [23], improved performance but increase complexity. Studies explore different 
+CNN-HMM structures for computational efficiency. Some approaches use motion 
+
+--- PDF page 6 ---
+ 
+          1945A Critical Review on Video-Based Continuous Sign Language …   
+images [24], skeleton data [25], and 3D-CNNs [26] for enhanced feature extraction. 
+Recent methods incorporate self-emphasizing modules to enhance spatial and tem-
+poral feature learning [27], improving sign recognition accuracy. 
+Table 2. CSLR methods based on CNNs, RNNs, HMMs, and their combination on RGB da-
+tasets. 
+Paper Title/ 
+reference 
+Dataset Methods Performance 
+reported 
+(wer) 
+Merits De-merits 
+Weakly Su-
+pervised 
+Learning with
+ 
+Multi-Stream 
+CNN-LSTM-
+HMMs 
+RWTH-
+P
+HOENIX-
+Weather 
+2014 T 
+CNN + 
+LSTM + 
+HMM 
+26.0% Effecti vely 
+learns from 
+weak 
+labels; 
+integrates 
+multiple 
+streams 
+(mouth 
+and hand 
+shapes) for 
+better accura-
+cy. 
+Requires com-
+plex multi-
+stream synchro-
+nization; trai
+n-
+ing can be com-
+putationally 
+intensive. 
+Self-
+sufficient 
+Framework 
+for Continu-
+ous Si g
+n 
+Language 
+Recognition 
+RWTH-
+PHOENIX-
+Weather 
+2014 T 
+CNN + 
+LSTM 
+22.3% Do es not re-
+quire e
+xtra 
+annotations; 
+ach
+ieves state-
+of-the-art 
+performance 
+among RGB-
+based ap-
+proaches. 
+May not fully 
+capture non-
+manual fea
+tures 
+like facial ex-
+pressions. 
+Sign Lan-
+guage 
+Recognition 
+Usin
+g Deep 
+CNN 
+RGB Imag-
+es - Custom 
+Dataset 
+Deep 
+CNN 
+2 4.31% Employs dee p 
+CNNs for 
+feature extrac
+-
+tion, facilitat-
+ing accurate 
+recognition of 
+static signs. 
+Limited to iso-
+lated sign 
+recognit
+ion; 
+does not address 
+temporal dy-
+namics in con-
+tinuous signing. 
+Continuous 
+Sign Lan-
+guage
+ 
+Recognition 
+Algorithm 
+Based on 
+Object Detec-
+tion 
+RGB Video CNN + 
+RNN 
+23.5% Utilize s object 
+detection
+ to 
+focus on rele-
+vant regions, 
+improving 
+recognition 
+accuracy. 
+Performance 
+metrics 
+like 
+WER not pro-
+vided; applica-
+bility to large-
+scale datasets 
+untested. 
+Recurrent RWTH- CNN + 20.22% Effect ive for training and 
+
+--- PDF page 7 ---
+ 
+ 
+ 
+ 
+1946             B. Sivakumari and V. Raghavan
+convolutional 
+neural net-
+works 
+for continu-
+ous sign 
+language 
+recognition 
+by staged 
+optimization 
+PHOENIX-
+Weather 
+2014 T 
+TCN + 
+Bi-
+LSTM + 
+CTC 
+continuous 
+sign lang
+uage 
+recognit
+ion 
+without requir-
+in
+g frame-level 
+annotations. 
+inference slower 
+and more re-
+source-intensive 
+SF-Net: 
+Structu
+red 
+feature net-
+work for 
+continu
+ous 
+sign language 
+recognitio 
+CSL CNN + 
+Bi-
+LSTM 
+22.8% Captures bidi-
+rectional tem
+-
+poral depend-
+en
+cies 
+Less effective 
+for modelling 
+very complex
+ 
+temporal de-
+pendencies 
+Fully convo-
+lutional 
+networks for 
+conti
+nuous 
+sign language 
+recognition 
+RWTH and 
+CSL 
+2D CNN 
++ 3D 
+CNN + 
+LSTM + 
+CTC
+ 
+21.8 9% Spatial, spatio 
+temporal and 
+sequenti
+al 
+dependencies 
+are modelled 
+effectively 
+requires high-
+performance 
+hardware
+ 
+ CSL CNN + 
+Encoder 
+- De-
+cod
+er 
+22.3% Improved 
+Sequence
+ 
+Generation 
+Encoder-
+decoder ap-
+proac
+h may 
+struggle with 
+variable-length 
+sequences 
+ RWTH C3D + 
+Encod
+er 
+- decod-
+er 
+21.42% Rich Spatio -
+temporal Fea-
+ture Extraction 
+High Computa-
+ti
+onal Demand: 
+C3D models are 
+computationally 
+expensive 
+3
+.2 Methods based on Transformers 
+In recent years, Transformer models and their variants have gained immense populari-
+ty in feature extraction for CSLR an d continuous sign language translation (CSLT) 
+[28]. Originally developed for natural language processing (NLP) [29], transformers 
+excel at capturing global dependencies within large datasets. Given sign language's 
+unique grammatical structure, researchers have extended Transformer-based architec-
+tures to CSLR and CSLT tasks, often integrating both into a single framework. CSLR 
+generates gloss sequences that follow the same order as sign language gestures 
+
+--- PDF page 8 ---
+ 
+ 
+           1947A Critical Review on Video-Based Continuous Sign Language …  
+whereas CSLT converts gloss sequences into spoken language text, requiring a reor-
+dering of the sequence to align with natural language syntax. 
+In Multi-Branch Network (Shin et al.) [30], a combination of convolutional layers 
+and transformer layers were employed to extract both local and long-range dependen-
+cies in sign language sequences. Video Transformer Network (VTN) (De Coster et 
+al.) [31] trained a vision transformer (ViT) using features extracted from ResNet-34 
+(pretrained on ImageNet) and pose data obtained from OpenPose BODY135. Evalu-
+ated on AUTSL isolated sign recognition dataset, achieving 92.92% accuracy. The 
+study uniformly down sampled video frames, which could lead to loss of important 
+sign features, as sign language gestures are not evenly distributed in time. Another 
+noticeable model was Mask-Future Transformer (Du et al.) [32], which applied swin-
+transformer for semantic features and proposes a Mask-Future Transformer for tem-
+poral modelling by computing self-attention without future frames to simulate real-
+time comprehension. Despite better performance, the two transformers made training 
+difficult and computationally expensive. Transformer models have revolutionized 
+sign language recognition and translation by efficiently capturing spatial and temporal 
+dependencies. Hybrid models combining CNNs with Transformers offer state- of-the-
+art performance, but challenges like computational cost and data processing still need 
+to be addressed. Future research should focus on efficient Transformer architectures 
+and better real-time applications for sign language understanding. 
+3.3 Methods based on Multi Modals 
+Spatio-temporal visual features are crucial for Continuous Sign Language Recogni-
+tion (CSLR) as they capture both spatial and temporal context in sign language vide-
+os. Recent advancements in feature extraction models have focused on improving 
+context representation across frames to enhance recognition accuracy. This summary 
+explores key methodologies, challenges, and improvements in spatial-temporal mod-
+elling, motion feature extraction, and cross-modal learning for CSLR. Temporal Dif-
+ference Networks (TDN) [33] for Visual Features was applied to CSLR video data to 
+learn the difference between consecutive frames and segments. The computed differ-
+ences between frames introduce deviation in weight computation, affecting the overall 
+quality of extracted visual features. Temporal Semantic Pyramid (TSM) [34] network 
+addresses the semantic inconsistencies between frames using inter-scale and intra-
+scale attention mechanisms with increased computational costs. 
+To overcome the above shortcoming, multi modal methods were proposed to align 
+gloss features with spatial feature extraction by computing contrastive cross-modal 
+loss. Contrastive cross-modal loss [35][36] balances redundant information between 
+visual features and BERT-extracted gloss features. This loss optimizes the extracted 
+visual features, making them more robust for CSLR [37]. Inspiration from Multi-
+Modal Learning in Vision and Language was used in CSLR to construct graph em-
+beddings for improving representation learning [38]. Recent works in image caption-
+ing and image-text matching were used to optimize multi-modal loss between visual 
+and textual embeddings in CSLR [39][40]. Pre-trained language models like BERT 
+and T5 have Transformer-based architectures that efficiently capture contextual de-
+
+--- PDF page 9 ---
+ 
+ 
+ 
+ 
+ 
+1948             B. Sivakumari and V. Raghavan
+pendencies in text making them suitable for gloss feature extraction. The Masked 
+Language Model (MLM) approach is used to fine-tune BERT [41] on gloss sequenc-
+es, extracting rich gloss embeddings as labels for the visual feature extraction model 
+[42]. 
+The recent and latest works highlights the evolution of spatio-temporal and motion 
+feature extraction techniques in CSLR and proposes an advanced gloss-aligned fea-
+ture extraction method with contrastive cross-modal loss. By leveraging pre-trained 
+language models like BERT for gloss feature learning, this approach enhances visual-
+text alignment and improves CSLR performance. Future work could explore further 
+optimizations in multi-modal learning and efficient training strategies to reduce com-
+putational costs. 
+4 Recognition in CSLR 
+The isolated SLR is treated as a classification task, typically solved using SoftMax or 
+SVM. In contrast, CSLR involves recognizing a sequence of signs, making it a se-
+quence-to-sequence (seq2seq) problem. Two primary approaches adapted from natu-
+ral language processing (NLP) for continuous SLR are Connectionist Temporal Clas-
+sification (CTC) and the Encoder-Decoder Network. These methods help effectively 
+model and recognize sequential sign language gestures. 
+4.1 Connectionist temporal Classification 
+Connectionist Temporal Classification (CTC) was first introduced by Graves et al. 
+(2006) [43] as a solution for sequence- to-sequence (seq2seq) problems without re-
+quiring fine-grained labels. It became widely used in weakly supervised learning, 
+particularly for tasks where input and output sequences have different lengths, such as 
+speech recognition and continuous sign language recognition (CSLR). 
+CTC introduces an extra unit called 'blank' in the SoftMax output layer in addition 
+to the dictionary 𝐿, which contains all words/signs in the dataset. The new dictionary 
+is 𝐿′ =  𝐿 ∪  {𝑏𝑙𝑎𝑛𝑘}, allowing the model to map sequences of different lengths 
+without the need for frame-wise annotations. The probability of observing a particular 
+output sequence 𝜋 given an input sequence 𝑥 of length 𝜋 is computed as: 
+𝑃(𝑥) =  ∏ 𝑦𝜋𝑡𝑇𝑡=1   (3) 
+ 
+Further, it uses many -to-one mapping via the ‘Blank’ Token that removes blanks 
+and repeated labels to generate possible output sequences using the B function. For 
+example, B(-a-ab-) = B(-a-abb) = "aab". Here, "-" represents the blank token, which 
+helps in handling different possible alignments of the same word. The probability 
+P(l|x) of a particular labelling l given an input sequence x is computed as the sum of 
+probabilities of all valid output sequences that map to l: 
+
+--- PDF page 10 ---
+ 
+           1949A Critical Review on Video-Based Continuous Sign Language …  
+𝑃 (
+𝑙
+𝑥) =  ∑ 𝑃(𝑥)⬚𝜋=𝐵−1(𝑙)     (4) 
+ 
+CTC aims to maximize the conditional probability of the target label sequence by 
+using a forward-backward algorithm, which is based on dynamic programming. This 
+enables efficient computation of probabilities across all valid alignments. Several 
+research papers ([44], [45], [46], [47], [48], [49], [50]) have used CTC as the objec-
+tive function for training CSLR models. CTC is widely used in weakly supervised 
+learning because it does not require precise frame-level annotations. 
+However, the CTC assumes that each frame in the target sequence is conditionally 
+independent, meaning the model does not explicitly account for dependencies be-
+tween consecutive frames, which is unrealistic in CSLR, as frames within a local 
+region of a sign language video are intrinsically linked due to the continuity of ges-
+tures. Due to this limitation of CTC, researchers began developing Encoder-Decoder 
+Network architectures, which provide a more flexible seq2seq mapping. They allow 
+the model to explicitly learn dependencies between frames, overcoming the independ-
+ence assumption of CTC. Table 3 summarizes recent research on sign language 
+recognition. Accuracy varies based on dataset complexity and model architecture. 
+Table 3. Comparative Analysis of Sign Language Recognition Models 
+Publication Year 
+Methodology 
+(Features & Clas-
+sifier) 
+Dataset Accura-cy 
+Word-Level American Sign 
+Language (WLASL) Da-
+taset 
+90.31% 
+Miah, A. S. M. 2024 
+Graph Convolu-
+tional with Atten-
+PAKISTANI SIGN 
+LANGUAGE DATASET 
+(PSL) 
+94.10% 
+[51] tion and Residual 
+Connection Mexican Sign Language (MSL) dataset  99.75% 
+American Sign Language 
+Lexicon Video (ASLLV) 
+Dataset 
+34.41% 
+500 different isolated CSL 
+words such as “happy” and 
+“environment" 
+91.57% 
+for 50 
+joints 
+Xiao, Q., Li 
+[52] 2024 
+standard Varia-
+tional Autoencoder 
+(VAE) + Genera-
+tive Adversarial 
+2000 SL 
+ words performed by over 
+100 actors 
+53.06% 
+for 50 
+joints 
+Networks (GAN) 
+model 300 000 videos retrieved 
+from YouTube. There are 
+400 human action classes, 
+and each video in the da-
+taset lasts about 10s 
+45.89% 
+for 50 
+joints 
+
+--- PDF page 11 ---
+ 
+ 
+ 
+1950             B. Sivakumari and V. Raghavan
+Hax, D. R. T. 
+[53] 2024 
+hybrid architecture 
+consisting of a 
+recurrent neural 
+network (RNN), 
+including a long 
+short-term memory 
+layer, on top of a 
+convolutional 
+neural network 
+6 different hand gestures 
+with a total of 662 sequenc-
+es 
+83.66% 
+Comprised ten distinct 
+gestures from 14 individu-
+als, with ten instances of 
+each gesture, totaling 1400 
+unique data samples. 
+99.46% 
+Consisted of 20 ASL words 
+with a total of 18000 
+frames. 
+99.60% 
+Miah, A. S. M.  Graph meets with 
+Encompassed 41 Japanese 
+sign characters with 7,380 
+images adjusted to 400 x 
+400, captured from 18 indi-
+viduals 
+92.37% 
+[54] 2024 attention and CNN (GmTC) Collected from 20 individu-
+als, including 1,229 videos 
+with 112,564 frames 
+99.30% 
+Comprised 20 videos with 
+4-second recordings and 
+two repetitions for each sign 
+from each signer. 
+100% 
+Consisted of 3200 videos 
+with 10 non-expert subjects, 
+each performing 5 repeti-
+tions of 64 unique sign 
+types  
+99.10% 
+4.2 Encoder – Decoder Network 
+The Encoder-Decoder Network is widely used in CSLR to align input video sequenc-
+es with target language sequences [55]. The encoder encodes the input into a fixed-
+size latent vector, while the decoder aligns and generates the output sequence. Early 
+approaches relied on RNN-based architectures [56], but they suffered from long-term 
+dependency issues, which led to the adoption of attention mechanisms [57] and Trans-
+former-based models [58]. Transformers, being an Encoder-Decoder structure, use 
+multi-head attention to globally link features, achieving strong performance in CSLR. 
+Despite their effectiveness, Encoder-Decoder networks require high computational 
+power and can be difficult to train. Techniques like pre-training, key pooling, and 
+latent space optimization help improve convergence. Additionally, most encoder-
+decoder networks lack bi-directional decoding, which may cause information loss. 
+
+--- PDF page 12 ---
+ 
+ 
+           1951A Critical Review on Video-Based Continuous Sign Language …  
+While BERT can address this, it comes at a high computational cost, making it im-
+practical for many researchers. A trade-off between efficiency and accuracy is neces-
+sary for real-world applications. 
+5 Conclusions 
+Continuous Sign language recognition (CSLR) is a essential research area with signif-
+icant social impact, as it facilitates communication between the hearing impaired and 
+normal people. Automated SLR plays a key role in bridging this gap, making ad-
+vancements in this field highly relevant. This review provides an overview of sign 
+language recognition, covering traditional methods and focusing more elaborately 
+deep learning-based approaches for CSLR. It examines key aspects such as datasets, 
+evaluation metrics, methods, challenges, and future research directions. We highlight 
+the latest state- of-the-art methods, particularly transformer-based and multi modal 
+methods. Additionally, we compare the advantages and limitations of various recogni-
+tion techniques. We conclude that the increasing availability of large datasets will 
+enable more reliable validation of deep learning models, with significant challenges 
+such as signer independence, model complexity, and real-world applicability.  The in-
+depth analysis and proposed potential research directions described in this review can 
+hopefully help in addressing these challenges. 
+Disclosure of Interests. The authors declare that they have no known competing financial in-
+terests or personal relationships that could have appeared to influence the work reported in this 
+paper. 
+References 
+1. Allen, C. "Global survey report: WFD Interim Regional Secretariat for the Arab Region 
+(WFD RSAR)." Global Education Pre-Planning Project on the Human Rights of Deaf 
+People. Helsinki, Finland: World Federation of the Deaf and Swedish National Association 
+of the Deaf: http://www. wfdeaf. org/wpcontent/uploads/2011/06/7.-RSAR-Regional-
+Survey-Report-No-7-English-Version. pdf (2008). 
+2. Dong, Yongfeng, Jielong Liu, and Wenjie Yan. "Dynamic hand gesture recognition based 
+on signals from specialized data glove and deep learning algorithms." IEEE Transactions 
+on Instrumentation and Measurement 70 (2021): 1-14. 
+3. Kumar, D. Anil, P. V. V. Kishore, A. S. C. S. Sastry, and P. Reddy Gurunatha Swamy. 
+"Selfie continuous sign language recognition using neural network." In 2016 IEEE annual 
+India conference (INDICON), pp. 1-6. IEEE, 2016. 
+4. Kumar, E. Kiran, P. V. V. Kishore, M. Teja Kiran Kumar, and D. Anil Kumar. "3D sign 
+language recognition with joint distance and angular coded color topographical descriptor 
+on a 2–stream CNN." Neurocomputing 372 (2020): 40-54. 
+5. Maruyama, Mizuki, Shuvozit Ghose, Katsufumi Inoue, Partha Pratim Roy, Masakazu 
+Iwamura, and Michifumi Yoshioka. "Word-level sign language recognition with multi-
+
+--- PDF page 13 ---
+ 
+ 
+1952             B. Sivakumari and V. Raghavan
+stream neural networks focusing on local regions." arXiv preprint arXiv:2106.15989 
+(2021). 
+6. Ibrahim, Nada B., Hala H. Zayed, and Mazen M. Selim. "Advances, challenges and oppor-
+tunities in continuous sign language recognition." J. Eng. Appl. Sci 15, no. 5 (2020): 1205-
+1227. 
+7. Min, Yuecong, Aiming Hao, Xiujuan Chai, and Xilin Chen. "Visual alignment constraint 
+for continuous sign language recognition." In proceedings of the IEEE/CVF international 
+conference on computer vision, pp. 11542-11551. 2021. 
+8. Rastgoo, Razieh, Kourosh Kiani, and Sergio Escalera. "Sign language recognition: A deep 
+survey." Expert Systems with Applications 164 (2021): 113794. 
+9. Wadhawan, Ankita, and Parteek Kumar. "Sign language recognition systems: A decade 
+systematic literature review." Archives of computational methods in engineering 28 
+(2021): 785-813. 
+10. Adeyanju, Ibrahim Adepoju, Oluwaseyi Olawale Bello, and Mutiu Adesina Adegboye. 
+"Machine learning methods for sign language recognition: A critical review and analysis." 
+Intelligent Systems with Applications 12 (2021): 200056. 
+11. Al-Qizwini, Mohammed, Iman Barjasteh, Hothaifa Al-Qassab, and Hayder Radha. "Deep 
+learning algorithm for autonomous driving using googlenet." In 2017 IEEE intelligent ve-
+hicles symposium (IV), pp. 89-96. IEEE, 2017. 
+12. Koonce, Brett, and Brett Koonce. "ResNet 50." Convolutional neural networks with swift 
+for tensorflow: image recognition and dataset categorization (2021): 63-72. 
+13. Lee, Carman KM, Kam KH Ng, Chun-Hsien Chen, Henry CW Lau, Sui Ying Chung, and 
+Tiffany Tsoi. "American sign language recognition and training method with recurrent 
+neural network." Expert Systems with Applications 167 (2021): 114403. 
+14. Guo, Dan, Shuo Wang, Qi Tian, and Meng Wang. "Dense Temporal Convolution Network 
+for Sign Language Translation." In IJCAI, vol. 2, no. 7, p. 8. 2019. 
+15. Wołk, Krzysztof, and Krzysztof Marasek. "Enhanced bilingual evaluation understudy." 
+arXiv preprint arXiv:1509.09088 (2015). 
+16. Arun Prasath, G., and K. Annapurani. "Prediction of sign language recognition based on 
+multi layered CNN." Multimedia Tools and Applications 82, no. 19 (2023): 29649-29669. 
+17. Masood, Sarfaraz, Adhyan Srivastava, Harish Chandra Thuwal, and Musheer Ahmad. 
+"Real-time sign language gesture (word) recognition from video sequences using CNN and 
+RNN." In Intelligent Engineering Informatics: Proceedings of the 6th International Confer-
+ence on FICTA, pp. 623-632. Springer Singapore, 2018. 
+18. Bendarkar, Dhanashree, Pratiksha Somase, PreetyRebari, Renuka Paturkar, and Arjumand 
+Khan. "Web based recognition and translation of American sign language with CNN and 
+RNN." (2021): 34-50. 
+19. Gupta, Rohan, Krishnam Gupta, Chirag Pandit, and Prabhjot Singh. "Sign Language 
+Recognition using VGG16 and ResNet50." In 2024 11th International Conference on 
+Computing for Sustainable Global Development (INDIACom), pp. 996-1001. IEEE, 2024. 
+20. Rathi, Pulkit, Raj Kuwar Gupta, Soumya Agarwal, and Anupam Shukla. "Sign language 
+recognition using resnet50 deep neural network architecture." In 5th International Confer-
+ence on Next Generation Computing Technologies (NGCT-2019). 2020. 
+21. Mittal, Anshul, Pradeep Kumar, Partha Pratim Roy, Raman Balasubramanian, and Bidyut 
+B. Chaudhuri. "A modified LSTM model for continuous sign language recognition using 
+leap motion." IEEE Sensors Journal 19, no. 16 (2019): 7056-7063. 
+22. Sheth, Pranav, Sanju Rajora, and Yogeshwari Makwana. "Sign Language Recognition Ap-
+plication Using LSTM and GRU (RNN)." Indus University (2023). 
+
+--- PDF page 14 ---
+ 
+        
+23. Koller, Oscar, Necati Cihan Camgoz, Hermann Ney, and Richard Bowden. "Weakly su-
+pervised learning with multi-stream CNN-LSTM-HMMs to discover sequential parallel-
+ism in sign language videos." IEEE transactions on pattern analysis and machine intelli-
+gence 42, no. 9 (2019): 2306-2320. 
+24. Wójcik, Krzysztof. "Machine Learning Methods Used in the Automatic System for Teach-
+ing Human Motions –Key Aspects of CNN, HMM, and Minimum Distance Algorithms." 
+IEEE Access (2024). 
+25. Xiao, Qinkun, Minying Qin, and Yuting Yin. "Skeleton-based Chinese sign language 
+recognition and generation for bidirectional communication between deaf and hearing 
+people." Neural networks 125 (2020): 41-55. 
+26. Huang, Jie, Wengang Zhou, Houqiang Li, and Weiping Li. "Sign language recognition us-
+ing 3d convolutional neural networks." In 2015 IEEE international conference on multi-
+media and expo (ICME), pp. 1-6. IEEE, 2015. 
+27. Hu, Lianyu, Liqing Gao, Zekang Liu, and Wei Feng. "Self-emphasizing network for con-
+tinuous sign language recognition." In Proceedings of the AAAI conference on artificial 
+intelligence, vol. 37, no. 1, pp. 854-862. 2023. 
+28. Camgoz, Necati Cihan, Oscar Koller, Simon Hadfield, and Richard Bowden. "Sign lan-
+guage transformers: Joint end-to -end sign language recognition and translation." In Pro-
+ceedings of the IEEE/CVF conference on computer vision and pattern recognition, pp. 
+10023-10033. 2020. 
+29. Chowdhary, KR1442, and K. R. Chowdhary. "Natural language processing." Fundamen-
+tals of artificial intelligence (2020): 603-649. 
+30. Shin, Jinhyo, and Wonzoo Chung. "Multi-band CNN with band-dependent kernels and 
+amalgamated cross entropy loss for motor imagery classification." IEEE journal of bio-
+medical and health informatics 27, no. 9 (2023): 4466-4477. 
+31. De Coster, Mathieu, Mieke Van Herreweghe, and Joni Dambre. "Isolated sign recognition 
+from rgb video using pose flow and self-attention." In Proceedings of the IEEE/CVF con-
+ference on computer vision and pattern recognition, pp. 3441-3450. 2021. 
+32. Du, Yao, Pan Xie, Mingye Wang, Xiaohui Hu, Zheng Zhao, and Jiaqi Liu. "Full trans-
+former network with masking future for word-level sign language recognition." Neuro-
+computing 500 (2022): 115-123. 
+33. Huang, Zhigang, Wanli Xue, Yuxi Zhou, Jinlu Sun, Yazhou Wu, Tiantian Yuan, and 
+Shengyong Chen. "Dual-stage temporal perception network for continuous sign language 
+recognition." The Visual Computer (2024): 1-16. 
+34. Hu, Lianyu, Liqing Gao, Zekang Liu, and Wei Feng. "Continuous sign language recogni-
+tion with correlation network." In Proceedings of the IEEE/CVF Conference on Computer 
+Vision and Pattern Recognition, pp. 2529-2539. 2023. 
+35. Zolfaghari, Mohammadreza, Yi Zhu, Peter Gehler, and Thomas Brox. "Crossclr: Cross-
+modal contrastive learning for multi-modal video representations." In Proceedings of the 
+IEEE/CVF international conference on computer vision, pp. 1450-1459. 2021. 
+36. Zhang, Han, Jing Yu Koh, Jason Baldridge, Honglak Lee, and Yinfei Yang. "Cross-modal 
+contrastive learning for text- to-image generation." In Proceedings of the IEEE/CVF con-
+ference on computer vision and pattern recognition, pp. 833-842. 2021. 
+37. Feng, Yuan, Nuoyi Chen, Yumeng Wu, Caoyu Jiang, Sheng Liu, and Shengyong Chen. 
+"DFCNet+: Cross-modal dynamic feature contrast net for continuous sign language recog-
+nition." Image and Vision Computing 151 (2024): 105260. 
+38. Chen, Hao, Jiaze Wang, Ziyu Guo, Jinpeng Li, Donghao Zhou, Bian Wu, Chenyong Guan, 
+Guangyong Chen, and Pheng-Ann Heng. "Signvtcl: multi-modal continuous sign language 
+  1953A Critical Review on Video-Based Continuous Sign Language …   
+
+--- PDF page 15 ---
+ 
+ 
+1954             B. Sivakumari and V. Raghavan
+recognition enhanced by visual-textual contrastive learning." arXiv preprint 
+arXiv:2401.11847 (2024). 
+39. Cao, Yiyi, Lei Chen, Yuan Yuan, and Guangling Sun. "Cucumber disease recognition with 
+small samples using image-text-label-based multi-modal language model." Computers and 
+electronics in agriculture 211 (2023): 107993. 
+40. Wang, Junsheng, Tiantian Gong, Zhixiong Zeng, Changchang Sun, and Yan Yan. "C3cmr: 
+Cross-modality cross-instance contrastive learning for cross-media retrieval." In Proceed-
+ings of the 30th ACM International Conference on Multimedia, pp. 4300-4308. 2022. 
+41. Song, Kaitao, Xu Tan, Tao Qin, Jianfeng Lu, and Tie-Yan Liu. "Mpnet: Masked and per-
+muted pre-training for language understanding." Advances in neural information pro-
+cessing systems 33 (2020): 16857-16867. 
+42. Guo, Leming, Wanli Xue, Bo Liu, Kaihua Zhang, Tiantian Yuan, and Dimitris Metaxas. 
+"Gloss prior guided visual feature learning for continuous sign language recognition." 
+IEEE Transactions on Image Processing (2024). 
+43. Graves, Alex, Santiago Fernández, Faustino Gomez, and Jürgen Schmidhuber. "Connec-
+tionist temporal classification: labelling unsegmented sequence data with recurrent neural 
+networks." In Proceedings of the 23rd international conference on Machine learning, pp. 
+369-376. 2006. 
+44. Wang, Shuo, Dan Guo, Wen-gang Zhou, Zheng-Jun Zha, and Meng Wang. "Connectionist 
+temporal fusion for sign language translation." In Proceedings of the 26th ACM interna-
+tional conference on Multimedia, pp. 1483-1491. 2018. 
+45. Song, Peipei, Dan Guo, Haoran Xin, and Meng Wang. "Parallel temporal encoder for sign 
+language translation." In 2019 IEEE International Conference on Image Processing (ICIP), 
+pp. 1915-1919. IEEE, 2019. 
+46. Guo, Dan, Shengeng Tang, and Meng Wang. "Connectionist temporal modeling of video 
+and language: a joint model for translation and sign labeling." In IJCAI, pp. 751-757. 
+2019. 
+47. Huang, Zhigang, Wanli Xue, Yuxi Zhou, Jinlu Sun, Yazhou Wu, Tiantian Yuan, and 
+Shengyong Chen. "Dual-stage temporal perception network for continuous sign language 
+recognition." The Visual Computer (2024): 1-16. 
+48. Zhou, Hao, Wengang Zhou, Yun Zhou, and Houqiang Li. "Spatial-temporal multi-cue 
+network for continuous sign language recognition." In Proceedings of the AAAI confer-
+ence on artificial intelligence, vol. 34, no. 07, pp. 13009-13016. 2020. 
+49. Zhu, Qidan, Jing Li, Fei Yuan, and Quan Gan. "Multiscale temporal network for continu-
+ous sign language recognition." Journal of Electronic Imaging 33, no. 2 (2024): 023059-
+023059. 
+50. Guo, Leming, Wanli Xue, Qing Guo, Bo Liu, Kaihua Zhang, Tiantian Yuan, and 
+Shengyong Chen. "Distilling cross-temporal contexts for continuous sign language recog-
+nition." In Proceedings of the IEEE/CVF conference on computer vision and pattern 
+recognition, pp. 10771-10780. 2023. 
+51. Miah, A. S. M., Hasan, M. A. M., Nishimura, S., & Shin, J. (2024). Sign language recogni-
+tion using graph and general deep neural network based on large scale dataset. IEEE Ac-
+cess. 
+52. Xiao, Qinkun, Lu Li, and Yilin Zhu. "SeqαGAN: Sign Language Sequence Generation 
+Based on Variational and Adversarial Learning." IEEE Transactions on Industrial Infor-
+matics (2024). 
+53. Hax, David Richard Tom, et al. "A novel hybrid deep learning architecture for dynamic 
+hand gesture recognition." IEEE Access 12 (2024): 28761-28774. 
+
+--- PDF page 16 ---
+ 
+54. Miah, A. S. M., Hasan, M. A. M., Tomioka, Y., & Shin, J. (2024). Hand gesture recogni-
+tion for multi-culture sign language using graph and general deep learning network. IEEE 
+Open Journal of the Computer Society. 
+55. Papastratis, Ilias, Kosmas Dimitropoulos, Dimitrios Konstantinidis, and Petros Daras. 
+"Continuous sign language recognition through cross-modal alignment of video and text 
+embeddings in a joint-latent space." IEEE Access 8 (2020): 91170-91180. 
+56. Fang, Wei, Yupeng Chen, and Qiongying Xue. "Survey on research of RNN-based spatio-
+temporal sequence prediction algorithms." Journal on Big Data 3, no. 3 (2021): 97. 
+57. Emmorey, Karen. Language, cognition, and the brain: Insights from sign language re-
+search. Psychology Press, 2001. 
+58. Alyami, Sarah, Hamzah Luqman, and Mohammad Hammoudeh. "Isolated arabic sign lan-
+guage recognition using a transformer-based model and landmark keypoints." ACM 
+Transactions on Asian and Low-Resource Language Information Processing 23, no. 1 
+(2024): 1-19. 
+A Critical Review on Video-Based Continuous Sign Language …             1955
+Open Access This chapter is licensed under the terms of the Creative Commons Attribution-
+NonCommercial 4.0 International License ( http://creativecommons.org/licenses/by-nc/4.0/ ),
+which permits any noncommercial use, sharing, adaptation, distribution and reproduction in any
+medium or format, as long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons license and indicate if changes were made.
+        The images or other third party material in this chapter are included in the chapter's
+Creative Commons license, unless indicated otherwise in a credit line to the material. If material
+is not included in the chapter's Creative Commons license and your intended use is not
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain
+permission directly from the copyright holder.
+ 

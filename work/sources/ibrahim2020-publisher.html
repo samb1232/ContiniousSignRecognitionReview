@@ -1,0 +1,2402 @@
+<style>
+    .sub-header {
+        background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50px, rgb(220, 220, 220) 50px, rgb(220, 220, 220) 100%);
+        margin-top: 60px;
+    }
+
+    .journal-image {
+        /*margin-top: -50px;*/
+    }
+
+    .myDIV:hover + .hide {
+        display: block;
+        color: red;
+    }
+
+    .nav-item:hover .icon-navigate-down{
+        transform: rotate(180deg);
+    }
+    .sj-borderheading{
+        margin: 0 0 20px;
+        padding: 0 0 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sj-editorchoice {
+        box-shadow: 5px 5px 5px #aaaaaa;
+    }
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: #636c77;
+    }
+    .sj-postcontent .sj-description {
+        padding: 0 0 15px;
+    }
+
+    .sj-description {
+        width: 100%;
+        float: left;
+    }
+    body h1, body h2, body h3, body h4, body h5, body h6 {
+        color: #636c77;
+        margin: 0 0 8px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-style: normal;
+        text-transform: capitalize;
+        font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    }
+    h4 {
+        font-size: 18px !important;
+    }
+    h5 {
+        font-size: 16px !important;
+    }
+    .sj-selectgroup .sj-checkbox {
+        padding: 2px 0;
+        display: flex;
+    }
+    .sj-radio, .sj-radio label, .sj-checkbox, .sj-checkbox label {
+        margin: 0;
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .sj-selectgroup .sj-checkbox label {
+        color: #636c77;
+    }
+
+    .sj-radio label, .sj-checkbox label {
+        cursor: pointer;
+        display: block;
+        padding: 0 0 0 20px;
+    }
+    .sj-radio, .sj-radio label, .sj-checkbox, .sj-checkbox label{
+        margin-left: 5px;
+    }
+    .sj-btn {
+        z-index: 3;
+        color: #fff;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: capitalize;
+        font: 500 14px / 44px 'Quicksand', Arial, Helvetica, sans-serif;
+    }
+    .sj-btn:hover, .sj-dropdowarrow, .navbar-toggle, .sj-btn:hover:before, .sj-btn.sj-btnactive:before, .sj-bannercontent h1:before, .sj-btnvideo, .sj-editorchoice:hover .sj-postcontent .sj-btn:before, .sj-prev:hover, .sj-next:hover, .sj-widgetcontent .sj-formsearch button, .sj-widgetquestions .sj-widgetheading, .sj-btnreply:hover, .sj-btnrecord:hover, .sj-tagnew, .navbar-toggler, .sj-dashboardnav > ul > li > a:before, .sj-formsearchvtwo button, .sj-articledetails li:before, .sj-formaddnewfield .form-group .sj-radio input[type=radio] + label:after, .sj-formaddnewfield .form-group .sj-checkbox input[type=checkbox] + label:after, .chosen-container .chosen-results li.highlighted {
+        background: #5e9cea;
+    }
+    .sj-btn:hover, .sj-btn:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+    /*.open-access {*/
+    /*    background-size: 200px;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-position: right;*/
+    /*    background-position-y: top;*/
+    /*    opacity: 0.5;*/
+    /*}*/
+    .dropdown-menu-right{
+        left: inherit !important;
+        right: inherit !important;
+    }
+</style>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+<meta name="description" content="MAK HILL">
+<meta name="keywords" content="">
+
+<meta name="robots" />
+<title>Journal of Engineering and Applied Sciences</title>
+
+
+
+<!-- Favicons -->
+<link href="https://www.makhillpublications.co/files/logo/logo.png" rel="icon">
+<link href="https://www.makhillpublications.co/files/logo/logo.png" rel="apple-touch-icon">
+
+<meta name="google-site-verification" content="SnKgkF5fnPyI-1YV9YPVEsEoVApXulyekxxPImHe3YQ" />
+<meta name="classification" content="Academic Journal Publishing, Global Research Support, Scientific Publishing Research  "/>
+<meta name="search engines" content="Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot. InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, CNET, Googlebot"/>
+<meta name="robots" content="index,follow"/>
+<link rel="pingback" href="https://www.makhillpublications.co/sitemap.xml"/>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYNXKJ1H5C"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TYNXKJ1H5C');
+</script>
+
+<meta property="og:image" content="https://www.makhillpublications.co/images/og-image.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="www.makhillpublications.co/view-article/1816-949x/jeasci.2020.1205.1227"/>
+<meta property="og:title" content="MAK HILL"/>
+<meta property="og:description" content=""/>
+
+<meta name="revisit-after" content="2 days">
+<meta name="rating" content="General">
+<meta name="distribution" content="Global">
+<meta name="copyright" content=" Mak Hill Publications, Copyright � 2024 All Right Reserved.">
+<meta name="robots" content="noodp, noydir"/>
+
+<meta name="Language" content="English" />
+<meta name="YahooSeeker" content="index,follow">
+<meta name="msnbot" content="index,follow">
+<meta name="googlebot" content="index,follow"/>
+<meta name="allow-search" content="yes">
+
+<meta name="author" content="Mak Hill Publications"/>
+<script src="https://www.makhillpublications.co/js/app.js" defer></script>
+
+<!-- Styles -->
+<link href="https://www.makhillpublications.co/css/app.css" rel="stylesheet">
+<link href="https://www.makhillpublications.co/css/custom.css" rel="stylesheet">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+        <div class="container-fluid px-4" id="header">
+
+        <nav class="navbar navbar-expand-lg px-0">
+            <a class="navbar-brand text-decoration-none"  href="https://www.makhillpublications.co" style="cursor: pointer;">
+                <img src="https://www.makhillpublications.co/images/logo.png" alt="Academic journal publishing" width="100%" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown li-none">
+                        <a class="nav-link " href="https://www.makhillpublications.co/how-serve" id="navbarDropdownLbl"> How We Serve </a>
+                    </li>
+
+
+                    <li class="nav-item dropdown li-none">
+                        <a class="nav-link " href="#" id="navbarDropdownLbl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Discover </a>
+                        <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/life-science">
+                                Life Science	                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/computer-information-science">
+                                Computer, Information Science	                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/engineering">
+                                Engineering	                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/mathematics">
+                                Mathematics	                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/social-science-and-humanity">
+                                Social Science &amp; Humanity	                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/business-and-management">
+                                Business &amp; Management	                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/discover/all-journals">
+                                All Journals
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown li-none">
+                        <a class="nav-link " href="#" id="navbarDropdownLbl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> News Room</a>
+                        <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
+                            <a class="dropdown-item d-flex flex-nowrap pl-4"  href="https://www.makhillpublications.co/international-news">
+                                International News                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4"  href="https://www.makhillpublications.co/mak-news">
+                                MAK News                        </a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown li-none">
+                        <a class="nav-link " href="https://www.makhillpublications.co/gallery" id="navbarDropdownLbl"> Gallery </a>
+                    </li>
+
+                    <li class="nav-item dropdown li-none">
+                        <a class="nav-link " href="#" id="navbarDropdownLbl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About </a>
+                        <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
+                            <a class="dropdown-item d-flex flex-nowrap pl-4"  href="https://www.makhillpublications.co/about-company">
+                                About Company                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4"  href="https://www.makhillpublications.co/review-process">
+                                Review Process                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4"  href="https://www.makhillpublications.co/mak-policies">
+                                MAK Policies                        </a>
+                            <a class="dropdown-item d-flex flex-nowrap pl-4"  href="https://www.makhillpublications.co/manuscript-formation">
+                                Manuscript Formation                        </a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown li-none">
+                        <a class="nav-link " href="https://www.makhillpublications.co/admin/queries/contact-us" id="navbarDropdownLbl"> Contact Us </a>
+                    </li>
+
+
+
+
+
+
+
+
+                    <li class="nav-item my-auto">
+                        <a href="https://www.makhillpublications.co/login">
+                            <svg viewBox="0 0 24 24" style="margin-top: -3px" aria-label="user " height="22" width="25"><path fill="#000000" fill-rule="evenodd" d="M6.75 6.812c0 3.598 2.258 6.313 5.25 6.313 2.993 0 5.25-2.715 5.25-6.313 0-2.88-2.403-5.312-5.25-5.312-2.846 0-5.25 2.432-5.25 5.312ZM12 3.32c-1.822 0-3.42 1.629-3.42 3.485 0 2.563 1.47 4.497 3.42 4.497s3.42-1.934 3.42-4.497c0-1.856-1.597-3.485-3.42-3.485ZM4.138 22.5l.158-1.742c.37-3.523 4.376-4.3 7.704-4.3 3.327 0 7.333.775 7.703 4.283l.157 1.759h1.883l-.175-1.939c-.403-3.83-3.776-5.936-9.568-5.936s-9.167 2.104-9.572 5.95l-.17 1.925h1.88Z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+        </nav>
+
+</div>
+
+
+
+    <div class="container-fluid px-0">
+        <div class="container-fluid px-0" style="border-bottom: 1px solid rgb(220, 220, 220);">
+            <div class="sub-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img class="journal-image" src="https://www.makhillpublications.co/files/journal/2022-09-02_12-54-44-000000_354.png" alt="files/journal/2022-09-02_12-54-44-000000_354.png" height="230px" width="170px">
+            </div>
+            <div class="col-9 my-auto">
+                <h4>Journal of Engineering and Applied Sciences</h4>
+                <span style="color: grey">ISSN: Online 1818-7803</span><br>
+                <span style="color: grey">ISSN: Print 1816-949x</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-4">
+    <div class="col-7">
+        <div class="row">
+            <div class="col nav-item">
+                <a href="https://www.makhillpublications.co/about-us/1816-949x">About US</a>
+            </div>
+            <div class="col nav-item">
+                <a href="https://www.makhillpublications.co/editors/1816-949x" >Editors</a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col nav-item">
+                <span>Issues</span>
+                <svg focusable="false" viewBox="0 0 92 128" height="20" width="20" aria-hidden="true"
+                     class="icon icon-navigate-down">
+                    <path d="m1 51l7-7 38 38 38-38 7 7-45 45z"></path>
+                </svg>
+                <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
+                    <a href="https://www.makhillpublications.co/latest-issue/1816-949x" class="dropdown-item d-flex flex-nowrap pl-4" >Current Issue</a>
+                    <a href="https://www.makhillpublications.co/previous_issue/1816-949x" class="dropdown-item d-flex flex-nowrap pl-4" >Archive issues</a>
+                </div>
+            </div>
+            <div class="col nav-item">
+                <span>Pages</span>
+                <svg focusable="false" viewBox="0 0 92 128" height="20" width="20" aria-hidden="true"
+                     class="icon icon-navigate-down">
+                    <path d="m1 51l7-7 38 38 38-38 7 7-45 45z"></path>
+                </svg>
+                <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
+                    <a href="https://www.makhillpublications.co/authors-instruction/1816-949x" class="dropdown-item d-flex flex-nowrap pl-4" >Author Guideline</a>
+                </div>
+            </div>
+            <div class="col nav-item">
+                <a href="https://www.makhillpublications.co/indexing-services/1816-949x" class=""> <span>Indexed in</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <div class="container-fluid my-5">
+            <div class="row pl-4 mb-3">
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <h5>434<br>Views<hr></h5>
+                    <h5>0<br>Downloads<hr></h5>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-8">
+                    <span></span>
+                    <h3 class="article-title"><b>Advances, Challenges and Opportunities in Continuous Sign
+Language Recognition</b></h3>
+                    <p>Nada B.  Ibrahim, Hala H.  Zayed and Mazen M.  Selim<br>Page: 1205-1227 | Received 21 Sep 2022, Published online: 21 Sep 2022                    </p>
+                    <p>
+                    <div class="dropdown mr-4 d-flex">
+                        <div class="nav-item">
+                            <a href="#">Download Citation</a>
+                            <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
+                                <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/article-bib/1816-949x/jeasci.2020.1205.1227">BIB</a>
+                                <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/article-ris/1816-949x/jeasci.2020.1205.1227">RIS</a>
+                                <a class="dropdown-item d-flex flex-nowrap pl-4" href="https://www.makhillpublications.co/article-text/1816-949x/jeasci.2020.1205.1227">TEXT</a>
+                            </div>
+                        </div>
+
+
+
+
+
+                    <a class="ml-4" href="https://doi.org/jeasci.2020.1205.1227"> https://doi.org/jeasci.2020.1205.1227</a>
+                    </div>
+                    </p>
+                    <a href="https://www.makhillpublications.co/view-article/1816-949x/jeasci.2020.1205.1227" class="btn btn-primary article-navbar-btn active"><i class="fa fa-file-text"></i> Full Text</a>
+                    <a href="https://www.makhillpublications.co/article-references/1816-949x/jeasci.2020.1205.1227" class="btn btn-success article-navbar-btn"><i class="fa fa-book"></i> Reference</a>
+                    <a href="https://www.makhillpublications.co/article-xml/1816-949x/jeasci.2020.1205.1227" class="btn btn-info article-navbar-btn"><i class="fa fa-code"></i> XML File</a>
+                    <a target="_blank" href="https://www.makhillpublications.co/files/published-files/mak-jeas/2020/5-1205-1227.pdf" class="btn btn-danger article-navbar-btn article_pdf_download_link" id="18819"><i class="fa fa-file-pdf-o"></i> PDF File</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-4">
+            <div id="sj-twocolumns" class="sj-twocolumns">
+                <div class="container-fluid p-4">
+
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3">
+                            <aside id="sj-sidebarvtwo" class="sj-sidebar">
+
+                                <div class="sj-widget sj-widgetvolissue">
+                                    <form action="https://www.makhillpublications.co/search-article/1816-949x" method="get">
+                                        <div class="sj-widgetcontent">
+                                            <input type="search" class="title_search form-control" placeholder="Search by title here">
+                                        </div>
+                                        <div class="sj-widgetheading mt-3">
+                                            <h3>By Research Area</h3>
+                                        </div>
+                                        <div class="sj-widgetcontent">
+                                            <div class="sj-selectgroup">
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-0" type="checkbox" name="research_area" class="research_area" value="Medicine & Public Health">
+                                                    <label for="sj-0">Medicine & Public Health<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-1" type="checkbox" name="research_area" class="research_area" value="Life Sciences">
+                                                    <label for="sj-1">Life Sciences<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-2" type="checkbox" name="research_area" class="research_area" value="Engineering">
+                                                    <label for="sj-2">Engineering<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-3" type="checkbox" name="research_area" class="research_area" value="Mathematics">
+                                                    <label for="sj-3">Mathematics<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-4" type="checkbox" name="research_area" class="research_area" value="Biomedicine">
+                                                    <label for="sj-4">Biomedicine<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-5" type="checkbox" name="research_area" class="research_area" value="Physics">
+                                                    <label for="sj-5">Physics<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-6" type="checkbox" name="research_area" class="research_area" value="Chemistry">
+                                                    <label for="sj-6">Chemistry<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-7" type="checkbox" name="research_area" class="research_area" value="Computer Science">
+                                                    <label for="sj-7">Computer Science<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-8" type="checkbox" name="research_area" class="research_area" value="Earth Sciences">
+                                                    <label for="sj-8">Earth Sciences<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-9" type="checkbox" name="research_area" class="research_area" value="Social Sciences">
+                                                    <label for="sj-9">Social Sciences<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-10" type="checkbox" name="research_area" class="research_area" value="Business and Management">
+                                                    <label for="sj-10">Business and Management<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-11" type="checkbox" name="research_area" class="research_area" value="Psychology">
+                                                    <label for="sj-11">Psychology<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-12" type="checkbox" name="research_area" class="research_area" value="Materials Science">
+                                                    <label for="sj-12">Materials Science<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-13" type="checkbox" name="research_area" class="research_area" value="Economics">
+                                                    <label for="sj-13">Economics<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-14" type="checkbox" name="research_area" class="research_area" value="Education">
+                                                    <label for="sj-14">Education<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-15" type="checkbox" name="research_area" class="research_area" value="Environment">
+                                                    <label for="sj-15">Environment<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-16" type="checkbox" name="research_area" class="research_area" value="Philosophy">
+                                                    <label for="sj-16">Philosophy<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-17" type="checkbox" name="research_area" class="research_area" value="Statistics">
+                                                    <label for="sj-17">Statistics<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-18" type="checkbox" name="research_area" class="research_area" value="Law">
+                                                    <label for="sj-18">Law<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-19" type="checkbox" name="research_area" class="research_area" value="Political Science and International Relations">
+                                                    <label for="sj-19">Political Science and International Relations<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-20" type="checkbox" name="research_area" class="research_area" value="Pharmacy">
+                                                    <label for="sj-20">Pharmacy<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-21" type="checkbox" name="research_area" class="research_area" value="Dentistry">
+                                                    <label for="sj-21">Dentistry<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-22" type="checkbox" name="research_area" class="research_area" value="Energy">
+                                                    <label for="sj-22">Energy<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-23" type="checkbox" name="research_area" class="research_area" value="Linguistics">
+                                                    <label for="sj-23">Linguistics<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-24" type="checkbox" name="research_area" class="research_area" value="Geography">
+                                                    <label for="sj-24">Geography<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-25" type="checkbox" name="research_area" class="research_area" value="Finance">
+                                                    <label for="sj-25">Finance<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-26" type="checkbox" name="research_area" class="research_area" value="Criminology and Criminal Justice">
+                                                    <label for="sj-26">Criminology and Criminal Justice<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-27" type="checkbox" name="research_area" class="research_area" value="Medicine">
+                                                    <label for="sj-27">Medicine<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-28" type="checkbox" name="research_area" class="research_area" value="Cultural and Media Studies">
+                                                    <label for="sj-28">Cultural and Media Studies<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-29" type="checkbox" name="research_area" class="research_area" value="History">
+                                                    <label for="sj-29">History<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-30" type="checkbox" name="research_area" class="research_area" value="Architecture / Design">
+                                                    <label for="sj-30">Architecture / Design<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-31" type="checkbox" name="research_area" class="research_area" value="Literature">
+                                                    <label for="sj-31">Literature<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-32" type="checkbox" name="research_area" class="research_area" value="Biomedical Sciences">
+                                                    <label for="sj-32">Biomedical Sciences<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-33" type="checkbox" name="research_area" class="research_area" value="Religious Studies">
+                                                    <label for="sj-33">Religious Studies<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-34" type="checkbox" name="research_area" class="research_area" value="Education & Language">
+                                                    <label for="sj-34">Education & Language<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-35" type="checkbox" name="research_area" class="research_area" value="Food Science & Nutrition">
+                                                    <label for="sj-35">Food Science & Nutrition<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                                <span class="sj-checkbox">
+                                                    <input id="sj-36" type="checkbox" name="research_area" class="research_area" value="Public Health">
+                                                    <label for="sj-36">Public Health<!-- <em>(0)</em> --></label>
+                                                </span>
+                                                                                            </div>
+                                        </div>
+                                        <div class="sj-widgetheading">
+                                            <h3>By Volume and Issue</h3>
+                                        </div>
+                                        <div class="sj-widgetcontent">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input type="hidden" class="issn" value="1816-949x">
+                                                    <input type="text" class="v form-control" placeholder="Vol No.">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="i form-control" placeholder="Issue No.">
+                                                </div>
+                                                <div class="col-sm-6 mt-3">
+                                                    <button type="submit" class="btn btn-secondary btn-block btn-sm">Apply Filter</button>
+                                                </div>
+                                                <div class="col-sm-6 mt-3">
+                                                    <button type="reset" class="btn btn-secondary btn-block btn-sm">Reset All</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+
+                            </aside>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                            <div id="sj-content" class="sj-content">
+                                <div class="sj-articles">
+                                    <div class="p-4">
+                                        <h2>Abstract</h2>
+                                        <p class="text-justify">Sign Language (SL) is the hands spoken language assisting the deaf to understand each other.
+Understanding SL by vocal people not only paves the way to contribute deaf and dumb in the workforce but
+also provides a fertile environment for analyzing the human motion and gesturing. Consequently, translating
+SL sentence into written or spoken language, known as Continuous Sign Language Recognition (CSLR) will
+help in integrating the deaf and dumb in the society. Most of the surveys in the field of Sign Language
+Recognition (SLR) spotlight on isolated SLR that mainly deals with words, numbers and letters each in
+separate. Moreover, these systems are designed to operate in artificial settings for the background, signer
+dependency and limited vocabulary. Even though for real-life CSLR is the objective, till now there is not a
+complete survey on CSLR that provides researchers with a comprehensive study on the advances, challenges
+and opportunities in this field. The presented piece of work analyzes the articles published earlier and illustrates
+the core stumbling blocks related to CSLR including: the dynamic hand detection and tracking, facial
+expression recognition, movement epenthesis detection and recognition methods as well as a comparative study
+on the available benchmark databases. An inventory of the applications which stand to benefit from CSLR are
+also brightened up. The conclusions and recommendations of this research can be a milestone for developing
+evolved and efficient CSLR systems.</p>
+                                        <hr>
+                                                                            </div>
+                                    <div class="p-4">
+                                        <h2>How to cite this article:</h2>
+                                        <p style="line-height:31px;">
+                    Nada B.  Ibrahim, Hala H.  Zayed and Mazen M.  Selim. Advances, Challenges and Opportunities in Continuous Sign
+Language Recognition. <br>DOI: <a href='https://doi.org/10.36478/jeasci.2020.1205.1227' target='_blank'>https://doi.org/10.36478/jeasci.2020.1205.1227</a><br> URL: <a href='https://www.makhillpublications.co/view-article/1816-949x/jeasci.2020.1205.1227' target='_blank'>https://www.makhillpublications.co/view-article/1816-949x/jeasci.2020.1205.1227</a>                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $('.article_pdf_download_link').click(function(){
+            let id = $(this).attr('id');
+            $.ajax({
+                url: 'https://www.makhillpublications.co/plus_article_download',
+                method: 'get',
+                data: {id:id},
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                dataType: 'json',
+                success:function(data){
+                    console.log(data);
+                },
+            })
+        });
+    </script>
+
+
+    <div class="container-fluid px-0">
+    <footer class="cmp-container" id="mh-container-42324038">
+        <div class="mhecomm-container-v2">
+            <style>
+                #mhecomm-container-v2-1886601590 {
+                    background-color: #06235b
+                }
+            </style>
+            <div id="mhecomm-container-v2-1886601590" class="container-fluid g-0 ">
+                <div
+                        class="container g-0  px-md-0 pt-md-1 pb-md-0 px-3 pt-1 pb-0 px-lg-0 pt-lg-1 pb-lg-0 px-sm-0 pt-sm-1 pb-sm-0   ">
+
+                    <div class="spacer">
+                        <div id="ss-spacer-29261411">
+                            <div class="d-block d-sm-none" style="height:40px"></div>
+                            <div class="d-none d-sm-block d-md-none" style="height:40px"></div>
+                            <div class="d-none d-md-block d-lg-none" style="height:40px"></div>
+                            <div class="d-none d-lg-block" style="height:40px"></div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="mhecomm-column-v2">
+
+
+                        <style>
+
+
+                        </style>
+
+                        <div class="px-1">
+                            <div id="mhecomm-col-v2-1775331350" class="row  gx-2  pb-3  ">
+
+
+                                <div class="col-12 col-sm pb-3 pb-sm-0    ">
+
+
+                                    <div class="responsivegrid">
+
+
+                                        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+
+                                            <div
+                                                    class="buildingblock responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+                                                <!--Responsive grid-->
+
+                                                <div
+                                                        class="aem-Grid aem-Grid--12 aem-Grid--default--12  xf-master-building-block">
+
+
+                                                    <div class="text aem-GridColumn aem-GridColumn--default--12">
+
+
+                                                        <div id="text-d87c290073" class="cmp-text   ">
+
+                                                            <p><span class="text-white"><span
+                                                                            class="fs-5">About</span></span></p>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                    <div class="linkslist aem-GridColumn aem-GridColumn--default--12">
+
+
+                                                        <ul id="mh-ecomm-links-list-408783617"
+                                                            class="list-unstyled text-light">
+                                                            <li>
+                                                                <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light pt-0  mh-emit d-block"
+                                                                   href="https://www.makhillpublications.co/about-company">About Company</a>
+                                                            </li>
+
+
+                                                            <li>
+                                                                <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light   mh-emit d-block"
+                                                                   href="https://www.makhillpublications.co/review-process">Review Process</a>
+                                                            </li>
+
+
+                                                            <li>
+                                                                <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light   mh-emit d-block"
+                                                                   href="https://www.makhillpublications.co/mak-policies">MAK Policies</a>
+                                                            </li>
+
+
+                                                            <li>
+                                                                <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light   mh-emit d-block"
+                                                                   href="https://www.makhillpublications.co/manuscript-formation">Manuscript
+                                                                    Formation</a>
+                                                            </li>
+                                                        </ul>
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <!--End of responsive grid-->
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="col-12 col-sm pb-3 pb-sm-0">
+                                    <div class="buildingblock responsivegrid">
+                                        <!--Responsive grid-->
+                                        <div
+                                                class="aem-Grid aem-Grid--12 aem-Grid--default--12  xf-master-building-block">
+                                            <div class="text aem-GridColumn aem-GridColumn--default--12">
+                                                <div id="text-6090e5b386" class="cmp-text">
+                                                    <p><span class="text-white"><span
+                                                                    class="fs-5">Get In Touch</span></span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="text-white">
+                                                <ul style="list-style: none; padding: 0px">
+                                                    <li>
+                                                        <svg width="20" height="20" x="0" y="0" viewBox="0 0 512 512"
+                                                             style="margin-top: -4px" xml:space="preserve" class="mr-2"><g>
+                                                                <path
+                                                                        d="M506.555 208.064 263.859 30.367a13.3 13.3 0 0 0-15.716 0L5.445 208.064c-5.928 4.341-7.216 12.665-2.875 18.593s12.666 7.214 18.593 2.875L256 57.588l234.837 171.943a13.236 13.236 0 0 0 7.848 2.57c4.096 0 8.138-1.885 10.744-5.445 4.342-5.927 3.054-14.251-2.874-18.592z"
+                                                                        fill="#ffffff" opacity="1" data-original="#000000"
+                                                                        class=""></path>
+                                                                <path
+                                                                        d="M442.246 232.543c-7.346 0-13.303 5.956-13.303 13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52s-66.52 29.842-66.52 66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303 5.956-13.303 13.303V470.9c0 7.347 5.957 13.303 13.303 13.303h133.029c6.996 0 12.721-5.405 13.251-12.267.032-.311.052-.651.052-1.036V342.01c0-22.009 17.905-39.914 39.914-39.914s39.914 17.906 39.914 39.914V470.9c0 .383.02.717.052 1.024.524 6.867 6.251 12.279 13.251 12.279h133.029c7.347 0 13.303-5.956 13.303-13.303V245.847c-.001-7.348-5.957-13.304-13.304-13.304z"
+                                                                        fill="#ffffff" opacity="1" data-original="#000000"
+                                                                        class=""></path>
+                                                            </g></svg>
+                                                        <span style="text-decoration: none">
+                                                           Office No. 14, Building Number : 892, Way No. 63, Al Hail Shumaliya Street, Al Seeb , Muscat 121, 121 Oman
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                       
+                                                       
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-white px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light   mh-emit d-block"
+                                                           href="mailto:info@makhillpublications.co">
+                                                            <svg width="20" height="20" x="0" y="0"
+                                                                 viewBox="0 0 512 512" style="margin-top: -4px"
+                                                                 xml:space="preserve" class="mr-2"><g>
+                                                                    <path
+                                                                            d="M467 76H45C20.238 76 0 96.149 0 121v270c0 24.86 20.251 45 45 45h422c24.762 0 45-20.149 45-45V121c0-24.857-20.248-45-45-45zm-6.91 30L267.624 299.094c-5.864 5.882-17.381 5.886-23.248 0L51.91 106h408.18zM30 385.485v-258.97L159.065 256 30 385.485zM51.91 406l128.334-128.752 42.885 43.025c17.574 17.631 48.175 17.624 65.743 0l42.885-43.024L460.09 406H51.91zM482 385.485 352.935 256 482 126.515v258.97z"
+                                                                            fill="#ffffff" opacity="1"
+                                                                            data-original="#000000" class=""></path>
+                                                                </g></svg>
+                                                            <span>info@makhillpublications.co.</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--End of responsive grid-->
+                                    </div>
+
+
+                                    <div class="spacer">
+                                        <div id="ss-spacer-458828186">
+                                            <div class="d-block d-sm-none" style="height:10px"></div>
+                                            <div class="d-none d-sm-block d-md-none" style="height:10px"></div>
+                                            <div class="d-none d-md-block d-lg-none" style="height:15px"></div>
+                                            <div class="d-none d-lg-block" style="height:15px"></div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="col-12 col-sm pb-3 pb-sm-0">
+                                    <div class="parsys">
+                                        <div class="responsivegrid">
+                                            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                                                <div
+                                                        class="buildingblock responsivegrid aem-GridColumn aem-GridColumn--default--12">
+                                                    <!--Responsive grid-->
+                                                    <div
+                                                            class="aem-Grid aem-Grid--12 aem-Grid--default--12  xf-master-building-block">
+                                                        <div class="text aem-GridColumn aem-GridColumn--default--12">
+                                                            <div id="text-c9d4b0533b" class="cmp-text ">
+                                                                <p><span class="text-white"><span
+                                                                                class="fs-5">Resources</span></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="linkslist aem-GridColumn aem-GridColumn--default--12">
+                                                            <ul id="mh-ecomm-links-list-339073301"
+                                                                class="list-unstyled text-light">
+                                                                <li>
+                                                                    <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light pt-0  mh-emit d-block"
+                                                                       href="https://www.makhillpublications.co/author">Authors Guideline</a>
+                                                                </li>
+
+
+                                                                <li>
+                                                                    <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light   mh-emit d-block"
+                                                                       href="https://www.makhillpublications.co/librarian">Librarians</a>
+                                                                </li>
+
+
+                                                                <li>
+                                                                    <a class="px-sm-1 py-sm-2 px-lg-1 py-lg-2 px-1 py-2 px-md-1 py-md-2 link-light   mh-emit d-block"
+                                                                       href="https://www.makhillpublications.co/journal_editor">Editor's
+                                                                        Instructions</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--End of responsive grid-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-sm     ">
+
+
+                                    <div class="text">
+
+
+                                        <div id="text-32c10ec171" class="cmp-text   ">
+
+                                            <p><span class="fs-large"><span
+                                                            class="text-white">Follow MAK HILL Publications</span></span></p>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="mhecomm-column-v2">
+
+
+                                        <style>
+
+
+                                        </style>
+
+                                        <div class="px-0">
+                                            <div id="mhecomm-col-v2-2068635356" class="row  gx-0  pb-3  ">
+
+
+                                                <div class="col-3 pb-3 pb-sm-0    ">
+
+
+                                                    <div class="mhecomm-image-v2 h-100 d-inline">
+
+
+                                                        <a href="https://www.facebook.com/profile.php?id=100084743865505"
+                                                           class="mh-emit" data-layer-id="mh-ecomm-img-890411730"
+                                                           data-layer-comp="image" data-layer-subarea="body"
+                                                           target="_blank">
+
+                                                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                        d="M19.4115 16.0728L20.1553 11.2233H15.5024V8.07767C15.5024 6.75093 16.1525 5.45631 18.2365 5.45631H20.3519V1.32767C20.3519 1.32767 18.4321 1 16.5965 1C12.7644 1 10.2597 3.32252 10.2597 7.52718V11.2233H6V16.0728H10.2597V27.7962C11.9967 28.0679 13.7654 28.0679 15.5024 27.7962V16.0728H19.4115Z"
+                                                                        fill="white"/>
+                                                            </svg>
+
+                                                        </a>
+
+
+                                                    </div>
+
+
+                                                </div>
+
+
+                                                <div class="col-3 pb-3 pb-sm-0">
+                                                    <div class="mhecomm-image-v2 h-100 d-inline">
+                                                        <a href="https://www.twitter.com" class="mh-emit"
+                                                           data-layer-id="mh-ecomm-img-879477732"
+                                                           data-layer-comp="image"
+                                                           data-layer-subarea="body"
+                                                           target="_blank">
+                                                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                        d="M8.47126 24.5C18.6667 24.5 24.2414 15.8416 24.2414 8.3377C24.2414 8.09031 24.2414 7.84293 24.2299 7.60733C25.3103 6.80628 26.2529 5.80497 27 4.6623C26.0115 5.10995 24.9425 5.41623 23.8161 5.55759C24.9655 4.85078 25.8391 3.74346 26.2529 2.4123C25.1839 3.06021 24 3.53141 22.7356 3.79058C21.7241 2.68325 20.2874 2 18.6897 2C15.6322 2 13.1494 4.5445 13.1494 7.67801C13.1494 8.12565 13.1954 8.56152 13.2988 8.97382C8.68965 8.73822 4.6092 6.47644 1.87356 3.03665C1.4023 3.87304 1.12644 4.85079 1.12644 5.88743C1.12644 7.85471 2.10345 9.59817 3.5977 10.6113C2.68966 10.5877 1.83908 10.3285 1.09195 9.90445C1.09195 9.92801 1.09195 9.95157 1.09195 9.97513C1.09195 12.7317 3 15.017 5.54023 15.5471C5.08046 15.6767 4.58621 15.7474 4.08046 15.7474C3.72414 15.7474 3.37931 15.712 3.03448 15.6414C3.73563 17.9031 5.78161 19.5406 8.2069 19.5877C6.31035 21.1073 3.91954 22.0144 1.32184 22.0144C0.873563 22.0144 0.436782 21.9908 0 21.9319C2.42529 23.5576 5.34483 24.5 8.47126 24.5Z"
+                                                                        fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-3 pb-3 pb-sm-0">
+                                                    <div class="mhecomm-image-v2 h-100 d-inline">
+                                                        <a href="https://www.linkedin.com/in/mak-hill-publications-372b41252/"
+                                                           class="mh-emit" data-layer-id="mh-ecomm-img-733036319"
+                                                           data-layer-comp="image" data-layer-subarea="body"
+                                                           target="_blank">
+                                                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                        d="M24.975 0.108887H2.025C1.48794 0.108887 0.97287 0.322234 0.593109 0.701996C0.213348 1.08176 0 1.59682 0 2.13389V25.0839C0 25.621 0.213348 26.136 0.593109 26.5158C0.97287 26.8955 1.48794 27.1089 2.025 27.1089H24.975C25.5121 27.1089 26.0271 26.8955 26.4069 26.5158C26.7867 26.136 27 25.621 27 25.0839V2.13389C27 1.59682 26.7867 1.08176 26.4069 0.701996C26.0271 0.322234 25.5121 0.108887 24.975 0.108887ZM8.1 23.0589H4.05V10.9089H8.1V23.0589ZM6.075 8.54639C5.61085 8.53312 5.16089 8.38337 4.78136 8.11584C4.40183 7.84831 4.10956 7.47487 3.94105 7.04218C3.77254 6.60949 3.73528 6.13674 3.83392 5.683C3.93256 5.22925 4.16272 4.81463 4.49565 4.49095C4.82858 4.16727 5.24952 3.94887 5.70586 3.86305C6.16221 3.77723 6.63372 3.82779 7.06149 4.00842C7.48926 4.18904 7.85432 4.49172 8.11106 4.87864C8.36779 5.26555 8.50481 5.71954 8.505 6.18389C8.49434 6.81886 8.23275 7.42379 7.77742 7.86648C7.32208 8.30917 6.71002 8.55361 6.075 8.54639ZM22.95 23.0589H18.9V16.6599C18.9 14.7429 18.09 14.0544 17.037 14.0544C16.7283 14.0749 16.4266 14.1563 16.1494 14.2938C15.8722 14.4312 15.6249 14.6221 15.4217 14.8554C15.2185 15.0887 15.0634 15.3599 14.9653 15.6534C14.8671 15.9468 14.828 16.2568 14.85 16.5654C14.8433 16.6282 14.8433 16.6916 14.85 16.7544V23.0589H10.8V10.9089H14.715V12.6639C15.1099 12.0631 15.6525 11.5739 16.2907 11.2429C16.9289 10.912 17.6415 10.7505 18.36 10.7739C20.4525 10.7739 22.896 11.9349 22.896 15.7149L22.95 23.0589Z"
+                                                                        fill="white"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-3 pb-3 pb-sm-0">
+                                                    <div class="mhecomm-image-v2 h-100 d-inline">
+                                                        <a href="https://instagram.com" class="mh-emit"
+                                                           data-layer-id="mh-ecomm-img-1946424241"
+                                                           data-layer-comp="image"
+                                                           data-layer-subarea="body"
+                                                           target="_blank">
+
+                                                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                        d="M7.90889 0.728693C6.47249 0.796464 5.49157 1.02569 4.63405 1.36266C3.74656 1.70853 2.99433 2.17266 2.24589 2.9238C1.49745 3.67494 1.03656 4.42771 0.693114 5.31655C0.360743 6.17596 0.135562 7.15769 0.0721121 8.5949C0.00866193 10.0321 -0.00537813 10.4941 0.0016419 14.1602C0.00866192 17.8262 0.024862 18.2858 0.0945222 19.726C0.163102 21.1621 0.391523 22.1427 0.728484 23.0005C1.0749 23.888 1.53849 24.64 2.2899 25.3887C3.04131 26.1374 3.79353 26.5972 4.68454 26.9412C5.54314 27.273 6.52514 27.4993 7.96208 27.5622C9.39902 27.6251 9.86154 27.6397 13.5265 27.6327C17.1915 27.6256 17.653 27.6094 19.0929 27.5411C20.5328 27.4728 21.5083 27.2428 22.3664 26.9074C23.2539 26.5602 24.0063 26.0974 24.7545 25.3458C25.5027 24.5941 25.9633 23.8408 26.3065 22.9514C26.6391 22.0928 26.8651 21.1108 26.9275 19.6749C26.9904 18.2339 27.0052 17.7739 26.9982 14.1083C26.9912 10.4428 26.9747 9.98325 26.9064 8.5436C26.8381 7.10396 26.6094 6.12628 26.2727 5.26795C25.9258 4.38046 25.4627 3.62904 24.7116 2.87979C23.9604 2.13054 23.2066 1.67019 22.3175 1.32783C21.4583 0.995454 20.4769 0.768924 19.0399 0.706823C17.603 0.644723 17.1405 0.628793 13.4741 0.635813C9.80781 0.642833 9.34881 0.658493 7.90889 0.728693ZM8.06657 25.1335C6.75032 25.0763 6.03562 24.8576 5.55934 24.6745C4.92862 24.4315 4.47934 24.1378 4.00468 23.6677C3.53001 23.1976 3.23841 22.7467 2.99217 22.1174C2.80722 21.6411 2.58447 20.9272 2.52291 19.6109C2.45595 18.1883 2.44191 17.7612 2.43408 14.1569C2.42625 10.5527 2.44002 10.1261 2.50239 8.7029C2.55855 7.38773 2.7786 6.67222 2.96139 6.19621C3.20439 5.56468 3.49707 5.11621 3.96823 4.64182C4.43938 4.16743 4.88893 3.87528 5.51884 3.62904C5.99458 3.44328 6.70847 3.22242 8.02418 3.15978C9.4479 3.09228 9.8745 3.07878 13.4782 3.07095C17.0819 3.06312 17.5096 3.07662 18.9338 3.13926C20.249 3.1965 20.9648 3.41439 21.4403 3.59826C22.0712 3.84126 22.5203 4.13314 22.9947 4.6051C23.469 5.07706 23.7615 5.52499 24.0077 6.15625C24.1937 6.63064 24.4146 7.34426 24.4767 8.66078C24.5445 10.0845 24.5598 10.5114 24.5663 14.1148C24.5728 17.7182 24.5601 18.1462 24.4977 19.5688C24.4402 20.8851 24.2221 21.6 24.0387 22.0769C23.7957 22.7073 23.5028 23.1569 23.0314 23.631C22.5599 24.1051 22.1109 24.3972 21.4808 24.6435C21.0056 24.829 20.2909 25.0504 18.9762 25.113C17.5525 25.18 17.1259 25.194 13.5209 25.2018C9.91581 25.2097 9.49055 25.1951 8.06684 25.1335M19.0721 6.91901C19.0726 7.23943 19.1682 7.55251 19.3466 7.81863C19.5251 8.08475 19.7785 8.29197 20.0748 8.41407C20.371 8.53618 20.6968 8.56769 21.011 8.50461C21.3251 8.44153 21.6135 8.28671 21.8397 8.05972C22.0659 7.83272 22.2196 7.54376 22.2815 7.22937C22.3435 6.91498 22.3108 6.58929 22.1876 6.29349C22.0644 5.99768 21.8562 5.74506 21.5895 5.56756C21.3227 5.39006 21.0093 5.29566 20.6888 5.2963C20.2593 5.29716 19.8477 5.46859 19.5445 5.77289C19.2413 6.07719 19.0714 6.48945 19.0721 6.91901ZM6.56833 14.1477C6.57589 17.9764 9.68523 21.073 13.513 21.0657C17.3408 21.0584 20.4396 17.9494 20.4323 14.1207C20.4251 10.2921 17.3149 7.19468 13.4866 7.20224C9.65823 7.2098 6.56104 10.3197 6.56833 14.1477ZM8.99996 14.1429C8.9982 13.2528 9.26041 12.3823 9.75342 11.6413C10.2464 10.9002 10.9481 10.3221 11.7697 9.97984C12.5913 9.63761 13.496 9.5467 14.3692 9.71861C15.2425 9.89052 16.0452 10.3175 16.6758 10.9456C17.3064 11.5737 17.7366 12.3747 17.912 13.2473C18.0873 14.1199 18 15.0249 17.661 15.8479C17.322 16.6708 16.7467 17.3748 16.0076 17.8707C15.2685 18.3667 14.399 18.6323 13.509 18.6341C12.918 18.6353 12.3326 18.5201 11.7861 18.2951C11.2396 18.07 10.7429 17.7395 10.3242 17.3225C9.90544 16.9054 9.57298 16.41 9.34578 15.8644C9.11857 15.3188 9.00106 14.7339 8.99996 14.1429Z"
+                                                                        fill="white"/>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider">
+                        <div>
+                            <hr id="mhecomm-divider-146334272" class="opacity-100">
+                        </div>
+                    </div>
+
+                    <div class="experiencefragment">
+
+
+                        <div>
+
+
+                            <div class="cmp-container   " id="mh-container-2025554910">
+                                <div class="mhecomm-container-v2">
+
+
+                                    <style>
+
+                                        #mhecomm-container-v2-625247467 {
+                                            background-color: rgba(var(--bs-secondary-rgb), 100%)
+                                        }
+                                    </style>
+                                    <div id="mhecomm-container-v2-625247467" class="container-fluid g-0 ">
+                                        <div class="container g-0  pt-0 pt-sm-0 pt-md-0 pt-lg-0   ">
+
+
+                                            <div class="spacer">
+                                                <div id="ss-spacer-45575499">
+                                                    <div class="d-block d-sm-none" style="height:10px"></div>
+                                                    <div class="d-none d-sm-block d-md-none" style="height:10px"></div>
+                                                    <div class="d-none d-md-block d-lg-none" style="height:10px"></div>
+                                                    <div class="d-none d-lg-block" style="height:10px"></div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                            <div class="mhecomm-column-v2">
+
+
+                                                <style>
+
+
+                                                </style>
+
+                                                <div class="px-4 px-lg-2">
+                                                    <div id="mhecomm-col-v2-883204196"
+                                                         class="row d-none d-sm-flex d-sm-none d-md-flex d-md-none d-lg-flex   py-lg-0 d-flex flex-row flex-lg-row align-items-lg-start ">
+                                                        <div class="col-lg-12 col-sm-12 pb-3 pb-lg-0">
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+
+                                                            
+                                                            
+                                                            <div class="mhecomm-copyright">
+                                                                <div class="text-center">
+                                                                    <p class="text-white">© 2024 <a href="#"
+                                                                                                    class="text-white"><span>MAK HILL Publications</span></a>.
+                                                                        All Rights Reserved</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+
+
+                                            
+
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+
+
+                                            
+                                            
+                                            
+                                            
+
+
+                                            
+
+                                            
+
+
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+
+
+                                            
+
+
+                                            
+
+
+                                            
+
+                                            
+                                            
+                                            
+
+
+                                            
+
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+
+                                            
+                                            
+                                            
+                                            
+
+
+                                            
+
+
+                                            
+
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+                                            
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+
+
+
+                                            
+                                            
+                                            
+                                            
+
+
+                                            
+
+                                            
+
+
+                                            
+                                            
+                                            
+                                            
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- container where the experience fragment will load Asynchronously if its running in an author instance  -->
+
+                    </div>
+
+                    <div class="spacer">
+                        <div id="ss-spacer-486823787">
+                            <div class="d-block d-sm-none" style="height:20px"></div>
+                            <div class="d-none d-sm-block d-md-none" style="height:20px"></div>
+                            <div class="d-none d-md-block d-lg-none" style="height:20px"></div>
+                            <div class="d-none d-lg-block" style="height:20px"></div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="experiencefragment">
+
+
+                        <div>
+
+                            <style></style>
+
+
+                            <div class="cmp-container   " id="mh-container-977729849">
+                                <div class="ss-modal">
+
+
+                                    <div>
+                                        <!-- This container div is important so that the uxt btn-group-separator css works as expected -->
+                                        <!-- this is the legacy button kept for backward compatibility -->
+
+
+                                        <!-- this is the current consistent button -->
+
+
+                                        <div class="modal nav-modal  fade" id="signinmodalfooter" tabindex="-1"
+                                             aria-labelledby="ss-modal-header-1273033166"
+                                             aria-describedby="content-ss-modal-header-1273033166"
+                                             style="display: none;"
+                                             aria-hidden="true">
+                                            <div
+                                                    class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down text-start  "
+                                                    role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header align-items-start ">
+
+
+                                                        <h2 id="ss-modal-header-1273033166"
+                                                            class="modal-title fs-5 w-100 text-start">Sign In</h2>
+
+                                                        <button type="button" class="btn-close mt-0 mh-emit close"
+                                                                data-layer-comp="modal" data-layer-close="close-modal"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" id="content-ss-modal-header-1273033166">
+
+
+                                                        <style></style>
+
+
+                                                        <div class="cmp-container   " id="mh-container-411456365">
+                                                            <div class="title"><h6 class="text-start  fw-semibold "
+                                                                                   style="color: var(ss-text-color-1)"
+                                                                                   id="ss-title-1073672117">
+                                                                    Select your Higher Ed platform
+                                                                </h6>
+                                                            </div>
+                                                            <div class="buildingblock responsivegrid">
+
+                                                                <!--Responsive grid-->
+
+                                                                <div
+                                                                        class="aem-Grid aem-Grid--12 aem-Grid--default--12  xf-master-building-block">
+
+
+                                                                    <div
+                                                                            class="linkslist aem-GridColumn aem-GridColumn--default--12">
+
+
+                                                                        <ul id="mh-ecomm-links-list-1161483409"
+                                                                            class="list-unstyled ">
+                                                                            <li>
+                                                                                <a class="  pt-0  mh-emit d-block"
+                                                                                   data-layer-comp="linkslist"
+                                                                                   data-layer-index="0"
+                                                                                   href="https://connect.mheducation.com/connect/login/index.htm?&amp;BRANDING_VARIANT_KEY=en_us_default_default&amp;node=connect_app_11_20"
+                                                                                   target="_blank"
+                                                                                   title="HigherEd Platform Sign In: Connect"
+                                                                                   aria-label="HigherEd Platform Sign In: Connect"
+                                                                                   data-layer-label="HigherEd Platform Sign In: Connect">Connect</a>
+                                                                            </li>
+
+
+                                                                            <li>
+                                                                                <a class="    mh-emit d-block"
+                                                                                   data-layer-comp="linkslist"
+                                                                                   data-layer-index="1"
+                                                                                   href="https://www.connectmath.com/"
+                                                                                   target="_blank"
+                                                                                   title="HigherEd Platform Sign In: Connect Math Hosted by ALEKS"
+                                                                                   aria-label="HigherEd Platform Sign In: Connect Math Hosted by ALEKS"
+                                                                                   data-layer-label="HigherEd Platform Sign In: Connect Math Hosted by ALEKS">Connect
+                                                                                    Math Hosted by ALEKS</a>
+                                                                            </li>
+
+
+                                                                            <li>
+                                                                                <a class="    mh-emit d-block"
+                                                                                   data-layer-comp="linkslist"
+                                                                                   data-layer-index="2"
+                                                                                   href="https://www.aleks.com/login"
+                                                                                   target="_blank"
+                                                                                   title="HigherEd Platform Sign In: ALEKS"
+                                                                                   aria-label="HigherEd Platform Sign In: ALEKS"
+                                                                                   data-layer-label="HigherEd Platform Sign In: ALEKS">ALEKS</a>
+                                                                            </li>
+
+
+                                                                            <li>
+                                                                                <a class="   pb-0 mh-emit d-block"
+                                                                                   data-layer-comp="linkslist"
+                                                                                   data-layer-index="3"
+                                                                                   href="https://myebooks.mheducation.com/"
+                                                                                   target="_self"
+                                                                                   title="HigherEd Platform Sign In: My Bookshelf (eBook Access)"
+                                                                                   aria-label="HigherEd Platform Sign In: My Bookshelf (eBook Access)"
+                                                                                   data-layer-label="HigherEd Platform Sign In: My Bookshelf (eBook Access)">My
+                                                                                    Bookshelf (eBook Access)</a>
+                                                                            </li>
+
+                                                                        </ul>
+
+
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <!--End of responsive grid-->
+                                                            </div>
+                                                            <div class="responsivegrid">
+
+
+                                                                <div
+                                                                        class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+
+                                                                    <div
+                                                                            class="title aem-GridColumn aem-GridColumn--default--12">
+                                                                        <h6 class="text-start  fw-semibold "
+                                                                            style="color: var(ss-text-color-1)"
+                                                                            id="ss-title-1683839283">
+                                                                            Select your PreK–12 platform
+                                                                        </h6>
+                                                                    </div>
+                                                                    <div
+                                                                            class="buildingblock responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+                                                                        <!--Responsive grid-->
+
+                                                                        <div
+                                                                                class="aem-Grid aem-Grid--12 aem-Grid--default--12  xf-master-building-block">
+
+
+                                                                            <div
+                                                                                    class="linkslist aem-GridColumn aem-GridColumn--default--12">
+
+
+                                                                                <ul id="mh-ecomm-links-list-1147258628"
+                                                                                    class="list-unstyled ">
+                                                                                    <li>
+                                                                                        <a class="  pt-0  mh-emit d-block"
+                                                                                           data-layer-comp="linkslist"
+                                                                                           data-layer-index="0"
+                                                                                           href="https://www.aleks.com/login"
+                                                                                           target="_blank"
+                                                                                           title="Prek-12 Platform Sign In: ALEKS"
+                                                                                           aria-label="Prek-12 Platform Sign In: ALEKS"
+                                                                                           data-layer-label="Prek-12 Platform Sign In: ALEKS">ALEKS</a>
+                                                                                    </li>
+
+
+                                                                                    <li>
+                                                                                        <a class="    mh-emit d-block"
+                                                                                           data-layer-comp="linkslist"
+                                                                                           data-layer-index="1"
+                                                                                           href="https://my.mheducation.com/login"
+                                                                                           target="_blank"
+                                                                                           title="Prek-12 Platform Sign In: AP/Honors &amp; Electives"
+                                                                                           aria-label="Prek-12 Platform Sign In: AP/Honors &amp; Electives"
+                                                                                           data-layer-label="Prek-12 Platform Sign In: AP/Honors &amp; Electives">AP/Honors
+                                                                                            &amp; Electives</a>
+                                                                                    </li>
+
+
+                                                                                    <li>
+                                                                                        <a class="    mh-emit d-block"
+                                                                                           data-layer-comp="linkslist"
+                                                                                           data-layer-index="2"
+                                                                                           href="https://connected.mak-hill.com/connected/login.do"
+                                                                                           target="_blank"
+                                                                                           title="Prek-12 Platform Sign In: ConnectED"
+                                                                                           aria-label="Prek-12 Platform Sign In: ConnectED"
+                                                                                           data-layer-label="Prek-12 Platform Sign In: ConnectED">ConnectED</a>
+                                                                                    </li>
+
+
+                                                                                    <li>
+                                                                                        <a class="    mh-emit d-block"
+                                                                                           data-layer-comp="linkslist"
+                                                                                           data-layer-index="3"
+                                                                                           href="https://my.mheducation.com/login"
+                                                                                           target="_blank"
+                                                                                           title="Prek-12 Platform Sign In: my.mheducation.com"
+                                                                                           aria-label="Prek-12 Platform Sign In: my.mheducation.com"
+                                                                                           data-layer-label="Prek-12 Platform Sign In: my.mheducation.com">my.mheducation.com</a>
+                                                                                    </li>
+
+
+                                                                                    <li>
+                                                                                        <a class="    mh-emit d-block"
+                                                                                           data-layer-comp="linkslist"
+                                                                                           data-layer-index="4"
+                                                                                           href="https://my.mheducation.com/login"
+                                                                                           target="_blank"
+                                                                                           title="Prek-12 Platform Sign In: Open Learning Platform"
+                                                                                           aria-label="Prek-12 Platform Sign In: Open Learning Platform"
+                                                                                           data-layer-label="Prek-12 Platform Sign In: Open Learning Platform">Open
+                                                                                            Learning Platform</a>
+                                                                                    </li>
+
+
+                                                                                    <li>
+                                                                                        <a class="   pb-0 mh-emit d-block"
+                                                                                           data-layer-comp="linkslist"
+                                                                                           data-layer-index="5"
+                                                                                           href="https://my.mheducation.com/login"
+                                                                                           target="_blank"
+                                                                                           title="Prek-12 Platform Sign In: Redbird"
+                                                                                           aria-label="Prek-12 Platform Sign In: Redbird"
+                                                                                           data-layer-label="Prek-12 Platform Sign In: Redbird">Redbird</a>
+                                                                                    </li>
+
+                                                                                </ul>
+
+
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                        <!--End of responsive grid-->
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="title"><h6 class="text-start  fw-semibold "
+                                                                                   style="color: var(ss-text-color-1)"
+                                                                                   id="ss-title-360148515">
+                                                                    Select your Professional platform
+                                                                </h6>
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-tag="fa4 login"
+                                                                       data-layer-label="First Aid Forward"
+                                                                       data-layer-eventname="fa4 login"
+                                                                       data-layer-subarea="globalnav"
+                                                                       data-layer-id="fa4-login"
+                                                                       href="https://firstaid.mheducation.com/mg/auth"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none ps-0 px-md-0 px-sm-0 px-0 px-lg-0 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="fa4-login"
+                                                                       id="fa4-login" data-layer-link-type="url"
+                                                                       target="_blank">
+
+
+                                                                        First Aid Forward
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="spacer">
+                                                                <div id="ss-spacer-2079466473">
+                                                                    <div class="d-block d-sm-none"
+                                                                         style="height:15px"></div>
+                                                                    <div class="d-none d-sm-block d-md-none"
+                                                                         style="height:15px"></div>
+                                                                    <div class="d-none d-md-block d-lg-none"
+                                                                         style="height:15px"></div>
+                                                                    <div class="d-none d-lg-block"
+                                                                         style="height:15px"></div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="title"><h6 class="text-start  fw-semibold "
+                                                                                   style="color: var(ss-text-color-1)"
+                                                                                   id="ss-title-1349886670">
+                                                                    Sign in to mheducation.com
+                                                                </h6>
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Sign In"
+                                                                       data-layer-id="modalSigninUrl"
+                                                                       href="https://shop.mheducation.com/login?redirectUrl=https%3A%2F%2Fwww.mheducation.com%2F"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-shopLogin text-decoration-none ps-0 px-md-0 px-sm-0 px-0 px-lg-0 "
+                                                                       data-layer-comp="text"
+                                                                       data-automation-id="modalSigninUrl"
+                                                                       data-layer-target="modalSigninUrl"
+                                                                       id="modalSigninUrl"
+                                                                       data-layer-link-type="shopLogin"
+                                                                       target="_self">
+
+
+                                                                        Sign In
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="ss-modal">
+
+
+                                    <div>
+                                        <!-- This container div is important so that the uxt btn-group-separator css works as expected -->
+                                        <!-- this is the legacy button kept for backward compatibility -->
+
+
+                                        <!-- this is the current consistent button -->
+
+
+                                        <div class="modal nav-modal  fade" id="aboutmodalfooter" tabindex="-1"
+                                             aria-labelledby="ss-modal-header-1551954243"
+                                             aria-describedby="content-ss-modal-header-1551954243"
+                                             style="display: none;"
+                                             aria-hidden="true">
+                                            <div
+                                                    class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down text-start  "
+                                                    role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header align-items-start ">
+
+
+                                                        <h2 id="ss-modal-header-1551954243"
+                                                            class="modal-title fs-5 w-100 text-start">About</h2>
+
+                                                        <button type="button" class="btn-close mt-0 mh-emit close"
+                                                                data-layer-comp="modal" data-layer-close="close-modal"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" id="content-ss-modal-header-1551954243">
+
+
+                                                        <style></style>
+
+
+                                                        <div class="cmp-container   " id="mh-container-681253140">
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="About Us"
+                                                                       data-layer-id="ss-button-539674953"
+                                                                       href="https://www.mheducation.com/about.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url   "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-539674953"
+                                                                       id="ss-button-539674953"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        About Us
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="News &amp; Insights"
+                                                                       data-layer-id="ss-button-678864573"
+                                                                       href="https://www.mheducation.com/news-insights.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url   "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-678864573"
+                                                                       id="ss-button-678864573"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        News &amp; Insights
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Careers"
+                                                                       data-layer-id="ss-button-1540944781"
+                                                                       href="https://careers.mheducation.com/"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url   "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-1540944781"
+                                                                       id="ss-button-1540944781"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        Careers
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Diversity, Equity &amp; Inclusion"
+                                                                       data-layer-id="ss-button-714948200"
+                                                                       href="https://www.mheducation.com/about/diversity-equity-inclusion.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url   "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-714948200"
+                                                                       id="ss-button-714948200"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        Diversity, Equity &amp; Inclusion
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Social Responsibility"
+                                                                       data-layer-id="ss-button-669473636"
+                                                                       href="https://www.mheducation.com/about/social-responsibility-sustainability.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url   "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-669473636"
+                                                                       id="ss-button-669473636"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        Social Responsibility
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="ss-modal">
+
+
+                                    <div>
+                                        <!-- This container div is important so that the uxt btn-group-separator css works as expected -->
+                                        <!-- this is the legacy button kept for backward compatibility -->
+
+
+                                        <!-- this is the current consistent button -->
+
+
+                                        <div class="modal redi-modal-handle  fade" id="getsupportmodalfooter"
+                                             tabindex="-1"
+                                             aria-labelledby="ss-modal-header-1456895056"
+                                             aria-describedby="content-ss-modal-header-1456895056"
+                                             style="display: none;"
+                                             aria-hidden="true">
+                                            <div
+                                                    class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down text-start  "
+                                                    role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header align-items-start ">
+
+
+                                                        <h2 id="ss-modal-header-1456895056"
+                                                            class="modal-title fs-5 w-100 text-start">Get Support</h2>
+
+                                                        <button type="button" class="btn-close mt-0 mh-emit close"
+                                                                data-layer-comp="modal" data-layer-close="close-modal"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" id="content-ss-modal-header-1456895056">
+
+
+                                                        <style></style>
+
+
+                                                        <div class="cmp-container   " id="mh-container-1120540945">
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="PreK–12"
+                                                                       data-layer-id="gs_prek12_link"
+                                                                       href="https://www.mheducation.com/prek-12/contact.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="gs_prek12_link"
+                                                                       id="gs_prek12_link" data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        PreK–12
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Higher Ed"
+                                                                       data-layer-id="gs_he_link"
+                                                                       href="https://www.mheducation.com/highered/contact.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="gs_he_link"
+                                                                       id="gs_he_link" data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        Higher Ed
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Professional"
+                                                                       data-layer-id="gs_professional_link"
+                                                                       href="//www.mhprofessional.com/contact-us"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="gs_professional_link"
+                                                                       id="gs_professional_link"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        Professional
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="International"
+                                                                       data-layer-id="gs_international_link"
+                                                                       href="https://www.mheducation.com/locations/international-support.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none  "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="gs_international_link"
+                                                                       id="gs_international_link"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        International
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="ss-modal">
+
+
+                                    <div>
+                                        <!-- This container div is important so that the uxt btn-group-separator css works as expected -->
+                                        <!-- this is the legacy button kept for backward compatibility -->
+
+
+                                        <!-- this is the current consistent button -->
+
+
+                                        <div class="modal nav-modal fade" id="hamburgermenufooter" tabindex="-1"
+                                             aria-labelledby="ss-modal-header-1785566925"
+                                             aria-describedby="content-ss-modal-header-1785566925"
+                                             style="display: none;"
+                                             aria-hidden="true">
+                                            <div
+                                                    class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down text-start  "
+                                                    role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header align-items-start ">
+
+
+                                                        <h2 id="ss-modal-header-1785566925"
+                                                            class="modal-title fs-5 w-100 text-start">Mak Hill Publications</h2>
+
+                                                        <button type="button" class="btn-close mt-0 mh-emit close"
+                                                                data-layer-comp="modal" data-layer-close="close-modal"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" id="content-ss-modal-header-1785566925"
+                                                         data-gtm-vis-first-on-screen7308945_15="703830">
+
+
+                                                        <style></style>
+
+
+                                                        <div class="cmp-container   " id="mh-container-289455948">
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="PreK–12"
+                                                                       data-layer-subarea="body"
+                                                                       data-layer-id="ss-button-841052093"
+                                                                       href="https://www.mheducation.com/prek-12/home-guest.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url  mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-841052093"
+                                                                       id="ss-button-841052093"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        PreK–12
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Higher Ed"
+                                                                       data-layer-id="ss-button-1127048606"
+                                                                       href="https://www.mheducation.com/highered/home-guest.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-1127048606"
+                                                                       id="ss-button-1127048606"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        Higher Ed
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="Professional"
+                                                                       data-layer-id="ss-button-73969787"
+                                                                       href="https://www.mhprofessional.com/"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-73969787"
+                                                                       id="ss-button-73969787"
+                                                                       data-layer-link-type="url"
+                                                                       target="_blank">
+
+
+                                                                        Professional
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="button">
+
+
+                                                                <div class="text-start ">
+
+
+                                                                    <a data-layer-label="International"
+                                                                       data-layer-id="ss-button-1810173200"
+                                                                       href="https://www.mheducation.com/global-sites.html"
+                                                                       class="mh-emit d-inline-block btn-link link-primary  link-type-url text-decoration-none mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                       data-layer-comp="text"
+                                                                       data-layer-target="ss-button-1810173200"
+                                                                       id="ss-button-1810173200"
+                                                                       data-layer-link-type="url"
+                                                                       target="_self">
+
+
+                                                                        International
+
+
+                                                                    </a>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="ss-modal">
+
+
+                                                                <div>
+                                                                    <!-- This container div is important so that the uxt btn-group-separator css works as expected -->
+                                                                    <!-- this is the legacy button kept for backward compatibility -->
+
+
+                                                                    <!-- this is the current consistent button -->
+                                                                    <div>
+
+
+                                                                        <div class="text-start ">
+
+
+                                                                            <a data-layer-label="About"
+                                                                               data-layer-subarea="body"
+                                                                               data-layer-id="mhecomm-modal-button-2057026983"
+                                                                               href="#"
+                                                                               class="mh-emit d-inline-block btn-link link-primary  link-type-url  mb-sm-2 mb-lg-2 mb-2 mb-md-2 "
+                                                                               data-layer-comp="text"
+                                                                               data-bs-target="#aboutmodalfooter"
+                                                                               data-bs-toggle="modal"
+                                                                               data-layer-target="mhecomm-modal-button-2057026983"
+                                                                               aria-haspopup="dialog"
+                                                                               id="mhecomm-modal-button-2057026983"
+                                                                               data-layer-link-type="url"
+                                                                               target="_self">
+
+
+                                                                                About
+                                                                                <uxt-icon icon="chevron-right-sm">
+                                                                                    <svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 16 16"
+                                                                                            class="mh-icon"
+                                                                                            width="16px" height="16px">
+                                                                                        <path
+                                                                                                d="m7.03 3.97 3.5 3.5a.75.75 0 0 1 .073.976l-.073.084-3.5 3.5-1.06-1.06L8.939 8l-2.97-2.97L7.03 3.97Z"></path>
+                                                                                    </svg>
+                                                                                </uxt-icon>
+
+                                                                            </a>
+
+                                                                        </div>
+
+
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="ss-modal">
+
+
+                                                                <div>
+                                                                    <!-- This container div is important so that the uxt btn-group-separator css works as expected -->
+                                                                    <!-- this is the legacy button kept for backward compatibility -->
+
+
+                                                                    <!-- this is the current consistent button -->
+                                                                    <div>
+
+
+                                                                        <div class="text-start ">
+
+
+                                                                            <a data-layer-label="Get Support"
+                                                                               data-layer-subarea="body"
+                                                                               data-layer-id="mhecomm-modal-button-2055603576"
+                                                                               href="#"
+                                                                               class="mh-emit d-inline-block btn-link link-primary  link-type-url   "
+                                                                               data-layer-comp="text"
+                                                                               data-bs-target="#getsupportmodalfooter"
+                                                                               data-bs-toggle="modal"
+                                                                               data-layer-target="mhecomm-modal-button-2055603576"
+                                                                               aria-haspopup="dialog"
+                                                                               id="mhecomm-modal-button-2055603576"
+                                                                               data-layer-link-type="url"
+                                                                               target="_self">
+
+
+                                                                                Get Support
+                                                                                <uxt-icon icon="chevron-right-sm">
+                                                                                    <svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 16 16"
+                                                                                            class="mh-icon"
+                                                                                            width="16px" height="16px">
+                                                                                        <path
+                                                                                                d="m7.03 3.97 3.5 3.5a.75.75 0 0 1 .073.976l-.073.084-3.5 3.5-1.06-1.06L8.939 8l-2.97-2.97L7.03 3.97Z"></path>
+                                                                                    </svg>
+                                                                                </uxt-icon>
+
+                                                                            </a>
+
+                                                                        </div>
+
+
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- container where the experience fragment will load Asynchronously if its running in an author instance  -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backtotop">
+        <style>
+            #back-to-top {
+                bottom: 15px;
+                right: 0;
+                background-color: #ffffff;
+            }
+
+            #back-to-top:focus-within {
+                outline: 1px solid #ffffff;
+                outline-offset: 0.1rem;
+            }
+
+            #back-to-top button:focus {
+                outline: none;
+            }
+
+            #back-to-top button {
+                aspect-ratio: 1;
+            }
+
+            .btn-primary {
+                color: #fff;
+                background-color: #e21a23;
+                border-color: #e21a23;
+            }
+        </style>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        // show the alert
+        // setTimeout(function() {
+        //     $(".alert").alert('close');
+        // }, 2000);
+    });
+
+</script>
+<meta name="copyright" content=" Mak Hill Publications, Copyright � 2024 All Right Reserved.">
+<meta name="distribution" content="Global">
+<meta name="rating" content="General">
+<meta name="revisit-after" content="2 days">
+</body>
+</html>

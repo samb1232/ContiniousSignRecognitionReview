@@ -1,0 +1,19 @@
+{
+  "retrieved_occurrences": 7,
+  "unique_openalex_ids": 7,
+  "unique_after_doi_grouping": 7,
+  "doi_conflicts": {},
+  "metadata_conflicts": 0,
+  "per_query": {
+    "s1": {
+      "retrieved": 7,
+      "reported_total": 7,
+      "complete": true
+    },
+    "s2": {
+      "retrieved": 0,
+      "reported_total": 0,
+      "complete": true
+    }
+  }
+}

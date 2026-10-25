@@ -1,0 +1,77 @@
+{
+  "run_id": "20261025T080949956743Z-full",
+  "stage": "full",
+  "started_utc": "2026-10-25T08:09:50.044350+00:00",
+  "status": "complete",
+  "task_budget_credits": 300,
+  "credits_reserved": 1,
+  "code_version": "2158a2573b7c14c785e8cadc81f87f6f5f8a1d49",
+  "python": "3.14.2",
+  "dependencies": "Python standard library only",
+  "requests": [
+    {
+      "index": 1,
+      "utc": "2026-10-25T08:09:50.046440+00:00",
+      "endpoint": "/rate-limit",
+      "params": {},
+      "reserved_credits": 0,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0001.json",
+      "sha256": "5d5d1a05242070cced03392565df21a23df1a348c1664938f1a0af8d21b56c74",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json"
+      },
+      "finished_utc": "2026-10-25T08:09:50.403698+00:00"
+    },
+    {
+      "index": 2,
+      "utc": "2026-10-25T08:09:50.406770+00:00",
+      "endpoint": "/works",
+      "params": {
+        "corpus": "all",
+        "per_page": 100,
+        "filter": "doi:https://doi.org/10.36478/jeasci.2020.1205.1227",
+        "cursor": "*"
+      },
+      "reserved_credits": 1,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0002.json",
+      "sha256": "773c0e45a4f8c0b0c38aded1fe86a5469658a3d27a1d452cefa6054b55fdd1db",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.0001",
+        "x-ratelimit-credits-used": "1",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9899",
+        "x-ratelimit-remaining-usd": "0.9899",
+        "x-ratelimit-reset": "57009"
+      },
+      "finished_utc": "2026-10-25T08:09:51.082877+00:00"
+    }
+  ],
+  "events": [],
+  "queries": {
+    "doi-ibrahim": {
+      "pages": [
+        {
+          "body": "raw/0002.json",
+          "cursor": "*",
+          "sha256": "773c0e45a4f8c0b0c38aded1fe86a5469658a3d27a1d452cefa6054b55fdd1db"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 1
+    }
+  },
+  "account_remaining_at_start": 9900.0,
+  "finished_utc": "2026-10-25T08:09:52.092881+00:00",
+  "task_credits_reserved_at_finish": 101
+}

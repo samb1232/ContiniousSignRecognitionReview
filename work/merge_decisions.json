@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25",
+  "decisions": [
+    {
+      "ids": [
+        "W3024462586",
+        "W7116134615"
+      ],
+      "decision": "keep_separate",
+      "reason": "Similar iterative-training titles but different authors, dates, DOIs and inspected full texts."
+    },
+    {
+      "ids": [
+        "W4408859567",
+        "W7170206172"
+      ],
+      "decision": "link_notice_do_not_merge",
+      "reason": "Original review and separate Expression of Concern."
+    },
+    {
+      "ids": [
+        "W7223099906"
+      ],
+      "decision": "one_work_multiple_repository_identifiers",
+      "reason": "Zenodo concept record 23527485 resolves to version 23527486; saved metadata and DOCX identify same title and authors."
+    },
+    {
+      "ids": [
+        "W4415763805"
+      ],
+      "decision": "correct_display_date_only",
+      "reason": "OpenAlex uses 2025-01-01; publisher explicitly dates publication 2025-11-04. Preserve raw metadata."
+    },
+    {
+      "ids": [
+        "W4408859567"
+      ],
+      "decision": "correct_display_date_only",
+      "reason": "OpenAlex uses 2025-01-01; published PDF dates publication 2025-03-25. Preserve raw metadata."
+    },
+    {
+      "ids": [
+        "W2992983807"
+      ],
+      "decision": "uncertain_date_keep_boundary_candidate",
+      "reason": "OpenAlex date before 2020 conflicts with 2020 PDF issue and 2022 current publisher page. Do not silently override."
+    }
+  ]
+}

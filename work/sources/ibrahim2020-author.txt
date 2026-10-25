@@ -1,0 +1,91 @@
+
+--- PDF page 1 ---
+
+
+--- PDF page 2 ---
+Grammar 
+model Sentences recognition Word recognition 
+Deaf  and  Mute   Sign      Language Deaf       Mute       Sign    Language
+Word segmentation 
+Sign language 
+vocabulary
+Manual and non-manual 
+Feature extractionFace and hand detection 
+Continuous sign language system general frame work 
+me sign me sign sign me … 
+… me sign 1 sign 2 sign 3 si gn N 
+Sentence 
+
+--- PDF page 3 ---
+
+
+--- PDF page 4 ---
+
+
+--- PDF page 5 ---
+
+
+--- PDF page 6 ---
+Movement epenthesis detection method
+
+--- PDF page 7 ---
+
+
+--- PDF page 8 ---
+
+
+--- PDF page 9 ---
+
+
+--- PDF page 10 ---
+
+
+--- PDF page 11 ---
+
+
+--- PDF page 12 ---
+
+
+--- PDF page 13 ---
+
+
+--- PDF page 14 ---
+
+
+--- PDF page 15 ---
+ASL
+32%
+InSL
+11%
+ArSL
+11%
+CSL
+16%
+GSL
+30%
+(a)
+# of research papers
+(b)
+
+--- PDF page 16 ---
+
+
+--- PDF page 17 ---
+
+
+--- PDF page 18 ---
+
+
+--- PDF page 19 ---
+
+
+--- PDF page 20 ---
+
+
+--- PDF page 21 ---
+
+
+--- PDF page 22 ---
+
+
+--- PDF page 23 ---

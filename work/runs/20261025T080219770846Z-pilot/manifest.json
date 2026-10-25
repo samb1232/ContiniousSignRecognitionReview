@@ -1,0 +1,413 @@
+{
+  "run_id": "20261025T080219770846Z-pilot",
+  "stage": "pilot",
+  "started_utc": "2026-10-25T08:02:19.798138+00:00",
+  "status": "complete",
+  "task_budget_credits": 300,
+  "credits_reserved": 80,
+  "code_version": "2158a2573b7c14c785e8cadc81f87f6f5f8a1d49",
+  "python": "3.14.2",
+  "dependencies": "Python standard library only",
+  "requests": [
+    {
+      "index": 1,
+      "utc": "2026-10-25T08:02:19.799519+00:00",
+      "endpoint": "/rate-limit",
+      "params": {},
+      "reserved_credits": 0,
+      "attempt": 1,
+      "outcome": "failed",
+      "error_class": "URLError",
+      "body": "raw/0001.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": null,
+      "headers": {},
+      "finished_utc": "2026-10-25T08:02:19.851690+00:00"
+    },
+    {
+      "index": 2,
+      "utc": "2026-10-25T08:02:42.451765+00:00",
+      "endpoint": "/rate-limit",
+      "params": {},
+      "reserved_credits": 0,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0002.json",
+      "sha256": "6a4a8888b3b8f4e9c74b17bfbb9e4f069bbd7fe734fb7222de8c083e86c75220",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json"
+      },
+      "finished_utc": "2026-10-25T08:02:43.266852+00:00"
+    },
+    {
+      "index": 3,
+      "utc": "2026-10-25T08:02:43.269308+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"review\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0003.json",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9990",
+        "x-ratelimit-remaining-usd": "0.999",
+        "x-ratelimit-reset": "57436"
+      },
+      "finished_utc": "2026-10-25T08:02:45.657439+00:00"
+    },
+    {
+      "index": 4,
+      "utc": "2026-10-25T08:02:46.669240+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"survey\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0004.json",
+      "sha256": "8c3091717dbc3dc222752d4ec07c089cc6bcc67c7288234945327b721540a3dd",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9980",
+        "x-ratelimit-remaining-usd": "0.998",
+        "x-ratelimit-reset": "57433"
+      },
+      "finished_utc": "2026-10-25T08:02:47.983370+00:00"
+    },
+    {
+      "index": 5,
+      "utc": "2026-10-25T08:02:48.989402+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"systematic literature review\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0005.json",
+      "sha256": "a8b32ce00bdb8089f79f3002c003c45b91dd4863a4cc781f94c7fe1d5a01f66f",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9970",
+        "x-ratelimit-remaining-usd": "0.997",
+        "x-ratelimit-reset": "57431"
+      },
+      "finished_utc": "2026-10-25T08:02:50.081223+00:00"
+    },
+    {
+      "index": 6,
+      "utc": "2026-10-25T08:02:51.090258+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign language recognition\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0006.json",
+      "sha256": "dc6d80343a40d1ade9186918d6baf4d910631dd8c7f76c692c685ccdd1a799c3",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9960",
+        "x-ratelimit-remaining-usd": "0.996",
+        "x-ratelimit-reset": "57429"
+      },
+      "finished_utc": "2026-10-25T08:02:51.992685+00:00"
+    },
+    {
+      "index": 7,
+      "utc": "2026-10-25T08:02:53.001497+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"review\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0007.json",
+      "sha256": "3a4bbefa6b70290a6575a2ca23cb561966187c76e986dbc27f08156e45b1a376",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9950",
+        "x-ratelimit-remaining-usd": "0.995",
+        "x-ratelimit-reset": "57426"
+      },
+      "finished_utc": "2026-10-25T08:02:56.898792+00:00"
+    },
+    {
+      "index": 8,
+      "utc": "2026-10-25T08:02:57.915740+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"survey\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0008.json",
+      "sha256": "84baea65ac101990506046824a6ff83b1a7cb3b810a0d9f5cc342b65b14394d6",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9940",
+        "x-ratelimit-remaining-usd": "0.994",
+        "x-ratelimit-reset": "57422"
+      },
+      "finished_utc": "2026-10-25T08:02:59.097929+00:00"
+    },
+    {
+      "index": 9,
+      "utc": "2026-10-25T08:03:00.106598+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"systematic literature review\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0009.json",
+      "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9930",
+        "x-ratelimit-remaining-usd": "0.993",
+        "x-ratelimit-reset": "57420"
+      },
+      "finished_utc": "2026-10-25T08:03:01.186392+00:00"
+    },
+    {
+      "index": 10,
+      "utc": "2026-10-25T08:03:02.197252+00:00",
+      "endpoint": "/works",
+      "params": {
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review",
+        "corpus": "all",
+        "sort": "publication_date:asc",
+        "per_page": 100,
+        "search.title_abstract_keywords": "\"continuous sign recognition\"",
+        "cursor": "*"
+      },
+      "reserved_credits": 10,
+      "attempt": 1,
+      "outcome": "success",
+      "body": "raw/0010.json",
+      "sha256": "0f20bc34d14781cd2f36d809569d9b7b39a6eae53788e49ff8d916db78b40be5",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "x-ratelimit-cost-usd": "0.001",
+        "x-ratelimit-credits-used": "10",
+        "x-ratelimit-limit": "10000",
+        "x-ratelimit-limit-usd": "1",
+        "x-ratelimit-onetime-remaining": "0",
+        "x-ratelimit-prepaid-remaining-usd": "0",
+        "x-ratelimit-remaining": "9920",
+        "x-ratelimit-remaining-usd": "0.992",
+        "x-ratelimit-reset": "57417"
+      },
+      "finished_utc": "2026-10-25T08:03:03.290680+00:00"
+    }
+  ],
+  "events": [
+    {
+      "event": "resume",
+      "utc": "2026-10-25T08:02:34.397181+00:00"
+    },
+    {
+      "event": "resume",
+      "utc": "2026-10-25T08:02:42.450028+00:00",
+      "source_snapshot": "source/retrieve-resume-2.py"
+    }
+  ],
+  "queries": {
+    "q11": {
+      "pages": [
+        {
+          "body": "raw/0003.json",
+          "cursor": "*",
+          "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 24
+    },
+    "q12": {
+      "pages": [
+        {
+          "body": "raw/0004.json",
+          "cursor": "*",
+          "sha256": "8c3091717dbc3dc222752d4ec07c089cc6bcc67c7288234945327b721540a3dd"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 11
+    },
+    "q13": {
+      "pages": [
+        {
+          "body": "raw/0005.json",
+          "cursor": "*",
+          "sha256": "a8b32ce00bdb8089f79f3002c003c45b91dd4863a4cc781f94c7fe1d5a01f66f"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 3
+    },
+    "q1r": {
+      "pages": [
+        {
+          "body": "raw/0006.json",
+          "cursor": "*",
+          "sha256": "dc6d80343a40d1ade9186918d6baf4d910631dd8c7f76c692c685ccdd1a799c3"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 3
+    },
+    "q21": {
+      "pages": [
+        {
+          "body": "raw/0007.json",
+          "cursor": "*",
+          "sha256": "3a4bbefa6b70290a6575a2ca23cb561966187c76e986dbc27f08156e45b1a376"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 26
+    },
+    "q22": {
+      "pages": [
+        {
+          "body": "raw/0008.json",
+          "cursor": "*",
+          "sha256": "84baea65ac101990506046824a6ff83b1a7cb3b810a0d9f5cc342b65b14394d6"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 9
+    },
+    "q23": {
+      "pages": [
+        {
+          "body": "raw/0009.json",
+          "cursor": "*",
+          "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 4
+    },
+    "q2r": {
+      "pages": [
+        {
+          "body": "raw/0010.json",
+          "cursor": "*",
+          "sha256": "0f20bc34d14781cd2f36d809569d9b7b39a6eae53788e49ff8d916db78b40be5"
+        }
+      ],
+      "complete": true,
+      "cursor": null,
+      "total": 5
+    }
+  },
+  "stop_reason": "API_access_failure_status_None",
+  "finished_utc": "2026-10-25T08:03:04.299150+00:00",
+  "task_credits_reserved_at_finish": 80,
+  "account_remaining_at_start": 10000.0
+}

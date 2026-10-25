@@ -1,0 +1,298 @@
+{
+  "missing_value_convention": {
+    "not_reported": "Relevant inspected full text does not report this item.",
+    "not_checked": "Not assessed or awaiting adjudication.",
+    "unavailable": "Source could not be obtained or access/rights not established."
+  },
+  "reviews": [
+    {
+      "openalex_id": "W4408859567",
+      "doi": "10.1109/ACCESS.2025.3554046",
+      "authors": "Khan et al.",
+      "year": 2025,
+      "publication_date_verified": "2025-03-25",
+      "openalex_date": "2025-01-01",
+      "url": "https://minhdl93.github.io/public/papers/asma_2025.pdf",
+      "evidence_level": "full_text",
+      "source_ids": [
+        "khan2025",
+        "khan2025-publisher",
+        "khan2025-status-web"
+      ],
+      "methods": "Spatial–temporal–alignment taxonomy; RGB, depth, pose and sensors; CNN/RNN/Transformer models, CTC and traditional approaches.",
+      "datasets_evaluation": "PHOENIX, CSL/CSL-Daily and other datasets; WER, signer-disjoint and unseen-sentence evaluation. Also includes isolated-sign and translation resources.",
+      "limitations": "Authors discuss naturalistic data, signer diversity, non-manual cues and efficiency. Our interpretation: task mixing limits direct comparison; no reproducible review search strategy identified.",
+      "integrity_note": "IEEE states that an Expression of Concern was issued on 22 July 2026. Retain the review as an eligible document with this explicit status flag; do not treat its claims as independently validated. [Publisher status](https://ieeexplore.ieee.org/abstract/document/10937713); notice DOI: 10.1109/ACCESS.2026.3715908. The reason for the notice was not inspected.",
+      "access": {
+        "status": "verified_open_full_text",
+        "license": "CC BY 4.0, PDF p.1",
+        "copy": "author-hosted published version"
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "PDF pp.2–3; II–III; IV.A–C (pp.9–12)",
+          "paraphrase": "Organizes recognition around visual, temporal and alignment modules."
+        },
+        {
+          "kind": "author_stated",
+          "locator": "PDF pp.2–3, 7–9; Table 3",
+          "paraphrase": "Discusses WER, evaluation splits, acquisition and dataset diversity."
+        },
+        {
+          "kind": "author_stated",
+          "locator": "PDF pp.14–16; IV.E–V",
+          "paraphrase": "Identifies generalization, non-manual signals and online efficiency challenges."
+        },
+        {
+          "kind": "analyst_interpretation",
+          "locator": "PDF pp.8–9,12; entire paper checked for search procedure",
+          "paraphrase": "Includes isolated-sign/translation material; systematic retrieval criteria are not reported."
+        }
+      ],
+      "coverage_status": {
+        "methods": "covered",
+        "datasets": "covered",
+        "evaluation": "covered",
+        "challenges": "covered",
+        "reproducible_review_search": "not_reported",
+        "independent_primary_result_verification": "not_checked"
+      }
+    },
+    {
+      "openalex_id": "W4415763805",
+      "doi": "10.2991/978-94-6463-858-5_161",
+      "authors": "SivaKumari and Raghavan",
+      "year": 2025,
+      "publication_date_verified": "2025-11-04",
+      "openalex_date": "2025-01-01",
+      "url": "https://www.atlantis-press.com/article/126017418.pdf",
+      "evidence_level": "full_text",
+      "source_ids": [
+        "sivakumari2025",
+        "sivakumari2025-publisher"
+      ],
+      "methods": "Video feature extraction, CNN/RNN hybrids, Transformers, multimodal/gloss features, CTC and encoder–decoder recognition.",
+      "datasets_evaluation": "Dataset table and WER/BLEU explanations; comparisons include both continuous and isolated tasks.",
+      "limitations": "Authors flag signer independence, model complexity and deployment. Our interpretation: accuracy results for isolated tasks cannot rank CSLR systems; reproducible search criteria are not reported.",
+      "access": {
+        "status": "verified_open_full_text",
+        "license": "CC BY-NC 4.0, publisher page and PDF p.16",
+        "copy": "publisher PDF"
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "Sections 2–4; PDF pp.3–11",
+          "paraphrase": "Reviews datasets, metrics, visual/text features and alignment."
+        },
+        {
+          "kind": "author_stated",
+          "locator": "Section 5; PDF p.12",
+          "paraphrase": "Highlights generalization, complexity and practical deployment."
+        },
+        {
+          "kind": "analyst_interpretation",
+          "locator": "Tables 1–3, especially PDF pp.6,10–11",
+          "paraphrase": "Combines distinct tasks and metrics; Table 2 includes a WER value alongside a statement that WER is unavailable."
+        },
+        {
+          "kind": "analyst_interpretation",
+          "locator": "Entire paper, PDF pp.1–16",
+          "paraphrase": "No reproducible search/selection procedure identified."
+        }
+      ],
+      "coverage_status": {
+        "methods": "covered",
+        "datasets": "covered",
+        "evaluation": "covered_with_task_mixing",
+        "challenges": "covered",
+        "reproducible_review_search": "not_reported",
+        "independent_primary_result_verification": "not_checked"
+      }
+    },
+    {
+      "openalex_id": "W7223099906",
+      "doi": "10.5281/zenodo.23527485",
+      "authors": "Kadam, More and Jadhav",
+      "year": 2026,
+      "publication_date_verified": "2026-10-21",
+      "url": "https://zenodo.org/records/23527485",
+      "evidence_level": "full_text",
+      "source_ids": [
+        "indian2026-zenodo",
+        "indian2026-docx"
+      ],
+      "publication_status": "repository report; peer review not established",
+      "methods": "Continuous Indian SLR; summarizes multiple architectures/training methods, then concentrates on the SignFlow CNN–Transformer–CTC framework.",
+      "datasets_evaluation": "Indian datasets, WER versus keyword detection, pretraining/ablation and deployment results reported by SignFlow’s authors.",
+      "limitations": "Explicitly critiques scripted data, signer independence, unpublished resources and non-manual omissions. Narrow, single-system emphasis; repository report with peer review unestablished, not a systematic field-wide synthesis.",
+      "access": {
+        "status": "verified_open_full_text",
+        "license": "CC BY 4.0 in Zenodo metadata",
+        "copy": "repository DOCX",
+        "version_note": "Concept record resolves to version record 23527486; preserve both."
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "DOCX Sections II–III, V–VIII",
+          "paraphrase": "Summarizes prior CSLR methods and the SignFlow case study."
+        },
+        {
+          "kind": "author_stated",
+          "locator": "DOCX Sections IX–XI",
+          "paraphrase": "Distinguishes benchmark from deployment metrics and questions robustness and reproducibility."
+        },
+        {
+          "kind": "analyst_interpretation",
+          "locator": "DOCX Sections III–XII and Zenodo resource_type",
+          "paraphrase": "Focused review report, dominated by one application; no systematic search criteria reported."
+        }
+      ],
+      "coverage_status": {
+        "methods": "covered",
+        "datasets": "covered_application_specific",
+        "evaluation": "covered_application_specific",
+        "challenges": "covered",
+        "reproducible_review_search": "not_reported",
+        "peer_review": "not_checked",
+        "independent_primary_result_verification": "not_checked"
+      }
+    },
+    {
+      "openalex_id": "W3024060113",
+      "doi": "10.1007/s11042-020-08961-z",
+      "authors": "Aloysius and Geetha",
+      "year": 2020,
+      "url": "https://link.springer.com/article/10.1007/s11042-020-08961-z",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "aloysius2020-publisher"
+      ],
+      "coverage_summary": "Publisher abstract: vision-based CSLR, HMM/CRF/DTW, movement epenthesis, emerging deep learning, sensor background, benchmark datasets and performance evaluation. Omissions cannot be established from the abstract.",
+      "access": {
+        "status": "unavailable",
+        "detail": "Publisher subscription preview; author-uploaded ResearchGate text visible via web tool but direct retrieval returned 403 and open-access rights were not established."
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "Publisher abstract",
+          "paraphrase": "Reviews vision-based CSLR approaches, challenges, benchmarks and performance."
+        }
+      ],
+      "coverage_status": {
+        "full_text": "unavailable",
+        "omissions": "not_checked"
+      }
+    },
+    {
+      "openalex_id": "W4398763293",
+      "doi": "10.1016/j.ipm.2024.103774",
+      "authors": "Alyami, Luqman and Hammoudeh",
+      "year": 2024,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306457324001341",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "alyami2024-publisher",
+        "alyami2024-preview-web"
+      ],
+      "coverage_summary": "Publisher abstract: 126 studies across seven dimensions, including acquisition, cues, methods, datasets and performance; spatial/temporal/alignment taxonomy and non-manual challenges. Full-text omissions remain unchecked.",
+      "access": {
+        "status": "unavailable",
+        "detail": "Publisher preview inspected through web tool; direct archive request 403; no verified public full text located."
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "Publisher abstract and section snippets inspected via web tool",
+          "paraphrase": "Presents a longitudinal CSLR taxonomy and data/model challenges."
+        }
+      ],
+      "coverage_status": {
+        "full_text": "unavailable",
+        "omissions": "not_checked"
+      }
+    },
+    {
+      "openalex_id": "W4408581155",
+      "doi": "10.1007/s12626-025-00180-y",
+      "authors": "Taher and Zeebaree",
+      "year": 2025,
+      "url": "https://link.springer.com/article/10.1007/s12626-025-00180-y",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "taher2025-publisher"
+      ],
+      "coverage_summary": "Publisher abstract: 32 studies and 12 benchmark datasets, movement epenthesis, HMM/CTC and deep learning, linguistic scope, acquisition, signer diversity and performance metrics. Omissions remain unchecked.",
+      "access": {
+        "status": "unavailable",
+        "detail": "Publisher explicitly labels subscription content; targeted access-copy searches did not establish a public full text."
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "Publisher abstract",
+          "paraphrase": "Compares recent CSLR approaches, datasets and performance."
+        }
+      ],
+      "coverage_status": {
+        "full_text": "unavailable",
+        "omissions": "not_checked"
+      }
+    },
+    {
+      "openalex_id": "W2992983807",
+      "doi": "10.36478/jeasci.2020.1205.1227",
+      "authors": "Ibrahim, Zayed and Selim",
+      "year": 2020,
+      "url": "https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "ibrahim2020-author",
+        "ibrahim2020-publisher"
+      ],
+      "coverage_summary": "Inspected first page/abstract: hand tracking, facial expressions, movement epenthesis and benchmark comparison. Downloaded full text is largely scanned; whole-paper omissions were not assessed.",
+      "access": {
+        "status": "verified_public_author_copy",
+        "license": "not_checked",
+        "detail": "Institutional author publication PDF available; first page visually inspected."
+      },
+      "date_conflict": {
+        "openalex": "2019-12-02",
+        "pdf_issue": "2020, volume 15(5), pp.1205–1227",
+        "current_publisher_page": "Received and published online 2022-09-21",
+        "decision": "uncertain; retain outside date-filtered discovery pending researcher adjudication"
+      },
+      "claims": [
+        {
+          "kind": "author_stated",
+          "locator": "Institutional PDF p.1, abstract (visually inspected); publisher abstract",
+          "paraphrase": "Focuses on CSLR components, challenges and benchmarks."
+        }
+      ],
+      "coverage_status": {
+        "full_text_omissions": "not_checked",
+        "date_eligibility": "not_checked"
+      }
+    }
+  ],
+  "gap_hypotheses": [
+    {
+      "topic": "A reproducible, current CSLR review",
+      "interpretation": "A useful next review could publish exact searches, screening decisions and study-level extraction. The included documents did not provide a reproducible field-wide search procedure.",
+      "support": "Khan entire paper; SivaKumari entire paper; Kadam Sections I–III"
+    },
+    {
+      "topic": "Separate recognition tasks and compare compatible evaluations",
+      "interpretation": "Keep isolated classification, continuous gloss recognition and spoken-language translation separate; stratify by dataset, signer split, pretraining and metric rather than ranking mixed accuracy/WER values.",
+      "support": "Khan pp.8–9,12; SivaKumari Tables 1–3; Kadam IX.B"
+    },
+    {
+      "topic": "Turn deployment challenges into an evidence audit",
+      "interpretation": "Compare streaming causality, latency, hardware, unseen signers, OOV tests, public resources and uncertainty. These topics are discussed, but discussion alone does not supply a standardized cross-study audit.",
+      "support": "Khan V; SivaKumari 3.2 and 5; Kadam IX–XI"
+    }
+  ]
+}

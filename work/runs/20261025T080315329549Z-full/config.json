@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "task_id": "cslr-reviews-2020-20261025",
+  "task_budget_credits": 300,
+  "search_cost_credits": 10,
+  "cost_documentation_accessed": "2026-10-25",
+  "common_params": {
+    "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
+    "corpus": "all",
+    "sort": "publication_date:asc",
+    "per_page": 100
+  },
+  "max_attempts": 3,
+  "timeout_seconds": 40,
+  "minimum_interval_seconds": 1,
+  "queries": [
+    {
+      "id": "q11",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"review\""
+      }
+    },
+    {
+      "id": "q12",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"survey\""
+      }
+    },
+    {
+      "id": "q13",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"systematic literature review\""
+      }
+    },
+    {
+      "id": "q1r",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign language recognition\"",
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review"
+      }
+    },
+    {
+      "id": "q21",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"review\""
+      }
+    },
+    {
+      "id": "q22",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"survey\""
+      }
+    },
+    {
+      "id": "q23",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"systematic literature review\""
+      }
+    },
+    {
+      "id": "q2r",
+      "params": {
+        "search.title_abstract_keywords": "\"continuous sign recognition\"",
+        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review"
+      }
+    }
+  ]
+}

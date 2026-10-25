@@ -1,0 +1,8 @@
+id,doi,title,publication_date,type,is_oa,oa_url,query_ids,aliases
+https://openalex.org/W3024462586,https://doi.org/10.5281/zenodo.3842830,A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training Survey,2020-02-02,article,True,https://zenodo.org/record/3842831,s1,
+https://openalex.org/W3024060113,https://doi.org/10.1007/s11042-020-08961-z,Understanding vision-based continuous sign language recognition,2020-05-17,article,False,not_reported,s1,
+https://openalex.org/W4398763293,https://doi.org/10.1016/j.ipm.2024.103774,"Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects",2024-05-24,article,False,not_reported,s1,
+https://openalex.org/W4408859567,https://doi.org/10.1109/access.2025.3554046,Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review,2025-01-01,article,True,https://doi.org/10.1109/access.2025.3554046,s1,
+https://openalex.org/W4415763805,https://doi.org/10.2991/978-94-6463-858-5_161,A Critical Review on Video-Based Continuous Sign Language Recognition,2025-01-01,book-chapter,True,https://doi.org/10.2991/978-94-6463-858-5_161,s1,
+https://openalex.org/W4408581155,https://doi.org/10.1007/s12626-025-00180-y,A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition,2025-03-18,article,False,not_reported,s1,
+https://openalex.org/W7170206172,https://doi.org/10.1109/access.2026.3715908,Expression of Concern: Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review,2026-01-01,article,True,https://doi.org/10.1109/access.2026.3715908,s1,

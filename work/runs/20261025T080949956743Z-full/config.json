@@ -1,0 +1,22 @@
+{
+  "version": "1-doi-verification",
+  "task_id": "cslr-reviews-2020-20261025",
+  "task_budget_credits": 300,
+  "search_cost_credits": 1,
+  "cost_documentation_accessed": "2026-10-25",
+  "common_params": {
+    "corpus": "all",
+    "per_page": 100
+  },
+  "max_attempts": 3,
+  "timeout_seconds": 40,
+  "minimum_interval_seconds": 1,
+  "queries": [
+    {
+      "id": "doi-ibrahim",
+      "params": {
+        "filter": "doi:https://doi.org/10.36478/jeasci.2020.1205.1227"
+      }
+    }
+  ]
+}

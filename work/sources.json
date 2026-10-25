@@ -1,0 +1,82 @@
+[
+  {
+    "source_id": "khan2025",
+    "openalex_id": "W4408859567",
+    "url": "https://minhdl93.github.io/public/papers/asma_2025.pdf"
+  },
+  {
+    "source_id": "khan2025-publisher",
+    "openalex_id": "W4408859567",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10937713"
+  },
+  {
+    "source_id": "sivakumari2025",
+    "openalex_id": "W4415763805",
+    "url": "https://www.atlantis-press.com/article/126017418.pdf"
+  },
+  {
+    "source_id": "sivakumari2025-publisher",
+    "openalex_id": "W4415763805",
+    "url": "https://www.atlantis-press.com/proceedings/iccsce-25/126017418"
+  },
+  {
+    "source_id": "moni2020",
+    "openalex_id": "W3024462586",
+    "url": "https://www.ijtsrd.com/papers/ijtsrd30032.pdf"
+  },
+  {
+    "source_id": "cai2025",
+    "openalex_id": "W7116134615",
+    "url": "https://lseee.net/index.php/te/article/download/1534/TE012792.pdf"
+  },
+  {
+    "source_id": "aloysius2020-publisher",
+    "openalex_id": "W3024060113",
+    "url": "https://link.springer.com/article/10.1007/s11042-020-08961-z"
+  },
+  {
+    "source_id": "taher2025-publisher",
+    "openalex_id": "W4408581155",
+    "url": "https://link.springer.com/article/10.1007/s12626-025-00180-y"
+  },
+  {
+    "source_id": "alyami2024-publisher",
+    "openalex_id": "W4398763293",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306457324001341"
+  },
+  {
+    "source_id": "aloysius2020-author-upload",
+    "openalex_id": "W3024060113",
+    "url": "https://www.researchgate.net/publication/346047779_Aloysius-Geetha2020_Article_UnderstandingVision-basedConti"
+  },
+  {
+    "source_id": "ibrahim2020-author",
+    "openalex_id": "not_checked",
+    "url": "https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf"
+  },
+  {
+    "source_id": "ibrahim2020-publisher",
+    "openalex_id": "not_checked",
+    "url": "https://www.makhillpublications.co/view-article/1816-949x/jeasci.2020.1205.1227"
+  },
+  {
+    "source_id": "cai2025-pdf",
+    "openalex_id": "W7116134615",
+    "url": "https://stecep.deanfrancis.press/article/download/418/418/1673"
+  },
+  {
+    "source_id": "indian2026-zenodo",
+    "openalex_id": "W7223099906",
+    "url": "https://zenodo.org/api/records/23527485"
+  },
+  {
+    "source_id": "indian2026-docx",
+    "openalex_id": "W7223099906",
+    "url": "https://zenodo.org/api/records/23527486/files/AI-Based%20Real-Time%20Continuous%20Indian%20Sign%20Language%20Recognition%20A%20Review.docx/content"
+  },
+  {
+    "source_id": "comparative2023",
+    "openalex_id": "W4378468504",
+    "url": "https://arxiv.org/pdf/2305.13941"
+  }
+]
