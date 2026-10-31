@@ -2,13 +2,21 @@
 
 Version 1, fixed 2026-10-25 before retrieval.
 
-## Question and eligibility
+## Current eligibility amendment
 
-Which open-access reviews published from 2020-01-01 through 2026-10-25 centrally review continuous sign language recognition (CSLR), and what do they cover or overlook?
+Previous eligibility judgments are cleared. No candidate has a current AI or manual assessment. Retrieval restrictions describe executed searches; manual criteria govern subsequent eligibility assessment.
 
-Include scholarly narrative, systematic, or scoping reviews and surveys synthesizing multiple prior CSLR studies. CSLR must be the central subject, established from the abstract and, when accessible, the full text. Broader SLR/translation surveys with only a CSLR section are excluded by the researcher's explicit scope choice. Exclude primary methods, datasets, isolated-sign-only reviews, unrelated work, and out-of-range publications. No language restriction; inability to inspect a language is recorded as uncertainty. Repository author manuscripts and open preprints are eligible access copies; published versions take precedence. An unpaired scholarly review preprint is eligible but labeled unreviewed.
+M1 — Review purpose: include narrative reviews, surveys, systematic reviews, scoping reviews and mapping studies synthesizing previous research. Exclude primary method, dataset or experimental papers with background-only literature discussion.
 
-Open access means a lawful publisher or repository full text is publicly accessible at screening. Record the access URL and verification evidence separately from OpenAlex's OA flag. Missing full text or ambiguous relevance gives `uncertain`, not a content exclusion. Publication dates use OpenAlex metadata, checked against the source for included papers; discrepancies are documented.
+M2 — CSLR coverage: recognition of sequences of linguistic signs in continuous signing; broader SLR/translation surveys may qualify.
+
+M3 — Vision-based scope: include video/RGB, depth and pose/skeleton approaches; exclude sensor-only reviews without vision-based CSLR coverage.
+
+At title/abstract stage exclude only on clear evidence of failure. Retain potentially qualifying broader surveys. At full text confirm M1–M3 using the project-specific threshold: an identifiable section, comparative table or sustained discussion comparing at least two prior CSLR studies on methods, datasets or evaluation. Classify eligible reviews as dedicated or broader with qualifying coverage.
+
+Citation count, venue prestige, OA status and missing review-method reporting are not exclusion grounds. Missing abstracts, unavailable full text and language difficulties require further assessment, recorded separately. Date conflicts require verification against the saved publication window, not invented eligibility decisions.
+
+Verdicts: not_screened, include, exclude, uncertain. AI verdicts are proposals; human verdicts are independent. Exclusions require criterion IDs, paper-specific reasons and inspectable evidence; uncertainty requires the issue and next action. Evidence identifies source and passage, metadata field or page/section/table.
 
 ## Retrieval
 
@@ -16,9 +24,9 @@ OpenAlex-only discovery; exact executable settings are in `work/queries.json`. S
 
 ## Screening and evidence
 
-Deduplicate OpenAlex IDs and normalized DOIs, retaining query/run/page provenance. Flag conflicting metadata and possible version pairs for explicit merge decisions. First screen titles/abstracts, then inspect plausible reviews' full texts. AI suggestions are inputs in `work/screening.json`, never final human decisions; record model, prompt, and available evidence. All final human decisions initially remain `not_checked`.
+Deduplicate OpenAlex IDs and normalized DOIs, retaining query/run/page provenance. Flag conflicting metadata and possible version pairs for explicit merge decisions. First screen titles/abstracts, then inspect plausible reviews' full texts. AI suggestions are inputs in `work/screening.json`, never final human decisions; record model, prompt, and available evidence. All final human decisions initially remain `not_screened`.
 
-Extract method families, temporal alignment, representations, datasets/sign languages, metrics/splits, generalization, reproducibility, and challenges into `work/evidence.json`. Each content assertion needs an OpenAlex ID or DOI, source URL, evidence level (`metadata_only`, `abstract_only`, `full_text`), locator and supporting passage or faithful paraphrase. Separate author statements from analyst interpretations. Use `not_reported` only after checking the relevant full text, `not_checked` when not assessed, and `unavailable` when the source cannot be obtained. An unmentioned topic is a potential review gap, not proof of an absence in the literature.
+Extract method families, temporal alignment, representations, datasets/sign languages, metrics/splits, generalization, reproducibility, and challenges into `work/evidence.json`. Each content assertion needs an OpenAlex ID or DOI, source URL, evidence level (`metadata_only`, `abstract_only`, `full_text`), locator and supporting passage or faithful paraphrase. Separate author statements from analyst interpretations. Use `not_reported` only after checking the relevant full text, `not_screened` when not assessed, and `unavailable` when the source cannot be obtained. An unmentioned topic is a potential review gap, not proof of an absence in the literature.
 
 ## Budget, preservation, and synthesis
 

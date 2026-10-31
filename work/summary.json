@@ -3,16 +3,13 @@
   "discovery_unique": 33,
   "screened_unique_including_verification": 34,
   "ai_decisions": {
-    "uncertain": 4,
-    "exclude": 27,
-    "include": 3
+    "not_screened": 34
   },
   "human_decisions": {
-    "not_checked": 34
+    "not_screened": 34
   },
   "by_stage": {
-    "title_abstract": 28,
-    "full_text": 6
+    "title_abstract": 34
   },
   "search_runs_complete": true,
   "task_budget_credits": 300,

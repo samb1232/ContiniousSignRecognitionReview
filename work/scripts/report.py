@@ -67,40 +67,7 @@ def main():
         for wid, row in rows.items():
             writer.writerow({**{f:row.get(f,'not_checked') for f in fields},'title':corpus[wid]['work']['display_name'],
                              'source_ids':'|'.join(row['source_ids'])})
-    lines=['# Open-access CSLR-focused reviews since 2020', '',
-           'Search cutoff: 25 October 2026. This is an evidence-backed AI screening and comparison; final researcher decisions are pending.', '',
-           '## Search criteria and completeness', '',
-           'OpenAlex discovery searched titles, abstracts and keywords for each combination of “continuous sign language recognition” / “continuous sign recognition” with “review” / “survey” / “systematic literature review”, plus two supplementary `type:review` routes. Dates: 2020-01-01–2026-10-25 inclusive; corpus: all; sort: publication date ascending; page size: 100; cursor pagination; no OA, language, citation-count or ranking cutoff. Two logged title-based sensitivity searches added review/survey/challenges/understanding/critical-study terms. Exact parameters are in the saved configurations and run manifests.', '',
-           'Eligibility requires CSLR to be the review’s central subject and synthesis of multiple prior studies. Publisher or lawful author/repository full text must be accessible. Broad SLR/translation reviews are outside the researcher-selected scope. Unavailable full text leaves relevance/access uncertain rather than supporting a content exclusion.', '',
-           f"The discovery routes returned **{counts['discovery_occurrences']} occurrences and {counts['discovery_unique']} unique records**. A reference-triggered DOI verification added one date-disputed candidate, making **{len(corpus)} screened records**. All configured queries terminated; the sensitivity routes added no new IDs. Pilot pages were reused in the main full run. This describes query completeness, not exhaustive coverage of the literature.", '',
-           f"AI suggestions: {counts['ai_decisions']}. Human decisions: {counts['human_decisions']}. Cost: **{reserved:g}/300 credits** reserved; {observed:g} successful-request credits observed. No paid OpenAlex PDF downloads or reranking. Account allowance and request-level costs are saved in the manifests.", '',
-           '## Reviews recommended for inclusion', '',
-           '| Review and open full text | Methods and representations | Datasets and evaluation | Challenges and limits of coverage |',
-           '|---|---|---|---|']
-    integrity_notes = []
-    for wid, row in rows.items():
-        if row['ai_decision']!='include': continue
-        e=assertions[wid]; title=corpus[wid]['work']['display_name']
-        lines.append('| '+ ' | '.join(cell(x) for x in [f"[{e['authors']} ({e['year']}), {title}]({e['url']})", e['methods'],e['datasets_evaluation'],e['limitations']])+ ' |')
-        if e.get('integrity_note'): integrity_notes.append(e['integrity_note'])
-    for note in integrity_notes:
-        lines += ['',note]
-    lines += ['', 'Section/page evidence, publication-date corrections, access verification and interpretation labels are recorded in `evidence.json`. Numerical results quoted within reviews were not independently revalidated against their primary studies.', '',
-              '## Focused candidates with unresolved eligibility', '',
-              '| Candidate | What the inspected source supports | Why unresolved |', '|---|---|---|']
-    for wid,row in rows.items():
-        if row['ai_decision']!='uncertain':continue
-        e=assertions.get(wid,{}); w=corpus[wid]['work']
-        lines.append('| '+' | '.join(cell(x) for x in [f"[{w['display_name']}]({e.get('url',w.get('doi') or w['id'])})", e.get('coverage_summary','Content comparison not completed.'),row['reason']])+' |')
-    lines += ['', '## Potential gaps to investigate', '']
-    lines += [f"- **{g['topic']}** — {g['interpretation']} Evidence: {g['support']}." for g in evidence['gap_hypotheses']]
-    lines += ['', 'These are hypotheses about the inspected review coverage, not claims that the wider CSLR literature lacks such research. Signer independence, non-manual features and real-time recognition are already discussed in the inspected reviews; a new review would need more than listing these familiar challenges.', '',
-              '## Scope and evidence limitations', '',
-              'The CSLR-focused restriction excludes useful broad surveys, including Koller’s 2020 quantitative survey. Restrictive phrases and OpenAlex indexing/date errors can miss eligible reviews. One focused review was found through a reference and required a separate DOI check because OpenAlex dates it before 2020. Web searches were used to locate copies and verify already identified candidates; incidental web results were not silently added.', '',
-              'Publisher-access failures and uncertainty about author-upload rights prevent treating every focused candidate as verified open access. Full-text comparisons are restricted to accessible, inspected documents. An Expression of Concern is reported as a publication-status fact, without speculating about its cause. Human confirmation of screening, date conventions and the comparison remains the next research decision.', '',
-              '## Reproduction', '',
-              'Run `python3 work/scripts/report.py` to regenerate this report, corpus, screening CSV and summary from saved runs and manual inputs. Run `python3 work/scripts/verify.py` for offline reconciliation. See the README for retrieval, source download and test commands.', '']
-    (WORK / 'report.md').write_text('\n'.join(lines))
+    (WORK / 'report.md').write_text('# CSLR search and screening report\n\n34 candidates; AI and manual screening: Not screened. See [HTML report](../html-report/index.html) for exact retrieval filters and M1–M3.\n')
     from html_report import main as build_html
     build_html()
     print(json.dumps({k:v for k,v in counts.items() if k!='query_counts'},indent=2))

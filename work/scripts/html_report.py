@@ -8,6 +8,7 @@ third-party packages, or manual duplication of result counts is required.
 The main report.py pipeline rebuilds this page automatically.
 """
 from collections import Counter
+from datetime import datetime
 from html import escape
 import json
 from pathlib import Path
@@ -84,83 +85,64 @@ def main(check=False):
     unique = summary['discovery_unique']
     assert occurrences == summary['discovery_occurrences']
     doi_added = len(corpus) - unique
-    full_text = sum(r['stage'] == 'full_text' for r in records)
-    pending = human['not_checked']
-    sections = [f'''<header><p class="meta">OpenAlex · Search date {h(analysis['date'])}</p>
-<h1>Continuous sign language recognition reviews</h1>
-<p>Open-access reviews focused on CSLR · 2020–2026</p>
-<p class="status">AI screening recommendations; {pending} records await researcher decisions.</p>
+    sections = [f'''<header>
+<p class="eyebrow">Literature review · Search &amp; selection</p>
+<h1>Finding reviews of continuous sign language recognition</h1>
+<p class="lead">How the review candidates were retrieved from OpenAlex, and the criteria that will guide their assessment.</p>
+<div class="result"><div><span class="result-number">{len(records)}</span><strong>candidates collected</strong></div>
+<p>{unique} from OpenAlex discovery searches + {doi_added} found through references and verified by DOI.</p></div>
+<p class="status">Screening has not started: {ai['not_screened']} candidates await AI assessment and {human['not_screened']} await manual assessment.</p>
 </header>
-<div class="totals" aria-label="Screening results">
-<div><strong>{len(records)}</strong>assessed</div><div><strong>{ai['include']}</strong>recommended</div>
-<div><strong>{ai['uncertain']}</strong>unresolved</div><div><strong>{ai['exclude']}</strong>excluded</div></div>''']
-    sections.append('<section id="papers"><h2>Recommended reviews</h2>')
-    picked = []
-    unresolved = []
-    for r in records:
-        wid = r['openalex_id']; w = corpus[wid]['work']; e = evidence.get(wid, {})
-        if r['ai_decision'] == 'include':
-            label = f"{e['authors']} ({e['year']}) — {w['display_name']}"
-            qualification = 'Open review.'
-            if e.get('integrity_note'):
-                qualification = 'Expression of Concern issued 22 July 2026.'
-            elif e.get('publication_status'):
-                qualification = e['publication_status'].capitalize() + '.'
-            picked.append([link(e['url'], label), h(e['methods']), h(qualification)])
-        elif r['ai_decision'] == 'uncertain':
-            reason = 'Conflicting publication dates; eligibility unresolved.' if e.get('date_conflict') else 'Open full-text access not verified.'
-            label = f"{e.get('authors', w['display_name'])} ({e.get('year', w['publication_date'][:4])})"
-            unresolved.append(link(e.get('url', w.get('doi') or w['id']), label) + ' — ' + h(reason))
-    sections.append(table(['Review / full text', 'Coverage', 'Qualification'], picked,
-                          'Inclusion recommendations based on inspected full text'))
-    gaps = read(WORK / 'evidence.json')['gap_hypotheses']
-    sections.append('<p><strong>Potential review gaps:</strong> '
-                    + h('; '.join(g['topic'] for g in gaps))
-                    + '. These concern inspected review coverage, not proven gaps in the research literature.</p></section>')
-    sections.append(f'''<section id="selection"><h2>Search and selection</h2>
-<p class="flow"><strong>{occurrences}</strong> search occurrences → <strong>{unique}</strong> unique records + <strong>{doi_added}</strong> reference-based DOI candidate → <strong>{len(records)}</strong> assessed.</p>
-<p>Deduplicated by OpenAlex ID and normalized DOI. Titles and available abstracts were screened for CSLR-focused reviews; {full_text} records reached full-text screening ({stages['full_text', 'include']} recommended, {stages['full_text', 'exclude']} excluded). {stages['title_abstract', 'exclude']} further exclusions were suggested at title/abstract stage; {ai['uncertain']} cases remain unresolved.</p>
-<ul><li><strong>Include:</strong> reviews synthesizing multiple CSLR studies, dated 2020-01-01–2026-10-25, with lawful public full text. Repository reviews are eligible with peer-review status labeled.</li>
-<li><strong>Exclude:</strong> broader recognition/translation or isolated-sign reviews where CSLR is not central; primary research; unrelated work; proceedings volumes/notices; confirmed out-of-range publications.</li>
-<li><strong>Uncertain:</strong> missing text, unclear access rights or conflicting dates. These are not content-based exclusions.</li></ul>
-</section>''')
-    sections.append('''<section id="queries"><h2>Exact OpenAlex search rules</h2>
-<p><strong>Endpoint:</strong> <code>GET https://api.openalex.org/works</code>. Discovery used OpenAlex only. The saved execution cutoff is 25 October 2026; it does not include later publications.</p>
-<ul><li><strong>Main searches:</strong> six combinations of two quoted CSLR phrases and three review terms in titles, abstracts and keywords, plus two phrase searches restricted to <code>type:review</code>. The review-type restriction applies only to q1r and q2r.</li>
-<li><strong>Supplementary searches (s1, s2):</strong> title-only searches broadening the review terms to include challenges, understanding and critical study. Added after main retrieval and retained as a separate route.</li>
-<li><strong>DOI verification (doi-ibrahim):</strong> a separate exact-DOI lookup for a cited candidate with conflicting dates; no publication-date filter. It is not a discovery search.</li>
-<li><strong>No additional restrictions:</strong> no open-access, language, citation-count or ranking cutoff, and no target number of papers. Lawful public full-text access and central CSLR relevance were assessed during screening.</li>
-<li><strong>Pagination:</strong> start with <code>cursor=*</code>, then follow the returned <code>meta.next_cursor</code> until termination. The pilot allowed one page per query; full runs completed pagination, reusing identical saved pilot pages.</li></ul>
-<p>The table gives the executed query strings. Exact parameter sets below come from each selected run’s saved configuration: date bounds are inclusive; <code>corpus=all</code> includes core and expansion records; <code>sort=publication_date:asc</code> orders oldest first; <code>per_page=100</code> sets page size.</p>''')
+<nav aria-label="Report sections"><a href="#queries">1. Search rules</a><a href="#criteria">2. Screening criteria</a><a href="#candidates">3. Candidates</a></nav>''']
+    def readable_date(value):
+        return datetime.fromisoformat(value).strftime('%d %B %Y')
+
+    retrieval_dates = sorted({readable_date(v['started_utc']) for v in manifests.values()})
+    sections.append('<details class="metadata"><summary>Report metadata</summary><div class="details-body"><p>Publication window: 1 January 2020–25 October 2026 inclusive.</p><p>Retrieved: '+h(', '.join(retrieval_dates))+'</p><p>Report generated: '+h(readable_date(analysis['report_generated_utc']))+'</p></div></details>')
+    sections.append('''<section id="queries"><p class="eyebrow">01 · Retrieval</p><h2>OpenAlex search rules</h2>
+<p class="section-intro">These rules determined which records were retrieved. Eligibility is assessed afterwards using the screening criteria below.</p>
+<div class="rules-grid"><article class="rule"><h3>Shared search restrictions</h3><p>Discovery searches cover <strong>1 January 2020–25 October 2026</strong>, inclusive. All routes use <code>corpus=all</code>.</p><p>No open-access, language, citation-count or ranking restriction was applied.</p></article>
+<article class="rule"><h3>Route-specific restrictions</h3><p>Only <a href="#query-q1r">q1r</a> and <a href="#query-q2r">q2r</a> require <code>type:review</code>. The reference-triggered <a href="#query-doi-ibrahim">DOI lookup</a> has no publication-date filter.</p><p>Main queries search titles, abstracts and keywords; supplementary queries s1 and s2 search titles only.</p></article></div>
+<h3>Exact queries and filters</h3><p>Search text and structured API filters are shown separately. Counts overlap across queries.</p>''')
     query_rows = []
     for q in queries:
         params = q['params']
-        field = next((k for k in params if k.startswith('search.')), None)
-        if field:
-            scope = 'Title only' if field == 'search.title' else 'Title / abstract / keywords'
-            filters = 'Dates + type:review' if 'type:review' in params.get('filter', '') else 'Dates'
-            search = params[field]
-        else:
-            scope = 'Exact DOI'
-            search = params['filter'].removeprefix('doi:')
-            filters = 'DOI only; no date filter'
-        query_rows.append([h(q['id']), '<code>' + h(search) + '</code>', h(scope), h(filters), h(q['retrieved'])])
-    sections.append(table(['ID', 'Query', 'Fields', 'Filters', 'Found'], query_rows,
-                          'Result counts overlap across queries'))
-    sections.append('<details><summary>Exact API parameters for every executed query</summary>'
-                    + ''.join('<h3>' + h(q['id']) + '</h3><p>Run: <code>' + h(q['run'])
-                              + '</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>'
-                              + h(json.dumps({**q['params'], 'cursor': q['cursor_start']},
-                                             indent=2, ensure_ascii=False))
-                              + '</code></pre>' for q in queries)
-                    + '</details>')
-    completion = 'All configured queries completed.' if all(q['complete'] for q in queries) else 'Some configured queries are incomplete; see the data snapshot.'
-    sections.append(f'<p>{main_occurrences} main-query occurrences; {sensitivity_occurrences} title-sensitivity occurrences ({sensitivity_added} new IDs). The separate DOI check followed a cited review with conflicting dates. Pilot pages were reused without double counting. {h(completion)} OpenAlex indexing and exact phrases limit recall.</p></section>')
-    sections.append('<section id="unresolved"><h2>Unresolved candidates</h2><ul>'
-                    + ''.join('<li>' + item + '</li>' for item in unresolved)
-                    + '</ul></section>')
-    sections.append('''<footer><a href="../work/screening.csv">Full screening log</a> · <a href="../work/evidence.json">Evidence</a> · <a href="../protocol.md">Protocol</a> · <a href="search-data.json">Exact search data</a> · <a href="../README.md">Reproduction</a></footer>''')
-    css = '''*{box-sizing:border-box}body{margin:0;background:#f5f6f7;color:#243241;font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1080px;margin:32px auto;padding:32px 36px;background:white}h1,h2{color:#17384f;line-height:1.25}h1{font-size:1.9rem;margin:8px 0}h2{font-size:1.15rem;margin:0 0 12px}p{margin:10px 0}.meta,caption,footer{font-size:.8rem;color:#526474}.status{color:#815b13;font-size:.88rem}.totals{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.totals div{border:1px solid #dbe3e9;padding:12px;font-size:.85rem}.totals strong{display:block;color:#17384f;font-size:1.6rem}section{border-top:1px solid #dbe3e9;padding:22px 0}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.82rem}caption{text-align:left;padding:0 0 8px}th,td{padding:10px 8px;border-bottom:1px solid #e0e6eb;text-align:left;vertical-align:top}th{background:#eff3f6}a{color:#155e91;text-underline-offset:3px}code{font: .78rem/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}li{margin:7px 0}footer{border-top:1px solid #dbe3e9;padding-top:18px}.flow{background:#f3f7f9;padding:12px}@media(max-width:650px){main{margin:0;padding:24px 16px}h1{font-size:1.5rem}.totals{gap:6px}.totals div{padding:8px}}@media print{@page{margin:14mm}body{background:white;font-size:9pt}main{margin:0;padding:0;max-width:none}h1{font-size:18pt}section{padding:14px 0}.table-wrap{overflow:visible}table{font-size:8pt}tr{break-inside:avoid}thead{display:table-header-group}h2{break-after:avoid}a{color:inherit}}'''
+        search_fields = [(k,v) for k,v in params.items() if k.startswith('search.')]
+        field = '<br>'.join('<code>'+h(k)+'</code>' for k,v in search_fields) or 'Exact DOI lookup'
+        terms = '<br>'.join('<code>'+h(v)+'</code>' for k,v in search_fields) or 'No text search'
+        query_rows.append(['<span class="query-id" id="query-'+h(q['id'])+'">'+h(q['id'])+'</span>',field,terms,'<code>'+h(params.get('filter','None'))+'</code>',h(q['retrieved'])])
+    sections.append(table(['Query ID','Search parameter','Exact search text','Structured API filters','Returned'],query_rows,'Executed queries · main search, supplementary title search, and DOI verification'))
+    sections.append('<details class="execution"><summary>Execution details and exact API parameters</summary><div class="details-body"><p>Endpoint: <code>GET https://api.openalex.org/works</code>. Sort and page size are execution settings. Cursor pagination starts at <code>*</code>; full searches completed, reusing pilot pages without counting them twice.</p>'+''.join('<article><h3>'+h(q['id'])+'</h3><pre>'+h(json.dumps({**q['params'],'cursor':q['cursor_start']},indent=2))+'</pre></article>' for q in queries)+'</div></details>')
+    sections.append(f'<p class="reconciliation">{occurrences} overlapping discovery occurrences → {unique} unique search candidates + {doi_added} reference candidate → <strong>{len(records)} candidates</strong>. Deduplicated by OpenAlex ID and normalized DOI. Supplementary title searches returned {sensitivity_occurrences} occurrences and added {sensitivity_added} new candidates.</p></section>')
+    criteria = [('M1','Review purpose','Include narrative reviews, surveys, systematic reviews, scoping reviews and mapping studies synthesizing previous research. Exclude primary method, dataset or experimental papers whose literature discussion is only background.'),('M2','CSLR coverage','Include reviews of recognition of sequences of linguistic signs in continuous signing. Broader SLR/translation surveys may qualify.'),('M3','Vision-based scope','Include video/RGB, depth and pose/skeleton approaches. Exclude sensor-only reviews without vision-based CSLR coverage.')]
+    sections.append('<section id="criteria"><p class="eyebrow">02 · Eligibility assessment</p><h2>Screening criteria</h2><p class="section-intro">Apply M1–M3 to each candidate. AI assessments are proposals; manual decisions are recorded independently.</p><div class="criteria-grid">'+''.join('<article class="criterion" id="'+i+'"><span class="criterion-id">'+i+'</span><h3>'+name+'</h3><p>'+text+'</p></article>' for i,name,text in criteria)+'</div>')
+    sections.append('<h3>Verdicts and supporting evidence</h3>')
+    sections.append(table(['Stored verdict','Title / abstract','Full text'],[
+        ['<code>not_screened</code>','Not screened','Not assessed'],
+        ['<code>include</code>','Advance to full-text assessment','Eligible review'],
+        ['<code>exclude</code>','Clearly fails a criterion','Fails a criterion after assessment'],
+        ['<code>uncertain</code>','Issue unresolved; seek full text or verification','Eligibility unresolved; record next action']], 'Meaning of each verdict by assessment stage'))
+    sections.append('<p>Every exclusion requires a linked criterion, a paper-specific explanation and evidence identifying the source and relevant passage, metadata field or full-text page, section or table. Uncertainty requires the unresolved issue and proposed next action.</p></section>')
+    rows=[]
+    for wid,item in corpus.items():
+        w=item['work']; routes=sorted({p['query'] for p in item['provenance']})
+        paper=link(w.get('doi') or w['id'],w['display_name'])+'<br>'+h(w['publication_year'])+' · '+link(w['id'],wid)
+        if w.get('doi'): paper+='<br>'+link(w['doi'],w['doi'])
+        if wid=='W2992983807': paper+='<p>Date validation: OpenAlex 2019-12-02 falls outside the discovery window; saved institutional PDF says 2020 and publisher says 2022-09-21. Window compliance unresolved; verify publication date. DOI route did not enforce dates.</p>'
+        rows.append([paper, ' · '.join(link('#query-'+q,q) for q in routes),'Not screened','Not screened'])
+    sections.append('<section id="candidates"><p class="eyebrow">03 · Collected records</p><h2>Candidates</h2><p class="section-intro">Follow each query ID to see how the paper was retrieved. Both screening columns await assessment.</p>'+table(['Paper','Discovery routes','AI screening decision','Manual screening decision'],rows,'All 34 candidates; no current eligibility judgments')+'</section>')
+    css = '''
+*{box-sizing:border-box}html{scroll-padding-top:24px}body{margin:0;background:#f3f5f7;color:#283642;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1180px;margin:32px auto;padding:48px 56px;background:#fff;border:1px solid #e1e7eb;border-radius:12px}
+h1,h2,h3,h4{color:#163d4c;line-height:1.25}h1{max-width:850px;font-size:2.5rem;letter-spacing:-.035em;margin:12px 0 18px}h2{font-size:1.9rem;letter-spacing:-.025em;margin:8px 0 14px}h3{font-size:1.08rem;margin:22px 0 10px}h4{font-size:1rem;margin:0 0 10px}p{margin:10px 0}.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:#397064}.lead,.section-intro{color:#52646f;max-width:850px}.lead{font-size:1.12rem}
+a{color:#12627c;text-underline-offset:3px}a:hover{color:#0a4039}a:focus-visible,summary:focus-visible{outline:3px solid #ab6b14;outline-offset:4px}
+.result{display:flex;align-items:center;gap:32px;margin:28px 0 12px;padding:22px 26px;background:#edf5f2;border-left:4px solid #397666;border-radius:0 8px 8px 0}.result>div{flex:0 0 180px}.result-number{display:block;font-size:2.8rem;font-weight:750;line-height:1.1;color:#1d594c}.result strong{font-size:.86rem}.result p{max-width:540px}.status{font-size:.9rem;color:#536570}
+nav{display:flex;flex-wrap:wrap;gap:10px 24px;margin:28px 0 18px}nav a{font-size:.9rem;font-weight:650}details{border:1px solid #dbe4e8;border-radius:6px;margin:16px 0;background:#fafcfc}summary{padding:12px 16px;cursor:pointer;font-size:.9rem;font-weight:650;color:#375561}.details-body{padding:0 18px 18px}.metadata{font-size:.85rem}.metadata li{overflow-wrap:anywhere;margin:12px 0}
+section{border-top:1px solid #dce5e8;padding:36px 0 8px;margin-top:30px}.rules-grid,.stages{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.rule,.stages article{background:#f5f8fa;border:1px solid #e2e9ed;border-radius:8px;padding:20px}.rule h3{margin-top:0}.rule p,.stages p{font-size:.92rem}.criteria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0 30px}.criterion{padding:22px;border:1px solid #cdded8;border-top:3px solid #397666;border-radius:6px}.criterion-id{display:inline-block;color:#245c4f;font-weight:750;font-size:.85rem}.criterion h3{margin:12px 0}.criterion p{font-size:.92rem}.assessment-note{padding:18px 22px;border-left:3px solid #ac8546;background:#faf7f0;margin:24px 0}.assessment-note h3{margin-top:0}.assessment-note p{font-size:.92rem}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.82rem;line-height:1.55}caption{text-align:left;color:#596d78;font-size:.8rem;padding:0 0 12px}th,td{padding:14px 12px;border-bottom:1px solid #dfe7eb;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf3f6;font-weight:700;color:#2a4857}tbody tr:nth-child(even){background:#fafcfd}.query-id{font-weight:750;white-space:nowrap}#queries th:nth-child(3){width:32%}#queries th:nth-child(4){width:25%}#candidates th:first-child{width:48%}#candidates th:nth-child(2){width:20%}#candidates td:nth-child(n+3){color:#596a74}code{font:.78rem/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f4f6;padding:16px;border-radius:5px;font-size:.8rem}.reconciliation{font-size:.88rem;color:#526570;margin-top:22px}:target{outline:2px solid #bd9357;outline-offset:5px}
+@media(max-width:760px){main{margin:0;border:0;border-radius:0;padding:28px 18px}h1{font-size:1.95rem}h2{font-size:1.55rem}.rules-grid,.criteria-grid,.stages{grid-template-columns:1fr}.result{gap:18px;padding:18px}.result>div{flex-basis:110px}.result p{font-size:.9rem}.result-number{font-size:2.3rem}th,td{padding:10px 8px}#queries table{min-width:660px}#candidates table{min-width:600px}section{padding-top:26px}}
+@media print{@page{margin:14mm}body{background:#fff;font-size:9pt}main{margin:0;padding:0;border:0;max-width:none}h1{font-size:22pt}h2{font-size:16pt}h3{font-size:11pt}nav{display:none}section{margin-top:16px;padding:18px 0 0}.table-wrap{overflow:visible}table,#queries table,#candidates table{font-size:8pt;min-width:0;table-layout:fixed}th,td{padding:7px 5px}tr,.criterion,.rule,.stages article{break-inside:avoid}thead{display:table-header-group}h2,h3,h4{break-after:avoid}a{color:inherit}.criteria-grid{grid-template-columns:repeat(3,1fr);gap:10px}.criterion{padding:12px}.rules-grid,.stages{grid-template-columns:1fr 1fr;gap:12px}.criterion p,.rule p,.stages p,.assessment-note p{font-size:9pt}.result{margin:16px 0;padding:12px}.result-number{font-size:26pt}.metadata,.execution{display:none}.eyebrow{font-size:8pt}}
+'''
     document = ('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
                 '<meta name="viewport" content="width=device-width, initial-scale=1">'
                 '<meta name="description" content="Reproducible OpenAlex search and selection methods for CSLR-focused reviews since 2020.">'

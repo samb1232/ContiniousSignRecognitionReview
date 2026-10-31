@@ -22,7 +22,7 @@
       "methods": "Spatial–temporal–alignment taxonomy; RGB, depth, pose and sensors; CNN/RNN/Transformer models, CTC and traditional approaches.",
       "datasets_evaluation": "PHOENIX, CSL/CSL-Daily and other datasets; WER, signer-disjoint and unseen-sentence evaluation. Also includes isolated-sign and translation resources.",
       "limitations": "Authors discuss naturalistic data, signer diversity, non-manual cues and efficiency. Our interpretation: task mixing limits direct comparison; no reproducible review search strategy identified.",
-      "integrity_note": "IEEE states that an Expression of Concern was issued on 22 July 2026. Retain the review as an eligible document with this explicit status flag; do not treat its claims as independently validated. [Publisher status](https://ieeexplore.ieee.org/abstract/document/10937713); notice DOI: 10.1109/ACCESS.2026.3715908. The reason for the notice was not inspected.",
+      "integrity_note": "IEEE states that an Expression of Concern was issued on 22 July 2026. ",
       "access": {
         "status": "verified_open_full_text",
         "license": "CC BY 4.0, PDF p.1",
@@ -262,8 +262,7 @@
       "date_conflict": {
         "openalex": "2019-12-02",
         "pdf_issue": "2020, volume 15(5), pp.1205–1227",
-        "current_publisher_page": "Received and published online 2022-09-21",
-        "decision": "uncertain; retain outside date-filtered discovery pending researcher adjudication"
+        "current_publisher_page": "Received and published online 2022-09-21"
       },
       "claims": [
         {
@@ -278,21 +277,5 @@
       }
     }
   ],
-  "gap_hypotheses": [
-    {
-      "topic": "A reproducible, current CSLR review",
-      "interpretation": "A useful next review could publish exact searches, screening decisions and study-level extraction. The included documents did not provide a reproducible field-wide search procedure.",
-      "support": "Khan entire paper; SivaKumari entire paper; Kadam Sections I–III"
-    },
-    {
-      "topic": "Separate recognition tasks and compare compatible evaluations",
-      "interpretation": "Keep isolated classification, continuous gloss recognition and spoken-language translation separate; stratify by dataset, signer split, pretraining and metric rather than ranking mixed accuracy/WER values.",
-      "support": "Khan pp.8–9,12; SivaKumari Tables 1–3; Kadam IX.B"
-    },
-    {
-      "topic": "Turn deployment challenges into an evidence audit",
-      "interpretation": "Compare streaming causality, latency, hardware, unseen signers, OOV tests, public resources and uncertainty. These topics are discussed, but discussion alone does not supply a standardized cross-study audit.",
-      "support": "Khan V; SivaKumari 3.2 and 5; Kadam IX–XI"
-    }
-  ]
+  "gap_hypotheses": []
 }

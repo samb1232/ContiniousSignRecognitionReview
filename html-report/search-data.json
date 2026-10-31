@@ -8,23 +8,21 @@
       "20261025T080949956743Z-full"
     ],
     "pilot_run": "20261025T080219770846Z-pilot",
-    "date": "2026-10-25"
+    "date": "2026-10-25",
+    "report_generated_utc": "2026-10-31T10:35:46.235074+00:00"
   },
   "summary": {
     "discovery_occurrences": 92,
     "discovery_unique": 33,
     "screened_unique_including_verification": 34,
     "ai_decisions": {
-      "uncertain": 4,
-      "exclude": 27,
-      "include": 3
+      "not_screened": 34
     },
     "human_decisions": {
-      "not_checked": 34
+      "not_screened": 34
     },
     "by_stage": {
-      "title_abstract": 28,
-      "full_text": 6
+      "title_abstract": 34
     },
     "search_runs_complete": true,
     "task_budget_credits": 300,
@@ -310,443 +308,245 @@
     }
   ],
   "screening": {
-    "model": "Codex, GPT-6 family; exact deployment identifier unavailable",
-    "prompt_id": "screening-v1",
-    "prompt": "Apply protocol.md: include only scholarly reviews centrally synthesizing multiple CSLR studies in the date range with verified lawful public full text; broad SLR/translation reviews are excluded. Record stage, reason, evidence level and uncertainty; do not infer findings from titles, and do not exclude for missing full text alone. Keep final human decisions not_checked. Assess quality separately from scope and flag publication notices.",
     "protocol": "protocol.md",
-    "date": "2026-10-25",
     "records": [
       {
         "openalex_id": "W3024060113",
-        "doi": "https://doi.org/10.1007/s11042-020-08961-z",
-        "ai_decision": "uncertain",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Centrally reviews CSLR; publisher is subscription-only and lawful open-access copy/rights not verified. Missing full text is not a content exclusion.",
-        "source_ids": [
-          "aloysius2020-publisher"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; aloysius2020-publisher",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W6997309381",
-        "doi": "not_reported",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Thesis develops recognition frameworks; not a standalone review centrally synthesizing CSLR. Archive abstract explicitly describes proposed systems.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W3046952127",
-        "doi": "https://doi.org/10.1016/j.eswa.2020.113794",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "metadata_only",
-        "reason": "Title-stage suggestion: broad SLR deep survey, rather than explicitly CSLR-focused. Scope should be confirmed by researcher.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W3165431157",
-        "doi": "https://doi.org/10.22452/mjcs.vol33no4.5",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract explicitly covers Arabic alphabets, isolated words and continuous recognition: broader SLR scope.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4285792148",
-        "doi": "https://doi.org/10.1016/j.engappai.2022.105198",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "metadata_only",
-        "reason": "Title-stage suggestion: taxonomy of sign language research broadly, rather than a CSLR-centered review.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4313412839",
-        "doi": "https://doi.org/10.1109/contie56301.2022.10004413",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract explicitly maps isolated signs and sentences across SLR, not CSLR-centered.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4387844301",
-        "doi": "https://doi.org/10.1007/s00138-023-01479-y",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "metadata_only",
-        "reason": "Title-stage suggestion: general sign language recognition review; CSLR centrality not established. Researcher should confirm scope.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4390107804",
-        "doi": "https://doi.org/10.15408/jti.v16i2.27030",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract reports a proposed 3DCNN/LSTM/CTC recognition method and experiment; primary study.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4398763293",
-        "doi": "https://doi.org/10.1016/j.ipm.2024.103774",
-        "ai_decision": "uncertain",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "CSLR-focused review; publisher preview is paywalled, no verified public full text located. No content-based exclusion.",
-        "source_ids": [
-          "alyami2024-publisher"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; alyami2024-publisher",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W6949155979",
-        "doi": "https://doi.org/10.5281/zenodo.12636163",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Whole proceedings volume and table of contents; not an individual review.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4404247797",
-        "doi": "https://doi.org/10.3390/app142210337",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Review concerns online accessibility technologies, not CSLR as its central subject.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W6981314463",
-        "doi": "not_reported",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract explicitly reviews both isolated and continuous recognition/translation; broader dynamic SLRT scope.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4409426808",
-        "doi": "https://doi.org/10.1109/icicml63543.2024.10957797",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract reviews Sinhala SLR generally and describes continuous recognition as a gap, not its central subject.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4408859567",
-        "doi": "https://doi.org/10.1109/access.2025.3554046",
-        "ai_decision": "include",
-        "human_decision": "not_checked",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "reason": "CSLR-centered synthesis, open CC BY published PDF inspected. Include with Expression of Concern status flag; final researcher decision pending.",
-        "source_ids": [
-          "khan2025",
-          "khan2025-publisher"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; khan2025, khan2025-publisher",
-        "prompt_id": "screening-v1"
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
+        "stage": "title_abstract",
+        "source_ids": []
       },
       {
         "openalex_id": "W4415763805",
-        "doi": "https://doi.org/10.2991/978-94-6463-858-5_161",
-        "ai_decision": "include",
-        "human_decision": "not_checked",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "reason": "CSLR-centered review; open publisher PDF inspected. Isolated-task material and evaluation inconsistencies are quality limitations, not scope exclusions.",
-        "source_ids": [
-          "sivakumari2025",
-          "sivakumari2025-publisher"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; sivakumari2025, sivakumari2025-publisher",
-        "prompt_id": "screening-v1"
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
+        "stage": "title_abstract",
+        "source_ids": []
       },
       {
         "openalex_id": "W4408581155",
-        "doi": "https://doi.org/10.1007/s12626-025-00180-y",
-        "ai_decision": "uncertain",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "CSLR-centered review, subscription-only publisher preview; public full text not established. No content-based exclusion.",
-        "source_ids": [
-          "taher2025-publisher"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; taher2025-publisher",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7124904654",
-        "doi": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract reviews skeleton SLR across isolated and continuous tasks; continuous recognition is one subset.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4417473484",
-        "doi": "https://doi.org/10.31449/inf.v49i25.10879",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract reviews Arabic alphabets, isolated words and continuous recognition, outside CSLR-focused scope.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7116134615",
-        "doi": "https://doi.org/10.61173/2hpmfy05",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "reason": "Full-text Sections 1–2 and taxonomy cover general SLR, isolated/continuous manual/non-manual approaches; despite title it is not CSLR-centered.",
-        "source_ids": [
-          "cai2025-pdf"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; cai2025-pdf",
-        "prompt_id": "screening-v1"
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
+        "stage": "title_abstract",
+        "source_ids": []
       },
       {
         "openalex_id": "W7162827361",
-        "doi": "not_reported",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract maps datasets across isolated recognition, continuous recognition and translation; not centered on CSLR.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7170206172",
-        "doi": "https://doi.org/10.1109/access.2026.3715908",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "metadata_only",
-        "reason": "Expression of Concern notice, not another review. Link to W4408859567; preserve as publication-status evidence.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7166669486",
-        "doi": "https://doi.org/10.57159/jcmm.5.3.26708",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract reviews Indian/regional sign language recognition generally; CSLR is one challenge.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7172124593",
-        "doi": "https://doi.org/10.1007/978-3-032-31404-8_36",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "metadata_only",
-        "reason": "Title-stage suggestion: broad SLR/multimodal survey; no evidence of CSLR as central subject. Human scope confirmation needed.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7223099906",
-        "doi": "https://doi.org/10.5281/zenodo.23527485",
-        "ai_decision": "include",
-        "human_decision": "not_checked",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "reason": "Public CC BY repository report centrally reviews continuous ISL; Section III synthesizes several prior methods, with SignFlow case-study emphasis. Label peer review unestablished.",
-        "source_ids": [
-          "indian2026-zenodo",
-          "indian2026-docx"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; indian2026-zenodo, indian2026-docx",
-        "prompt_id": "screening-v1"
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
+        "stage": "title_abstract",
+        "source_ids": []
       },
       {
         "openalex_id": "W3024462586",
-        "doi": "https://doi.org/10.5281/zenodo.3842830",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "reason": "Despite CSLR in title, Literature Survey reviews general gesture/alphabet/static SLR techniques, not a central synthesis of continuous sequence recognition.",
-        "source_ids": [
-          "moni2020"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; moni2020",
-        "prompt_id": "screening-v1"
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
+        "stage": "title_abstract",
+        "source_ids": []
       },
       {
         "openalex_id": "W3080888993",
-        "doi": "https://doi.org/10.48550/arxiv.2008.09918",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract states a field-wide meta-study of SLR, including a PHOENIX subset; broader survey excluded under researcher-selected scope.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4378468504",
-        "doi": "https://doi.org/10.48550/arxiv.2305.13941",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "reason": "Full text Introduction and Related Work cover glove/vision SLR broadly and word-level studies; CSLR is not the central subject.",
-        "source_ids": [
-          "comparative2023"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; comparative2023",
-        "prompt_id": "screening-v1"
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
+        "stage": "title_abstract",
+        "source_ids": []
       },
       {
         "openalex_id": "W7121016685",
-        "doi": "https://doi.org/10.5281/zenodo.18204534",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract explicitly covers static gestures, continuous recognition and translation; broader SLR survey.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4414769190",
-        "doi": "https://doi.org/10.2139/ssrn.5558281",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "metadata_only",
-        "reason": "Title-stage suggestion: broad recognition and translation survey, not specifically CSLR-centered.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W4416744680",
-        "doi": "https://doi.org/10.5753/webmedia.2025.16082",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract covers LIBRAS recognition/translation/interpretation broadly, with continuous recognition one reported challenge.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7155605949",
-        "doi": "https://doi.org/10.66279/hk0z2k19",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract explicitly covers Arabic alphabets, isolated words and continuous signs; broader scope.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7221015162",
-        "doi": "https://doi.org/10.65646/3cp3es20dpk1n207",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract maps ML/computer-vision approaches relevant to Sri Lankan Tamil SLR/translation across tasks, not CSLR-centered.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W7105609630",
-        "doi": "https://doi.org/10.22214/ijraset.2025.75069",
-        "ai_decision": "exclude",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Abstract reviews static/dynamic recognition and translation; not centrally CSLR.",
-        "source_ids": [],
-        "available_material": "OpenAlex title, metadata and abstract where available; ",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       },
       {
         "openalex_id": "W2992983807",
-        "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-        "ai_decision": "uncertain",
-        "human_decision": "not_checked",
+        "ai_decision": "not_screened",
+        "human_decision": "not_screened",
         "stage": "title_abstract",
-        "evidence_level": "abstract_only",
-        "reason": "Focused review and public institutional PDF, but date conflict: OpenAlex 2019-12-02; PDF issue 2020; current publisher page says 2022-09-21. Retain for date/rights adjudication.",
-        "source_ids": [
-          "ibrahim2020-author",
-          "ibrahim2020-publisher"
-        ],
-        "available_material": "OpenAlex title, metadata and abstract where available; ibrahim2020-author, ibrahim2020-publisher",
-        "prompt_id": "screening-v1"
+        "source_ids": []
       }
     ]
   },
@@ -35518,7 +35318,7 @@
       "methods": "Spatial–temporal–alignment taxonomy; RGB, depth, pose and sensors; CNN/RNN/Transformer models, CTC and traditional approaches.",
       "datasets_evaluation": "PHOENIX, CSL/CSL-Daily and other datasets; WER, signer-disjoint and unseen-sentence evaluation. Also includes isolated-sign and translation resources.",
       "limitations": "Authors discuss naturalistic data, signer diversity, non-manual cues and efficiency. Our interpretation: task mixing limits direct comparison; no reproducible review search strategy identified.",
-      "integrity_note": "IEEE states that an Expression of Concern was issued on 22 July 2026. Retain the review as an eligible document with this explicit status flag; do not treat its claims as independently validated. [Publisher status](https://ieeexplore.ieee.org/abstract/document/10937713); notice DOI: 10.1109/ACCESS.2026.3715908. The reason for the notice was not inspected.",
+      "integrity_note": "IEEE states that an Expression of Concern was issued on 22 July 2026. ",
       "access": {
         "status": "verified_open_full_text",
         "license": "CC BY 4.0, PDF p.1",
@@ -35758,8 +35558,7 @@
       "date_conflict": {
         "openalex": "2019-12-02",
         "pdf_issue": "2020, volume 15(5), pp.1205–1227",
-        "current_publisher_page": "Received and published online 2022-09-21",
-        "decision": "uncertain; retain outside date-filtered discovery pending researcher adjudication"
+        "current_publisher_page": "Received and published online 2022-09-21"
       },
       "claims": [
         {

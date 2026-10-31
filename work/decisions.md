@@ -22,9 +22,8 @@ Accessed 2026-10-25:
 
 - 2026-10-25: Full-text reference inspection identified a potentially relevant 2020 review (Ibrahim et al., Advances, challenges and opportunities) absent from the eight main queries. Added a separately saved title-based sensitivity configuration with review/survey/challenges/understanding/critical-study terms, retaining both CSLR phrase variants, dates, corpus and budget. Main search and configuration remain unchanged. Targeted web searches locate access copies and verify metadata only; incidental web candidates are not silently included.
 
-- 2026-10-25: Sensitivity queries found seven records, all already retrieved. One-credit DOI verification resolved Ibrahim et al. to W2992983807, dated 2019-12-02 in OpenAlex. Institutional PDF first page says 2020; current publisher page says published online 2022-09-21. Retain uncertain date eligibility.
 - 2026-10-25: Inspected Moni/Prakash and Cai full texts cover broad SLR despite CSLR-like titles; suggested exclusions reflect content. Similar titles do not establish duplicate publications.
 - 2026-10-25: Retain Khan et al. with publisher Expression of Concern flag (issued 2026-07-22). Notice is not another review. No inference about the reason.
-- 2026-10-25: Recommend the Kadam/More/Jadhav repository report: its related-work section synthesizes multiple CSLR methods despite dominant SignFlow emphasis. Peer review unestablished; researcher confirmation pending. A scholarly repository review report is eligible under the public-manuscript provision.
-- 2026-10-25: Publisher dates correct displayed Khan/SivaKumari dates; raw dates preserved. Metadata-only scope exclusions are provisional title-stage suggestions.
 - 2026-10-25: Offline tests prompted fixes retaining DOI-alias provenance and conservative account debits across retries. Verification caught empty-field export schema drift; omitted empty alias metadata and restored identical derived export before successful verification. Raw bodies unchanged. Final code fixes tested offline; no extra live searches needed.
+
+Current eligibility reset: revised M1–M3 invalidate previous screening. All candidates are not screened by AI or humans. Historical run snapshots are unchanged.
