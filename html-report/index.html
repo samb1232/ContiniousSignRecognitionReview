@@ -1,483 +1,107 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Reproducible OpenAlex search and selection methods for CSLR-focused reviews since 2020."
-    />
-    <title>CSLR reviews — search and selection report</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        background: #f5f6f7;
-        color: #243241;
-        font:
-          15px/1.55 system-ui,
-          -apple-system,
-          "Segoe UI",
-          sans-serif;
-      }
-      main {
-        max-width: 1080px;
-        margin: 32px auto;
-        padding: 32px 36px;
-        background: white;
-      }
-      h1,
-      h2 {
-        color: #17384f;
-        line-height: 1.25;
-      }
-      h1 {
-        font-size: 1.9rem;
-        margin: 8px 0;
-      }
-      h2 {
-        font-size: 1.15rem;
-        margin: 0 0 12px;
-      }
-      p {
-        margin: 10px 0;
-      }
-      .meta,
-      caption,
-      footer {
-        font-size: 0.8rem;
-        color: #526474;
-      }
-      .status {
-        color: #815b13;
-        font-size: 0.88rem;
-      }
-      .totals {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
-        margin: 22px 0;
-      }
-      .totals div {
-        border: 1px solid #dbe3e9;
-        padding: 12px;
-        font-size: 0.85rem;
-      }
-      .totals strong {
-        display: block;
-        color: #17384f;
-        font-size: 1.6rem;
-      }
-      section {
-        border-top: 1px solid #dbe3e9;
-        padding: 22px 0;
-      }
-      .table-wrap {
-        overflow-x: auto;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.82rem;
-      }
-      caption {
-        text-align: left;
-        padding: 0 0 8px;
-      }
-      th,
-      td {
-        padding: 10px 8px;
-        border-bottom: 1px solid #e0e6eb;
-        text-align: left;
-        vertical-align: top;
-      }
-      th {
-        background: #eff3f6;
-      }
-      a {
-        color: #155e91;
-        text-underline-offset: 3px;
-      }
-      code {
-        font:
-          0.78rem/1.5 ui-monospace,
-          Consolas,
-          monospace;
-        overflow-wrap: anywhere;
-      }
-      li {
-        margin: 7px 0;
-      }
-      footer {
-        border-top: 1px solid #dbe3e9;
-        padding-top: 18px;
-      }
-      .flow {
-        background: #f3f7f9;
-        padding: 12px;
-      }
-      @media (max-width: 650px) {
-        main {
-          margin: 0;
-          padding: 24px 16px;
-        }
-        h1 {
-          font-size: 1.5rem;
-        }
-        .totals {
-          gap: 6px;
-        }
-        .totals div {
-          padding: 8px;
-        }
-      }
-      @media print {
-        @page {
-          margin: 14mm;
-        }
-        body {
-          background: white;
-          font-size: 9pt;
-        }
-        main {
-          margin: 0;
-          padding: 0;
-          max-width: none;
-        }
-        h1 {
-          font-size: 18pt;
-        }
-        section {
-          padding: 14px 0;
-        }
-        .table-wrap {
-          overflow: visible;
-        }
-        table {
-          font-size: 8pt;
-        }
-        tr {
-          break-inside: avoid;
-        }
-        thead {
-          display: table-header-group;
-        }
-        h2 {
-          break-after: avoid;
-        }
-        a {
-          color: inherit;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <header>
-        <p class="meta">OpenAlex · Search date 2026-10-25</p>
-        <h1>Continuous sign language recognition reviews</h1>
-        <p>Open-access reviews focused on CSLR · 2020–2026</p>
-        <p class="status">
-          AI screening recommendations; 34 records await researcher decisions.
-        </p>
-      </header>
-      <div class="totals" aria-label="Screening results">
-        <div><strong>34</strong>assessed</div>
-        <div><strong>3</strong>recommended</div>
-        <div><strong>4</strong>unresolved</div>
-        <div><strong>27</strong>excluded</div>
-      </div>
-      <section id="papers">
-        <h2>Recommended reviews</h2>
-        <div class="table-wrap">
-          <table>
-            <caption>
-              Inclusion recommendations based on inspected full text
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">Review / full text</th>
-                <th scope="col">Coverage</th>
-                <th scope="col">Qualification</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <a
-                    href="https://minhdl93.github.io/public/papers/asma_2025.pdf"
-                    >Khan et al. (2025) — Deep Learning Approaches for
-                    Continuous Sign Language Recognition: A Comprehensive
-                    Review</a
-                  >
-                </td>
-                <td>
-                  Spatial–temporal–alignment taxonomy; RGB, depth, pose and
-                  sensors; CNN/RNN/Transformer models, CTC and traditional
-                  approaches.
-                </td>
-                <td>Expression of Concern issued 22 July 2026.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://www.atlantis-press.com/article/126017418.pdf"
-                    >SivaKumari and Raghavan (2025) — A Critical Review on
-                    Video-Based Continuous Sign Language Recognition</a
-                  >
-                </td>
-                <td>
-                  Video feature extraction, CNN/RNN hybrids, Transformers,
-                  multimodal/gloss features, CTC and encoder–decoder
-                  recognition.
-                </td>
-                <td>Open review.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://zenodo.org/records/23527485"
-                    >Kadam, More and Jadhav (2026) — AI-Based Indian Sign
-                    Language Recognition</a
-                  >
-                </td>
-                <td>
-                  Continuous Indian SLR; summarizes multiple
-                  architectures/training methods, then concentrates on the
-                  SignFlow CNN–Transformer–CTC framework.
-                </td>
-                <td>Repository report; peer review not established.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>
-          <strong>Potential review gaps:</strong> A reproducible, current CSLR
-          review; Separate recognition tasks and compare compatible evaluations;
-          Turn deployment challenges into an evidence audit. These concern
-          inspected review coverage, not proven gaps in the research literature.
-        </p>
-      </section>
-      <section id="selection">
-        <h2>Search and selection</h2>
-        <p class="flow">
-          <strong>92</strong> search occurrences → <strong>33</strong> unique
-          records + <strong>1</strong> reference-based DOI candidate →
-          <strong>34</strong> assessed.
-        </p>
-        <p>
-          Deduplicated by OpenAlex ID and normalized DOI. Titles and available
-          abstracts were screened for CSLR-focused reviews; 6 records reached
-          full-text screening (3 recommended, 3 excluded). 24 further exclusions
-          were suggested at title/abstract stage; 4 cases remain unresolved.
-        </p>
-        <ul>
-          <li>
-            <strong>Include:</strong> reviews synthesizing multiple CSLR
-            studies, dated 2020-01-01–2026-10-25, with lawful public full text.
-            Repository reviews are eligible with peer-review status labeled.
-          </li>
-          <li>
-            <strong>Exclude:</strong> broader recognition/translation or
-            isolated-sign reviews where CSLR is not central; primary research;
-            unrelated work; proceedings volumes/notices; confirmed out-of-range
-            publications.
-          </li>
-          <li>
-            <strong>Uncertain:</strong> missing text, unclear access rights or
-            conflicting dates. These are not content-based exclusions.
-          </li>
-        </ul>
-      </section>
-      <section id="queries">
-        <h2>Executed searches</h2>
-        <p>
-          <strong>Discovery filters:</strong> 2020-01-01–2026-10-25 inclusive;
-          core + expansion corpus; publication date ascending; 100 results/page;
-          cursor pagination. No OA, language or citation filter. Open access was
-          checked during screening.
-        </p>
-        <div class="table-wrap">
-          <table>
-            <caption>
-              Result counts overlap across queries
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Query</th>
-                <th scope="col">Fields</th>
-                <th scope="col">Filters</th>
-                <th scope="col">Found</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>q11</td>
-                <td>
-                  <code
-                    >&quot;continuous sign language recognition&quot; AND
-                    &quot;review&quot;</code
-                  >
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates</td>
-                <td>24</td>
-              </tr>
-              <tr>
-                <td>q12</td>
-                <td>
-                  <code
-                    >&quot;continuous sign language recognition&quot; AND
-                    &quot;survey&quot;</code
-                  >
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates</td>
-                <td>11</td>
-              </tr>
-              <tr>
-                <td>q13</td>
-                <td>
-                  <code
-                    >&quot;continuous sign language recognition&quot; AND
-                    &quot;systematic literature review&quot;</code
-                  >
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>q1r</td>
-                <td>
-                  <code>&quot;continuous sign language recognition&quot;</code>
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates + type:review</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>q21</td>
-                <td>
-                  <code
-                    >&quot;continuous sign recognition&quot; AND
-                    &quot;review&quot;</code
-                  >
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates</td>
-                <td>26</td>
-              </tr>
-              <tr>
-                <td>q22</td>
-                <td>
-                  <code
-                    >&quot;continuous sign recognition&quot; AND
-                    &quot;survey&quot;</code
-                  >
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates</td>
-                <td>9</td>
-              </tr>
-              <tr>
-                <td>q23</td>
-                <td>
-                  <code
-                    >&quot;continuous sign recognition&quot; AND
-                    &quot;systematic literature review&quot;</code
-                  >
-                </td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>q2r</td>
-                <td><code>&quot;continuous sign recognition&quot;</code></td>
-                <td>Title / abstract / keywords</td>
-                <td>Dates + type:review</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>s1</td>
-                <td>
-                  <code
-                    >&quot;continuous sign language recognition&quot; AND
-                    (review OR survey OR challenges OR understanding OR
-                    &quot;critical study&quot;)</code
-                  >
-                </td>
-                <td>Title only</td>
-                <td>Dates</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>s2</td>
-                <td>
-                  <code
-                    >&quot;continuous sign recognition&quot; AND (review OR
-                    survey OR challenges OR understanding OR &quot;critical
-                    study&quot;)</code
-                  >
-                </td>
-                <td>Title only</td>
-                <td>Dates</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>doi-ibrahim</td>
-                <td>
-                  <code>https://doi.org/10.36478/jeasci.2020.1205.1227</code>
-                </td>
-                <td>Exact DOI</td>
-                <td>DOI only; no date filter</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>
-          85 main-query occurrences; 7 title-sensitivity occurrences (0 new
-          IDs). The separate DOI check followed a cited review with conflicting
-          dates. Pilot pages were reused without double counting. All configured
-          queries completed. OpenAlex indexing and exact phrases limit recall.
-        </p>
-      </section>
-      <section id="unresolved">
-        <h2>Unresolved candidates</h2>
-        <ul>
-          <li>
-            <a
-              href="https://link.springer.com/article/10.1007/s11042-020-08961-z"
-              >Aloysius and Geetha (2020)</a
-            >
-            — Open full-text access not verified.
-          </li>
-          <li>
-            <a
-              href="https://www.sciencedirect.com/science/article/pii/S0306457324001341"
-              >Alyami, Luqman and Hammoudeh (2024)</a
-            >
-            — Open full-text access not verified.
-          </li>
-          <li>
-            <a
-              href="https://link.springer.com/article/10.1007/s12626-025-00180-y"
-              >Taher and Zeebaree (2025)</a
-            >
-            — Open full-text access not verified.
-          </li>
-          <li>
-            <a
-              href="https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf"
-              >Ibrahim, Zayed and Selim (2020)</a
-            >
-            — Conflicting publication dates; eligibility unresolved.
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Reproducible OpenAlex search and selection methods for CSLR-focused reviews since 2020."><title>CSLR reviews — search and selection report</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f6f7;color:#243241;font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1080px;margin:32px auto;padding:32px 36px;background:white}h1,h2{color:#17384f;line-height:1.25}h1{font-size:1.9rem;margin:8px 0}h2{font-size:1.15rem;margin:0 0 12px}p{margin:10px 0}.meta,caption,footer{font-size:.8rem;color:#526474}.status{color:#815b13;font-size:.88rem}.totals{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.totals div{border:1px solid #dbe3e9;padding:12px;font-size:.85rem}.totals strong{display:block;color:#17384f;font-size:1.6rem}section{border-top:1px solid #dbe3e9;padding:22px 0}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.82rem}caption{text-align:left;padding:0 0 8px}th,td{padding:10px 8px;border-bottom:1px solid #e0e6eb;text-align:left;vertical-align:top}th{background:#eff3f6}a{color:#155e91;text-underline-offset:3px}code{font: .78rem/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}li{margin:7px 0}footer{border-top:1px solid #dbe3e9;padding-top:18px}.flow{background:#f3f7f9;padding:12px}@media(max-width:650px){main{margin:0;padding:24px 16px}h1{font-size:1.5rem}.totals{gap:6px}.totals div{padding:8px}}@media print{@page{margin:14mm}body{background:white;font-size:9pt}main{margin:0;padding:0;max-width:none}h1{font-size:18pt}section{padding:14px 0}.table-wrap{overflow:visible}table{font-size:8pt}tr{break-inside:avoid}thead{display:table-header-group}h2{break-after:avoid}a{color:inherit}}</style></head><body><main><header><p class="meta">OpenAlex · Search date 2026-10-25</p>
+<h1>Continuous sign language recognition reviews</h1>
+<p>Open-access reviews focused on CSLR · 2020–2026</p>
+<p class="status">AI screening recommendations; 34 records await researcher decisions.</p>
+</header>
+<div class="totals" aria-label="Screening results">
+<div><strong>34</strong>assessed</div><div><strong>3</strong>recommended</div>
+<div><strong>4</strong>unresolved</div><div><strong>27</strong>excluded</div></div>
+<section id="papers"><h2>Recommended reviews</h2>
+<div class="table-wrap"><table><caption>Inclusion recommendations based on inspected full text</caption><thead><tr><th scope="col">Review / full text</th><th scope="col">Coverage</th><th scope="col">Qualification</th></tr></thead><tbody><tr><td><a href="https://minhdl93.github.io/public/papers/asma_2025.pdf">Khan et al. (2025) — Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review</a></td><td>Spatial–temporal–alignment taxonomy; RGB, depth, pose and sensors; CNN/RNN/Transformer models, CTC and traditional approaches.</td><td>Expression of Concern issued 22 July 2026.</td></tr><tr><td><a href="https://www.atlantis-press.com/article/126017418.pdf">SivaKumari and Raghavan (2025) — A Critical Review on Video-Based Continuous Sign Language Recognition</a></td><td>Video feature extraction, CNN/RNN hybrids, Transformers, multimodal/gloss features, CTC and encoder–decoder recognition.</td><td>Open review.</td></tr><tr><td><a href="https://zenodo.org/records/23527485">Kadam, More and Jadhav (2026) — AI-Based Indian Sign Language Recognition</a></td><td>Continuous Indian SLR; summarizes multiple architectures/training methods, then concentrates on the SignFlow CNN–Transformer–CTC framework.</td><td>Repository report; peer review not established.</td></tr></tbody></table></div>
+<p><strong>Potential review gaps:</strong> A reproducible, current CSLR review; Separate recognition tasks and compare compatible evaluations; Turn deployment challenges into an evidence audit. These concern inspected review coverage, not proven gaps in the research literature.</p></section>
+<section id="selection"><h2>Search and selection</h2>
+<p class="flow"><strong>92</strong> search occurrences → <strong>33</strong> unique records + <strong>1</strong> reference-based DOI candidate → <strong>34</strong> assessed.</p>
+<p>Deduplicated by OpenAlex ID and normalized DOI. Titles and available abstracts were screened for CSLR-focused reviews; 6 records reached full-text screening (3 recommended, 3 excluded). 24 further exclusions were suggested at title/abstract stage; 4 cases remain unresolved.</p>
+<ul><li><strong>Include:</strong> reviews synthesizing multiple CSLR studies, dated 2020-01-01–2026-10-25, with lawful public full text. Repository reviews are eligible with peer-review status labeled.</li>
+<li><strong>Exclude:</strong> broader recognition/translation or isolated-sign reviews where CSLR is not central; primary research; unrelated work; proceedings volumes/notices; confirmed out-of-range publications.</li>
+<li><strong>Uncertain:</strong> missing text, unclear access rights or conflicting dates. These are not content-based exclusions.</li></ul>
+</section>
+<section id="queries"><h2>Exact OpenAlex search rules</h2>
+<p><strong>Endpoint:</strong> <code>GET https://api.openalex.org/works</code>. Discovery used OpenAlex only. The saved execution cutoff is 25 October 2026; it does not include later publications.</p>
+<ul><li><strong>Main searches:</strong> six combinations of two quoted CSLR phrases and three review terms in titles, abstracts and keywords, plus two phrase searches restricted to <code>type:review</code>. The review-type restriction applies only to q1r and q2r.</li>
+<li><strong>Supplementary searches (s1, s2):</strong> title-only searches broadening the review terms to include challenges, understanding and critical study. Added after main retrieval and retained as a separate route.</li>
+<li><strong>DOI verification (doi-ibrahim):</strong> a separate exact-DOI lookup for a cited candidate with conflicting dates; no publication-date filter. It is not a discovery search.</li>
+<li><strong>No additional restrictions:</strong> no open-access, language, citation-count or ranking cutoff, and no target number of papers. Lawful public full-text access and central CSLR relevance were assessed during screening.</li>
+<li><strong>Pagination:</strong> start with <code>cursor=*</code>, then follow the returned <code>meta.next_cursor</code> until termination. The pilot allowed one page per query; full runs completed pagination, reusing identical saved pilot pages.</li></ul>
+<p>The table gives the executed query strings. Exact parameter sets below come from each selected run’s saved configuration: date bounds are inclusive; <code>corpus=all</code> includes core and expansion records; <code>sort=publication_date:asc</code> orders oldest first; <code>per_page=100</code> sets page size.</p>
+<div class="table-wrap"><table><caption>Result counts overlap across queries</caption><thead><tr><th scope="col">ID</th><th scope="col">Query</th><th scope="col">Fields</th><th scope="col">Filters</th><th scope="col">Found</th></tr></thead><tbody><tr><td>q11</td><td><code>&quot;continuous sign language recognition&quot; AND &quot;review&quot;</code></td><td>Title / abstract / keywords</td><td>Dates</td><td>24</td></tr><tr><td>q12</td><td><code>&quot;continuous sign language recognition&quot; AND &quot;survey&quot;</code></td><td>Title / abstract / keywords</td><td>Dates</td><td>11</td></tr><tr><td>q13</td><td><code>&quot;continuous sign language recognition&quot; AND &quot;systematic literature review&quot;</code></td><td>Title / abstract / keywords</td><td>Dates</td><td>3</td></tr><tr><td>q1r</td><td><code>&quot;continuous sign language recognition&quot;</code></td><td>Title / abstract / keywords</td><td>Dates + type:review</td><td>3</td></tr><tr><td>q21</td><td><code>&quot;continuous sign recognition&quot; AND &quot;review&quot;</code></td><td>Title / abstract / keywords</td><td>Dates</td><td>26</td></tr><tr><td>q22</td><td><code>&quot;continuous sign recognition&quot; AND &quot;survey&quot;</code></td><td>Title / abstract / keywords</td><td>Dates</td><td>9</td></tr><tr><td>q23</td><td><code>&quot;continuous sign recognition&quot; AND &quot;systematic literature review&quot;</code></td><td>Title / abstract / keywords</td><td>Dates</td><td>4</td></tr><tr><td>q2r</td><td><code>&quot;continuous sign recognition&quot;</code></td><td>Title / abstract / keywords</td><td>Dates + type:review</td><td>5</td></tr><tr><td>s1</td><td><code>&quot;continuous sign language recognition&quot; AND (review OR survey OR challenges OR understanding OR &quot;critical study&quot;)</code></td><td>Title only</td><td>Dates</td><td>7</td></tr><tr><td>s2</td><td><code>&quot;continuous sign recognition&quot; AND (review OR survey OR challenges OR understanding OR &quot;critical study&quot;)</code></td><td>Title only</td><td>Dates</td><td>0</td></tr><tr><td>doi-ibrahim</td><td><code>https://doi.org/10.36478/jeasci.2020.1205.1227</code></td><td>Exact DOI</td><td>DOI only; no date filter</td><td>1</td></tr></tbody></table></div>
+<details><summary>Exact API parameters for every executed query</summary><h3>q11</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign language recognition\&quot; AND \&quot;review\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q12</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign language recognition\&quot; AND \&quot;survey\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q13</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign language recognition\&quot; AND \&quot;systematic literature review\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q1r</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign language recognition\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q21</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign recognition\&quot; AND \&quot;review\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q22</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign recognition\&quot; AND \&quot;survey\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q23</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign recognition\&quot; AND \&quot;systematic literature review\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>q2r</h3><p>Run: <code>20261025T080315329549Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title_abstract_keywords&quot;: &quot;\&quot;continuous sign recognition\&quot;&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>s1</h3><p>Run: <code>20261025T080843032107Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title&quot;: &quot;\&quot;continuous sign language recognition\&quot; AND (review OR survey OR challenges OR understanding OR \&quot;critical study\&quot;)&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>s2</h3><p>Run: <code>20261025T080843032107Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;filter&quot;: &quot;from_publication_date:2020-01-01,to_publication_date:2026-10-25&quot;,
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;sort&quot;: &quot;publication_date:asc&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;search.title&quot;: &quot;\&quot;continuous sign recognition\&quot; AND (review OR survey OR challenges OR understanding OR \&quot;critical study\&quot;)&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre><h3>doi-ibrahim</h3><p>Run: <code>20261025T080949956743Z-full</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>{
+  &quot;corpus&quot;: &quot;all&quot;,
+  &quot;per_page&quot;: 100,
+  &quot;filter&quot;: &quot;doi:https://doi.org/10.36478/jeasci.2020.1205.1227&quot;,
+  &quot;cursor&quot;: &quot;*&quot;
+}</code></pre></details>
+<p>85 main-query occurrences; 7 title-sensitivity occurrences (0 new IDs). The separate DOI check followed a cited review with conflicting dates. Pilot pages were reused without double counting. All configured queries completed. OpenAlex indexing and exact phrases limit recall.</p></section>
+<section id="unresolved"><h2>Unresolved candidates</h2><ul><li><a href="https://link.springer.com/article/10.1007/s11042-020-08961-z">Aloysius and Geetha (2020)</a> — Open full-text access not verified.</li><li><a href="https://www.sciencedirect.com/science/article/pii/S0306457324001341">Alyami, Luqman and Hammoudeh (2024)</a> — Open full-text access not verified.</li><li><a href="https://link.springer.com/article/10.1007/s12626-025-00180-y">Taher and Zeebaree (2025)</a> — Open full-text access not verified.</li><li><a href="https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf">Ibrahim, Zayed and Selim (2020)</a> — Conflicting publication dates; eligibility unresolved.</li></ul></section>
+<footer><a href="../work/screening.csv">Full screening log</a> · <a href="../work/evidence.json">Evidence</a> · <a href="../protocol.md">Protocol</a> · <a href="search-data.json">Exact search data</a> · <a href="../README.md">Reproduction</a></footer></main></body></html>

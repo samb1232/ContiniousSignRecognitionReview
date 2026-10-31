@@ -124,8 +124,14 @@ def main(check=False):
 <li><strong>Exclude:</strong> broader recognition/translation or isolated-sign reviews where CSLR is not central; primary research; unrelated work; proceedings volumes/notices; confirmed out-of-range publications.</li>
 <li><strong>Uncertain:</strong> missing text, unclear access rights or conflicting dates. These are not content-based exclusions.</li></ul>
 </section>''')
-    sections.append('''<section id="queries"><h2>Executed searches</h2>
-<p><strong>Discovery filters:</strong> 2020-01-01–2026-10-25 inclusive; core + expansion corpus; publication date ascending; 100 results/page; cursor pagination. No OA, language or citation filter. Open access was checked during screening.</p>''')
+    sections.append('''<section id="queries"><h2>Exact OpenAlex search rules</h2>
+<p><strong>Endpoint:</strong> <code>GET https://api.openalex.org/works</code>. Discovery used OpenAlex only. The saved execution cutoff is 25 October 2026; it does not include later publications.</p>
+<ul><li><strong>Main searches:</strong> six combinations of two quoted CSLR phrases and three review terms in titles, abstracts and keywords, plus two phrase searches restricted to <code>type:review</code>. The review-type restriction applies only to q1r and q2r.</li>
+<li><strong>Supplementary searches (s1, s2):</strong> title-only searches broadening the review terms to include challenges, understanding and critical study. Added after main retrieval and retained as a separate route.</li>
+<li><strong>DOI verification (doi-ibrahim):</strong> a separate exact-DOI lookup for a cited candidate with conflicting dates; no publication-date filter. It is not a discovery search.</li>
+<li><strong>No additional restrictions:</strong> no open-access, language, citation-count or ranking cutoff, and no target number of papers. Lawful public full-text access and central CSLR relevance were assessed during screening.</li>
+<li><strong>Pagination:</strong> start with <code>cursor=*</code>, then follow the returned <code>meta.next_cursor</code> until termination. The pilot allowed one page per query; full runs completed pagination, reusing identical saved pilot pages.</li></ul>
+<p>The table gives the executed query strings. Exact parameter sets below come from each selected run’s saved configuration: date bounds are inclusive; <code>corpus=all</code> includes core and expansion records; <code>sort=publication_date:asc</code> orders oldest first; <code>per_page=100</code> sets page size.</p>''')
     query_rows = []
     for q in queries:
         params = q['params']
@@ -141,6 +147,13 @@ def main(check=False):
         query_rows.append([h(q['id']), '<code>' + h(search) + '</code>', h(scope), h(filters), h(q['retrieved'])])
     sections.append(table(['ID', 'Query', 'Fields', 'Filters', 'Found'], query_rows,
                           'Result counts overlap across queries'))
+    sections.append('<details><summary>Exact API parameters for every executed query</summary>'
+                    + ''.join('<h3>' + h(q['id']) + '</h3><p>Run: <code>' + h(q['run'])
+                              + '</code></p><pre style="white-space:pre-wrap;overflow-wrap:anywhere"><code>'
+                              + h(json.dumps({**q['params'], 'cursor': q['cursor_start']},
+                                             indent=2, ensure_ascii=False))
+                              + '</code></pre>' for q in queries)
+                    + '</details>')
     completion = 'All configured queries completed.' if all(q['complete'] for q in queries) else 'Some configured queries are incomplete; see the data snapshot.'
     sections.append(f'<p>{main_occurrences} main-query occurrences; {sensitivity_occurrences} title-sensitivity occurrences ({sensitivity_added} new IDs). The separate DOI check followed a cited review with conflicting dates. Pilot pages were reused without double counting. {h(completion)} OpenAlex indexing and exact phrases limit recall.</p></section>')
     sections.append('<section id="unresolved"><h2>Unresolved candidates</h2><ul>'
