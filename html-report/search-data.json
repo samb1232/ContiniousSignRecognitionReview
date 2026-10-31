@@ -127,6 +127,7 @@
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"review\""
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+published+since+2020-01-01+and+title-abstract-keywords+has+%28stemmed+%22continuous+sign+language+recognition%22+AND+stemmed+%22review%22%29+and+published+through+2026-10-25",
       "pages": 1,
       "retrieved": 24,
       "reported_total": 24,
@@ -144,6 +145,7 @@
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"survey\""
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+published+since+2020-01-01+and+title-abstract-keywords+has+%28stemmed+%22continuous+sign+language+recognition%22+AND+stemmed+%22survey%22%29+and+published+through+2026-10-25",
       "pages": 1,
       "retrieved": 11,
       "reported_total": 11,
@@ -161,6 +163,7 @@
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"systematic literature review\""
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+published+since+2020-01-01+and+title-abstract-keywords+has+%28stemmed+%22continuous+sign+language+recognition%22+AND+stemmed+%22systematic+literature+review%22%29+and+published+through+2026-10-25",
       "pages": 1,
       "retrieved": 3,
       "reported_total": 3,
@@ -178,6 +181,7 @@
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"review\""
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+published+since+2020-01-01+and+title-abstract-keywords+has+%28stemmed+%22continuous+sign+recognition%22+AND+stemmed+%22review%22%29+and+published+through+2026-10-25",
       "pages": 1,
       "retrieved": 26,
       "reported_total": 26,
@@ -195,6 +199,7 @@
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"survey\""
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+published+since+2020-01-01+and+title-abstract-keywords+has+%28stemmed+%22continuous+sign+recognition%22+AND+stemmed+%22survey%22%29+and+published+through+2026-10-25",
       "pages": 1,
       "retrieved": 9,
       "reported_total": 9,
@@ -212,6 +217,7 @@
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign recognition\" AND \"systematic literature review\""
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+published+since+2020-01-01+and+title-abstract-keywords+has+%28stemmed+%22continuous+sign+recognition%22+AND+stemmed+%22systematic+literature+review%22%29+and+published+through+2026-10-25",
       "pages": 1,
       "retrieved": 4,
       "reported_total": 4,
@@ -229,6 +235,7 @@
         "per_page": 100,
         "search.title": "\"continuous sign language recognition\" AND (review OR survey OR challenges OR understanding OR \"critical study\")"
       },
+      "web_url": "https://openalex.org/q?oql=get+works+%28all+corpora%29+where+title+has+%28stemmed+%22continuous+sign+language+recognition%22+AND+%28stemmed+%22critical+study%22+OR+challenges+OR+review+OR+survey+OR+understanding%29%29+and+published+from+2020-01-01+through+2026-10-25",
       "pages": 1,
       "retrieved": 7,
       "reported_total": 7,

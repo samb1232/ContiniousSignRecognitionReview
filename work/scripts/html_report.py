@@ -12,6 +12,7 @@ from datetime import datetime
 from html import escape
 import json
 from pathlib import Path
+from urllib.parse import urlencode
 from screening_report import verdict_label
 from analysis_selection import selected_queries
 
@@ -70,7 +71,12 @@ def main(check=False):
             query_count = next(c for c in summary['query_counts']
                                if c['run'] == runid and c['query'] == query['id'])
             assert query_count['retrieved'] == sum(len(read(run / p['body'])['results']) for p in state['pages'])
+            # Reuse OpenAlex's own translation from the saved response, preserving
+            # search scope, Boolean grouping, stemming, corpus and date bounds.
+            saved_oql = read(run / state['pages'][0]['body'])['meta']['x_query']['oql']
+            web_url = 'https://openalex.org/q?' + urlencode({'oql': ' '.join(saved_oql.split())})
             queries.append({'id': query['id'], 'run': runid, 'params': params,
+                            'web_url': web_url,
                             'pages': len(state['pages']), 'retrieved': query_count['retrieved'],
                             'reported_total': state['total'], 'complete': state['complete'],
                             'cursor_start': '*',
@@ -111,14 +117,14 @@ def main(check=False):
 <p class="section-intro">These rules determined which records were retrieved. Eligibility is assessed afterwards using the screening criteria below.</p>
 <div class="rules-grid"><article class="rule"><h3>Shared search restrictions</h3><p>Discovery searches cover <strong>1 January 2020–25 October 2026</strong>, inclusive. All routes use <code>corpus=all</code>.</p><p>No open-access, language, citation-count or ranking restriction was applied.</p></article>
 <article class="rule"><h3>Search fields and review terms</h3><p>Main queries search titles, abstracts and keywords; supplementary query <a href="#query-s1">s1</a> searches titles only.</p><p>Review terms are text searches. No publication-type filter is applied to the active searches.</p></article></div>
-<h3>Exact queries and filters</h3><p>Search text and structured API filters are shown separately. Counts overlap across queries.</p>''')
+<h3>Exact queries and filters</h3><p>Query IDs open the corresponding search in OpenAlex. Search text and structured API filters are shown separately. Counts overlap across queries and reflect saved results; live results may change.</p>''')
     query_rows = []
     for q in queries:
         params = q['params']
         search_fields = [(k,v) for k,v in params.items() if k.startswith('search.')]
         field = '<br>'.join('<code>'+h(k)+'</code>' for k,v in search_fields) or 'Exact DOI lookup'
         terms = '<br>'.join('<code>'+h(v)+'</code>' for k,v in search_fields) or 'No text search'
-        query_rows.append(['<span class="query-id" id="query-'+h(q['id'])+'">'+h(q['id'])+'</span>',field,terms,'<code>'+h(params.get('filter','None'))+'</code>',h(q['retrieved'])])
+        query_rows.append(['<span class="query-id" id="query-'+h(q['id'])+'">'+link(q['web_url'],q['id'])+'</span>',field,terms,'<code>'+h(params.get('filter','None'))+'</code>',h(q['retrieved'])])
     sections.append(table(['Query ID','Search parameter','Exact search text','Structured API filters','Returned'],query_rows,'Active saved queries · main search and supplementary title search'))
     sections.append('<details class="execution"><summary>Execution details and exact API parameters</summary><div class="details-body"><p>Endpoint: <code>GET https://api.openalex.org/works</code>. Sort and page size are execution settings. Cursor pagination starts at <code>*</code>; full searches completed, reusing pilot pages without counting them twice.</p>'+''.join('<article><h3>'+h(q['id'])+'</h3><pre>'+h(json.dumps({**q['params'],'cursor':q['cursor_start']},indent=2))+'</pre></article>' for q in queries)+'</div></details>')
     reference_count = f' + {doi_added} reference candidates' if doi_added else ''
