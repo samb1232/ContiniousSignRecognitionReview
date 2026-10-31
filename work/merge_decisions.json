@@ -37,13 +37,6 @@
       ],
       "decision": "correct_display_date_only",
       "reason": "OpenAlex uses 2025-01-01; published PDF dates publication 2025-03-25. Preserve raw metadata."
-    },
-    {
-      "ids": [
-        "W2992983807"
-      ],
-      "decision": "uncertain_date_keep_boundary_candidate",
-      "reason": "OpenAlex date before 2020 conflicts with 2020 PDF issue and 2022 current publisher page. Do not silently override."
     }
   ]
 }

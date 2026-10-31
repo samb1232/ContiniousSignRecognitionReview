@@ -4,32 +4,45 @@
       "20261025T080315329549Z-full",
       "20261025T080843032107Z-full"
     ],
-    "verification_runs": [
-      "20261025T080949956743Z-full"
-    ],
+    "verification_runs": [],
     "pilot_run": "20261025T080219770846Z-pilot",
     "date": "2026-10-25",
-    "report_generated_utc": "2026-10-31T17:07:01.802240+00:00"
+    "report_generated_utc": "2026-10-31T20:01:23.911882+00:00",
+    "selected_queries": {
+      "20261025T080315329549Z-full": [
+        "q11",
+        "q12",
+        "q13",
+        "q21",
+        "q22",
+        "q23"
+      ],
+      "20261025T080843032107Z-full": [
+        "s1"
+      ]
+    },
+    "expected_candidate_count": 33,
+    "selection_revision": "work/archive/2026-11-01-selection-revision.json"
   },
   "summary": {
-    "discovery_occurrences": 92,
+    "discovery_occurrences": 84,
     "discovery_unique": 33,
-    "screened_unique_including_verification": 34,
+    "screened_unique_including_verification": 33,
     "ai_decisions": {
-      "include": 25,
+      "include": 24,
       "uncertain": 4,
       "exclude": 5
     },
     "human_decisions": {
-      "not_screened": 34
+      "not_screened": 33
     },
     "by_stage": {
       "title_abstract": 15,
-      "full_text": 19
+      "full_text": 18
     },
     "ai_by_stage": {
       "full_text": {
-        "include": 14,
+        "include": 13,
         "uncertain": 3,
         "exclude": 2
       },
@@ -71,14 +84,6 @@
       {
         "run": "20261025T080315329549Z-full",
         "role": "discovery",
-        "query": "q1r",
-        "retrieved": 3,
-        "reported_total": 3,
-        "complete": true
-      },
-      {
-        "run": "20261025T080315329549Z-full",
-        "role": "discovery",
         "query": "q21",
         "retrieved": 26,
         "reported_total": 26,
@@ -101,35 +106,11 @@
         "complete": true
       },
       {
-        "run": "20261025T080315329549Z-full",
-        "role": "discovery",
-        "query": "q2r",
-        "retrieved": 5,
-        "reported_total": 5,
-        "complete": true
-      },
-      {
         "run": "20261025T080843032107Z-full",
         "role": "discovery",
         "query": "s1",
         "retrieved": 7,
         "reported_total": 7,
-        "complete": true
-      },
-      {
-        "run": "20261025T080843032107Z-full",
-        "role": "discovery",
-        "query": "s2",
-        "retrieved": 0,
-        "reported_total": 0,
-        "complete": true
-      },
-      {
-        "run": "20261025T080949956743Z-full",
-        "role": "targeted DOI verification",
-        "query": "doi-ibrahim",
-        "retrieved": 1,
-        "reported_total": 1,
         "complete": true
       }
     ],
@@ -179,23 +160,6 @@
         "sort": "publication_date:asc",
         "per_page": 100,
         "search.title_abstract_keywords": "\"continuous sign language recognition\" AND \"systematic literature review\""
-      },
-      "pages": 1,
-      "retrieved": 3,
-      "reported_total": 3,
-      "complete": true,
-      "cursor_start": "*",
-      "role": "discovery"
-    },
-    {
-      "id": "q1r",
-      "run": "20261025T080315329549Z-full",
-      "params": {
-        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review",
-        "corpus": "all",
-        "sort": "publication_date:asc",
-        "per_page": 100,
-        "search.title_abstract_keywords": "\"continuous sign language recognition\""
       },
       "pages": 1,
       "retrieved": 3,
@@ -256,23 +220,6 @@
       "role": "discovery"
     },
     {
-      "id": "q2r",
-      "run": "20261025T080315329549Z-full",
-      "params": {
-        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25,type:review",
-        "corpus": "all",
-        "sort": "publication_date:asc",
-        "per_page": 100,
-        "search.title_abstract_keywords": "\"continuous sign recognition\""
-      },
-      "pages": 1,
-      "retrieved": 5,
-      "reported_total": 5,
-      "complete": true,
-      "cursor_start": "*",
-      "role": "discovery"
-    },
-    {
       "id": "s1",
       "run": "20261025T080843032107Z-full",
       "params": {
@@ -288,38 +235,6 @@
       "complete": true,
       "cursor_start": "*",
       "role": "discovery"
-    },
-    {
-      "id": "s2",
-      "run": "20261025T080843032107Z-full",
-      "params": {
-        "filter": "from_publication_date:2020-01-01,to_publication_date:2026-10-25",
-        "corpus": "all",
-        "sort": "publication_date:asc",
-        "per_page": 100,
-        "search.title": "\"continuous sign recognition\" AND (review OR survey OR challenges OR understanding OR \"critical study\")"
-      },
-      "pages": 1,
-      "retrieved": 0,
-      "reported_total": 0,
-      "complete": true,
-      "cursor_start": "*",
-      "role": "discovery"
-    },
-    {
-      "id": "doi-ibrahim",
-      "run": "20261025T080949956743Z-full",
-      "params": {
-        "corpus": "all",
-        "per_page": 100,
-        "filter": "doi:https://doi.org/10.36478/jeasci.2020.1205.1227"
-      },
-      "pages": 1,
-      "retrieved": 1,
-      "reported_total": 1,
-      "complete": true,
-      "cursor_start": "*",
-      "role": "DOI verification"
     }
   ],
   "screening": {
@@ -3579,77 +3494,10 @@
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
         }
-      },
-      {
-        "openalex_id": "W2992983807",
-        "human_decision": "not_screened",
-        "ai_decision": "include",
-        "stage": "full_text",
-        "evidence_level": "full_text",
-        "source_ids": [
-          "ibrahim2020-author"
-        ],
-        "description": "Survey of CSLR methods, movement epenthesis and benchmark datasets.",
-        "reason": "Table 2 compares multiple visual CSLR studies, satisfying M1–M3. Publication-window compliance remains unresolved separately.",
-        "failed_criteria": [],
-        "criteria": {
-          "M1": {
-            "status": "pass",
-            "reason": "Synthesizes prior research."
-          },
-          "M2": {
-            "status": "pass",
-            "reason": "CSLR coverage is supported at the assessed stage."
-          },
-          "M3": {
-            "status": "pass",
-            "reason": "Includes visual recognition approaches."
-          }
-        },
-        "evidence": [
-          {
-            "source_id": "ibrahim2020-author",
-            "url": "https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf",
-            "path": "work/sources/ibrahim2020-author.pdf",
-            "locator": "Visually inspected PDF pp.1,6,9,12,15; Table 2 p.12 (printed1216)",
-            "passage": "Table 2 contrasts Kelly’s visual GT-HMM with Yang and Lee’s CRF+AAM, their features and sentence datasets. Abstract identifies synthesis of earlier articles.",
-            "sha256": "06b358a8875f14834f9104d4d0d568cd9bd60a4e21575324cc3fa3bdfe63ac15",
-            "kind": "paraphrase"
-          }
-        ],
-        "unresolved_issues": [
-          "OpenAlex date 2019 conflicts with PDF issue year 2020; publication-window compliance unresolved."
-        ],
-        "next_action": "Verify publication date and obtain independent human assessment.",
-        "classification": "dedicated",
-        "qualifying_studies": [
-          "Yang and Lee (2011), CRF+AAM",
-          "Kelly et al. (2011), GT-HMM"
-        ],
-        "assessments": [
-          {
-            "stage": "title_abstract",
-            "ai_decision": "include",
-            "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
-          }
-        ],
-        "decoded_abstract": "",
-        "assessment_metadata": {
-          "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
-          "agent_batch": "batch0.json",
-          "model": "GPT-6 / Codex (exact runtime version unavailable)",
-          "protocol": "protocol.md",
-          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
-          "prompt": "prompts/ai-screening-prompt.md",
-          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
-          "execution_instructions": "prompts/screening-execution.md",
-          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
-          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
       }
     ],
     "assessment_run": {
-      "candidate_count": 34,
+      "candidate_count": 33,
       "new_discovery_searches": 0,
       "openalex_credits_used": 0,
       "method": "Three disjoint agent batches; lead evidence review; title/abstract followed by available full text.",
@@ -3678,7 +3526,8 @@
         "subagents": 0,
         "new_discovery_searches": 0,
         "openalex_credits_used": 0
-      }
+      },
+      "selection_revision": "work/archive/2026-11-01-selection-revision.json"
     }
   },
   "corpus": [
@@ -16001,20 +15850,8 @@
         },
         {
           "run": "20261025T080219770846Z-pilot",
-          "query": "q1r",
-          "body": "raw/reused-q1r-0.json",
-          "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
           "query": "q21",
           "body": "raw/reused-q21-0.json",
-          "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
-          "query": "q2r",
-          "body": "raw/reused-q2r-0.json",
           "cursor": "*"
         }
       ],
@@ -16972,12 +16809,6 @@
         },
         {
           "run": "20261025T080219770846Z-pilot",
-          "query": "q1r",
-          "body": "raw/reused-q1r-0.json",
-          "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
           "query": "q21",
           "body": "raw/reused-q21-0.json",
           "cursor": "*"
@@ -16986,12 +16817,6 @@
           "run": "20261025T080219770846Z-pilot",
           "query": "q23",
           "body": "raw/reused-q23-0.json",
-          "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
-          "query": "q2r",
-          "body": "raw/reused-q2r-0.json",
           "cursor": "*"
         }
       ],
@@ -22825,20 +22650,8 @@
         },
         {
           "run": "20261025T080219770846Z-pilot",
-          "query": "q1r",
-          "body": "raw/reused-q1r-0.json",
-          "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
           "query": "q21",
           "body": "raw/reused-q21-0.json",
-          "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
-          "query": "q2r",
-          "body": "raw/reused-q2r-0.json",
           "cursor": "*"
         }
       ],
@@ -34765,12 +34578,6 @@
           "query": "q23",
           "body": "raw/reused-q23-0.json",
           "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
-          "query": "q2r",
-          "body": "raw/reused-q2r-0.json",
-          "cursor": "*"
         }
       ],
       "metadata_conflicts": [],
@@ -36958,12 +36765,6 @@
           "query": "q23",
           "body": "raw/reused-q23-0.json",
           "cursor": "*"
-        },
-        {
-          "run": "20261025T080219770846Z-pilot",
-          "query": "q2r",
-          "body": "raw/reused-q2r-0.json",
-          "cursor": "*"
         }
       ],
       "metadata_conflicts": [],
@@ -37981,454 +37782,6 @@
           "role": "discovery"
         }
       ]
-    },
-    {
-      "work": {
-        "id": "https://openalex.org/W2992983807",
-        "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-        "title": "Advances, Challenges and Opportunities in Continuous Sign Language Recognition",
-        "display_name": "Advances, Challenges and Opportunities in Continuous Sign Language Recognition",
-        "publication_year": 2019,
-        "publication_date": "2019-12-02",
-        "ids": {
-          "openalex": "https://openalex.org/W2992983807",
-          "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-          "mag": "2992983807"
-        },
-        "language": "en",
-        "primary_location": {
-          "id": "doi:10.36478/jeasci.2020.1205.1227",
-          "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-          "is_oa": true,
-          "landing_page_url": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-          "pdf_url": "http://docsdrive.com/pdfs/medwelljournals/jeasci/2020/1205-1227.pdf",
-          "source": {
-            "id": "https://openalex.org/S90335559",
-            "display_name": "Journal of Engineering and Applied Sciences",
-            "issn_l": "1816-949X",
-            "issn": [
-              "1816-949X",
-              "1818-7803"
-            ],
-            "is_oa": true,
-            "is_in_doaj": false,
-            "is_core": false,
-            "listed_in": [
-              "poland-20"
-            ],
-            "host_organization": "https://openalex.org/P4322633671",
-            "host_organization_name": "Medwell Publications",
-            "host_organization_lineage": [
-              "https://openalex.org/P4322633671"
-            ],
-            "host_organization_lineage_names": [
-              "Medwell Publications"
-            ],
-            "type": "journal"
-          },
-          "license": null,
-          "license_id": null,
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Journal of Engineering and Applied Sciences",
-          "raw_type": "journal-article"
-        },
-        "volume": null,
-        "type": "article",
-        "indexed_in": [
-          "crossref"
-        ],
-        "open_access": {
-          "is_oa": true,
-          "oa_status": "diamond",
-          "oa_url": "http://docsdrive.com/pdfs/medwelljournals/jeasci/2020/1205-1227.pdf",
-          "any_repository_has_fulltext": false
-        },
-        "authorships": [
-          {
-            "author_position": "first",
-            "author": {
-              "id": "https://openalex.org/A5038384013",
-              "display_name": "Nada B. Ibrahim",
-              "orcid": null,
-              "observed_orcids": []
-            },
-            "institutions": [],
-            "countries": [],
-            "is_corresponding": false,
-            "raw_author_name": "Nada B. Ibrahim",
-            "raw_affiliation_strings": [],
-            "raw_orcid": null,
-            "affiliations": []
-          },
-          {
-            "author_position": "middle",
-            "author": {
-              "id": "https://openalex.org/A5044492187",
-              "display_name": "Hala H. Zayed",
-              "orcid": "https://orcid.org/0000-0001-6779-7577",
-              "observed_orcids": [
-                "https://orcid.org/0000-0001-6779-7577"
-              ]
-            },
-            "institutions": [],
-            "countries": [],
-            "is_corresponding": false,
-            "raw_author_name": "Hala H. Zayed",
-            "raw_affiliation_strings": [],
-            "raw_orcid": null,
-            "affiliations": []
-          },
-          {
-            "author_position": "last",
-            "author": {
-              "id": "https://openalex.org/A5036612018",
-              "display_name": "Mazen Mohamed Selim",
-              "orcid": "https://orcid.org/0000-0001-5366-9515",
-              "observed_orcids": [
-                "https://orcid.org/0000-0001-5366-9515"
-              ]
-            },
-            "institutions": [],
-            "countries": [],
-            "is_corresponding": false,
-            "raw_author_name": "Mazen M. Selim",
-            "raw_affiliation_strings": [],
-            "raw_orcid": null,
-            "affiliations": []
-          }
-        ],
-        "institutions": [],
-        "countries_distinct_count": 0,
-        "institutions_distinct_count": 0,
-        "corresponding_author_ids": [],
-        "corresponding_institution_ids": [],
-        "apc_list": null,
-        "apc_paid": null,
-        "fwci": 2.473,
-        "has_fulltext": true,
-        "cited_by_count": 43,
-        "citation_normalized_percentile": {
-          "value": 0.89258732,
-          "is_in_top_1_percent": false,
-          "is_in_top_10_percent": false
-        },
-        "cited_by_percentile_year": {
-          "min": 89,
-          "max": 99
-        },
-        "biblio": {
-          "volume": "15",
-          "issue": "5",
-          "first_page": "1205",
-          "last_page": "1227"
-        },
-        "is_retracted": false,
-        "is_paratext": false,
-        "is_xpac": false,
-        "primary_topic": {
-          "id": "https://openalex.org/T11398",
-          "display_name": "Hand Gesture Recognition Systems",
-          "score": 0.9994999766349792,
-          "subfield": {
-            "id": "https://openalex.org/subfields/1709",
-            "display_name": "Human-Computer Interaction"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/17",
-            "display_name": "Computer Science"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        "topics": [
-          {
-            "id": "https://openalex.org/T11398",
-            "display_name": "Hand Gesture Recognition Systems",
-            "score": 0.9994999766349792,
-            "subfield": {
-              "id": "https://openalex.org/subfields/1709",
-              "display_name": "Human-Computer Interaction"
-            },
-            "field": {
-              "id": "https://openalex.org/fields/17",
-              "display_name": "Computer Science"
-            },
-            "domain": {
-              "id": "https://openalex.org/domains/3",
-              "display_name": "Physical Sciences"
-            }
-          },
-          {
-            "id": "https://openalex.org/T10444",
-            "display_name": "Context-Aware Activity Recognition Systems",
-            "score": 9.999999747378752e-05,
-            "subfield": {
-              "id": "https://openalex.org/subfields/1707",
-              "display_name": "Computer Vision and Pattern Recognition"
-            },
-            "field": {
-              "id": "https://openalex.org/fields/17",
-              "display_name": "Computer Science"
-            },
-            "domain": {
-              "id": "https://openalex.org/domains/3",
-              "display_name": "Physical Sciences"
-            }
-          },
-          {
-            "id": "https://openalex.org/T11285",
-            "display_name": "Hearing Impairment and Communication",
-            "score": 9.999999747378752e-05,
-            "subfield": {
-              "id": "https://openalex.org/subfields/3204",
-              "display_name": "Developmental and Educational Psychology"
-            },
-            "field": {
-              "id": "https://openalex.org/fields/32",
-              "display_name": "Psychology"
-            },
-            "domain": {
-              "id": "https://openalex.org/domains/2",
-              "display_name": "Social Sciences"
-            }
-          }
-        ],
-        "keywords": [
-          {
-            "id": "https://openalex.org/keywords/continuous-sign-language-recognition",
-            "display_name": "continuous sign language recognition",
-            "score": 0.875
-          },
-          {
-            "id": "https://openalex.org/keywords/sign-language-recognition",
-            "display_name": "sign language recognition",
-            "score": 0.8230000138282776
-          }
-        ],
-        "concepts": [
-          {
-            "id": "https://openalex.org/C522192633",
-            "wikidata": "https://www.wikidata.org/wiki/Q34228",
-            "display_name": "Sign language",
-            "level": 2,
-            "score": 0.7219473123550415
-          },
-          {
-            "id": "https://openalex.org/C139676723",
-            "wikidata": "https://www.wikidata.org/wiki/Q1193832",
-            "display_name": "Sign (mathematics)",
-            "level": 2,
-            "score": 0.6471695899963379
-          },
-          {
-            "id": "https://openalex.org/C41008148",
-            "wikidata": "https://www.wikidata.org/wiki/Q21198",
-            "display_name": "Computer science",
-            "level": 0,
-            "score": 0.511347234249115
-          },
-          {
-            "id": "https://openalex.org/C41895202",
-            "wikidata": "https://www.wikidata.org/wiki/Q8162",
-            "display_name": "Linguistics",
-            "level": 1,
-            "score": 0.3723278045654297
-          },
-          {
-            "id": "https://openalex.org/C28490314",
-            "wikidata": "https://www.wikidata.org/wiki/Q189436",
-            "display_name": "Speech recognition",
-            "level": 1,
-            "score": 0.34228765964508057
-          },
-          {
-            "id": "https://openalex.org/C33923547",
-            "wikidata": "https://www.wikidata.org/wiki/Q395",
-            "display_name": "Mathematics",
-            "level": 0,
-            "score": 0.08618995547294617
-          },
-          {
-            "id": "https://openalex.org/C138885662",
-            "wikidata": "https://www.wikidata.org/wiki/Q5891",
-            "display_name": "Philosophy",
-            "level": 0,
-            "score": 0.07847133278846741
-          },
-          {
-            "id": "https://openalex.org/C134306372",
-            "wikidata": "https://www.wikidata.org/wiki/Q7754",
-            "display_name": "Mathematical analysis",
-            "level": 1,
-            "score": 0.0
-          }
-        ],
-        "mesh": [],
-        "locations_count": 1,
-        "locations": [
-          {
-            "id": "doi:10.36478/jeasci.2020.1205.1227",
-            "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-            "is_oa": true,
-            "landing_page_url": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-            "pdf_url": "http://docsdrive.com/pdfs/medwelljournals/jeasci/2020/1205-1227.pdf",
-            "source": {
-              "id": "https://openalex.org/S90335559",
-              "display_name": "Journal of Engineering and Applied Sciences",
-              "issn_l": "1816-949X",
-              "issn": [
-                "1816-949X",
-                "1818-7803"
-              ],
-              "is_oa": true,
-              "is_in_doaj": false,
-              "is_core": false,
-              "listed_in": [
-                "poland-20"
-              ],
-              "host_organization": "https://openalex.org/P4322633671",
-              "host_organization_name": "Medwell Publications",
-              "host_organization_lineage": [
-                "https://openalex.org/P4322633671"
-              ],
-              "host_organization_lineage_names": [
-                "Medwell Publications"
-              ],
-              "type": "journal"
-            },
-            "license": null,
-            "license_id": null,
-            "version": "publishedVersion",
-            "is_accepted": true,
-            "is_published": true,
-            "raw_source_name": "Journal of Engineering and Applied Sciences",
-            "raw_type": "journal-article"
-          }
-        ],
-        "best_oa_location": {
-          "id": "doi:10.36478/jeasci.2020.1205.1227",
-          "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-          "is_oa": true,
-          "landing_page_url": "https://doi.org/10.36478/jeasci.2020.1205.1227",
-          "pdf_url": "http://docsdrive.com/pdfs/medwelljournals/jeasci/2020/1205-1227.pdf",
-          "source": {
-            "id": "https://openalex.org/S90335559",
-            "display_name": "Journal of Engineering and Applied Sciences",
-            "issn_l": "1816-949X",
-            "issn": [
-              "1816-949X",
-              "1818-7803"
-            ],
-            "is_oa": true,
-            "is_in_doaj": false,
-            "is_core": false,
-            "listed_in": [
-              "poland-20"
-            ],
-            "host_organization": "https://openalex.org/P4322633671",
-            "host_organization_name": "Medwell Publications",
-            "host_organization_lineage": [
-              "https://openalex.org/P4322633671"
-            ],
-            "host_organization_lineage_names": [
-              "Medwell Publications"
-            ],
-            "type": "journal"
-          },
-          "license": null,
-          "license_id": null,
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Journal of Engineering and Applied Sciences",
-          "raw_type": "journal-article"
-        },
-        "sustainable_development_goals": [],
-        "sustainable_development_goals_aurora": [],
-        "study_designs": [],
-        "awards": [],
-        "funders": [],
-        "has_content": {
-          "pdf": true,
-          "grobid_xml": true
-        },
-        "content_urls": {
-          "pdf": "https://content.openalex.org/works/W2992983807.pdf",
-          "grobid_xml": "https://content.openalex.org/works/W2992983807.grobid-xml"
-        },
-        "referenced_works_count": 0,
-        "referenced_works": [],
-        "related_works": [
-          "https://openalex.org/W3117900351",
-          "https://openalex.org/W2371904474",
-          "https://openalex.org/W3216689910",
-          "https://openalex.org/W2963957488",
-          "https://openalex.org/W2368779261",
-          "https://openalex.org/W1983563683",
-          "https://openalex.org/W4304606405",
-          "https://openalex.org/W2386524223",
-          "https://openalex.org/W2003610761",
-          "https://openalex.org/W2393603401"
-        ],
-        "abstract_inverted_index": null,
-        "counts_by_year": [
-          {
-            "year": 2026,
-            "cited_by_count": 4
-          },
-          {
-            "year": 2025,
-            "cited_by_count": 7
-          },
-          {
-            "year": 2024,
-            "cited_by_count": 15
-          },
-          {
-            "year": 2023,
-            "cited_by_count": 5
-          },
-          {
-            "year": 2022,
-            "cited_by_count": 4
-          },
-          {
-            "year": 2021,
-            "cited_by_count": 5
-          },
-          {
-            "year": 2020,
-            "cited_by_count": 2
-          },
-          {
-            "year": 2018,
-            "cited_by_count": 1
-          }
-        ],
-        "updated_date": "2026-10-08T09:06:37.294493",
-        "created_date": "2025-10-10T00:00:00"
-      },
-      "provenance": [
-        {
-          "run": "20261025T080949956743Z-full",
-          "query": "doi-ibrahim",
-          "body": "raw/0002.json",
-          "cursor": "*"
-        }
-      ],
-      "metadata_conflicts": [],
-      "normalized_doi": "10.36478/jeasci.2020.1205.1227",
-      "aliases": [],
-      "discovery_routes": [
-        {
-          "run": "20261025T080949956743Z-full",
-          "role": "targeted DOI verification"
-        }
-      ]
     }
   ],
   "evidence": [
@@ -38668,40 +38021,6 @@
         "full_text": "unavailable",
         "omissions": "not_checked"
       }
-    },
-    {
-      "openalex_id": "W2992983807",
-      "doi": "10.36478/jeasci.2020.1205.1227",
-      "authors": "Ibrahim, Zayed and Selim",
-      "year": 2020,
-      "url": "https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf",
-      "evidence_level": "abstract_only",
-      "source_ids": [
-        "ibrahim2020-author",
-        "ibrahim2020-publisher"
-      ],
-      "coverage_summary": "Inspected first page/abstract: hand tracking, facial expressions, movement epenthesis and benchmark comparison. Downloaded full text is largely scanned; whole-paper omissions were not assessed.",
-      "access": {
-        "status": "verified_public_author_copy",
-        "license": "not_checked",
-        "detail": "Institutional author publication PDF available; first page visually inspected."
-      },
-      "date_conflict": {
-        "openalex": "2019-12-02",
-        "pdf_issue": "2020, volume 15(5), pp.1205–1227",
-        "current_publisher_page": "Received and published online 2022-09-21"
-      },
-      "claims": [
-        {
-          "kind": "author_stated",
-          "locator": "Institutional PDF p.1, abstract (visually inspected); publisher abstract",
-          "paraphrase": "Focuses on CSLR components, challenges and benchmarks."
-        }
-      ],
-      "coverage_status": {
-        "full_text_omissions": "not_checked",
-        "date_eligibility": "not_checked"
-      }
     }
   ],
   "merge_decisions": {
@@ -38743,19 +38062,11 @@
         ],
         "decision": "correct_display_date_only",
         "reason": "OpenAlex uses 2025-01-01; published PDF dates publication 2025-03-25. Preserve raw metadata."
-      },
-      {
-        "ids": [
-          "W2992983807"
-        ],
-        "decision": "uncertain_date_keep_boundary_candidate",
-        "reason": "OpenAlex date before 2020 conflicts with 2020 PDF issue and 2022 current publisher page. Do not silently override."
       }
     ]
   },
   "run_manifest_paths": {
     "20261025T080315329549Z-full": "work/runs/20261025T080315329549Z-full/manifest.json",
-    "20261025T080843032107Z-full": "work/runs/20261025T080843032107Z-full/manifest.json",
-    "20261025T080949956743Z-full": "work/runs/20261025T080949956743Z-full/manifest.json"
+    "20261025T080843032107Z-full": "work/runs/20261025T080843032107Z-full/manifest.json"
   }
 }

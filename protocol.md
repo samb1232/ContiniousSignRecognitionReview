@@ -20,7 +20,7 @@ Verdicts: not_screened, include, exclude, uncertain. AI verdicts are proposals; 
 
 ## Retrieval
 
-OpenAlex-only discovery; exact executable settings are in `work/queries.json`. Search title/abstract/keywords for each combination of two quoted phrases (`continuous sign language recognition`, `continuous sign recognition`) and three review terms (`review`, `survey`, `systematic literature review`). Add two phrase searches restricted to `type:review`; type is supplementary rather than mandatory. Search core and expansion corpora, without an OA filter, citation threshold, ranking cutoff, or desired paper count. Retrieve by publication date ascending, 100 results per page, with cursors. A pilot caps each query at one page; full retrieval follows pagination to termination within budget. Keyword matching can broaden phrase matches; eligibility requires source inspection.
+OpenAlex-only discovery; historical executable settings are in `work/queries.json` and immutable run configurations. Active query selection is recorded in `work/analysis_config.json`. Search title/abstract/keywords for each combination of two quoted phrases (`continuous sign language recognition`, `continuous sign recognition`) and three review terms (`review`, `survey`, `systematic literature review`). The original retrieval also executed two phrase searches restricted to `type:review`; these are retired from the active report as documented below. Search core and expansion corpora, without an OA filter, citation threshold, ranking cutoff, or desired paper count. Retrieve by publication date ascending, 100 results per page, with cursors. A pilot caps each query at one page; full retrieval follows pagination to termination within budget. Keyword matching can broaden phrase matches; eligibility requires source inspection.
 
 ## Screening and evidence
 
@@ -37,3 +37,11 @@ Save immutable new run directories containing raw response bytes, sanitized requ
 ## Logged sensitivity addition
 
 After main retrieval, inspect a separate title-based sensitivity search (`work/queries-sensitivity.json`), broadening review terms to challenges, understanding, and critical study. Union and deduplicate its results with the main full run; preserve separate route provenance. This is an explicitly post-pilot amendment prompted by a cited candidate missed by the main search.
+
+## Active selection amendment — 1 November 2026
+
+At the user's request, retain q11, q12, q13, q21, q22, q23 and s1 in the current analysis. Retire s2 (zero results), q1r and q2r (no unique candidates beyond retained main searches). These are reporting selections made after retrieval, not claims that those searches were never executed. No active query requires `type:review`.
+
+Remove the doi-ibrahim route and its sole candidate W2992983807 from the active set. The user could not locate the source paper and elected to apply its OpenAlex date, 2019-12-02, outside the 2020 start. Previously saved conflicting dates remain unresolved and archived; no new M1–M3 failure or human screening verdict is assigned. This leaves 33 candidates, with their existing AI and independent manual decisions unchanged.
+
+The archived assessment, evidence, previous selection and removal reasons are in `work/archive/2026-11-01-selection-revision.json`. All original raw responses and run exports remain unchanged. Active provenance and counts use only selected queries; historical budget usage still includes all executed requests. No new searches were run for this amendment.

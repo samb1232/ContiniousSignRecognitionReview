@@ -3,10 +3,23 @@
     "20261025T080315329549Z-full",
     "20261025T080843032107Z-full"
   ],
-  "verification_runs": [
-    "20261025T080949956743Z-full"
-  ],
+  "verification_runs": [],
   "pilot_run": "20261025T080219770846Z-pilot",
   "date": "2026-10-25",
-  "report_generated_utc": "2026-10-31T17:07:01.802240+00:00"
+  "report_generated_utc": "2026-10-31T20:01:23.911882+00:00",
+  "selected_queries": {
+    "20261025T080315329549Z-full": [
+      "q11",
+      "q12",
+      "q13",
+      "q21",
+      "q22",
+      "q23"
+    ],
+    "20261025T080843032107Z-full": [
+      "s1"
+    ]
+  },
+  "expected_candidate_count": 33,
+  "selection_revision": "work/archive/2026-11-01-selection-revision.json"
 }

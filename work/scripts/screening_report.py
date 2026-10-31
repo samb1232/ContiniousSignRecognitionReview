@@ -80,6 +80,14 @@ def markdown_report(record, work):
 
 
 def build_reports(records, corpus, check=False):
+    # These two directories contain only generated per-candidate artifacts.
+    # Retired records and evidence are preserved separately in work/archive/.
+    for folder, suffix in [('papers', '.md'), ('evidence', '.json')]:
+        for path in (OUT / folder).glob('W[0-9]*' + suffix):
+            if path.stem not in corpus:
+                if check:
+                    raise AssertionError(f'Retired candidate still published: {path}')
+                path.unlink()
     for record in records:
         validate_record(record)
         wid = record['openalex_id']
@@ -98,3 +106,4 @@ def build_reports(records, corpus, check=False):
                 path.write_text(content)
     if check:
         assert {p.stem for p in (OUT / 'papers').glob('*.md')} == set(corpus)
+        assert {p.stem for p in (OUT / 'evidence').glob('*.json')} == set(corpus)

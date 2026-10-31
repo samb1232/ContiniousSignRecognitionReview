@@ -13,6 +13,7 @@ from collections import Counter
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 from retrieve import export
+from analysis_selection import selected_queries
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -28,8 +29,10 @@ def verify_screening():
     from screening_report import build_reports
     records=json.loads((ROOT/'work/screening.json').read_text())['records']
     corpus={i['work']['id'].split('/')[-1]:i for i in json.loads((ROOT/'work/corpus.json').read_text())}
-    assert len(records)==len(corpus)==34
-    assert len({r['openalex_id'] for r in records})==34
+    analysis=json.loads((ROOT/'work/analysis_config.json').read_text())
+    expected=analysis['expected_candidate_count']
+    assert len(records)==len(corpus)==expected
+    assert len({r['openalex_id'] for r in records})==expected
     assert {r['openalex_id'] for r in records}==set(corpus)
     assert all(r['human_decision']=='not_screened' for r in records)
     build_reports(records, corpus, check=True)
@@ -38,7 +41,7 @@ def verify_screening():
     for stage, decisions in summary['ai_by_stage'].items():
         assert decisions==dict(Counter(r['ai_decision'] for r in records if r['stage']==stage))
     rows=list(csv.DictReader((ROOT/'work/screening.csv').open()))
-    assert len(rows)==34
+    assert len(rows)==expected
     by_id={r['openalex_id']:r for r in records}
     for row in rows:
         assert all(row[k]==by_id[row['openalex_id']][k] for k in ('stage','ai_decision','human_decision'))
@@ -54,7 +57,33 @@ def verify_screening():
     for url in parser.links:check_link(url,page)
     for md in (ROOT/'html-report/support/papers').glob('*.md'):
         for url in re.findall(r'\]\(([^)]+)\)',md.read_text()):check_link(url,md)
-    print('PASS: 34 screening records and concise paper reports; decisions, evidence, counts and local links agree.')
+    print(f'PASS: {expected} screening records and concise paper reports; decisions, evidence, counts and local links agree.')
+
+def verify_selection():
+    """Reconcile the active corpus and route provenance against selected raw pages."""
+    work=ROOT/'work'
+    analysis=json.loads((work/'analysis_config.json').read_text())
+    corpus=json.loads((work/'corpus.json').read_text())
+    expected_ids=set(); expected_routes={}; counts={}; occurrences=0
+    for runid in analysis['search_runs'] + analysis['verification_runs']:
+        run=work/'runs'/runid
+        manifest=json.loads((run/'manifest.json').read_text())
+        for qid in selected_queries(analysis, runid, manifest['queries']):
+            ids=[r['id'] for p in manifest['queries'][qid]['pages']
+                 for r in json.loads((run/p['body']).read_text())['results']]
+            counts[(runid,qid)]=len(ids)
+            expected_ids.update(ids)
+            for wid in ids: expected_routes.setdefault(wid,set()).add(qid)
+            if runid in analysis['search_runs']: occurrences+=len(ids)
+    actual_ids={wid for i in corpus for wid in [i['work']['id']]+i['aliases']}
+    assert actual_ids==expected_ids, 'Active corpus differs from selected raw results'
+    for i in corpus:
+        routes=set().union(*(expected_routes.get(wid,set()) for wid in [i['work']['id']]+i['aliases']))
+        assert {p['query'] for p in i['provenance']}==routes
+    summary=json.loads((work/'summary.json').read_text())
+    assert summary['discovery_occurrences']==occurrences
+    assert {(q['run'],q['query']):q['retrieved'] for q in summary['query_counts']}==counts
+    print('PASS: Active query counts, corpus and provenance match selected saved responses.')
 
 def main():
     checked=0
@@ -108,6 +137,7 @@ def main():
         if d.get('body'):assert hashlib.sha256((path.parent/d['body']).read_bytes()).hexdigest()==d['sha256']
     from html_report import main as check_html
     check_html(check=True)
+    verify_selection()
     verify_screening()
     (ROOT/'work/verification.json').write_text(json.dumps({
         'status':'passed', 'checks':'Saved runs, source hashes, screening records, paper reports, HTML and local links',

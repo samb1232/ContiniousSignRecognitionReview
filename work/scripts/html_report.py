@@ -13,6 +13,7 @@ from html import escape
 import json
 from pathlib import Path
 from screening_report import verdict_label
+from analysis_selection import selected_queries
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'work'
@@ -45,16 +46,14 @@ def main(check=False):
     screening = read(WORK / 'screening.json')
     records = screening['records']
     corpus = {x['work']['id'].rsplit('/', 1)[-1]: x for x in read(WORK / 'corpus.json')}
-    evidence = {x['openalex_id']: x for x in read(WORK / 'evidence.json')['reviews']}
+    evidence = {x['openalex_id']: x for x in read(WORK / 'evidence.json')['reviews']
+                if x['openalex_id'] in corpus}
     ai = Counter(r['ai_decision'] for r in records)
     human = Counter(r['human_decision'] for r in records)
     assert len(records) == len(corpus) == summary['screened_unique_including_verification']
     assert dict(ai) == summary['ai_decisions'], 'Rebuild summary with report.py first'
     assert dict(human) == summary['human_decisions'], 'Rebuild summary with report.py first'
-    stages = Counter((r['stage'], r['ai_decision']) for r in records)
     decisions = {r['openalex_id']: r for r in records}
-    stage_summary = '; '.join(f"{count} {verdict_label({'ai_decision': verdict, 'stage': stage}).lower()} ({stage.replace('title_abstract', 'title/abstract').replace('full_text', 'full text')})"
-                              for (stage, verdict), count in sorted(stages.items()))
     queries = []
     manifests = {}
     for runid in analysis['search_runs'] + analysis['verification_runs']:
@@ -62,7 +61,10 @@ def main(check=False):
         config = read(run / 'config.json')
         manifest = read(run / 'manifest.json')
         manifests[runid] = manifest
+        selected = selected_queries(analysis, runid, manifest['queries'])
         for query in config['queries']:
+            if query['id'] not in selected:
+                continue
             state = manifest['queries'][query['id']]
             params = {**config['common_params'], **query['params']}
             query_count = next(c for c in summary['query_counts']
@@ -89,13 +91,15 @@ def main(check=False):
     unique = summary['discovery_unique']
     assert occurrences == summary['discovery_occurrences']
     doi_added = len(corpus) - unique
+    origin_summary = f'{unique} from OpenAlex discovery searches'
+    if doi_added:
+        origin_summary += f' + {doi_added} found through references and verified by DOI'
     sections = [f'''<header>
 <p class="eyebrow">Literature review · Search &amp; selection</p>
 <h1>Finding reviews of continuous sign language recognition</h1>
 <p class="lead">How the review candidates were retrieved from OpenAlex, and how they were assessed against the screening criteria.</p>
 <div class="result"><div><span class="result-number">{len(records)}</span><strong>candidates collected</strong></div>
-<p>{unique} from OpenAlex discovery searches + {doi_added} found through references and verified by DOI.</p></div>
-<p class="status">AI proposals: {h(stage_summary)}. Manual assessment: {human['not_screened']} not screened.</p>
+<p>{origin_summary}.</p></div>
 </header>
 <nav aria-label="Report sections"><a href="#queries">1. Search rules</a><a href="#criteria">2. Screening criteria</a><a href="#candidates">3. Candidates</a></nav>''']
     def readable_date(value):
@@ -106,7 +110,7 @@ def main(check=False):
     sections.append('''<section id="queries"><p class="eyebrow">01 · Retrieval</p><h2>OpenAlex search rules</h2>
 <p class="section-intro">These rules determined which records were retrieved. Eligibility is assessed afterwards using the screening criteria below.</p>
 <div class="rules-grid"><article class="rule"><h3>Shared search restrictions</h3><p>Discovery searches cover <strong>1 January 2020–25 October 2026</strong>, inclusive. All routes use <code>corpus=all</code>.</p><p>No open-access, language, citation-count or ranking restriction was applied.</p></article>
-<article class="rule"><h3>Route-specific restrictions</h3><p>Only <a href="#query-q1r">q1r</a> and <a href="#query-q2r">q2r</a> require <code>type:review</code>. The reference-triggered <a href="#query-doi-ibrahim">DOI lookup</a> has no publication-date filter.</p><p>Main queries search titles, abstracts and keywords; supplementary queries s1 and s2 search titles only.</p></article></div>
+<article class="rule"><h3>Search fields and review terms</h3><p>Main queries search titles, abstracts and keywords; supplementary query <a href="#query-s1">s1</a> searches titles only.</p><p>Review terms are text searches. No publication-type filter is applied to the active searches.</p></article></div>
 <h3>Exact queries and filters</h3><p>Search text and structured API filters are shown separately. Counts overlap across queries.</p>''')
     query_rows = []
     for q in queries:
@@ -115,9 +119,10 @@ def main(check=False):
         field = '<br>'.join('<code>'+h(k)+'</code>' for k,v in search_fields) or 'Exact DOI lookup'
         terms = '<br>'.join('<code>'+h(v)+'</code>' for k,v in search_fields) or 'No text search'
         query_rows.append(['<span class="query-id" id="query-'+h(q['id'])+'">'+h(q['id'])+'</span>',field,terms,'<code>'+h(params.get('filter','None'))+'</code>',h(q['retrieved'])])
-    sections.append(table(['Query ID','Search parameter','Exact search text','Structured API filters','Returned'],query_rows,'Executed queries · main search, supplementary title search, and DOI verification'))
+    sections.append(table(['Query ID','Search parameter','Exact search text','Structured API filters','Returned'],query_rows,'Active saved queries · main search and supplementary title search'))
     sections.append('<details class="execution"><summary>Execution details and exact API parameters</summary><div class="details-body"><p>Endpoint: <code>GET https://api.openalex.org/works</code>. Sort and page size are execution settings. Cursor pagination starts at <code>*</code>; full searches completed, reusing pilot pages without counting them twice.</p>'+''.join('<article><h3>'+h(q['id'])+'</h3><pre>'+h(json.dumps({**q['params'],'cursor':q['cursor_start']},indent=2))+'</pre></article>' for q in queries)+'</div></details>')
-    sections.append(f'<p class="reconciliation">{occurrences} overlapping discovery occurrences → {unique} unique search candidates + {doi_added} reference candidate → <strong>{len(records)} candidates</strong>. Deduplicated by OpenAlex ID and normalized DOI. Supplementary title searches returned {sensitivity_occurrences} occurrences and added {sensitivity_added} new candidates.</p></section>')
+    reference_count = f' + {doi_added} reference candidates' if doi_added else ''
+    sections.append(f'<p class="reconciliation">{occurrences} overlapping discovery occurrences → {unique} unique search candidates{reference_count} → <strong>{len(records)} candidates</strong>. Deduplicated by OpenAlex ID and normalized DOI. Supplementary title searches returned {sensitivity_occurrences} occurrences and added {sensitivity_added} new candidates.</p></section>')
     criteria = [('M1','Review purpose','Include narrative reviews, surveys, systematic reviews, scoping reviews and mapping studies synthesizing previous research. Exclude primary method, dataset or experimental papers whose literature discussion is only background.'),('M2','CSLR coverage','Include reviews of recognition of sequences of linguistic signs in continuous signing. Broader SLR/translation surveys may qualify.'),('M3','Vision-based scope','Include video/RGB, depth and pose/skeleton approaches. Exclude sensor-only reviews without vision-based CSLR coverage.')]
     sections.append('<section id="criteria"><p class="eyebrow">02 · Eligibility assessment</p><h2>Screening criteria</h2><p class="section-intro">Apply M1–M3 to each candidate. AI assessments are proposals; manual decisions are recorded independently.</p><div class="criteria-grid">'+''.join('<article class="criterion" id="'+i+'"><span class="criterion-id">'+i+'</span><h3>'+name+'</h3><p>'+text+'</p></article>' for i,name,text in criteria)+'</div>')
     sections.append('<h3>Verdicts and supporting evidence</h3>')
@@ -132,7 +137,6 @@ def main(check=False):
         w=item['work']; routes=sorted({p['query'] for p in item['provenance']})
         paper=link(w.get('doi') or w['id'],w['display_name'])+'<br>'+h(w['publication_year'])+' · '+link(w['id'],wid)
         if w.get('doi'): paper+='<br>'+link(w['doi'],w['doi'])
-        if wid=='W2992983807': paper+='<p>Date validation: OpenAlex 2019-12-02 falls outside the discovery window; saved institutional PDF says 2020 and publisher says 2022-09-21. Window compliance unresolved; verify publication date. DOI route did not enforce dates.</p>'
         record = decisions[wid]
         decision = link('support/papers/'+wid+'.md', verdict_label(record))
         if record['ai_decision'] != 'not_screened':

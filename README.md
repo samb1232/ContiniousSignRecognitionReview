@@ -2,7 +2,9 @@
 
 **[Open the project report →](html-report/index.html)**
 
-The report presents exact saved retrieval filters, M1–M3, and all 34 candidates. AI screening decisions are proposals; independent manual decisions remain Not screened. Each AI verdict links to a concise paper report, with detailed evidence in linked JSON.
+The report presents exact saved retrieval filters, M1–M3, and all 33 active candidates. AI screening decisions are proposals; independent manual decisions remain Not screened. Each AI verdict links to a concise paper report, with detailed evidence in linked JSON.
+
+Active runs and query IDs are selected in `work/analysis_config.json`. The 1 November 2026 revision retains q11–q13, q21–q23 and s1; it removes empty s2, redundant q1r/q2r, and the DOI-only Ibrahim candidate whose OpenAlex date is before 2020. Original runs remain immutable; the removed assessment, date-conflict evidence and previous configuration are preserved in `work/archive/2026-11-01-selection-revision.json`. The query configuration files describe the historical executions; rebuilding applies the active selection without rerunning searches.
 
 Rebuild and verify offline with Python 3.10 or newer (standard library):
 

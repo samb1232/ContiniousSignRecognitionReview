@@ -9,6 +9,7 @@ from collections import Counter
 import json
 from pathlib import Path
 from screening_report import build_reports
+from analysis_selection import selected_queries
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'work'
@@ -25,15 +26,21 @@ def main():
         manifest = read(folder / 'manifest.json'); statuses.append(manifest['status'])
         counts = read(folder / 'counts.json')
         role = 'discovery' if runid in config['search_runs'] else 'targeted DOI verification'
-        if role == 'discovery': occurrences += counts['retrieved_occurrences']
+        selected = selected_queries(config, runid, counts['per_query'])
         for qid, state in counts['per_query'].items():
+            if qid not in selected:
+                continue
             queries.append({'run':runid,'role':role,'query':qid,**state})
+            if role == 'discovery': occurrences += state['retrieved']
         for item in read(folder / 'works.json'):
+            provenance = [p for p in item['provenance'] if p['query'] in selected]
+            if not provenance:
+                continue
             wid = item['work']['id'].split('/')[-1]
             if wid not in corpus:
-                corpus[wid] = {**item, 'discovery_routes': []}
+                corpus[wid] = {**item, 'provenance': provenance, 'discovery_routes': []}
             else:
-                corpus[wid]['provenance'].extend(item['provenance'])
+                corpus[wid]['provenance'].extend(provenance)
             corpus[wid]['discovery_routes'].append({'run':runid,'role':role})
     # Cross-run DOI grouping is explicit and must be adjudicated if conflicting.
     dois = {}

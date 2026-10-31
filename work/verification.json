@@ -1,10 +1,10 @@
 {
   "status": "passed",
   "checks": "Saved runs, source hashes, screening records, paper reports, HTML and local links",
-  "candidate_count": 34,
+  "candidate_count": 33,
   "ai_by_stage": {
     "full_text": {
-      "include": 14,
+      "include": 13,
       "uncertain": 3,
       "exclude": 2
     },
@@ -15,6 +15,6 @@
     }
   },
   "human_decisions": {
-    "not_screened": 34
+    "not_screened": 33
   }
 }

@@ -1,22 +1,22 @@
 {
-  "discovery_occurrences": 92,
+  "discovery_occurrences": 84,
   "discovery_unique": 33,
-  "screened_unique_including_verification": 34,
+  "screened_unique_including_verification": 33,
   "ai_decisions": {
-    "include": 25,
+    "include": 24,
     "uncertain": 4,
     "exclude": 5
   },
   "human_decisions": {
-    "not_screened": 34
+    "not_screened": 33
   },
   "by_stage": {
     "title_abstract": 15,
-    "full_text": 19
+    "full_text": 18
   },
   "ai_by_stage": {
     "full_text": {
-      "include": 14,
+      "include": 13,
       "uncertain": 3,
       "exclude": 2
     },
@@ -58,14 +58,6 @@
     {
       "run": "20261025T080315329549Z-full",
       "role": "discovery",
-      "query": "q1r",
-      "retrieved": 3,
-      "reported_total": 3,
-      "complete": true
-    },
-    {
-      "run": "20261025T080315329549Z-full",
-      "role": "discovery",
       "query": "q21",
       "retrieved": 26,
       "reported_total": 26,
@@ -88,35 +80,11 @@
       "complete": true
     },
     {
-      "run": "20261025T080315329549Z-full",
-      "role": "discovery",
-      "query": "q2r",
-      "retrieved": 5,
-      "reported_total": 5,
-      "complete": true
-    },
-    {
       "run": "20261025T080843032107Z-full",
       "role": "discovery",
       "query": "s1",
       "retrieved": 7,
       "reported_total": 7,
-      "complete": true
-    },
-    {
-      "run": "20261025T080843032107Z-full",
-      "role": "discovery",
-      "query": "s2",
-      "retrieved": 0,
-      "reported_total": 0,
-      "complete": true
-    },
-    {
-      "run": "20261025T080949956743Z-full",
-      "role": "targeted DOI verification",
-      "query": "doi-ibrahim",
-      "retrieved": 1,
-      "reported_total": 1,
       "complete": true
     }
   ],
