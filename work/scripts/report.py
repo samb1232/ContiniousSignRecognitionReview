@@ -8,6 +8,7 @@ import csv
 from collections import Counter
 import json
 from pathlib import Path
+from screening_report import build_reports
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'work'
@@ -44,10 +45,7 @@ def main():
     rows = {row['openalex_id']:row for row in screening['records']}
     if set(rows) != set(corpus): raise ValueError('Screening records do not match saved corpus')
     evidence = read(WORK / 'evidence.json')
-    assertions = {item['openalex_id']:item for item in evidence['reviews']}
-    for wid, row in rows.items():
-        if row['ai_decision'] == 'include' and wid not in assertions:
-            raise ValueError('Included review lacks evidence: ' + wid)
+    build_reports(screening['records'], corpus)
     reserved = sum(read(p).get('credits_reserved',0) for p in (WORK / 'runs').glob('*/manifest.json'))
     observed = sum(float(r['headers'].get('x-ratelimit-credits-used',0))
                    for p in (WORK / 'runs').glob('*/manifest.json') for r in read(p)['requests'] if r.get('outcome') == 'success')
@@ -57,6 +55,8 @@ def main():
               'ai_decisions':dict(Counter(row['ai_decision'] for row in rows.values())),
               'human_decisions':dict(Counter(row['human_decision'] for row in rows.values())),
               'by_stage':dict(Counter(row['stage'] for row in rows.values())),
+              'ai_by_stage':{stage:dict(Counter(r['ai_decision'] for r in rows.values() if r['stage']==stage))
+                             for stage in sorted({r['stage'] for r in rows.values()})},
               'search_runs_complete':all(status=='complete' for status in statuses),
               'task_budget_credits':300, 'credits_reserved':reserved,'observed_successful_credits':observed,
               'query_counts':queries,'cross_run_doi_conflicts':conflicts}
@@ -67,7 +67,13 @@ def main():
         for wid, row in rows.items():
             writer.writerow({**{f:row.get(f,'not_checked') for f in fields},'title':corpus[wid]['work']['display_name'],
                              'source_ids':'|'.join(row['source_ids'])})
-    (WORK / 'report.md').write_text('# CSLR search and screening report\n\n34 candidates; AI and manual screening: Not screened. See [HTML report](../html-report/index.html) for exact retrieval filters and M1–M3.\n')
+    lines = ['# CSLR search and screening report', '',
+             f"{len(rows)} candidates. AI decisions are proposals; manual decisions remain independent.", '']
+    for stage, decisions in counts['ai_by_stage'].items():
+        lines.append(f"- {stage.replace('_', ' ')}: " + ', '.join(f'{n} {v}' for v,n in decisions.items()))
+    lines += ['', 'Manual decisions: '+', '.join(f'{n} {v}' for v,n in counts['human_decisions'].items()), '',
+              'See the [HTML report](../html-report/index.html) for candidates, individual reports, exact retrieval filters and M1–M3.']
+    (WORK / 'report.md').write_text('\n'.join(lines)+'\n')
     from html_report import main as build_html
     build_html()
     print(json.dumps({k:v for k,v in counts.items() if k!='query_counts'},indent=2))

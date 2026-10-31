@@ -1,0 +1,135 @@
+{
+  "paper": {
+    "title": "A comprehensive survey and taxonomy of sign language research",
+    "year": 2022,
+    "doi": "https://doi.org/10.1016/j.engappai.2022.105198",
+    "openalex_url": "https://openalex.org/W4285792148"
+  },
+  "openalex_id": "W4285792148",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "batch0-web-taxonomy"
+  ],
+  "description": "Survey and taxonomy of sign acquisition, datasets and recognition techniques.",
+  "reason": "Publisher abstract includes continuous sentence recognition and visual/multimodal processing; advance to full text.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "batch0-web-taxonomy",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197622002925",
+      "path": "work/sources/batch0-web-taxonomy.txt",
+      "locator": "First article abstract; Sign acquisition devices snippet",
+      "passage": "Reviews fingerspelling, isolated words and continuous sentence recognition; acquisition includes video cameras. Do not confuse the citing Alyami article abstract with this candidate.",
+      "sha256": "8ecdaca5ef842b5c748e4824a9f5c234390f2a46eb4aaf6b627f98a7367d8237",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Full text unavailable; direct publisher access failed."
+  ],
+  "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "decoded_abstract": "",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W4285792148",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "batch0-web-taxonomy"
+        ],
+        "description": "Survey and taxonomy of sign acquisition, datasets and recognition techniques.",
+        "reason": "Publisher abstract includes continuous sentence recognition and visual/multimodal processing; advance to full text.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Synthesizes prior research."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "CSLR coverage is supported at the assessed stage."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Includes visual recognition approaches."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "batch0-web-taxonomy",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0952197622002925",
+            "path": "work/sources/batch0-web-taxonomy.txt",
+            "locator": "First article abstract; Sign acquisition devices snippet",
+            "passage": "Reviews fingerspelling, isolated words and continuous sentence recognition; acquisition includes video cameras. Do not confuse the citing Alyami article abstract with this candidate.",
+            "sha256": "8ecdaca5ef842b5c748e4824a9f5c234390f2a46eb4aaf6b627f98a7367d8237",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Full text unavailable; direct publisher access failed."
+        ],
+        "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "decoded_abstract": "",
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+          "agent_batch": "batch0.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

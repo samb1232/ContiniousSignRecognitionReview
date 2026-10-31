@@ -1,0 +1,433 @@
+Recent progress in sign language recognition: a review | Machine Vision and Applications | Springer Nature Link (https://link.springer.com/article/10.1007/s00138-023-01479-y)
+citeturn12view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://link.springer.com/article/10.1007/s00138-023-01479-y","lineno":null}); Total lines: 385
+L0: Account
+L1: 
+L2: 【0†Menu】
+L3: 
+L4: 【1†Find a journal】 【2†Publish with us†www.springernature.com】 【3†Track your research†link.springernature.com】
+L5: 
+L6: 【4†Search】
+L7: 
+L8: 【5†Saved research】
+L9: 
+L10: 【6†Cart†order.springer.com】
+L11: # Recent progress in sign language recognition: a review
+L12: 
+L13:   * Original Paper
+L14:   * Published: 21 October 2023
+L15: 
+L16:   * Volume 34, article number 127 (2023)
+L17:   * 【7†Cite this article】
+L18: 
+L19: [Input] Save article
+L20: 
+L21: 【5†View saved research】
+L22: 
+L23: 【8†Machine Vision and Applications】 【9†Aims and scope】 【10†Submit manuscript†submission.springernature.com】
+L24:   * 【11†Aamir Wali】  【12†ORCID: orcid.org/0000-0002-5314-6113†orcid.org】^{【13†1】},
+L25:   * 【14†Roha Shariq】^{【13†1】},
+L26:   * 【15†Sajdah Shoaib】^{【13†1】},
+L27:   * 【16†Sukhan Amir】^{【13†1】} &
+L28:   * …
+L29:   * 【17†Asma Ahmad Farhan】^{【13†1】}
+L30: Show authors
+L31: 
+L32:   * 1734 Accesses
+L33: 
+L34:   * 27 Citations
+L35: 
+L36:   * 【18†Explore all metrics】
+L37: ## Abstract
+L38: Sign language is a predominant form of communication among a large group of society. The nature of sign languages is visual, making them distinct from spoken languages. Unfortunately, very few able people can understand sign language making communication with the hearing-impaired infeasible. Research in the field of sign language recognition (SLR) can help reduce the barrier between deaf and able people.
+L39: Despite having tremendous advances in SLR, unfortunately, this form of recognition is still at least a decade behind speech recognition. There has been a gradual transition from static to isolated to continuous SLR, but still the research is scattered, limited to very small vocabularies, and only suitable for tailor-made conditions. This paper aims to compile recent progress in SLR and presents a comprehensive review of the emerging SLR frameworks and algorithms.
+L40: We have categorized SLR based on the unit of written text, i.e., letters or alphabets, words and sentences. This review also includes a study-wise summary of the datasets used in different research conducted during the last few years. We identify state-of-the-art techniques for each category. We also suggest novel research directions for future work, and highlight several primary factors contributing to SLR’s inability to achieve improved practical outcomes.
+L41: This is a preview of subscription content, to check access.
+L42: ## Access this article
+L43: 
+L44: Log in via an institution
+L45: 
+L46: ## Subscribe and save
+L47: 
+L48: Springer+
+L49: 
+L50: from $39.99 /Month
+L51: 
+L52:   * Starting from 10 chapters or articles per month
+L53:   * Access and download chapters and articles from more than 300k books and 2,500 journals
+L54:   * Cancel anytime
+L55: 【19†View plans】
+L56: ## Buy Now
+L57: 
+L58: [Input][Input][Input][Input][Input][Input][Input][Input][Input]
+L59: 
+L60: Buy article PDF USD 39.95
+L61: 
+L62: Price excludes VAT (USA)
+L63: Tax calculation will be finalised during checkout.
+L64: 
+L65: Instant access to the full article PDF.
+L66: 
+L67: 【20†Institutional subscriptions†www.springernature.com】
+L68: 
+L69: Fig. 1
+L70: 
+L71: 【21†Image†media.springernature.com】
+L72: 
+L73: Fig. 2
+L74: 
+L75: 【22†Image†media.springernature.com】
+L76: 
+L77: Fig. 3
+L78: 
+L79: 【23†Image†media.springernature.com】
+L80: 
+L81: Fig. 4
+L82: 
+L83: 【24†Image†media.springernature.com】
+L84: 
+L85: Fig. 5
+L86: 
+L87: 【25†Image†media.springernature.com】
+L88: 
+L89: Fig. 6
+L90: 【26†Image†media.springernature.com】
+L91: 
+L92: Fig. 7
+L93: 
+L94: 【27†Image†media.springernature.com】
+L95: 
+L96: Fig. 8
+L97: 
+L98: 【28†Image†media.springernature.com】
+L99: ### Similar content being viewed by others
+L100: 
+L101: 【29†Image†media.springernature.com】
+L102: 
+L103: ### 【30†American Sign Language Recognition Using Yolo-NAS】
+L104: 
+L105: Chapter © 2025
+L106: 
+L107: 【31†Image†media.springernature.com】
+L108: 
+L109: ### 【32†A Survey: The Sensor-Based Method for Sign Language Recognition】
+L110: 
+L111: Chapter © 2024
+L112: 
+L113: 【33†Image†media.springernature.com】
+L114: 
+L115: ### 【34†A Systematic Study of Sign Language Recognition Systems Employing Machine Learning Algorithms】
+L116: 
+L117: Chapter © 2022
+L118: ## References
+L119: 
+L120:   1. Bromwich, M.: 360 million people worldwide suffer disabling hearing loss. 【35†https://www.shoebox.md/360-million-people-worldwide-suffer-disabling-hearing-loss/†www.shoebox.md】 (2022). Accessed 09 Apr 2022
+L121: 
+L122:   2. UN, U.N.: International day of sign languages. 【36†https://www.un.org/en/observances/sign-languages-day†www.un.org】. Accessed 09 Apr 2022
+L123: 
+L124:   3. Sign language. 【37†https://en.wikipedia.org/wiki/Sign_language†en.wikipedia.org】. Accessed 09 Apr 2022
+L125:   4. Zhu, Q., Li, J., Yuan, F., Gan, Q.: Multi-scale temporal network for continuous sign language recognition (2022). arXiv preprint 【38†arXiv:2204.03864†arxiv.org】
+L126: 
+L127:   5. Adaloglou, N.M., et al.: A comprehensive study on deep learning-based methods for sign language recognition. IEEE Trans. Multimed. (2021). 【39†https://doi.org/10.1109/TMM.2021.3070438†doi.org】
+L128: 
+L129:   6. Rastgoo, R., Kiani, K., Escalera, S.: Sign language recognition: a deep survey. Expert Syst. Appl. 164, 113794 (2021)
+L130:   7. Recent advances in sign language recognition using deep learning techniques
+L131: 
+L132:   8. El-Alfy, E.-S.M., Luqman, H.: A comprehensive survey and taxonomy of sign language research. Eng. Appl. Artif. Intell. 114, 105198 (2022)
+L133: 
+L134:   9. Gaikwad, R.S., Admuthe, L.S.: A review of various sign language recognition techniques. Model. Simul. Optim. 8, 111–126 (2022)
+L135: 
+L136:   10. Arab sign language recognition with convolutional neural networks. IEEE
+L137:   11. Sign language recognition using convolutional neural networks. Springer
+L138: 
+L139:   12. Shahzad, A., Wali, A.: Computerization of off-topic essay detection: a possibility? Educ. Inf. Technol. 27(4), 5737–5747 (2022)
+L140: 
+L141:   13. Jiang, Z., Zaheer, W., Wali, A., Gilani, S.: Visual sentiment analysis using data-augmented deep transfer learning techniques. Multimed. Tools Appl. 8, 1–17 (2023)
+L142:   14. Yan, C., Gong, B., Wei, Y., Gao, Y.: Deep multi-view enhancement hashing for image retrieval. IEEE Trans. Pattern Anal. Mach. Intell. 43(4), 1445–1451 (2020)
+L143: 
+L144:   15. A new benchmark on american sign language recognition using convolutional neural network. IEEE
+L145: 
+L146:   16. Wali, A., Saeed, M.: m-calp-yet another way of generating handwritten data through evolution for pattern recognition. Biosystems 175, 24–29 (2019)
+L147:   17. Wali, A.: Ca-nn: a cellular automata neural network for handwritten pattern recognition. Nat. Comput. 20, 1–8 (2022)
+L148: 
+L149:   18. Wali, A., Ahmad, M., Naseer, A., Tamoor, M., Gilani, S.: Stynmedgan: medical images augmentation using a new GAN model for improved diagnosis of diseases. J. Intell. Fuzzy Syst. 26, 1–18 (2023)
+L150: 
+L151:   19. Xu, Y., Wali, A.: Handwritten pattern recognition using birds-flocking inspired data augmentation technique. IEEE Access (2023)
+L152:   20. Mannan, A., et al.: Hypertuned deep convolutional neural network for sign language recognition. Comput. Intell. Neurosci. (2022)
+L153: 
+L154:   21. Sign language recognition using deep learning on custom processed static gesture images. IEEE
+L155: 
+L156:   22. Mannan, A. et al.: Hypertuned deep convolutional neural network for sign language recognition. Comput. Intell. Neurosci. (2022)
+L157:   23. Kasapbaşi, A., Elbushra, A.E.A., Omar, A.-H., Yilmaz, A.: Deepaslr: a CNN based human computer interface for American sign language recognition for hearing-impaired individuals. Comput. Methods Programs Biomed. Update 2, 100048 (2022)
+L158: 
+L159:   24. Zakariah, M., Alotaibi, Y.A., Koundal, D., Guo, Y., Mamun Elahi, M.: Sign language recognition for Arabic alphabets using transfer learning technique. Comput. Intell. Neurosci. (2022)
+L160:   25. Thakur, A., Budhathoki, P., Upreti, S., Shrestha, S., Shakya, S.: Real time sign language recognition and speech generation. J. Innov. Image Process. 2(2), 65–76 (2020)
+L161: 
+L162:   26. Yirtici, T., Yurtkan, K.: Regional-CNN-based enhanced Turkish sign language recognition. Signal Image Video Process. 8, 1–7 (2022)
+L163: 
+L164:   27. Sahoo, A.K., Mishra, G.S., Ravulakollu, K.K.: Sign language recognition: state of the art. ARPN J. Eng. Appl. Sci. 9(2), 116–134 (2014)
+L165:   28. Hussain, M.J., et al.: Intelligent sign language recognition system for e-learning context (2022)
+L166: 
+L167:   29. American sign language identification using hand trackpoint analysis. Springer
+L168: 
+L169:   30. Shah, F., et al.: Sign language recognition using multiple kernel learning: a case study of Pakistan sign language. IEEE Access 9, 67548–67558 (2021)
+L170: 
+L171:   31. Katoch, S., Singh, V., Tiwary, U.S.: Indian sign language recognition system using surf with SVM and CNN. Array 14, 100141 (2022)
+L172:   32. Word-level deep sign language recognition from video: a new large-scale dataset and methods comparison
+L173: 
+L174:   33. Context matters: self-attention for sign language recognition. IEEE
+L175: 
+L176:   34. Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks
+L177: 
+L178:   35. Töngi, R.: Application of transfer learning to sign language recognition using an inflated 3d deep convolutional neural network (2021). arXiv preprint 【40†arXiv:2103.05111†arxiv.org】
+L179:   36. Sharma, S., Singh, S.: Vision-based hand gesture recognition using deep learning for the interpretation of sign language. Expert Syst. Appl. 182, 115657 (2021)
+L180: 
+L181:   37. Lim, K.M., Tan, A.W.C., Lee, C.P., Tan, S.C.: Isolated sign language recognition using convolutional neural network hand modelling and hand energy image. Multimed. Tools Appl. 78(14), 19917–19944 (2019)
+L182:   38. Sincan, O.M., Keles, H.Y.: Using motion history images with 3d convolutional networks in isolated sign language recognition. IEEE Access 10, 18608–18618 (2022)
+L183: 
+L184:   39. Venugopalan, A., Reghunadhan, R.: Applying hybrid deep neural network for the recognition of sign language words used by the deaf covid-19 patients. Arab. J. Sci. Eng. 8, 1–14 (2022)
+L185:   40. Boukdir, A., Benaddy, M., Ellahyani, A., Meslouhi, O.E., Kardouchi, M.: Isolated video-based Arabic sign language recognition using convolutional and recursive neural networks. Arab. J. Sci. Eng. 47(2), 2187–2199 (2022)
+L186: 
+L187:   41. Sign pose-based transformer for word-level sign language recognition
+L188: 
+L189:   42. Yan, C., et al.: Task-adaptive attention for image captioning. IEEE Trans. Circuits Syst. Video Technol. 32(1), 43–51 (2021)
+L190:   43. Yan, C., et al.: Age-invariant face recognition by multi-feature fusionand decomposition with self-attention. ACM Trans. Multimed. Comput. Commun. Appl. 18(1), 1–18 (2022)
+L191: 
+L192:   44. Vaswani, A., et al.: Attention is all you need. Adv. Neural Inf. Process. Syst. 30, 50 (2017)
+L193: 
+L194:   45. Rastgoo, R., Kiani, K., Escalera, S.: Hand sign language recognition using multi-view hand skeleton. Expert Syst. Appl. 150, 113336 (2020)
+L195:   46. Hamza, H.M., Wali, A.: Pakistan sign language recognition: leveraging deep learning models with limited dataset. Mach. Vis. Appl. 34(5), 71 (2023)
+L196: 
+L197:   47. More, V., Sangamnerkar, S., Thakare, V., Mane, D., Dolas, R.: Sign language recognition using image processing. J. NX 8, 85–87 (2021)
+L198: 
+L199:   48. Kumar, A.R., Bhavana, T., Sri, P.M.: A deep neural framework for continuous sign language recognition by iterative training. J. Algebraic Stat. 13(3), 4574–4584 (2022)
+L200:   49. Wang, F., Song, Y., Zhang, J., Han, J., Huang, D.: Temporal unet: sample level human action recognition using wifi (2019). arXiv preprint 【41†arXiv:1904.11953†arxiv.org】
+L201: 
+L202:   50. Rastgoo, R., Kiani, K., Escalera, S.: Real-time isolated hand sign language recognition using deep networks and SVD. J. Ambient. Intell. Humaniz. Comput. 13(1), 591–611 (2022)
+L203: 
+L204:   51. Tolentino, L.K.S., et al.: Static sign language recognition using deep learning. Int. J. Mach. Learn. Comput 9(6), 821–827 (2019)
+L205:   52. European Language Resources Association (ELRA). Sign language recognition with transformer networks
+L206: 
+L207:   53. ML based sign language recognition system. IEEE
+L208: 
+L209:   54. Transferring cross-domain knowledge for video sign language recognition
+L210: 
+L211:   55. Wadhawan, A., Kumar, P.: Deep learning-based sign language recognition system for static signs. Neural Comput. Appl. 32(12), 7957–7968 (2020)
+L212: 
+L213:   56. Better sign language translation with STMC-transformer
+L214:   57. Deep sign: hybrid CNN-HMM for continuous sign language recognition
+L215: 
+L216:   58. Real-time sign language detection using human pose estimation. Springer
+L217: 
+L218:   59. Liao, Y., Xiong, P., Min, W., Min, W., Lu, J.: Dynamic sign language recognition based on video sequence with BLSTM-3d residual networks. IEEE Access 7, 38044–38054 (2019)
+L219: 
+L220:   60. Gao, L., et al.: RNN-transducer based Chinese sign language recognition. Neurocomputing 434, 45–54 (2021)
+L221:   61. Spatial-temporal multi-cue network for continuous sign language recognition, vol. 34
+L222: 
+L223:   62. Aditya, W., et al.: Novel spatio-temporal continuous sign language recognition using an attentive multi-feature network. Sensors 22(17), 6452 (2022)
+L224: 
+L225:   63. Venugopalan, A., Reghunadhan, R.: Applying deep neural networks for the automatic recognition of sign language words: a communication aid to deaf agriculturists. Expert Syst. Appl. 185, 115601 (2021)
+L226:   64. Fully convolutional networks for continuous sign language recognition. Springer
+L227: 
+L228:   65. Kumar, E.K., Kishore, P., Kumar, M.T.K., Kumar, D.A.: 3d sign language recognition with joint distance and angular coded color topographical descriptor on a 2-stream CNN. Neurocomputing 372, 40–54 (2020)
+L229: 
+L230:   66. Khan, R. Sign Language Recognition from a webcam video stream. Master’s thesis, Technische Universität München (2022)
+L231: 
+L232:   67. Deep high-resolution representation learning for human pose estimation
+L233:   68. Wen, F., Zhang, Z., He, T., Lee, C.: Ai enabled sign language recognition and VR space bidirectional communication using triboelectric smart glove. Nat. Commun. 12(1), 1–13 (2021)
+L234: 
+L235:   69. MyoSign: enabling end-to-end sign language recognition with wearables
+L236: 
+L237:   70. Cerna, L.R., Cardenas, E.E., Miranda, D.G., Menotti, D., Camara-Chavez, G.: A multimodal libras-ufop Brazilian sign language dataset of minimal pairs using a microsoft kinect sensor. Expert Syst. Appl. 167, 114179 (2021)
+L238:   71. Mirza, S.F., Al-Talabani, A.K.: Efficient kinect sensor-based Kurdish sign language recognition using echo system network. ARO Sci. J. Koya Univ. 9(2), 1–9 (2021)
+L239: 
+L240:   72. Mittal, A., Kumar, P., Roy, P.P., Balasubramanian, R., Chaudhuri, B.B.: A modified LSTM model for continuous sign language recognition using leap motion. IEEE Sens. J. 19(16), 7056–7063 (2019)
+L241:   73. Lee, C.K., et al.: American sign language recognition and training method with recurrent neural network. Expert Syst. Appl. 167, 114403 (2021)
+L242: 
+L243:   74. Chong, T.-W., Lee, B.-G.: American sign language recognition using leap motion controller with machine learning approach. Sensors 18(10), 3554 (2018)
+L244:   75. Pereira-Montiel, E., et al.: Automatic sign language recognition based on accelerometry and surface electromyography signals: a study for Colombian sign language. Biomed. Signal Process. Control 71, 103201 (2022)
+L245: 
+L246:   76. Visual alignment constraint for continuous sign language recognition
+L247: 
+L248:   77. Adaloglou, N., et al.: A comprehensive study on deep learning-based methods for sign language recognition. IEEE Trans. Multimed. 24, 1750–1762 (2021)
+L249: 
+L250:   78. Sign language production: a review
+--------------------------------------------------------------------------------
+Sign Language Recognition - A Deep Survey. - Aalborg University's Research Portal (https://vbn.aau.dk/en/publications/sign-language-recognition-a-deep-survey/)
+citeturn12view1 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://vbn.aau.dk/en/publications/sign-language-recognition-a-deep-survey/","lineno":null}); Total lines: 177
+L0: 【0†Skip to main navigation】 【1†Skip to search】 【2†Skip to main content】
+L1: 
+L2: 【3†Aalborg University's Research Portal Home】
+L3: 
+L4:   *     * 【4†Dansk】
+L5:     * 【5†English】
+L6: 
+L7: Search content at Aalborg University's Research Portal [Input: Search...]
+L8: 
+L9: # Sign Language Recognition - A Deep Survey.
+L10: 
+L11:   * Razieh Rastgoo
+L12:   * , Kourosh Kiani
+L13:   * , Sergio Escalera
+L14: 
+L15: Research output: Contribution to journal › Journal article › Research › peer-review
+L16: 
+L17: 【6†543   Link opens in a new tab†www.scopus.com】 Citations (Scopus)
+L18: ## Abstract
+L19: Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years.
+L20: In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved.
+L21: We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.
+L22: Original language  | English
+L23: Article number  | 113794
+L24: Journal  | 【7†Expert Syst. Appl.】
+L25: Volume  | 164
+L26: Pages (from-to)  | 113794
+L27: DOIs  |
+L28: 
+L29:   * 【8†https://doi.org/10.1016/J.ESWA.2020.113794†doi.org】
+L30: Publication status  | Published - 2021
+L31: Externally published  | Yes
+L32: ### Bibliographical note
+L33: 
+L34: DBLP's bibliographic metadata records provided through http://dblp.org/search/publ/api are distributed under a Creative Commons CC0 1.0 Universal Public Domain Dedication. Although the bibliographic metadata records are provided consistent with CC0 1.0 Dedication, the content described by the metadata records is not. Content may be subject to copyright, rights of privacy, rights of publicity and other restrictions.
+L35: ## Keywords
+L36: 
+L37:   * Application
+L38:   * Computer Vision
+L39:   * Deep learning
+L40:   * Face recognition
+L41:   * Pose estimation
+L42:   * Sign language recognition
+L43: 
+L44: ## Access to Document
+L45: 
+L46:   * 【8†10.1016/J.ESWA.2020.113794†doi.org】
+L47: 
+L48:   * 【9†https://dblp.org/rec/journals/eswa/RastgooKE21†dblp.org】
+L49: 
+L50: ## AUB Link
+L51: 
+L52: 【10†Search for the material in Aalborg University Library's search engine†kbdk-aub.primo.exlibrisgroup.com】
+L53: 
+L54: ## Other files and links
+L55: 
+L56:   * 【11†Link to publication in Scopus†www.scopus.com】
+L57: ## Fingerprint
+L58: 
+L59: Dive into the research topics of 'Sign Language Recognition - A Deep Survey.'. Together they form a unique fingerprint.
+L60: 
+L61: 【12†View full fingerprint】
+L62: ## Cite this
+L63: 
+L64:   * APA
+L65:   * Author
+L66:   * BIBTEX
+L67:   * Harvard
+L68:   * Standard
+L69:   * RIS
+L70:   * Vancouver
+L71: 
+L72: Rastgoo, R., Kiani, K., & Escalera, S. (2021). 【5†Sign Language Recognition - A Deep Survey.】 Expert Syst. Appl., 164, 113794. Article 113794. 【8†https://doi.org/10.1016/J.ESWA.2020.113794†doi.org】
+L73: 
+L74: Rastgoo, Razieh ; Kiani, Kourosh ; Escalera, Sergio. / 【5†Sign Language Recognition - A Deep Survey.】 In: 【7†Expert Syst. Appl.】 2021 ; Vol. 164. pp. 113794.
+L75: 
+L76: @article{42e0cac8c4da4d1b8225708655541b4c,
+L77: title = "Sign Language Recognition - A Deep Survey.",
+L78: abstract = "Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision.
+L79: Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years. In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved.
+L80: We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.",
+L81: keywords = "Application, Computer Vision, Deep learning, Face recognition, Pose estimation, Sign language recognition",
+L82: 
+L83: author = "Razieh Rastgoo and Kourosh Kiani and Sergio Escalera",
+L84: note = "DBLP's bibliographic metadata records provided through http://dblp.org/search/publ/api are distributed under a Creative Commons CC0 1.0 Universal Public Domain Dedication. Although the bibliographic metadata records are provided consistent with CC0 1.0 Dedication, the content described by the metadata records is not. Content may be subject to copyright, rights of privacy, rights of publicity and other restrictions.",
+L85: 
+L86: year = "2021",
+L87: 
+L88: doi = "10.1016/J.ESWA.2020.113794",
+L89: 
+L90: language = "English",
+L91: volume = "164",
+L92: 
+L93: pages = "113794",
+L94: 
+L95: journal = "Expert Syst. Appl.",
+L96: 
+L97: issn = "1873-6793",
+L98: 
+L99: publisher = "Elsevier",
+L100: 
+L101: }
+L102: 
+L103: Rastgoo, R, Kiani, K & Escalera, S 2021, '【5†Sign Language Recognition - A Deep Survey.】', Expert Syst. Appl., vol. 164, 113794, pp. 113794. 【8†https://doi.org/10.1016/J.ESWA.2020.113794†doi.org】
+L104: 
+L105: 【5†Sign Language Recognition - A Deep Survey.】 / Rastgoo, Razieh; Kiani, Kourosh; Escalera, Sergio.
+L106: In: Expert Syst. Appl., Vol. 164, 113794, 2021, p. 113794.
+L107: Research output: Contribution to journal › Journal article › Research › peer-review
+L108: 
+L109: TY - JOUR
+L110: 
+L111: T1 - Sign Language Recognition - A Deep Survey.
+L112: 
+L113: AU - Rastgoo, Razieh
+L114: 
+L115: AU - Kiani, Kourosh
+L116: 
+L117: AU - Escalera, Sergio
+L118: N1 - DBLP's bibliographic metadata records provided through http://dblp.org/search/publ/api are distributed under a Creative Commons CC0 1.0 Universal Public Domain Dedication. Although the bibliographic metadata records are provided consistent with CC0 1.0 Dedication, the content described by the metadata records is not. Content may be subject to copyright, rights of privacy, rights of publicity and other restrictions.
+L119: 
+L120: PY - 2021
+L121: 
+L122: Y1 - 2021
+L123: N2 - Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years.
+L124: In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved.
+L125: We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.
+L126: AB - Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years.
+L127: In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved.
+L128: We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.
+L129: KW - Application
+L130: 
+L131: KW - Computer Vision
+L132: 
+L133: KW - Deep learning
+L134: 
+L135: KW - Face recognition
+L136: 
+L137: KW - Pose estimation
+L138: 
+L139: KW - Sign language recognition
+L140: 
+L141: UR - https://www.scopus.com/pages/publications/85089222442
+L142: 
+L143: U2 - 10.1016/J.ESWA.2020.113794
+L144: 
+L145: DO - 10.1016/J.ESWA.2020.113794
+L146: 
+L147: M3 - Journal article
+L148: 
+L149: SN - 1873-6793
+L150: 
+L151: VL - 164
+L152: 
+L153: SP - 113794
+L154: 
+L155: JO - Expert Syst. Appl.
+L156: 
+L157: JF - Expert Syst. Appl.
+L158: 
+L159: M1 - 113794
+L160: 
+L161: ER -
+L162: Rastgoo R, Kiani K, Escalera S. 【5†Sign Language Recognition - A Deep Survey.】 Expert Syst. Appl. 2021;164:113794. 113794. doi: 10.1016/J.ESWA.2020.113794
+L163: 
+L164: 【13†Image: Aalborg University's Research Portal Logo】
+L165: 
+L166: Powered by 【14†Pure Link opens in a new tab†www.elsevier.com】, 【15†Scopus Link opens in a new tab†www.scopus.com】 & 【16†Elsevier Fingerprint Engine™ Link opens in a new tab†www.elsevier.com】
+L167: All content on this site: Copyright © 2026 Aalborg University's Research Portal, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply
+L168: 
+L169: We use cookies to help provide and enhance our service and tailor content. By continuing you agree to the 【17†use of cookies】
+L170: 
+L171: 【18†Log in to Pure   Link opens in a new tab】
+L172: 【19†About web accessibility   Link opens in a new tab】
+L173: 
+L174: 【20†Report vulnerability   Link opens in a new tab†elsevier.responsibledisclosure.com】
+L175: 
+L176: 【21†Contact us】

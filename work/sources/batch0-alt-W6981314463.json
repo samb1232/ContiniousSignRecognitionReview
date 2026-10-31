@@ -1,0 +1,14 @@
+{
+  "source_id": "batch0-alt-W6981314463",
+  "openalex_id": "W6981314463",
+  "url": "http://www.jatit.org/volumes/Vol102No21/28Vol102No21.pdf",
+  "retrieved_utc": "2026-10-31T11:34:09.076431+00:00",
+  "status": 200,
+  "final_url": "http://www.jatit.org/volumes/Vol102No21/28Vol102No21.pdf",
+  "content_type": "application/pdf",
+  "body": "batch0-alt-W6981314463.pdf",
+  "sha256": "1402170add6426e508032192248aa868abb6f0432b5aa67d333b2108353e8815",
+  "extractor": "pypdf 6.21.2",
+  "pages": 25,
+  "text": "batch0-alt-W6981314463.txt"
+}

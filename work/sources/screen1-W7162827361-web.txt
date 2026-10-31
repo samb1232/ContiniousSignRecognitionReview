@@ -1,0 +1,370 @@
+Systematic Mapping and Benchmarking of Sign Language Datasets (https://doria.fi/bitstream/handle/10024/194915/begum_kaniz.pdf?isAllowed=y&sequence=3)
+citeturn17view0 [wordlim: 200] Crawled: 4 months ago; Content type: application/pdf; Number of pages: 65; Source: open({"ref_id":"turn14view0","lineno":1215}); Total lines: 2175
+L1140@P39: YouTube-ASL [20], MediapiRGB [38], OpenASL [21], RoCoISLR [28], AzSLD [11], KSLGuide [42], SignIT [40]
+L1141@P39: CSL-Daily [32] SLT, CSLR, ISLR (Isolated sign dictionary)YouTube-ASL [20], OpenASL [21], CE-CNSL [31],
+L1142@P39: BOBSL [22], AzSLD [11]
+L1143@P39: INCLUDE [30] ISLR (Lexicon-scale
+L1144@P39: recognition)
+L1145@P39: MM-WLAuslan [34], RoCoISLR [28], SignIT [40],
+L1146@P39: SWL-LSE [39], BOBSL [22],
+L1147@P39: CSL-Daily [32]
+L1148@P39: Bosphorus
+L1149@P39: Sign22k [25]
+L1150@P39: ISLR (Chroma-key
+L1151@P39: background research)
+L1152@P39: AUTSL [13], MMWLAuslan [34], RoCoISLR [28],
+L1153@P39: SWL-LSE [39], AzSLD [11]
+L1154@P39: SIGNUM [24] CSLR (Signerindependent continuous
+L1155@P39: recognition)
+L1156@P39: CE-CNSL [31], MS-ASL [19],
+L1157@P39: BOBSL [22], SMILE [33], SLReDu GSL [10], LSA64 [35],
+L1158@P39: How2Sign [18], SignIT [40]
+L1159@P39: SMILE [33] L2 learner assessment
+L1160@P39: (Automated feedback)
+L1161@P39: MS-ASL [19], BOBSL [22],
+L1162@P39: BosphorusSign22k [25], MMWLAuslan [34], SWL-LSE [39]
+L1163@P39: LSA64 [35] ISLR (Outdoors and indoors word recognition)WLASL [9], Alabib-65 [37], MMWLAuslan [34], RoCoISLR [28],
+L1164@P39: Slovo [26], SWL-LSE [39], BdSLW60 [29]
+L1165@P39: BOBSL [22] SLR, Alignment, SLT,
+L1166@P39: Sign-spotting
+L1167@P39: Mediapi-RGB [38], OpenASL [21], YouTube-ASL [20],
+L1168@P39: AzSLD [11], SWL-LSE [39],
+L1169@P39: SignIT [40]
+L1170@P39: YouTubeASL [20]SLT (Large-scale web
+L1171@P39: mining), Alignment
+L1172@P39: AzSLD [11], CE-CNSL [31]
+L1173@P39: OpenASL [21] SLT (Open-domain
+L1174@P39: translation)
+L1175@P39: YouTube-ASL [20], AzSLD [11]
+L1176@P39: Slovo [26] ISLR (Large-scale Russian benchmark)AzSLD [11], SWL-LSE [39], BdSLW60 [29]
+L1177@P39: SL-ReDu
+L1178@P39: GSL [10]
+L1179@P39: ISLR, CSLR, Fingerspelling, L2 EducationSWL-LSE [39], RoCoISLR [28]
+L1180@P39: Alabib-65 [37] ISLR (Algerian subtlesign recognition)AzSLD [11]
+L1181@P39: BdSLW60 [29] ISLR (Spatio-temporal
+L1182@P39: word recognition)
+L1183@P39-40: CASL-W60 [41]41
+L1184@P40: Dataset Task(s) Sources Utilizing It
+L1185@P40: MMWLAuslan [34]ISLR (Multi-view,
+L1186@P40: multi-modal recognition)
+L1187@P40: RoCoISLR [28]
+L1188@P40: Mediapi-RGB [38] SLT (Journalistic LSF
+L1189@P40: translation), Sign Retrieval
+L1190@P40: SignIT [40], BOBSL [22]
+L1191@P40: KSU-SSL [36] SLR (Medical and daily
+L1192@P40: domain recognition)
+L1193@P40: BdSLW60 [29]
+L1194@P40: KSL-Guide [42] SLT, CSLR, ISLR,
+L1195@P40: SSLR (Interrogative
+L1196@P40: sentences)
+L1197@P40: SignIT [40], YouTube-ASL [20],
+L1198@P40: OpenASL [21]
+L1199@P40: AzSLD [11] SLT, Word Recognition,
+L1200@P40: Fingerspelling
+L1201@P40: YouTube-ASL [20], OpenASL [21]
+L1202@P40: CE-CNSL [31] CSLR (Real-life scenario recognition)CSL-Daily [32]
+L1203@P40: LIBRASUFOP [43]ISLR (Minimal-pairs
+L1204@P40: classification)
+L1205@P40: SignIT [40]
+L1206@P40: RoCoISLR [28] ISLR (Romanian sign
+L1207@P40: recognition)
+L1208@P40: —
+L1209@P40: CASL-W60 [41] ISLR (Central African
+L1210@P40: word classification)
+L1211@P40: —
+L1212@P40: SWL-LSE [39] ISLR (Health-related
+L1213@P40: Spanish signs)
+L1214@P40: —
+L1215@P40: 4.9.1 Isolated Sign Language Recognition (ISLR)
+L1216@P40: WLASL [9] and MS-ASL [19] are the most frequently referenced benchmarks for wordlevel recognition, appearing in numerous cross-dataset studies. Reported performance
+L1217@P40: results indicate significant challenges in scaling vocabulary: the best Inflated 3D
+L1218@P40: Convolutional (I3D) model achieved 65.89% Top-1 accuracy on the WLASL100
+L1219@P40: subset, but only 32.48% on the full WLASL2000 subset [9]. Regional datasets provide
+L1220@P40: essential ISLR baselines for under-represented languages. For example, BdSLW60 [29]
+L1221@P40: for Bangla reports 97.0% accuracy using Support Vector Machine (SVM) on a flipped
+L1222@P40: dataset, while AUTSL [13] for Turkish achieved 95.95% accuracy under random
+L1223@P40: splits and 62.02% under signer-independent protocols. Specialized datasets such as
+L1224@P40: LIBRAS-UFOP [43] (Brazilian Sign Language) and Alabib-65 [37] (Algerian Sign
+L1225@P40: Language) focus on model precision using minimal-pairs vocabularies and subtle
+L1226@P40: sign classes, reporting recognition rates of 74.25% and multi-method comparative
+L1227@P40: baselines, respectively. Recent datasets such as RoCoISLR [28] (Romanian) and
+L1228@P40: CASL-W60 [41] (Central African) utilize VideoMAE and transformer-based models
+L1229@P40-41: to establish standardized evaluation foundations for their respective regions.42
+L1230@P41: 4.9.2 Continuous Sign Language Recognition (CSLR)
+L1231@P41: RWTH-PHOENIX-Weather 2014 [23] remains the primary benchmark for continuous
+L1232@P41: sign language recognition, reporting a 45.0% Word Error Rate (WER) on single-signer
+L1233@P41: setups as a baseline for upper-body tracking evaluation. SIGNUM [24] serves as a
+L1234@P41: foundational benchmark for signer-independent continuous recognition, encompassing
+L1235@P41: a vocabulary of 450 basic signs in German Sign Language. More recent datasets, such
+L1236@P41: as CE-CNSL [31] (Chinese Sign Language), address the transition from laboratory
+L1237@P41: settings to real-life scenarios, reporting an 18.6% WER using the TFNet time-frequency
+L1238@P41: model. KSL-Guide [42] contributes by incorporating interrogative sentences into its
+L1239@P41: training corpus; the authors report that this inclusion can nearly halve the WER for
+L1240@P41: continuous recognition tasks in real-world application environments.
+L1241@P41: 4.9.3 Sign Language Translation (SLT)
+L1242@P41: Large-scale multimodal datasets such as How2Sign [18] facilitate continuous ASL-toEnglish translation across more than 35,000 signed sentences and an English vocabulary
+L1243@P41: of 16,000 words. CSL-Daily [32] introduced the Sign Back-Translation (SignBT)
+L1244@P41: method for Chinese Sign Language translation, achieving a Bilingual Evaluation
+L1245@P41: Understudy (BLEU) score of 21.34 by leveraging external monolingual data. BLEU
+L1246@P41: measures the degree of overlap between machine-generated translations and human
+L1247@P41: reference translations, with higher scores indicating closer agreement. MediapiRGB [38] offers the largest French Sign Language translation corpus, comprising 86
+L1248@P41: hours of journalistic content. Web-mined corpora such as YouTube-ASL [20] and
+L1249@P41: OpenASL [21] significantly expand the scale of translation tasks. YouTube-ASL [20],
+L1250@P41: for example, includes approximately 1,000 hours of video and more than 2,500 unique
+L1251@P41: signers, and reports a state-of-the-art fine-tuned baseline of 12.39 BLEU on the
+L1252@P41: How2Sign benchmark.
+L1253@P41: 4.9.4 Specialized and Emerging Research Tasks
+L1254@P41: Several datasets address applications beyond general recognition tasks. BOBSL [22]
+L1255@P41: supports large-scale sign language alignment and sign-spotting, reporting baseline
+L1256@P41: results for subtitle alignment across diverse broadcast topics. Educational applications
+L1257@P41: are central to SMILE [33] (Swiss German Sign Language) and SL-ReDu GSL [10]
+L1258@P41: (Greek Sign Language), both designed for second-language (L2) learner assessment at
+L1259@P41: the CEFR A1 level and which provide tools for student self-monitoring and automated
+L1260@P41: feedback. Domain-specific communication is addressed by KSU-SSL [36], the
+L1261@P41: largest Saudi Sign Language dataset in this collection, which focuses on healthcare
+--------------------------------------------------------------------------------
+Systematic Mapping and Benchmarking of Sign Language Datasets (https://doria.fi/bitstream/handle/10024/194915/begum_kaniz.pdf?isAllowed=y&sequence=3)
+citeturn17view1 [wordlim: 200] Crawled: 4 months ago; Content type: application/pdf; Number of pages: 65; Source: open({"ref_id":"turn14view0","lineno":1420}); Total lines: 2175
+L1391@P45: data.
+L1392@P45: 5.2.4 Incorporate Non-Manual Feature Annotations
+L1393@P45: Future datasets should include annotation of non-manual features such as facial expressions, eyebrow position, mouthing, and head movements, which convey grammatical
+L1394@P45: meaning in sign languages. As only 3 of the 30 mapped datasets fully annotate these
+L1395@P45: features, there is a significant opportunity for new releases to address this gap. Tools
+L1396@P45: such as ELAN and OpenFace can facilitate this process, and retrospective annotation
+L1397@P45: of existing datasets is technically feasible.
+L1398@P45: 5.2.5 Report Total Duration Consistently
+L1399@P45: All dataset documentation should report total duration in hours or minutes, calculated
+L1400@P45: from frame counts and frame rates if direct measurement is unavailable. This practice
+L1401@P45: is standard in comparable video recognition benchmarks and should be considered a
+L1402@P45-46: minimum requirement for sign language datasets.47
+L1403@P46: 5.2.6 Expand Geographic and Linguistic Coverage
+L1404@P46: Future dataset development should prioritize sign languages currently absent from
+L1405@P46: the research literature, including those from Sub-Saharan Africa, South-East Asia,
+L1406@P46: Central Asia, and the Middle East beyond Saudi Arabia. Coordinated international
+L1407@P46: initiatives in close collaboration with local deaf communities are most likely to
+L1408@P46: yield representative and linguistically accurate datasets. Bragg et al. [1] specifically
+L1409@P46: recommend community-centered approaches to dataset design to address the structural
+L1410@P46: inequalities evident in the current distribution.
+L1411@P46: 5.3 Task-Based Dataset Usage Guidelines
+L1412@P46: This section offers a structured guide for dataset selection based on the computational
+L1413@P46: task a researcher intends to pursue. Recommendations are based on annotation,
+L1414@P46: modality, and signer pool characteristics recorded in the extraction spreadsheet.
+L1415@P46: Table 9 presents a concise overview, and the following sub-sections discuss each task
+L1416@P46: type in detail.
+L1417@P46: 5.3.1 Isolated Sign Language Recognition
+L1418@P46: For isolated sign language recognition (ISLR), researchers should select datasets that
+L1419@P46: provide gloss labels and a published signer-independent split. WLASL [9] and MSASL [19] are recommended for large-vocabulary ASL recognition. AUTSL [13] and
+L1420@P46: BosphorusSign22k [25] are suitable for Turkish Sign Language with RGB and depth
+L1421@P46: modalities. MM-WLAuslan [34] is the preferred choice for Australian Sign Language,
+L1422@P46: offering over 282,900 samples with a multi-view configuration. Slovo [26] provides the
+L1423@P46: most subject-diverse Russian Sign Language resource, with 194 signers across 1,000
+L1424@P46: classes. For under-resourced languages, INCLUDE [30], Alabib-65 [37], RoCoISLR
+L1425@P46: [28], SignIT [40], and CASL-W60 [41] are the only available benchmarks for Indian,
+L1426@P46: Algerian, Romanian, Italian, and Central African Sign Languages, respectively. It
+L1427@P46: should be noted that KSU-SSL [36], INCLUDE [30], and RoCoISLR [28] do not
+L1428@P46: define signer-independent splits, which limits the rigor of evaluations on these datasets.
+L1429@P46: 5.3.2 Continuous Sign Language Recognition
+L1430@P46: Continuous sign language recognition (CSLR) requires temporal gloss annotations,
+L1431@P46: time-stamped labels marking the start and end boundaries of each sign within a
+L1432@P46: continuous video sequence, and a signer-independent split. RWTH-PHOENIXWeather 2014 [23] remains the most widely used CSLR benchmark, with 1,558
+L1433@P46: glosses, 9 signers, a standardized split, and paired sentence translations. SIGNUM [24]
+L1434@P46: provides a controlled German Sign Language benchmark with 450 signs from 25
+L1435@P46: native signers. BOBSL [22] supports large-scale British Sign Language recognition
+L1436@P46: with approximately 1,467 hours of broadcast footage. CE-CNSL [31] is recommended
+L1437@P46: for recognition under natural, complex environmental conditions, given its more than
+L1438@P46-47: 70 distinct background settings.48
+L1439@P47: Table 9: Task-based dataset selection guide. Recommendations are based on annotation
+L1440@P47: features, split availability, modality, and signer pool size as extracted from the source
+L1441@P47: publications
+L1442@P47: Research
+L1443@P47: Task
+L1444@P47: Key Requirements Recommended Datasets
+L1445@P47: Isolated
+L1446@P47: SLR
+L1447@P47: (word-level)
+L1448@P47: Gloss labels;
+L1449@P47: signer-independent
+L1450@P47: split; large
+L1451@P47: vocabulary
+L1452@P47: WLASL [9], MS-ASL [19], AUTSL [13],
+L1453@P47: MM-WLAuslan [34], Slovo [26],
+L1454@P47: INCLUDE [30], RoCoISLR [28],
+L1455@P47: BosphorusSign22k [25], SWL-LSE [39],
+L1456@P47: Alabib-65 [37], CASL-W60 [41],
+L1457@P47: LSA64 [35]
+L1458@P47: Continuous
+L1459@P47: SLR
+L1460@P47: Temporal gloss
+L1461@P47: annotations;
+L1462@P47: signer-independent
+L1463@P47: split
+L1464@P47: RWTH-PHOENIX-Weather 2014 [23],
+L1465@P47: SIGNUM [24], BOBSL [22],
+L1466@P47: CE-CNSL [31]
+L1467@P47: Sign
+L1468@P47: Language
+L1469@P47: Translation
+L1470@P47: Sentence alignment,
+L1471@P47: large vocabulary,
+L1472@P47: sufficient signer pool
+L1473@P47: How2Sign [18], CSL-Daily [32],
+L1474@P47: YouTube-ASL [20], OpenASL [21],
+L1475@P47: Mediapi-RGB [38], KSL-Guide [42],
+L1476@P47: RWTH-PHOENIX-Weather 2014 [23],
+L1477@P47: Corpus FinSL [27]
+L1478@P47: Sign
+L1479@P47: Spotting
+L1480@P47: Continuous video;
+L1481@P47: temporal gloss
+L1482@P47: annotations; multiple
+L1483@P47: signers
+L1484@P47: BOBSL [22], SL-ReDu GSL [10]
+L1485@P47: Fingerspelling
+L1486@P47: Recognition
+L1487@P47: Letter-level
+L1488@P47: annotations;
+L1489@P47: fingerspelling subset
+L1490@P47: AzSLD [11], SL-ReDu GSL [10],
+L1491@P47: KSL-Guide [42]
+L1492@P47: Multimodal /
+L1493@P47: Depthbased SLR
+L1494@P47: RGB + Depth or
+L1495@P47: Skeleton modalities
+L1496@P47: AUTSL [13], BosphorusSign22k [25],
+L1497@P47: SMILE [33], MM-WLAuslan [34],
+L1498@P47: LIBRAS-UFOP [43], SL-ReDu GSL [10],
+L1499@P47: How2Sign [18]
+L1500@P47: Multi-view
+L1501@P47: SLR
+L1502@P47: Multi-camera setup;
+L1503@P47: synchronized angles
+L1504@P47: MM-WLAuslan [34], How2Sign [18],
+L1505@P47: SMILE [33], AzSLD [11],
+L1506@P47: KSL-Guide [42]
+L1507@P47: L2 Learner
+L1508@P47: Assessment
+L1509@P47: Native and learner
+L1510@P47: signer pairs;
+L1511@P47: fine-grained
+L1512@P47: annotation
+L1513@P47: SMILE [33]
+L1514@P47: DomainSpecific
+L1515@P47: SLR
+L1516@P47: Domain vocabulary;
+L1517@P47: controlled conditions
+L1518@P47: RWTH-PHOENIX-Weather 2014
+L1519@P47: (weather) [23], KSU-SSL (10
+L1520@P47: domains) [36], SWL-LSE (health) [39],
+L1521@P47: SL-ReDu GSL (education) [10]
+L1522@P47: LowResource SL
+L1523@P47: Research
+L1524@P47: Under-represented
+L1525@P47: sign language; any
+L1526@P47: modality
+L1527@P47: Alabib-65 [37], CASL-W60 [41],
+L1528@P47: LIBRAS-UFOP [43], INCLUDE [30],
+L1529@P47-48: RoCoISLR [28], SignIT [40], SMILE [33]49
+L1530@P48: 5.3.3 Sign Language Translation
+L1531@P48: Sign language translation (SLT) requires sentence-level translations paired with
+L1532@P48: signed video, a large vocabulary, and a sufficient signer pool. RWTH-PHOENIXWeather 2014 [23] is the most established SLT benchmark. For American Sign
+L1533@P48: Language, How2Sign [18], YouTube-ASL [20], and OpenASL [21] are recommended;
+L1534@P48: OpenASL [21] is the largest, with 288 hours and over 33,000 vocabulary items.
+L1535@P48: CSL-Daily [32] supports Chinese Sign Language translation. Mediapi-RGB [38]
+L1536@P48: is recommended for French Sign Language, providing 86 hours produced by deaf
+L1537@P48: journalists. KSL-Guide [42] supports Korean Sign Language translation and includes
+L1538@P48: a unique subset of interrogative sentences.
+L1539@P48: 5.3.4 Sign Spotting, Fingerspelling, and Specialist Tasks
+--------------------------------------------------------------------------------
+Systematic Mapping and Benchmarking of Sign Language Datasets (https://doria.fi/bitstream/handle/10024/194915/begum_kaniz.pdf?isAllowed=y&sequence=3)
+citeturn17view2 [wordlim: 200] Crawled: 4 months ago; Content type: application/pdf; Number of pages: 65; Source: open({"ref_id":"turn14view0","lineno":1710}); Total lines: 2175
+L1682@P52: review of deep learning-based approaches to sign language processing,”
+L1683@P52: Advanced Robotics, vol. 38, no. 23, pp. 1649–1667, 2024. [Online]. Available:
+L1684@P52: https://doi.org/10.1080/01691864.2024.2442721
+L1685@P52: [15] N. C. Camgoz, S. Hadfield, O. Koller, H. Ney, and R. Bowden, “Neural sign
+L1686@P52: language translation,” in Proceedings of the IEEE Conference on Computer
+L1687@P52: Vision and Pattern Recognition (CVPR), June 2018, pp. 7784–7793.
+L1688@P52: [16] J. Forster, C. Schmidt, T. Hoyoux, O. Koller, U. Zelle, J. H. Piater, and H. Ney,
+L1689@P52: “Rwth-phoenix-weather: A large vocabulary sign language recognition and
+L1690@P52: translation corpus.” in Proceedings of the Eighth International Conference on
+L1691@P52: Language Resources and Evaluation (LREC’12), vol. 9. Istanbul, Turkey:
+L1692@P52: European Language Resources Association (ELRA), May 2012, pp. 3785–3789.
+L1693@P52: [Online]. Available: https://aclanthology.org/L12-1503/
+L1694@P52: [17] N. C. Camgoz, O. Koller, S. Hadfield, and R. Bowden, “Sign language
+L1695@P52: transformers: Joint end-to-end sign language recognition and translation,” in
+L1696@P52: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+L1697@P52: Recognition (CVPR), 2020, pp. 10 020–10 030.
+L1698@P52: [18] A. Duarte, S. Palaskar, L. Ventura, D. Ghadiyaram, K. DeHaan, F. Metze,
+L1699@P52: J. Torres, and X. Giro-i Nieto, “How2sign: A large-scale multimodal dataset
+L1700@P52: for continuous american sign language,” in Proceedings of the IEEE/CVF
+L1701@P52: Conference on Computer Vision and Pattern Recognition (CVPR). Computer
+L1702@P52: Vision Foundation / IEEE, June 2021, pp. 2735–2744. [Online]. Available:
+L1703@P52-53: http://dblp.uni-trier.de/db/conf/cvpr/cvpr2021.html#DuartePVGDMTG2154
+L1704@P53: [19] H. Vaezi Joze and O. Koller, “Ms-asl: A large-scale data set and
+L1705@P53: benchmark for understanding american sign language,” in The British
+L1706@P53: Machine Vision Conference (BMVC), September 2019. [Online]. Available:
+L1707@P53: https://www.microsoft.com/en-us/research/publication/ms-asl-a-large-scale-d
+L1708@P53: ata-set-and-benchmark-for-understanding-american-sign-language/
+L1709@P53: [20] D. Uthus, G. Tanzer, and M. Georg, “Youtube-asl: A large-scale,
+L1710@P53: open-domain american sign language-english parallel corpus,” in Advances
+L1711@P53: in Neural Information Processing Systems, A. Oh, T. Naumann,
+L1712@P53: A. Globerson, K. Saenko, M. Hardt, and S. Levine, Eds., vol. 36.
+L1713@P53: Curran Associates, Inc., 2023, pp. 29 029–29 047. [Online]. Available:
+L1714@P53: https://proceedings.neurips.cc/paper_files/paper/2023/file/5c61452daca5f0c2
+L1715@P53: 60e683b317d13a3f-Paper-Datasets_and_Benchmarks.pdf
+L1716@P53: [21] B. Shi, D. Brentari, G. Shakhnarovich, and K. Livescu, “Open-domain
+L1717@P53: sign language translation learned from online video,” in Proceedings
+L1718@P53: of the 2022 Conference on Empirical Methods in Natural Language
+L1719@P53: Processing. Abu Dhabi, United Arab Emirates: Association for
+L1720@P53: Computational Linguistics, Dec. 2022, pp. 6365–6379. [Online]. Available:
+L1721@P53: https://aclanthology.org/2022.emnlp-main.427/
+L1722@P53: [22] S. Albanie, G. Varol, L. Momeni, H. Bull, T. Afouras, H. Chowdhury, N. Fox,
+L1723@P53: B. Woll, R. Cooper, A. McParland, and A. Zisserman, “Bbc-oxford british
+L1724@P53: sign language dataset,” CoRR, vol. abs/2111.03635, 2021. [Online]. Available:
+L1725@P53: https://arxiv.org/abs/2111.03635
+L1726@P53: [23] J. Forster, C. Schmidt, O. Koller, M. Bellgardt, and H. Ney, “Extensions of the
+L1727@P53: sign language recognition and translation corpus rwth-phoenix-weather.” in
+L1728@P53: Proceedings of the Ninth International Conference on Language Resources and
+L1729@P53: Evaluation (LREC’14). Reykjavik, Iceland: European Language Resources
+L1730@P53: Association (ELRA), May 2014, pp. 1911–1916. [Online]. Available:
+L1731@P53: https://aclanthology.org/L14-1472/
+L1732@P53: [24] U. Von Agris and K.-F. Kraiss, “SIGNUM database: Video corpus for
+L1733@P53: signer-independent continuous sign language recognition,” in Proceedings
+L1734@P53: of the LREC2010 4th Workshop on the Representation and Processing of
+L1735@P53: Sign Languages: Corpora and Sign Language Technologies. Valletta, Malta:
+L1736@P53: European Language Resources Association (ELRA), May 2010, pp. 243–246.
+L1737@P53: [Online]. Available: https://www.sign-lang.uni-hamburg.de/lrec/pub/10006.h
+L1738@P53: tml
+L1739@P53: [25] O. Özdemir, A. A. Kındıroğlu, N. C. Camgöz, and L. Akarun,
+L1740@P53: “Bosphorussign22k sign language recognition dataset,” in Proceedings of
+L1741@P53: the LREC2020 9th Workshop on the Representation and Processing of
+L1742@P53: Sign Languages: Sign Language Resources in the Service of the Language
+L1743@P53-54: Community, Technological Challenges and Application Perspectives. Marseille,55
+L1744@P54: France: European Language Resources Association (ELRA), May 2020, pp.
+L1745@P54: 181–188. [Online]. Available: https://aclanthology.org/2020.signlang-1.30/
+L1746@P54: [26] A. Kapitanov, K. Karina, A. Nagaev, and P. Elizaveta, “Slovo: Russian sign
+L1747@P54: language dataset,” in International Conference on Computer Vision Systems,
+L1748@P54: Springer. Berlin, Heidelberg: Springer-Verlag, 2023, p. 63–73. [Online].
+L1749@P54: Available: https://doi.org/10.1007/978-3-031-44137-0_6
+L1750@P54: [27] J. Salonen, A. Kronqvist, and T. Jantunen, “The corpus of finnish
+L1751@P54: sign language,” in Proceedings of the LREC2020 9th Workshop on the
+L1752@P54: Representation and Processing of Sign Languages: Sign Language Resources
+L1753@P54: in the Service of the Language Community, Technological Challenges and
+L1754@P54: Application Perspectives. Marseille, France: European Language Resources
+L1755@P54: Association (ELRA), May 2020, pp. 197–202. [Online]. Available:
+L1756@P54: https://aclanthology.org/2020.signlang-1.32/
+L1757@P54: [28] C.-A. Rîpanu, A.-T. Hotnog, G.-S. Imbrea, and D.-C. Cercel, “Rocoislr:
+L1758@P54: A romanian corpus for isolated sign language recognition,” arXiv preprint
+L1759@P54: arXiv:2511.12767, 2025. [Online]. Available: https://arxiv.org/abs/2511.12767
+L1760@P54: [29] H. A. Rubaiyeat, H. Mahmud, A. Habib, and M. K. Hasan, “Bdslw60: A
+L1761@P54: word-level bangla sign language dataset,” Multimedia Tools and Applications,
+L1762@P54: vol. 84, no. 34, p. 42399–42423, Apr. 2025. [Online]. Available:
+L1763@P54: http://dx.doi.org/10.1007/s11042-025-20792-4
+L1764@P54: [30] A. Sridhar, R. G. Ganesan, P. Kumar, and M. Khapra, “Include: A large
+L1765@P54: scale dataset for indian sign language recognition,” in Proceedings of the 28th
+L1766@P54: ACM International Conference on Multimedia, ser. MM ’20. New York, NY,
+L1767@P54: USA: Association for Computing Machinery, 2020, p. 1366–1375. [Online].
+L1768@P54: Available: https://doi.org/10.1145/3394171.3413528
+L1769@P54: [31] Q. Zhu, J. Li, F. Yuan, J. Fan, and Q. Gan, “A chinese continuous sign language
+L1770@P54: dataset based on complex environments,” arXiv preprint arXiv:2409.11960,
+L1771@P54: 2024. [Online]. Available: https://arxiv.org/abs/2409.11960
+L1772@P54: [32] H. Zhou, W. Zhou, W. Qi, J. Pu, and H. Li, “Improving sign language translation

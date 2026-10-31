@@ -1,0 +1,64 @@
+{
+  "paper": {
+    "title": "Expression of Concern: Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review",
+    "year": 2026,
+    "doi": "https://doi.org/10.1109/access.2026.3715908",
+    "openalex_url": "https://openalex.org/W7170206172"
+  },
+  "openalex_id": "W7170206172",
+  "human_decision": "not_screened",
+  "ai_decision": "exclude",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "openalex-W7170206172"
+  ],
+  "description": "Correction/Expression-of-Concern notice associated with a separate review.",
+  "reason": "The saved abstract identifies a correction notice rather than a synthesis of prior CSLR studies.",
+  "failed_criteria": [
+    "M1"
+  ],
+  "criteria": {
+    "M1": {
+      "status": "fail",
+      "reason": "Correction notice, not a literature review."
+    },
+    "M2": {
+      "status": "uncertain",
+      "reason": "Not independently assessed after M1 failure."
+    },
+    "M3": {
+      "status": "uncertain",
+      "reason": "Not independently assessed after M1 failure."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W7170206172",
+      "url": "https://doi.org/10.1109/access.2026.3715908",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W7170206172 / abstract_inverted_index",
+      "passage": "Abstract: Presents corrections to the paper identified as an Expression of Concern.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "Independent human confirmation of proposed exclusion.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "decoded_abstract": "Presents corrections to the paper, (Expression of Concern: Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review).",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

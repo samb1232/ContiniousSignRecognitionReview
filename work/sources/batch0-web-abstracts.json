@@ -1,0 +1,11 @@
+{
+  "source_id": "batch0-web-abstracts",
+  "url": "https://link.springer.com/article/10.1007/s00138-023-01479-y",
+  "retrieved_utc": "2026-10-31T11:35:58.425078+00:00",
+  "body": "batch0-web-abstracts.txt",
+  "text": "batch0-web-abstracts.txt",
+  "sha256": "769db139b7a3034bf9e764e849a3363bf568e33514acfd2f8b5ef928ebd40a54",
+  "method": "web tool snapshot; includes source URLs and passages; not raw HTTP",
+  "status": "web_tool_success",
+  "http_status": null
+}

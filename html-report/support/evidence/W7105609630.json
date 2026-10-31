@@ -1,0 +1,164 @@
+{
+  "paper": {
+    "title": "Real-Time Sign Language Recognition and Translation: A Survey of Deep Learning Techniques",
+    "year": 2025,
+    "doi": "https://doi.org/10.22214/ijraset.2025.75069",
+    "openalex_url": "https://openalex.org/W7105609630"
+  },
+  "openalex_id": "W7105609630",
+  "human_decision": "not_screened",
+  "ai_decision": "uncertain",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen2-W7105609630",
+    "abstract-pass-acl"
+  ],
+  "description": "A short survey of deep-learning recognition and translation systems, with a table comparing models, datasets and performance measures.",
+  "reason": "M2 remains unresolved. The matching ACL abstract describes alphabet/custom-sign classification, and its authors differ from the review’s Singh citation. A second distinct CSLR study remains unverified.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Literature survey and comparative table synthesize prior methods."
+    },
+    "M2": {
+      "status": "uncertain",
+      "reason": "M2 remains unresolved. The matching ACL abstract describes alphabet/custom-sign classification, and its authors differ from the review’s Singh citation. A second distinct CSLR study remains unverified."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Camera/Kinect/MediaPipe and visual deep models are explicit."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen2-W7105609630",
+      "url": "https://doi.org/10.22214/ijraset.2025.75069",
+      "path": "work/sources/screen2-W7105609630.txt",
+      "locator": "PDF pp.2–4; Sections II–III, Table1 and References",
+      "passage": "Table1 labels Camgoz2020 as simultaneous recognition/translation on PHOENIX; Singh2023 is sign-to-text translation, Rao2024 a systematic review and Patel2024 a comparative review. Other rows do not establish continuous linguistic-sign recognition.",
+      "sha256": "c32729a287ab032ffc1137fc6e2287e0ba844efb6832e262a5f4afcbb1979a55",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "abstract-pass-acl",
+      "url": "https://aclanthology.org/2023.ranlp-1.71/",
+      "locator": "Publisher abstract and author list",
+      "passage": "The matching 2023 ACL title is authored by Li and colleagues, not Singh. The abstract describes classification of ASL alphabets and custom signs into text, rather than establishing continuous linguistic-sign recognition. Because the review gives different authors, the intended citation remains unresolved.",
+      "path": "work/sources/abstract-pass-acl.txt",
+      "sha256": "e6790684fd9d2fa10320ce02b28deddaa128070b4a3516d8b98dcf752608e27c",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Whether a second distinct CSLR primary study is actually compared.",
+    "M2 remains unresolved. The matching ACL abstract describes alphabet/custom-sign classification, and its authors differ from the review’s Singh citation. A second distinct CSLR study remains unverified."
+  ],
+  "next_action": "Resolve the Singh/Li citation mismatch and verify a second compared CSLR study.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "screen2-W7105609630"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W7105609630",
+        "human_decision": "not_screened",
+        "ai_decision": "uncertain",
+        "stage": "full_text",
+        "evidence_level": "full_text",
+        "source_ids": [
+          "screen2-W7105609630"
+        ],
+        "description": "A short survey of deep-learning recognition and translation systems, with a table comparing models, datasets and performance measures.",
+        "reason": "Review purpose and visual scope are clear, but M2 remains unresolved. Table 1 clearly identifies Camgoz’s joint recognition/translation system; the other relevant entries mix translation, gestures and reviews without establishing a second CSLR study.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Literature survey and comparative table synthesize prior methods."
+          },
+          "M2": {
+            "status": "uncertain",
+            "reason": "Cannot confirm two distinct prior CSLR recognition studies from Table1; Singh is described as translation and Rao/Patel as reviews."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Camera/Kinect/MediaPipe and visual deep models are explicit."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "screen2-W7105609630",
+            "url": "https://doi.org/10.22214/ijraset.2025.75069",
+            "path": "work/sources/screen2-W7105609630.txt",
+            "locator": "PDF pp.2–4; Sections II–III, Table1 and References",
+            "passage": "Table1 labels Camgoz2020 as simultaneous recognition/translation on PHOENIX; Singh2023 is sign-to-text translation, Rao2024 a systematic review and Patel2024 a comparative review. Other rows do not establish continuous linguistic-sign recognition.",
+            "sha256": "c32729a287ab032ffc1137fc6e2287e0ba844efb6832e262a5f4afcbb1979a55",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Whether a second distinct CSLR primary study is actually compared."
+        ],
+        "next_action": "Verify the task definitions of the cited studies, especially Singh2023 and gesture-model entries, against the comparison threshold.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [
+          {
+            "stage": "title_abstract",
+            "ai_decision": "include",
+            "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "screen2-W7105609630"
+            ]
+          }
+        ],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+          "agent_batch": "batch2.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Verdict retained",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

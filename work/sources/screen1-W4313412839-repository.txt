@@ -1,0 +1,913 @@
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+        A Systematic Mapping of Computer Vision-Based Sign Language Recognition
+      -  Tecnológico de Costa Rica
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+
+    
+    
+
+
+
+    
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+Ir directamente a la navegación principal
+
+    Ir directamente a la búsqueda
+
+Ir directamente al contenido principal
+
+
+
+
+
+
+
+    
+        
+
+            
+
+                
+                
+                    
+                        Tecnológico de Costa Rica Inicio
+                        
+                    
+                
+                
+                    
+                        
+                        
+                            
+
+                                
+                                    
+
+                                
+
+                                    
+Español
+English
+                                
+                            
+                        
+                    
+                
+                
+                
+            
+        
+
+        
+            
+
+                
+
+
+    
+
+        
+
+            
+
+                
+
+                    Buscar contenido en Tecnológico de Costa Rica
+                    
+                
+
+                
+
+                    
+                        
+                    
+                
+            
+        
+    
+
+
+            
+        
+
+
+        
+        
+            
+
+                
+
+                    
+
+                        
+                            
+                                
+
+                                    Inicio
+                                
+
+                                
+                                    
+
+                                        Perfiles
+                                    
+                                
+                                    
+
+                                        Unidades de investigación y extensión
+                                    
+                                
+                                    
+
+                                        Proyectos
+                                    
+                                
+                                    
+
+                                        Producción científica
+                                    
+                                
+                                    
+
+                                        Conjuntos de datos
+                                    
+                                
+                                    
+
+                                        Premios
+                                    
+                                
+                                    
+
+                                        Actividades
+                                    
+                                
+                                    
+
+                                        Cursos
+                                    
+                                
+                                    
+
+                                        Prensa/Medios de comunicación
+                                    
+                                
+                            
+                        
+
+                    
+                
+            
+        
+    
+
+    
+        
+    
+
+
+        
+        
+        
+        
+        
+            
+            
+        
+
+
+
+
+    
+
+        
+
+            
+
+A Systematic Mapping of Computer Vision-Based Sign Language Recognition
+            
+
+Jimmy Jimenez-Salas
+, Mario Chacon-Rivas
+            
+
+Centro de Investigaciones en Computación
+Escuela de Ingeniería en Computación
+            
+
+Costa Rica Institute of Technology
+            
+
+Producción científica: Capítulo del libro/informe/acta de congreso › Contribución a la conferencia › revisión exhaustiva
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        
+            
+
+                
+                    
+
+                        
+                            
+
+                                
+                                4
+                                
+                                Citas
+(Scopus)
+                            
+                        
+                        
+                    
+                
+                
+                    
+
+                        
+
+                        
+                            
+
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+    
+
+
+
+
+    
+
+    
+
+        
+            
+                
+
+                    
+                        
+                        Información general
+                    
+                
+                
+                    
+
+                        
+                            
+                            Huella
+                        
+                    
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+            
+        
+    
+    
+
+
+    
+        
+
+        
+
+            
+        
+            
+
+                
+
+                    
+
+                        
+                        
+                            
+Resumen
+                        
+
+
+Sign languages are the primary mean of communication for the majority of deaf people. Unfortunately, there are multiple barriers due to the lack of assistive technologies, this causes problems in the communication between the Deaf and their environment, access to services, education, information, and employment. Automatic sign language recognition using machine learning techniques has gained special attention in the last years to help reduce such barriers. Different lines of investigation are being followed for isolated and continuous sign language recognition, and multiple models exist that attempt to translate from sign language to a written one. We present a systematic mapping of the papers that have been published relevant to this area between January 2019 and March 2022. The main focus of the study is on technologies used to recognize isolated signs and sentences in different sign languages from RGB videos and without specialized hardware or sensors. A total of 1061 articles are reviewed and classified showing that: (1) There is a majority of publications which use external hardware or recognize alphabet signs from static images, (2) LSTM and different variants of CNNs are the main methods used for isolated sign language recognition and Transformer models are predominant for continuous sign language recognition, (3) Different types of CNNs are the primary feature extraction methods followed by skeleton representations. Finally, we highlight the use of negative vocabulary and labels in research papers to refer to the Deaf community and call for the eradication of this practice.1
+                        
+
+
+Idioma originalInglés
+Título de la publicación alojadaCONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic
+EditorialInstitute of Electrical and Electronics Engineers Inc.
+ISBN (versión digital)9781665455350
+DOI
+https://doi.org/10.1109/CONTIE56301.2022.10004413 
+EstadoPublicada - 2022
+Evento5th International Conference on Inclusive Technologies and Education, CONTIE 2022 - Cartago, Costa Rica
+Duración: 25 oct 2022 → 28 oct 2022
+
+Serie de la publicación
+NombreCONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic
+Conferencia
+Conferencia5th International Conference on Inclusive Technologies and Education, CONTIE 2022
+País/TerritorioCosta Rica
+CiudadCartago
+Período25/10/22 → 28/10/22
+                        
+
+                        
+
+                        
+
+                        
+
+
+                    
+
+                    
+
+                        
+                            
+Acceder al documento
+                        
+
+
+10.1109/CONTIE56301.2022.10004413
+
+                        
+
+                        
+
+                        
+                            
+Otros archivos y enlaces
+                        
+
+
+Enlace a la publicación en Scopus
+
+                        
+
+                        
+
+
+                    
+                
+            
+        
+        
+            
+                
+
+                    
+
+                        
+
+                            
+                            Huella
+                        
+                        
+                            Profundice en los temas de investigación de 'A Systematic Mapping of Computer Vision-Based Sign Language Recognition'. En conjunto forman una huella única.
+                        
+                    
+
+                    
+                        
+                            
+
+
+    
+        
+            
+            Sign Language Recognition
+            Computer Science
+            100%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Systematic Mapping
+            Computer Science
+            100%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Computer Vision
+            Computer Science
+            100%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Convolutional Neural Network
+            Computer Science
+            40%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Machine Learning Technique
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Long Short-Term Memory Network
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Special Attention
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Research Paper
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                    
+                    
+
+                        
+
+                            
+                                Ver la huella completa
+                                
+                            
+                        
+                    
+                
+            
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        
+            
+
+                
+    
+Citar esto
+    
+        
+            
+
+                APA
+            
+        
+            
+
+                Author
+            
+        
+            
+
+                BIBTEX
+            
+        
+            
+
+                Harvard
+            
+        
+            
+
+                Standard
+            
+        
+            
+
+                RIS
+            
+        
+            
+
+                Vancouver
+            
+        
+    
+    
+
+        
+            
+
+                
+Jimenez-Salas, J., & Chacon-Rivas, M. (2022). A Systematic Mapping of Computer Vision-Based Sign Language Recognition. En CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic (CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic). Institute of Electrical and Electronics Engineers Inc.. https://doi.org/10.1109/CONTIE56301.2022.10004413
+            
+        
+            
+
+                
+Jimenez-Salas, Jimmy  ; Chacon-Rivas, Mario. / A Systematic Mapping of Computer Vision-Based Sign Language Recognition. CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic. Institute of Electrical and Electronics Engineers Inc., 2022. (CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic).
+            
+        
+            
+
+                
+
+@inproceedings{fa9690f8a9cd466ea6faa4fed4a01963,
+  title     = "A Systematic Mapping of Computer Vision-Based Sign Language Recognition",
+  abstract  = "Sign languages are the primary mean of communication for the majority of deaf people. Unfortunately, there are multiple barriers due to the lack of assistive technologies, this causes problems in the communication between the Deaf and their environment, access to services, education, information, and employment. Automatic sign language recognition using machine learning techniques has gained special attention in the last years to help reduce such barriers. Different lines of investigation are being followed for isolated and continuous sign language recognition, and multiple models exist that attempt to translate from sign language to a written one. We present a systematic mapping of the papers that have been published relevant to this area between January 2019 and March 2022. The main focus of the study is on technologies used to recognize isolated signs and sentences in different sign languages from RGB videos and without specialized hardware or sensors. A total of 1061 articles are reviewed and classified showing that: (1) There is a majority of publications which use external hardware or recognize alphabet signs from static images, (2) LSTM and different variants of CNNs are the main methods used for isolated sign language recognition and Transformer models are predominant for continuous sign language recognition, (3) Different types of CNNs are the primary feature extraction methods followed by skeleton representations. Finally, we highlight the use of negative vocabulary and labels in research papers to refer to the Deaf community and call for the eradication of this practice.1",
+  keywords  = "Computer Vision, Machine Learning, Sign Language Recognition, Sign Language Translation",
+  author    = "Jimmy Jimenez-Salas and Mario Chacon-Rivas",
+  note      = "Publisher Copyright: {\textcopyright} 2022 IEEE.; 5th International Conference on Inclusive Technologies and Education, CONTIE 2022 ; Conference date: 25-10-2022 Through 28-10-2022",
+  year      = "2022",
+  doi       = "10.1109/CONTIE56301.2022.10004413",
+  language  = "Ingl{\'e}s",
+  series    = "CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic",
+  publisher = "Institute of Electrical and Electronics Engineers Inc.",
+  booktitle = "CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic",
+}
+            
+        
+            
+
+                
+Jimenez-Salas, J & Chacon-Rivas, M 2022, A Systematic Mapping of Computer Vision-Based Sign Language Recognition. En CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic. CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic, Institute of Electrical and Electronics Engineers Inc., 5th International Conference on Inclusive Technologies and Education, CONTIE 2022, Cartago, Costa Rica, 25/10/22. https://doi.org/10.1109/CONTIE56301.2022.10004413
+            
+        
+            
+
+                
+A Systematic Mapping of Computer Vision-Based Sign Language Recognition. / Jimenez-Salas, Jimmy; Chacon-Rivas, Mario. 
+CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic. Institute of Electrical and Electronics Engineers Inc., 2022. (CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic).
+Producción científica: Capítulo del libro/informe/acta de congreso › Contribución a la conferencia › revisión exhaustiva
+            
+        
+            
+
+                
+
+TY  - GEN
+T1  - A Systematic Mapping of Computer Vision-Based Sign Language Recognition
+AU  - Jimenez-Salas, Jimmy
+AU  - Chacon-Rivas, Mario
+N1  - Publisher Copyright:
+© 2022 IEEE.
+PY  - 2022
+Y1  - 2022
+N2  - Sign languages are the primary mean of communication for the majority of deaf people. Unfortunately, there are multiple barriers due to the lack of assistive technologies, this causes problems in the communication between the Deaf and their environment, access to services, education, information, and employment. Automatic sign language recognition using machine learning techniques has gained special attention in the last years to help reduce such barriers. Different lines of investigation are being followed for isolated and continuous sign language recognition, and multiple models exist that attempt to translate from sign language to a written one. We present a systematic mapping of the papers that have been published relevant to this area between January 2019 and March 2022. The main focus of the study is on technologies used to recognize isolated signs and sentences in different sign languages from RGB videos and without specialized hardware or sensors. A total of 1061 articles are reviewed and classified showing that: (1) There is a majority of publications which use external hardware or recognize alphabet signs from static images, (2) LSTM and different variants of CNNs are the main methods used for isolated sign language recognition and Transformer models are predominant for continuous sign language recognition, (3) Different types of CNNs are the primary feature extraction methods followed by skeleton representations. Finally, we highlight the use of negative vocabulary and labels in research papers to refer to the Deaf community and call for the eradication of this practice.1
+AB  - Sign languages are the primary mean of communication for the majority of deaf people. Unfortunately, there are multiple barriers due to the lack of assistive technologies, this causes problems in the communication between the Deaf and their environment, access to services, education, information, and employment. Automatic sign language recognition using machine learning techniques has gained special attention in the last years to help reduce such barriers. Different lines of investigation are being followed for isolated and continuous sign language recognition, and multiple models exist that attempt to translate from sign language to a written one. We present a systematic mapping of the papers that have been published relevant to this area between January 2019 and March 2022. The main focus of the study is on technologies used to recognize isolated signs and sentences in different sign languages from RGB videos and without specialized hardware or sensors. A total of 1061 articles are reviewed and classified showing that: (1) There is a majority of publications which use external hardware or recognize alphabet signs from static images, (2) LSTM and different variants of CNNs are the main methods used for isolated sign language recognition and Transformer models are predominant for continuous sign language recognition, (3) Different types of CNNs are the primary feature extraction methods followed by skeleton representations. Finally, we highlight the use of negative vocabulary and labels in research papers to refer to the Deaf community and call for the eradication of this practice.1
+KW  - Computer Vision
+KW  - Machine Learning
+KW  - Sign Language Recognition
+KW  - Sign Language Translation
+UR  - https://www.scopus.com/pages/publications/85146670320
+U2  - 10.1109/CONTIE56301.2022.10004413
+DO  - 10.1109/CONTIE56301.2022.10004413
+M3  - Contribución a la conferencia
+AN  - SCOPUS:85146670320
+T3  - CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic
+BT  - CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic
+PB  - Institute of Electrical and Electronics Engineers Inc.
+T2  - 5th International Conference on Inclusive Technologies and Education, CONTIE 2022
+Y2  - 25 October 2022 through 28 October 2022
+ER  - 
+            
+        
+            
+
+                
+Jimenez-Salas J, Chacon-Rivas M. A Systematic Mapping of Computer Vision-Based Sign Language Recognition. En CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic. Institute of Electrical and Electronics Engineers Inc. 2022. (CONTIE 2022 - 5th International Conference on Inclusive Technologies and Education and the 2nd International Conference of the Project Promoting Accessibility of Students with Disability to Higher Education in Cuba, Costa Rica and Dominican Republic). doi: 10.1109/CONTIE56301.2022.10004413
+            
+        
+
+        
+    
+
+
+            
+        
+        
+        
+
+
+
+
+
+    
+        
+    
+
+    
+
+    
+    
+
+    
+        
+
+            
+
+                
+
+                    
+
+                        
+                            
+
+                                
+
+                                    
+                                
+                            
+                        
+                        
+
+                            
+
+                                Desarrollado por Pure, Scopus & Elsevier Fingerprint Engine™
+                            
+
+                            
+
+                                Todo el contenido de este sitio: Copyright © 2026 Tecnológico de Costa Rica, sus licenciantes y los colaboradores. Todos los derechos reservados, incluidos los de extracción de texto y datos, entrenamiento de IA y tecnologías similares. Se aplican los términos de licencia relevantes a todo el contenido de acceso abierto.
+                            
+
+                            
+Utilizamos cookies para ayudar a brindar y mejorar nuestro servicio y ajustar el contenido a la medida del usuario. Si continúa, acepta el uso de cookies
+                            
+
+                            
+                                
+Iniciar sesión en Pure   El enlace se abre en una pestaña nueva
+                            
+                            
+
+                        
+
+                        
+
+                            
+                            
+                            
+                                
+Acerca de la accesibilidad web   El enlace se abre en una pestaña nueva
+                            
+
+                            
+
+                                
+                            
+
+                            
+
+                                
+                            
+
+                            
+
+                                Reporte vulnerabilidad   El enlace se abre en una pestaña nueva
+                            
+                        
+
+                        
+                            
+
+                                
+                                    
+                                        
+ Comuníquese con nosotros
+                                    
+                                
+
+                            
+                        
+                    
+                
+            
+        
+        
+
+            
+        
+    
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+

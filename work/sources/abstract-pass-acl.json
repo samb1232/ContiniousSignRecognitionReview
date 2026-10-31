@@ -1,0 +1,12 @@
+{
+  "source_id": "abstract-pass-acl",
+  "openalex_id": "W7105609630",
+  "url": "https://aclanthology.org/2023.ranlp-1.71/",
+  "locator": "Publisher abstract and author list",
+  "passage": "The matching 2023 ACL title is authored by Li and colleagues, not Singh. The abstract describes classification of ASL alphabets and custom signs into text, rather than establishing continuous linguistic-sign recognition. Because the review gives different authors, the intended citation remains unresolved.",
+  "retrieved_utc": "2026-10-31T17:07:01.802240+00:00",
+  "method": "Web-tool inspection; saved analyst paraphrase, not raw HTTP response",
+  "body": "abstract-pass-acl.txt",
+  "text": "abstract-pass-acl.txt",
+  "sha256": "e6790684fd9d2fa10320ce02b28deddaa128070b4a3516d8b98dcf752608e27c"
+}

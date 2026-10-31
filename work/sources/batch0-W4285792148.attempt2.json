@@ -1,0 +1,12 @@
+{
+  "source_id": "batch0-W4285792148",
+  "openalex_id": "W4285792148",
+  "url": "https://doi.org/10.1016/j.engappai.2022.105198",
+  "retrieved_utc": "2026-10-31T11:31:39.917747+00:00",
+  "status": 200,
+  "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0952197622002925",
+  "content_type": "text/html;charset=UTF-8",
+  "body": "batch0-W4285792148.html",
+  "sha256": "2f3fa62d786cec3a9981950640240ffa5d724ea65e64b10ab8fe9b0608446218",
+  "text": "batch0-W4285792148.txt"
+}

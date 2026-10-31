@@ -1,0 +1,14 @@
+{
+  "source_id": "screen2-W7105609630",
+  "openalex_id": "W7105609630",
+  "url": "https://doi.org/10.22214/ijraset.2025.75069",
+  "retrieved_utc": "2026-10-31T11:33:33.688609+00:00",
+  "status": 200,
+  "final_url": "https://www.ijraset.com/best-journal/realtime-sign-language-recognition-and-translation",
+  "content_type": "application/pdf",
+  "body": "screen2-W7105609630.pdf",
+  "sha256": "20fdd4a0f2bfecdd05fdf619612749e9994ec4d01ae7b212a54e17160470842a",
+  "extractor": "pypdf 6.21.2",
+  "pages": 5,
+  "text": "screen2-W7105609630.txt"
+}

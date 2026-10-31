@@ -1,0 +1,73 @@
+{
+  "paper": {
+    "title": "Advances, Challenges and Opportunities in Continuous Sign Language Recognition",
+    "year": 2019,
+    "doi": "https://doi.org/10.36478/jeasci.2020.1205.1227",
+    "openalex_url": "https://openalex.org/W2992983807"
+  },
+  "openalex_id": "W2992983807",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "ibrahim2020-author"
+  ],
+  "description": "Survey of CSLR methods, movement epenthesis and benchmark datasets.",
+  "reason": "Table 2 compares multiple visual CSLR studies, satisfying M1–M3. Publication-window compliance remains unresolved separately.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "ibrahim2020-author",
+      "url": "https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf",
+      "path": "work/sources/ibrahim2020-author.pdf",
+      "locator": "Visually inspected PDF pp.1,6,9,12,15; Table 2 p.12 (printed1216)",
+      "passage": "Table 2 contrasts Kelly’s visual GT-HMM with Yang and Lee’s CRF+AAM, their features and sentence datasets. Abstract identifies synthesis of earlier articles.",
+      "sha256": "06b358a8875f14834f9104d4d0d568cd9bd60a4e21575324cc3fa3bdfe63ac15",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "OpenAlex date 2019 conflicts with PDF issue year 2020; publication-window compliance unresolved."
+  ],
+  "next_action": "Verify publication date and obtain independent human assessment.",
+  "classification": "dedicated",
+  "qualifying_studies": [
+    "Yang and Lee (2011), CRF+AAM",
+    "Kelly et al. (2011), GT-HMM"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

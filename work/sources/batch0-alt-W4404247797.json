@@ -1,0 +1,14 @@
+{
+  "source_id": "batch0-alt-W4404247797",
+  "openalex_id": "W4404247797",
+  "url": "https://mdpi-res.com/d_attachment/applsci/applsci-14-10337/article_deploy/applsci-14-10337.pdf",
+  "retrieved_utc": "2026-10-31T11:34:06.163734+00:00",
+  "status": 200,
+  "final_url": "https://mdpi-res.com/d_attachment/applsci/applsci-14-10337/article_deploy/applsci-14-10337.pdf",
+  "content_type": "application/pdf",
+  "body": "batch0-alt-W4404247797.pdf",
+  "sha256": "6d45e826f60c3f994cd3bc08d0710f6a20d04d30070d56c9985c824a3288b2d1",
+  "extractor": "pypdf 6.21.2",
+  "pages": 16,
+  "text": "batch0-alt-W4404247797.txt"
+}

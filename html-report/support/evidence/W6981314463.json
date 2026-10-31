@@ -1,0 +1,81 @@
+{
+  "paper": {
+    "title": "DYNAMIC SIGN LANGUAGE RECOGNITION AND TRANSLATION THROUGH DEEP LEARNING: A SYSTEMATIC LITERATURE REVIEW",
+    "year": 2024,
+    "doi": null,
+    "openalex_url": "https://openalex.org/W6981314463"
+  },
+  "openalex_id": "W6981314463",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "openalex-W6981314463",
+    "batch0-alt-W6981314463"
+  ],
+  "description": "Systematic review of dynamic recognition and translation models, datasets and metrics.",
+  "reason": "Tables5–6 distinguish continuous sign-to-gloss studies and compare their architectures, meeting M1–M3.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W6981314463",
+      "url": "https://openalex.org/W6981314463",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+      "locator": "W6981314463 / abstract_inverted_index",
+      "passage": "Abstract: Reviews 85 dynamic SLRT articles, including isolated and continuous systems, models, datasets and evaluation.",
+      "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "batch0-alt-W6981314463",
+      "url": "http://www.jatit.org/volumes/Vol102No21/28Vol102No21.pdf",
+      "path": "work/sources/batch0-alt-W6981314463.txt",
+      "locator": "Tables5–6, PDF pp.8–10; discussion p.17; references20–21",
+      "passage": "Sign2Gloss studies include LIST’s CNN-LSTM and Elakkiya’s GAN with 3D-CNN/LSTM; discussion compares continuous architectures and alignment needs.",
+      "sha256": "150dc5b53433ad25e5e28296172f3c353298d265b4673d2fae99ae64c9d1c744",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "Independent human eligibility assessment.",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Amrutha et al. (2023), LIST [20]",
+    "Elakkiya et al. (2021), optimized GAN [21]"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "Sign language is the communication tool for deaf and hard-of-hearing (DHH) communities all around the world. But it is still difficult to establish proper communication between hearing and DHH individuals. As a result, numerous explorations and investigations that focused on sign language recognition and translation (SLRT) have garnered significant attention from researchers in related fields. This systematic literature review aims to provide a comprehensive study on current trends of state-of-the-art dynamic SLRT models proposed in 85 journal articles found in the Scopus database from 2020 to 2024. Based on the selected articles, this review produced an in-depth analyzation of dynamic SLRT models in terms of their frameworks, deep learning techniques, datasets, pre-processing techniques, and evaluation metrics used. Additionally, this review also highlights both the advancements and ongoing challenges in the domain. Notably, there have been considerable development in isolated and continuous SLRT models, particularly through the combinations of deep learning algorithms such as Convolutional Neural Network, Recurrent Neural Network and Transformer models, with suitable datasets. However, the complexities and challenges of developing robust continuous SLRT models for real-time SLRT persist. This systematic literature review was prepared to serve as a foundational reference that will assist future studies on dynamic SLRT.",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

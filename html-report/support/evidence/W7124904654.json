@@ -1,0 +1,176 @@
+{
+  "paper": {
+    "title": "RECENT ADVANCEMENTS IN SKELETON-BASED SIGN LANGUAGE RECOGNITION",
+    "year": 2025,
+    "doi": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+    "openalex_url": "https://openalex.org/W7124904654"
+  },
+  "openalex_id": "W7124904654",
+  "human_decision": "not_screened",
+  "ai_decision": "uncertain",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen2-W7124904654-web",
+    "abstract-pass-skeleton",
+    "abstract-pass-takayama"
+  ],
+  "description": "A systematic review of skeleton-based recognition that compares model families and datasets, mainly for isolated signs.",
+  "reason": "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Methods describe systematic selection and synthesis."
+    },
+    "M2": {
+      "status": "uncertain",
+      "reason": "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Input is body/hand pose from visual data."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen2-W7124904654-web",
+      "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+      "path": "work/sources/screen2-W7124904654-web.txt",
+      "locator": "PDF pp.5,9–11,13; Results, Tables3 and5",
+      "passage": "Results say three continuous works; Table3 labels one row continuous/online, while another isolated row mentions a continuous pipeline; Table5 explicitly reports one study with three decoding settings.",
+      "sha256": "1be3b43a4d2b0f83883f2b47b03465c8ab6f0ba7ac2bcccb8230b325a172085c",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "abstract-pass-skeleton",
+      "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+      "locator": "PDF abstract p.1; Table5 p.13; references [6] and [8] p.16",
+      "passage": "The PDF abstract and Table5 identify a single continuous/online study with multiple decoding settings. Reference [6] is Takayama et al. (10.5220/0010899400003124); [8] is Buttar et al. (10.3390/math11173729). The previously noted inconsistent study counts remain unresolved.",
+      "path": "work/sources/abstract-pass-skeleton.txt",
+      "sha256": "bfb6344fb0020c2e90437612451000104c1016b592520b83da6d70d0a1adc028",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "abstract-pass-takayama",
+      "url": "https://www.scitepress.org/Link.aspx?doi=10.5220%2F0010899400003124",
+      "locator": "Publisher abstract",
+      "passage": "Takayama and colleagues evaluate skeleton-based online continuous word recognition using monotonic attention on isolated-word and sentence videos. The abstract confirms this study's CSLR task; it does not establish a second distinct study in the review.",
+      "path": "work/sources/abstract-pass-takayama.txt",
+      "sha256": "24d585a8e953ca381efacde1406a055ca7e8729c9a58481f6fc517b070e682b1",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Contradictory continuous-study counts and task classifications.",
+    "Direct PDF archival attempts timed out; saved web-inspection notes provide locators.",
+    "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved."
+  ],
+  "next_action": "Obtain Buttar’s abstract (10.3390/math11173729) and reconcile the review’s study counts.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "screen2-W7124904654-web"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W7124904654",
+        "human_decision": "not_screened",
+        "ai_decision": "uncertain",
+        "stage": "full_text",
+        "evidence_level": "full_text",
+        "source_ids": [
+          "screen2-W7124904654-web"
+        ],
+        "description": "A systematic review of skeleton-based recognition that compares model families and datasets, mainly for isolated signs.",
+        "reason": "M1 and M3 are supported, but M2 is unresolved: the results mention three continuous studies, while Table 5 attributes continuous results to one study. The second qualifying CSLR study cannot be established reliably.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Methods describe systematic selection and synthesis."
+          },
+          "M2": {
+            "status": "uncertain",
+            "reason": "Inconsistent continuous-study counts and task labels prevent confirming the two-study threshold."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Input is body/hand pose from visual data."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "screen2-W7124904654-web",
+            "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+            "path": "work/sources/screen2-W7124904654-web.txt",
+            "locator": "PDF pp.5,9–11,13; Results, Tables3 and5",
+            "passage": "Results say three continuous works; Table3 labels one row continuous/online, while another isolated row mentions a continuous pipeline; Table5 explicitly reports one study with three decoding settings.",
+            "sha256": "1be3b43a4d2b0f83883f2b47b03465c8ab6f0ba7ac2bcccb8230b325a172085c",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Contradictory continuous-study counts and task classifications.",
+          "Direct PDF archival attempts timed out; saved web-inspection notes provide locators."
+        ],
+        "next_action": "Verify the identities and tasks of Table3 studies [6] and [8] before deciding whether two distinct CSLR studies are compared.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [
+          {
+            "stage": "title_abstract",
+            "ai_decision": "include",
+            "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "screen2-W7124904654-web"
+            ]
+          }
+        ],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+          "agent_batch": "batch2.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Verdict retained",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

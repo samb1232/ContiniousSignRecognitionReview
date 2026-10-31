@@ -1,0 +1,133 @@
+{
+  "paper": {
+    "title": "A Systematic Mapping of Computer Vision-Based Sign Language Recognition",
+    "year": 2022,
+    "doi": "https://doi.org/10.1109/contie56301.2022.10004413",
+    "openalex_url": "https://openalex.org/W4313412839"
+  },
+  "openalex_id": "W4313412839",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "openalex-W4313412839"
+  ],
+  "description": "Maps computer-vision SLR studies covering isolated signs and continuous sentences.",
+  "reason": "The abstract supports review purpose and visual CSLR scope. Advance; full text is needed to confirm the comparison threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Systematic mapping reviews and classifies earlier papers."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Abstract explicitly covers continuous recognition and related models."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "RGB videos and skeleton representations are identified."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W4313412839",
+      "url": "https://openalex.org/W4313412839",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W4313412839 abstract_inverted_index (reconstructed abstract)",
+      "passage": "The mapping covers papers from January 2019 to March 2022, focusing on recognition of isolated signs and sentences from RGB videos and classifying recognition architectures.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Publisher returned an empty response; institutional record provides an abstract but no retrieved full text."
+  ],
+  "next_action": "Obtain the paper and inspect its CSLR comparisons.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W4313412839",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "openalex-W4313412839"
+        ],
+        "description": "Maps computer-vision SLR studies covering isolated signs and continuous sentences.",
+        "reason": "The abstract supports review purpose and visual CSLR scope. Advance; full text is needed to confirm the comparison threshold.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Systematic mapping reviews and classifies earlier papers."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "Abstract explicitly covers continuous recognition and related models."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "RGB videos and skeleton representations are identified."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "openalex-W4313412839",
+            "url": "https://openalex.org/W4313412839",
+            "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+            "locator": "W4313412839 abstract_inverted_index (reconstructed abstract)",
+            "passage": "The mapping covers papers from January 2019 to March 2022, focusing on recognition of isolated signs and sentences from RGB videos and classifying recognition architectures.",
+            "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Publisher returned an empty response; institutional record provides an abstract but no retrieved full text."
+        ],
+        "next_action": "Obtain the paper and inspect its CSLR comparisons.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+          "agent_batch": "batch1.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

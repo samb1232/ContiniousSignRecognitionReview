@@ -1,0 +1,81 @@
+{
+  "paper": {
+    "title": "AI-Based Indian Sign Language Recognition",
+    "year": 2026,
+    "doi": "https://doi.org/10.5281/zenodo.23527485",
+    "openalex_url": "https://openalex.org/W7223099906"
+  },
+  "openalex_id": "W7223099906",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "openalex-W7223099906",
+    "indian2026-docx"
+  ],
+  "description": "Review of continuous Indian SLR centered on the SignFlow framework.",
+  "reason": "SectionIII and TableI compare multiple prior CSLR methods; the paper expressly reports no new experiments.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W7223099906",
+      "url": "https://doi.org/10.5281/zenodo.23527485",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W7223099906 / abstract_inverted_index",
+      "passage": "Abstract: Reviews continuous Indian SLR and SignFlow; explicitly claims no new experiments.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "indian2026-docx",
+      "url": "https://zenodo.org/api/records/23527486/files/AI-Based%20Real-Time%20Continuous%20Indian%20Sign%20Language%20Recognition%20A%20Review.docx/content",
+      "path": "work/sources/indian2026-docx.txt",
+      "locator": "Abstract; SectionIII.A–C and TableI",
+      "passage": "MSTNet’s temporal Transformer features are compared with AdaSize’s adaptive resolution and signer-removal methods; SignFlow results are attributed to their original authors.",
+      "sha256": "b56633c503b48177effdea8d4c8da18d8f625a6bf3d77416cb86b1f33ba0b7e8",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "Independent human eligibility assessment.",
+  "classification": "dedicated",
+  "qualifying_studies": [
+    "Zhu et al. (2024), MSTNet",
+    "Hu et al. (2024), AdaSize"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "Sign language recognition (SLR) translates visual gestures into text or speech and can narrow the communication gap between signers and non-signers. In India, about 18 million deaf people depend on Indian Sign Language (ISL), yet government, healthcare and digital services rarely support it. Recognising a whole sentence of signs (continuous SLR, or CSLR) is much harder than recognising single signs, and doing so in real time adds constraints of latency, device variation and signer variation. This paper reviews AI-based approaches to continuous ISL recognition and gives a detailed, critical study of SignFlow, a real-time CSLR network proposed by Geetha et al. (IEEE Access, 2025). SignFlow combines a mixed-convolution 3D ResNet (MC3_18) for spatial features with an 8-layer Transformer encoder for temporal modelling, trained end to end with Connectionist Temporal Classification (CTC). Both components are pre-trained on ISL data, the CNN on isolated word videos and the Transformer on MediaPipe pose and hand features, and the input pipeline uses alignment correction and similarity-based down-sampling to 6 frames per second. We describe the datasets, architecture, training strategy, metrics (Word Error Rate and the Detection Rate), ablations and deployment results reported for SignFlow, including a WER of 19 on the Continuous ISL corpus and a load test of 74 concurrent users on one GPU. We then discuss strengths, weaknesses in the evidence, applications and future research directions. This is a review: all SignFlow results are those reported by its original authors and no new experiments are claimed. Keywords: Indian Sign Language, continuous sign language recognition, SignFlow, 3D CNN, Transformer, CTC, MediaPipe, real-time recognition, accessibility",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

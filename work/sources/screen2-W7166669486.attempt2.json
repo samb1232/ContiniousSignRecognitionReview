@@ -1,0 +1,14 @@
+{
+  "source_id": "screen2-W7166669486",
+  "openalex_id": "W7166669486",
+  "url": "https://jcmm.co.in/index.php/jcmm/article/download/708/172",
+  "retrieved_utc": "2026-10-31T11:33:26.688886+00:00",
+  "status": 200,
+  "final_url": "https://jcmm.co.in/index.php/jcmm/article/download/708/172",
+  "content_type": "application/pdf",
+  "body": "screen2-W7166669486.pdf",
+  "sha256": "84cbc9b603d918820d52ed13242e7c71c40202b9c02a5154633b0675004d284a",
+  "extractor": "pypdf 6.21.2",
+  "pages": 17,
+  "text": "screen2-W7166669486.txt"
+}

@@ -1,0 +1,14 @@
+{
+  "source_id": "screen1-W3080888993",
+  "openalex_id": "W3080888993",
+  "url": "https://arxiv.org/pdf/2008.09918",
+  "retrieved_utc": "2026-10-31T11:31:11.003120+00:00",
+  "status": 200,
+  "final_url": "https://arxiv.org/pdf/2008.09918",
+  "content_type": "application/pdf",
+  "body": "screen1-W3080888993.pdf",
+  "sha256": "186c54cdd26db5dd07baeb2ddb143083adef3ceafe56119f0d4bc7a0890e9924",
+  "extractor": "pypdf 6.21.2",
+  "pages": 40,
+  "text": "screen1-W3080888993.txt"
+}

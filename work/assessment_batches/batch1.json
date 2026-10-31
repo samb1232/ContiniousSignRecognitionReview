@@ -1,0 +1,509 @@
+[
+  {
+    "openalex_id": "W3024060113",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "aloysius2020-publisher"
+    ],
+    "description": "Reviews vision-based CSLR methods, movement epenthesis, datasets and evaluation.",
+    "reason": "The publisher abstract supports M1–M3. Advance; the full-text comparison threshold remains unconfirmed.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Abstract explicitly describes a detailed review."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Continuous sign sequences and movement epenthesis are central."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Vision-based methods are the stated focus."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "aloysius2020-publisher",
+        "url": "https://link.springer.com/article/10.1007/s11042-020-08961-z",
+        "path": "work/sources/aloysius2020-publisher.txt",
+        "locator": "Abstract",
+        "passage": "The authors describe a detailed review of vision-based CSLR methods, challenges, benchmark databases and performance evaluation."
+      }
+    ],
+    "unresolved_issues": [
+      "Subscription preview only; saved author-upload attempts failed."
+    ],
+    "next_action": "Obtain the full text and verify the two-study comparison threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W3080888993",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen1-W3080888993"
+    ],
+    "description": "Quantitative synthesis of SLR literature with a dedicated PHOENIX CSLR comparison.",
+    "reason": "Section 3 and Tables 11–12 compare prior visual CSLR systems. This meets the project-specific threshold for a broader review.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Meta-study synthesizes earlier recognition publications."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Tables 11–12 compare multiple PHOENIX continuous-recognition studies."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Table 11 compares RGB/full-frame visual architectures."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen1-W3080888993",
+        "url": "https://arxiv.org/pdf/2008.09918",
+        "path": "work/sources/screen1-W3080888993.txt",
+        "locator": "PDF pp.10–12, Section 3, Tables 11–12",
+        "passage": "The tables compare Camgoz et al. (2017) SubUNets and Cui et al. (2017) staged optimization on PHOENIX, including architectures, WER and training choices."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Camgoz et al. (2017), SubUNets",
+      "Cui et al. (2017), Recurrent convolutional neural networks by staged optimization"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "evidence_level": "abstract_only",
+        "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+      }
+    ]
+  },
+  {
+    "openalex_id": "W4313412839",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W4313412839"
+    ],
+    "description": "Maps computer-vision SLR studies covering isolated signs and continuous sentences.",
+    "reason": "The abstract supports review purpose and visual CSLR scope. Advance; full text is needed to confirm the comparison threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Systematic mapping reviews and classifies earlier papers."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Abstract explicitly covers continuous recognition and related models."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "RGB videos and skeleton representations are identified."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W4313412839",
+        "url": "https://openalex.org/W4313412839",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W4313412839 abstract_inverted_index (reconstructed abstract)",
+        "passage": "The mapping covers papers from January 2019 to March 2022, focusing on recognition of isolated signs and sentences from RGB videos and classifying recognition architectures."
+      }
+    ],
+    "unresolved_issues": [
+      "Publisher returned an empty response; institutional record provides an abstract but no retrieved full text."
+    ],
+    "next_action": "Obtain the paper and inspect its CSLR comparisons.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W4390107804",
+    "human_decision": "not_screened",
+    "ai_decision": "exclude",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W4390107804"
+    ],
+    "description": "Develops and evaluates a two-stream deep-learning CSLR architecture on PHOENIX.",
+    "reason": "M1 fails: the contribution is a proposed recognition method. Its stated literature study serves dataset selection for that experiment.",
+    "failed_criteria": [
+      "M1"
+    ],
+    "criteria": {
+      "M1": {
+        "status": "fail",
+        "reason": "Abstract identifies method development and evaluation; literature study selects an experimental dataset."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Continuous recognition on RWTH-PHOENIX-Weather is explicit."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "RGB frames and optical flow are inputs."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W4390107804",
+        "url": "https://openalex.org/W4390107804",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W4390107804 abstract_inverted_index (reconstructed abstract)",
+        "passage": "The abstract says the literature study found datasets, the selected dataset develops the proposed method, and a 3DCNN/LSTM/CTC architecture is evaluated using RGB and optical-flow streams."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W4408581155",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "taher2025-publisher"
+    ],
+    "description": "Reviews deep-learning CSLR studies, benchmark datasets and evaluation methods.",
+    "reason": "The abstract describes a relevant synthesis. Advance; the publisher preview cannot confirm the full-text comparison threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Abstract reports reviewing 32 studies."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Continuous signing and movement epenthesis are explicit."
+      },
+      "M3": {
+        "status": "uncertain",
+        "reason": "Dataset recording setups and CSLR architectures suggest visual coverage; verify modalities in full text."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "taher2025-publisher",
+        "url": "https://link.springer.com/article/10.1007/s12626-025-00180-y",
+        "path": "work/sources/taher2025-publisher.txt",
+        "locator": "Abstract",
+        "passage": "The authors describe a CSLR review of 32 studies and 12 benchmark datasets, examining recording setups, methods and performance metrics."
+      }
+    ],
+    "unresolved_issues": [
+      "Publisher provides subscription preview only; author-route request returned 403."
+    ],
+    "next_action": "Obtain full text to confirm visual coverage and qualifying comparisons.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W4414769190",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "screen1-W4414769190-web"
+    ],
+    "description": "Surveys recognition and translation methods through task and modality taxonomies.",
+    "reason": "The indexed publisher abstract supports review purpose and possible visual CSLR coverage. Advance without claiming full-text eligibility.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Abstract describes structured analysis of earlier SLU methods."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Continuous recognition is one of three explicit tasks."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Multimodal inputs and vision-language fusion support visual scope at this stage."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen1-W4414769190-web",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5558281",
+        "path": "work/sources/screen1-W4414769190-web.txt",
+        "locator": "Indexed SSRN Abstract; direct publisher fetch blocked",
+        "passage": "The survey covers isolated recognition, continuous recognition and translation, organizing methods by input modalities, learning strategies and output representations, including vision-language fusion."
+      }
+    ],
+    "unresolved_issues": [
+      "No OpenAlex abstract; SSRN abstract recovered through web index. Direct page/PDF requests returned 403; full text unavailable."
+    ],
+    "next_action": "Obtain the manuscript and verify the CSLR comparison threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W4417473484",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen1-W4417473484-pdf"
+    ],
+    "description": "Systematic review of Arabic SLR across visual and sensor modalities.",
+    "reason": "Section 7 and Table 4 compare multiple visual continuous-recognition studies. The broader review meets the project-specific threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Review synthesizes prior ArSL studies by task and modality."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Section 7 and Table 4 explicitly compare continuous-sentence recognition."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Table 4 includes multiple vision-based systems and video inputs."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen1-W4417473484-pdf",
+        "url": "https://www.informatica.si/index.php/informatica/article/download/10879/5996",
+        "path": "work/sources/screen1-W4417473484-pdf.txt",
+        "locator": "PDF pp.14–16, Section 7, Table 4; references [49], [52]",
+        "passage": "Table 4 compares Assaleh et al. (2010) and Almaazmi et al. (2024) by visual recognition techniques, datasets and performance; Section 7 discusses segmentation and evaluation."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Assaleh et al. (2010), Continuous Arabic sign language recognition in user dependent mode",
+      "Almaazmi et al. (2024), Motion images with positioning information and deep learning for continuous Arabic sign language recognition"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "evidence_level": "abstract_only",
+        "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+      }
+    ]
+  },
+  {
+    "openalex_id": "W6997309381",
+    "human_decision": "not_screened",
+    "ai_decision": "uncertain",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W6997309381"
+    ],
+    "description": "Thesis develops Arabic recognition frameworks and reports an extensive systematic literature review.",
+    "reason": "Its primary contribution is methodological, but the abstract also claims a substantive synthesis. M1 cannot safely be rejected without inspecting the review chapter.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "uncertain",
+        "reason": "Unclear whether its systematic review qualifies independently or is only background to new frameworks."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Continuous Arabic sentence recognition is explicit."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Camera-based and Kinect approaches are explicit."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W6997309381",
+        "url": "https://openalex.org/W6997309381",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+        "locator": "W6997309381 abstract_inverted_index (reconstructed abstract)",
+        "passage": "The thesis proposes two recognition frameworks and says an extensive systematic literature review establishes taxonomies and research gaps before experimental development."
+      }
+    ],
+    "unresolved_issues": [
+      "Repository PDF retrieval failed; role and depth of the literature review remain unresolved."
+    ],
+    "next_action": "Inspect the thesis review chapter against M1 and the full-text CSLR threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W7121016685",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen1-W7121016685-pdf"
+    ],
+    "description": "Surveys static recognition, CSLR and translation through method summaries and comparisons.",
+    "reason": "Section 3 compares distinct prior CSLR approaches. The broader survey meets the project-specific threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Sections 2–3 summarize and compare earlier studies."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Comparative table includes cross-lingual CSLR and pose-based continuous recognition."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Reviewed CSLR systems use video and OpenPose features."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen1-W7121016685-pdf",
+        "url": "https://zenodo.org/records/18204535/files/a-comprehensive-survey-on-sign-language-recognition-advances-techniques-and-applications-IJERTV14IS080039.pdf",
+        "path": "work/sources/screen1-W7121016685-pdf.txt",
+        "locator": "PDF pp.2,4, Sections 2.2,2.7,3 comparative table",
+        "passage": "Section 3 contrasts Wei and Chen cross-lingual CSLR with Mocialov et al. LSTM/OpenPose recognition in advantages and limitations; preceding sections describe video-based methods."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Wei and Chen, Improving Continuous Sign Language Recognition with Cross-Lingual Signs",
+      "Mocialov et al., Towards Continuous Sign Language Recognition with Deep Learning"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "evidence_level": "abstract_only",
+        "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+      }
+    ]
+  },
+  {
+    "openalex_id": "W7162827361",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen1-W7162827361-web"
+    ],
+    "description": "Systematically maps sign-language datasets and their recognition applications.",
+    "reason": "Sections 4.9.2 and 5.3.2 compare prior CSLR datasets and evaluation characteristics. This qualifies as a broader mapping review.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Systematic mapping synthesizes existing dataset publications."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Dedicated subsections compare multiple CSLR studies on datasets and evaluation."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Comparison concerns continuous video corpora."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen1-W7162827361-web",
+        "url": "https://doria.fi/bitstream/handle/10024/194915/begum_kaniz.pdf?isAllowed=y&sequence=3",
+        "path": "work/sources/screen1-W7162827361-web.txt",
+        "locator": "PDF p.42 Section 4.9.2; p.47 Section 5.3.2; p.54 references [23]–[24]",
+        "passage": "The CSLR subsections compare Forster et al. PHOENIX with von Agris and Kraiss SIGNUM in signer coverage, vocabulary and evaluation purpose, also discussing CE-CNSL."
+      }
+    ],
+    "unresolved_issues": [
+      "Direct PDF download blocked; inspected PDF sections are archived as web-tool text excerpts."
+    ],
+    "next_action": "Human verification can consult the linked PDF sections.",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Forster et al. (2014), Extensions of the sign language recognition and translation corpus RWTH-PHOENIX-Weather",
+      "von Agris and Kraiss (2010), SIGNUM database: Video corpus for signer-independent continuous sign language recognition"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "evidence_level": "abstract_only",
+        "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+      }
+    ]
+  },
+  {
+    "openalex_id": "W7172124593",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "screen1-W7172124593"
+    ],
+    "description": "Reviews SLR evolution from sensors to visual deep-learning and multimodal approaches.",
+    "reason": "The publisher abstract covers continuous sentence recognition and visual methods. Advance; full-text comparison remains unverified.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Abstract describes review of prior SLR approaches."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Continuous sentence-level recognition is explicitly covered."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Vision and deep-learning approaches are explicit."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen1-W7172124593",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-31404-8_36",
+        "path": "work/sources/screen1-W7172124593.txt",
+        "locator": "Abstract",
+        "passage": "The chapter reviews earlier sensor and vision approaches and CNN, RNN, transformer and multimodal architectures spanning isolated words through continuous sentences."
+      }
+    ],
+    "unresolved_issues": [
+      "Publisher provides only a subscription preview; targeted author/repository lookup located no accessible full text."
+    ],
+    "next_action": "Obtain the chapter and verify the CSLR comparison threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  }
+]

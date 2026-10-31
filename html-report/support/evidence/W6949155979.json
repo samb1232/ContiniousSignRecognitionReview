@@ -1,0 +1,63 @@
+{
+  "paper": {
+    "title": "Proceedings of The Seventh International Workshop on Computer Modeling and Intelligent Systems (CMIS-2024), Zaporizhzhia, Ukraine, May 3, 2024. Edited by Sergey Subbotin",
+    "year": 2024,
+    "doi": "https://doi.org/10.5281/zenodo.12636163",
+    "openalex_url": "https://openalex.org/W6949155979"
+  },
+  "openalex_id": "W6949155979",
+  "human_decision": "not_screened",
+  "ai_decision": "exclude",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "openalex-W6949155979"
+  ],
+  "description": "This record represents an entire workshop proceedings volume, with a table of contents covering 40 papers on diverse computing topics.",
+  "reason": "Fails M1: the saved description identifies a collection of separate workshop papers, not a literature review synthesizing prior CSLR research. Its continuous-recognition entry is one constituent paper.",
+  "failed_criteria": [
+    "M1"
+  ],
+  "criteria": {
+    "M1": {
+      "status": "fail",
+      "reason": "Description states proceedings volume with40 accepted papers and lists their titles/authors/pages."
+    },
+    "M2": {
+      "status": "uncertain",
+      "reason": "A constituent CSLR paper appears in contents, but the record is the complete volume."
+    },
+    "M3": {
+      "status": "uncertain",
+      "reason": "Record-level modalities are not meaningful for a multi-topic proceedings volume."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W6949155979",
+      "url": "https://openalex.org/W6949155979",
+      "path": "work/runs/20261025T080315329549Z-full/raw/reused-q11-0.json",
+      "locator": "W6949155979 / abstract_inverted_index (decoded)",
+      "passage": "The abstract is a proceedings description/table of contents:40 accepted papers, including a comparison of LSTM1024 and2DCNN for CSLR on pp48–57 among many unrelated works.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

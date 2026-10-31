@@ -1,0 +1,14 @@
+{
+  "source_id": "screen1-W4417473484-pdf",
+  "openalex_id": "W4417473484",
+  "url": "https://www.informatica.si/index.php/informatica/article/download/10879/5996",
+  "retrieved_utc": "2026-10-31T11:32:41.968478+00:00",
+  "status": 200,
+  "final_url": "https://www.informatica.si/index.php/informatica/article/download/10879/5996",
+  "content_type": "application/pdf",
+  "body": "screen1-W4417473484-pdf.pdf",
+  "sha256": "57c0be6c0765f6db826ce06e1cccafa790b0693e8a49a23187e8ec2bda87123e",
+  "extractor": "pypdf 6.21.2",
+  "pages": 30,
+  "text": "screen1-W4417473484-pdf.txt"
+}

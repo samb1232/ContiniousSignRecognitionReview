@@ -1,0 +1,71 @@
+{
+  "paper": {
+    "title": "Arabic Sign Language Recognition: A Multimodal Systematic Review, Taxonomy, and Benchmark Recommendations",
+    "year": 2025,
+    "doi": "https://doi.org/10.31449/inf.v49i25.10879",
+    "openalex_url": "https://openalex.org/W4417473484"
+  },
+  "openalex_id": "W4417473484",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen1-W4417473484-pdf"
+  ],
+  "description": "Systematic review of Arabic SLR across visual and sensor modalities.",
+  "reason": "Section 7 and Table 4 compare multiple visual continuous-recognition studies. The broader review meets the project-specific threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Review synthesizes prior ArSL studies by task and modality."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Section 7 and Table 4 explicitly compare continuous-sentence recognition."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Table 4 includes multiple vision-based systems and video inputs."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen1-W4417473484-pdf",
+      "url": "https://www.informatica.si/index.php/informatica/article/download/10879/5996",
+      "path": "work/sources/screen1-W4417473484-pdf.txt",
+      "locator": "PDF pp.14–16, Section 7, Table 4; references [49], [52]",
+      "passage": "Table 4 compares Assaleh et al. (2010) and Almaazmi et al. (2024) by visual recognition techniques, datasets and performance; Section 7 discusses segmentation and evaluation.",
+      "sha256": "9182fe71f5b24b327c5487849af436b3803849bfb736dd947c0101ce39ccf300",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Assaleh et al. (2010), Continuous Arabic sign language recognition in user dependent mode",
+    "Almaazmi et al. (2024), Motion images with positioning information and deep learning for continuous Arabic sign language recognition"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "evidence_level": "abstract_only",
+      "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

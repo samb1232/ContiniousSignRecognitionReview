@@ -1,0 +1,164 @@
+{
+  "paper": {
+    "title": "Deep Learning for India's Diverse Sign Languages",
+    "year": 2026,
+    "doi": "https://doi.org/10.57159/jcmm.5.3.26708",
+    "openalex_url": "https://openalex.org/W7166669486"
+  },
+  "openalex_id": "W7166669486",
+  "human_decision": "not_screened",
+  "ai_decision": "uncertain",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen2-W7166669486",
+    "abstract-pass-gidsl"
+  ],
+  "description": "A systematic review of Indian and regional sign-language systems, comparing architectures, deployment constraints and recognition challenges.",
+  "reason": "M2 remains unresolved. GIDSL’s publisher abstract does not establish sentence recognition, despite the review’s sentence-result claim. LiST’s primary abstract could not be accessed; the two-study threshold remains unconfirmed.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "PRISMA-based synthesis with comparative analyses."
+    },
+    "M2": {
+      "status": "uncertain",
+      "reason": "M2 remains unresolved. GIDSL’s publisher abstract does not establish sentence recognition, despite the review’s sentence-result claim. LiST’s primary abstract could not be accessed; the two-study threshold remains unconfirmed."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Cameras, pose landmarks and visual neural networks are discussed."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen2-W7166669486",
+      "url": "https://jcmm.co.in/index.php/jcmm/article/download/708/172",
+      "path": "work/sources/screen2-W7166669486.txt",
+      "locator": "PDF pp.7,10–11,16; Sections4.4,6.4, Table3 and refs19,23",
+      "passage": "Table3 compares LiST and GIDSL among other systems. GIDSL is assigned a sentence result in Section4.4/Table3, but ref23 calls it isolated dynamic recognition; ref19 calls LiST continuous translation.",
+      "sha256": "de0d36f04482e3bb9ef627bdf65e50c1cf45ac7f046fd4c802efa9ef494284be",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "abstract-pass-gidsl",
+      "url": "https://link.springer.com/article/10.1007/s42979-024-02776-7",
+      "locator": "Publisher abstract and article title",
+      "passage": "The publisher labels GIDSL as isolated dynamic recognition. Its abstract describes a dataset, MediaPipe feature extraction, and an LSTM/dense model, but does not establish sentence-level recognition. This does not substantiate the review's sentence-result claim.",
+      "path": "work/sources/abstract-pass-gidsl.txt",
+      "sha256": "79d4a83819c943f88f9590cfbdc45d041e4c7b0452f51af0e1c7224d4fbac84d",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Task identity conflict prevents reliable application of the CSLR comparison threshold.",
+    "M2 remains unresolved. GIDSL’s publisher abstract does not establish sentence recognition, despite the review’s sentence-result claim. LiST’s primary abstract could not be accessed; the two-study threshold remains unconfirmed."
+  ],
+  "next_action": "Verify LiST’s recognition task and the claimed GIDSL sentence result using primary evidence.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "screen2-W7166669486"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W7166669486",
+        "human_decision": "not_screened",
+        "ai_decision": "uncertain",
+        "stage": "full_text",
+        "evidence_level": "full_text",
+        "source_ids": [
+          "screen2-W7166669486"
+        ],
+        "description": "A systematic review of Indian and regional sign-language systems, comparing architectures, deployment constraints and recognition challenges.",
+        "reason": "M1 and M3 are supported, but qualifying CSLR coverage is uncertain. Table 3 mixes tasks; its sentence-recognition claim for GIDSL conflicts with the cited isolated-recognition title, while LiST is labelled translation.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "PRISMA-based synthesis with comparative analyses."
+          },
+          "M2": {
+            "status": "uncertain",
+            "reason": "Table3 suggests continuous comparisons but the referenced task labels conflict; two distinct CSLR studies cannot be confidently identified."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Cameras, pose landmarks and visual neural networks are discussed."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "screen2-W7166669486",
+            "url": "https://jcmm.co.in/index.php/jcmm/article/download/708/172",
+            "path": "work/sources/screen2-W7166669486.txt",
+            "locator": "PDF pp.7,10–11,16; Sections4.4,6.4, Table3 and refs19,23",
+            "passage": "Table3 compares LiST and GIDSL among other systems. GIDSL is assigned a sentence result in Section4.4/Table3, but ref23 calls it isolated dynamic recognition; ref19 calls LiST continuous translation.",
+            "sha256": "de0d36f04482e3bb9ef627bdf65e50c1cf45ac7f046fd4c802efa9ef494284be",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Task identity conflict prevents reliable application of the CSLR comparison threshold."
+        ],
+        "next_action": "Check the cited LiST and GIDSL primary papers and resolve recognition versus translation/isolated-task labels before eligibility confirmation.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [
+          {
+            "stage": "title_abstract",
+            "ai_decision": "include",
+            "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "screen2-W7166669486"
+            ]
+          }
+        ],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+          "agent_batch": "batch2.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Verdict retained",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

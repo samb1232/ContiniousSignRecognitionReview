@@ -1,0 +1,135 @@
+{
+  "paper": {
+    "title": "Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review",
+    "year": 2024,
+    "doi": "https://doi.org/10.1109/icicml63543.2024.10957797",
+    "openalex_url": "https://openalex.org/W4409426808"
+  },
+  "openalex_id": "W4409426808",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "openalex-W4409426808"
+  ],
+  "description": "Review of Sinhala recognition methods, datasets and multimodal cues.",
+  "reason": "Retain this broader review because qualifying CSLR coverage is possible; abstract limitations do not demonstrate failure.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "uncertain",
+      "reason": "Extent of continuous-sign synthesis requires full text."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W4409426808",
+      "url": "https://doi.org/10.1109/icicml63543.2024.10957797",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W4409426808 / abstract_inverted_index",
+      "passage": "Abstract: Reviews Sinhala recognition techniques and multimodal hand, facial and body cues; identifies weak continuous recognition.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Publisher returned empty content; alternate author-sharing route denied access."
+  ],
+  "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "decoded_abstract": "The paper reviews the progress in Sinhala Sign Language recognition (SSL) over the last decade, tracing the techniques from early image processing to advanced deep learning models, indicating methodologies involved, datasets used, and challenges. The paper shows that the evolution has progressed from basic classifiers to sophisticated machine learning techniques that integrate CNNs, RNNs, and transformer architectures. It also presents the implementation of multimodal systems using hand gestures, facial expressions, and body postures. The review identifies the limitations of current recognition in SSL, such as scarce complete datasets, technical difficulties, and a lack of robust continuous recognition. Finally, it points out future research directions, stressing that further work must focus on growing datasets, making lightweight models for edge devices, and collaboration for further growth in SSL recognition technology.",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W4409426808",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "openalex-W4409426808"
+        ],
+        "description": "Review of Sinhala recognition methods, datasets and multimodal cues.",
+        "reason": "Retain this broader review because qualifying CSLR coverage is possible; abstract limitations do not demonstrate failure.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Synthesizes prior research."
+          },
+          "M2": {
+            "status": "uncertain",
+            "reason": "Extent of continuous-sign synthesis requires full text."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Includes visual recognition approaches."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "openalex-W4409426808",
+            "url": "https://doi.org/10.1109/icicml63543.2024.10957797",
+            "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+            "locator": "W4409426808 / abstract_inverted_index",
+            "passage": "Abstract: Reviews Sinhala recognition techniques and multimodal hand, facial and body cues; identifies weak continuous recognition.",
+            "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Publisher returned empty content; alternate author-sharing route denied access."
+        ],
+        "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "decoded_abstract": "The paper reviews the progress in Sinhala Sign Language recognition (SSL) over the last decade, tracing the techniques from early image processing to advanced deep learning models, indicating methodologies involved, datasets used, and challenges. The paper shows that the evolution has progressed from basic classifiers to sophisticated machine learning techniques that integrate CNNs, RNNs, and transformer architectures. It also presents the implementation of multimodal systems using hand gestures, facial expressions, and body postures. The review identifies the limitations of current recognition in SSL, such as scarce complete datasets, technical difficulties, and a lack of robust continuous recognition. Finally, it points out future research directions, stressing that further work must focus on growing datasets, making lightweight models for edge devices, and collaboration for further growth in SSL recognition technology.",
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+          "agent_batch": "batch0.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

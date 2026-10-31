@@ -1,0 +1,48 @@
+{
+  "notes": [
+    {
+      "source_id": "abstract-pass-gidsl",
+      "openalex_id": "W7166669486",
+      "url": "https://link.springer.com/article/10.1007/s42979-024-02776-7",
+      "doi": "10.1007/s42979-024-02776-7",
+      "locator": "Publisher abstract and article title",
+      "passage": "The publisher labels GIDSL as isolated dynamic recognition. Its abstract describes a dataset, MediaPipe feature extraction, and an LSTM/dense model, but does not establish sentence-level recognition. This does not substantiate the review's sentence-result claim."
+    },
+    {
+      "source_id": "abstract-pass-acl",
+      "openalex_id": "W7105609630",
+      "url": "https://aclanthology.org/2023.ranlp-1.71/",
+      "locator": "Publisher abstract and author list",
+      "passage": "The matching 2023 ACL title is authored by Li and colleagues, not Singh. The abstract describes classification of ASL alphabets and custom signs into text, rather than establishing continuous linguistic-sign recognition. Because the review gives different authors, the intended citation remains unresolved."
+    },
+    {
+      "source_id": "abstract-pass-skeleton",
+      "openalex_id": "W7124904654",
+      "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+      "locator": "PDF abstract p.1; Table5 p.13; references [6] and [8] p.16",
+      "passage": "The PDF abstract and Table5 identify a single continuous/online study with multiple decoding settings. Reference [6] is Takayama et al. (10.5220/0010899400003124); [8] is Buttar et al. (10.3390/math11173729). The previously noted inconsistent study counts remain unresolved."
+    },
+    {
+      "source_id": "abstract-pass-takayama",
+      "openalex_id": "W7124904654",
+      "url": "https://www.scitepress.org/Link.aspx?doi=10.5220%2F0010899400003124",
+      "doi": "10.5220/0010899400003124",
+      "locator": "Publisher abstract",
+      "passage": "Takayama and colleagues evaluate skeleton-based online continuous word recognition using monotonic attention on isolated-word and sentence videos. The abstract confirms this study's CSLR task; it does not establish a second distinct study in the review."
+    }
+  ],
+  "failures": [
+    {
+      "source_id": "abstract-pass-list-access",
+      "openalex_id": "W7166669486",
+      "url": "https://www.mdpi.com/2078-2489/14/2/79",
+      "error": "Publisher abstract returned HTTP429; /html and /pdf variants inaccessible through web tool. Primary-source task verification incomplete."
+    },
+    {
+      "source_id": "abstract-pass-buttar-access",
+      "openalex_id": "W7124904654",
+      "url": "https://www.mdpi.com/2227-7390/11/17/3729",
+      "error": "Publisher abstract returned HTTP429. Could not establish whether this second cited work evaluates CSLR from its primary abstract."
+    }
+  ]
+}

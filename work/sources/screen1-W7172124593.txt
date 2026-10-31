@@ -1,0 +1,1663 @@
+
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    From Data Gloves to Deep Networks: A Survey of Sign Language Recognition and Multimodal Approach | Springer Nature Link
+
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+        
+    
+    
+    
+
+    
+
+
+    
+
+
+
+
+
+
+    
+        
+            
+    
+    
+
+        
+        
+        
+    
+
+    
+    
+
+    
+
+
+    
+
+
+    
+    
+
+
+    
+
+
+    
+
+
+
+    
+
+
+
+    
+    
+        
+    
+
+    
+    
+
+
+
+    
+
+        Skip to main content
+
+        
+            
+        
+
+        
+            
+
+                
+Advertisement
+                
+
+            
+        
+        
+        
+
+        
+
+        
+
+    
+    
+
+        
+
+            
+                
+                    
+                        
+                    
+                
+            
+        
+
+        
+            
+                
+    
+        Log in
+    
+
+
+            
+        
+    
+
+    
+        
+            
+
+                
+
+                   
+                        
+                            
+                        Menu
+                    
+                
+
+                
+
+                    
+                        
+                            Find a journal
+                        
+                    
+                        
+                            Publish with us
+                        
+                    
+                        
+                            Track your research
+                        
+                    
+                
+
+                
+
+                    
+                        
+
+                            
+                                
+                                    
+                                Search
+                            
+                        
+                    
+                    
+
+                        
+
+                            
+                                
+                                    
+                                
+                                Saved research
+                            
+                        
+                        
+                            
+
+ 
+  
+   
+  
+  Cart
+ 
+ 
+
+                        
+                    
+                
+            
+        
+    
+
+
+
+
+
+        
+
+
+
+
+    
+    
+
+        
+        
+
+            
+
+                
+    
+        
+            
+                
+                    
+
+                        Home
+                            
+                                
+                            
+                    
+                
+                    
+
+                        Pattern Recognition
+                            
+                                
+                            
+                    
+                
+                    
+
+                        Conference paper
+                    
+                
+            
+        
+    
+
+                
+From Data Gloves to Deep Networks: A Survey of Sign Language Recognition and Multimodal Approach
+
+                
+                    
+    
+    
+        
+Conference paper
+    
+    
+
+                    
+    
+
+                    
+First Online: 03 August 2026
+                
+
+                
+                    
+
+                         pp 541–554
+                    
+                    
+
+                        Cite this conference paper
+                    
+                
+                
+                
+
+                
+                    
+
+                        
+
+                            
+                            
+
+                                
+                                    
+                                        
+                                            
+                                        Save conference paper
+                                    
+                                
+                                
+
+                                    
+                                        View saved research
+                                        
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+
+            
+
+                
+                    
+                            
+                                
+                                
+                            
+                            Pattern Recognition
+                    
+                    (ICPR 2026) 
+                
+            
+        
+    
+    
+
+
+
+
+
+    
+        
+
+        
+            
+
+                
+                    
+
+                        
+Zeyang Ma16,17, 
+Usman Khan16,17 & 
+Atif Mansoor16,17 
+                        
+    
+        
+
+            
+
+                
+
+                    
+                
+                
+
+                    
+
+                        Part of the book series:
+                        Lecture Notes in Computer Science ((LNCS,volume 16819))
+                    
+                
+            
+        
+    
+
+                        
+                            
+
+                                
+
+                                    
+                                
+                                
+
+                                    
+Included in the following conference series:
+                                    
+                                        
+                                        
+International Conference on Pattern Recognition
+                                        
+                                    
+                                
+                            
+                        
+                        
+
+                            
+        
+        
+            
+                
+
+                    
+
+                        
+                    703 Accesses
+                
+            
+            
+            
+                
+            
+            
+            
+        
+        
+    
+                        
+                    
+                    
+                
+            
+
+            
+
+                
+                    
+                        
+
+ Abstract
+
+More than a million deaf and hard-of-hearing people worldwide communicate through sign language. However, there is a substantial communication barrier between the deaf and hearing communities, as most hearing-abled people lack proficiency in sign language. Sign Language Recognition (SLR) systems have therefore emerged as a vital technological solution to overcome this communication divide by automatically translating sign language into spoken or written forms. This paper reviews the evolution of SLR systems, from early sensor and handcrafted-feature-based approaches to modern vision and deep-learning-based methods. We examine the progressive improvement in SLR from Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), transformer models, and multimodal architectures from isolated word-level to continuous sentence-level recognition. We also discuss the emergence of recent multimodal, large-scale datasets that promise to support robust training and evaluation of flexible, generalized SLR systems. Finally, we highlight key challenges (e.g., data scarcity, signer variability, integration of non-manual cues, and real-time performance), thereby proposing future research directions to develop universal, all-inclusive sign language recognition systems that bridge communication gaps between the deaf and hearing worlds.
+                    
+                
+
+                
+
+                
+                    
+                        
+
+                            
+
+                                
+                                    
+                                
+                                
+                                    This is a preview of subscription content, log in via an institution
+                                
+                                
+                                    
+                                 to check access.
+                            
+                        
+                    
+
+                    
+                        
+                            
+
+                                
+Access this chapter
+                                
+                                    
+                                        
+
+                                            
+                                                Log in via an institution
+                                                
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                
+                                
+
+                                    
+
+ 
+
+  
+
+   
+Subscribe and save
+   
+
+    
+
+     
+
+      
+       
+      
+      Springer+
+     
+     
+from €37.37 /Month
+    
+    
+     
+Starting from 10 chapters or articles per month
+     
+Access and download chapters and articles from more than 300k books and 2,500 journals
+     
+Cancel anytime
+    
+     View plans 
+     
+      
+      
+   
+   
+Buy Now
+  
+  
+
+   
+
+    
+
+     
+      
+       
+        
+       
+       Chapter
+      
+      
+       
+EUR 29.95
+      
+      Price includes VAT (Poland)
+     
+     
+              
+      
+       
+Available as PDF
+       
+Read on any device
+       
+Instant download
+       
+Own it forever
+      
+      Buy Chapter 
+       
+        
+        
+     
+    
+    
+
+     
+      
+       
+        
+       
+       eBook
+      
+      EUR 82.38
+      Price includes VAT (Poland)
+     
+     
+          
+      
+       
+Available as EPUB and PDF
+       
+Read on any device
+       
+Instant download
+       
+Own it forever
+      
+      Buy eBook 
+       
+        
+        
+     
+    
+    
+
+     
+      
+       
+        
+       
+       Softcover Book
+      
+      EUR 104.85
+      Price includes VAT (Poland)
+     
+     
+          
+      
+       
+Compact, lightweight edition
+       
+Free shipping worldwide - view details
+      
+      Buy Softcover Book 
+       
+        
+        
+     
+    
+   
+  
+  
+
+   
+Tax calculation will be finalised at checkout
+   
+Purchases are for personal use only
+  
+ 
+ 
+ 
+
+                                
+                                
+
+                                    
+Institutional subscriptions
+                                        
+                                            
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+
+                
+
+                
+
+                    
+                
+                
+                
+        
+            
+                
+Similar content being viewed by others
+                
+
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        Hand Sign Detection and Voice Conversion for the Hearing and Speech Impaired Using Convolutional Neural Networks
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2024
+                                    
+                                
+                            
+                        
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        A Survey: The Sensor-Based Method for Sign Language Recognition
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2024
+                                    
+                                
+                            
+                        
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        Multimodal Learning for Sign Language Recognition
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2017
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+            
+        
+    
+
+                
+    
+        
+Explore related subjects
+        Discover the latest articles, books and news in related subjects, suggested using machine learning.
+        
+        
+            
+
+                Object Recognition
+            
+        
+            
+
+                Signal, Speech and Image Processing
+            
+        
+            
+
+                Speech and Audio Signal Processing
+            
+        
+            
+
+                Sign Languages
+            
+        
+            
+
+                Biometrics
+            
+        
+            
+
+                Research Methods in Language and Linguistics
+            
+        
+            
+
+                Linguistic Structures and Acquisition in Sign Languages
+            
+        
+        
+    
+
+
+                
+
+                
+
+
+ References
+
+
+
+Ahn, J., Jang, Y., Chung, J.S.: Slowfast network for continuous sign language recognition. In: ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 3920–3924 (2024). https://doi.org/10.1109/ICASSP48485.2024.10445841
+
+Al-Hammadi, M., Muhammad, G., Abdul, W., Alsulaiman, M., Bencherif, M.A., Mekhtiche, M.A.: Hand gesture recognition for sign language using 3DCNN. IEEE Access 8, 79491–79509 (2020). https://doi.org/10.1109/ACCESS.2020.2990434
+
+AL-Rousan, M., Assaleh, K., Tala a, A.: Video-based signer-independent Arabic sign language recognition using hidden Markov models. Appl. Soft Comput. 9(3), 990–999 (2009). ISSN 1568-4946
+
+                        Google Scholar 
+                
+
+Alyami, S., Luqman, H.: SWIN-MSTP: SWIN transformer with multi-scale temporal perception for continuous sign language recognition. Neurocomputing 617, 129015 (2025). ISSN 0925-2312
+
+                        Google Scholar 
+                
+
+Alyami, S., Luqman, H., Hammoudeh, M.: Isolated ARABIC sign language recognition using a transformer-based model and landmark keypoints. ACM Transa. Asian Low-Resour. Lang. Inf. Process. 23(1), 1–19 (2024)
+Article 
+    
+                    Google Scholar 
+                
+
+Arnab, A., Dehghani, M., Heigold, G., Sun, C., Lučić, M., Schmid, C.: VIVIT: a video vision transformer. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), pp. 6836–6846 (2021)
+
+                        Google Scholar 
+                
+
+Bauer, B., Hienz, H.: Relevant features for video-based continuous sign language recognition. In: Proceedings Fourth IEEE International Conference on Automatic Face and Gesture Recognition, pp. 440–445. IEEE, Grenoble, France (2000). https://doi.org/10.1109/AFGR.2000.840672 Cat. No. PR00580)
+
+Boháček, M., Hrúz, M.: Sign pose-based transformer for word-level sign language recognition. In: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops, pp. 182–191 (2022)
+
+                        Google Scholar 
+                
+
+Camgoz, N.C., Hadfield, S., Koller, O., Ney, H., Bowden, R.: Neural sign language translation. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2018)
+
+                        Google Scholar 
+                
+
+Camgoz, N.C., Koller, O., Hadfield, S., Bowden, R.: Sign language transformers: joint end-to-end sign language recognition and translation. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (2020)
+
+                        Google Scholar 
+                
+
+Cui, R., Liu, H., Zhang, C.: Recurrent convolutional neural networks for continuous sign language recognition by staged optimization. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2017)
+
+                        Google Scholar 
+                
+
+Cui, Z., Zhang, W., Li, Z., et al.: Spatial temporal transformer for end-to-end sign language recognition, vol. 9, pp. 4645–4656, Springer (2023). https://doi.org/10.1007/s40747-023-00977-w
+
+De Coster, M., Van Herreweghe, M., Dambre, J.: Sign language recognition with transformer networks. In: Calzolari, N., et al. (eds.) Proceedings of the Twelfth Language Resources and Evaluation Conference, pp. 6018–6024, European Language Resources Association, Marseille, France (2020). ISBN 979-10-95546-34-4, https://aclanthology.org/2020.lrec-1.737/
+
+Fang, G., Gao, W.: A SRN/HMM system for signer-independent continuous sign language recognition. In: Proceedings of the Fifth IEEE International Conference on Automatic Face and Gesture Recognition (FGR), pp. 312–317, IEEE, Washington, DC, USA (2002). ISBN 0-7695-1602-5, https://doi.org/10.1109/AFGR.2002.1004172
+
+Forster, J., et al.: RWTH-phoenix-weather: a large vocabulary sign language recognition and translation corpus. In: Proceedings of the Language Resources and Evaluation Conference (LREC), vol. 9, pp. 3785–3789 (2012)
+
+                        Google Scholar 
+                
+
+Geng, X., Li, Y., Ma, Z., Lu, Z., Miao, Q.: No blind alignment but generation: a different view of continuous sign language recognition based on diffusion. Pattern Recognition 169, 111960 (2026), ISSN 0031-3203. https://doi.org/10.1016/j.patcog.2025.111960
+
+Guan, M., Wang, Y., Ma, G., Liu, J., Sun, M.: MSKA: multi-stream keypoint attention network for sign language recognition and translation. Pattern Recogn. 165, 111602 (2025)
+Article 
+    
+                    Google Scholar 
+                
+
+Hinrichs, R., Sitcheu, A.J.Y., Ostermann, J.: Continuous sign-language recognition using transformers and augmented pose estimation. In: International Conference on Pattern Recognition Applications and Methods (2023). https://api.semanticscholar.org/CorpusID:257361481
+
+Hu, H., Zhao, W., Zhou, W., Li, H.: SignBERT+: hand-model-aware self-supervised pre-training for sign language understanding. IEEE Trans. Pattern Anal. Mach. Intell. 45(9), 11221–11239 (2023)
+Article 
+    
+                    Google Scholar 
+                
+
+Hu, H., Zhao, W., Zhou, W., Wang, Y., Li, H.: SignBERT: pre-training of hand-model-aware representation for sign language recognition. In: Proceedings of the IEEE/CVF International Conference on Computer Vision, pp. 11087–11096 (2021)
+
+                        Google Scholar 
+                
+
+Kan, J., Hu, K., Hagenbuchner, M., Tsoi, A.C., Bennamoun, M., Wang, Z.: Sign language translation with hierarchical spatio-temporal graph neural network. In: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision, pp. 3367–3376 (2022)
+
+                        Google Scholar 
+                
+
+Koller, O., Camgoz, N.C., Ney, H., Bowden, R.: Weakly supervised learning with multi-stream CNN-LSTM-HMMS to discover sequential parallelism in sign language videos. IEEE Trans. Pattern Anal. Mach. Intell. 42(9), 2306–2320 (2020). https://doi.org/10.1109/TPAMI.2019.2911077
+Article 
+    
+                    Google Scholar 
+                
+
+Koller, O., Zargaran, S., Ney, H.: Re-sign: re-aligned end-to-end sequence modelling with deep recurrent CNN-HMMS. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2017)
+
+                        Google Scholar 
+                
+
+Lin, K., Wang, X., Zhu, L., Sun, K., Zhang, B., Yang, Y.: Gloss-free end-to-end sign language translation. arXiv preprint arXiv:2305.12876 (2023)
+
+Maruyama, M., Singh, S., Inoue, K., Pratim Roy, P., Iwamura, M., Yoshioka, M.: Word-level sign language recognition with multi-stream neural networks focusing on local regions and skeletal information. IEEE Access 12, 167333–167346 (2024). https://doi.org/10.1109/ACCESS.2024.3494878
+
+Masood, S., Srivastava, A., Thuwal, H.C., Ahmad, M.: Real-time sign language gesture (word) recognition from video sequences using CNN and RNN. In: Bhateja, V., Coello Coello, C., Satapathy, S., Pattnaik, P. (eds.) Intelligent Engineering Informatics, Advances in Intelligent Systems and Computing, vol. 695, Springer, Singapore (2018). https://doi.org/10.1007/978-981-10-7566-7_63
+
+Mehdi, S., Khan, Y.: Sign language recognition using sensor gloves. In: Proceedings of the 9th International Conference on Neural Information Processing, 2002. ICONIP 2002, vol. 5, pp. 2204–2206 (2002). https://doi.org/10.1109/ICONIP.2002.1201884
+
+Miah, A.S.M., Hasan, M.A.M., Nishimura, S., Shin, J.: Sign language recognition using graph and general deep neural network based on large scale dataset. IEEE Access 12, 34553–34569 (2024). https://doi.org/10.1109/ACCESS.2024.3372425
+Article 
+    
+                    Google Scholar 
+                
+
+Najib, F.M.: A multi-lingual sign language recognition system using machine learning. Multimedia Tools Appl. 84(24), 27987–28011 (2025)
+Article 
+    
+                    Google Scholar 
+                
+
+Okayasu, Y., Ozawa, T., Dahlan, M., Nishimura, H., Tanaka, H.: Performance enhancement by combining visual clues to identify sign language motions. In: 2017 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing (PACRIM), pp. 1–4 (2017). https://doi.org/10.1109/PACRIM.2017.8121923
+
+Shen, X., et al.: MM-WLAUSLAN: Multi-view multi-modal word-level Australian sign language recognition dataset. In: Globerson, A., Mackey, L., Belgrave, D., Fan, A., Paquet, U., Tomczak, J., Zhang, C. (eds.) Advances in Neural Information Processing Systems, vol. 37, pp. 69700–69715, Curran Associates, Inc. (2024)
+
+                        Google Scholar 
+                
+
+Shen, X., Yuan, S., Sheng, H., Du, H., Yu, X.: Auslan-daily: Australian sign language translation for daily communication and news. Adv. Neural. Inf. Process. Syst. 36, 80455–80469 (2023)
+Article 
+    
+                    Google Scholar 
+                
+
+Starner, T., Pentland, A.: Real-time American sign language recognition from video using hidden Markov models. In: Proceedings of International Symposium on Computer Vision - ISCV, pp. 265–270 (1995). https://doi.org/10.1109/ISCV.1995.477012
+
+Starner, T., Weaver, J., Pentland, A.: Real-time American sign language recognition using desk and wearable computer based video. IEEE Trans. Pattern Anal. Mach. Intell. 20(12), 1371–1375 (1998). https://doi.org/10.1109/34.735811
+Article 
+    
+                    Google Scholar 
+                
+
+Tunga, A., Nuthalapati, S.V., Wachs, J.: Pose-based sign language recognition using GCN and BERT. In: Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision, pp. 31–40 (2021)
+
+                        Google Scholar 
+                
+
+WFD: FAQs (2024). https://wfdeaf.org/contact/faqs/, https://wfdeaf.org/contact/faqs/. Accessed 16 Oct 2025
+
+Yan, S., Xiong, Y., Lin, D.: Spatial temporal graph convolutional networks for skeleton-based action recognition. In: Proceedings of the AAAI Conference on Artificial Intelligence, vol. 32 (2018)
+
+                        Google Scholar 
+                
+
+Yang, H.D., Sclaroff, S., Lee, S.W.: Sign language spotting with a threshold model based on conditional random fields. IEEE Trans. Pattern Anal. Mach. Intell. 31(7), 1264–1277 (2009). https://doi.org/10.1109/TPAMI.2008.172
+Article 
+    
+                    Google Scholar 
+                
+
+Yin, A., Zhao, Z., Jin, W., Zhang, M., Zeng, X., He, X.: MLSLT: towards multilingual sign language translation. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 5109–5119 (2022)
+
+                        Google Scholar 
+                
+
+Yin, K., Read, J.: Better sign language translation with STMC-transformer. In: Proceedings of the 28th International Conference on Computational Linguistics (2020). https://doi.org/10.18653/v1/2020.coling-main.525
+
+Zhang, H., Guo, Z., Yang, Y., Liu, X., Hu, D.: C2st: cross-modal contextualized sequence transduction for continuous sign language recognition. In: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), pp. 21053–21062 (2023)
+
+                        Google Scholar 
+                
+
+Zhou, H., Zhou, W., Qi, W., Pu, J., Li, H.: Improving sign language translation with monolingual data by sign back-translation. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 1316–1325 (2021)
+
+                        Google Scholar 
+                
+
+Zhou, Z., Tam, V.W.L., Lam, E.Y.: SignBERT: a BERT-based deep learning framework for continuous sign language recognition. IEEE Access 9, 161669–161682 (2021). https://doi.org/10.1109/ACCESS.2021.3132668
+
+Zimmerman, T.G., Lanier, J., Blanchard, C., Bryson, S., Harvill, Y.: A hand gesture interface device. ACM Sigchi Bull. 18(4), 189–192 (1986)
+Article 
+    
+                    Google Scholar 
+                
+Download references
+
+ Author information
+
+Authors and Affiliations
+
+University of Western Australia, Perth, Australia
+Zeyang Ma, Usman Khan & Atif Mansoor
+
+SS-CASE-IT, Islamabad, Pakistan
+Zeyang Ma, Usman Khan & Atif Mansoor
+Authors
+Zeyang Ma
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Usman Khan
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Atif Mansoor
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Corresponding author
+Correspondence to
+                Usman Khan.
+
+ Editor information
+
+Editors and Affiliations
+
+Sapienza Università di Roma, Rome, Italy
+Maria De Marsico
+
+IBM, Yorktown Heights, NY, USA
+Tin Kam Ho
+
+Université de Caen Normandie, Caen, France
+Frederic Jurie
+
+Institute of Automation, Chinese Academy of Sciences, Beijing, China
+Cheng-Lin Liu
+
+Lehigh University, Bethlehem, PA, USA
+Daniel Lopresti
+
+Uppsala University, Uppsala, Sweden
+Ingela Nyström
+
+CESI École d'ingénieurs, Puteaux, France
+Jean-Marc Ogier
+
+Michigan State University, East Lansing, MI, USA
+Arun Ross
+
+Chinese Academy of Sciences, Beijing, China
+Liang Wang
+
+ Rights and permissions
+
+Reprints and permissions
+
+ Copyright information
+
+© 2027 The Author(s), under exclusive license to Springer Nature Switzerland AG
+
+ About this paper
+
+
+
+
+Cite this paper
+Ma, Z., Khan, U., Mansoor, A. (2027).  From Data Gloves to Deep Networks: A Survey of Sign Language Recognition and Multimodal Approach.
+
+                     In: De Marsico, M., et al. Pattern Recognition. ICPR 2026. Lecture Notes in Computer Science, vol 16819. Springer, Cham. https://doi.org/10.1007/978-3-032-31404-8_36
+Download citation
+.RIS
+.ENW
+.BIB
+
+DOI: https://doi.org/10.1007/978-3-032-31404-8_36
+
+Published: 03 August 2026
+
+
+                            Publisher Name: Springer, Cham
+
+
+                                Print ISBN: 978-3-032-31403-1
+
+
+                                Online ISBN: 978-3-032-31404-8
+
+eBook Packages: Computer ScienceComputer Science (R0)Springer Nature Proceedings Computer Science
+
+
+Share this paper
+Anyone you share the following link with will be able to read this content:Get shareable link
+
+Sorry, a shareable link is not currently available for this article.
+
+Copy shareable link to clipboard
+
+                                Provided by the Springer Nature SharedIt content-sharing initiative
+                            
+Keywords
+Sign Language Recognition
+Deep Learning
+Multimodal datasets
+Vision-based Recognition
+Sensor-based Recognition
+Accessibility
+
+
+ Publish with us
+
+Policies and ethics
+
+                
+
+                
+    
+
+                
+    
+
+        
+Societies and partnerships
+        
+        
+            
+
+                
+                    
+
+                        
+                    
+                    
+
+                        The International Association for Pattern Recognition (opens in a new tab)
+                    
+                
+            
+        
+        
+    
+
+            
+        
+    
+
+    
+
+        
+            
+
+                
+            
+            
+                
+
+                    
+
+                        
+
+                        
+                            
+                                
+
+                                    
+Access this chapter
+                                    
+                                        
+                                            
+
+                                                
+                                                    Log in via an institution
+                                                    
+                                                        
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                    
+
+                                        
+
+ 
+
+  
+
+   
+Subscribe and save
+   
+
+    
+
+     
+
+      
+       
+      
+      Springer+
+     
+     
+from €37.37 /Month
+    
+    
+     
+Starting from 10 chapters or articles per month
+     
+Access and download chapters and articles from more than 300k books and 2,500 journals
+     
+Cancel anytime
+    
+     View plans 
+     
+      
+      
+   
+   
+Buy Now
+  
+  
+
+   
+
+    
+
+     
+      
+       
+        
+       
+       Chapter
+      
+      
+       
+EUR 29.95
+      
+      Price includes VAT (Poland)
+     
+     
+              
+      
+       
+Available as PDF
+       
+Read on any device
+       
+Instant download
+       
+Own it forever
+      
+      Buy Chapter 
+       
+        
+        
+     
+    
+    
+
+     
+      
+       
+        
+       
+       eBook
+      
+      EUR 82.38
+      Price includes VAT (Poland)
+     
+     
+          
+      
+       
+Available as EPUB and PDF
+       
+Read on any device
+       
+Instant download
+       
+Own it forever
+      
+      Buy eBook 
+       
+        
+        
+     
+    
+    
+
+     
+      
+       
+        
+       
+       Softcover Book
+      
+      EUR 104.85
+      Price includes VAT (Poland)
+     
+     
+          
+      
+       
+Compact, lightweight edition
+       
+Free shipping worldwide - view details
+      
+      Buy Softcover Book 
+       
+        
+        
+     
+    
+   
+  
+  
+
+   
+Tax calculation will be finalised at checkout
+   
+Purchases are for personal use only
+  
+ 
+ 
+ 
+
+                                    
+                                    
+
+                                        
+Institutional subscriptions
+                                            
+                                                
+                                            
+                                        
+                                    
+                                
+                            
+                        
+                    
+
+                    
+
+                    
+
+                    
+                
+            
+
+        
+    
+
+
+        
+
+    
+
+
+
+    
+        
+
+            
+Search
+            
+
+                
+                    
+                        Search by keyword or author
+                        
+
+                            
+                            
+                                
+                                    
+                                
+                                Search
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+
+
+    
+        
+Navigation
+        
+            
+                
+
+                   
+                        Find a journal
+                    
+                
+            
+                
+
+                   
+                        Publish with us
+                    
+                
+            
+                
+
+                   
+                        Track your research
+                    
+                
+            
+        
+    
+
+
+    
+	
+
+		
+Footer Navigation
+		
+			
+				
+	
+
+		
+		
+
+			
+Discover content
+			
+				
+					
+Journals A-Z
+				
+					
+Books A-Z
+				
+					
+Subjects A-Z
+				
+			
+		
+		
+		
+
+			
+Publish with us
+			
+				
+					
+Journal finder
+				
+					
+Publish your research
+				
+					
+Language editing
+				
+					
+Open access publishing
+				
+			
+		
+		
+		
+
+			
+Products and services
+			
+				
+					
+Our products
+				
+					
+Librarians
+				
+					
+Societies
+				
+					
+Partners and advertisers
+				
+			
+		
+		
+		
+
+			
+Our brands
+			
+				
+					
+Springer
+				
+					
+Nature Portfolio
+				
+					
+BMC
+				
+					
+Palgrave Macmillan
+				
+					
+Apress
+				
+					
+Discover
+				
+			
+		
+		
+	
+
+
+			
+			
+	
+		
+Corporate Navigation
+		
+			
+				
+
+					
+					
+						Your privacy choices/Manage cookies
+					
+				
+			
+				
+
+					
+						Your US state privacy rights
+					
+					
+				
+			
+				
+
+					
+						Accessibility statement
+					
+					
+				
+			
+				
+
+					
+						Terms and conditions
+					
+					
+				
+			
+				
+
+					
+						Privacy policy
+					
+					
+				
+			
+				
+
+					
+						Help and support
+					
+					
+				
+			
+				
+
+					
+						Legal notice
+					
+					
+				
+			
+				
+
+					
+						Cancel contracts here
+					
+					
+				
+			
+				
+
+					
+						Withdrawal from contracts here
+					
+					
+				
+			
+		
+	
+
+
+		
+		
+			
+				
+					
+
+						
+
+							
+							78.17.97.76
+						
+						
+Not affiliated
+					
+				
+			
+			
+				
+					
+				
+			
+			
+© 2026 Springer Nature
+		
+	
+
+
+
+
+    
+
+    
+
+    
+
+
+
+

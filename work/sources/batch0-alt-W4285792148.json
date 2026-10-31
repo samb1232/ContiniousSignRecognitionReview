@@ -1,0 +1,8 @@
+{
+  "source_id": "batch0-alt-W4285792148",
+  "openalex_id": "W4285792148",
+  "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197622002925",
+  "retrieved_utc": "2026-10-31T11:34:03.354462+00:00",
+  "error_class": "HTTPError",
+  "status": 403
+}

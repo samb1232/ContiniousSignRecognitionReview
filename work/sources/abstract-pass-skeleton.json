@@ -1,0 +1,12 @@
+{
+  "source_id": "abstract-pass-skeleton",
+  "openalex_id": "W7124904654",
+  "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+  "locator": "PDF abstract p.1; Table5 p.13; references [6] and [8] p.16",
+  "passage": "The PDF abstract and Table5 identify a single continuous/online study with multiple decoding settings. Reference [6] is Takayama et al. (10.5220/0010899400003124); [8] is Buttar et al. (10.3390/math11173729). The previously noted inconsistent study counts remain unresolved.",
+  "retrieved_utc": "2026-10-31T17:07:01.802240+00:00",
+  "method": "Web-tool inspection; saved analyst paraphrase, not raw HTTP response",
+  "body": "abstract-pass-skeleton.txt",
+  "text": "abstract-pass-skeleton.txt",
+  "sha256": "bfb6344fb0020c2e90437612451000104c1016b592520b83da6d70d0a1adc028"
+}

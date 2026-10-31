@@ -1,0 +1,63 @@
+{
+  "paper": {
+    "title": "Continuous Sign Language Recognition Using Combination of Two Stream 3DCNN and SubUNet",
+    "year": 2023,
+    "doi": "https://doi.org/10.15408/jti.v16i2.27030",
+    "openalex_url": "https://openalex.org/W4390107804"
+  },
+  "openalex_id": "W4390107804",
+  "human_decision": "not_screened",
+  "ai_decision": "exclude",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "openalex-W4390107804"
+  ],
+  "description": "Develops and evaluates a two-stream deep-learning CSLR architecture on PHOENIX.",
+  "reason": "M1 fails: the contribution is a proposed recognition method. Its stated literature study serves dataset selection for that experiment.",
+  "failed_criteria": [
+    "M1"
+  ],
+  "criteria": {
+    "M1": {
+      "status": "fail",
+      "reason": "Abstract identifies method development and evaluation; literature study selects an experimental dataset."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Continuous recognition on RWTH-PHOENIX-Weather is explicit."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "RGB frames and optical flow are inputs."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W4390107804",
+      "url": "https://openalex.org/W4390107804",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W4390107804 abstract_inverted_index (reconstructed abstract)",
+      "passage": "The abstract says the literature study found datasets, the selected dataset develops the proposed method, and a 3DCNN/LSTM/CTC architecture is evaluated using RGB and optical-flow streams.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

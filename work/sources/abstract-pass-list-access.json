@@ -1,0 +1,9 @@
+{
+  "source_id": "abstract-pass-list-access",
+  "openalex_id": "W7166669486",
+  "url": "https://www.mdpi.com/2078-2489/14/2/79",
+  "error": "Publisher abstract returned HTTP429; /html and /pdf variants inaccessible through web tool. Primary-source task verification incomplete.",
+  "retrieved_utc": "2026-10-31T17:07:01.802240+00:00",
+  "method": "web tool",
+  "status": 429
+}

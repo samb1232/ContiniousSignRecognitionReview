@@ -1,0 +1,984 @@
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+        Sign Language Recognition - A Deep Survey.
+      -  Aalborg University's Research Portal
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+
+    
+    
+
+
+
+    
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+        
+        
+    
+    
+    
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+Skip to main navigation
+
+    Skip to search
+
+Skip to main content
+
+
+
+
+
+
+
+    
+        
+
+            
+
+                
+                    
+
+                
+                
+                    
+                        Aalborg University's Research Portal Home
+                        
+                    
+                
+                
+                    
+                        
+                        
+                            
+
+                                
+                                    
+
+                                
+
+                                    
+Dansk
+English
+                                
+                            
+                        
+                    
+                
+                
+                
+                    
+                
+            
+        
+
+        
+            
+
+                
+
+
+    
+
+        
+
+            
+
+                
+
+                    Search content at Aalborg University's Research Portal
+                    
+                
+
+                
+
+                    
+                        
+                    
+                
+            
+        
+    
+
+
+            
+        
+
+
+        
+        
+            
+
+                
+
+                    
+
+                        
+                            
+                                
+
+                                    Home
+                                
+
+                                
+                                    
+
+                                        Profiles
+                                    
+                                
+                                    
+
+                                        Projects
+                                    
+                                
+                                    
+
+                                        Research output
+                                    
+                                
+                                    
+
+                                        Activities
+                                    
+                                
+                                    
+
+                                        Research units
+                                    
+                                
+                                    
+
+                                        Equipment
+                                    
+                                
+                                    
+
+                                        Press/Media
+                                    
+                                
+                                    
+
+                                        Prizes
+                                    
+                                
+                                    
+
+                                        Datasets
+                                    
+                                
+                                    
+
+                                        Impacts
+                                    
+                                
+                            
+                        
+
+                    
+                
+            
+        
+    
+
+    
+        
+    
+
+
+        
+        
+        
+        
+        
+            
+            
+        
+
+
+
+
+    
+
+        
+
+            
+
+Sign Language Recognition - A Deep Survey.
+            
+
+Razieh Rastgoo
+, Kourosh Kiani
+, Sergio Escalera
+            
+            
+            
+
+Research output: Contribution to journal › Journal article › Research › peer-review
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        
+            
+
+                
+                    
+
+                        
+                            
+
+                                
+                                    
+                                
+                                546
+                                
+                                      Link opens in a new tab 
+                                
+                                Citations
+(Scopus)
+                            
+                        
+                        
+                    
+                
+                
+                    
+
+                        
+                            
+
+                                
+                            
+                        
+
+                        
+                            
+
+                                
+                                    
+
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+    
+
+
+
+
+    
+
+    
+
+        
+            
+                
+
+                    
+                        
+                        Overview
+                    
+                
+                
+                    
+
+                        
+                            
+                            Fingerprint
+                        
+                    
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+            
+        
+    
+    
+
+
+    
+        
+
+        
+
+            
+        
+            
+
+                
+
+                    
+
+                        
+                        
+                            
+Abstract
+                        
+
+
+Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years. In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved. We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.
+                        
+
+
+Original languageEnglish
+Article number113794
+JournalExpert Syst. Appl.
+Volume164
+Pages (from-to)113794
+DOIs
+https://doi.org/10.1016/J.ESWA.2020.113794 
+Publication statusPublished - 2021
+Externally publishedYes
+                        
+
+Bibliographical noteDBLP's bibliographic metadata records provided through http://dblp.org/search/publ/api are distributed under a Creative Commons CC0 1.0 Universal Public Domain Dedication. Although the bibliographic metadata records are provided consistent with CC0 1.0 Dedication, the content described by the metadata records is not. Content may be subject to copyright, rights of privacy, rights of publicity and other restrictions.
+
+                        
+
+                        
+
+                        
+
+
+Keywords
+Application
+Computer Vision
+Deep learning
+Face recognition
+Pose estimation
+Sign language recognition
+
+                    
+
+                    
+
+                        
+                            
+Access to Document
+                        
+
+
+10.1016/J.ESWA.2020.113794
+
+https://dblp.org/rec/journals/eswa/RastgooKE21
+
+                        
+
+AUB LinkSearch for the material in Aalborg University Library's search engine
+
+                        
+
+                        
+                            
+Other files and links
+                        
+
+
+Link to publication in Scopus
+
+                        
+
+                        
+
+
+                    
+                
+            
+        
+        
+            
+                
+
+                    
+
+                        
+
+                            
+                            Fingerprint
+                        
+                        
+                            Dive into the research topics of 'Sign Language Recognition - A Deep Survey.'. Together they form a unique fingerprint.
+                        
+                    
+
+                    
+                        
+                            
+
+
+    
+        
+            
+            Sign Language Recognition
+            Keyphrases
+            100%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Deep Learning Method
+            Computer Science
+            40%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Learning Approach
+            Computer Science
+            40%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Deep Learning
+            Keyphrases
+            33%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Sign Language
+            Keyphrases
+            33%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Model Complexity
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Recognition Accuracy
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Computer Vision
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                    
+                    
+
+                        
+
+                            
+                                View full fingerprint
+                                
+                            
+                        
+                    
+                
+            
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        
+            
+
+                
+    
+Cite this
+    
+        
+            
+
+                APA
+            
+        
+            
+
+                Author
+            
+        
+            
+
+                BIBTEX
+            
+        
+            
+
+                Harvard
+            
+        
+            
+
+                Standard
+            
+        
+            
+
+                RIS
+            
+        
+            
+
+                Vancouver
+            
+        
+    
+    
+
+        
+            
+
+                
+Rastgoo, R., Kiani, K., & Escalera, S. (2021). Sign Language Recognition - A Deep Survey. Expert Syst. Appl., 164, 113794. Article 113794. https://doi.org/10.1016/J.ESWA.2020.113794
+            
+        
+            
+
+                
+Rastgoo, Razieh ; Kiani, Kourosh ; Escalera, Sergio. / Sign Language Recognition - A Deep Survey. In: Expert Syst. Appl. 2021 ; Vol. 164. pp. 113794.
+            
+        
+            
+
+                
+
+@article{42e0cac8c4da4d1b8225708655541b4c,
+  title     = "Sign Language Recognition - A Deep Survey.",
+  abstract  = "Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years. In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved. We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.",
+  keywords  = "Application, Computer Vision, Deep learning, Face recognition, Pose estimation, Sign language recognition",
+  author    = "Razieh Rastgoo and Kourosh Kiani and Sergio Escalera",
+  note      = "DBLP's bibliographic metadata records provided through http://dblp.org/search/publ/api are distributed under a Creative Commons CC0 1.0 Universal Public Domain Dedication. Although the bibliographic metadata records are provided consistent with CC0 1.0 Dedication, the content described by the metadata records is not. Content may be subject to copyright, rights of privacy, rights of publicity and other restrictions.",
+  year      = "2021",
+  doi       = "10.1016/J.ESWA.2020.113794",
+  language  = "English",
+  volume    = "164",
+  pages     = "113794",
+  journal   = "Expert Syst. Appl.",
+  issn      = "1873-6793",
+  publisher = "Elsevier",
+}
+            
+        
+            
+
+                
+Rastgoo, R, Kiani, K & Escalera, S 2021, 'Sign Language Recognition - A Deep Survey.', Expert Syst. Appl., vol. 164, 113794, pp. 113794. https://doi.org/10.1016/J.ESWA.2020.113794
+            
+        
+            
+
+                
+Sign Language Recognition - A Deep Survey. / Rastgoo, Razieh; Kiani, Kourosh; Escalera, Sergio. 
+In: Expert Syst. Appl., Vol. 164, 113794, 2021, p. 113794.
+Research output: Contribution to journal › Journal article › Research › peer-review
+            
+        
+            
+
+                
+
+TY  - JOUR
+T1  - Sign Language Recognition - A Deep Survey.
+AU  - Rastgoo, Razieh
+AU  - Kiani, Kourosh
+AU  - Escalera, Sergio
+N1  - DBLP's bibliographic metadata records provided through http://dblp.org/search/publ/api are distributed under a Creative Commons CC0 1.0 Universal Public Domain Dedication. Although the bibliographic metadata records are provided consistent with CC0 1.0 Dedication, the content described by the metadata records is not. Content may be subject to copyright, rights of privacy, rights of publicity and other restrictions.
+PY  - 2021
+Y1  - 2021
+N2  - Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years. In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved. We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.
+AB  - Sign language, as a different form of the communication language, is important to large groups of people in society. There are different signs in each sign language with variability in hand shape, motion profile, and position of the hand, face, and body parts contributing to each sign. So, visual sign language recognition is a complex research area in computer vision. Many models have been proposed by different researchers with significant improvement by deep learning approaches in recent years. In this survey, we review the vision-based proposed models of sign language recognition using deep learning approaches from the last five years. While the overall trend of the proposed models indicates a significant improvement in recognition accuracy in sign language recognition, there are some challenges yet that need to be solved. We present a taxonomy to categorize the proposed models for isolated and continuous sign language recognition, discussing applications, datasets, hybrid models, complexity, and future lines of research in the field.
+KW  - Application
+KW  - Computer Vision
+KW  - Deep learning
+KW  - Face recognition
+KW  - Pose estimation
+KW  - Sign language recognition
+UR  - https://www.scopus.com/pages/publications/85089222442
+U2  - 10.1016/J.ESWA.2020.113794
+DO  - 10.1016/J.ESWA.2020.113794
+M3  - Journal article
+SN  - 1873-6793
+VL  - 164
+SP  - 113794
+JO  - Expert Syst. Appl.
+JF  - Expert Syst. Appl.
+M1  - 113794
+ER  - 
+            
+        
+            
+
+                
+Rastgoo R, Kiani K, Escalera S. Sign Language Recognition - A Deep Survey. Expert Syst. Appl. 2021;164:113794. 113794. doi: 10.1016/J.ESWA.2020.113794
+            
+        
+
+        
+    
+
+
+            
+        
+        
+        
+
+
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+        
+    
+
+    
+
+        
+            
+
+            
+
+            
+
+                    
+                    
+                
+            
+
+            
+
+        
+    
+
+
+
+
+    
+        
+    
+
+    
+
+    
+    
+
+    
+        
+
+            
+
+                
+
+                    
+
+                        
+                            
+
+                                
+
+                                    
+                                
+                            
+                        
+                        
+
+                            
+
+                                Powered by Pure Link opens in a new tab, Scopus Link opens in a new tab & Elsevier Fingerprint Engine™ Link opens in a new tab
+                            
+
+                            
+
+                                All content on this site: Copyright © 2026 Aalborg University's Research Portal, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply
+                            
+
+                            
+We use cookies to help provide and enhance our service and tailor content. By continuing you agree to the use of cookies
+                            
+
+                            
+                                
+Log in to Pure   Link opens in a new tab
+                            
+                            
+
+                        
+
+                        
+
+                            
+                            
+                            
+                                
+About web accessibility   Link opens in a new tab
+                            
+
+                            
+
+                                
+                            
+
+                            
+
+                                
+                            
+
+                            
+
+                                Report vulnerability   Link opens in a new tab
+                            
+                        
+
+                        
+                            
+
+                                
+                                    
+                                        
+ Contact us
+                                    
+                                
+
+                            
+                        
+                    
+                
+            
+        
+        
+
+            
+        
+    
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+

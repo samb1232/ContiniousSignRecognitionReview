@@ -1,0 +1,570 @@
+[
+  {
+    "openalex_id": "W3024462586",
+    "human_decision": "not_screened",
+    "ai_decision": "exclude",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "moni2020"
+    ],
+    "description": "A narrative survey of sensor and camera-based gesture-recognition methods, with discussion of gloves, image processing and neural networks.",
+    "reason": "The full text does not meet M2’s project-specific threshold: its ten survey sections do not compare two identifiable CSLR studies. Cui’s continuous-recognition paper appears only in the references.",
+    "failed_criteria": [
+      "M2"
+    ],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "The literature survey is the main body; it is not merely background to an evaluated new method."
+      },
+      "M2": {
+        "status": "fail",
+        "reason": "Ten numbered survey sections cover mostly gestures/alphabet recognition; no section/table/sustained discussion compares two distinct CSLR studies."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Image-based and webcam methods are discussed."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "moni2020",
+        "url": "https://www.ijtsrd.com/papers/ijtsrd30032.pdf",
+        "path": "work/sources/moni2020.txt",
+        "locator": "PDF pp.1–4 (printed pp.620–623), Literature Survey sections 1–10, Conclusion and References",
+        "passage": "The body reviews sensor gloves, static palm images, PCA posture matching, multimodal sensors and neural gesture classifiers; Cui et al.2019 occurs as reference [1] without discussion. No comparative CSLR section or table is present."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "uncertain",
+        "reason": "Abstract proposes a recognition system but survey title suggests synthesis; full text needed to distinguish purpose and coverage.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "moni2020"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W3165431157",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen2-W3165431157"
+    ],
+    "description": "A broad review of Arabic sign-language recognition covering alphabet, isolated-word and continuous recognition, with vision and wearable-sensor taxonomies.",
+    "reason": "Meets M1–M3 as a broader review with qualifying CSLR coverage. Section 3.3.3 and Table 11 compare distinct vision-based continuous-sentence studies by methods, data and recognition performance.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior Arabic SLR work in taxonomies and comparison tables."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Section3.3.3 and Table11 compare Tolba2013, Assaleh2010 and Assaleh2008 continuous recognition studies."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Table11 explicitly compares vision-based methods."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen2-W3165431157",
+        "url": "https://ejournal.um.edu.my/index.php/MJCS/article/download/26902/12338",
+        "path": "work/sources/screen2-W3165431157.txt",
+        "locator": "PDF pp.16,20,37; Section3.3.3, Table11, refs120–122",
+        "passage": "Table11 compares Tolba2013 (PCNN/graph matching,30 sentences), Assaleh2010 (DCT/spatiotemporal HMM,40 sentences) and Assaleh2008 (DCT/HMM,40 sentences), including training/test information and recognition rates."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Tolba, Samir and Aboul-Ela (2013), Arabic sign language continuous sentences recognition using PCNN and graph matching [120]",
+      "Assaleh et al. (2010), Continuous Arabic Sign Language Recognition in User Dependent Mode [121]"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "screen2-W3165431157"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W4378468504",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "comparative2023"
+    ],
+    "description": "A broad narrative comparison of sign-language recognition techniques, spanning wearable sensors, RGB/depth input and deep-learning architectures.",
+    "reason": "Meets M1–M3 as a broader review. Table I compares Cui’s iterative-training CSLR method with Papastratis’s context-aware CSLR method, including architectures and datasets, despite also covering many isolated-sign studies.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Paper presents a survey and comparative techniques table."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "TableI includes two distinct CSLR studies compared by technique and dataset, identified in refs12–13."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Cui and Papastratis rows describe vision-based methods using PHOENIX video data."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "comparative2023",
+        "url": "https://arxiv.org/pdf/2305.13941",
+        "path": "work/sources/comparative2023.txt",
+        "locator": "PDF pp.3–4 TableI; p.5 refs12–13",
+        "passage": "TableI lists Cui2019 with CNN/temporal convolution/pooling and RWTH-PHOENIX2014, and Papastratis2021 with 2D-CNN/ImageNet and PHOENIX/CSL/GSL. References identify both as continuous sign-language recognition papers."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Cui, Liu and Zhang (2019), A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training [12]",
+      "Papastratis, Dimitropoulos and Daras (2021), Continuous Sign Language Recognition through a Context-Aware Generative Adversarial Network [13]"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "comparative2023"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W4398763293",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "screen2-alt-W4398763293"
+    ],
+    "description": "The abstract describes a 25-year CSLR review organizing 126 studies by modalities, methods, datasets and performance, including spatial, temporal and alignment approaches.",
+    "reason": "Advance to full-text assessment: the abstract supports review purpose and vision-based CSLR coverage. The publisher response did not expose the paper; the institutional repository provides an abstract only.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Institutional abstract explicitly describes review and critical analysis of126 studies."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Abstract defines CSLR as successive signs in video without known boundaries."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Video modalities and visual cues are explicit."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen2-alt-W4398763293",
+        "url": "https://pure.kfupm.edu.sa/en/publications/reviewing-25-years-of-continuous-sign-language-recognition-resear/",
+        "path": "work/sources/screen2-alt-W4398763293.txt",
+        "locator": "Institutional publication page, Abstract",
+        "passage": "A survey of126 studies across25 years organizes CSLR by input modalities, cues, techniques, datasets and performance; CSLR is defined as recognizing successive signs in a video stream without temporal boundaries."
+      }
+    ],
+    "unresolved_issues": [
+      "Full text unavailable from publisher response and inspected institutional page."
+    ],
+    "next_action": "Obtain full text and identify the comparison of at least two prior CSLR studies.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W4408859567",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "khan2025",
+      "khan2025-status-web"
+    ],
+    "description": "A CSLR-focused review organizing prior methods around spatial features, temporal models and alignment, with datasets and practical challenges.",
+    "reason": "Meets M1–M3 as a dedicated CSLR review. Section IV.B compares visual CNN/RNN approaches including SubUNets, ReSign and Cui’s iterative-training framework. A previously saved publisher concern notice remains a separate integrity issue.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Explicit literature taxonomy and comparison of prior work."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Sustained CSLR comparison discusses model differences and WER on PHOENIX."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Discussed methods use cropped hands/full video frames and visual CNNs."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "khan2025",
+        "url": "https://minhdl93.github.io/public/papers/asma_2025.pdf",
+        "path": "work/sources/khan2025.txt",
+        "locator": "PDF pp.9–11, Section IV.B (CSLR Approaches), Table4",
+        "passage": "Discussion compares SubUNets hand/full-frame streams, ReSign CNN-BLSTM/HMM training and Cui gloss-alignment training, with relative WER changes on PHOENIX2014."
+      },
+      {
+        "source_id": "khan2025-status-web",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10937713",
+        "path": "work/web_checks.json",
+        "locator": "checks/source_id=khan2025-status-web; saved publisher notice observation accessed2026-10-25",
+        "passage": "Saved publisher observation reports an Expression of Concern issued22 July2026; cause not inspected. This is separate from eligibility."
+      }
+    ],
+    "unresolved_issues": [
+      "Saved publisher status observation reports an Expression of Concern dated22 July2026; retain separately from M1–M3."
+    ],
+    "next_action": "Review the publisher concern notice before using substantive findings in synthesis.",
+    "classification": "dedicated",
+    "qualifying_studies": [
+      "Camgoz et al., SubUNets: End-to-end hand shape and continuous sign language recognition [137]",
+      "Cui, Liu and Zhang, A deep neural framework for continuous sign language recognition by iterative training [42]"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "khan2025"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W4415763805",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "sivakumari2025"
+    ],
+    "description": "A video-based CSLR review covering visual feature extraction, temporal modelling, datasets, evaluation and limitations of deep-learning methods.",
+    "reason": "Meets M1–M3 as a dedicated CSLR review. Table 2 compares multiple continuous-recognition architectures, datasets, reported WER and trade-offs, including multi-stream CNN–LSTM–HMM and staged-optimization approaches.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Abstract and body explicitly review recent CSLR advances."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Table2 provides a direct comparison of several prior continuous recognition studies."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "RGB video-based models are the subject of Table2 and Section3."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "sivakumari2025",
+        "url": "https://www.atlantis-press.com/article/126017418.pdf",
+        "path": "work/sources/sivakumari2025.txt",
+        "locator": "PDF p.1 Abstract; pp.6–7 Table2",
+        "passage": "Table2 compares Weakly Supervised Learning with Multi-Stream CNN-LSTM-HMMs and Recurrent convolutional neural networks for continuous sign language recognition by staged optimization, including PHOENIX datasets, methods, WER and merits/demerits."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": "dedicated",
+    "qualifying_studies": [
+      "Koller et al., Weakly Supervised Learning with Multi-Stream CNN-LSTM-HMMs",
+      "Recurrent convolutional neural networks for continuous sign language recognition by staged optimization"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "sivakumari2025"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W6949155979",
+    "human_decision": "not_screened",
+    "ai_decision": "exclude",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W6949155979"
+    ],
+    "description": "This record represents an entire workshop proceedings volume, with a table of contents covering 40 papers on diverse computing topics.",
+    "reason": "Fails M1: the saved description identifies a collection of separate workshop papers, not a literature review synthesizing prior CSLR research. Its continuous-recognition entry is one constituent paper.",
+    "failed_criteria": [
+      "M1"
+    ],
+    "criteria": {
+      "M1": {
+        "status": "fail",
+        "reason": "Description states proceedings volume with40 accepted papers and lists their titles/authors/pages."
+      },
+      "M2": {
+        "status": "uncertain",
+        "reason": "A constituent CSLR paper appears in contents, but the record is the complete volume."
+      },
+      "M3": {
+        "status": "uncertain",
+        "reason": "Record-level modalities are not meaningful for a multi-topic proceedings volume."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W6949155979",
+        "url": "https://openalex.org/W6949155979",
+        "path": "work/runs/20261025T080315329549Z-full/raw/reused-q11-0.json",
+        "locator": "W6949155979 / abstract_inverted_index (decoded)",
+        "passage": "The abstract is a proceedings description/table of contents:40 accepted papers, including a comparison of LSTM1024 and2DCNN for CSLR on pp48–57 among many unrelated works."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  },
+  {
+    "openalex_id": "W7105609630",
+    "human_decision": "not_screened",
+    "ai_decision": "uncertain",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen2-W7105609630"
+    ],
+    "description": "A short survey of deep-learning recognition and translation systems, with a table comparing models, datasets and performance measures.",
+    "reason": "Review purpose and visual scope are clear, but M2 remains unresolved. Table 1 clearly identifies Camgoz’s joint recognition/translation system; the other relevant entries mix translation, gestures and reviews without establishing a second CSLR study.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Literature survey and comparative table synthesize prior methods."
+      },
+      "M2": {
+        "status": "uncertain",
+        "reason": "Cannot confirm two distinct prior CSLR recognition studies from Table1; Singh is described as translation and Rao/Patel as reviews."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Camera/Kinect/MediaPipe and visual deep models are explicit."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen2-W7105609630",
+        "url": "https://doi.org/10.22214/ijraset.2025.75069",
+        "path": "work/sources/screen2-W7105609630.txt",
+        "locator": "PDF pp.2–4; Sections II–III, Table1 and References",
+        "passage": "Table1 labels Camgoz2020 as simultaneous recognition/translation on PHOENIX; Singh2023 is sign-to-text translation, Rao2024 a systematic review and Patel2024 a comparative review. Other rows do not establish continuous linguistic-sign recognition."
+      }
+    ],
+    "unresolved_issues": [
+      "Whether a second distinct CSLR primary study is actually compared."
+    ],
+    "next_action": "Verify the task definitions of the cited studies, especially Singh2023 and gesture-model entries, against the comparison threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "screen2-W7105609630"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W7124904654",
+    "human_decision": "not_screened",
+    "ai_decision": "uncertain",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen2-W7124904654-web"
+    ],
+    "description": "A systematic review of skeleton-based recognition that compares model families and datasets, mainly for isolated signs.",
+    "reason": "M1 and M3 are supported, but M2 is unresolved: the results mention three continuous studies, while Table 5 attributes continuous results to one study. The second qualifying CSLR study cannot be established reliably.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Methods describe systematic selection and synthesis."
+      },
+      "M2": {
+        "status": "uncertain",
+        "reason": "Inconsistent continuous-study counts and task labels prevent confirming the two-study threshold."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Input is body/hand pose from visual data."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen2-W7124904654-web",
+        "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+        "path": "work/sources/screen2-W7124904654-web.txt",
+        "locator": "PDF pp.5,9–11,13; Results, Tables3 and5",
+        "passage": "Results say three continuous works; Table3 labels one row continuous/online, while another isolated row mentions a continuous pipeline; Table5 explicitly reports one study with three decoding settings."
+      }
+    ],
+    "unresolved_issues": [
+      "Contradictory continuous-study counts and task classifications.",
+      "Direct PDF archival attempts timed out; saved web-inspection notes provide locators."
+    ],
+    "next_action": "Verify the identities and tasks of Table3 studies [6] and [8] before deciding whether two distinct CSLR studies are compared.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "screen2-W7124904654-web"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W7166669486",
+    "human_decision": "not_screened",
+    "ai_decision": "uncertain",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "screen2-W7166669486"
+    ],
+    "description": "A systematic review of Indian and regional sign-language systems, comparing architectures, deployment constraints and recognition challenges.",
+    "reason": "M1 and M3 are supported, but qualifying CSLR coverage is uncertain. Table 3 mixes tasks; its sentence-recognition claim for GIDSL conflicts with the cited isolated-recognition title, while LiST is labelled translation.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "PRISMA-based synthesis with comparative analyses."
+      },
+      "M2": {
+        "status": "uncertain",
+        "reason": "Table3 suggests continuous comparisons but the referenced task labels conflict; two distinct CSLR studies cannot be confidently identified."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Cameras, pose landmarks and visual neural networks are discussed."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "screen2-W7166669486",
+        "url": "https://jcmm.co.in/index.php/jcmm/article/download/708/172",
+        "path": "work/sources/screen2-W7166669486.txt",
+        "locator": "PDF pp.7,10–11,16; Sections4.4,6.4, Table3 and refs19,23",
+        "passage": "Table3 compares LiST and GIDSL among other systems. GIDSL is assigned a sentence result in Section4.4/Table3, but ref23 calls it isolated dynamic recognition; ref19 calls LiST continuous translation."
+      }
+    ],
+    "unresolved_issues": [
+      "Task identity conflict prevents reliable application of the CSLR comparison threshold."
+    ],
+    "next_action": "Check the cited LiST and GIDSL primary papers and resolve recognition versus translation/isolated-task labels before eligibility confirmation.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "screen2-W7166669486"
+        ]
+      }
+    ]
+  },
+  {
+    "openalex_id": "W7221015162",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W7221015162"
+    ],
+    "description": "The abstract describes a review of 18 recognition and translation studies, examining visual models, inputs, tasks and their relevance to Sri Lankan Tamil signing.",
+    "reason": "Advance to full-text assessment: it synthesizes prior research and explicitly discusses vision-based sequence recognition. Qualifying CSLR coverage remains possible; the repository PDF could not be retrieved.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Abstract explicitly reports systematic review of18 studies."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "Abstract mentions LSTM and sequence approaches for continuous recognition; retain broader coverage at this stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Computer vision, video, depth and camera approaches are described."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W7221015162",
+        "url": "https://openalex.org/W7221015162",
+        "path": "work/runs/20261025T080315329549Z-full/raw/reused-q21-0.json",
+        "locator": "W7221015162 / abstract_inverted_index (decoded)",
+        "passage": "The abstract reports18 reviewed studies compared by input, task, model, dataset and limitations; sequence-based models are discussed for continuous recognition, with affordable camera-based devices as a focus."
+      }
+    ],
+    "unresolved_issues": [
+      "Repository PDF retrieval returned502; DOI page also unavailable through web tool."
+    ],
+    "next_action": "Obtain the full text and verify a section/table/discussion comparing at least two distinct CSLR studies.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": []
+  }
+]

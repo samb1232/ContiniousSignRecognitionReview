@@ -1,0 +1,13 @@
+{
+  "source_id": "abstract-pass-gidsl",
+  "openalex_id": "W7166669486",
+  "url": "https://link.springer.com/article/10.1007/s42979-024-02776-7",
+  "doi": "10.1007/s42979-024-02776-7",
+  "locator": "Publisher abstract and article title",
+  "passage": "The publisher labels GIDSL as isolated dynamic recognition. Its abstract describes a dataset, MediaPipe feature extraction, and an LSTM/dense model, but does not establish sentence-level recognition. This does not substantiate the review's sentence-result claim.",
+  "retrieved_utc": "2026-10-31T17:07:01.802240+00:00",
+  "method": "Web-tool inspection; saved analyst paraphrase, not raw HTTP response",
+  "body": "abstract-pass-gidsl.txt",
+  "text": "abstract-pass-gidsl.txt",
+  "sha256": "79d4a83819c943f88f9590cfbdc45d041e4c7b0452f51af0e1c7224d4fbac84d"
+}

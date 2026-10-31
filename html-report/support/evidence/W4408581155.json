@@ -1,0 +1,133 @@
+{
+  "paper": {
+    "title": "A Critical Study of Recent Deep Learning-Based Continuous Sign Language Recognition",
+    "year": 2025,
+    "doi": "https://doi.org/10.1007/s12626-025-00180-y",
+    "openalex_url": "https://openalex.org/W4408581155"
+  },
+  "openalex_id": "W4408581155",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "taher2025-publisher"
+  ],
+  "description": "Reviews deep-learning CSLR studies, benchmark datasets and evaluation methods.",
+  "reason": "The abstract describes a relevant synthesis. Advance; the publisher preview cannot confirm the full-text comparison threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Abstract reports reviewing 32 studies."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Continuous signing and movement epenthesis are explicit."
+    },
+    "M3": {
+      "status": "uncertain",
+      "reason": "Dataset recording setups and CSLR architectures suggest visual coverage; verify modalities in full text."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "taher2025-publisher",
+      "url": "https://link.springer.com/article/10.1007/s12626-025-00180-y",
+      "path": "work/sources/taher2025-publisher.txt",
+      "locator": "Abstract",
+      "passage": "The authors describe a CSLR review of 32 studies and 12 benchmark datasets, examining recording setups, methods and performance metrics.",
+      "sha256": "a45fe80508ad551d9576ecce5dbf1c869a16eecf6bc7f878a5eef406717e15de",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Publisher provides subscription preview only; author-route request returned 403."
+  ],
+  "next_action": "Obtain full text to confirm visual coverage and qualifying comparisons.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W4408581155",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "taher2025-publisher"
+        ],
+        "description": "Reviews deep-learning CSLR studies, benchmark datasets and evaluation methods.",
+        "reason": "The abstract describes a relevant synthesis. Advance; the publisher preview cannot confirm the full-text comparison threshold.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Abstract reports reviewing 32 studies."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "Continuous signing and movement epenthesis are explicit."
+          },
+          "M3": {
+            "status": "uncertain",
+            "reason": "Dataset recording setups and CSLR architectures suggest visual coverage; verify modalities in full text."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "taher2025-publisher",
+            "url": "https://link.springer.com/article/10.1007/s12626-025-00180-y",
+            "path": "work/sources/taher2025-publisher.txt",
+            "locator": "Abstract",
+            "passage": "The authors describe a CSLR review of 32 studies and 12 benchmark datasets, examining recording setups, methods and performance metrics.",
+            "sha256": "a45fe80508ad551d9576ecce5dbf1c869a16eecf6bc7f878a5eef406717e15de",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Publisher provides subscription preview only; author-route request returned 403."
+        ],
+        "next_action": "Obtain full text to confirm visual coverage and qualifying comparisons.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+          "agent_batch": "batch1.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

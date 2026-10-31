@@ -2,6 +2,7 @@
 """Archive public evidence URLs without using an OpenAlex key.
 
 Usage: python3 work/scripts/fetch_sources.py
+       python3 work/scripts/fetch_sources.py --input work/new_sources.json --source-id paper1
 Reads work/sources.json; caches immutable responses and optional PDF text.
 PDF extraction requires pypdf; HTML extraction uses the standard library.
 """
@@ -30,9 +31,11 @@ class Text(HTMLParser):
     def handle_data(self, data):
         if not self.hidden: self.parts.append(data)
 
-def main():
+def main(input_path=None, source_ids=None):
     folder = ROOT / 'work/sources'; folder.mkdir(exist_ok=True)
-    for source in json.loads((ROOT / 'work/sources.json').read_text()):
+    for source in json.loads((input_path or ROOT / 'work/sources.json').read_text()):
+        if source_ids and source['source_id'] not in source_ids:
+            continue
         name = source['source_id']; record = folder / (name + '.json')
         if record.exists():
             previous = json.loads(record.read_text())
@@ -81,4 +84,10 @@ def main():
         record.write_text(json.dumps(entry, indent=2) + '\n')
         time.sleep(1)
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input', type=Path, help='Optional separate source list')
+    parser.add_argument('--source-id', action='append', help='Fetch only selected source IDs')
+    args = parser.parse_args()
+    main(args.input, args.source_id)

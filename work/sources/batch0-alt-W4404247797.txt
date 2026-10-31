@@ -1,0 +1,821 @@
+
+--- PDF page 1 ---
+ 
+ 
+  
+ 
+Appl. Sci. 2024, 14, 10337. https://doi.org/10.3390/app142210337 www.mdpi.com/journal/applsci 
+Review 
+A Systematic Review of Accessibility Techniques for 
+Online Platforms: Current Trends and Challenges 
+Valentin Bercaru and Nirvana Popescu * 
+Computer Science Department, National University of Science and Technology Politehnica Bucharest,  
+060042 Bucharest, Romania; valentin.bercaru@stud.acs.upb.ro 
+* Correspondence: nirvana.popescu@upb.ro 
+Abstract: Accessibility in online platforms is a critica l concern in our increasingly digital world , 
+where information and services are predominantly accessed through the Internet. The purpose of 
+this systematic review is to provide a comprehensive overview of the current state of the art in online 
+accessibility technologies, and it is focused on key tools such as sign language recognition, speech -
+to-text, text-to-speech, and voice recognition. Despite advancements in digital inclusivity, numerous 
+technical limitations persist, which limit the accessibility of online content for individuals with dis-
+abilities. Our findings indicate that while speech and voice technologies have achieved good accu-
+racies and low word error rates, further research is needed to improve the accuracy and usability of 
+sign language recogn ition systems, especially for continuous sign language recognition, as they 
+have low accuracy. In this review, we analyzed research articles and publications from well-known 
+databases, including Google Scholar, Elsevier, IEEE Xplore, and Springer. In order to ensure a high 
+standard of quality, we applied the PRISMA 2020 and PEDro methodologies to quantitatively and 
+qualitatively filter the thousands of articles provided by these databases, and we selected only stud-
+ies that were related to our study. Key areas of investigation included the performance and accuracy 
+of sign language interfaces, speech-to-text, text-to-speech, and speech recognition applications and 
+the compatibility of these technologies with different platforms and devices. Th is review also ex-
+plores the role of emerging technologies such as artificial intelligence (AI) and machine learning 
+(ML) in enhancing accessibility and personalizing user experiences. Through a critical analysis of 
+current solutions and a discussion of existing gaps, this paper offers insights into potential improve-
+ments and future directions for creating more accessible online environments. The findings might 
+be valuable to researchers and developers dedicated to promoting digital inclusivity and equality. 
+Keywords: sign language recognition; accessibility and interfaces; machine learning; artificial  
+intelligence; text-to-speech; speech-to-text; voice recognition 
+ 
+1. Introduction 
+Currently, there are 1.3 billion people with different types of disabilities [1] who face 
+significant challenges when it comes to using online platforms. From an accessibility point 
+of view, many of these individuals encounter a multitude of barriers that limit their ability 
+to access and interact with web content effectively. In so me cases, the lack of proper  ac-
+cessibility features can make certain platforms completely unusable for individuals with  
+specific needs, so they are excluded from the benefits and opportunities offered by the  
+digital world. This situation not only impacts t he personal and social lives of those af-
+fected but also limits their ability to participate fully in education, employment, and other 
+essential activities. 
+In order to address these issues, there are internationally recognized standards and  
+guidelines that web developers and designers are expected to follow when creating online 
+platforms. One of the most recognized and largely adopted sets of guidelines is known as 
+Citation: Bercaru, V.; Popescu, N.  
+A Systematic  Review of  
+Accessibility  Techniques for 
+Online Platforms: Current Trends 
+and Challenges. Appl. Sci. 2024, 14, 
+10337. https://doi.org/10.3390/ 
+app142210337 
+Academic Editor: Wonjoon Kim 
+Received: 14 October 2024 
+Revised: 7 November 2024 
+Accepted: 8 November 2024 
+Published: 10 November 2024 
+ 
+Copyright: © 2024 by the authors. 
+Submitted for possible open access 
+publication under the terms and 
+conditions of the Creative Commons 
+Attribution (CC BY) license 
+(https://creativecommons.org/license
+s/by/4.0/). 
+
+
+--- PDF page 2 ---
+Appl. Sci. 2024, 14, 10337 2 of 16 
+ 
+the Web Content Accessibility Guidelines (WCAG) 2.1. These guidelines are developed by 
+the World Wide Web Consortium, and they provide a comprehensive framework aimed 
+at making web content more accessible to a broader range of users, including individuals 
+with disabilities. The WCAG 2.1 revolve around various principles and criteria designed 
+to accommodate people with diverse needs such as blindness and low vision, deafness 
+and hearing loss, limited mobility, speech disabilities, cognitive and neurological impair-
+ments, and others. By adhering to these guidelines, d evelopers can create websites that 
+are perceivable, operable, understandable, and robust , thus promoting a more inclusive 
+digital environment [2]. 
+Despite the existence of these standards, implementing effective accessibility solu-
+tions often requires the i ntegration of advanced technologies such as ML algorithms. 
+These algorithms play a crucial role in developing interfaces designed for specific disabil-
+ities by providing functionalities like text-to-speech (TTS) and speech recognition (SR) for 
+those with visual impairments, speech-to-text (STT) for individuals with hearing loss, and 
+sign language recognition (SLR) for those with speech or auditory disabilities. Addition-
+ally, other assistive technologies may include alternative navigation methods for those 
+with limited mobility, predictive text input, and automated captioning for video content. 
+The application of ML and AI in these areas has the potential to significantly enhance user 
+experience (UX) by creating more intuitive, responsive , and personalized interactions for 
+users with diverse accessibility needs. 
+While there has been considerable progress in accessibility tools like STT, TTS, and  
+voice recognition, several critical gaps remain, particularly in the area of SLR. Sign lan-
+guage recognition still lacks the precision necessary for consistent usability, especially in  
+continuous video contexts [3]. As a result, accessibility solutions remain inconsistent, with 
+many platforms still unable to accommodate users with specific needs fully.  
+Through this systematic review, we aim to thoroughly explore and analyze the cur-
+rent state of the art in developing accessible online interfaces that incorporate ML algo-
+rithms, particularly analyzing the accuracy, precision, and word error rates of these algo-
+rithms. By examining the latest research and advancements in the field, we seek to identify 
+gaps and limitations in existing technologies and methodologies. Our goal is to highlight 
+areas where improvements are necessary to achieve better algorithm accuracy, enhance 
+UX, or make previously inaccessible platforms more usable.  
+This review will provide valuable insights for researchers, developers, and stake-
+holders involved in the creation of inclusive digital environments, guiding future efforts 
+to optimize accessibility and promote digital equity.  
+Our research paper aims to answer the following questions:  
+• What are the similarity scores for speech-to-text algorithms and word-level intelligi-
+bility of text-to-speech algorithms?  
+• What are the word error rates and recognition rates of speech recognition algorithms?  
+• Are there sign language recognition algorithms that have an accuracy higher than 
+95% for continuous SLR?  
+• What are the methods used to build sign language recognition algorithms?  
+In the next chapter, we  will describe the methodology we used to filter the selected  
+articles that contain valuable information such as accuracy/precision of ML algorithms  
+that could be used to implement accessible interfaces (STT, TTS, SR , and SLR) for people 
+suffering from speech impairments, deafness, and blindness.  
+2. Research Methodology 
+This section outlines the protocol used to identify, gather , and evaluate the state-of-
+the-art techniques examined in this systematic review. The process is divided into four 
+key phases: development of the research strategy, formulation of the research questions, 
+criteria for article selection, and presentation of the next steps in our research.  
+
+--- PDF page 3 ---
+Appl. Sci. 2024, 14, 10337 3 of 16 
+ 
+2.1. Developing the Research Strategy 
+In our study , we put together a solid collection of research papers on our topic to 
+obtain a well-rounded view and an in-depth understanding of the latest progress and ad-
+vancements in accessibility technologies. The articles we collected were published be-
+tween 2018 and 2024, representing the most recent developments in this field. To ensure 
+a wider scope, we used papers from multiple reputable databases such as Google Scholar, 
+IEEE Xplore, Elsevier , and Springer. Our search strategy involved using various combi-
+nations of keywords and key phrases, such as “Sign Language Recognition”, “Developing 
+Accessible Interfaces”,  “Speech Recognition”, “Speech to Text Interfaces” , and “Text to 
+Speech Interfaces”. This extensive search initially returned 2819 articles.  
+We applied the PRISMA and PEDro methodologies to rigorously filter the large vol-
+ume of studies identified in our initial search. PRISMA provided a structured approach for 
+organizing and documenting the selection process. By detailing each step of the study se-
+lection process, PRISMA allowed us to systematically narrow down the results to the studies 
+that were most relevant to our focus on online accessibility technologies. Meanwhile, the 
+PEDro scale was essential for assessing the methodological quality of these studies.  
+Given the large number of articles received, we implemented a multi -stage research 
+strategy that involved both quantitative and qualitative filtering to identify the most rele-
+vant and high-quality studies. One of the first challenges we encountered in our  filtering 
+process was the large number of duplicate articles. In order to solve this, we had to aggre-
+gate all the results from the searches through an Excel file and use Microsoft Excel features 
+to identify the duplicate results and remove them. After thi s step, the number of  articles 
+was reduced by 446 articles, leaving us with 2373 unique papers.  
+Following this, we applied a quantitative filter based on specific paper characteristics. 
+We required each article to have been cited at least ten times, indic ating a certain level of 
+recognition and impact within the community. After applying these criteria, we reduced  
+the pool to 2285 articles.  
+We conducted a more targeted filtering process by reviewing the titles and abstracts  
+of the remaining articles. During this phase, we filtered the title and abstract with addi-
+tional keywords, including “ Accessible Interface”, “Speech to text”, “Text to speech”, “ac-
+cessibility”, “Speech recognition”, and “sign language recognition”. This step allowed us 
+to exclude 2176 articles that did not align closely with our main research focus. After  this 
+extensive screening, 109 articles appeared directly relevant to our study.  
+From these 109 articles, we applied a qualitative filtering based on a set of questions  
+that will be described in the following subsection. After this step, 35 articles remained.  
+Figure 1 [4] shows how the research strategy steps were applied to the results. On the 
+other hand, in Table 1 are the results from the research databases based on the queries 
+used for the search.  
+Table 1. Number of results returned by queries from each database. 
+Query Elsevier IEEE Springer Google Scholar Total 
+Developing accessible  interfaces 49 37 80 332 497 
+Text to speech interfaces 46 174 122 151 493 
+Sign language recognition 137 124 123 436 820 
+Speech to text interfaces 37 176 120 158 491 
+Speech recognition 142 149 91 136 518 
+Total 411 659 536 1213 2819 
+
+--- PDF page 4 ---
+Appl. Sci. 2024, 14, 10337 4 of 16 
+ 
+ 
+Figure 1. PRISMA diagram flow of selecting the articles (PEDro filters included). 
+2.2. Formulation of the Research Questions 
+After completing the quantitative filtering using PRISMA filtering, we conducted  
+qualitative filtering using the PEDro methodology to obtain more relevant results related 
+to our main research topic. The qualitative filtering involved asking a set of questions that 
+each article should address. If a research paper answered at least two questions from the  
+filtering process, we included it. The questions for qualitative filtering were the following:  
+1. What are the methods used to implement an accessible interface?  
+2. Is it using voice recognition, text-to-speech, speech-to-text, or sign language recogni-
+tion algorithms? 
+3. Is the research aiming to help the vulnerable categories of people with disabilities?  
+4. Is the machine learning algorithm producing good results and does it have good ac-
+curacy? 
+5. Is the proposed solution implemented, adapted, or proposed to a real-life use case?  
+As we have mentioned before, after the qualitative filtering, we removed 74 articles  
+from the 109 initially selected, leaving 35 remaining articles.  
+2.3. Criteria for Article Selection 
+As a conclusion based on what we said in the previous subsections, the criteria for  
+article selection were the following:  
+
+
+--- PDF page 5 ---
+Appl. Sci. 2024, 14, 10337 5 of 16 
+ 
+1. Quantitative filtering (PRISMA filtering):  
+(a) Articles published between 2018–2024;  
+(b) Articles that were written only in the English language;  
+(c) Articles that had at least 10 citations;  
+(d) Articles that had some keywords related to our study in the title or ab-
+stract.  
+2. Qualitative filtering (PEDro filtering):  
+(a) Articles that implemented accessible interfaces;  
+(b) Articles that implemented or used machine learning algorithms that could 
+be used to implement accessible interfaces;  
+(c) Articles that aimed to help people with disabilities;  
+(d) Articles that had results (either bad or good) and their results.  
+It is important to mention that firstly, we applied quantitative filtering to narrow 
+down the pool of articles , and then qualitative filtering was applied. In the qualitative 
+filtering, we read the abstract of the 109 remain ing papers, and we searched for specific 
+topics such as speech-to-text, speech recognition, text-to-speech, and sign language recog-
+nition. We removed the articles that were not aligned or related to our study (e.g. , acces-
+sibility not related to machine learning or artificial intelligence).  
+2.4. Next Steps in Our Research 
+After conducting searches across the scientific databases and identifying relevant re-
+search, we selected articles that specifically explored various techniques for developing  
+accessible interfaces for individuals with disabilities. Each of these articles was reviewed , 
+and the findings were analyzed to summarize the c urrent state of research, identify the  
+most effective approaches, and highlight potential areas for future exploration.  
+3. Results of the Systematic Review 
+In this section, we will provide a comprehensive discussion of all the articles selected 
+from the previous section. We will go through the key findings and insights from each  
+study, offering a detailed analysis of the most significant results.  
+In the first three subsections, we attached some charts representing the trending of ac-
+cessibility keywords, such as “speech recognition”, “sign language recognition” etc. Num-
+bers represent search interest relative to the highest point on the chart for the given region 
+and time. A value of 100 is the peak popularity for the term. A value of 50 means that the  
+term is half as popular. A score of 0 means there were not enough data for this term [5].  
+3.1. Relevant Solutions Based on Speech Recognition 
+Voice recognition technology powers secure user authentication and personalized  
+experiences. Applications include voice -based biometrics in banking (e.g. , Wells Fargo’s 
+voice authentication [6]), smart home devices (e.g., Google Nest), and call centers for cus-
+tomer identity verification. Challenges in voice recognition include handling variations in 
+voice due to health, age, and emotional state, which can lead to inaccuracies and  frustra-
+tions in sensitive contexts like financial services.  
+Advancements in ASR technologies have shown varied accuracy rates among leading 
+solutions, with notable performances from providers like Whisper and Speechmatics [7]. 
+These findings highlight the importance of evaluating ASR systems not only for their accu-
+racy but also for their accessibility features. Research indicates that voice -controlled per-
+sonal assistants, such as the Amazon Echo, are beneficial for users with disabilities, particu-
+larly for those with speech impairments [8]. The positive user feedback underscores the po-
+tential of these technologies to enhance communication and interaction in daily life.  
+Subhash, S. et al. discuss in their work the growing role of voice control technology, 
+particularly AI -based voice assistants used in smartphones and laptops [9]. These 
+
+--- PDF page 6 ---
+Appl. Sci. 2024, 14, 10337 6 of 16 
+ 
+assistants recognize human voice, convert it to text , and then use the Google text -to-
+speech (GTTS) engine to produce audio in English, which is played back using Python’s  
+(both 2.7 and 3.x versions)  play sound package. Also, the study of Pradhan, A. et al. ex-
+plores the accessibility of voice -controlled personal assistants like the Amazon Ec ho for 
+users with disabilities. Analysis of 346 reviews and interviews with 16 visually impaired 
+users show that, despite some challenges, many,  including those with speech impair-
+ments, find the device helpful, with 59.4% of reviews  on SR being positive an d 74.2% of 
+speech-impaired users reporting satisfaction [8].  
+Another interesting study conducted by Branham, S. M. et al . says that voice -acti-
+vated personal assistants (VAPAs), like Siri and Alexa, benefit users, especially those with 
+visual impairments [10]. This study reviews design guidelines from major companies, 
+highlighting the assumption that VAPAs should mimic human conversation. It critiques 
+this approach and suggests improvements to enhance usability for all users. On the other 
+hand, Blue, L.  et al. demonstrates that the Two Microphone Authentication system can 
+accurately localize audio sources within a narrow cone of less than 30 ° while achieving 
+zero false positives [11]. It effectively eliminates replay attacks and prevents the injection 
+of inaudible or hidden commands, significantly enhancing the security of voice-controlled 
+interfaces. Canonico, M. et al. review and compare various cloud-based natural language 
+understanding platforms developed over the last decade. It presents a taxonomy for six 
+platforms and conducts a performance evaluation of three of them, highlighting their re-
+spective strengths and weaknesses. The analysis reflects the widespread adoption of these 
+tools in chat services and conversational assistants on mobile devices [12]. Darabkh, K. A. 
+et al. present an SR system designed to help arm -disabled students to control computers 
+by voice, enhancing accessibility in education. The system uses two approaches: one based 
+on voice activity detection and Mel-frequency cepstral coefficients and another using dis-
+crete wavelet transform with modified MFCC. The first approach achieved a recognition 
+rate of 98.7%, while the second achieved a rate of 98.86%, offering higher accuracy but 
+slower processing [13]. In order to explore recent advancements in accessibility research, 
+Brewer, R. N. et al . situates voice -based accessibility within existing theoretical frame-
+works, discusses design challenges, and identifies opportunities for interdisciplinary col-
+laboration in this area [14]. In the same context, Kuhn, K. et al. highlight the measuring of 
+accuracy of ASR solutions. The word error rates were as follows: 22.4% for Google, 12.4% 
+for IBM, 10.8% for Deepgram, 10.5% for SpeechText.AI, 5.6% for Rev AI, 5.3% for Amazon 
+and Microsoft, 4.7% for Tencent,  4.3% for AssemblyAI, 3.4% for Speechmatics , and 2.9% 
+for Whisper [7].  
+The advancements in SR algorithms have reached a mature level, demonstrating sig-
+nificant improvements in accuracy and functionality across various applications. Leading 
+solutions have achieved impressively low word error rates, indicating a high degree of  
+reliability in real-world usage.  
+In Figures 2 and 3 are the trends of the keywords “voice recognition” and “speech 
+recognition” over the last 15 years.  
+From these two figures, we can conclude that voice and speech recognition technol-
+ogies have matured and become widely integrated into a multitude of devices (e.g. , 
+smartphones, smart speakers, cars , etc.), such that people may view them as a standar d 
+feature rather than a novel technology. This normalization can lead to fewer searches since 
+consumers are no longer actively learning about or exploring the technology; they simply 
+expect it to be there. 
+
+--- PDF page 7 ---
+Appl. Sci. 2024, 14, 10337 7 of 16 
+ 
+ 
+Figure 2. The trending of the keyword “voice recognition” over the last 15 years (November 
+2009–November 2024) from Google Trends. 
+ 
+Figure 3. The trending of the keyword “speech recognition” over the last 15 years (Novem-
+ber 2009–November 2024) from Google Trends. 
+3.2. Solutions Based on Speech-to-Text and Text-to-Speech 
+Speech-to-text technology has seen significant advancements in accuracy, largely due 
+to improvements in natural language processing and deep learning models. It  is widely 
+used in applications like transcription services (e.g., Otter.ai and Google Live Transcribe), 
+virtual assistants (e.g., Siri, Alexa), and closed captioning for accessibility in media. Real -
+world challenges include handling diverse accents, noisy environments, and domain-spe-
+cific terminology, which can affect user satisfaction and the overall effectiveness of STT.  
+Text-to-speech systems have advanced to generate more natural and expressive voices. 
+These systems are now integral to assistive technologies like screen readers for visually im-
+paired users (e.g., JAWS and NVDA) and language learning apps (e.g., Duolingo). TTS are 
+integrated in many real-world applications such as GPS systems that provide spoken direc-
+tions, virtual assistants (e.g., Siri, Google Assistant, Alexa), and accessibility tools for indi-
+viduals with visual impairments (e.g., screen readers like JAWS and VoiceOver).  
+Recent advancements in TTS technology have led to remarkable accuracy and per-
+formance levels, particularly in models like Tacotron 2, which achieved a n MOS of 4.38 , 
+and Tacotron 1, which produced a n MOS of 4.01 [15]. Additionally, an almost unsuper-
+vised learning method for TTS aimed at low -resource languages demonstrated excep-
+tional results, with a 99.84% word-level intelligibility but a 2.68 MOS on the LJSpeech da-
+taset, despite utilizing only 200 paired data points and additional unpaired data [16].  
+Zen, H. et al . present “LibriTTS”, a speech corpus designed for TTS applications, 
+based on the LibriSpeech dataset. It includes 585 h of 24 kHz speech data from 2456 speak-
+ers. Models trained on LibriTTS achieved mean opinion scores (MOS) above 4.0 for natu-
+ralness in five out of six evaluation speakers [17]. Trivedi, A. et al . explore applications 
+that facilita te text and speech communication, including SR, STT conversion, synthetic 
+speech generation, and language translation. The focus is on the methods employed to 
+ensure seamless  interaction between parties across networks [18]. In the same context, 
+Khan, A. et al. introduce a blind-friendly user interface framework that simplifies interface 
+components based on user profiles and context. An empirical study with 41 participants 
+demonstrated significant improvements in their smartphone interaction experience [19].  
+Anandan, M. et al . present an object detection and navigation system for visually 
+impaired individuals, featuring static and dynamic obstacle detection. The static module 
+uses techniques like SURF feature extraction, while the dynamic module employs 
+
+
+--- PDF page 8 ---
+Appl. Sci. 2024, 14, 10337 8 of 16 
+ 
+Gaussian mixture models [20]. Visual information is converted into audio feedback via a 
+Raspberry Pi, including vibrations for users with partial hearing loss. The system effec-
+tively models backgrounds, eliminates shadows , and supports blind users in navigati ng 
+their environment.  
+Aguilar-Chacon, J. E. et al. explore the integration of small-sized computers with STT 
+technology, particularly addressing the challenge of implementing STT algorithms on mi-
+crocontroller-based systems without compromising performance . A methodology is pre-
+sented to evaluate STT services using similarity and speed as metrics, with an experiment 
+conducted on a Raspberry Pi 3 for Spanish speakers. The results reveal that Google’s STT  
+system outperformed both IBM and Microsoft, showing fas ter conversion times and 
+higher accuracy, with a similarity score of 97.116%, compared to Microsoft’s 90.825% and 
+IBM’s 90.337% [21].  
+Following the experiments of other researchers in this field, Khanam, F. et al. created 
+a literature review where they discuss the process of TTS synthesis, which converts natu-
+ral-language text into speech using recorded samples stored in a database. The review 
+highlights the significant advancements in TTS due to deep learning, compared to tradi-
+tional machine  learning methods. The paper introduces a taxonomy of popular deep 
+learning architectures and models used in speech synthesis, reviews various datasets uti-
+lized in TTS, and describes common evaluation metrics for assessing synthesized speech 
+quality [15]. It concludes by outlining the challenges and future directions for TTS systems. 
+Ren, Y. et al. present an almost unsupervised learning method for TTS and automatic speech 
+recognition (ASR) aimed at low -resource languages, addressing the challenge of limited 
+aligned data. The approach combines several components: a denoising auto-encoder for lan-
+guage modeling; dual transformation to enhance accuracy between TTS and ASR; bidirec-
+tional sequence modeling to reduce error propagation; and a unified transformer-based 
+model structure. The method achieves 99.84% word-level intelligibility, a 2.68 MOS for TTS, 
+and an 11.7% phoneme error rate for ASR on the LJSpeech dataset, using only 200 paired 
+data points (about 20 min of audio) and additional unpaired data [16].  
+The trend lines shown in Figures 4 and 5 for the keywords “speech to text” and “text to 
+speech” appear quite similar over the past 15 years. Both terms show relatively low and stable 
+interest in the earlier years, followed by an increase in interest around 2021. This similarity 
+suggests a correlated rise in the relevance of both technologies, possibly due to the increasing 
+adoption of voice-enabled applications, digital assistants, and accessibility solutions.  
+The simultaneous increase in search interest might indicate that users are increas-
+ingly seeking or using both “speech to text” and “text to speech” functionalities, poten-
+tially driven by advancements in AI, improvements in accessibility technologies, and the 
+rise of remote  work and online co mmunication. This parallel growth could reflect a 
+broader trend toward integrating voice-based technologies in online platforms and other 
+digital environments. 
+ 
+Figure 4. The trending of the keywords “speech to text” over the last 15 years (November 
+2009–November 2024) from Google Trends. 
+
+
+--- PDF page 9 ---
+Appl. Sci. 2024, 14, 10337 9 of 16 
+ 
+ 
+Figure 5. The trending of the keywords “text to speech” over the last 15 years (November 
+2009–November 2024) from Google Trends. 
+3.3. Advanced Solutions on Sign Language Recognition 
+SLR is a newer and less mature field compared to other recognition technologies, 
+often limited by expensive datasets and language variations [22]. Current applications are 
+mainly in experimental settings, but some real-world implementations are emerging, like 
+translating sign language for customer service desks (e.g., SignAll’s software). Challenges 
+include capturing nuanced hand and facial expressions, high computational require-
+ments, and adapting to different sign languages, which limit SLR’s broader adoption and 
+user satisfaction.  
+Recent advancements in SLR have demonstrated impressive accuracy levels across  
+various models and approaches. For instance, a model trained on 54,049 images of Arabic 
+sign language achieved a precision rate of 95% [23]. In another study, the SAM-SLR frame-
+work integrated multiple modalities and reported recognition rates of 98.42% for  RGB 
+images and 98.53% for RGBD [24]. Additionally, a hierarchical model for ISL gestures  
+reached 98.52% accuracy for one -hand gestures [25], while a wearable SLR devi ce using 
+electromyography and inertial sensors achieved an average accuracy of 96.13% [26]. These 
+achievements highlight the potential of advanced techniques in enhancing the reliability 
+of SLR systems.  
+Zakariah, M. et al . trained a model using 54 ,049 images with Arabic sign language. 
+The model had a precision rate of 95% [23]. Also, Rastgoo, R. et al . conducted a survey  
+that reviews recent vision -based sign language recognition models utilizing deep learn-
+ing, highlighting accuracy improvements and ongoing challenges. It categorizes models 
+for isolated and continuous recognition, discussing applications, datasets, hybrid ap-
+proaches, and future research directions [27]. Jiang, S. et al. propose a novel multi-modal 
+framework, SAM-SLR, for SLR that integrates skeleton-based, RGB, and depth modalities 
+to enhance recognition accuracy. The model achieved a good performance, with recogni-
+tion rates of 98.42% for RGB and 98.53% for RGBD, making it the top performer in the 
+2021 SLR Challenge [24].  
+Wen, F. et al. developed an AI-enabled sign language recognition system combining  
+sensing gloves, deep learning , and a virtual reality interface. Their model recognize d 50 
+words and 20 sentences, achieving an 86.67% accuracy for new sentence constructions by  
+recombining word elements [28]. Camgoz, N. C. et al. present a transformer-based model 
+that jointly learns sign language recognition and translation, achieving state-of-the-art re-
+sults on the PHOENIX14T dataset. Their approach significantly improves translation per-
+formance, with BLEU -4 scores rising from 9.58 to 21.80 , and sets new baselines for  sign 
+language translation tasks [29]. Wadhawan, A. et al . present a deep -learning-based con-
+volutional neural network (CNN) model for Indian sign language (ISL) recognition, using 
+35,000 images of 100 static signs. The system, evaluated on 50 CNN models, achieves  a 
+top training accuracy of 99.72% for colored images and 99.90% for grayscale images [30]. 
+Li, D. et al. introduce the  large-scale Word-Level American Sign Language (ASL) dataset, 
+featuring over 2000 words performed by more than 100 signers, the largest public ASL  
+dataset available. The authors evaluate two deep learning models for word -level sign  
+recognition: a holistic visual appearance-based approach and a 2D human pose-based ap-
+proach, achieving a top-10 result of up to 62.63% accuracy [31]. 
+
+
+--- PDF page 10 ---
+Appl. Sci. 2024, 14, 10337 10 of 16 
+ 
+A robust analysis of gesture recognition techniques was performed by Sharma, A. et 
+al. for ISL using three models: fine-tuned VGG16, transfer learning VGG16 , and a hierar-
+chical neural network. The hierarchical model achieved the best accuracy, with 98.52% for 
+one-hand gestures and 97% for two -hand gestures [25]. Khomami, S. A. et al . present a 
+wearable low-cost SLR device using surface electromyography and inertial measurement 
+unit sensors to enhance accuracy. Data from ten volunteers performing 20 Persian sign 
+language signs were collected, with 25 key features extracted and classified using a KNN 
+classifier, achieving an average accuracy of 96.13% [26]. In the same context, Kunjumon, 
+J. et al. propose a system that recognizes ISL and converts it to speech and text in English 
+and Malayalam, displaying the output on an Android device, with an accuracy of approx-
+imately 90% [32].  
+Rao, G. A. et al. address the challenge of recognizing ISL gestures using convolutional 
+neural networks. A dataset was created featuring five subjects performing 200 signs from 
+different angles and backgrounds, with each sign captured in 60 frames. The study in-
+volved training CNNs with various s ample sizes and architectures, achieving a recogni-
+tion rate  of 92.88%, outperforming other classifiers on the same dataset. The proposed 
+method enables independent use of a sign language recognition mobile application by 
+hearing impaired individuals [33]. Huang, J. et al. propose LS-HAN, a framework for con-
+tinuous sign language recognition that eliminates temporal segmentation. It uses a two -
+stream CNN and hierarchical attention network, achieving up to 82.7% accuracy [34].  
+Pu, J. et al . introduce an alignment network with iterative optimization for weakly  
+supervised continuous sign language recognition. It combines a 3D  ResNet for feature  
+learning and an encoder –decoder network with CTC for sequence modeling, optimized  
+iteratively. Evaluated on large datasets, the method achieved a precision of 93.9% [35]. 
+Mittal, A. et al. propose a modified LSTM model for continuous SLR, capable of recogniz-
+ing sequences of connected gestures by splitting them into sub -units. Tested on 942 ISL  
+sentences using 35 sign words, the system achieved an average accuracy of 72.3% for  
+signed sentences and 89.5% for isolated words [3]. Bragg, D. et al. emphasize the need for 
+interdisciplinary collaboration to develop sign language recognition, generation , and 
+translation systems. It summarizes a workshop with experts from various fields, review-
+ing the state of the art, identifying key challenges, and calling for more integrated research 
+efforts in the community [22]. Murali, R. S. L. et al . introduce a system for recognizing  
+ASL gestures using computer vision techniques. It captures hand gestures via a webcam, 
+processes the images using the HSV color algorithm , and uses a CNN for classification. 
+The model successfully recognizes 10 ASL alphabets with above 90% accuracy [36]. Kasap-
+başi, A. et al . developed an ASL recognition dataset and a CNN model to interpret ASL 
+gestures into natural language. The dataset accounts for various conditions, marking a 
+significant advancement in sign language re cognition. The CNN achieved 99.38% accu-
+racy with a low loss of 0.0250, outperforming two existing datasets. These results suggest 
+that the system could be a promising solution for medical applications using deep learn-
+ing while enhancing contributions to the SLR field [37].  
+Bantupalli, K. et al . created a vision-based application that translates sign language  
+into text, enhancing communication between signers and non -signers. It processes video  
+sequences to extract features, using an inception CNN for spatial recognition and an RNN 
+for temporal training, based on the ASL dataset. The accuracy using  a Softmax layer was 
+around 90% [38]. 
+However, continuous sign language recognition from videos presents more signifi-
+cant challenges, often resulting in lower accu racy rates. While static recognition benefits 
+from clear and defined gestures, dynamic recognition must contend with variations in 
+speed, context, and environmental factors, which can limit performance. For instance, de-
+spite advancements, the overall effectiveness of recognizing continuous signing from vid-
+eos has not reached the same levels of accuracy seen with individual images. Addressing 
+these challenges will be crucial for improving real -time, continuous sign language recog-
+nition systems.  
+
+--- PDF page 11 ---
+Appl. Sci. 2024, 14, 10337 11 of 16 
+ 
+We can observe in Figure 6 the trending of the keywords “sign language recognition” 
+over the last 15 years and can conclude that the chart indicates that interest in sign lan-
+guage recognition was minimal or nearly non -existent from 2009 until the end of 2 021. 
+This trend changed noticeably in the last quarter of 2021 and the first quarter of 2022, 
+where there was a sudden increase in searches or interest.  
+This trend suggests that while sign language recognition was a niche topic for over a 
+decade, recent d evelopments—technological, social, or research-based—have brought it  
+into broader focus. This emerging interest may indicate both a recognition of the need for 
+such technologies and a signal of future growth in the field.  
+ 
+Figure 6. The trending of the keywords “sign language recognition” over the last 15 years 
+(November 2009–November 2024) from Google Trends. 
+3.4. Other Relevant Studies 
+There were also articles that highlighted the potential for AI technologies to signifi-
+cantly impact people with disabilities (PWD), especially through tools like automated  SR 
+and language prediction systems. While these AI systems can enhance accessibility,  they 
+can also risk marginalizing PWD if not designed and tested carefully. The paper calls  at-
+tention to fairness in AI for PWD, identifying concerns about how AI systems may fail or  
+discriminate if care is not taken in development [39].  
+In other articles, authors discuss the impact of artificial intelligence, particularly ma-
+chine learning, on fair treatment for p eople with disabilities. This highlights that fairness 
+for this group differs from fairness concerning groups with other protected attributes like 
+age, gender, or race, primarily due to the vast diversity in how disabilities manifest and 
+the sensitive nature of disability information, which is often not shared to avoid discrim-
+ination [40].  
+4. Exploring Future Directions 
+As we explore the development of accessible interfaces for individuals with disabili-
+ties, there are several promising directions for futur e research. These directions aim to 
+improve the accuracy, functionality, and user experience of sign language recognition sys-
+tems by leveraging advanced AI technologies and ML. Below, we outline four key re-
+search directions that could significantly enhance the field of accessibility and create more 
+inclusive digital environments.  
+4.1. Training a Sign Language Recognition Model with AI-Generated Images 
+One potential area to explore is the use of AI -generated images to train SLR models. 
+Training these models requires large datasets of sign language videos or images (since these 
+models use supervised learning), which can be hard and time-consuming to obtain. By us-
+ing images generated with artificial intelligence, scientists can create datasets that mimic  
+real sign language movements. This approach has the potential to expand existing training 
+data and allow models to learn a wider range of gestures and types of sign language.  
+In addition, this method can solve the problems related to the lack of sign lan guage 
+datasets for less commonly used sign languages. AI-generated data can provide a scalable 
+solution for creating models that are more inclusive and adaptive. Future research should 
+
+
+--- PDF page 12 ---
+Appl. Sci. 2024, 14, 10337 12 of 16 
+ 
+focus on evaluating the effectiveness of AI -generated images to improve  model perfor-
+mance and optimizing the token engineering used to generate these images to ensure they 
+accurately reflect real gestures.  
+4.2. Enhancing Model Output Using ChatGPT for Rephrasing 
+Another interesting direction for future research is to integrate natural language pro-
+cessing tools like ChatGPT to improve the results of sign language recognition models.  
+Although these models can accurately identify and translate signs, the raw output can  
+sometimes be unclear or sound strange in natural lang uage. By using large generative  
+language models to reformulate the results, we could improve the fluency and readability 
+of the recognized text, making the output more intuitive and conversational.  
+This approach has the potential to improve the overall UX, especially for people who 
+rely on this type of communication system. Users interact more seamlessly with this tech-
+nology, making it easier for them to communicate more effectively. Further research could 
+investigate the impact of this reformulation on user satisfaction and the overall quality of 
+communication in different contexts, such as educational, professional , or social.  
+In Figure 7, we present the pipeline of how sign language is transposed to plain  text 
+and, using a large language model, how the result is rephrased to sound better.  
+ 
+Figure 7. Enhancing SLR model using LLM. 
+4.3. Sign Language to Enhanced Text (Using LLM) to Speech 
+Another promising application refers to the conversion of the result of the sign lan-
+guage recognition model into enhanced text using large generative language models, fol-
+lowed by TTS. This development could have a transformative impact on people with  
+speech and hearing impairments who need to deliver speeches/presentations or partici-
+pate in public speaking. By transl ating sign language into clear and structured spoken 
+language, TTS systems can help users effectively communicate their messages to a wider 
+audience without relying on intermediaries such as translators.  
+In addition, integrating tools such as ChatGPT to rephrase the result can ensure that 
+the generated speech is not only accurate but also designed to sound natural and  engag-
+ing. This would allow users to retain full control over their communication and support  
+greater independence in professional, educational, and social settings.  
+Figure 8 presents a follow-up scenario, in which sign language is transposed to plain 
+text and, using a large language model, the result is rephrased to sound better, and a text-
+to-speech model is then used to help the presenter to communicate effectively.  
+ 
+Figure 8. Using the enhanced rephrased text in a text-to-speech model. 
+4.4. Translating Sign Language Model Output into Multiple Languages 
+In today’s globalized world, language barriers present significant challenges for acces-
+sibility. To address this problem, we extend the use of ChatGPT to translate the output of 
+sign language recognition models based on the available languages. This allows the system 
+to not only recognize and annotate sign language to text but also provide translation when 
+other languages are used. This feature improves the accessibility of online platforms for us-
+ers who are hearing-impaired and who are non-native speakers of the primary language.  
+
+
+--- PDF page 13 ---
+Appl. Sci. 2024, 14, 10337 13 of 16 
+ 
+This multilingual ability opens the door to wider use, making digital content more 
+accessible. Researchers could focus on assessing the accuracy of these translations, espe-
+cially in relation to context -specific language usage, idi omatic expressions, and cultural 
+nuances. Another important consideration is how process analysis impacts the overall UX 
+and how it can be optimized for real-time interactions.  
+Figure 9 presents another use case, in which sign language is transposed to plain text 
+using an SLR model, and the result is translated into other languages using a large lan-
+guage model. 
+ 
+Figure 9. Using LLM to translate the output from SLR model. 
+4.5. Real-Time Sign Language Interpretation in Livestreams 
+An innovative direction for future research is the use of sign language recognition  
+models for real-time interpretation during live streams. In this scenario, sign language can 
+be interpreted on the fly and provide instant translation during live broadcasts, confer-
+ences, or events. This significantly increases accessibility for people with hearing impair-
+ments who participate in this type of real-time interaction.  
+In this context, ChatGPT can be used to improve interpretation by rewriting the trans-
+lated content in real-time, ensuring that the result is not only accurate but also contextu-
+ally appropriate and clear to the audience. This can fill the communication gaps during 
+conversations from events where the original output may be too literal or unclear. Future 
+research could explore the technical challenges of implementing this system in real -time 
+settings, focusing on latency, accuracy, and user feedback to ensure a smooth and effective 
+experience for end users.  
+5. Conclusions  
+In order to write this systematic review, we conducted an extensive search across  
+several key academic databases, including Google Scholar, Elsevier, and Springer. This  
+initial search returned thousands of research papers that needed a thorough filtering pro-
+cess. To refine these results and make sure they were closely aligned with the focus of our 
+study, we used the PEDro and PRISMA methodologies. These frameworks allowed us  to 
+systematically narrow down the pool of research to obtain more relevant and targeted  
+studies that directly contribute to the objectives of our review.  
+There are numerous studies that have been conducted with a focus on the development 
+of accessibility solutions through the use of artificial intelligence and machine learning tech-
+nologies, especially in the areas of speech recognition, sign language recognition , and 
+speech-to-text and text-to-speech conversion. These research efforts highlight the growing 
+interest in the field and the accessibility advancements for individuals with disabilities. 
+The primary and most s ignificant findings from this study can be summarized as  
+follows: 
+• Speech-to-text and text-to-speech models have impressive accuracy (e.g., in the Ren, 
+Y. article, they achieved a 99.84% accuracy of word-level intelligibility for an almost 
+unsupervised algorithm of TTS machine learning [16]; the STT model built by Google 
+demonstrated a similarity score of 97.116% after a robust evaluation [21]);  
+• Whisper’s speech recognition algorithm outperformed other models with a word er-
+ror rate of 2.9% [7]; the algorithm implemented by Darabkh, K. for speech recognition 
+using a discrete wavelet transform with  a modified MFCC achieved a remarkable 
+recognition rate of 98.86%;  
+• Continuous sign language recognition needs improvement because the algorithms  
+implemented by authors in the explored solutions did not achieve more than a 95% 
+
+
+--- PDF page 14 ---
+Appl. Sci. 2024, 14, 10337 14 of 16 
+ 
+accuracy (Pu, J. achieved a 93.9% accuracy [35], and Mittal, A. achieved a 72.3% ac-
+curacy for signed sentences and a 89.5% accuracy for isolated words [3]); 
+• Research interest in SLR models has increased significantly in the last two years; 
+In conclusion, while technologies such as STT, TTS, and SR have achieved an impres-
+sive level of maturity , this progress is largely attributed to the high accuracy rates  (less 
+than 3.5% word error rates for Whisper and Speechmatics  [7]) of these systems and  their 
+ability to offer outputs with good mean opinion scores (more than 4.38 mean opinion score 
+for Tacotron 2 [15]), which serves as a key measure of user satisfaction. These  advance-
+ments have made STT, TTS, and SR solutions highly effective and reliable for a wide range 
+of users, including those with speech and hearing impairments. The accuracy of sign lan-
+guage recognition systems remains a critical area where enhancements could lead  to bet-
+ter usability and effectiveness for users. 
+In order to address this challenge, exploring innovative approaches such as AI -gen-
+erated images for training SLR models could result in insightful and promising results. 
+This method could provide a more diverse dataset, helping, in this way, to capture differ-
+ent variations in sign language. Furthermore, integrating advanced tools like generative 
+large language models such as ChatGPT to rephrase and clarify the output from sign lan-
+guage recognition systems could be a game-changer. Such integration would not only en-
+hance the clarity of communication but also ensure that the expressions used by humans 
+in sign language are accurately transposed to those who may not be fluent in it.  
+A particular challenge lies in enhanci ng the performance of sign language recogni-
+tion systems when applied to continuous video streams. Unlike image-based recognition, 
+where individual signs can be accurately identified, video -based recognition requires the 
+system to handle dynamic and fluid s equences of signs, often leading to decreased accu-
+racy. Addressing this challenge is crucial for developing more effective and reliable sign 
+language recognition technologies, especially for real -time applications such as live com-
+munication and education. Overcoming these obstacles will be an important step toward 
+offering an accessible experience for users who rely on sign language. 
+These advancements could play a pivotal role in bridging the communication gap for 
+sign language users, ultimately  contributing to a more inclusive and accessible environ-
+ment. As the field continues to evolve, focusing on these innovative strategies will be es-
+sential for enabling better interaction and understanding among diverse communities.  
+Author Contributions: The concept of th is article was proposed by N.P. ; the data resources and  
+validation were contributed by V.B.; the formal analysis, investigation, and draft preparation were  
+performed by V.B.; the supervision and reviewing of this study were headed by N.P.; the final writ-
+ing was critically revised by N.P . and finally approved by the authors. All authors have read and 
+agreed to the published version of the manuscript. 
+Funding: This research received no external funding. 
+Institutional Review Board Statement: Not applicable. 
+Informed Consent Statement: Not applicable. 
+Data Availability Statement: The original contributions presented in the study are included in the 
+article, further inquiries can be directed to the corresponding author. 
+Conflicts of Interest: The authors declare no conflicts of interest. 
+Abbreviations  
+The following abbreviations are used in this manuscript: 
+AI Artificial intelligence 
+ML Machine learning 
+WCAG Content Accessibility Guidelines  
+TTS Text-to-speech 
+SR Speech recognition 
+
+--- PDF page 15 ---
+Appl. Sci. 2024, 14, 10337 15 of 16 
+ 
+SLR Sign language recognition  
+STT Speech-to-text 
+PWD People with disabilities 
+CNN Convolutional neural network  
+VAPAs Voice-activated personal assistants  
+MOS Mean opinion score 
+ASR Automatic speech recognition  
+ISL Indian sign language 
+ASL American sign language 
+GLLM Generative large language models 
+References 
+1. World Health Organization. Global Report on Health Equity for Persons with Disabilities. Available online: 
+https://www.who.int/teams/noncommunicable-diseases/sensory-functions-disability-and-rehabilitation/global-report-on-
+health-equity-for-persons-with-disabilities (accessed on 10 September 2024). 
+2. Web Content Accessibility Guidelines (WCAG) 2.1, W3C Recommendation. Available online: 
+https://www.w3.org/TR/WCAG21 (accessed on 10 September 2024). 
+3. Mittal, A.; Kumar, P.; Roy, P.P.; Balasubramanian, R.; Chaudhuri, B.B. A modified LSTM model for continuous sign 
+language recognition using leap motion. IEEE Sens. J. 2019, 19, 7056–7063. 
+4. Figures Were Created Using Adobe Express. Available online: https://new.express.adobe.com (accessed on 30 September 
+2024). 
+5. Charts with the Evolution Accessibility Keywords (e.g., “Sign Language Recognition”) from the Last 15 Years (From 1st of 
+November 2009 to 1st of November 2024) (Source: Google Trends). Available  online: https://trends.google.com/trends/ex-
+plore?date=2009-01-11%202024-01-11&q=speech%20to%20text&hl=en (accessed on 1 November 2024). 
+6. Your Unique Voice Gets You Quick Access to Your Account Information. Available online: https://www.wells-
+fargo.com/privacy-security/voice-verification/ (accessed on 1 November 2024 ). 
+7. Kuhn, K.; Kersken, V.; Reuter, B.; Egger, N.; Zimmermann, G. Measuring the accuracy of automatic speech recognition 
+solutions. ACM Trans. Access. Comput. 2014, 16, 1–23. 
+8. Pradhan, A.; Mehta, K.; Findlater, L. “ Accessibility Came by Accident” Use of Voice-Controlled Intelligent Personal Assis-
+tants by People with Disabilities. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems, 
+Montreal, QC, Canada, 21–26 April 2018; pp. 1–13. 
+9. Subhash, S.; Srivatsa, P.N.; Siddesh, S.; Ullas, A.; Santhosh, B. Artificial intelligence-based voice assistant. In Proceedings 
+of the 2020 Fourth World Conference on Smart Trends in Systems, Security and Sustainability (WorldS4), London, UK, 27–28 
+July 2020;  pp. 593–596. 
+10. Branham, S.M.; Mukkath Roy, A.R. Reading between the guidelines: How commercial voice assistant guidelines 
+hinder accessibility for blind users. In Proceedings of the 21st International ACM SIGACCESS Conference on Computers 
+and Accessibility, Pittsburgh, PA, USA, 28–30 October 2019; pp. 446–458. 
+11. Blue, L.; Abdullah, H.; Vargas, L.; Traynor, P. 2ma: Verifying voice commands via two microphone authentication. In 
+Proceedings of the 2018 on Asia Conference on Computer and Communications Security, Incheon, Republic of Korea, 4 June 
+2018; pp. 89–100. 
+12. Canonico, M.; De Russis, L. A comparison and critique of natural language understanding tools. In Proceedings of the  
+Ninth International Conference on Cloud Computing, GRIDs, and Virtualization CLOUD COMPUTING 2018 ; 18–22 February 
+2018; pp. 110–115. 
+13. Darabkh, K.A.; Haddad, L.; Sweidan, S.Z.; Hawa, M.; Saifan, R.; Alnabelsi, S.H. An efficient speech recognition system for arm-
+disabled students based on isolated words. Comput. Appl. Eng. Educ. 2018, 26 285–301. 
+14. Brewer, R.N.; Findlater, L.; Kaye, J.J.; Lasecki, W.; Munteanu, C.; Weber, A. Accessible voice interfaces. In Proceedings of the 
+Companion of the 2018 ACM Conference on Computer Supported Cooperative Work and Social Computing, Jersey City, NJ, 
+USA, 3–7 November 2018; pp. 441–446. 
+15. Khanam, F.; Munmun, F.A.; Ritu, N.A.; Saha, A.K.; Firoz, M. Text to speech synthesis: a systematic review, deep learning 
+based architecture and future research direction. J. Adv. Inf. Technol. 2022, 13, 398–412. 
+16. Ren, Y.; Tan, X.; Qin, T.; Zhao, S.; Zhao, Z.; Liu, T.Y. Almost unsupervised text to speech and automatic speech recognition. 
+In Proceedings of the International Conference on Machine Learning, Long Beach, CA, USA, 9–15 June 2019; pp. 5410–5419. 
+17. Zen, H.; Dang, V.; Clark, R.; Zhang, Y.; Weiss, R.J.; Jia, Y.; Chen, Z.; Wu, Y. Libritts: A corpus derived from librispeech for 
+text-to-speech. arXiv 2019, arXiv:1904.02882. 
+18. Trivedi, A.; Pant, N.; Shah, P.; Sonik, S.; Agrawal, S. Speech to text and text to speech recognition systems-A review. 
+IOSR J. Comput. Eng. 2018, 20, 36–43. 
+19. Khan, A.; Khusro, S. Blind-friendly user interfaces–a pilot study on improving the accessibility of touchscreen in-
+terfaces. Multimed. Tools Appl. 2019, 78, 17495–17519. 
+
+--- PDF page 16 ---
+Appl. Sci. 2024, 14, 10337 16 of 16 
+ 
+20. Anandan, M.; Manikandan, M.; Karthick, T. Advanced indoor and outdoor navigation system for blind people using 
+raspberry-pi. J. Internet Technol. 2020, 21, 182–195. 
+21. Aguilar-Chacon, J.E.; Segura-Torres, D.A. Evaluation methodology for Speech To Text Services similarity and speed char-
+acteristics focused on small size computers. IOP Conf. Ser. Mater. Sci. Eng. 2020, 844, 012039. 
+22. Bragg, D.; Koller, O.; Bellard, M.; Berke, L.; Boudreault, P.; Braffort, A.; Caselli, N.; Huenerfauth, M.; Kacorri, H.; Verhoef, T.; 
+et al. Sign language recognition, generation, and translation: An interdisciplinary perspective. In Proceedings of the 21st Inter-
+national ACM SIGACCESS Conference on Computers and Accessibility, Pittsburgh, PA, USA, 28–30 October 2019; pp. 16–31. 
+23. Zakariah, M.; Alotaibi, Y.A.; Koundal, D.; Guo, Y.; Mamun Elahi, M. Sign language recognition for Arabic alphabets 
+using transfer learning technique. Comput. Intell. Neurosci. 2022, 2022, 4567989. 
+24. Jiang, S.; Sun, B.; Wang, L.; Bai, Y.; Li, K.; Fu, Y. Skeleton aware multi-modal sign language recognition. In Proceedings 
+of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Nashville, TN, USA, 20–25 June 2021; pp. 3413–3423. 
+25. Sharma, A.; Sharma, N.; Saxena, Y.; Singh, A.; Sadhya, D. Benchmarking deep neural network approaches for 
+Indian Sign Language recognition. Neural Comput. Appl. 2021, 33, 6685–6696. 
+26. Khomami, S.A.; Shamekhi, S. Persian sign language recognition using IMU and surface EMG sensors. Measurement 
+2021, 168, 108471. 
+27. Rastgoo, R.; Kiani, K.; Escalera, S. Sign language recognition: A deep survey. Expert Syst. Appl. 2021, 164, 113794. 
+28. Wen, F.; Zhang, Z.; He, T.; Lee, C. AI enabled sign language recognition and VR space bidirectional communication 
+using triboelectric smart glove. Nat. Commun. 2021, 12, 5378. 
+29. Camgoz, N.C.; Koller, O.; Hadfield, S.; Bowden, R. Sign language transformers: Joint end-to-end sign language recogni-
+tion and translation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Seattle, WA, 
+USA, 13–19 June 2020; pp. 10023–10033. 
+30. Wadhawan, A.; Kumar, P. Deep learning-based sign language recognition system for static signs. Neural Comput. 
+Appl. 2020, 32, 7957–7968. 
+31. Li, D.; Rodriguez, C.; Yu, X.; Li, H. Word-level deep sign language recognition from video: A new large-scale 
+dataset and methods comparison. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision, 
+Snowmass Village, CO, USA, 1–5 March 2020; pp. 1459–1469. 
+32. Kunjumon, J.; Megalingam, R.K. Hand gesture recognition system for translating indian sign language into text and 
+speech. In Proceedings of the 2019 International Conference on Smart Systems and Inventive Technology (ICSSIT), 
+Tirunelveli, India, 27–29 November 2019; pp. 14–18. 
+33. Rao, G.A.; Syamala, K.; Kishore, P.V.V.; Sastry, A.S.C.S. Deep convolutional neural networks for sign language recogni-
+tion. In Proceedings of the 2018 Conference on Signal Processing and Communication  Engineering Systems (SPACES), 
+Vijayawada, India, 4–5 January 2018; pp. 194–197. 
+34. Huang, J.; Zhou, W.; Zhang, Q.; Li, H.; Li, W. Video-based sign language recognition without temporal segmen-
+tation. In Proceedings of the  AAAI Conference on Artificial Intelligence 2018, New Orleans, LO, USA, 2 –7 February 2018;  
+Volume 32. 
+35. Pu, J.; Zhou, W.; Li, H. Iterative alignment network for continuous sign language recognition. In Proceedings of the 
+IEEE/CVF Conference on Computer Vision and Pattern Recognition, Long Beach, CA, USA, 15–20 June 2019; pp. 4165–4174. 
+36. Murali, R.S.L.; Ramayya, L.D.; Santosh, V.A. Sign language recognition system using convolutional neural network 
+and computer vision. Int. J. Eng. Innov. Adv. Technol. 2022, 4, 137–142. 
+37. Kasapbaşi, A.; Elbushra, A.E.A.; Omar, A.H.; Yilmaz, A. DeepASLR: A CNN based human computer interface for American 
+Sign Language recognition for hearing-impaired individuals. Comput. Methods Programs Biomed. Update 2022, 2, 100048. 
+38. Bantupalli, K.; Xie, Y. American sign language recognition using deep learning and computer vision. In Proceedings of the 2018 
+IEEE International Conference on Big Data (Big Data), Seattle, WA, USA, 10–13 December 2018; pp. 4896–4899. IEEE. 
+39. Guo, A.; Kamar, E.; Vaughan, J.W.; Wallach, H.; Morris, M.R. Toward fairness in AI for people with disabilities SBG@ a 
+research roadmap. ACM SIGACCESS Access. Comput. 2020, 2. https://doi.org/10.1145/3386296.3386298. 
+40. Trewin, S. AI fairness for people with disabilities: Point of view. arXiv 2018, arXiv:1811.10670. 
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual au-
+thor(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any in jury to 
+people or property resulting from any ideas, methods, instructions or products referred to in the content. 

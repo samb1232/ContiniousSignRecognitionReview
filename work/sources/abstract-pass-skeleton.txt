@@ -1,0 +1,4 @@
+Source: https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200
+Locator: PDF abstract p.1; Table5 p.13; references [6] and [8] p.16
+Analyst paraphrase of inspected web source (not raw response):
+The PDF abstract and Table5 identify a single continuous/online study with multiple decoding settings. Reference [6] is Takayama et al. (10.5220/0010899400003124); [8] is Buttar et al. (10.3390/math11173729). The previously noted inconsistent study counts remain unresolved.

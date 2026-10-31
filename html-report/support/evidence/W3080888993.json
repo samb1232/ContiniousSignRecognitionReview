@@ -1,0 +1,71 @@
+{
+  "paper": {
+    "title": "Quantitative Survey of the State of the Art in Sign Language Recognition",
+    "year": 2020,
+    "doi": "https://doi.org/10.48550/arxiv.2008.09918",
+    "openalex_url": "https://openalex.org/W3080888993"
+  },
+  "openalex_id": "W3080888993",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen1-W3080888993"
+  ],
+  "description": "Quantitative synthesis of SLR literature with a dedicated PHOENIX CSLR comparison.",
+  "reason": "Section 3 and Tables 11–12 compare prior visual CSLR systems. This meets the project-specific threshold for a broader review.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Meta-study synthesizes earlier recognition publications."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Tables 11–12 compare multiple PHOENIX continuous-recognition studies."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Table 11 compares RGB/full-frame visual architectures."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen1-W3080888993",
+      "url": "https://arxiv.org/pdf/2008.09918",
+      "path": "work/sources/screen1-W3080888993.txt",
+      "locator": "PDF pp.10–12, Section 3, Tables 11–12",
+      "passage": "The tables compare Camgoz et al. (2017) SubUNets and Cui et al. (2017) staged optimization on PHOENIX, including architectures, WER and training choices.",
+      "sha256": "899de195fb8e2219281d1686611dd7922d8daef60e1903146a3c6d5d48a7e041",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Camgoz et al. (2017), SubUNets",
+    "Cui et al. (2017), Recurrent convolutional neural networks by staged optimization"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "evidence_level": "abstract_only",
+      "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

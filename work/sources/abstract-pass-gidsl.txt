@@ -1,0 +1,4 @@
+Source: https://link.springer.com/article/10.1007/s42979-024-02776-7
+Locator: Publisher abstract and article title
+Analyst paraphrase of inspected web source (not raw response):
+The publisher labels GIDSL as isolated dynamic recognition. Its abstract describes a dataset, MediaPipe feature extraction, and an LSTM/dense model, but does not establish sentence-level recognition. This does not substantiate the review's sentence-result claim.

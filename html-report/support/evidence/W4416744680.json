@@ -1,0 +1,80 @@
+{
+  "paper": {
+    "title": "AI-Based Approaches for Brazilian Sign Language Recognition: A Systematic Literature Review: Insights on Methods, Metrics, and Resources for LIBRAS Recognition",
+    "year": 2025,
+    "doi": "https://doi.org/10.5753/webmedia.2025.16082",
+    "openalex_url": "https://openalex.org/W4416744680"
+  },
+  "openalex_id": "W4416744680",
+  "human_decision": "not_screened",
+  "ai_decision": "exclude",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "openalex-W4416744680",
+    "batch0-W4416744680"
+  ],
+  "description": "Systematic review of LIBRAS recognition, translation and synthesis.",
+  "reason": "Results identify only Bastos as continuous recognition; other compared systems are isolated recognition or generation. No comparison of two distinct CSLR studies was identified in Sections4–7.",
+  "failed_criteria": [
+    "M2"
+  ],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "fail",
+      "reason": "Does not meet the project-specific two-CSLR-study comparison threshold."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W4416744680",
+      "url": "https://doi.org/10.5753/webmedia.2025.16082",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+      "locator": "W4416744680 / abstract_inverted_index",
+      "passage": "Abstract: Systematically reviews AI and computer vision for LIBRAS; flags continuous recognition difficulties.",
+      "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "batch0-W4416744680",
+      "url": "https://sol.sbc.org.br/index.php/webmedia/article/download/38014/37792",
+      "path": "work/sources/batch0-W4416744680.txt",
+      "locator": "Sections4.1–4.3, Tables3–5, PDF pp.6–10; Sections6–7 pp.10–11",
+      "passage": "Bastos is described as continuous/isolated recognition; de Brito, Ruiz and de Avellar Sarmento are isolated/word-level, while Flores Brongar and Silva generate/translate Portuguese into LIBRAS. Continuous recognition remains largely unexplored.",
+      "sha256": "01096cda82bc9863ea3c703c30ec07a47f86b30f54ae040c301199cd8f4a3e75",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "Independent human eligibility assessment.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "This Systematic Literature Review (SLR) investigates the application of Artificial Intelligence (AI), specifically with Computer Vision (CV) and Natural Language Processing (NLP) techniques for Brazilian Sign Language (LIBRAS) recognition, translation, and interpretation. Following the PRISMA protocol and using the Parsifal tool to support protocol definition and study management, 77 studies were initially identified. After removing duplicates and applying exclusion criteria, 23 studies were selected for in-depth analysis. The review addresses three research questions: (i) AI-based solutions currently employed for LIBRAS recognition, (ii) reported performance metrics and evaluation results, and (iii) datasets used for training and testing, along with their characteristics and limitations. The findings highlight advances in deep learning architectures and computer vision pipelines, while revealing persistent challenges such as limited integration of non-manual features, scarcity of large-scale and multimodal datasets, difficulties in continuous sign recognition, heterogeneous annotation practices, and inadequacy of common bilingual evaluation metrics for capturing syntactic and semantic differences between LIBRAS and Portuguese. Moreover, deployment-related factors, including inference time and computational cost, remain underexplored. These insights provide guidance for future research toward more accurate, efficient, and inclusive LIBRAS recognition systems.",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

@@ -1,0 +1,4 @@
+Source: https://aclanthology.org/2023.ranlp-1.71/
+Locator: Publisher abstract and author list
+Analyst paraphrase of inspected web source (not raw response):
+The matching 2023 ACL title is authored by Li and colleagues, not Singh. The abstract describes classification of ASL alphabets and custom signs into text, rather than establishing continuous linguistic-sign recognition. Because the review gives different authors, the intended citation remains unresolved.

@@ -1,0 +1,133 @@
+{
+  "paper": {
+    "title": "Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects",
+    "year": 2024,
+    "doi": "https://doi.org/10.1016/j.ipm.2024.103774",
+    "openalex_url": "https://openalex.org/W4398763293"
+  },
+  "openalex_id": "W4398763293",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "screen2-alt-W4398763293"
+  ],
+  "description": "The abstract describes a 25-year CSLR review organizing 126 studies by modalities, methods, datasets and performance, including spatial, temporal and alignment approaches.",
+  "reason": "Advance to full-text assessment: the abstract supports review purpose and vision-based CSLR coverage. The publisher response did not expose the paper; the institutional repository provides an abstract only.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Institutional abstract explicitly describes review and critical analysis of126 studies."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Abstract defines CSLR as successive signs in video without known boundaries."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Video modalities and visual cues are explicit."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen2-alt-W4398763293",
+      "url": "https://pure.kfupm.edu.sa/en/publications/reviewing-25-years-of-continuous-sign-language-recognition-resear/",
+      "path": "work/sources/screen2-alt-W4398763293.txt",
+      "locator": "Institutional publication page, Abstract",
+      "passage": "A survey of126 studies across25 years organizes CSLR by input modalities, cues, techniques, datasets and performance; CSLR is defined as recognizing successive signs in a video stream without temporal boundaries.",
+      "sha256": "2ee1b8449755125b33d5f1c327df1d7a89025840fd2da7d74d0d838e50681003",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Full text unavailable from publisher response and inspected institutional page."
+  ],
+  "next_action": "Obtain full text and identify the comparison of at least two prior CSLR studies.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W4398763293",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "screen2-alt-W4398763293"
+        ],
+        "description": "The abstract describes a 25-year CSLR review organizing 126 studies by modalities, methods, datasets and performance, including spatial, temporal and alignment approaches.",
+        "reason": "Advance to full-text assessment: the abstract supports review purpose and vision-based CSLR coverage. The publisher response did not expose the paper; the institutional repository provides an abstract only.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Institutional abstract explicitly describes review and critical analysis of126 studies."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "Abstract defines CSLR as successive signs in video without known boundaries."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Video modalities and visual cues are explicit."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "screen2-alt-W4398763293",
+            "url": "https://pure.kfupm.edu.sa/en/publications/reviewing-25-years-of-continuous-sign-language-recognition-resear/",
+            "path": "work/sources/screen2-alt-W4398763293.txt",
+            "locator": "Institutional publication page, Abstract",
+            "passage": "A survey of126 studies across25 years organizes CSLR by input modalities, cues, techniques, datasets and performance; CSLR is defined as recognizing successive signs in a video stream without temporal boundaries.",
+            "sha256": "2ee1b8449755125b33d5f1c327df1d7a89025840fd2da7d74d0d838e50681003",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Full text unavailable from publisher response and inspected institutional page."
+        ],
+        "next_action": "Obtain full text and identify the comparison of at least two prior CSLR studies.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+          "agent_batch": "batch2.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

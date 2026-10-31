@@ -1,0 +1,11 @@
+{
+  "source_id": "batch0-web-taxonomy",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0952197622002925",
+  "retrieved_utc": "2026-10-31T11:35:58.425422+00:00",
+  "body": "batch0-web-taxonomy.txt",
+  "text": "batch0-web-taxonomy.txt",
+  "sha256": "8ecdaca5ef842b5c748e4824a9f5c234390f2a46eb4aaf6b627f98a7367d8237",
+  "method": "web tool snapshot; includes source URLs and passages; not raw HTTP",
+  "status": "web_tool_success",
+  "http_status": null
+}

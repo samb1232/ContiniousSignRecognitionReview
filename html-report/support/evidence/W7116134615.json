@@ -1,0 +1,83 @@
+{
+  "paper": {
+    "title": "A Deep Neural Framework for Continuous Sign Language Recognition via Iterative Training",
+    "year": 2025,
+    "doi": "https://doi.org/10.61173/2hpmfy05",
+    "openalex_url": "https://openalex.org/W7116134615"
+  },
+  "openalex_id": "W7116134615",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "openalex-W7116134615",
+    "cai2025-pdf"
+  ],
+  "description": "Broad narrative review of recognition modalities and neural methods despite its method-like title.",
+  "reason": "Section2 synthesizes prior methods; its continuous-recognition performance comparison and visual CSLR discussion satisfy the threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W7116134615",
+      "url": "https://doi.org/10.61173/2hpmfy05",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W7116134615 / abstract_inverted_index",
+      "passage": "Abstract: Explicitly describes itself as a review of recognition methods, limitations and applications.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "cai2025-pdf",
+      "url": "https://stecep.deanfrancis.press/article/download/418/418/1673",
+      "path": "work/sources/cai2025-pdf.pdf",
+      "locator": "Section2.2, Figure4 PDF p.5 (visually inspected); Section2.3.4 p.9",
+      "passage": "Figure4 compares Kong/Ranganath and Tripathi/Nandi among eight continuous-recognition studies; Section2.3.4 discusses visual sequence-recognition methods. The figure is attributed to reference5.",
+      "sha256": "7257869593b4f11de536929db57d9c3d64889b4b5f408e593119edef916e1924",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Figure4 reuses another review’s comparison; reported accuracies are not independently validated."
+  ],
+  "next_action": "Independent human eligibility assessment.",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Kong and Ranganath (Figure4)",
+    "Tripathi and Nandi (Figure4)"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "Sign language is a visual language that uses a variety of hand gesture combinations to express distinct ideas. It acts as a bridge to communicate with the outside world and is a vital communication tool for the deaf and mute community. Recent years have seen a fast increase in computer technology, opening up new avenues for research on sign language recognition through developments in computer graphics, computer vision, neural networks, and associated hardware. However, many sign language movements are still hard to tell apart because of the intrinsic constraints of visual component combinations. Natural language can be incorporated to help with the recognition process in order to overcome this difficulty. This review study highlights the benefits and drawbacks of modern approaches to sign language recognition in terms of recording, identifying, translating, and depicting motions. The primary difficulties in the field of sign language technology are also covered, along with the introduction of a number of useful applications. In order to encourage and support additional achievements in this field, future research directions and possible developments are finally suggested.",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

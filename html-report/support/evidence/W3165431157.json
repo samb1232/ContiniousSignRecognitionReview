@@ -1,0 +1,74 @@
+{
+  "paper": {
+    "title": "AUTOMATIC ARABIC SIGN LANGUAGE RECOGNITION: A REVIEW, TAXONOMY, OPEN CHALLENGES, RESEARCH ROADMAP AND FUTURE DIRECTIONS",
+    "year": 2020,
+    "doi": "https://doi.org/10.22452/mjcs.vol33no4.5",
+    "openalex_url": "https://openalex.org/W3165431157"
+  },
+  "openalex_id": "W3165431157",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen2-W3165431157"
+  ],
+  "description": "A broad review of Arabic sign-language recognition covering alphabet, isolated-word and continuous recognition, with vision and wearable-sensor taxonomies.",
+  "reason": "Meets M1–M3 as a broader review with qualifying CSLR coverage. Section 3.3.3 and Table 11 compare distinct vision-based continuous-sentence studies by methods, data and recognition performance.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior Arabic SLR work in taxonomies and comparison tables."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Section3.3.3 and Table11 compare Tolba2013, Assaleh2010 and Assaleh2008 continuous recognition studies."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Table11 explicitly compares vision-based methods."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen2-W3165431157",
+      "url": "https://ejournal.um.edu.my/index.php/MJCS/article/download/26902/12338",
+      "path": "work/sources/screen2-W3165431157.txt",
+      "locator": "PDF pp.16,20,37; Section3.3.3, Table11, refs120–122",
+      "passage": "Table11 compares Tolba2013 (PCNN/graph matching,30 sentences), Assaleh2010 (DCT/spatiotemporal HMM,40 sentences) and Assaleh2008 (DCT/HMM,40 sentences), including training/test information and recognition rates.",
+      "sha256": "949f9a48ee03c3fc33c67b9687782dcaa745ca86a9a78b99f825d6fb55f671a5",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Tolba, Samir and Aboul-Ela (2013), Arabic sign language continuous sentences recognition using PCNN and graph matching [120]",
+    "Assaleh et al. (2010), Continuous Arabic Sign Language Recognition in User Dependent Mode [121]"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "screen2-W3165431157"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

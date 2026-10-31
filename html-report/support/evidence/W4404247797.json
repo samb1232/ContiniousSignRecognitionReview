@@ -1,0 +1,81 @@
+{
+  "paper": {
+    "title": "A Systematic Review of Accessibility Techniques for Online Platforms: Current Trends and Challenges",
+    "year": 2024,
+    "doi": "https://doi.org/10.3390/app142210337",
+    "openalex_url": "https://openalex.org/W4404247797"
+  },
+  "openalex_id": "W4404247797",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "openalex-W4404247797",
+    "batch0-alt-W4404247797"
+  ],
+  "description": "Accessibility review covering sign recognition alongside speech technologies.",
+  "reason": "Section3.3 compares visual CSLR methods and results for Huang, Pu and Mittal, satisfying the project threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W4404247797",
+      "url": "https://doi.org/10.3390/app142210337",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+      "locator": "W4404247797 / abstract_inverted_index",
+      "passage": "Abstract: Reviews online accessibility technologies, including continuous SLR and recognition methods.",
+      "sha256": "22bc2200468bf03a180ef3152b6b12577161b985c3f569f86dd426cc34755d08",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "batch0-alt-W4404247797",
+      "url": "https://mdpi-res.com/d_attachment/applsci/applsci-14-10337/article_deploy/applsci-14-10337.pdf",
+      "path": "work/sources/batch0-alt-W4404247797.txt",
+      "locator": "Section3.3, PDF pp.9–10",
+      "passage": "Contrasts Huang’s two-stream attention framework with Pu’s 3D-ResNet/CTC iterative alignment and Mittal’s modified LSTM, reporting performance for each.",
+      "sha256": "2a9f472823e2956c9589e3b8e766f4856b18619dc14d36ce52641b74466c0a15",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "Independent human eligibility assessment.",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Huang et al., LS-HAN (reference34)",
+    "Pu et al., Iterative Alignment Network (reference35)"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "Accessibility in online platforms is a critical concern in our increasingly digital world, where information and services are predominantly accessed through the Internet. The purpose of this systematic review is to provide a comprehensive overview of the current state of the art in online accessibility technologies, and it is focused on key tools such as sign language recognition, speech-to-text, text-to-speech, and voice recognition. Despite advancements in digital inclusivity, numerous technical limitations persist, which limit the accessibility of online content for individuals with disabilities. Our findings indicate that while speech and voice technologies have achieved good accuracies and low word error rates, further research is needed to improve the accuracy and usability of sign language recognition systems, especially for continuous sign language recognition, as they have low accuracy. In this review, we analyzed research articles and publications from well-known databases, including Google Scholar, Elsevier, IEEE Xplore, and Springer. In order to ensure a high standard of quality, we applied the PRISMA 2020 and PEDro methodologies to quantitatively and qualitatively filter the thousands of articles provided by these databases, and we selected only studies that were related to our study. Key areas of investigation included the performance and accuracy of sign language interfaces, speech-to-text, text-to-speech, and speech recognition applications and the compatibility of these technologies with different platforms and devices. This review also explores the role of emerging technologies such as artificial intelligence (AI) and machine learning (ML) in enhancing accessibility and personalizing user experiences. Through a critical analysis of current solutions and a discussion of existing gaps, this paper offers insights into potential improvements and future directions for creating more accessible online environments. The findings might be valuable to researchers and developers dedicated to promoting digital inclusivity and equality.",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

@@ -1,0 +1,630 @@
+[
+  {
+    "openalex_id": "W2992983807",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "ibrahim2020-author"
+    ],
+    "description": "Survey of CSLR methods, movement epenthesis and benchmark datasets.",
+    "reason": "Table 2 compares multiple visual CSLR studies, satisfying M1–M3. Publication-window compliance remains unresolved separately.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "ibrahim2020-author",
+        "url": "https://fci.stafpu.bu.edu.eg/Computer%20Science/1273/publications/nada%20bahaa%20ibrahim%20ahmed_1205-1227.pdf",
+        "path": "work/sources/ibrahim2020-author.pdf",
+        "locator": "Visually inspected PDF pp.1,6,9,12,15; Table 2 p.12 (printed1216)",
+        "passage": "Table 2 contrasts Kelly’s visual GT-HMM with Yang and Lee’s CRF+AAM, their features and sentence datasets. Abstract identifies synthesis of earlier articles."
+      }
+    ],
+    "unresolved_issues": [
+      "OpenAlex date 2019 conflicts with PDF issue year 2020; publication-window compliance unresolved."
+    ],
+    "next_action": "Verify publication date and obtain independent human assessment.",
+    "classification": "dedicated",
+    "qualifying_studies": [
+      "Yang and Lee (2011), CRF+AAM",
+      "Kelly et al. (2011), GT-HMM"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": ""
+  },
+  {
+    "openalex_id": "W3046952127",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "batch0-alt-W3046952127"
+    ],
+    "description": "Survey of visual deep-learning models for isolated and continuous sign recognition.",
+    "reason": "Repository abstract explicitly supports review purpose, continuous recognition and vision scope; advance to full text.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "batch0-alt-W3046952127",
+        "url": "https://vbn.aau.dk/en/publications/sign-language-recognition-a-deep-survey/",
+        "path": "work/sources/batch0-alt-W3046952127.txt",
+        "locator": "Abstract",
+        "passage": "Taxonomy covers isolated and continuous recognition, datasets, applications and hybrid vision-based deep-learning models."
+      }
+    ],
+    "unresolved_issues": [
+      "Full text not obtained; publisher response was a redirect page."
+    ],
+    "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [],
+    "decoded_abstract": ""
+  },
+  {
+    "openalex_id": "W4285792148",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "batch0-web-taxonomy"
+    ],
+    "description": "Survey and taxonomy of sign acquisition, datasets and recognition techniques.",
+    "reason": "Publisher abstract includes continuous sentence recognition and visual/multimodal processing; advance to full text.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "batch0-web-taxonomy",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0952197622002925",
+        "path": "work/sources/batch0-web-taxonomy.txt",
+        "locator": "First article abstract; Sign acquisition devices snippet",
+        "passage": "Reviews fingerspelling, isolated words and continuous sentence recognition; acquisition includes video cameras. Do not confuse the citing Alyami article abstract with this candidate."
+      }
+    ],
+    "unresolved_issues": [
+      "Full text unavailable; direct publisher access failed."
+    ],
+    "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [],
+    "decoded_abstract": ""
+  },
+  {
+    "openalex_id": "W4387844301",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "batch0-W4387844301"
+    ],
+    "description": "Review of SLR frameworks, algorithms and datasets across alphabets, words and sentences.",
+    "reason": "Publisher abstract supports synthesis and possible visual CSLR coverage; advance to full text.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "batch0-W4387844301",
+        "url": "https://doi.org/10.1007/s00138-023-01479-y",
+        "path": "work/sources/batch0-W4387844301.txt",
+        "locator": "Abstract",
+        "passage": "Review categorizes recognition into alphabets, words and sentences and summarizes studies and datasets; describes progression to continuous SLR."
+      }
+    ],
+    "unresolved_issues": [
+      "Publisher provides a subscription preview; full-text threshold unverified."
+    ],
+    "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [],
+    "decoded_abstract": ""
+  },
+  {
+    "openalex_id": "W4404247797",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "openalex-W4404247797",
+      "batch0-alt-W4404247797"
+    ],
+    "description": "Accessibility review covering sign recognition alongside speech technologies.",
+    "reason": "Section3.3 compares visual CSLR methods and results for Huang, Pu and Mittal, satisfying the project threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W4404247797",
+        "url": "https://doi.org/10.3390/app142210337",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W4404247797 / abstract_inverted_index",
+        "passage": "Abstract: Reviews online accessibility technologies, including continuous SLR and recognition methods."
+      },
+      {
+        "source_id": "batch0-alt-W4404247797",
+        "url": "https://mdpi-res.com/d_attachment/applsci/applsci-14-10337/article_deploy/applsci-14-10337.pdf",
+        "path": "work/sources/batch0-alt-W4404247797.txt",
+        "locator": "Section3.3, PDF pp.9–10",
+        "passage": "Contrasts Huang’s two-stream attention framework with Pu’s 3D-ResNet/CTC iterative alignment and Mittal’s modified LSTM, reporting performance for each."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "Independent human eligibility assessment.",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Huang et al., LS-HAN (reference34)",
+      "Pu et al., Iterative Alignment Network (reference35)"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": "Accessibility in online platforms is a critical concern in our increasingly digital world, where information and services are predominantly accessed through the Internet. The purpose of this systematic review is to provide a comprehensive overview of the current state of the art in online accessibility technologies, and it is focused on key tools such as sign language recognition, speech-to-text, text-to-speech, and voice recognition. Despite advancements in digital inclusivity, numerous technical limitations persist, which limit the accessibility of online content for individuals with disabilities. Our findings indicate that while speech and voice technologies have achieved good accuracies and low word error rates, further research is needed to improve the accuracy and usability of sign language recognition systems, especially for continuous sign language recognition, as they have low accuracy. In this review, we analyzed research articles and publications from well-known databases, including Google Scholar, Elsevier, IEEE Xplore, and Springer. In order to ensure a high standard of quality, we applied the PRISMA 2020 and PEDro methodologies to quantitatively and qualitatively filter the thousands of articles provided by these databases, and we selected only studies that were related to our study. Key areas of investigation included the performance and accuracy of sign language interfaces, speech-to-text, text-to-speech, and speech recognition applications and the compatibility of these technologies with different platforms and devices. This review also explores the role of emerging technologies such as artificial intelligence (AI) and machine learning (ML) in enhancing accessibility and personalizing user experiences. Through a critical analysis of current solutions and a discussion of existing gaps, this paper offers insights into potential improvements and future directions for creating more accessible online environments. The findings might be valuable to researchers and developers dedicated to promoting digital inclusivity and equality."
+  },
+  {
+    "openalex_id": "W4409426808",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W4409426808"
+    ],
+    "description": "Review of Sinhala recognition methods, datasets and multimodal cues.",
+    "reason": "Retain this broader review because qualifying CSLR coverage is possible; abstract limitations do not demonstrate failure.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "uncertain",
+        "reason": "Extent of continuous-sign synthesis requires full text."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W4409426808",
+        "url": "https://doi.org/10.1109/icicml63543.2024.10957797",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W4409426808 / abstract_inverted_index",
+        "passage": "Abstract: Reviews Sinhala recognition techniques and multimodal hand, facial and body cues; identifies weak continuous recognition."
+      }
+    ],
+    "unresolved_issues": [
+      "Publisher returned empty content; alternate author-sharing route denied access."
+    ],
+    "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [],
+    "decoded_abstract": "The paper reviews the progress in Sinhala Sign Language recognition (SSL) over the last decade, tracing the techniques from early image processing to advanced deep learning models, indicating methodologies involved, datasets used, and challenges. The paper shows that the evolution has progressed from basic classifiers to sophisticated machine learning techniques that integrate CNNs, RNNs, and transformer architectures. It also presents the implementation of multimodal systems using hand gestures, facial expressions, and body postures. The review identifies the limitations of current recognition in SSL, such as scarce complete datasets, technical difficulties, and a lack of robust continuous recognition. Finally, it points out future research directions, stressing that further work must focus on growing datasets, making lightweight models for edge devices, and collaboration for further growth in SSL recognition technology."
+  },
+  {
+    "openalex_id": "W4416744680",
+    "human_decision": "not_screened",
+    "ai_decision": "exclude",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "openalex-W4416744680",
+      "batch0-W4416744680"
+    ],
+    "description": "Systematic review of LIBRAS recognition, translation and synthesis.",
+    "reason": "Results identify only Bastos as continuous recognition; other compared systems are isolated recognition or generation. No comparison of two distinct CSLR studies was identified in Sections4–7.",
+    "failed_criteria": [
+      "M2"
+    ],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "fail",
+        "reason": "Does not meet the project-specific two-CSLR-study comparison threshold."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W4416744680",
+        "url": "https://doi.org/10.5753/webmedia.2025.16082",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+        "locator": "W4416744680 / abstract_inverted_index",
+        "passage": "Abstract: Systematically reviews AI and computer vision for LIBRAS; flags continuous recognition difficulties."
+      },
+      {
+        "source_id": "batch0-W4416744680",
+        "url": "https://sol.sbc.org.br/index.php/webmedia/article/download/38014/37792",
+        "path": "work/sources/batch0-W4416744680.txt",
+        "locator": "Sections4.1–4.3, Tables3–5, PDF pp.6–10; Sections6–7 pp.10–11",
+        "passage": "Bastos is described as continuous/isolated recognition; de Brito, Ruiz and de Avellar Sarmento are isolated/word-level, while Flores Brongar and Silva generate/translate Portuguese into LIBRAS. Continuous recognition remains largely unexplored."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "Independent human eligibility assessment.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": "This Systematic Literature Review (SLR) investigates the application of Artificial Intelligence (AI), specifically with Computer Vision (CV) and Natural Language Processing (NLP) techniques for Brazilian Sign Language (LIBRAS) recognition, translation, and interpretation. Following the PRISMA protocol and using the Parsifal tool to support protocol definition and study management, 77 studies were initially identified. After removing duplicates and applying exclusion criteria, 23 studies were selected for in-depth analysis. The review addresses three research questions: (i) AI-based solutions currently employed for LIBRAS recognition, (ii) reported performance metrics and evaluation results, and (iii) datasets used for training and testing, along with their characteristics and limitations. The findings highlight advances in deep learning architectures and computer vision pipelines, while revealing persistent challenges such as limited integration of non-manual features, scarcity of large-scale and multimodal datasets, difficulties in continuous sign recognition, heterogeneous annotation practices, and inadequacy of common bilingual evaluation metrics for capturing syntactic and semantic differences between LIBRAS and Portuguese. Moreover, deployment-related factors, including inference time and computational cost, remain underexplored. These insights provide guidance for future research toward more accurate, efficient, and inclusive LIBRAS recognition systems."
+  },
+  {
+    "openalex_id": "W6981314463",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "openalex-W6981314463",
+      "batch0-alt-W6981314463"
+    ],
+    "description": "Systematic review of dynamic recognition and translation models, datasets and metrics.",
+    "reason": "Tables5–6 distinguish continuous sign-to-gloss studies and compare their architectures, meeting M1–M3.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W6981314463",
+        "url": "https://openalex.org/W6981314463",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+        "locator": "W6981314463 / abstract_inverted_index",
+        "passage": "Abstract: Reviews 85 dynamic SLRT articles, including isolated and continuous systems, models, datasets and evaluation."
+      },
+      {
+        "source_id": "batch0-alt-W6981314463",
+        "url": "http://www.jatit.org/volumes/Vol102No21/28Vol102No21.pdf",
+        "path": "work/sources/batch0-alt-W6981314463.txt",
+        "locator": "Tables5–6, PDF pp.8–10; discussion p.17; references20–21",
+        "passage": "Sign2Gloss studies include LIST’s CNN-LSTM and Elakkiya’s GAN with 3D-CNN/LSTM; discussion compares continuous architectures and alignment needs."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "Independent human eligibility assessment.",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Amrutha et al. (2023), LIST [20]",
+      "Elakkiya et al. (2021), optimized GAN [21]"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": "Sign language is the communication tool for deaf and hard-of-hearing (DHH) communities all around the world. But it is still difficult to establish proper communication between hearing and DHH individuals. As a result, numerous explorations and investigations that focused on sign language recognition and translation (SLRT) have garnered significant attention from researchers in related fields. This systematic literature review aims to provide a comprehensive study on current trends of state-of-the-art dynamic SLRT models proposed in 85 journal articles found in the Scopus database from 2020 to 2024. Based on the selected articles, this review produced an in-depth analyzation of dynamic SLRT models in terms of their frameworks, deep learning techniques, datasets, pre-processing techniques, and evaluation metrics used. Additionally, this review also highlights both the advancements and ongoing challenges in the domain. Notably, there have been considerable development in isolated and continuous SLRT models, particularly through the combinations of deep learning algorithms such as Convolutional Neural Network, Recurrent Neural Network and Transformer models, with suitable datasets. However, the complexities and challenges of developing robust continuous SLRT models for real-time SLRT persist. This systematic literature review was prepared to serve as a foundational reference that will assist future studies on dynamic SLRT."
+  },
+  {
+    "openalex_id": "W7116134615",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "openalex-W7116134615",
+      "cai2025-pdf"
+    ],
+    "description": "Broad narrative review of recognition modalities and neural methods despite its method-like title.",
+    "reason": "Section2 synthesizes prior methods; its continuous-recognition performance comparison and visual CSLR discussion satisfy the threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W7116134615",
+        "url": "https://doi.org/10.61173/2hpmfy05",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W7116134615 / abstract_inverted_index",
+        "passage": "Abstract: Explicitly describes itself as a review of recognition methods, limitations and applications."
+      },
+      {
+        "source_id": "cai2025-pdf",
+        "url": "https://stecep.deanfrancis.press/article/download/418/418/1673",
+        "path": "work/sources/cai2025-pdf.pdf",
+        "locator": "Section2.2, Figure4 PDF p.5 (visually inspected); Section2.3.4 p.9",
+        "passage": "Figure4 compares Kong/Ranganath and Tripathi/Nandi among eight continuous-recognition studies; Section2.3.4 discusses visual sequence-recognition methods. The figure is attributed to reference5."
+      }
+    ],
+    "unresolved_issues": [
+      "Figure4 reuses another review’s comparison; reported accuracies are not independently validated."
+    ],
+    "next_action": "Independent human eligibility assessment.",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Kong and Ranganath (Figure4)",
+      "Tripathi and Nandi (Figure4)"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": "Sign language is a visual language that uses a variety of hand gesture combinations to express distinct ideas. It acts as a bridge to communicate with the outside world and is a vital communication tool for the deaf and mute community. Recent years have seen a fast increase in computer technology, opening up new avenues for research on sign language recognition through developments in computer graphics, computer vision, neural networks, and associated hardware. However, many sign language movements are still hard to tell apart because of the intrinsic constraints of visual component combinations. Natural language can be incorporated to help with the recognition process in order to overcome this difficulty. This review study highlights the benefits and drawbacks of modern approaches to sign language recognition in terms of recording, identifying, translating, and depicting motions. The primary difficulties in the field of sign language technology are also covered, along with the introduction of a number of useful applications. In order to encourage and support additional achievements in this field, future research directions and possible developments are finally suggested."
+  },
+  {
+    "openalex_id": "W7155605949",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "openalex-W7155605949",
+      "batch0-W7155605949"
+    ],
+    "description": "Review of Arabic alphabet, isolated-word and continuous-sentence recognition.",
+    "reason": "Section3.6 and Table5 compare multiple visual continuous-ArSL studies, satisfying the project threshold.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W7155605949",
+        "url": "https://doi.org/10.66279/hk0z2k19",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0007.json",
+        "locator": "W7155605949 / abstract_inverted_index",
+        "passage": "Abstract: Reviews Arabic alphabet, isolated and continuous recognition, including vision and sensor methods."
+      },
+      {
+        "source_id": "batch0-W7155605949",
+        "url": "https://pub.scientificirg.com/index.php/CDIS/article/download/217/51",
+        "path": "work/sources/batch0-W7155605949.txt",
+        "locator": "Section3.6 PDF p.11; Table5 p.12; references41,43",
+        "passage": "Contrasts motion-image/biLSTM sentence recognition with ArabSign’s RGB/depth/skeleton encoder-decoder benchmark; reports recognition rates and WER."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "Independent human eligibility assessment.",
+    "classification": "broader",
+    "qualifying_studies": [
+      "Shanableh, two-stage continuous Arabic recognition [41]",
+      "Luqman, ArabSign [43]"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": "Sign language is the primary means of communication for people who are deaf or hard of hearing, which makes accessibility technologies increasingly important. In this context, Automatic Arabic Sign Language Recognition (ArSLR) has gained significant attention to enable effective communication between sign and spoken languages. This paper presents a comprehensive review of existing ArSLR approaches, covering the recognition of Arabic alphabets, isolated words, and continuous signs. It discusses both vision-based and sensor-based methods, explaining how they work and highlighting their strengths and limitations. The paper also reviews available datasets and commonly used evaluation methods in the literature. Several key challenges are explored, including variations between signers, complex backgrounds, and the limited availability of large and diverse datasets. In addition, less-studied areas such as backhand gestures and continuous sign recognition are highlighted as important directions for further research. Finally, the paper looks at recent trends, including the use of advanced sensors and the development of more robust, signer-independent models. By identifying current limitations and research gaps, this review aims to guide future work toward building more accurate, reliable, and practical ArSLR systems."
+  },
+  {
+    "openalex_id": "W7170206172",
+    "human_decision": "not_screened",
+    "ai_decision": "exclude",
+    "stage": "title_abstract",
+    "evidence_level": "abstract_only",
+    "source_ids": [
+      "openalex-W7170206172"
+    ],
+    "description": "Correction/Expression-of-Concern notice associated with a separate review.",
+    "reason": "The saved abstract identifies a correction notice rather than a synthesis of prior CSLR studies.",
+    "failed_criteria": [
+      "M1"
+    ],
+    "criteria": {
+      "M1": {
+        "status": "fail",
+        "reason": "Correction notice, not a literature review."
+      },
+      "M2": {
+        "status": "uncertain",
+        "reason": "Not independently assessed after M1 failure."
+      },
+      "M3": {
+        "status": "uncertain",
+        "reason": "Not independently assessed after M1 failure."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W7170206172",
+        "url": "https://doi.org/10.1109/access.2026.3715908",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W7170206172 / abstract_inverted_index",
+        "passage": "Abstract: Presents corrections to the paper identified as an Expression of Concern."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "Independent human confirmation of proposed exclusion.",
+    "classification": null,
+    "qualifying_studies": [],
+    "assessments": [],
+    "decoded_abstract": "Presents corrections to the paper, (Expression of Concern: Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review)."
+  },
+  {
+    "openalex_id": "W7223099906",
+    "human_decision": "not_screened",
+    "ai_decision": "include",
+    "stage": "full_text",
+    "evidence_level": "full_text",
+    "source_ids": [
+      "openalex-W7223099906",
+      "indian2026-docx"
+    ],
+    "description": "Review of continuous Indian SLR centered on the SignFlow framework.",
+    "reason": "SectionIII and TableI compare multiple prior CSLR methods; the paper expressly reports no new experiments.",
+    "failed_criteria": [],
+    "criteria": {
+      "M1": {
+        "status": "pass",
+        "reason": "Synthesizes prior research."
+      },
+      "M2": {
+        "status": "pass",
+        "reason": "CSLR coverage is supported at the assessed stage."
+      },
+      "M3": {
+        "status": "pass",
+        "reason": "Includes visual recognition approaches."
+      }
+    },
+    "evidence": [
+      {
+        "source_id": "openalex-W7223099906",
+        "url": "https://doi.org/10.5281/zenodo.23527485",
+        "path": "work/runs/20261025T080219770846Z-pilot/raw/0003.json",
+        "locator": "W7223099906 / abstract_inverted_index",
+        "passage": "Abstract: Reviews continuous Indian SLR and SignFlow; explicitly claims no new experiments."
+      },
+      {
+        "source_id": "indian2026-docx",
+        "url": "https://zenodo.org/api/records/23527486/files/AI-Based%20Real-Time%20Continuous%20Indian%20Sign%20Language%20Recognition%20A%20Review.docx/content",
+        "path": "work/sources/indian2026-docx.txt",
+        "locator": "Abstract; SectionIII.A–C and TableI",
+        "passage": "MSTNet’s temporal Transformer features are compared with AdaSize’s adaptive resolution and signer-removal methods; SignFlow results are attributed to their original authors."
+      }
+    ],
+    "unresolved_issues": [],
+    "next_action": "Independent human eligibility assessment.",
+    "classification": "dedicated",
+    "qualifying_studies": [
+      "Zhu et al. (2024), MSTNet",
+      "Hu et al. (2024), AdaSize"
+    ],
+    "assessments": [
+      {
+        "stage": "title_abstract",
+        "ai_decision": "include",
+        "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+      }
+    ],
+    "decoded_abstract": "Sign language recognition (SLR) translates visual gestures into text or speech and can narrow the communication gap between signers and non-signers. In India, about 18 million deaf people depend on Indian Sign Language (ISL), yet government, healthcare and digital services rarely support it. Recognising a whole sentence of signs (continuous SLR, or CSLR) is much harder than recognising single signs, and doing so in real time adds constraints of latency, device variation and signer variation. This paper reviews AI-based approaches to continuous ISL recognition and gives a detailed, critical study of SignFlow, a real-time CSLR network proposed by Geetha et al. (IEEE Access, 2025). SignFlow combines a mixed-convolution 3D ResNet (MC3_18) for spatial features with an 8-layer Transformer encoder for temporal modelling, trained end to end with Connectionist Temporal Classification (CTC). Both components are pre-trained on ISL data, the CNN on isolated word videos and the Transformer on MediaPipe pose and hand features, and the input pipeline uses alignment correction and similarity-based down-sampling to 6 frames per second. We describe the datasets, architecture, training strategy, metrics (Word Error Rate and the Detection Rate), ablations and deployment results reported for SignFlow, including a WER of 19 on the Continuous ISL corpus and a load test of 74 concurrent users on one GPU. We then discuss strengths, weaknesses in the evidence, applications and future research directions. This is a review: all SignFlow results are those reported by its original authors and no new experiments are claimed. Keywords: Indian Sign Language, continuous sign language recognition, SignFlow, 3D CNN, Transformer, CTC, MediaPipe, real-time recognition, accessibility"
+  }
+]

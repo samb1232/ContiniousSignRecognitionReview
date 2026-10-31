@@ -1,0 +1,74 @@
+{
+  "paper": {
+    "title": "A Critical Review on Video-Based Continuous Sign Language Recognition",
+    "year": 2025,
+    "doi": "https://doi.org/10.2991/978-94-6463-858-5_161",
+    "openalex_url": "https://openalex.org/W4415763805"
+  },
+  "openalex_id": "W4415763805",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "sivakumari2025"
+  ],
+  "description": "A video-based CSLR review covering visual feature extraction, temporal modelling, datasets, evaluation and limitations of deep-learning methods.",
+  "reason": "Meets M1–M3 as a dedicated CSLR review. Table 2 compares multiple continuous-recognition architectures, datasets, reported WER and trade-offs, including multi-stream CNN–LSTM–HMM and staged-optimization approaches.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Abstract and body explicitly review recent CSLR advances."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Table2 provides a direct comparison of several prior continuous recognition studies."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "RGB video-based models are the subject of Table2 and Section3."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "sivakumari2025",
+      "url": "https://www.atlantis-press.com/article/126017418.pdf",
+      "path": "work/sources/sivakumari2025.txt",
+      "locator": "PDF p.1 Abstract; pp.6–7 Table2",
+      "passage": "Table2 compares Weakly Supervised Learning with Multi-Stream CNN-LSTM-HMMs and Recurrent convolutional neural networks for continuous sign language recognition by staged optimization, including PHOENIX datasets, methods, WER and merits/demerits.",
+      "sha256": "93a422b1570f2d78a299fbf7264577348ac266141e2d5384aba9ccc0bf62a8d7",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": "dedicated",
+  "qualifying_studies": [
+    "Koller et al., Weakly Supervised Learning with Multi-Stream CNN-LSTM-HMMs",
+    "Recurrent convolutional neural networks for continuous sign language recognition by staged optimization"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "sivakumari2025"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

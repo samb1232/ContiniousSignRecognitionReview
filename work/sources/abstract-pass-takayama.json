@@ -1,0 +1,13 @@
+{
+  "source_id": "abstract-pass-takayama",
+  "openalex_id": "W7124904654",
+  "url": "https://www.scitepress.org/Link.aspx?doi=10.5220%2F0010899400003124",
+  "doi": "10.5220/0010899400003124",
+  "locator": "Publisher abstract",
+  "passage": "Takayama and colleagues evaluate skeleton-based online continuous word recognition using monotonic attention on isolated-word and sentence videos. The abstract confirms this study's CSLR task; it does not establish a second distinct study in the review.",
+  "retrieved_utc": "2026-10-31T17:07:01.802240+00:00",
+  "method": "Web-tool inspection; saved analyst paraphrase, not raw HTTP response",
+  "body": "abstract-pass-takayama.txt",
+  "text": "abstract-pass-takayama.txt",
+  "sha256": "24d585a8e953ca381efacde1406a055ca7e8729c9a58481f6fc517b070e682b1"
+}

@@ -12,6 +12,7 @@ from datetime import datetime
 from html import escape
 import json
 from pathlib import Path
+from screening_report import verdict_label
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'work'
@@ -51,6 +52,9 @@ def main(check=False):
     assert dict(ai) == summary['ai_decisions'], 'Rebuild summary with report.py first'
     assert dict(human) == summary['human_decisions'], 'Rebuild summary with report.py first'
     stages = Counter((r['stage'], r['ai_decision']) for r in records)
+    decisions = {r['openalex_id']: r for r in records}
+    stage_summary = '; '.join(f"{count} {verdict_label({'ai_decision': verdict, 'stage': stage}).lower()} ({stage.replace('title_abstract', 'title/abstract').replace('full_text', 'full text')})"
+                              for (stage, verdict), count in sorted(stages.items()))
     queries = []
     manifests = {}
     for runid in analysis['search_runs'] + analysis['verification_runs']:
@@ -88,10 +92,10 @@ def main(check=False):
     sections = [f'''<header>
 <p class="eyebrow">Literature review · Search &amp; selection</p>
 <h1>Finding reviews of continuous sign language recognition</h1>
-<p class="lead">How the review candidates were retrieved from OpenAlex, and the criteria that will guide their assessment.</p>
+<p class="lead">How the review candidates were retrieved from OpenAlex, and how they were assessed against the screening criteria.</p>
 <div class="result"><div><span class="result-number">{len(records)}</span><strong>candidates collected</strong></div>
 <p>{unique} from OpenAlex discovery searches + {doi_added} found through references and verified by DOI.</p></div>
-<p class="status">Screening has not started: {ai['not_screened']} candidates await AI assessment and {human['not_screened']} await manual assessment.</p>
+<p class="status">AI proposals: {h(stage_summary)}. Manual assessment: {human['not_screened']} not screened.</p>
 </header>
 <nav aria-label="Report sections"><a href="#queries">1. Search rules</a><a href="#criteria">2. Screening criteria</a><a href="#candidates">3. Candidates</a></nav>''']
     def readable_date(value):
@@ -129,8 +133,18 @@ def main(check=False):
         paper=link(w.get('doi') or w['id'],w['display_name'])+'<br>'+h(w['publication_year'])+' · '+link(w['id'],wid)
         if w.get('doi'): paper+='<br>'+link(w['doi'],w['doi'])
         if wid=='W2992983807': paper+='<p>Date validation: OpenAlex 2019-12-02 falls outside the discovery window; saved institutional PDF says 2020 and publisher says 2022-09-21. Window compliance unresolved; verify publication date. DOI route did not enforce dates.</p>'
-        rows.append([paper, ' · '.join(link('#query-'+q,q) for q in routes),'Not screened','Not screened'])
-    sections.append('<section id="candidates"><p class="eyebrow">03 · Collected records</p><h2>Candidates</h2><p class="section-intro">Follow each query ID to see how the paper was retrieved. Both screening columns await assessment.</p>'+table(['Paper','Discovery routes','AI screening decision','Manual screening decision'],rows,'All 34 candidates; no current eligibility judgments')+'</section>')
+        record = decisions[wid]
+        decision = link('support/papers/'+wid+'.md', verdict_label(record))
+        if record['ai_decision'] != 'not_screened':
+            decision += '<br><small>'+h(record['stage'].replace('title_abstract', 'title/abstract').replace('full_text', 'full text'))+'</small>'
+            decision += '<p>'+h(record['reason'])+'</p>'
+            if record['failed_criteria']:
+                decision += 'Failed: ' + ', '.join(link('#'+c,c) for c in record['failed_criteria'])
+            if record['ai_decision'] == 'uncertain':
+                decision += '<p>Next: '+h(record['next_action'])+'</p>'
+        human_label = {'not_screened':'Not screened','include':'Include','exclude':'Exclude','uncertain':'Uncertain'}[record['human_decision']]
+        rows.append([paper, ' · '.join(link('#query-'+q,q) for q in routes),decision,h(human_label)])
+    sections.append('<section id="candidates"><p class="eyebrow">03 · Collected records</p><h2>Candidates</h2><p class="section-intro">Query IDs link to exact searches. AI verdicts link to short paper reports and supporting evidence. AI proposals are separate from independent manual decisions.</p>'+table(['Paper','Discovery routes','AI screening decision','Manual screening decision'],rows,f'All {len(records)} candidates; AI proposals by assessment stage')+'</section>')
     css = '''
 *{box-sizing:border-box}html{scroll-padding-top:24px}body{margin:0;background:#f3f5f7;color:#283642;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:1180px;margin:32px auto;padding:48px 56px;background:#fff;border:1px solid #e1e7eb;border-radius:12px}
@@ -139,7 +153,7 @@ a{color:#12627c;text-underline-offset:3px}a:hover{color:#0a4039}a:focus-visible,
 .result{display:flex;align-items:center;gap:32px;margin:28px 0 12px;padding:22px 26px;background:#edf5f2;border-left:4px solid #397666;border-radius:0 8px 8px 0}.result>div{flex:0 0 180px}.result-number{display:block;font-size:2.8rem;font-weight:750;line-height:1.1;color:#1d594c}.result strong{font-size:.86rem}.result p{max-width:540px}.status{font-size:.9rem;color:#536570}
 nav{display:flex;flex-wrap:wrap;gap:10px 24px;margin:28px 0 18px}nav a{font-size:.9rem;font-weight:650}details{border:1px solid #dbe4e8;border-radius:6px;margin:16px 0;background:#fafcfc}summary{padding:12px 16px;cursor:pointer;font-size:.9rem;font-weight:650;color:#375561}.details-body{padding:0 18px 18px}.metadata{font-size:.85rem}.metadata li{overflow-wrap:anywhere;margin:12px 0}
 section{border-top:1px solid #dce5e8;padding:36px 0 8px;margin-top:30px}.rules-grid,.stages{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.rule,.stages article{background:#f5f8fa;border:1px solid #e2e9ed;border-radius:8px;padding:20px}.rule h3{margin-top:0}.rule p,.stages p{font-size:.92rem}.criteria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0 30px}.criterion{padding:22px;border:1px solid #cdded8;border-top:3px solid #397666;border-radius:6px}.criterion-id{display:inline-block;color:#245c4f;font-weight:750;font-size:.85rem}.criterion h3{margin:12px 0}.criterion p{font-size:.92rem}.assessment-note{padding:18px 22px;border-left:3px solid #ac8546;background:#faf7f0;margin:24px 0}.assessment-note h3{margin-top:0}.assessment-note p{font-size:.92rem}
-.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.82rem;line-height:1.55}caption{text-align:left;color:#596d78;font-size:.8rem;padding:0 0 12px}th,td{padding:14px 12px;border-bottom:1px solid #dfe7eb;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf3f6;font-weight:700;color:#2a4857}tbody tr:nth-child(even){background:#fafcfd}.query-id{font-weight:750;white-space:nowrap}#queries th:nth-child(3){width:32%}#queries th:nth-child(4){width:25%}#candidates th:first-child{width:48%}#candidates th:nth-child(2){width:20%}#candidates td:nth-child(n+3){color:#596a74}code{font:.78rem/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f4f6;padding:16px;border-radius:5px;font-size:.8rem}.reconciliation{font-size:.88rem;color:#526570;margin-top:22px}:target{outline:2px solid #bd9357;outline-offset:5px}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.82rem;line-height:1.55}caption{text-align:left;color:#596d78;font-size:.8rem;padding:0 0 12px}th,td{padding:14px 12px;border-bottom:1px solid #dfe7eb;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf3f6;font-weight:700;color:#2a4857}tbody tr:nth-child(even){background:#fafcfd}.query-id{font-weight:750;white-space:nowrap}#queries th:nth-child(3){width:32%}#queries th:nth-child(4){width:25%}#candidates th:first-child{width:42%}#candidates th:nth-child(2){width:12%}#candidates th:nth-child(3){width:32%}#candidates th:nth-child(4){width:14%}#candidates td:nth-child(n+3){color:#596a74}code{font:.78rem/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f4f6;padding:16px;border-radius:5px;font-size:.8rem}.reconciliation{font-size:.88rem;color:#526570;margin-top:22px}:target{outline:2px solid #bd9357;outline-offset:5px}
 @media(max-width:760px){main{margin:0;border:0;border-radius:0;padding:28px 18px}h1{font-size:1.95rem}h2{font-size:1.55rem}.rules-grid,.criteria-grid,.stages{grid-template-columns:1fr}.result{gap:18px;padding:18px}.result>div{flex-basis:110px}.result p{font-size:.9rem}.result-number{font-size:2.3rem}th,td{padding:10px 8px}#queries table{min-width:660px}#candidates table{min-width:600px}section{padding-top:26px}}
 @media print{@page{margin:14mm}body{background:#fff;font-size:9pt}main{margin:0;padding:0;border:0;max-width:none}h1{font-size:22pt}h2{font-size:16pt}h3{font-size:11pt}nav{display:none}section{margin-top:16px;padding:18px 0 0}.table-wrap{overflow:visible}table,#queries table,#candidates table{font-size:8pt;min-width:0;table-layout:fixed}th,td{padding:7px 5px}tr,.criterion,.rule,.stages article{break-inside:avoid}thead{display:table-header-group}h2,h3,h4{break-after:avoid}a{color:inherit}.criteria-grid{grid-template-columns:repeat(3,1fr);gap:10px}.criterion{padding:12px}.rules-grid,.stages{grid-template-columns:1fr 1fr;gap:12px}.criterion p,.rule p,.stages p,.assessment-note p{font-size:9pt}.result{margin:16px 0;padding:12px}.result-number{font-size:26pt}.metadata,.execution{display:none}.eyebrow{font-size:8pt}}
 '''

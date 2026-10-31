@@ -1,0 +1,73 @@
+{
+  "paper": {
+    "title": "Systematic Mapping and Benchmarking of Sign Language Datasets",
+    "year": 2026,
+    "doi": null,
+    "openalex_url": "https://openalex.org/W7162827361"
+  },
+  "openalex_id": "W7162827361",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen1-W7162827361-web"
+  ],
+  "description": "Systematically maps sign-language datasets and their recognition applications.",
+  "reason": "Sections 4.9.2 and 5.3.2 compare prior CSLR datasets and evaluation characteristics. This qualifies as a broader mapping review.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Systematic mapping synthesizes existing dataset publications."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Dedicated subsections compare multiple CSLR studies on datasets and evaluation."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Comparison concerns continuous video corpora."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen1-W7162827361-web",
+      "url": "https://doria.fi/bitstream/handle/10024/194915/begum_kaniz.pdf?isAllowed=y&sequence=3",
+      "path": "work/sources/screen1-W7162827361-web.txt",
+      "locator": "PDF p.42 Section 4.9.2; p.47 Section 5.3.2; p.54 references [23]–[24]",
+      "passage": "The CSLR subsections compare Forster et al. PHOENIX with von Agris and Kraiss SIGNUM in signer coverage, vocabulary and evaluation purpose, also discussing CE-CNSL.",
+      "sha256": "9c5cc5bdb3d333db0fefb9f98b0e3fba1401abec8df4dcd2fc6fa23adb12b80a",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Direct PDF download blocked; inspected PDF sections are archived as web-tool text excerpts."
+  ],
+  "next_action": "Human verification can consult the linked PDF sections.",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Forster et al. (2014), Extensions of the sign language recognition and translation corpus RWTH-PHOENIX-Weather",
+    "von Agris and Kraiss (2010), SIGNUM database: Video corpus for signer-independent continuous sign language recognition"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "evidence_level": "abstract_only",
+      "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

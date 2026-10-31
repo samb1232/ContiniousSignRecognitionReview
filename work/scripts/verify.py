@@ -7,9 +7,54 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import csv
+import re
+from collections import Counter
+from html.parser import HTMLParser
+from urllib.parse import urlsplit, unquote
 from retrieve import export
 
 ROOT=Path(__file__).resolve().parents[2]
+
+class Links(HTMLParser):
+    def __init__(self):
+        super().__init__(); self.ids=[]; self.links=[]
+    def handle_starttag(self, tag, attrs):
+        attrs=dict(attrs)
+        if 'id' in attrs:self.ids.append(attrs['id'])
+        if 'href' in attrs:self.links.append(attrs['href'])
+
+def verify_screening():
+    from screening_report import build_reports
+    records=json.loads((ROOT/'work/screening.json').read_text())['records']
+    corpus={i['work']['id'].split('/')[-1]:i for i in json.loads((ROOT/'work/corpus.json').read_text())}
+    assert len(records)==len(corpus)==34
+    assert len({r['openalex_id'] for r in records})==34
+    assert {r['openalex_id'] for r in records}==set(corpus)
+    assert all(r['human_decision']=='not_screened' for r in records)
+    build_reports(records, corpus, check=True)
+    summary=json.loads((ROOT/'work/summary.json').read_text())
+    assert summary['ai_decisions']==dict(Counter(r['ai_decision'] for r in records))
+    for stage, decisions in summary['ai_by_stage'].items():
+        assert decisions==dict(Counter(r['ai_decision'] for r in records if r['stage']==stage))
+    rows=list(csv.DictReader((ROOT/'work/screening.csv').open()))
+    assert len(rows)==34
+    by_id={r['openalex_id']:r for r in records}
+    for row in rows:
+        assert all(row[k]==by_id[row['openalex_id']][k] for k in ('stage','ai_decision','human_decision'))
+    page=ROOT/'html-report/index.html'; parser=Links(); parser.feed(page.read_text())
+    assert len(parser.ids)==len(set(parser.ids)), 'Duplicate HTML anchors'
+    def check_link(url, base):
+        parts=urlsplit(url)
+        if parts.scheme or parts.netloc:return
+        target=(base.parent/unquote(parts.path)).resolve() if parts.path else base
+        assert target.is_file(), f'Broken link: {url} in {base}'
+        if parts.fragment and target==page:
+            assert parts.fragment in parser.ids, f'Broken anchor: {url}'
+    for url in parser.links:check_link(url,page)
+    for md in (ROOT/'html-report/support/papers').glob('*.md'):
+        for url in re.findall(r'\]\(([^)]+)\)',md.read_text()):check_link(url,md)
+    print('PASS: 34 screening records and concise paper reports; decisions, evidence, counts and local links agree.')
 
 def main():
     checked=0
@@ -63,6 +108,12 @@ def main():
         if d.get('body'):assert hashlib.sha256((path.parent/d['body']).read_bytes()).hexdigest()==d['sha256']
     from html_report import main as check_html
     check_html(check=True)
+    verify_screening()
+    (ROOT/'work/verification.json').write_text(json.dumps({
+        'status':'passed', 'checks':'Saved runs, source hashes, screening records, paper reports, HTML and local links',
+        'candidate_count':summary['screened_unique_including_verification'],
+        'ai_by_stage':summary['ai_by_stage'], 'human_decisions':summary['human_decisions']
+    }, indent=2)+'\n')
     print(f'PASS: {checked} runs; raw hashes, cursor termination, query counts, offline exports, source hashes, budget and screening reconciliation.')
 
 if __name__=='__main__':main()

@@ -1,0 +1,74 @@
+{
+  "paper": {
+    "title": "A Comparative Analysis of Techniques and Algorithms for Recognising Sign Language",
+    "year": 2023,
+    "doi": "https://doi.org/10.48550/arxiv.2305.13941",
+    "openalex_url": "https://openalex.org/W4378468504"
+  },
+  "openalex_id": "W4378468504",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "comparative2023"
+  ],
+  "description": "A broad narrative comparison of sign-language recognition techniques, spanning wearable sensors, RGB/depth input and deep-learning architectures.",
+  "reason": "Meets M1–M3 as a broader review. Table I compares Cui’s iterative-training CSLR method with Papastratis’s context-aware CSLR method, including architectures and datasets, despite also covering many isolated-sign studies.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Paper presents a survey and comparative techniques table."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "TableI includes two distinct CSLR studies compared by technique and dataset, identified in refs12–13."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Cui and Papastratis rows describe vision-based methods using PHOENIX video data."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "comparative2023",
+      "url": "https://arxiv.org/pdf/2305.13941",
+      "path": "work/sources/comparative2023.txt",
+      "locator": "PDF pp.3–4 TableI; p.5 refs12–13",
+      "passage": "TableI lists Cui2019 with CNN/temporal convolution/pooling and RWTH-PHOENIX2014, and Papastratis2021 with 2D-CNN/ImageNet and PHOENIX/CSL/GSL. References identify both as continuous sign-language recognition papers.",
+      "sha256": "a8241ec48da499829bc348304c80198427c4598a87f4c67b0f371aaff5e2f609",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Cui, Liu and Zhang (2019), A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training [12]",
+    "Papastratis, Dimitropoulos and Daras (2021), Continuous Sign Language Recognition through a Context-Aware Generative Adversarial Network [13]"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "comparative2023"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

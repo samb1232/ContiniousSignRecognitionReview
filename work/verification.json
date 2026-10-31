@@ -1,3 +1,20 @@
 {
-  "status": "Current screening reset; run verify.py for retrieval and report checks."
+  "status": "passed",
+  "checks": "Saved runs, source hashes, screening records, paper reports, HTML and local links",
+  "candidate_count": 34,
+  "ai_by_stage": {
+    "full_text": {
+      "include": 14,
+      "uncertain": 3,
+      "exclude": 2
+    },
+    "title_abstract": {
+      "include": 11,
+      "uncertain": 1,
+      "exclude": 3
+    }
+  },
+  "human_decisions": {
+    "not_screened": 34
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "source_id": "batch0-W7155605949",
+  "openalex_id": "W7155605949",
+  "url": "https://pub.scientificirg.com/index.php/CDIS/article/download/217/51",
+  "retrieved_utc": "2026-10-31T11:32:42.003477+00:00",
+  "status": 200,
+  "final_url": "https://pub.scientificirg.com/index.php/CDIS/article/download/217/51",
+  "content_type": "application/pdf",
+  "body": "batch0-W7155605949.pdf",
+  "sha256": "81c4d4973db5b30fabe5b030baf5732893e6773e15c4f254bd5783c1f5cad195",
+  "extractor": "pypdf 6.21.2",
+  "pages": 37,
+  "text": "batch0-W7155605949.txt"
+}

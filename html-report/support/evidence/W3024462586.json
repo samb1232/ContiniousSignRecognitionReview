@@ -1,0 +1,73 @@
+{
+  "paper": {
+    "title": "A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training Survey",
+    "year": 2020,
+    "doi": "https://doi.org/10.5281/zenodo.3842830",
+    "openalex_url": "https://openalex.org/W3024462586"
+  },
+  "openalex_id": "W3024462586",
+  "human_decision": "not_screened",
+  "ai_decision": "exclude",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "moni2020"
+  ],
+  "description": "A narrative survey of sensor and camera-based gesture-recognition methods, with discussion of gloves, image processing and neural networks.",
+  "reason": "The full text does not meet M2’s project-specific threshold: its ten survey sections do not compare two identifiable CSLR studies. Cui’s continuous-recognition paper appears only in the references.",
+  "failed_criteria": [
+    "M2"
+  ],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "The literature survey is the main body; it is not merely background to an evaluated new method."
+    },
+    "M2": {
+      "status": "fail",
+      "reason": "Ten numbered survey sections cover mostly gestures/alphabet recognition; no section/table/sustained discussion compares two distinct CSLR studies."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Image-based and webcam methods are discussed."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "moni2020",
+      "url": "https://www.ijtsrd.com/papers/ijtsrd30032.pdf",
+      "path": "work/sources/moni2020.txt",
+      "locator": "PDF pp.1–4 (printed pp.620–623), Literature Survey sections 1–10, Conclusion and References",
+      "passage": "The body reviews sensor gloves, static palm images, PCA posture matching, multimodal sensors and neural gesture classifiers; Cui et al.2019 occurs as reference [1] without discussion. No comparative CSLR section or table is present.",
+      "sha256": "6bd67bb917729881c87a0fdea1e8b26c5d9ee811b671d285e7ce66563754149f",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "uncertain",
+      "reason": "Abstract proposes a recognition system but survey title suggests synthesis; full text needed to distinguish purpose and coverage.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "moni2020"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

@@ -1,0 +1,1934 @@
+
+
+    
+        
+        
+        
+        
+        
+        
+        
+            
+            
+
+        
+        
+
+        Recent progress in sign language recognition: a review | Machine Vision and Applications | Springer Nature Link
+
+        
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+    
+    
+    
+    
+    
+    
+    
+    
+
+        
+
+        
+
+        
+    
+        
+    
+    
+    
+
+    
+
+
+        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+        
+            
+    
+    
+
+        
+        
+        
+    
+
+        
+
+        
+        
+
+
+        
+    
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+            
+
+        
+        
+        
+
+        
+            
+            
+                
+    
+
+            
+            
+            
+        
+
+        
+
+
+        
+    
+        
+    
+
+        
+        
+        
+        
+        
+    
+
+        
+        
+    
+
+    
+        
+
+    
+
+
+
+        
+
+        
+        
+    Skip to main content
+
+    
+        
+    
+        
+
+            
+
+                
+Advertisement
+                
+
+                    
+                    
+                    
+                        
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+    
+
+        
+
+            
+                
+                    
+                        
+                    
+                
+            
+        
+
+        
+            
+                
+    
+        Log in
+    
+
+
+            
+        
+    
+
+    
+        
+            
+
+                
+
+                   
+                        
+                            
+                        Menu
+                    
+                
+
+                
+
+                    
+                        
+                            Find a journal
+                        
+                    
+                        
+                            Publish with us
+                        
+                    
+                        
+                            Track your research
+                        
+                    
+                
+
+                
+
+                    
+                        
+
+                            
+                                
+                                    
+                                Search
+                            
+                        
+                    
+                    
+
+                        
+
+                            
+                                
+                                    
+                                
+                                Saved research
+                            
+                        
+                        
+                            
+
+ 
+  
+   
+  
+  Cart
+ 
+ 
+
+                        
+                    
+                
+            
+        
+    
+
+
+
+
+    
+
+    
+        
+    
+
+        
+            
+
+    
+
+        
+    
+        
+            
+                
+                    
+
+                        Home
+                            
+                                
+                            
+                    
+                
+                    
+
+                        Machine Vision and Applications
+                            
+                                
+                            
+                    
+                
+                    
+
+                        Article
+                    
+                
+            
+        
+    
+
+        
+Recent progress in sign language recognition: a review
+
+        
+            
+                
+        
+Original Paper
+    
+    
+
+                
+
+                    Published: 21 October 2023
+                
+            
+            
+                
+                    
+
+                        Volume 34, article number 127 (2023)
+                    
+                
+                
+
+                    Cite this article
+                
+            
+        
+
+        
+
+            
+
+            
+
+                
+                
+                
+    
+
+        
+            
+                
+                
+                
+                    
+                    Save article
+                
+            
+        
+        
+
+            
+                View saved research
+                
+            
+            
+        
+    
+
+            
+        
+    
+    
+        
+
+            
+                
+                
+                
+                    
+                    
+                
+                Machine Vision and Applications
+            
+                
+                    
+                        Aims and scope
+                        
+                    
+                
+                
+                    
+                        Submit manuscript
+                        
+                    
+                
+            
+        
+    
+
+
+        
+    
+
+
+        
+
+        
+
+            
+                
+
+                
+
+                    
+                        
+Aamir Wali 
+            ORCID: orcid.org/0000-0002-5314-61131, 
+Roha Shariq1, 
+Sajdah Shoaib1, 
+Sukhan Amir1 & 
+…
+Asma Ahmad Farhan1 Show authors
+                        
+    
+
+
+                        
+
+                            
+        
+        
+            
+                
+
+                    
+
+                        
+                    1735 Accesses
+                
+            
+            
+                
+
+                    
+
+                        
+                    27 Citations
+                
+            
+            
+            
+            
+                
+                    
+
+                        
+Explore all metrics
+                            
+                        
+                    
+                
+            
+        
+        
+    
+                        
+                        
+                        
+    
+    
+
+    
+    
+
+                        
+                    
+                
+
+                
+
+
+                    
+                    
+
+Abstract
+
+Sign language is a predominant form of communication among a large group of society. The nature of sign languages is visual, making them distinct from spoken languages. Unfortunately, very few able people can understand sign language making communication with the hearing-impaired infeasible. Research in the field of sign language recognition (SLR) can help reduce the barrier between deaf and able people. Despite having tremendous advances in SLR, unfortunately, this form of recognition is still at least a decade behind speech recognition. There has been a gradual transition from static to isolated to continuous SLR, but still the research is scattered, limited to very small vocabularies, and only suitable for tailor-made conditions. This paper aims to compile recent progress in SLR and presents a comprehensive review of the emerging SLR frameworks and algorithms. We have categorized SLR based on the unit of written text, i.e., letters or alphabets, words and sentences. This review also includes a study-wise summary of the datasets used in different research conducted during the last few years. We identify state-of-the-art techniques for each category. We also suggest novel research directions for future work, and highlight several primary factors contributing to SLR’s inability to achieve improved practical outcomes. 
+
+
+                    
+
+                    
+    
+
+
+                    
+                        
+                            
+                                
+
+                                    
+
+                                        
+                                            
+                                        
+                                        
+                                            This is a preview of subscription content, log in via an institution
+                                        
+                                        
+                                            
+                                         to check access.
+                                    
+                                
+                            
+                        
+
+                        
+                            
+                                
+                                    
+
+                                        
+Access this article
+                                        
+                                            
+                                                
+
+                                                    
+                                                        Log in via an institution
+                                                        
+                                                            
+                                                        
+                                                    
+                                                
+                                            
+                                        
+                                        
+                                            
+
+                                                
+
+ 
+ 
+ 
+
+  
+
+   
+
+    
+Subscribe and save
+    
+
+     
+
+      
+
+       
+        
+       
+       Springer+
+      
+      
+from €37.37 /Month
+     
+     
+      
+Starting from 10 chapters or articles per month
+      
+Access and download chapters and articles from more than 300k books and 2,500 journals
+      
+Cancel anytime
+     
+     View plans 
+      
+       
+      
+    
+    
+Buy Now
+   
+   
+
+    
+     
+     
+
+      Buy article PDF 39,95 €
+     
+    
+    
+Price includes VAT (Poland)
+     
+
+    
+Instant access to the full article PDF.
+   
+  
+  
+  
+  
+ 
+ 
+
+  
+Institutional subscriptions 
+    
+     
+    
+ 
+ 
+
+                                            
+                                        
+                                    
+                                
+                            
+                        
+
+                        
+
+                            
+Fig. 1
+
+
+Fig. 2
+
+
+Fig. 3
+
+
+Fig. 4
+
+
+Fig. 5
+
+
+Fig. 6
+
+
+Fig. 7
+
+
+Fig. 8
+
+
+                        
+                    
+
+                    
+
+                        
+                    
+
+                    
+
+                    
+                        
+        
+            
+                
+Similar content being viewed by others
+                
+
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        American Sign Language Recognition Using Yolo-NAS
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2025
+                                    
+                                
+                            
+                        
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        A Survey: The Sensor-Based Method for Sign Language Recognition
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2024
+                                    
+                                
+                            
+                        
+                    
+                        
+
+                            
+                                
+                                    
+
+                                
+                                
+
+                                    
+
+                                        A Systematic Study of Sign Language Recognition Systems Employing Machine Learning Algorithms
+                                        
+                                    
+                                    
+
+                                        Chapter
+                                        
+                                         © 2022
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+            
+        
+    
+                    
+
+                        
+    
+        
+Explore related subjects
+        Discover the latest articles, books and news in related subjects, suggested using machine learning.
+        
+        
+            
+
+                Object Recognition
+            
+        
+            
+
+                Signal, Speech and Image Processing
+            
+        
+            
+
+                Speech and Audio Signal Processing
+            
+        
+            
+
+                Pattern Recognition Receptors
+            
+        
+            
+
+                Sign Languages
+            
+        
+            
+
+                Research Methods in Language and Linguistics
+            
+        
+            
+
+                Linguistic Structures and Acquisition in Sign Languages
+            
+        
+        
+    
+
+
+                    
+
+                        
+
+                    
+
+                    
+
+                    
+
+
+References
+
+
+
+Bromwich, M.: 360 million people worldwide suffer disabling hearing loss. https://www.shoebox.md/360-million-people-worldwide-suffer-disabling-hearing-loss/ (2022). Accessed 09 Apr 2022
+
+UN, U.N.: International day of sign languages. https://www.un.org/en/observances/sign-languages-day. Accessed 09 Apr 2022
+
+Sign language. https://en.wikipedia.org/wiki/Sign_language. Accessed 09 Apr 2022
+
+Zhu, Q., Li, J., Yuan, F., Gan, Q.: Multi-scale temporal network for continuous sign language recognition (2022). arXiv preprint arXiv:2204.03864
+
+Adaloglou, N.M., et al.: A comprehensive study on deep learning-based methods for sign language recognition. IEEE Trans. Multimed. (2021). https://doi.org/10.1109/TMM.2021.3070438
+Article 
+    
+                    Google Scholar 
+                
+
+Rastgoo, R., Kiani, K., Escalera, S.: Sign language recognition: a deep survey. Expert Syst. Appl. 164, 113794 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Recent advances in sign language recognition using deep learning techniques
+
+El-Alfy, E.-S.M., Luqman, H.: A comprehensive survey and taxonomy of sign language research. Eng. Appl. Artif. Intell. 114, 105198 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Gaikwad, R.S., Admuthe, L.S.: A review of various sign language recognition techniques. Model. Simul. Optim. 8, 111–126 (2022)
+
+                    Google Scholar 
+                
+
+Arab sign language recognition with convolutional neural networks. IEEE
+
+Sign language recognition using convolutional neural networks. Springer
+
+Shahzad, A., Wali, A.: Computerization of off-topic essay detection: a possibility? Educ. Inf. Technol. 27(4), 5737–5747 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Jiang, Z., Zaheer, W., Wali, A., Gilani, S.: Visual sentiment analysis using data-augmented deep transfer learning techniques. Multimed. Tools Appl. 8, 1–17 (2023)
+
+                    Google Scholar 
+                
+
+Yan, C., Gong, B., Wei, Y., Gao, Y.: Deep multi-view enhancement hashing for image retrieval. IEEE Trans. Pattern Anal. Mach. Intell. 43(4), 1445–1451 (2020)
+Article 
+    
+                    Google Scholar 
+                
+
+A new benchmark on american sign language recognition using convolutional neural network. IEEE
+
+Wali, A., Saeed, M.: m-calp-yet another way of generating handwritten data through evolution for pattern recognition. Biosystems 175, 24–29 (2019)
+Article 
+    
+                    Google Scholar 
+                
+
+Wali, A.: Ca-nn: a cellular automata neural network for handwritten pattern recognition. Nat. Comput. 20, 1–8 (2022)
+
+                    Google Scholar 
+                
+
+Wali, A., Ahmad, M., Naseer, A., Tamoor, M., Gilani, S.: Stynmedgan: medical images augmentation using a new GAN model for improved diagnosis of diseases. J. Intell. Fuzzy Syst. 26, 1–18 (2023)
+
+                    Google Scholar 
+                
+
+Xu, Y., Wali, A.: Handwritten pattern recognition using birds-flocking inspired data augmentation technique. IEEE Access (2023)
+
+Mannan, A., et al.: Hypertuned deep convolutional neural network for sign language recognition. Comput. Intell. Neurosci. (2022)
+
+Sign language recognition using deep learning on custom processed static gesture images. IEEE
+
+Mannan, A. et al.: Hypertuned deep convolutional neural network for sign language recognition. Comput. Intell. Neurosci. (2022)
+
+Kasapbaşi, A., Elbushra, A.E.A., Omar, A.-H., Yilmaz, A.: Deepaslr: a CNN based human computer interface for American sign language recognition for hearing-impaired individuals. Comput. Methods Programs Biomed. Update 2, 100048 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Zakariah, M., Alotaibi, Y.A., Koundal, D., Guo, Y., Mamun Elahi, M.: Sign language recognition for Arabic alphabets using transfer learning technique. Comput. Intell. Neurosci. (2022)
+
+Thakur, A., Budhathoki, P., Upreti, S., Shrestha, S., Shakya, S.: Real time sign language recognition and speech generation. J. Innov. Image Process. 2(2), 65–76 (2020)
+Article 
+    
+                    Google Scholar 
+                
+
+Yirtici, T., Yurtkan, K.: Regional-CNN-based enhanced Turkish sign language recognition. Signal Image Video Process. 8, 1–7 (2022)
+
+                    Google Scholar 
+                
+
+Sahoo, A.K., Mishra, G.S., Ravulakollu, K.K.: Sign language recognition: state of the art. ARPN J. Eng. Appl. Sci. 9(2), 116–134 (2014)
+
+                    Google Scholar 
+                
+
+Hussain, M.J., et al.: Intelligent sign language recognition system for e-learning context (2022)
+
+American sign language identification using hand trackpoint analysis. Springer
+
+Shah, F., et al.: Sign language recognition using multiple kernel learning: a case study of Pakistan sign language. IEEE Access 9, 67548–67558 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Katoch, S., Singh, V., Tiwary, U.S.: Indian sign language recognition system using surf with SVM and CNN. Array 14, 100141 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Word-level deep sign language recognition from video: a new large-scale dataset and methods comparison
+
+Context matters: self-attention for sign language recognition. IEEE
+
+Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks
+
+Töngi, R.: Application of transfer learning to sign language recognition using an inflated 3d deep convolutional neural network (2021). arXiv preprint arXiv:2103.05111
+
+Sharma, S., Singh, S.: Vision-based hand gesture recognition using deep learning for the interpretation of sign language. Expert Syst. Appl. 182, 115657 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Lim, K.M., Tan, A.W.C., Lee, C.P., Tan, S.C.: Isolated sign language recognition using convolutional neural network hand modelling and hand energy image. Multimed. Tools Appl. 78(14), 19917–19944 (2019)
+Article 
+    
+                    Google Scholar 
+                
+
+Sincan, O.M., Keles, H.Y.: Using motion history images with 3d convolutional networks in isolated sign language recognition. IEEE Access 10, 18608–18618 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Venugopalan, A., Reghunadhan, R.: Applying hybrid deep neural network for the recognition of sign language words used by the deaf covid-19 patients. Arab. J. Sci. Eng. 8, 1–14 (2022)
+
+                    Google Scholar 
+                
+
+Boukdir, A., Benaddy, M., Ellahyani, A., Meslouhi, O.E., Kardouchi, M.: Isolated video-based Arabic sign language recognition using convolutional and recursive neural networks. Arab. J. Sci. Eng. 47(2), 2187–2199 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Sign pose-based transformer for word-level sign language recognition
+
+Yan, C., et al.: Task-adaptive attention for image captioning. IEEE Trans. Circuits Syst. Video Technol. 32(1), 43–51 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Yan, C., et al.: Age-invariant face recognition by multi-feature fusionand decomposition with self-attention. ACM Trans. Multimed. Comput. Commun. Appl. 18(1), 1–18 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Vaswani, A., et al.: Attention is all you need. Adv. Neural Inf. Process. Syst. 30, 50 (2017)
+
+                    Google Scholar 
+                
+
+Rastgoo, R., Kiani, K., Escalera, S.: Hand sign language recognition using multi-view hand skeleton. Expert Syst. Appl. 150, 113336 (2020)
+Article 
+    
+                    Google Scholar 
+                
+
+Hamza, H.M., Wali, A.: Pakistan sign language recognition: leveraging deep learning models with limited dataset. Mach. Vis. Appl. 34(5), 71 (2023)
+Article 
+    
+                    Google Scholar 
+                
+
+More, V., Sangamnerkar, S., Thakare, V., Mane, D., Dolas, R.: Sign language recognition using image processing. J. NX 8, 85–87 (2021)
+
+                    Google Scholar 
+                
+
+Kumar, A.R., Bhavana, T., Sri, P.M.: A deep neural framework for continuous sign language recognition by iterative training. J. Algebraic Stat. 13(3), 4574–4584 (2022)
+
+                    Google Scholar 
+                
+
+Wang, F., Song, Y., Zhang, J., Han, J., Huang, D.: Temporal unet: sample level human action recognition using wifi (2019). arXiv preprint arXiv:1904.11953
+
+Rastgoo, R., Kiani, K., Escalera, S.: Real-time isolated hand sign language recognition using deep networks and SVD. J. Ambient. Intell. Humaniz. Comput. 13(1), 591–611 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Tolentino, L.K.S., et al.: Static sign language recognition using deep learning. Int. J. Mach. Learn. Comput 9(6), 821–827 (2019)
+Article 
+    
+                    Google Scholar 
+                
+
+European Language Resources Association (ELRA). Sign language recognition with transformer networks
+
+ML based sign language recognition system. IEEE
+
+Transferring cross-domain knowledge for video sign language recognition
+
+Wadhawan, A., Kumar, P.: Deep learning-based sign language recognition system for static signs. Neural Comput. Appl. 32(12), 7957–7968 (2020)
+Article 
+    
+                    Google Scholar 
+                
+
+Better sign language translation with STMC-transformer
+
+Deep sign: hybrid CNN-HMM for continuous sign language recognition
+
+Real-time sign language detection using human pose estimation. Springer
+
+Liao, Y., Xiong, P., Min, W., Min, W., Lu, J.: Dynamic sign language recognition based on video sequence with BLSTM-3d residual networks. IEEE Access 7, 38044–38054 (2019)
+Article 
+    
+                    Google Scholar 
+                
+
+Gao, L., et al.: RNN-transducer based Chinese sign language recognition. Neurocomputing 434, 45–54 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Spatial-temporal multi-cue network for continuous sign language recognition, vol. 34
+
+Aditya, W., et al.: Novel spatio-temporal continuous sign language recognition using an attentive multi-feature network. Sensors 22(17), 6452 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Venugopalan, A., Reghunadhan, R.: Applying deep neural networks for the automatic recognition of sign language words: a communication aid to deaf agriculturists. Expert Syst. Appl. 185, 115601 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Fully convolutional networks for continuous sign language recognition. Springer
+
+Kumar, E.K., Kishore, P., Kumar, M.T.K., Kumar, D.A.: 3d sign language recognition with joint distance and angular coded color topographical descriptor on a 2-stream CNN. Neurocomputing 372, 40–54 (2020)
+Article 
+    
+                    Google Scholar 
+                
+
+Khan, R. Sign Language Recognition from a webcam video stream. Master’s thesis, Technische Universität München (2022)
+
+Deep high-resolution representation learning for human pose estimation
+
+Wen, F., Zhang, Z., He, T., Lee, C.: Ai enabled sign language recognition and VR space bidirectional communication using triboelectric smart glove. Nat. Commun. 12(1), 1–13 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+MyoSign: enabling end-to-end sign language recognition with wearables
+
+Cerna, L.R., Cardenas, E.E., Miranda, D.G., Menotti, D., Camara-Chavez, G.: A multimodal libras-ufop Brazilian sign language dataset of minimal pairs using a microsoft kinect sensor. Expert Syst. Appl. 167, 114179 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Mirza, S.F., Al-Talabani, A.K.: Efficient kinect sensor-based Kurdish sign language recognition using echo system network. ARO Sci. J. Koya Univ. 9(2), 1–9 (2021)
+
+                    Google Scholar 
+                
+
+Mittal, A., Kumar, P., Roy, P.P., Balasubramanian, R., Chaudhuri, B.B.: A modified LSTM model for continuous sign language recognition using leap motion. IEEE Sens. J. 19(16), 7056–7063 (2019)
+Article 
+    
+                    Google Scholar 
+                
+
+Lee, C.K., et al.: American sign language recognition and training method with recurrent neural network. Expert Syst. Appl. 167, 114403 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Chong, T.-W., Lee, B.-G.: American sign language recognition using leap motion controller with machine learning approach. Sensors 18(10), 3554 (2018)
+Article 
+    
+                    Google Scholar 
+                
+
+Pereira-Montiel, E., et al.: Automatic sign language recognition based on accelerometry and surface electromyography signals: a study for Colombian sign language. Biomed. Signal Process. Control 71, 103201 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Visual alignment constraint for continuous sign language recognition
+
+Adaloglou, N., et al.: A comprehensive study on deep learning-based methods for sign language recognition. IEEE Trans. Multimed. 24, 1750–1762 (2021)
+Article 
+    
+                    Google Scholar 
+                
+
+Sign language production: a review
+
+Bazarevsky, V. et al. Blazepose: on-device real-time body pose tracking (2020). arXiv preprint arXiv:2006.10204
+
+Hrúz, M., et al.: One model is not enough: ensembles for isolated sign language recognition. Sensors 22(13), 5043 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Zhou, Z., Tam, V.W., Lam, E.Y.: A cross-attention Bert-based framework for continuous sign language recognition. IEEE Signal Process. Lett. 29, 1818–1822 (2022)
+Article 
+    
+                    Google Scholar 
+                
+
+Lugaresi, C. et al.: Mediapipe: a framework for building perception pipelines (2019). arXiv preprint arXiv:1906.08172
+
+Subramanian, B., et al.: An integrated mediapipe-optimized GRU model for Indian sign language recognition. Sci. Rep. 12(1), 1–16 (2022)
+
+Bidirectional Skeleton-Based Isolated Sign Recognition using Graph Convolution Networks
+Download references
+
+Funding
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+Author information
+
+Authors and Affiliations
+
+FAST School of Computing, National University of Computer and Emerging Science, 852-B, Faisal Town, Lahore, Pakistan
+Aamir Wali, Roha Shariq, Sajdah Shoaib, Sukhan Amir & Asma Ahmad Farhan
+Authors
+Aamir Wali
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Roha Shariq
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Sajdah Shoaib
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Sukhan Amir
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Asma Ahmad Farhan
+
+View author publications
+
+Search author on:PubMed Google Scholar
+Corresponding author
+Correspondence to
+                Aamir Wali.
+
+Ethics declarations
+
+              
+              
+                
+Conflict of interest
+                
+The authors declare that they have no relevant financial or non-financial interests to disclose. There is no personal relationship that could influence the work reported in this paper. No funding was received for conducting this study. The authors have no conflicts of interest to declare that are relevant to the content of this article.
+              
+              
+                
+Compliance with Ethical Standards
+                
+This statement is to certify that the author list is correct. The Authors also confirm that this research has not been published previously and that it is not under consideration for publication elsewhere. On behalf of all Co-Authors, the Corresponding Author shall bear full responsibility for the submission. There is no conflict of interest. This research did not involve any human participants and/or animals.
+              
+            
+
+Additional information
+
+Publisher's Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Rights and permissions
+
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.
+Reprints and permissions
+
+About this article
+
+
+
+
+Cite this article
+Wali, A., Shariq, R., Shoaib, S. et al. Recent progress in sign language recognition: a review.
+                    Machine Vision and Applications 34, 127 (2023). https://doi.org/10.1007/s00138-023-01479-y
+Download citation
+
+Received: 14 November 2022
+
+Revised: 13 August 2023
+
+Accepted: 11 September 2023
+
+Published: 21 October 2023
+
+Version of record: 21 October 2023
+
+DOI: https://doi.org/10.1007/s00138-023-01479-y
+
+
+Share this article
+Anyone you share the following link with will be able to read this content:Get shareable link
+
+Sorry, a shareable link is not currently available for this article.
+
+Copy shareable link to clipboard
+
+                            Provided by the Springer Nature SharedIt content-sharing initiative
+                        
+Keywords
+Sign language recognition
+Transformer
+Gesture recognition
+Continuous SLR
+Isolated SLR
+
+
+                    
+
+                    
+    
+
+        
+Profiles
+        
+            
+                
+
+                    Aamir Wali
+                    
+                        
+                            
+                                
+                            View author profile
+                        
+                    
+                
+            
+        
+    
+
+                
+            
+
+            
+                
+    
+
+        
+            
+
+            
+
+                
+            
+
+            
+
+            
+                
+
+                    
+    
+        
+
+            
+Associated Content
+            
+                
+
+                    
+                    
+Part of a collection:
+                    
+                    
+
+                        SI: Human Pose Estimation and Its Applications
+                    
+                
+            
+        
+
+        
+    
+
+                
+            
+
+            
+
+                
+
+                    
+                        
+                    
+                    
+                        
+                            
+                                
+
+                                    
+Access this article
+
+                                    
+                                        
+                                            
+
+                                                
+                                                    Log in via an institution
+                                                    
+                                                        
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                    
+
+                                        
+
+ 
+ 
+ 
+
+  
+
+   
+
+    
+Subscribe and save
+    
+
+     
+
+      
+
+       
+        
+       
+       Springer+
+      
+      
+from €37.37 /Month
+     
+     
+      
+Starting from 10 chapters or articles per month
+      
+Access and download chapters and articles from more than 300k books and 2,500 journals
+      
+Cancel anytime
+     
+     View plans 
+      
+       
+      
+    
+    
+Buy Now
+   
+   
+
+    
+     
+     
+
+      Buy article PDF 39,95 €
+     
+    
+    
+Price includes VAT (Poland)
+     
+
+    
+Instant access to the full article PDF.
+   
+  
+  
+  
+  
+ 
+ 
+
+  
+Institutional subscriptions 
+    
+     
+    
+ 
+ 
+
+                                    
+                                
+                            
+                        
+                    
+                    
+
+                        
+
+
+    
+
+        
+Advertisement
+        
+
+        
+    
+
+
+
+
+
+                    
+                    
+
+                    
+
+                
+            
+        
+    
+
+            
+        
+    
+    
+    
+
+    
+
+
+
+    
+        
+
+            
+Search
+            
+
+                
+                    
+                        Search by keyword or author
+                        
+
+                            
+                            
+                                
+                                    
+                                
+                                Search
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+
+
+    
+        
+Navigation
+        
+            
+                
+
+                   
+                        Find a journal
+                    
+                
+            
+                
+
+                   
+                        Publish with us
+                    
+                
+            
+                
+
+                   
+                        Track your research
+                    
+                
+            
+        
+    
+
+
+    
+	
+
+		
+Footer Navigation
+		
+			
+				
+	
+
+		
+		
+
+			
+Discover content
+			
+				
+					
+Journals A-Z
+				
+					
+Books A-Z
+				
+					
+Subjects A-Z
+				
+			
+		
+		
+		
+
+			
+Publish with us
+			
+				
+					
+Journal finder
+				
+					
+Publish your research
+				
+					
+Language editing
+				
+					
+Open access publishing
+				
+			
+		
+		
+		
+
+			
+Products and services
+			
+				
+					
+Our products
+				
+					
+Librarians
+				
+					
+Societies
+				
+					
+Partners and advertisers
+				
+			
+		
+		
+		
+
+			
+Our brands
+			
+				
+					
+Springer
+				
+					
+Nature Portfolio
+				
+					
+BMC
+				
+					
+Palgrave Macmillan
+				
+					
+Apress
+				
+					
+Discover
+				
+			
+		
+		
+	
+
+
+			
+			
+	
+		
+Corporate Navigation
+		
+			
+				
+
+					
+					
+						Your privacy choices/Manage cookies
+					
+				
+			
+				
+
+					
+						Your US state privacy rights
+					
+					
+				
+			
+				
+
+					
+						Accessibility statement
+					
+					
+				
+			
+				
+
+					
+						Terms and conditions
+					
+					
+				
+			
+				
+
+					
+						Privacy policy
+					
+					
+				
+			
+				
+
+					
+						Help and support
+					
+					
+				
+			
+				
+
+					
+						Legal notice
+					
+					
+				
+			
+				
+
+					
+						Cancel contracts here
+					
+					
+				
+			
+				
+
+					
+						Withdrawal from contracts here
+					
+					
+				
+			
+		
+	
+
+
+		
+		
+			
+				
+					
+
+						
+
+							
+							78.17.97.76
+						
+						
+Not affiliated
+					
+				
+			
+			
+				
+					
+				
+			
+			
+© 2026 Springer Nature
+		
+	
+
+
+
+
+
+    
+
+
+
+
+
+

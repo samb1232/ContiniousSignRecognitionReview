@@ -1,0 +1,73 @@
+A Comprehensive Survey on Sign Language Recognition and Translation by Seshadri Mazumder, Jawahar C.V., Vinay P. Namboodiri :: SSRN (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5558281)
+citeturn10search0 [wordlim: 200] Published: 1.1 years ago; Crawled: 6 days ago; This survey presents a structured and in-depth analysis of SLU literature, focusing on three central tasks: isolated sign recognition, continuous sign recognition, and sign language translation. ... Available at SSRN: https://ssrn.com/abstract=5558281 or http://dx.doi.org/10.2139/ssrn.5558281 ... ## Paper statistics
+
+# A Comprehensive Survey on Sign Language Recognition and Translation
+
+50 Pages Posted: 3 Oct 2025 Last revised: 9 Oct 2025
+
+## Seshadri Mazumder
+
+International Institute of Technology (IIIT) Hyderabad
+
+## Jawahar C.V.
+
+Independent
+
+## Vinay P. Namboodiri
+
+University of Bath
+
+### Abstract
+
+Sign Language Understanding (SLU) plays a pivotal role in bridging communication gaps for Deaf and Hard-of-Hearing (DHH) communities, forming a core component of inclusive human-centric AI. Recent advances in deep learning, coupled with the increasing availability of multimodal data, have led to rapid progress in SLU, particularly in the areas of recognition and translation. However, the diversity of approaches—ranging from handcrafted pipelines to transformer-based, multilingual, and self-supervised models—has resulted in a fragmented landscape, making a comprehensive review both timely and necessary. This survey presents a structured and in-depth analysis of SLU literature, focusing on three central tasks: isolated sign recognition, continuous sign recognition, and sign language translation. We propose a detailed taxonomy covering input modalities, learning strategies, and output representations, and critically examine representative methods across architectural and training paradigms. In addition, we highlight emerging trends such as gloss-free translation, signer-agnostic modeling, and vision-language fusion, while also identifying persistent challenges including co-articulation, domain shift, and annotation scarcity. By consolidating current knowledge and outlining open problems, this survey aims to serve as a foundational reference for researchers and a catalyst for future advancements in the field.
+
+Keywords: Sign Language Understanding, Sign Language Survey
+
+License Information
+
+The copyright holder has granted SSRN a license. All rights reserved. No reuse allowed without permission.
+
+Suggested Citation
+
+Mazumder, Seshadri and C.V., Jawahar and Namboodiri, Vinay P., A Comprehensive Survey on Sign Language Recognition and Translation. Available at SSRN: https://ssrn.com/abstract=5558281 or http://dx.doi.org/10.2139/ssrn.5558281
+
+### Seshadri Mazumder (Contact Author)
+
+#### International Institute of Technology (IIIT) Hyderabad ( email )
+
+Professor CR Rao Rd
+Gachibowli
+Hyderabad, 500032
+India
+
+### Jawahar C.V.
+
+#### Independent ( email )
+
+### Vinay P. Namboodiri
+
+#### University of Bath ( email )
+
+Claverton Down
+Bath, BA2 7AY
+United Kingdom
+
+### 0 References
+
+[Button: Fetch References]
+
+### 0 Citations
+
+[Button: Fetch Citations]
+
+## Paper statistics
+
+Downloads
+
+233
+
+Abstract Views
+
+2,696
+
+157 References

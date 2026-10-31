@@ -4,7 +4,7 @@ Version 1, fixed 2026-10-25 before retrieval.
 
 ## Current eligibility amendment
 
-Previous eligibility judgments are cleared. No candidate has a current AI or manual assessment. Retrieval restrictions describe executed searches; manual criteria govern subsequent eligibility assessment.
+Previous eligibility judgments were cleared before this screening pass. Current AI proposals and their stage-specific evidence are recorded in work/screening.json; independent manual decisions remain not_screened. Retrieval restrictions describe executed searches; manual criteria govern subsequent eligibility assessment.
 
 M1 — Review purpose: include narrative reviews, surveys, systematic reviews, scoping reviews and mapping studies synthesizing previous research. Exclude primary method, dataset or experimental papers with background-only literature discussion.
 

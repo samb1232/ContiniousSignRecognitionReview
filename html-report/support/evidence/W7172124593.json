@@ -1,0 +1,133 @@
+{
+  "paper": {
+    "title": "From Data Gloves to Deep Networks: A Survey of Sign Language Recognition and Multimodal Approach",
+    "year": 2026,
+    "doi": "https://doi.org/10.1007/978-3-032-31404-8_36",
+    "openalex_url": "https://openalex.org/W7172124593"
+  },
+  "openalex_id": "W7172124593",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "screen1-W7172124593"
+  ],
+  "description": "Reviews SLR evolution from sensors to visual deep-learning and multimodal approaches.",
+  "reason": "The publisher abstract covers continuous sentence recognition and visual methods. Advance; full-text comparison remains unverified.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Abstract describes review of prior SLR approaches."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Continuous sentence-level recognition is explicitly covered."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Vision and deep-learning approaches are explicit."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen1-W7172124593",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-31404-8_36",
+      "path": "work/sources/screen1-W7172124593.txt",
+      "locator": "Abstract",
+      "passage": "The chapter reviews earlier sensor and vision approaches and CNN, RNN, transformer and multimodal architectures spanning isolated words through continuous sentences.",
+      "sha256": "5842f5fc5f6b12120a49036693d4b3fee0218feca57f1c2df0cac24ef3ee39b3",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Publisher provides only a subscription preview; targeted author/repository lookup located no accessible full text."
+  ],
+  "next_action": "Obtain the chapter and verify the CSLR comparison threshold.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W7172124593",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "screen1-W7172124593"
+        ],
+        "description": "Reviews SLR evolution from sensors to visual deep-learning and multimodal approaches.",
+        "reason": "The publisher abstract covers continuous sentence recognition and visual methods. Advance; full-text comparison remains unverified.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Abstract describes review of prior SLR approaches."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "Continuous sentence-level recognition is explicitly covered."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Vision and deep-learning approaches are explicit."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "screen1-W7172124593",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-032-31404-8_36",
+            "path": "work/sources/screen1-W7172124593.txt",
+            "locator": "Abstract",
+            "passage": "The chapter reviews earlier sensor and vision approaches and CNN, RNN, transformer and multimodal architectures spanning isolated words through continuous sentences.",
+            "sha256": "5842f5fc5f6b12120a49036693d4b3fee0218feca57f1c2df0cac24ef3ee39b3",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Publisher provides only a subscription preview; targeted author/repository lookup located no accessible full text."
+        ],
+        "next_action": "Obtain the chapter and verify the CSLR comparison threshold.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+          "agent_batch": "batch1.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

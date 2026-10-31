@@ -1,0 +1,12 @@
+{
+  "source_id": "batch0-W3046952127",
+  "openalex_id": "W3046952127",
+  "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+  "retrieved_utc": "2026-10-31T11:31:36.689094+00:00",
+  "status": 200,
+  "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S095741742030614X",
+  "content_type": "text/html;charset=UTF-8",
+  "body": "batch0-W3046952127.html",
+  "sha256": "1c66fa98772a90f793d50253d18455f37be701ad0406e8d4b7b1064c06b4965d",
+  "text": "batch0-W3046952127.txt"
+}

@@ -1,0 +1,133 @@
+{
+  "paper": {
+    "title": "Understanding vision-based continuous sign language recognition",
+    "year": 2020,
+    "doi": "https://doi.org/10.1007/s11042-020-08961-z",
+    "openalex_url": "https://openalex.org/W3024060113"
+  },
+  "openalex_id": "W3024060113",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "aloysius2020-publisher"
+  ],
+  "description": "Reviews vision-based CSLR methods, movement epenthesis, datasets and evaluation.",
+  "reason": "The publisher abstract supports M1–M3. Advance; the full-text comparison threshold remains unconfirmed.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Abstract explicitly describes a detailed review."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Continuous sign sequences and movement epenthesis are central."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Vision-based methods are the stated focus."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "aloysius2020-publisher",
+      "url": "https://link.springer.com/article/10.1007/s11042-020-08961-z",
+      "path": "work/sources/aloysius2020-publisher.txt",
+      "locator": "Abstract",
+      "passage": "The authors describe a detailed review of vision-based CSLR methods, challenges, benchmark databases and performance evaluation.",
+      "sha256": "4bf3619c45f4b3a6425a640a2f04ac84a0c3dcb40c76e869598d7afa6d074c54",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Subscription preview only; saved author-upload attempts failed."
+  ],
+  "next_action": "Obtain the full text and verify the two-study comparison threshold.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W3024060113",
+        "human_decision": "not_screened",
+        "ai_decision": "include",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "aloysius2020-publisher"
+        ],
+        "description": "Reviews vision-based CSLR methods, movement epenthesis, datasets and evaluation.",
+        "reason": "The publisher abstract supports M1–M3. Advance; the full-text comparison threshold remains unconfirmed.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Abstract explicitly describes a detailed review."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "Continuous sign sequences and movement epenthesis are central."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Vision-based methods are the stated focus."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "aloysius2020-publisher",
+            "url": "https://link.springer.com/article/10.1007/s11042-020-08961-z",
+            "path": "work/sources/aloysius2020-publisher.txt",
+            "locator": "Abstract",
+            "passage": "The authors describe a detailed review of vision-based CSLR methods, challenges, benchmark databases and performance evaluation.",
+            "sha256": "4bf3619c45f4b3a6425a640a2f04ac84a0c3dcb40c76e869598d7afa6d074c54",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Subscription preview only; saved author-upload attempts failed."
+        ],
+        "next_action": "Obtain the full text and verify the two-study comparison threshold.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+          "agent_batch": "batch1.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

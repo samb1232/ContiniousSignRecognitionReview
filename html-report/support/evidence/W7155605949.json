@@ -1,0 +1,81 @@
+{
+  "paper": {
+    "title": "Automatic Arabic Sign Language Recognition: A Comprehensive and Critical Review of Methods, Datasets, Challenges, and Future Directions",
+    "year": 2026,
+    "doi": "https://doi.org/10.66279/hk0z2k19",
+    "openalex_url": "https://openalex.org/W7155605949"
+  },
+  "openalex_id": "W7155605949",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "openalex-W7155605949",
+    "batch0-W7155605949"
+  ],
+  "description": "Review of Arabic alphabet, isolated-word and continuous-sentence recognition.",
+  "reason": "Section3.6 and Table5 compare multiple visual continuous-ArSL studies, satisfying the project threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Synthesizes prior research."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "CSLR coverage is supported at the assessed stage."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Includes visual recognition approaches."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W7155605949",
+      "url": "https://doi.org/10.66279/hk0z2k19",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0007.json",
+      "locator": "W7155605949 / abstract_inverted_index",
+      "passage": "Abstract: Reviews Arabic alphabet, isolated and continuous recognition, including vision and sensor methods.",
+      "sha256": "3a4bbefa6b70290a6575a2ca23cb561966187c76e986dbc27f08156e45b1a376",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "batch0-W7155605949",
+      "url": "https://pub.scientificirg.com/index.php/CDIS/article/download/217/51",
+      "path": "work/sources/batch0-W7155605949.txt",
+      "locator": "Section3.6 PDF p.11; Table5 p.12; references41,43",
+      "passage": "Contrasts motion-image/biLSTM sentence recognition with ArabSign’s RGB/depth/skeleton encoder-decoder benchmark; reports recognition rates and WER.",
+      "sha256": "d9a6652efc9c24ce9203753f07fad3b526477c18c40f23227228d04f424f810f",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "Independent human eligibility assessment.",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Shanableh, two-stage continuous Arabic recognition [41]",
+    "Luqman, ArabSign [43]"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Review purpose and potentially qualifying vision-based CSLR coverage; advance to full text."
+    }
+  ],
+  "decoded_abstract": "Sign language is the primary means of communication for people who are deaf or hard of hearing, which makes accessibility technologies increasingly important. In this context, Automatic Arabic Sign Language Recognition (ArSLR) has gained significant attention to enable effective communication between sign and spoken languages. This paper presents a comprehensive review of existing ArSLR approaches, covering the recognition of Arabic alphabets, isolated words, and continuous signs. It discusses both vision-based and sensor-based methods, explaining how they work and highlighting their strengths and limitations. The paper also reviews available datasets and commonly used evaluation methods in the literature. Several key challenges are explored, including variations between signers, complex backgrounds, and the limited availability of large and diverse datasets. In addition, less-studied areas such as backhand gestures and continuous sign recognition are highlighted as important directions for further research. Finally, the paper looks at recent trends, including the use of advanced sensors and the development of more robust, signer-independent models. By identifying current limitations and research gaps, this review aims to guide future work toward building more accurate, reliable, and practical ArSLR systems.",
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+    "agent_batch": "batch0.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

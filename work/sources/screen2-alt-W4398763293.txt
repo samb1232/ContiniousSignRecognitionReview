@@ -1,0 +1,914 @@
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+        Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects
+      -  King Fahd University of Petroleum & Minerals
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+
+    
+    
+
+
+
+    
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+Skip to main navigation
+
+    Skip to search
+
+Skip to main content
+
+
+
+
+
+
+
+    
+        
+
+            
+
+                
+                
+                    
+                        King Fahd University of Petroleum & Minerals Home
+                        
+                    
+                
+                
+                    
+                        
+                            
+
+                                
+                                    
+                                    Help & FAQ
+                                      Link opens in a new tab
+                                
+                            
+                        
+                        
+                    
+                
+                
+                
+            
+        
+
+        
+            
+
+                
+
+
+    
+
+        
+
+            
+
+                
+
+                    Search content at King Fahd University of Petroleum & Minerals
+                    
+                
+
+                
+
+                    
+                        
+                    
+                
+            
+        
+    
+
+
+            
+        
+
+
+        
+        
+            
+
+                
+
+                    
+
+                        
+                            
+                                
+
+                                    Home
+                                
+
+                                
+                                    
+
+                                        Profiles
+                                    
+                                
+                                    
+
+                                        Research units
+                                    
+                                
+                                    
+
+                                        Projects
+                                    
+                                
+                                    
+
+                                        Research output
+                                    
+                                
+                                    
+
+                                        Prizes
+                                    
+                                
+                                    
+
+                                        Student theses
+                                    
+                                
+                            
+                        
+
+                    
+                
+            
+        
+    
+
+    
+        
+    
+
+
+        
+        
+        
+        
+        
+            
+            
+        
+
+
+
+
+    
+
+        
+
+            
+
+Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects
+            
+
+Sarah Alyami
+, Hamzah Luqman*
+, Mohammad Hammoudeh
+
+*Corresponding author for this work
+            
+
+Department of Information and Computer Science
+            
+            
+
+Research output: Contribution to journal › Article › peer-review
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        
+            
+
+                
+                    
+
+                        
+                            
+
+                                
+                                57
+                                
+                                Scopus 
+ citations
+                            
+                        
+                        
+                    
+                
+                
+                    
+
+                        
+                            
+
+                                
+                            
+                        
+
+                        
+                            
+
+                                
+                                    
+
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+    
+
+
+
+
+    
+
+    
+
+        
+            
+                
+
+                    
+                        
+                        Overview
+                    
+                
+                
+                    
+
+                        
+                            
+                            Fingerprint
+                        
+                    
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+            
+        
+    
+    
+
+
+    
+        
+
+        
+
+            
+        
+            
+
+                
+
+                    
+
+                        
+                        
+                            
+Abstract
+                        
+
+
+Sign language is a form of visual communication employing hand gestures, body movements, and facial expressions. The growing prevalence of hearing impairment has driven the research community towards the domain of Continuous Sign Language Recognition (CSLR), which involves identification of successive signs in a video stream without prior knowledge of temporal boundaries. This survey article conducts a review of CSLR research, spanning the past 25 years, offering insights into the evolution of CSLR systems. A critical analysis of 126 studies is presented and organized into a taxonomy comprising seven critical dimensions: sign language, data acquisition, input modality, sign language cues, recognition techniques, utilized datasets, and overall performance. Additionally, the article investigated the classification of deep-learning CSLR models, categorizing them based on spatial, temporal, and alignment methods, while identifying their advantages and limitations. The article also explored various research aspects including CSLR challenges, the significance of non-manual features in CSLR systems, and identified gaps in existing literature. This literature taxonomy serves as a resource aiding researchers in the development and positioning of novel CSLR techniques. The study emphasizes the efficacy of multi-modal deep learning systems in capturing diverse sign language cues. However, the examination of existing research uncovers numerous limitations, calling for continued research and innovation within the CSLR domain. The findings not only contribute to the broader understanding of sign language recognition but also lay the foundations for future research initiatives aimed at addressing the persistent challenges within this emerging field.
+                        
+
+
+Original languageEnglish
+Article number103774
+JournalInformation Processing and Management
+Volume61
+Issue number5
+DOIs
+https://doi.org/10.1016/j.ipm.2024.103774 
+StatePublished - Sep 2024
+                        
+
+Bibliographical notePublisher Copyright:
+© 2024
+
+                        
+
+                        
+
+                        
+
+
+Keywords
+Continuous sign language recognition
+Gesture recognition
+Sign language recognition
+Sign language translation
+Video understanding
+
+ASJC Scopus subject areas
+Information Systems
+Media Technology
+Computer Science Applications
+Management Science and Operations Research
+Library and Information Sciences
+
+                    
+
+                    
+
+                        
+                            
+Access to Document
+                        
+
+
+10.1016/j.ipm.2024.103774
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+
+                    
+                
+            
+        
+        
+            
+                
+
+                    
+
+                        
+
+                            
+                            Fingerprint
+                        
+                        
+                            Dive into the research topics of 'Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects'. Together they form a unique fingerprint.
+                        
+                    
+
+                    
+                        
+                            
+
+
+    
+        
+            
+            Sign Language Recognition
+            Computer Science
+            100%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Sign Language
+            Social Sciences
+            100%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Recognition System
+            Computer Science
+            20%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Deep Learning Method
+            Social Sciences
+            14%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Research Community
+            Computer Science
+            10%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Continued Research
+            Computer Science
+            10%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Facial Expression
+            Computer Science
+            10%
+        
+    
+
+    
+
+
+
+                        
+                            
+
+
+    
+        
+            
+            Learning System
+            Computer Science
+            10%
+        
+    
+
+    
+
+
+
+                        
+                    
+                    
+
+                        
+
+                            
+                                View full fingerprint
+                                
+                            
+                        
+                    
+                
+            
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        
+            
+
+                
+    
+Cite this
+    
+        
+            
+
+                APA
+            
+        
+            
+
+                Author
+            
+        
+            
+
+                BIBTEX
+            
+        
+            
+
+                Harvard
+            
+        
+            
+
+                Standard
+            
+        
+            
+
+                RIS
+            
+        
+            
+
+                Vancouver
+            
+        
+    
+    
+
+        
+            
+
+                
+Alyami, S., Luqman, H., & Hammoudeh, M. (2024). Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects. Information Processing and Management, 61(5), Article 103774. https://doi.org/10.1016/j.ipm.2024.103774
+            
+        
+            
+
+                
+Alyami, Sarah  ; Luqman, Hamzah  ; Hammoudeh, Mohammad. / Reviewing 25 years of continuous sign language recognition research : Advances, challenges, and prospects. In: Information Processing and Management. 2024 ; Vol. 61, No. 5.
+            
+        
+            
+
+                
+
+@article{594ce3109c234cf69ca9a8dca1fea5ac,
+  title    = "Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects",
+  abstract = "Sign language is a form of visual communication employing hand gestures, body movements, and facial expressions. The growing prevalence of hearing impairment has driven the research community towards the domain of Continuous Sign Language Recognition (CSLR), which involves identification of successive signs in a video stream without prior knowledge of temporal boundaries. This survey article conducts a review of CSLR research, spanning the past 25 years, offering insights into the evolution of CSLR systems. A critical analysis of 126 studies is presented and organized into a taxonomy comprising seven critical dimensions: sign language, data acquisition, input modality, sign language cues, recognition techniques, utilized datasets, and overall performance. Additionally, the article investigated the classification of deep-learning CSLR models, categorizing them based on spatial, temporal, and alignment methods, while identifying their advantages and limitations. The article also explored various research aspects including CSLR challenges, the significance of non-manual features in CSLR systems, and identified gaps in existing literature. This literature taxonomy serves as a resource aiding researchers in the development and positioning of novel CSLR techniques. The study emphasizes the efficacy of multi-modal deep learning systems in capturing diverse sign language cues. However, the examination of existing research uncovers numerous limitations, calling for continued research and innovation within the CSLR domain. The findings not only contribute to the broader understanding of sign language recognition but also lay the foundations for future research initiatives aimed at addressing the persistent challenges within this emerging field.",
+  keywords = "Continuous sign language recognition, Gesture recognition, Sign language recognition, Sign language translation, Video understanding",
+  author   = "Sarah Alyami and Hamzah Luqman and Mohammad Hammoudeh",
+  note     = "Publisher Copyright: {\textcopyright} 2024",
+  year     = "2024",
+  month    = sep,
+  doi      = "10.1016/j.ipm.2024.103774",
+  language = "English",
+  volume   = "61",
+  number   = "5",
+}
+            
+        
+            
+
+                
+Alyami, S, Luqman, H & Hammoudeh, M 2024, 'Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects', Information Processing and Management, vol. 61, no. 5, 103774. https://doi.org/10.1016/j.ipm.2024.103774
+            
+        
+            
+
+                
+Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects. / Alyami, Sarah; Luqman, Hamzah; Hammoudeh, Mohammad. 
+In: Information Processing and Management, Vol. 61, No. 5, 103774, 09.2024.
+Research output: Contribution to journal › Article › peer-review
+            
+        
+            
+
+                
+
+TY  - JOUR
+T1  - Reviewing 25 years of continuous sign language recognition research
+T2  - Advances, challenges, and prospects
+AU  - Alyami, Sarah
+AU  - Luqman, Hamzah
+AU  - Hammoudeh, Mohammad
+N1  - Publisher Copyright:
+© 2024
+PY  - 2024/9
+Y1  - 2024/9
+N2  - Sign language is a form of visual communication employing hand gestures, body movements, and facial expressions. The growing prevalence of hearing impairment has driven the research community towards the domain of Continuous Sign Language Recognition (CSLR), which involves identification of successive signs in a video stream without prior knowledge of temporal boundaries. This survey article conducts a review of CSLR research, spanning the past 25 years, offering insights into the evolution of CSLR systems. A critical analysis of 126 studies is presented and organized into a taxonomy comprising seven critical dimensions: sign language, data acquisition, input modality, sign language cues, recognition techniques, utilized datasets, and overall performance. Additionally, the article investigated the classification of deep-learning CSLR models, categorizing them based on spatial, temporal, and alignment methods, while identifying their advantages and limitations. The article also explored various research aspects including CSLR challenges, the significance of non-manual features in CSLR systems, and identified gaps in existing literature. This literature taxonomy serves as a resource aiding researchers in the development and positioning of novel CSLR techniques. The study emphasizes the efficacy of multi-modal deep learning systems in capturing diverse sign language cues. However, the examination of existing research uncovers numerous limitations, calling for continued research and innovation within the CSLR domain. The findings not only contribute to the broader understanding of sign language recognition but also lay the foundations for future research initiatives aimed at addressing the persistent challenges within this emerging field.
+AB  - Sign language is a form of visual communication employing hand gestures, body movements, and facial expressions. The growing prevalence of hearing impairment has driven the research community towards the domain of Continuous Sign Language Recognition (CSLR), which involves identification of successive signs in a video stream without prior knowledge of temporal boundaries. This survey article conducts a review of CSLR research, spanning the past 25 years, offering insights into the evolution of CSLR systems. A critical analysis of 126 studies is presented and organized into a taxonomy comprising seven critical dimensions: sign language, data acquisition, input modality, sign language cues, recognition techniques, utilized datasets, and overall performance. Additionally, the article investigated the classification of deep-learning CSLR models, categorizing them based on spatial, temporal, and alignment methods, while identifying their advantages and limitations. The article also explored various research aspects including CSLR challenges, the significance of non-manual features in CSLR systems, and identified gaps in existing literature. This literature taxonomy serves as a resource aiding researchers in the development and positioning of novel CSLR techniques. The study emphasizes the efficacy of multi-modal deep learning systems in capturing diverse sign language cues. However, the examination of existing research uncovers numerous limitations, calling for continued research and innovation within the CSLR domain. The findings not only contribute to the broader understanding of sign language recognition but also lay the foundations for future research initiatives aimed at addressing the persistent challenges within this emerging field.
+KW  - Continuous sign language recognition
+KW  - Gesture recognition
+KW  - Sign language recognition
+KW  - Sign language translation
+KW  - Video understanding
+UR  - https://www.scopus.com/pages/publications/85193906042
+U2  - 10.1016/j.ipm.2024.103774
+DO  - 10.1016/j.ipm.2024.103774
+M3  - Article
+AN  - SCOPUS:85193906042
+SN  - 0306-4573
+VL  - 61
+JO  - Information Processing and Management
+JF  - Information Processing and Management
+IS  - 5
+M1  - 103774
+ER  - 
+            
+        
+            
+
+                
+Alyami S, Luqman H, Hammoudeh M. Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects. Information Processing and Management. 2024 Sep;61(5):103774. doi: 10.1016/j.ipm.2024.103774
+            
+        
+
+        
+    
+
+
+            
+        
+        
+        
+
+
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+        
+    
+
+    
+
+        
+            
+
+            
+
+            
+
+                    
+                    
+                
+            
+
+            
+
+        
+    
+
+
+
+
+    
+        
+    
+
+    
+
+    
+    
+
+    
+        
+
+            
+
+                
+
+                    
+
+                        
+                            
+
+                                
+
+                                    
+                                
+                            
+                        
+                        
+
+                            
+
+                                Powered by Pure Link opens in a new tab, Scopus Link opens in a new tab & Elsevier Fingerprint Engine™ Link opens in a new tab
+                            
+
+                            
+
+                                All content on this site: Copyright © 2026 King Fahd University of Petroleum & Minerals, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply
+                            
+
+                            
+We use cookies to help provide and enhance our service and tailor content. By continuing you agree to the use of cookies
+                            
+
+                            
+                                
+Log in to Pure   Link opens in a new tab
+                            
+                            
+
+                        
+
+                        
+
+                            
+                            
+                            
+                                
+About web accessibility   Link opens in a new tab
+                            
+
+                            
+
+                                
+                            
+
+                            
+
+                                
+                            
+
+                            
+
+                                Report vulnerability   Link opens in a new tab
+                            
+                        
+
+                        
+                    
+                
+            
+        
+        
+
+            
+        
+    
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+

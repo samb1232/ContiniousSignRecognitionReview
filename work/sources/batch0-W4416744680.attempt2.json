@@ -1,0 +1,14 @@
+{
+  "source_id": "batch0-W4416744680",
+  "openalex_id": "W4416744680",
+  "url": "https://sol.sbc.org.br/index.php/webmedia/article/download/38014/37792",
+  "retrieved_utc": "2026-10-31T11:31:52.452860+00:00",
+  "status": 200,
+  "final_url": "https://sol.sbc.org.br/index.php/webmedia/article/download/38014/37792",
+  "content_type": "application/pdf",
+  "body": "batch0-W4416744680.pdf",
+  "sha256": "f4ee8ba8ffb88641dd08f3bf0164f9806f49a18ed87e3bcc008182ac12954d68",
+  "extractor": "pypdf 6.21.2",
+  "pages": 13,
+  "text": "batch0-W4416744680.txt"
+}

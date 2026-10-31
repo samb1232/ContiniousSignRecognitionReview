@@ -1,0 +1,4 @@
+Source: https://www.scitepress.org/Link.aspx?doi=10.5220%2F0010899400003124
+Locator: Publisher abstract
+Analyst paraphrase of inspected web source (not raw response):
+Takayama and colleagues evaluate skeleton-based online continuous word recognition using monotonic attention on isolated-word and sentence videos. The abstract confirms this study's CSLR task; it does not establish a second distinct study in the review.

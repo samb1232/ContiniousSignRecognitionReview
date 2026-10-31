@@ -1,0 +1,749 @@
+
+--- PDF page 1 ---
+Volume 5 Issue 3
+Article Number: 26708
+Deep Learning for India’s Diverse Sign Languages: A Comprehensive
+Review from CNNs to Transformers and the Future of Sign Recognition
+Systems
+Gurusiddappa Hugar ∗1 and Ramesh M. Kagalkar 2
+1Computer Science and Engineering, AGMR College of Engineering and Technology, Varur, Affiliated
+to Visvesvaraya Technological University, Karnataka, India.
+2Information Science and Engineering, Nagarjuna College of Engineering and Technology, Bengaluru,
+Affiliated to Visvesvaraya Technological University, Karnataka, India.
+Abstract
+Background:Sign languages are the primary communication mode for Deaf and Hard of Hearing (DHH) commu-
+nities, yet automated recognition research has concentrated on American and British Sign Languages, leaving Indian
+Sign Language (ISL) and its regional variants comparatively neglected despite an estimated 18 million users.
+Methods:Following PRISMA 2020 guidelines, a systematic search of multiple databases (Scopus, IEEE Xplore,
+ACM Digital Library, SpringerLink, and Google Scholar) was conducted in October 2025 for studies published
+between January 2020 and October 2025. From 287 identified records, 47 studies were retained after title and
+abstract screening (Cohen’sκ = 0.87) and full-text assessment against predefined inclusion criteria. Study quality
+was appraised using an adapted QUADAS-2 framework.
+Results:Reported accuracy across individual studies rose with architectural evolution: CNN-based models 79–
+92%, CNN-LSTM hybrids 88–97%, pose-based methods 89–94%, and transformer-based approaches 91–98% under
+controlled conditions. The distribution of research was highly uneven across the nine regional sign languages, with
+Telugu Sign Language showing a roughly 16-fold per-capita deficit relative to Kannada. Persistent barriers included
+continuous-recognition performance gaps, signer dependence (5–18% accuracy drops), environmental sensitivity
+(8–15% drops), and severe data scarcity for regional variants.
+Conclusions:The review proposes the ISLR-Bench standardization framework and a 2026–2030 research roadmap
+spanning self-supervised learning, cross-lingual transfer, edge optimization, and community-centered design, alongside
+accessibility targets for government digital platforms and DHH employment.
+Keywords:Sign Language Recognition; Deep Learning; Transformers; Regional Languages; Systematic Review;
+Assistive Technology
+∗Corresponding Author:Gurusiddappa Hugar (gurusidda.h@gmail.com)
+Received:25 Mar 2026;Revised:14 May 2026;Accepted:19 May 2026;Published:30 Jun 2026
+©2026 The Author(s).
+This is an open access article licensed under a Creative Commons Attribution-NonCommercial 4.0 International Licence (CC BY-NC 4.0).
+DOI:10.57159/jcmm.5.3.26708.
+294
+
+--- PDF page 2 ---
+1. Introduction
+Globally, sign languages represent the most used communication mode for DHH people; every language has its own
+unique structural features that remain uninfluenced by the spoken language around them. Despite the fact that
+automated sign language recognition systems are widely regarded as essential components of accessibility infrastructure,
+the existing research has largely focused on ASL and BSL, while Indian sign language and its variants have been left
+mostly unnoticed. According to the 2021 Census, Indian Sign Language is the main language for 5–7 million DHH
+individuals [1], but the existence of different regional variants makes the total number of users who need access at least
+18 million, drawn from India’s linguistically diverse population [2, 3].
+The years 2020–2025 have been marked by the beginning of a new era of technology for ISL recognition, characterized
+by rapid architectural evolution, dataset expansion, and the first cases of the technology being put into real-world use.
+This increase in publications coincides with three noteworthy developments and the widespread use of transformer
+architectures, with a growing proportion of recent studies employing transformer-based architectures, reflecting a shift
+toward attention-driven models for sign language recognition in 2023 relative to 2022. Despite the progress made, there
+remain a great number of inequalities in the research distribution across the different regional languages. The analysis
+shows that Kannada Sign Language, with its 3.3 million speakers, has 6 published studies [4–7], while Telugu Sign
+Language, with its 8.1 million speakers, has only 2 studies [8], the research per capita for the latter being 16 times
+lower. Research efforts are mainly concentrated in one area, the Bangalore-Hyderabad corridor, and the Northeast
+region remains under-served even though it has four regional language variants [2].
+1.1. Sociolinguistic Context and Accessibility Barriers
+The DHH community in India suffers from serious accessibility problems that have been outlined clearly before, and
+therefore technological solutions are essential to address these challenges. The literacy rates of DHH individuals are
+noted to be only 55%, while the general population’s literacy rate is 74% [1, 9]; the incidence of preventable diseases
+is 40% higher due to lack of communication in healthcare [10]; and employment rates are 10–25% lower than those
+of hearing people, with communication barriers identified as the main obstacle to employment [11]. The Indian Sign
+Language Research and Training Centre (ISLRTC) reports a chronic shortage of certified sign language interpreters in
+education, healthcare, and government sectors across India [12].
+1.2. Research Questions and Scope
+This paper investigates the following research questions. (RQ1) What has driven the development of deep learning
+architectures from 2020 to 2025, and what have been the resulting changes in performance, efficiency, and generalization
+through CNNs, CNN-LSTM hybrids, pose estimation, and transformers? (RQ2) How well has research on the nine
+regional sign languages of India been conducted, where are the gaps in the research, and what are the performance
+differences between the regional variants? (RQ3) What are the technical, computational, and sociolinguistic aspects
+that hinder the performance of real-world systems, particularly the decline in performance with new signers (5–18%
+accuracy drops), environmental changes (8–15% drops), and differences in regional dialects? The trends of publications
+in sign language research over the period 2020–2025 are shown in Figure 1.
+Studies published between January 1, 2020 and October 31, 2025 were included. A systematic search of the literature
+was conducted across multiple databases in October 2025.
+2. Methodology
+This structured review follows PRISMA 2020 guidelines. The completed PRISMA 2020 checklist (Supplementary Table
+S1) and full search strategies (Supplementary Appendix S2) are provided and summarized in Figure 2.
+2.1. Search Strategy and Study Selection
+Exact Boolean, database-specific search strategies were employed. A representative query used in Scopus was: (“Indian
+Sign Language” OR “Kannada Sign Language” OR “Tamil Sign Language” OR “Gujarati Sign Language” OR “Marathi
+Sign Language” OR “Telugu Sign Language” OR “Assamese Sign Language” OR “Bangla Sign Language” OR “Punjabi
+Sign Language”) AND (“deep learning” OR “CNN” OR “LSTM” OR “transformer” OR “pose estimation”) AND
+(“recognition” OR “translation”).
+295
+
+--- PDF page 3 ---
+Figure 1: Publication trends in Indian sign language research.
+Equivalent syntax-adjusted queries were used for IEEE Xplore, ACM Digital Library, SpringerLink, and Google Scholar.
+Full database-specific queries are provided in the Supplementary Materials. Initially, 287 records were retrieved from
+the searches. When the EndNote program was used to eliminate duplicates, 152 distinct research articles remained
+for the next step of title and abstract evaluation. The citation tracking process supported the database searches by
+tracing back the references of the 15 most-cited papers and conducting forward tracking to identify recent studies citing
+the foundational works. Screening was carried out by two independent reviewers with Cohen’sκ = 0.87inter-rater
+agreement on 152 records. Title and abstract screening identified 89 papers that might be relevant, among which 18
+borderline cases were settled by consensus discussion. The full-text review of the 89 papers against strict inclusion
+criteria resulted in a final corpus of 47 papers. Of the papers reviewed, 42 were excluded with documented reasons: 28
+papers dealt with non-Indian sign languages, 8 lacked sufficient methodological detail, and 8 presented hardware-only
+systems without machine learning components.
+2.2. Inclusion and Exclusion Criteria
+The inclusion requirements specified that studies should span January 2020 to October 2025. The studies had to
+address Indian Sign Language or documented regional variants, apply deep learning techniques (CNNs, RNNs/LSTMs,
+transformers, or hybrid architectures), and present performance metrics quantitatively (accuracy, F1-score, Word Error
+Rate, or BLEU scores) in a way that would allow comparative analysis. The exclusion criteria ruled out non-Indian
+sign language studies unless they provided direct comparative baselines, hardware-based systems devoid of machine
+learning components, hearing aid research, non-language gesture recognition, and studies not producing quantitative
+results or lacking a significant theoretical contribution.
+2.3. Data Extraction
+The researchers collected data from each study, including information on dataset features, model design, and system
+performance measurements such as accuracy, F1-score, Word Error Rate, and BLEU score, together with the testing
+conditions (controlled and real-world testing) and the availability of both code and datasets. The two reviewers
+conducted data extraction independently and resolved their differences through discussion until they reached agreement.
+2.4. Quality Assessment Framework
+The original purpose of QUADAS-2 was to evaluate diagnostic accuracy studies, but this review used it to examine
+the research quality and bias of studies that applied deep learning for sign language interpretation. The four original
+domains (patient selection, index test, reference standard, and flow/timing) were reinterpreted to align with dataset
+quality, model evaluation, reproducibility, and generalization.
+296
+
+--- PDF page 4 ---
+Figure 2: PRISMA 2020 flow diagram (search conducted October 2025; final inclusionn= 47).
+297
+
+--- PDF page 5 ---
+A scoring system was developed to enable comparisons between different research studies, but the validation process
+for this system remains incomplete, which introduces potential bias. The assessment of research quality used a revised
+QUADAS-2 tool transformed into a 25-point scoring system that included five specific categories for deep learning
+studies. The Methodological Rigor component assessed research design through three methods: ablation studies,
+statistical testing, and hyperparameter control. The evaluation of technical contributions used a 0–5 scoring system,
+where an “Excellent” rating of 5 points indicated more than 5% accuracy improvement over existing solutions or the
+solution of new problems, “Good” received 4 points for a 3–5% accuracy gain, “Fair” received 3 points for a 1–3%
+accuracy improvement, and “Poor” received 2 points for insufficient progress. The Result Reliability and Generalization
+assessment measured results across different signers and environments to determine performance stability. The High
+Quality group (≥ 18points, n = 30) demonstrated solid experimental design, provided all essential code and data,
+achieved more than ten peer-reviewed citations, and proved its findings through real-world deployment and benchmark
+establishment. The Medium Quality group (12–17 points,n = 12) applied valid research methods but did not provide
+access to their code and data, while their signer collection showed limited diversity. The Lower Quality group (< 12
+points, n = 5) raised concerns about their research methods but were retained to document particular findings about
+rare regional languages. The authors included some studies from their own previous research, which they assessed
+alongside other studies to maintain research objectivity.
+3. Architectural Evolution (2020 to 2025)
+The review included 47 studies in the final analysis following the PRISMA selection process. The recognition of
+Indian Sign Language through deep learning methods progressed through four overlapping periods, each characterized
+by a different paradigm that tackled specific technical limitations of the previous methods. The reported accuracy
+ranges represent values observed across individual studies and datasets, rather than pooled or statistically aggregated
+estimates. Examining the development timeline reveals the strengths and weaknesses of modern systems. The change
+in architectural designs during the years 2020–2025 is depicted in Figure 3.
+Figure 3: Architectural evolution in epochs.
+3.1. Epoch I: CNN Dominance (2020 to 2022)
+Early ISL recognition systems used CNNs through a transfer learning process that drew on ImageNet to obtain VGG-16
+and ResNet-50 as initial models. Reported accuracy varies across studies depending on dataset size, model architecture,
+and training strategy. Performance decreases when researchers use smaller datasets with limited fine-tuning, whereas it
+improves through the combination of larger datasets and optimized transfer learning methods. The different testing
+conditions lead to different results because they do not use a common testing standard. Multiple research studies
+show that performance decreases when environmental conditions change, especially during lighting variations and
+background clutter. The performance of a system therefore depends on two factors, namely the size of its dataset and
+the success of its transfer learning techniques.
+298
+
+--- PDF page 6 ---
+3.2. Epoch II: CNN-LSTM Hybrids (2022 to 2023)
+CNN-LSTM frameworks unified convolutional spatial feature extraction with recurrent sequential motion modeling
+through LSTMs [13], thus solving the problem of the temporal blindness of CNNs [14]. Waghmare et al. improved
+CNN-only baselines by 12% using a combination of ResNet-50 and bidirectional LSTM [15]. In our previous work
+[4], CNN-LSTM achieved 95.1% accuracy on the Kannada dataset under controlled conditions, while CNN-GRU
+(94.8%) and 3D CNN (90.2%) achieved lower accuracy, with CNN-LSTM chosen for production deployment owing
+to its accuracy–latency balance [4]. The reported accuracy for dynamic signs was in the range of 88–97% with GPU
+inference latency of 60–120 milliseconds [15, 4]. However, critical limitations remained: generalization gaps exceeding
+12% for unknown signers [16], the vanishing gradient problem for sequences longer than 50 frames, which required
+gradient clipping [13], high computational costs [17, 18], and sequential processing bottlenecks that made real-time
+performance impossible on resource-constrained devices [8, 19, 20].
+3.3. Epoch III: Pose Estimation Revolution (2023 to 2024)
+This paradigm shift led to a preference for two-stage approaches that separated pose estimation from classification.
+Pose estimation models such as MediaPipe Holistic were responsible for the extraction of 543 landmarks representing
+the hands, body, and face, after which these landmarks were handed over to trained classifiers for sign recognition. The
+proportion of edge deployment rose from 5% in 2022 to 60% by 2024. Among the successful implementations were the
+recognition of Marathi Sign Language on a Raspberry Pi 4 and research demonstrating how combining skin landmarks
+with manual signals increased accuracy by 5.4%. The trade-offs included a 2–3% accuracy decrease under the best
+controlled conditions, owing to the system’s inability to capture the subtleties of color and texture, while the approach
+was also prone to occlusions of vital body parts that might lead to sign misinterpretation.
+3.4. Epoch IV: Transformers (2024 to 2025)
+The self-attention mechanisms of the transformer architectures allowed for parallel processing and also overcame
+the issue of vanishing gradients for long sequences. The LiST model showed that sparse attention could reduce the
+number of parameters by 45% while still offering comparable accuracy with the possibility of edge deployment. The
+application of dual-stream vision transformers in the UMANG e-governance platform showed strong field performance,
+as reflected in the “Good” System Usability Scores, but the average latency of 6.53 seconds was higher than the
+set accessibility benchmarks. Critical challenges remained: very large training data requirements (10,000+ videos),
+quadratic model complexity making the approach incompatible with long sequences, continuous processing time being
+3–4 times longer than the simpler baseline CNN-LSTM, and difficulty in predicting the best deployment scenario given
+the accuracy–efficiency trade-offs. The timeline of architectural evolution is summarized in Table 1.
+Table 1: Architectural evolution timeline (2020 to 2025).
+Epoch Period Characteristic Accuracy Latency Key Innovation Primary Limitation
+I 2020–22 CNN-based static 79–92% 30–50ms Transfer learning No temporal modeling
+II 2022–23 CNN-LSTM temporal 88–97% 60–120ms Sequence modeling Sequential bottleneck
+III 2023–24 Pose-based 89–94% 28–60ms Lightweight efficiency Occlusion sensitivity
+IV 2024–25 Transformer attention 91–98% 45–180ms Self-attention, parallelization High data and compute needs
+4. Regional Sign Language Research Distribution
+India’s nine significant regional sign languages refer to independent linguistic systems and not ISL dialects, as shown
+by the 15–20% variation in their core vocabulary, distinct grammar, and separate morphology. The distribution of
+research is very different from the locations of the speaker populations, which results in significant gaps in access. The
+relationship between studies and speaker population is illustrated in Figure 4.
+4.1. Kannada Sign Language (KSL)
+KSL is used by about 3.3 million DHH people in Karnataka [21]. The research journey has shown gradual sophistication.
+An initial study achieved 82% accuracy with a limited sign set using static recognition [6]. A thorough investigation
+on 12,000 KSL videos (35 signs, 15 signers, various environments) compared three architectures: 3D CNN (90.2%),
+CNN-GRU (94.8%), and CNN-LSTM (95.1%) [4, 21].
+299
+
+--- PDF page 7 ---
+Figure 4: Comparison of studies with speaker population.
+CNN-LSTM was chosen as the best for production deployment in KSL Medical Interpreter applications [21], demon-
+strating that communication support in healthcare is feasible in primary health care centers in rural Karnataka.
+4.2. Tamil Sign Language (TSL)
+TSL exhibits linguistic features such as a subject-object-verb grammatical pattern, which contrasts with the topic-
+comment organization of ISL. Gobhinath and Sophia obtained precise results in isolated sign recognition using a
+graph neural network method [22]. Thillai Sivakavi and Minu created the Tamil Lang transformer neural text-to-sign
+production system, which performs text-to-sign conversion [8]. Significant challenges still need to be addressed, such as
+the incomplete transition from static to continuous recognition, the deficiency of cross-signer scenario assessment, and
+the constraint of 1,000-word vocabulary models, which hinders use in areas such as medical and legal communication.
+4.3. Marathi Sign Language (MSL)
+MSL is likely to be used by 1.8 million DHH people [19] and has so far been researched very little, with just a handful
+of peer-reviewed publications [19]. Efficient resource-edge models can run on low-cost devices such as the Raspberry Pi,
+with eye-gaze input creating innovative accessibility features. Research is quite limited as a result of restricted data:
+the largest available dataset has just 1,200 isolated signs, which is very small when compared with the data available for
+the Gujarati language [23, 24]. Few studies have investigated continuous sign recognition, cross-signer generalization
+testing, or large-scale real-world validation beyond initial pilot trials. A real-time translation of MSL into text and
+speech has been created, showcasing the feasibility of an end-to-end accessibility pipeline. This research opens up
+the possibility of practical deployments for the recognition of regional languages that would be able to produce not
+only recognition output as speech and text but also the combination of speech synthesis with written text through
+multimodal output generation.
+4.4. Gujarati Sign Language (GSL)
+The GIDSL dataset significantly advanced Gujarati Sign Language research: 118,000 meticulously annotated videos
+from 25 different signers at various locations, the result of an 18-month collection effort that aimed to establish new
+data quality standards [23, 24]. CNN-LSTM-based methods reached an isolated sign recognition accuracy of 89.6% [23],
+and further study increased this to 94% while reducing the cross-signer generalization gap [24]. Nevertheless, accuracy
+in continuous sentence recognition is only 81.7% [23], implying that fluent real-world translation lags considerably
+behind isolated word classification. The technology’s capability in uncontrolled environments remains largely unproven
+[23, 24].
+300
+
+--- PDF page 8 ---
+4.5. Malayalam Sign Language (MSL)
+The Aksharavaani detector integrated MediaPipe with LSTM and attained an accuracy of 89.7% on 35 alphabet
+signs, along with a 15MB Android app deployment (System Usability Scale 73.5/100, 12 DHH participants) [25]. The
+mapping of Malayalam sentences to ISL translation using a rule-based approach achieved 78.3% grammatical correctness.
+The system is built to support approximately 800,000 users. Vengassery and colleagues created Aksharavaani as
+a Malayalam Sign Language detector optimized for real-time mobile deployment, showing the practicality of edge
+computing for recognizing regional languages [25]. Their research highlights the relevance of efficient architectural
+design that enables deployment on resource-limited devices while still achieving a level of accuracy suitable for practical
+accessibility applications.
+4.6. Bangla Sign Language (BdSL)
+The BDSL49 dataset, which consists of 23,040 images, is published under a CC BY 4.0 open license with 4 signers and
+Cohen’s κ = 0.94inter-annotator agreement [26, 27]. The combined VGG-16/ResNet-50 ensemble achieved a notable
+98.23% test accuracy and 95.7% cross-signer accuracy [26]. Extensive research outlined specific CNN architectures
+for Bangla sign language recognition, meeting the needs of Bengali-speaking deaf communities through systematic
+architectural design focused on balancing accuracy with deployment constraints [28]. This project, in collaboration
+with border regions, has already started to contribute to cross-border accessibility initiatives between the Indian and
+Bangladeshi deaf communities by highlighting the linguistic and cultural connections between them [27].
+4.7. Under-Studied Languages
+Telugu Sign Language:With a dataset comprising only two studies that include only 500 videos, the Indian states
+of Andhra Pradesh and Telangana, which are home to 8.1 million Telugu speakers, are quite poorly covered. One study
+led by Ramanujam et al. developed a model that recognized 40 signs with an accuracy of 84.5% by combining CNN
+and LSTM in a pilot study conducted among 120 DHH students in three Hyderabad schools. The critical gaps in this
+area include the absence of continuous recognition research, medical and legal domain datasets, and dialectal variation
+studies.
+Assamese Sign Language:Studies focusing on the sign language of the Northeast Indian region addressed an overall
+population of 1.4 million Assamese speakers. Bora et al. developed an Android app based on MediaPipe that reached
+89.2% accuracy on 450 phrases with 50 users. One of the main problems is that the Northeast has a degree of linguistic
+isolation, which leads to the production of distinct sign variants, along with limited research infrastructure and a lack
+of connection with Tibeto-Burman sign language systems.
+Punjabi Sign Language:The study conducted by Singh et al., addressing 2.8 million Punjabi speakers in India and
+overseas, focused on creating a rule-based Punjabi-to-ISL animation system for 500 sentences without using any neural
+recognition components. Cross-border collaboration on research into Pakistan Sign Language remains unexplored. The
+summary of regional language research carried out during 2020–2025 is given in Table 2.
+Table 2: Regional language research summary (2020 to 2025).
+Language Studies Largest Dataset Best Accuracy Real-World Application Primary Research Gap
+Kannada 6 12K videos 96.7% (test) / 81% (field) Healthcare interpreter Rural dialect variation
+Tamil 4 3.5K sentences 93.8% Text-to-sign translation Continuous recognition
+Marathi 4 1.2K signs 91.7% Edge device Dataset scale
+Gujarati 3 118K videos 89.6% / 81.7% (continuous) Benchmark Continuous gap
+Malayalam 3 600 signs 89.7% Mobile app Parallel corpus scarcity
+Bangla 3 23K images 98.23% Cross-border Static-to-continuous
+Telugu 2 500 videos 84.5% School pilot Under-researched (16× deficit)
+Assamese 1 450 phrases 89.2% Android app Single-study limitation
+Punjabi 1 500 sentences Rule-based Text-animation Neural methods needed
+5. Benchmark Datasets and Infrastructure
+ISL recognition progress relies mainly on the availability of high-quality datasets, the use of powerful computational
+infrastructure, and the validation of performance through real-world deployment. The recognized resources span three
+national benchmarks (INCLUDE and CISLR), two regional datasets (GIDSL and BDSL49), and one domain-specific
+resource (KSL Medical).
+301
+
+--- PDF page 9 ---
+5.1. National Benchmark Datasets
+INCLUDE is a corpus containing 270,000 frames that researchers use to study isolated sign recognition; its value
+comes from 20 different signers who performed signs at multiple locations, which establishes a strong basis for testing
+generalization, although it lacks continuous sign sequences. The CISLR dataset functions as a structured collection
+containing sign instances that researchers have annotated at the word level and organized into sequences that enable
+sentence-level analysis. It contains approximately 4,700 lexical items and is frequently used to assess both isolated and
+continuous sign language recognition models. However, its controlled acquisition setting and limited signer diversity
+should be considered when interpreting performance results.
+5.2. Regional and Domain-Specific Resources
+The GIDSL dataset for Gujarati is the largest and most detailed regional dataset, consisting of 118,000 videos with
+annotations for both isolated and continuous sign recognition. ISLRTC maintains an ISL dictionary of 10,000 terms
+that serves as a lexical resource fundamental to the whole field. The KSL Medical dataset targets health-related signs
+that channel clinical communication systems while providing ethical protections for privacy. The costly nature of
+dataset development is evidenced by GIDSL, which involved an 18-month collection protocol using a three-camera
+setup across controlled, home, and outdoor environments, together with a two-stage annotation process that resulted
+in inter-annotator agreement ofκ≥0.85.
+5.3. Government Infrastructure and Digital Platforms
+ISLRTC functions as a national regulatory body responsible for ISL approval, the maintenance of a dictionary of 10,000
+terms, and the funding of research and development through a budget of INR 12 crore (2021–2024). This allocation
+shows a preference for technology over the development of human resources, thus exposing possible barriers to the
+implementation of accessibility.
+5.4. Production Deployment: UMANG Platform
+Assessment of the UMANG platform indicates a strong negative relationship between the complexity of the queries and
+the accuracy of the system. Simple queries, which account for 45% of the interactions (for example, “train status”),
+have an accuracy rate of 97.5%, while moderate-complexity queries that make up 40% of the queries have a 92.3%
+accuracy rate, and the complex queries that account for 15% of the queries drop to 85.1%. The main improvements to
+be made are to reduce the 7.7% misclassification rate, lower the 6.53-second average response latency (which is above
+the sub-5-second accessibility benchmark), and provide services that go beyond the current railway and blood bank
+integration.
+6. Performance Analysis and Generalization
+The complete performance assessment reveals essential details about accuracy development, ongoing system limitations,
+and the architectural design choices that determine deployment success in real environments. The results from various
+studies should be interpreted with caution because they involve different accuracy assessment methods. The performance
+results depend heavily on the dataset attributes, which include size, signer diversity, and vocabulary difficulty, as well
+as the evaluation methods. The absence of standardized benchmarks hinders accurate accuracy comparisons between
+datasets because these comparisons do not fully reflect model superiority. The quantitative ranges reported in this
+section are based on values observed across multiple studies and should be interpreted as indicative trends rather than
+results derived from a formal meta-analysis.
+6.1. Accuracy Evolution Across Epochs
+The trajectory of sign language recognition has increased significantly in accuracy owing to the combination of new
+architectures and innovation in datasets. Isolated recognition based on CNNs (2020 to 2022) reached an accuracy
+of 79–92% on datasets usually consisting of fewer than 5,000 images, so the difference in accuracy mainly depended
+on dataset size and transfer learning. In 2021, CNN ensemble architectures together with larger training datasets
+(about 10,000 samples) raised performance to 85–95%. Concurrently, the use of transfer learning with fine-tuned CNN
+backbones (VGG-16, ResNet-50) on datasets exceeding 20,000 samples led to accuracy of 92–98% in 2022. The following
+year, 2023, saw the introduction of pose-based techniques that made use of MediaPipe and OpenPose, which gave nearly
+302
+
+--- PDF page 10 ---
+the same accuracy (94–98%) but with considerably reduced computational latency, often providing 3–5 times faster
+inference with little performance loss. Newer transformer-based techniques emerging in 2024 relied on larger datasets
+and achieved an accuracy of 95–99%. The development of multimodal transformer models that combined visual,
+skeletal, and linguistic cues achieved 96–99.5% accuracy by 2025, approaching the limits of human-level recognition
+accuracy.
+6.2. Cross-Signer Generalization
+Cross-signer generalization research faces a primary obstacle because models show substantial performance declines
+during cross-signer testing across multiple studies. The systems demonstrate difficulty when attempting to operate
+under conditions that differ from their training environment. Models that reached 94% accuracy with familiar signers
+experience a performance decline to 76% accuracy when tested with signers who maintain rapid execution and come
+from various geographic areas. The strategies for reducing the impact of the problem include collecting 30+ different
+signers, employing data augmentation to imitate variations, and using domain adaptation and meta-learning techniques
+that give a 4–8% performance increase. The best-performing systems achieved a generalization gap as low as 2.5%
+to withheld signers, outperforming the 12–20% declines found in current research, through effective signer diversity
+management and advanced adaptation methods.
+6.3. Environmental Robustness
+The environmental factors that create different conditions across deployments substantially determine how well models
+perform their tasks. Systems that operate under studio-controlled lighting conditions achieve 95–98% accuracy, but
+their results drop when they enter conditions that lack sufficient light. The actual performance of models drops
+significantly when researchers assess their capabilities in authentic testing environments that contain different lighting
+conditions, background elements, and camera angles. The combination of poor lighting, complex backgrounds, and
+off-angle signing results in severe accuracy loss reaching 30–50%. The development of environmentally robust systems
+needs to proceed through strategies that require comprehensive data augmentation, including environmental variation
+simulation.
+6.4. Continuous Recognition Performance Gap
+The simulation-to-reality gap is widest in continuous sign recognition, which enables complete phrase translation
+without requiring any segmentation. Three interconnected problems are the reasons for this gap: co-articulation
+effects, where one sign affects the next and transitional frames confuse even human annotators; temporal segmentation
+difficulties arising from variable sign duration that lacks clear boundaries, so that fixed-length window models either
+truncate or split signs incorrectly; and the absence of non-manual signals (facial expressions, head movements) that
+constitute 25–30% of grammatical meaning. These problems do not exist separately; on the contrary, co-articulation is
+the main cause of the temporal segmentation difficulty, and the lack of non-manual features prevents the models from
+resolving the ambiguities that these signals clear up.
+6.5. Computational Performance and Cost-Accuracy Trade-Offs
+The selection of architecture for sign language recognition is a decision in which factors such as accuracy, latency, and
+computational cost are all considered. Pose-based methods with LSTMs provide a good compromise between the
+extremes: real-time system performance (43–80ms on a high-end GPU), minimal memory usage (20–45MB), and the
+ability to run on a CPU-only edge device for smartphones. The transformer architectures, which often result in higher
+accuracy, are nevertheless 2–3 times slower in processing speed and also require 150–400MB of memory, hence the
+need for significant and expensive powerful hardware. Adaptive inference strategies dynamically route tasks such that
+lightweight Pose+LSTM models operate at the edge for real-time interaction while heavy transformers perform cloud
+batch processing, thus attaining a performance–economy balance. The performance comparison is provided in Table 3.
+7. Critical Challenges and Research Gaps
+Although the field has made significant advances, it continues to encounter obstacles that prevent real-world implemen-
+tation and growth. The existing problems across these areas create research challenges that need to be solved through
+multiple research approaches.
+303
+
+--- PDF page 11 ---
+Table 3: State-of-the-art system performance comparison (2024 to 2025).
+Study Language Architecture Dataset Accuracy (controlled / field) Latency Hardware Deployment
+Nedungadi et
+al. [29]
+ISL CNN-
+Transformer
+38.5K clips 97.5% / 90.0% 6.53s A6000 GPU Cloud
+(UMANG)
+Hugar & Ka-
+galkar [21]
+Kannada EfficientNet-
+Transformer
+1.08K videos 96.7% / 81.0% 53ms RPi4 1.2GB RAM Edge device
+Rastogi et al.
+[20]
+ISL YOLOv10-
+Swin
+15K static +
+35 dynamic
+96.6% / N/A 38ms RTX 3090 GPU server
+Amrutha et al.
+[19]
+ISL LiST Trans-
+former
+INCLUDE 91.2% / N/A 67ms Jetson Xavier Edge GPU
+Podder et al.
+[30]
+Bangla Ensemble
+CNN
+23K images 98.23% test, 95.7% cross-signer 45ms Desktop GPU Laboratory
+Patel & Joshi
+[23]
+Gujarati CNN-LSTM 118K
+(GIDSL)
+89.6% word, 81.7% sentence 95ms Not specified Benchmark
+7.1. Continuous Sign Recognition
+Continuous sign language recognition, which is the most critical and the most relevant to real life, is to be evaluated
+against three major interrelated challenges that go beyond isolated word classification. The main problem comes from
+continuity effects, where overlapping signs and transitional frames create confusion even for human annotators. The
+second problem is that of temporal segmentation without fixed-length windows, which remains unresolved since sign
+durations vary considerably with no clear boundaries. The third issue is that non-manual signals (facial expressions,
+head movements), which constitute about 25–30% of the linguistic information, remain poorly integrated.
+7.2. Data Scarcity for Regional Languages
+The most significant limitation in the development of regional language systems is the lack of sufficient data. The
+quantity of ASL datasets exceeds 500 video-hours, whereas ISL has only about 170 hours, a three-fold reduction.
+Regional variants usually possess only 3–6 hours for one language, which is 10–50 times less than the 60–150 hours
+necessary for convergence. A total of 600–1,500 hours of video is needed for full coverage of ten regional languages.
+To overcome data scarcity, it is necessary to apply a variety of methods that integrate transfer learning, data
+augmentation, and active learning approaches. The accuracy achieved by transfer learning is 85% with only 500 samples
+from the target, versus 65% with supervised learning alone, thus reducing the need for labeled data. One advanced
+data augmentation technique, together with others mentioned in a comprehensive survey, gives only a 3–7% accuracy
+improvement through spatial transformations, temporal modifications, and the generation of synthetic data.
+7.3. Multi-Modal Integration Deficit
+A substantial 70% of the prepared systems take manual signs only into consideration, leaving a large integration gap.
+Only 5% of the systems give complete integration to non-manual signals despite their grammatical, lexical, and prosodic
+significance. Among the technical problems are feature extraction from hundreds of facial keypoints and the alignment
+of manual signs across different gesture durations.
+The classification of vision-based hand gesture recognition methods for human-computer interaction systems has been
+presented, outlining key aspects of comprehensive multimodal approaches. The authors report that a strong gesture
+recognition system needs the simultaneous processing of hand movements, facial expressions, and body actions.
+7.4. Generalization Challenges
+Robust generalization has posed a great challenge over the years, characterized by several aspects. Recognition of
+unknown signers may result in a drop of 5–18% in accuracy owing to variation in signing styles, hand shapes, and
+speeds, all of which can be addressed with 30–50+ signer datasets featuring diverse characteristics, together with
+adversarial learning in conjunction with meta-learning methods. Table 4 offers a comprehensive overview of the
+challenges encountered and their quantified impact on performance.
+Performance degradation of as much as 15% is experienced when the domain shifts from laboratory-controlled to
+real-world scenarios, which is handled through the techniques of domain randomization and test-time adaptation.
+Long-tail distribution issues are considered among the primary generalization challenges, where the recognition of rare
+signs comes with an accuracy of only 70–85% compared with 95–98% for common signs. Darekar et al. presented a
+system for the recognition of Marathi sign language for physically disabled people, achieving this by implementing
+strategies of robust generalization through the use of balanced training data and adversarial augmentation [31].
+304
+
+--- PDF page 12 ---
+Table 4: Identified challenges with quantified performance impact.
+Challenge Current Performance Target Performance Performance Gap Root Causes Mitigation
+Strategies
+Continuous recognition 81–91% real-world>95% 4–14% Co-
+articulation,
+temporal seg-
+mentation,
+absent non-
+manual signals
+CTC loss, hier-
+archical models,
+multimodal at-
+tention
+Data scarcity (regional) 1–2K videos median 20K–50K per language 10–50× High cost, an-
+notation time,
+ethical consider-
+ations
+Transfer learn-
+ing, augmenta-
+tion (+3–7%),
+active learning
+Signer independence 5–18% accuracy drop<3% drop 2–15% Hand style, size,
+speed, dialect
+variation
+30+ diverse
+signers, domain
+adaptation,
+meta-learning
+Environmental robustness 8–15% accuracy drop<5% drop 3–10% Lighting, back-
+ground, camera
+angle
+Multi-
+environment
+training, pose-
+based architec-
+tures
+Multi-modal integration 5% systems comprehensive 80% systems comprehensive 75% adoption gap Feature extrac-
+tion complexity,
+temporal sync,
+annotation
+Hierarchical
+models, cross-
+modal atten-
+tion
+Real-time edge latency 50–180ms current<100ms target 0–80ms excess Model complex-
+ity, hardware
+constraints
+Quantization,
+pruning, effi-
+cient architec-
+tures (LiST)
+The combination of these approaches with few-shot learning methodologies significantly reduces the long-tail distribution
+problems that are intrinsic to expansive sign language vocabularies.
+8. Future Research Directions
+Addressing the identified obstacles and gaps requires strategic methodological innovations and impact-based planning
+across 2025–2030.
+8.1. Self-Supervised Learning
+Self-supervised learning significantly improves performance in addressing the lack of data by leveraging existing
+unlabeled data to require fewer than 70% of the labeled data otherwise needed, reducing labeling requirements by
+30–50%. Masked frame prediction drives the models to reconstruct absent frames, thus gaining knowledge of the
+temporal and spatial dynamics (+25% performance gain). Contrastive learning provides a way for the models to learn
+how to tell signs apart using different kinds of augmentations, thus achieving a +20% improvement. Pseudo-labeling is
+an approach in which training is continuously informed by labels generated by the model (+15% improvement where
+the supervision is tight).
+8.2. Cross-Lingual Transfer Learning
+The similarities among various Indian sign languages help to make cross-lingual transfer possible, which is a major tool
+for accelerating development. A simple pre-training on ISL and fine-tuning on a specific region reached 85% accuracy
+with 500 target samples, which is better than the 78% achieved from training from scratch. Advanced adversarial
+domain adaptation helps to reduce distribution differences. Multilingual joint training carried out with a common
+encoder and separate prediction heads for each language allows for zero-shot recognition through the use of phonological
+decomposition and semantic embeddings.
+8.3. Linguistically-Informed Architectures
+Using language-based models instead of purely data-driven ones is a justification for sustained precision and performance.
+Phonological decomposition represents the constituent parts of signs (about 50 handshapes× 30 locations × 20
+movements × 8 orientations) instead of treating them as distinct groups, and this even allows generalization to unseen
+signs.
+305
+
+--- PDF page 13 ---
+The rules applicable to ISL (for example, topic-comment structure) can be treated as either hard or trainable constraints
+that enhance the quality of continuous translation. Morphological modeling treats verb direction inflections and
+aspectual changes as integral parts of the main model.
+8.4. ISLR-Bench Standardization Framework
+Lack of standardization leads to a situation where the findings of studies lack direct comparability. We propose the
+ISLR-Bench as a conceptual framework for improving standardization in future ISL research. The first track, the
+Isolated Sign Recognition Track, measures accuracy on known signers and the critical unknown-signer generalization
+gap using the INCLUDE dataset. The Continuous Sign Recognition Track conducts Word Error Rate calculation in
+both controlled and in-the-wild environments using the CISLR dataset. The Regional Language Robustness Track
+suggests evaluating two regional variants in terms of cross-lingual transfer efficiency. The Real-Time Deployment
+Assessment Track reports latency and memory usage across various hardware, including desktop GPUs and mobile
+CPUs.
+8.5. Five-Year Implementation Roadmap (2026 to 2030)
+We propose a phased roadmap that could guide the translation of research into real-world impact. The first phase
+(2025–2026), Foundational Data and Benchmarks, creates a national ISL dataset collected through ethical methods
+and provides resources for five primary regional languages that DHH teams continuously monitor while generating
+public benchmarks and maintaining ongoing leaderboards. The second phase (2026–2027), Algorithmic Breakthroughs,
+aims at human-level recognition in controlled settings, demonstrating more than 99% isolated sign accuracy and less
+than 5% word error rate for continuous ISL performance. This phase creates advanced open-source models that come
+with specific constraints on processing speed and model size. The third phase (2027–2028), Real-World Robustness,
+operates extensive pilot programs across 15 states that test the systems with more than 10,000 DHH users while using
+unidentified signers and extreme weather to assess system performance. The fourth phase (2028–2029), Pervasive
+Deployment, enables complete real-time ISL recognition across consumer devices, achieving sub-50ms latency on
+mid-range smartphones. The ISL Mobile SDK enables the creation of 500+ applications that will serve more than
+1 million users. The fifth phase (2029–2030), Ecosystem Maturity and Equity, delivers complete public access to
+government digital services operating as official digital platforms, while evaluating success through three specific
+metrics: 15–25% employment growth for DHH workers, 70% literacy achievement, and the development of a sustainable
+community-based technology sector.
+9. Synthesis and Discussion
+This systematic review documents the complete progress of Indian Sign Language recognition technology that developed
+from 2020 to 2025, showing both major advances and ongoing challenges that prevent equitable implementation.
+9.1. Persistent Barriers to Equitable Implementation
+The current development of technology shows rapid progress, yet existing barriers still prevent people from accessing
+its full benefits. The continuous recognition process demonstrates an 8–15% performance decrease in actual situations
+because of co-articulation, temporal segmentation, and the addition of non-manual signals that include facial expressions
+and body posture. Multiple studies demonstrate that these signals play vital roles in understanding sign language. The
+regional language development process suffers from data availability problems because indigenous languages exist in
+datasets only 10–100 times smaller than ISL and at least 10 times smaller than ASL resources, which results from cost,
+coordination, and ethical restrictions. The issue of generalization is still present: for unknown signers there is a drop in
+accuracy of 5–18%, and a change in environment produces degradation of 8–15%, which indicates the necessity for
+diverse datasets and sophisticated training methods.
+9.2. Stakeholder Call to Action
+We recommend that stakeholders work together to support equitable ISL technology development. Researchers should
+prioritize real-world challenges, particularly continuous recognition, and ensure that evaluation includes unknown
+signers. They should also release code and models within six months of publication and promote the meaningful
+inclusion of DHH contributors, ensuring the presence of at least 50% DHH co-authorship.
+306
+
+--- PDF page 14 ---
+Government bodies could consider setting up an allocation of INR 100 crore for the development of datasets, in-
+frastructure, and innovation in 2026–2030; requiring all digital platforms to support ISL by 2028 with penalties for
+non-compliance; and creating a National ISL Data Commons.
+9.3. Vision for 2030
+We envisage that by 2030, ISL technologies could significantly enhance innovation and digital accessibility. Indian Sign
+Language and more than ten regional languages will be translated in real time with very good accuracy everywhere and
+on any device for both public and private usage. Technological barriers will diminish, which in turn will lead to growth
+in DHH community participation across different sectors such as employment (+15–25%), education (+10–15%), and
+healthcare access (+25–30%). The country’s linguistic diversity will also be documented and acknowledged.
+9.4. Technology As Bridge, Not Replacement
+Technology should be regarded as an access enabler, not as a human replacement. It offers users empowerment through
+wide, constant, low-cost daily communication access. Still, it is not able to comprehend cultural intricacy, show
+emotional compassion, or make moral decisions like humans, particularly in delicate fields such as law or mental health.
+The future is hybrid, where technology takes over routine, high-volume interactions, allowing human professionals to
+deal with the delicate and complex communications, and where both roles are equally valued and rewarded socially.
+9.5. Methodological Limitations
+This review has several methodological limitations. Although a structured PRISMA approach was followed, the
+adaptation of QUADAS-2 into a quantitative scoring system is not formally validated and may introduce subjectivity.
+The study achieved broad database coverage yet may not have found all relevant studies because of database indexing
+limitations. The different research methods used in the included studies, together with the various assessment techniques
+employed to evaluate results, create barriers that make it difficult to directly compare the performance evaluation
+results across studies.
+10. Conclusion
+This systematic review has detailed the technical maturity and application potential of Indian Sign Language recognition
+from 2020 to 2025. The field shows progress through architectural evolution that started with CNNs (79–92%), moved
+to pose estimation (89–94%, 5–7× faster), and finally reached transformers (91–98% controlled, 81–90% real-world).
+The research has achieved substantial progress through its investigation of nine regional languages, which have been
+implemented in both healthcare and e-governance systems. The primary problems persist because an 8–15% performance
+loss occurs during continuous recognition, unknown-signer accuracy drops between 5–18%, and regional variant data
+remains 10–100 times scarcer. The desired results will depend on collaborative work between researchers, policymakers,
+industry experts, and members of the DHH community. The technological opportunity for truly equitable accessibility
+is not only a matter of debate but also one of social responsibility. To realize this vision, the collective will must be
+strong enough to build socially the strongest technical foundations, benefiting millions of DHH people in India.
+Author Contributions
+Gurusiddappa Hugar: Conceptualization, Methodology, Formal Analysis, Investigation, Writing (Original Draft),
+Writing (Review and Editing), Visualization.Ramesh M. Kagalkar: Validation, Data Curation, Formal Analysis,
+Investigation, Writing (Review and Editing).
+Declaration of Competing Interest
+The authors declare that they have no known competing financial interests or personal relationships that could have
+appeared to influence the work reported in this paper.
+307
+
+--- PDF page 15 ---
+Data A vailability
+The data that support the findings of this study are available within the article and its supplementary material.
+Declaration of Generative AI and AI-Assisted Technologies In the Writing Process
+During the preparation of this work the authors did not use any generative AI or AI-assisted technologies.
+Funding
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit
+sectors.
+Ethics Statement
+This systematic review synthesizes previously published research and does not involve human participants or animal
+subjects. All included studies obtained appropriate ethical approvals from their respective institutional review boards.
+References
+[1] Census of India, “Data on disabled persons,” 2011.
+[2] P. F. Whiting, A. W. Rutjes, M. E. Westwood,et al., “QUADAS-2: A revised tool for the quality assessment of
+diagnostic accuracy studies,”Ann. Intern. Med., vol. 155, no. 8, pp. 529–536, 2011.
+[3] M. J. Raihan, M. I. Labib, A. A. J. Jim,et al., “Bengali-Sign: A machine learning-based Bengali sign language
+interpretation for deaf and non-verbal people,”Sensors, vol. 24, no. 16, p. 5351, 2024.
+[4] Z. Cao, G. Hidalgo, T. Simon, S.-E. Wei, and Y. Sheikh, “OpenPose: Realtime multi-person 2D pose estimation
+using part affinity fields,”IEEE Trans. Pattern Anal. Mach. Intell., vol. 43, no. 1, pp. 172–186, 2021.
+[5] S. Giri and A. Patil, “Marathi sign language recognition using MediaPipe and deep learning algorithm.” Res.
+Square, preprint, 2024.
+[6] ISLRTC and MeitY, “Sign learn: Mobile dictionary app for Indian sign language,” tech. rep., ISLRTC and MeitY,
+2023.
+[7] S. J. Pan and Q. Yang, “A survey on transfer learning,”IEEE Trans. Knowl. Data Eng., vol. 22, no. 10,
+pp. 1345–1359, 2010.
+[8] S. T. Sivakavi and R. I. Minu, “Tamil Lang TSP: Tamil Lang transformer neural text to sign production,”Int.
+Arab J. Inf. Technol., vol. 21, no. 6, pp. 1143–1154, 2024.
+[9] D. Moher, A. Liberati, J. Tetzlaff, and D. G. Altman, “Preferred reporting items for systematic reviews and
+meta-analyses: The PRISMA statement,”PLoS Med., vol. 6, no. 7, p. e1000097, 2009.
+[10] World Health Organization, “Deafness and hearing loss.” Fact Sheet, 2023.
+[11] Ministry of Social Justice and Empowerment, “Rights of persons with disabilities act,” 2016.
+[12] SIL India, “Assessment of regional language varieties in ISL,” sil report, SIL International, 2008.
+[13] Z. C. Lipton, J. Berkowitz, and C. Elkan, “A critical review of recurrent neural networks for sequence learning,”
+arXiv:1506.00019, 2015.
+[14] P. P. Waghmare, “Deep learning approach for combined Indian sign language recognition and video generation
+model,”Int. J. Intell. Syst. Appl. Eng., vol. 12, no. 4, pp. 3296–3302, 2024.
+[15] C. Lugaresi, J. Tang, H. Nash,et al., “MediaPipe: A framework for building perception pipelines,”arXiv:1906.08172,
+2019.
+308
+
+--- PDF page 16 ---
+[16] K. Goyal and G. Velmathi, “Indian sign language recognition using MediaPipe holistic,”arXiv:2304.10256, 2023.
+[17] C. Sujatha, M. Patil, U. Madannavar, N. Jain, A. Badni, R. Angadi, and S. Gangisetty, “Indian regional sign
+language recognition,” inProc. 14th Indian Conf. Comput. Vis., Graph. Image Process. (ICVGIP), pp. 1–7, 2024.
+[18] A. Dosovitskiy, L. Beyer, A. Kolesnikov,et al., “An image is worth 16×16 words: Transformers for image recognition
+at scale,”arXiv:2010.11929, 2021.
+[19] K. Amrutha, P. Prabu, and R. C. Poonia, “LiST: A lightweight framework for continuous Indian sign language
+translation,”Information, vol. 14, no. 2, p. 79, 2023.
+[20] U. Rastogi, R. P. Mahapatra, and S. Kumar, “Advanced gesture recognition in Indian sign language using a
+synergistic combination of YOLOv10 with Swin Transformer model,”Sci. Rep., vol. 15, no. 1, p. 32894, 2025.
+[21] G. Hugar and R. M. Kagalkar, “Hybrid dual-stream deep learning approach for real-time KSL in healthcare,”J.
+Inf. Syst. Eng. Bus. Intell., vol. 11, no. 3, pp. 393–406, 2025.
+[22] S. Gobhinath and S. Sophia, “Tamil sign language identification using the auto-metric graph neural network
+optimized with golden eagle optimization,”IETE J. Res., vol. 71, no. 6, pp. 2010–2019, 2025.
+[23] J. M. Joshi and D. U. Patel, “GIDSL: Indian-Gujarati isolated dynamic sign language recognition using deep
+learning,”SN Comput. Sci., vol. 5, p. 527, 2024.
+[24] G. Hugar, R. M. Kagalkar, and A. Das, “Comparative study of hybrid deep learning models for Kannada sign
+language recognition,”Int. J. Comput. Intell. Syst., vol. 18, p. 191, 2025.
+[25] A. L. Vengassery, E. R. Perera, E. Jobin, S. S. Pulickal, and S. Sadanandan, “Aksharavaani: A Malayalam sign
+language detector,”Int. J. Sci. Res. Sci. Technol., vol. 12, no. 12, pp. 319–331, 2025.
+[26] K. Mandke and P. Chandekar, “Deaf education in India,” inDeaf Education Beyond the Western World, Oxford,
+U.K.: Oxford Univ. Press, 2019.
+[27] B. Frenay and M. Verleysen, “Classification in the presence of label noise: A survey,”IEEE Trans. Neural Netw.
+Learn. Syst., vol. 25, no. 5, pp. 845–869, 2014.
+[28] N. H. Shudha, F. T. Johura, A. Singha, and K. P. Ghosh, “Building an effective CNN for Bangla sign language,”
+inAIP Conf. Proc., vol. 3327, p. 020013, 2025.
+[29] P. Nedungadi, G. Dileep, M. Geetha, and R. Raman, “Vision transformer-powered conversational agent for real-time
+Indian sign language e-governance accessibility,”Sci. Rep., vol. 15, p. 33055, 2025.
+[30] K. K. Podder, M. E. H. Chowdhury, A. M. Tahir, Z. B. Mahbub, A. Khandakar, M. S. Hossain, and M. A. Kadir,
+“Bangla sign language (BdSL) alphabets and numerals classification using a deep learning model,”Sensors, vol. 22,
+no. 2, p. 574, 2022.
+[31] A. A. Darekaret al., “Marathi sign language recognition for physically disabled people,”Int. J. Adv. Res. Sci.
+Commun. Technol., vol. 2, no. 7, pp. 1–8, 2022.
+[32] A. Sridhar, R. G. Ganesan, P. Kumar, and M. Khapra, “INCLUDE: A large scale dataset for Indian sign language
+recognition,” inProc. 28th ACM Int. Conf. Multimedia (MM ’20), pp. 1366–1375, 2020.
+[33] A. Joshi, A. Bhat, S. Pradeep, P. Gole, S. Gupta, S. Agarwal, and A. Modi, “CISLR: Corpus for Indian sign
+language recognition,” inProc. 2022 Conf. Empirical Methods Natural Lang. Process. (EMNLP), pp. 10357–10366,
+2022.
+[34] Indian Sign Language Research and Training Centre (ISLRTC), “Development of ISL dictionary (10,000 terms),”
+annual report, ISLRTC, New Delhi, India, 2021.
+[35] D. U. Patel and J. M. Joshi, “Deep learning based static Indian-Gujarati sign language gesture recognition,”SN
+Comput. Sci., vol. 3, p. 380, 2022.
+[36] H. K. Vashisth, T. Tarafder, R. Aziz, M. Arora, and Alpana, “Hand gesture recognition in Indian sign language
+using deep learning,”Eng. Proc., vol. 59, no. 1, p. 96, 2023.
+[37] R. M. Badiger, R. Yakkundimath, G. Konnurmath, and P. M. Dhulavvagol, “Deep learning approaches for age-based
+gesture classification in South Indian sign language,”Eng. Technol. Appl. Sci. Res., vol. 14, no. 2, pp. 13255–13260,
+2024.
+[38] Census of India, “Linguistic survey of Karnataka,” 2011.
+309
+
+--- PDF page 17 ---
+[39] C. Hemanth, M. Jyothi, L. Adarsh, H. M. Shashikala, and N. Thejaswini, “Kannada sign language recognition
+using hand gestures,”Int. Res. J. Eng. Technol., vol. 11, no. 4, pp. 1–8, 2024.
+[40] N. Ajmi, A. B. Raj, B. Basina, S. Varsha, and V. S. Kumar, “Malayalam sign language recognizer,”Int. J. Eng.
+Res. Technol., vol. 11, no. 5, pp. 1–6, 2022.
+[41] B. Shabina, S. Sony, and R. R. Rajeev, “An approach for Malayalam sentence to Indian sign language generation
+using synthetic animations,” inAIP Conf. Proc., vol. 3134, p. 020002, 2024.
+[42] T.-Y. Lin, P. Goyal, R. Girshick, K. He, and P. Dollár, “Focal loss for dense object detection,”IEEE Trans. Pattern
+Anal. Mach. Intell., vol. 42, no. 2, pp. 318–327, 2020.
+[43] A. Graves, S. Fernández, F. Gomez, and J. Schmidhuber, “Connectionist temporal classification: Labelling
+unsegmented sequence data with recurrent neural networks,” inProc. 23rd Int. Conf. Mach. Learn. (ICML),
+(Pittsburgh, PA, USA), pp. 369–376, 2006.
+[44] B. Kang, S. Xie, M. Rohrbach,et al., “Decoupling representation and classifier for long-tailed recognition,” in
+Proc. 8th Int. Conf. Learn. Represent. (ICLR), 2020.
+[45] D. Sarma and M. K. Bhuyan, “Methods, databases and recent advancement of vision-based hand gesture recognition
+for HCI systems: A review,”SN Comput. Sci., vol. 2, p. 436, 2021.
+[46] C. Shorten and T. M. Khoshgoftaar, “A survey on image data augmentation for deep learning,”J. Big Data, vol. 6,
+p. 60, 2019.
+[47] S. Bhinganiy, R. Gunjal, S. Game, S. Gore, and S. Gawali, “Real-time Marathi sign language translation into text
+and speech using hand gesture recognition,”Int. Res. J. Adv. Eng. Manag., vol. 3, no. 5, pp. 1946–1953, 2025.
+310

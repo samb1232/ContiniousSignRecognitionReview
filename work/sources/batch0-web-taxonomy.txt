@@ -1,0 +1,505 @@
+A comprehensive survey and taxonomy of sign language research - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0952197622002925)
+citeturn13search0 [wordlim: 200] Published: 4.2 years ago; Crawled: last month; A comprehensive survey and taxonomy of sign language research ... This survey article conducts a review of CSLR research, spanning the past 25 years, offering insights into the evolution of CSLR systems.
+
+## Engineering Applications of Artificial Intelligence
+
+Volume 114, September 2022, 105198
+
+# 
+
+Survey paper
+
+A comprehensive survey and taxonomy of sign language research
+
+https://doi.org/10.1016/j.engappai.2022.105198Get rights and content
+
+## Abstract
+
+Sign language relies on visual gestures of human body parts to convey meaning and plays a vital role in modern society to communicate and interact with people having hearing difficulty as well as for human–machine interaction applications. This field has attracted a growing attention in recent years and several research outcomes have been witnessed covering various issues including sign acquisition, segmentation, recognition, translation and linguistic structures. In this paper, a comprehensive up-to-date survey of the state-of-the-art literature of automated sign language processing is presented. The survey provides a taxonomy and review of the body of knowledge and research efforts with focus on acquisition devices, available databases, and recognition techniques for fingerspelling signs, isolated sign words, and continuous sentence recognition systems. It covers recent advances including deep machine learning and multimodal approaches and discusses various related challenges. This survey is directed to junior researchers and industry developers working on sign language gesture recognition and related systems to gain insights and identify distinctive aspects and current status of existing landscape as well as future perspectives leading to further advancements.
+
+## Introduction
+
+Communication plays an essential role with tremendous effects on human life, e.g. gain and exchange knowledge, interact and develop social relationships, and express feelings and needs. While spoken language is the normal way for people to communicate, sign language (SL) represents a main alternative for people with auditory or vocal impairment or difficulty. Recently, the World Health Organization (WHO) declared that more than 400 million people worldwide have disabling hearing loss which forms about 5% of the world’s population.^{1} Hearing impairment may range from mild (20 dB−40 dB below normal hearing threshold) to profound (more than 81 dB below normal hearing threshold) and can be caused as a result of a birth defect or an illness, or develop at a later stage of age. With the recent advances in information technology and robotics, sign gestures is not only important to overcome communication barriers between humans but also for human–machine interaction (Ryumin et al., 2019, Homburg et al., 2019) and translation of sign language into another form of natural language and vice versa (Dutta et al., 2015, Rajaganapathy et al., 2015).
+
+Though there are some references to a sign language that dates back to the 5th century BC, it was not until the past centuries where some attempts have been made to develop a system for deaf and dump communication within their community and to other people. For instance, an early attempt in western countries in 16th century attributed to a Spanish monk, Pedro Ponce de León, as the first teacher for the deaf who described a manual alphabet for fingerspelling, formed the base for Juan Pablo Bonet’s writings in 1620 for teaching deaf people. The first free school for deaf was founded in Paris in 1755 and the first American School for deaf was founded in Connecticut in 1817. Almost in parallel, the British sign language has evolved and widely varied from the American sign language. However, a resolution was passed in Milan in 1880 at the International Congress on Education of the Deaf to officially prohibit using sign language in favor of speech. Not until the past two decades, some countries such as UK have recognized the sign language as a language in its own right and become part of the formal educational system rather than charity boards. Similar to natural languages, sign language is not universal, i.e. it is geographically specific and more than 135 variants exist around the world (Luqman et al., 2017, Makhashen et al., 2019). Examples of popular sign languages include Spanish (Lengua de Signos Española or LSE), American (ASL), British (BSL), Irish (ISL), French (langue des signes française or LSF), Australian (Auslan), Chinese (CSL), Dutch (Nederlandse Gebarentaal or NGT), German (Deutsche Gebärdensprache or DGS)), Brazilian (Libras), Russian (RSL) and Arabic (ArSL). Moreover, some countries may share the same sign language alphabet, e.g. British, Australian and New Zealand (BANZSL), while others can have different sign languages albeit sharing the same spoken language, e.g. BSL and ASL.
+
+Sign language is considered as a spontaneous non-verbal way for people to communicate through manual and/or non-manual body gestures for visual signing to convey meaning. Manual gestures are the primary components of a sign language and usually involve hand movements to express the signer’s emotions and thoughts (Cheok et al., 2019). Manual gestures are naturally accompanied with simultaneous non-manual gestures such as head movements, facial expressions and body postures (Nair and Bindu, 2013). Facial expressions employ different face parts such as eye, eyebrow, forehead, and mouth to express or stress meanings that cannot be revealed by manual gestures. Facial expressions are a central focal point to mark syntactical and grammatical information in sign languages such as conditions and questions. For instance, they can be used to express negation or serve as adverbs and adjectives of manual signs distinguishing between signs with similar hand gestures (Goldstein and Feldman, 1996). An example is shown in Fig. 1 where facial expressions are used to reflect the emotion of two ArSL signs: “Beautiful” and “Ugly”. Each sign in the first group shares the face posture with a corresponding similar sign in the second group. Moreover, head motion is an important component of the non-manual articulators of a sign language that can be integrated with manual gestures or used as an independent sign. Fig. 2 shows an illustrative example of a sign that uses hand and head postures together with eye closing to express the “Sleep” sign in ArSL. Lip motion is another popular form of non-manual gestures for voiced and unvoiced speech recognition but recently is gaining increasing attention for sign language recognition (Koller et al., 2015b). Sign gestures can be classified differently into static or dynamic gestures. The former type keeps the position of the body part fixed during signing and typically depends on the orientation and shape of hands and fingers for signing digits and alphabets (Pisharady and Saerbeck, 2015). In contrast, dynamic gestures depend on hands and body motion during signing and this type of gestures is used mainly in signing words and sentences (Luqman and Mahmoud, 2019).
+
+Automated Sign Language Recognition (SLR) continues to gain interest within the research community and in recent years there has been an influx of related publications. While a number of surveys and reviews were published, they mostly focus on specific issues and the continuous development of the field necessitates a more up-to-date literature survey. This paper aims at providing a comprehensive survey and taxonomy for the state-of-the-art sign language recognition. It explores various aspects and techniques related to sign language. Furthermore, it covers latest advances including deep learning and reviews most common resources available for sign language recognition. It describes publicly available datasets used in the related research. Moreover, it discusses existing challenges and highlights potential research directions for sign language recognition. This survey is directed to junior researchers and industry developers in related fields to gain key insights of sign language recognition and related human–machine interaction systems. The remainder of the paper is organized as follows: Section 2 provides an overview and reviews related works. Section 3 describes different sign acquisition devices while Section 4 lists available datasets for sign language recognition. Section 5 extensively discusses different techniques adopted for sign language recognition. Finally, conclusions are directions for advancing the field are outlined in Section 6.
+
+## Cited by (59)
+
+  * ### Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects
+
+2024, Information Processing and Management
+
+Citation Excerpt :
+
+Moreover, DL-based CSLR was not discussed deeply, as the majority of the reviewed CSLR techniques adopted traditional approaches to CSLR. A comprehensive literature review on SLR research was presented in El-Alfy and Luqman (2022), which reviewed both isolated and continuous SLR methods. Nonetheless, it did not discuss CSLR in depth, including its challenges and approaches.
+
+Show abstract
+
+Sign language is a form of visual communication employing hand gestures, body movements, and facial expressions. The growing prevalence of hearing impairment has driven the research community towards the domain of Continuous Sign Language Recognition (CSLR), which involves identification of successive signs in a video stream without prior knowledge of temporal boundaries. This survey article conducts a review of CSLR research, spanning the past 25 years, offering insights into the evolution of CSLR systems. A critical analysis of 126 studies is presented and organized into a taxonomy comprising seven critical dimensions: sign language, data acquisition, input modality, sign language cues, recognition techniques, utilized datasets, and overall performance. Additionally, the article investigated the classification of deep-learning CSLR models, categorizing them based on spatial, temporal, and alignment methods, while identifying their advantages and limitations. The article also explored various research aspects including CSLR challenges, the significance of non-manual features in CSLR systems, and identified gaps in existing literature. This literature taxonomy serves as a resource aiding researchers in the development and positioning of novel CSLR techniques. The study emphasizes the efficacy of multi-modal deep learning systems in capturing diverse sign language cues. However, the examination of existing research uncovers numerous limitations, calling for continued research and innovation within the CSLR domain. The findings not only contribute to the broader understanding of sign language recognition but also lay the foundations for future research initiatives aimed at addressing the persistent challenges within this emerging field.
+
+  * ### A Systematic Review of Hand Gesture Recognition: An Update from 2018 to 2024
+
+2024, IEEE Access
+
+  * ### Sign Language Recognition: A Comprehensive Review of Traditional and Deep Learning Approaches, Datasets, and Challenges
+
+2024, IEEE Access
+
+  * ### Deep Learning Technology to Recognize American Sign Language Alphabet
+
+2023, Sensors
+
+  * ### A systematic review of machine learning techniques for stance detection and its applications
+
+2023, Neural Computing and Applications
+
+  * ### An Efficient Two-Stream Network for Isolated Sign Language Recognition Using Accumulative Video Motion
+
+2022, IEEE Access
+
+View all citing articles on Scopus
+
+View full text
+
+© 2022 Elsevier Ltd. All rights reserved.--------------------------------------------------------------------------------
+Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review | IEEE Conference Publication | IEEE Xplore (https://ieeexplore.ieee.org/abstract/document/10957797)
+citeturn13search1 [wordlim: 200] Published: 1.9 years ago; Crawled: last week; # Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review
+
+# Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review
+
+Publisher: IEEE
+
+## Abstract:
+
+The paper reviews the progress in Sinhala Sign Language recognition (SSL) over the last decade, tracing the techniques from early image processing to advanced deep learni...Show More
+
+## Metadata
+
+## Abstract:
+
+The paper reviews the progress in Sinhala Sign Language recognition (SSL) over the last decade, tracing the techniques from early image processing to advanced deep learning models, indicating methodologies involved, datasets used, and challenges. The paper shows that the evolution has progressed from basic classifiers to sophisticated machine learning techniques that integrate CNNs, RNNs, and transformer architectures. It also presents the implementation of multimodal systems using hand gestures, facial expressions, and body postures. The review identifies the limitations of current recognition in SSL, such as scarce complete datasets, technical difficulties, and a lack of robust continuous recognition. Finally, it points out future research directions, stressing that further work must focus on growing datasets, making lightweight models for edge devices, and collaboration for further growth in SSL recognition technology.
+
+Published in: 2024 International Conference on Image Processing, Computer Vision and Machine Learning (ICICML)
+
+Date of Conference: 22-24 November 2024
+
+Date Added to IEEE Xplore: 14 April 2025
+
+ISBN Information:
+
+DOI: 10.1109/ICICML63543.2024.10957797
+
+Publisher: IEEE
+
+Conference Location: Shenzhen, China
+
+
+# References
+
+References is not available for this document.--------------------------------------------------------------------------------
+A comprehensive survey and taxonomy of sign language research - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0952197622002925)
+citeturn13search2 [wordlim: 200] Crawled: 3 months ago; The recent advancement in computer vision and deep learning has fueled research efforts in sign language recognition. In Fig. 3, we show a mindmap taxonomy ... Acquisition techniques of sign language can be classified into sensor-based, vision-based, and a combination of the two (Ahmed et al., 2018).
+## Section snippets
+
+## Overview and existing reviews
+
+Sign language recognition has attracted the attention of researchers from multidisciplinary fields including computer vision, pattern recognition, machine learning, sensors and robotics. Researchers have explored different issues in order to develop real-time reliable systems to communicate effectively with hearing or vocal impaired people. The recent advancement in computer vision and deep learning has fueled research efforts in sign language recognition. In Fig. 3, we show a mindmap taxonomy
+
+## Sign acquisition devices
+
+Acquisition techniques of sign language can be classified into sensor-based, vision-based, and a combination of the two (Ahmed et al., 2018). Sensor-based acquisition techniques depend on a set of sensors to record the signers’ gesture information (Ahmed et al., 2018, Zhang et al., 2019b) while vision-based techniques use video cameras to capture signers’ gesture (Pisharady and Saerbeck, 2015).
+
+## Sign language datasets
+
+One of the main challenges of sign language recognition and translation systems is the availability of databases (Luqman and Mahmoud, 2020). Few databases are available for sign languages compared with gesture databases. Although sign language recognition is one of the applications of gesture recognition, gesture databases are rarely used for sign language recognition for several reasons. First, the number of classes in gesture recognition databases is usually limited. Secondly, sign language
+
+## Sign language recognition techniques
+
+Several techniques have been proposed during the last decade for sign language recognition. Some of these techniques target static sign gestures including alphabet and digit signs while other techniques target dynamic sign gestures. In this section, we will classify the surveyed techniques into three categories fingerspelling, isolated, and continuous sign gestures recognition systems.
+
+## Conclusions and future directions
+
+Sign language recognition has come a long way from its initial starts in recognizing alphabets and digits. Current techniques of SLR are successful in dealing with dynamic signs that depend on hands and body motion. Moreover, current work rarely depends on using sensors or colored gloves that were used by earlier techniques. The availability of multi-modal devices that help in detecting and tracking signer body parts motivated researchers to abandon sensor-based technique in favor of
+
+## CRediT authorship contribution statement
+
+El-Sayed M. El-Alfy: Administration, Conceptualization, Methodology, Data curation, Visualization, Writing – editing, Critical review, Final revision. Hamzah Luqman: Data curation, Writing – original draft, Visualization, Writing – editing, Final revision.
+
+## Declaration of Competing Interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+--------------------------------------------------------------------------------
+Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review (https://eurekamag.com/research/095/990/095990172.php)
+citeturn13search3 [wordlim: 200] Crawled: last month; # Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review
+
+# Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review
+
+##### Abhishek, Y.; Sumanathilaka, T.G.D.K.
+
+* * *
+
+#### 2024 International Conference on Image Processing, Computer Vision and Machine Learning, ICICML 2024: 1750-1755
+
+#### 2024
+
+* * *
+
+ISSN/ISBN: 9798350355413
+
+DOI: 10.1109/icicml63543.2024.10957797
+Accession: 095990172
+
+
+##### Summary
+
+The paper reviews the progress in Sinhala Sign Language recognition (SSL) over the last decade, tracing the techniques from early image processing to advanced deep learning models, indicating methodologies involved, datasets used, and challenges. The paper shows that the evolution has progressed from basic classifiers to sophisticated machine learning techniques that integrate CNNs, RNNs, and transformer architectures. It also presents the implementation of multimodal systems using hand gestures, facial expressions, and body postures. The review identifies the limitations of current recognition in SSL, such as scarce complete datasets, technical difficulties, and a lack of robust continuous recognition. --------------------------------------------------------------------------------
+Back Cover-Online (https://icter.lk/downloads/ICTer2022-Book-of-Abstracts.pdf)
+citeturn13search12 [wordlim: 200] Published: 3.9 years ago; Crawled: 3.9 years ago; Multi-modal Deep Learning Approach to Improve Sentence level Sinhala Sign Language Recognition ... In this research, we propose a multi-modal Deep Learning approach that can effectively recognize sentence-level sign gestures using hand and lip movements and translate to Sinhala text.
+Book of Abstracts – ICTer2022
+
+Multi-modal Deep Learning Approach to Improve Sentence level Sinhala Sign Language Recognition
+
+H.H.S.N.Haputhanthri, H.M.N.Tennakoon, M.A.S.M.Wijesekara,  
+B.H.R.Pushpananda, H.N.D. Thilini
+
+University of Colombo School of Computing,  
+Colombo, Sri Lanka
+
+Sign language is used across the world for communication purposes within hearing-impaired communities. Hearing people are not well versed in sign language and most hearing-impaired are not good in general text, creating a communication barrier. Research on Sign Language Recognition (SLR) systems have shown admirable solutions for this issue. In Sri Lanka, machine learning along with neural networks has been the prominent domain of research in Sinhala SLR. All previous research is mainly focused on word-level SLR using hand gestures for translation. While this works for a certain vocabulary, there are many signs interpreted through other spatial cues like lip movements and facial expressions. Therefore, translation is limited and sometimes the interpretations can be misleading. In this research, we propose a multi-modal Deep Learning approach that can effectively recognize sentence-level sign gestures using hand and lip movements and translate to Sinhala text. The model consists of modules for visual feature extraction (ResNet), contextual relationship modeling (transformer encoder with multi-head attention), alignment (CTC) and decoding (Prefix beam search). A dataset consisting 22 of sentences used for evaluations was collected under controlled conditions for a specific day-to-day scenario (a conversation between a vendor and a customer in a shop). The proposed model achieves a best Word Error Rate (WER) of 12.70 on the testing split, improving over the single-stream model which shows a best WER of 17.41, suggesting a multi-modal approach improves overall SLR.
+
+Keywords: Sign language, Sinhala Sign Language, Continuous Sign Language Recognition, Deep Learning, Multi-modal fusion
+
+8--------------------------------------------------------------------------------
+Deep Learning Based Sinhala Sign Language Recognition (https://www.researchgate.net/publication/395278927_Deep_Learning_Based_Sinhala_Sign_Language_Recognition)
+citeturn13search4 [wordlim: 200] Crawled: 2 months ago; # Deep Learning Based Sinhala Sign Language Recognition ... In this research, the authors propose a mobile solution using a Region Based Convolutional Neural Network for object detection to reduce the communication gap between the sign users and language speakers by identifying and interpreting Sinhala sign language to Sinhala text using Natural Language Processing (NLP). ... Many existing studies have proposed methods for incomplete sign language recognition, whereas this study aimed for full American Sign Language (ASL) recognition, which consists of 26 letters and 10 digits.
+Conference Paper
+
+# Deep Learning Based Sinhala Sign Language Recognition
+
+  * May 2025
+
+DOI:10.1109/INCET64471.2025.11140065
+
+  * Conference: 2025 6th International Conference for Emerging Technology (INCET)
+
+Authors:
+
+Sahan C. Samarakoon
+
+Sahan C. Samarakoon
+
+  * This person is not on ResearchGate, or hasn't claimed this research yet.
+
+Mahima Weerasinghe
+
+Mahima Weerasinghe
+
+  * This person is not on ResearchGate, or hasn't claimed this research yet.
+
+Image: Request Full-text Paper PDF
+
+Request full-text PDF
+
+To read the full-text of this research, you can request a copy directly from the authors.
+
+
+## No full-text available
+
+Image: Request Full-text Paper PDF
+
+To read the full-text of this research,
+you can request a copy directly from the authors.
+
+Request full-text PDF
+
+## Citations (0)
+
+## References (17)
+
+ResearchGate has not been able to resolve any citations for this publication.
+
+Sinhala Sign Language Learning System for Hearing Impaired Community
+--------------------------------------------------------------------------------
+Deep Learning-Based Sinhala Sign Language Recognition: A Preliminary Framework for Deaf Communication in Sri Lanka (https://eurekamag.com/research/104/596/104596499.php)
+citeturn13search5 [wordlim: 200] Published: 1.8 years ago; Crawled: last month; # Deep Learning-Based Sinhala Sign Language Recognition: A Preliminary Framework for Deaf Communication in Sri Lanka ... ##### Full-Text Article emailed within 0-6 h ... 2023: A Deep Learning Framework for Real-Time Indian Sign Language Gesture Recognition and Translation to Text and Audio Lecture Notes in Networks and Systems 428: 287-300
+
+# Deep Learning-Based Sinhala Sign Language Recognition: A Preliminary Framework for Deaf Communication in Sri Lanka
+
+##### Herath, H.M.R.V.; Vidanagama, D.U.
+
+* * *
+
+#### 9th SLAAI - International Conference on Artificial Intelligence, SLAAI-ICAI 2025
+
+#### 2025
+
+
+ISSN/ISBN: 9798331561239
+
+DOI: 10.1109/slaai-icai68534.2025.11318428
+Accession: 104596499
+
+##### Full-Text Article emailed within 0-6 h
+
+[Input][Input][Input][Input][Input][Input][Input] Buy Now for $19.90
+
+##### Summary
+
+More than 300,000 Sri Lankan Deaf and Hard of Hearing (DHH) citizens experience communication obstacles due to the absence of Sinhala Sign Language (SSL) interpreting services. These barriers restrict access to education, employment, healthcare, and government services. Despite extensive Sign Language Recognition (SLR) research globally in American Sign Language (ASL) and Indian Sign Language (ISL), SSL-based work remains sparse, particularly in real-time gesture recognition. This paper presents the first stage of developing an SSL gesture detection system using deep learning with a hybrid spatial-temporal feature extraction approach. --------------------------------------------------------------------------------
+Sign Language Recognition - an overview | ScienceDirect Topics (https://www.sciencedirect.com/topics/computer-science/sign-language-recognition)
+citeturn13search6 [wordlim: 200] Crawled: 2 months ago; ## A comprehensive survey and taxonomy of sign language research ... URL: https://www.sciencedirect.com/science/article/pii/S0952197622002925
+Another systematic review is presented in Wadhawan and Kumar (2019) where 117 papers published between 2007 and 2017 were selected and categorized based on 25 sign languages. The analysis of these selected papers demonstrated that the main research areas on sign language are related to static isolated single hand signs. Recently, some modest reviews are presented, e.g. 30 papers are analyzed in Er-Rady et al. (2017) covering various issues related to sign language recognition, and 21 papers on vision-based sign language recognition techniques are reviewed in Sharma and Singh (2020). Another brief review for non-manual gestures is presented in Antonakos et al. (2015) but concentrates on mouth motion modeling as an important component for sign language recognition.
+
+Unlike previous reviews, this paper provides a more comprehensive survey and taxonomy of various research directions pertaining to different sign languages, acquisition devices, recognition methods, classification conditions, resources and challenges. The following electronic libraries were selected as data sources for our study: ACM Digital Library, Scopus, Springer, IEEE-Xplore, and Google Scholar. The search keywords are: Sign Language Recognition, Sign Language Translation, Sign Language Database, Sign Language Dataset, Continuous Sign Language, and Gesture Recognition + Sign Language. We considered relevant publications until 2021 to cover various research directions.
+
+Show more
+
+View article
+
+Read full article
+
+URL: https://www.sciencedirect.com/science/article/pii/S0952197622002925
+
+Journal2022, Engineering Applications of Artificial IntelligenceEl-Sayed M. El-Alfy, Hamzah Luqman
+
+Review article
+
+These databases can help in developing and evaluating real-time SLR systems.
+
+•
+    
+
+Lack of continuous sign language datasets for some sign languages such as ArSL and Turkish.
+
+•
+    
+
+To our knowledge, no research has been conducted on a collection of fingerspelling signs performed continuously. Most of the fingerspelling signs recognition systems are evaluated on hand’s cropped images. However, recognizing the fingerspelling signs within video streams is more challenging.
+
+•
+    
+
+More research efforts are required for combining different modalities such as non-manual with manual gestures to further improve the accuracy of SLR systems due to the valuable information encoded with non-manual gestures.
+
+Show more
+
+View article
+
+Read full article
+
+URL: https://www.sciencedirect.com/science/article/pii/S0952197622002925
+
+Journal2022, Engineering Applications of Artificial IntelligenceEl-Sayed M. El-Alfy, Hamzah Luqman
+
+Review article
+
+## Sign Language Recognition: A Deep Survey
+
+2021, Expert Systems with ApplicationsRazieh Rastgoo, ... Sergio Escalera
+
+### Highlights
+
+•
+    
+
+We perform a comprehensive review of recent works for sign language recognition.
+
+•
+    
+
+We define a taxonomy to group existing works and discuss on their pros and cons.
+
+•
+    
+
+We discuss on features, modalities, evaluation metrics, applications, and datasets.
+
+•
+    
+
+Different challenges and future lines of research in the field are presented.
+
+Show more
+
+View article
+
+Read full article
+
+URL: https://www.sciencedirect.com/science/article/pii/S095741742030614X
+
+Journal2021, Expert Systems with ApplicationsRazieh Rastgoo, ... Sergio Escalera
+--------------------------------------------------------------------------------
+(PDF) Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review (https://www.researchgate.net/publication/390783781_Deep_Learning_in_Sinhala_Sign_Language_Recognition_A_Systematic_Decade_Review)
+citeturn13search7 [wordlim: 200] Published: 2.0 years ago; Crawled: 2 months ago; This paper reviews Sinhala Sign Language recognition, ... screening phase removes irrelevant papers after a full-text ... In recent years, research in Sinhala Sign Language (SSL) ... recognition and gesture recognition using deep learning and
+1. (rough estimate based on publicly available data).
+
+Fig. 1. Sinhala Sign Language Research Trend
+
+This paper reviews Sinhala Sign Language recognition,
+
+aiming to fill the literature gap by introducing innovative
+
+methodologies and evaluation strategies. It provides a
+
+comprehensive review of related works, discusses dataset
+
+2024 International Conference on Image Processing, Computer Vision and Machine Learning (ICICML)
+
+979-8-3503-5541-3/24/$31.00 ©2024 IEEE
+
+1750
+
+2024 International Conference on Image Processing, Computer Vision and Machine Learning (ICICML) | 979-8-3503-5541-3/24/$31.00 ©2024 IEEE | DOI: 10.1109/ICICML63543.2024.10957797
+
+Authorized licensed use limited to: SWANSEA UNIVERSITY. Downloaded on May 07,2025 at 08:14:49 UTC from IEEE Xplore. Restrictions apply.
+
+development and preprocessing techniques, presents core
+
+contributions of proposed models and algorithms, details about
+
+implementation and performance evaluations, and discusses the
+
+implications of the findings on potential applications and future
+
+III. O VERVIEW OF F OREIGN S IGN L ANGUAGE
+
+Sign Language Recognition (SLR) is a vastly intense
+
+research area of both computer vision and natural language
+
+processing with a standing history, as highlighted in the
+
+previous section. Sign languages are recognized as languages
+
+by li ngui sts like any other language, written and spoken around
+
+the world so far. It deals with translating sign language into text
+
+or spoken language, the recognition of communication aid to
+
+use by the deaf and hard-of-hearing. The aim here is to create
+
+systems that can efficiently recognize and interpret the
+
+complicated gestures that are part of sig n language.
+
+A. Methodology
+
+Fig. 3. Sign Language Recognition Category Map
+
+As depicted in Figure 3, SLR systems are usually
+
+categorized into two main categories: vision-based and sensor-
+
+based, as illustrated in the above diagram and according to [23].
+
+1) Vision-based: It utilizes cameras for tracking hand
+
+and body gestures. Being non-intrusive, this approach is the
+
+most used because of its feasibility of real-time applications.
+
+Variation in lighting conditions, background noise, and
+
+occlusions are some of the challenges to be addressed.
+
+2) Sensor-based: It consists of gloves fitted with sensors
+
+to track the movements of hands. These systems are highly
+
+accurate but intrusive and comparatively expensive, hence less
+
+pragmatic for use in everyday life.
+
+1751
+
+Authorized licensed use limited to: SWANSEA UNIVERSITY. Downloaded on May 07,2025 at 08:14:49 UTC from IEEE Xplore. Restrictions apply.
+
+--------------------------------------------------------------------------------
+Journal of Artificial Intelligence and Capsule Networks (ISSN: 2582-2012) (https://irojournals.com/aicn/article/pdf/4/1/4)
+citeturn13search13 [wordlim: 200] Published: 9 months ago; Sinhala Sign Language Recognition using 
+Leap Motion and Deep Learning ... Keywords: Sinhala Sign Language, Deep Neural Networks, Naïve Bayes, Support Vector
+Journal of Artificial Intelligence and Capsule Networks (ISSN: 2582-2012)  
+www.irojournals.com/aicn/ 
+ 
+  
+ 
+Sinhala Sign Language Recognition using 
+Leap Motion and Deep Learning 
+Priyantha Kumarawadu1, Mohamad Izzath2 
+1,2School of Computing, Asia Pacific Institute of Information Technology, Colombo, Sri Lanka 
+E-mail: 1priyantha@apiit.lk, 2izzath0@gmail.com 
+Abstract 
+A sign language recognition system for low-resource Sinhala Sign Language using Leap 
+Motion (LM) and Deep Neural Networks (DNN) has been presented in this paper. The study 
+extracts static and dynamic features of hand movements of Sinhala Sign Language (SSL) 
+using a LM controller which acquires the position of the palm, radius of hand sphere and 
+positions of five fingers, and the proposed system is tested with the selected 24 letters and 6 
+words. The experimental results prove that the proposed DNN model with an average testing 
+accuracy of 89.2% outperforms a Naïve Bayes model with 73.3% testing accuracy and a 
+Support Vector Machine (SVM) based model with 81.2% testing accuracy. --------------------------------------------------------------------------------
+A Network Traffic Prediction for Information Security in the Smart Power 1684 (https://www.proceedings.com/content/079/079786webtoc.pdf)
+citeturn13search14 [wordlim: 200] Published: last year; Crawled: last year; Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review 1750
+Wenjie Li, Shuo Zhu
+
+Classification of Glass Artifacts Using the Black Widow Optimized Backpropagation Neural Network Algorithm 1733  
+Shiyu Hu, Minghai Chen, Jiajie Deng
+
+Feature Fusion Dehazing Network Based on Parallel Attention 1738  
+Leyu Ma, Weili Ge, Ruowei Fang
+
+Urban Trash Detection and Cleanliness Assessment Based on YOLOv7 for Autonomous Sweeper 1744  
+Zerong Su, Xubin Lin, Kezheng Sun, Shixin Mao, Xuefeng Zhou
+
+Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review 1750  
+Yohan Abhishek, T.G.D.K. Sumanathilaka
+
+Capsule Network for Pneumonia Classification: Enhancing Robustness and Accuracy 1756  
+Yikai Ding, Tianyu Zhai
+
+TA-YOLO: A Task-aligned YOLO Detector with Even-sized Kernel Convolutions 1761  
+Minghui Yao, Ming Cheng, Jianfei Jiang, Qin Wang
+
+Harnessing Deep Learning Techniques for Lung Disease Diagnosis: A Comparative Study of CNN, Transformer and Mamba Models 1766  
+Chenkai Tang
+
+Deep Learning Posture Estimation for Archery Consistency Measurement 1770  
+Basil Andy Lease, King Hann Lim, Jonathan Then Sien Phang, Haiwei Zuo
+
+LogABC: A Log Anomaly Detection Model Based on Deep Learning 1774  
+Ze Li, Hong Huang
+
+Enhanced YOLOv8 Model for Drug Detection in Compound Robot System 1779  
+Tao Zhou, Honghua Zhao, Zhanjie Liu, Bin Song
+
+MSA-Net: MultiScale Attention Network for Diabetic Retinopathy Lesion Segmentation 1785  
+Hengguang Li, Yousheng Wang--------------------------------------------------------------------------------
+A Review on Sri Lankan Sign Language Interfaces for Large Language Model Interaction | Request PDF (https://www.researchgate.net/publication/399698428_A_Review_on_Sri_Lankan_Sign_Language_Interfaces_for_Large_Language_Model_Interaction)
+citeturn13search8 [wordlim: 200] Crawled: 3 months ago; In this research, we propose a multi-modal Deep Learning approach that can effectively recognize sentence-level sign gestures using hand and lip movements and translate to Sinhala text. ... Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review
+--------------------------------------------------------------------------------
+International Journal on Advances in ICT for Emerging Regions 2023 16 (2): (https://icter.sljol.info/articles/7264/files/6572a1d96225c.pdf)
+citeturn13search15 [wordlim: 200] Published: last year; In this research, we propose a multi-modal Deep Learning ... Sinhala text. ... Sign Language Recognition, Deep Learning,
+--------------------------------------------------------------------------------
+IEEE Paper Template in A4 (V1) (https://journal.icter.org/index.php/ICTer/article/view/494/171)
+citeturn13search16 [wordlim: 200] Published: 3.6 years ago; Crawled: 1.5 years ago; # Multi-modal Deep Learning Approach to Improve Sentence level Sinhala Sign Language Recognition ... In this research, we propose a multi-modal Deep Learning approach that can effectively recognize sentence-level sign gestures using hand and lip movements and translate to Sinhala text.
+--------------------------------------------------------------------------------
+Signs with multiple meanings dataset | Download Scientific Diagram (https://www.researchgate.net/figure/Signs-with-multiple-meanings-dataset_tbl2_359967706)
+citeturn13search9 [wordlim: 200] Published: 4.7 years ago; Crawled: 3 months ago; Full-text available ... Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review
+--------------------------------------------------------------------------------
+(PDF) COMPUTER VISION BASED SRI LANKAN SIGN LANGUAGE RECOGNITION (https://www.researchgate.net/publication/281871859_COMPUTER_VISION_BASED_SRI_LANKAN_SIGN_LANGUAGE_RECOGNITION)
+citeturn13search10 [wordlim: 200] Published: 13.8 years ago; Crawled: 5 months ago; Deep Learning in Sinhala Sign Language Recognition: A Systematic Decade Review ... Full-text available
+--------------------------------------------------------------------------------
+"SAWAN"A Sinhala Sign Language Generation System Using HamNoSys and SiGML (https://eurekamag.com/research/105/916/105916856.php)
+citeturn13search11 [wordlim: 200] Crawled: last month; 2025: Bridging Communication Barriers: A Deep Learning Approach for Sinhala Sign Language Recognition 2025 International Conference on Advances in Technology and Computing, ICATC 2025 ... 2022: Translation of Sri Lankan Sign Language to Sinhala Text: A Leap Motion Technology-based Approach ICARC 2022 - 2nd International Conference on Advanced Research in Computing: Towards a Digitally Empowered Society: 218-223
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn13view0 [wordlim: 200] Source: open({"ref_id":"https://www.mdpi.com/2076-3417/14/22/10337","lineno":null}); 
+Failed to fetch https://www.mdpi.com/2076-3417/14/22/10337: (429) Too Many Requests--------------------------------------------------------------------------------
+Internal Error ()
+citeturn13view1 [wordlim: 200] Source: open({"ref_id":"https://ir.unimas.my/id/eprint/46637/","lineno":null}); 
+Failed to fetch https://ir.unimas.my/id/eprint/46637/: (400) Timeout fetching

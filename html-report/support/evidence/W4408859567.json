@@ -1,0 +1,86 @@
+{
+  "paper": {
+    "title": "Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review",
+    "year": 2025,
+    "doi": "https://doi.org/10.1109/access.2025.3554046",
+    "openalex_url": "https://openalex.org/W4408859567"
+  },
+  "openalex_id": "W4408859567",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "khan2025",
+    "khan2025-status-web"
+  ],
+  "description": "A CSLR-focused review organizing prior methods around spatial features, temporal models and alignment, with datasets and practical challenges.",
+  "reason": "Meets M1–M3 as a dedicated CSLR review. Section IV.B compares visual CNN/RNN approaches including SubUNets, ReSign and Cui’s iterative-training framework. A previously saved publisher concern notice remains a separate integrity issue.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Explicit literature taxonomy and comparison of prior work."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Sustained CSLR comparison discusses model differences and WER on PHOENIX."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Discussed methods use cropped hands/full video frames and visual CNNs."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "khan2025",
+      "url": "https://minhdl93.github.io/public/papers/asma_2025.pdf",
+      "path": "work/sources/khan2025.txt",
+      "locator": "PDF pp.9–11, Section IV.B (CSLR Approaches), Table4",
+      "passage": "Discussion compares SubUNets hand/full-frame streams, ReSign CNN-BLSTM/HMM training and Cui gloss-alignment training, with relative WER changes on PHOENIX2014.",
+      "sha256": "b5225ed0aa3168c5ebe75e257634d0f6daa3bbef747fb883700a2190acfbce8c",
+      "kind": "paraphrase"
+    },
+    {
+      "source_id": "khan2025-status-web",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10937713",
+      "path": "work/web_checks.json",
+      "locator": "checks/source_id=khan2025-status-web; saved publisher notice observation accessed2026-10-25",
+      "passage": "Saved publisher observation reports an Expression of Concern issued22 July2026; cause not inspected. This is separate from eligibility.",
+      "sha256": "e2a3cd73e888ee63ae7d8826b874faca1dac6467d1509c96e852ae18bae56d0f",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Saved publisher status observation reports an Expression of Concern dated22 July2026; retain separately from M1–M3."
+  ],
+  "next_action": "Review the publisher concern notice before using substantive findings in synthesis.",
+  "classification": "dedicated",
+  "qualifying_studies": [
+    "Camgoz et al., SubUNets: End-to-end hand shape and continuous sign language recognition [137]",
+    "Cui, Liu and Zhang, A deep neural framework for continuous sign language recognition by iterative training [42]"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+      "evidence_level": "abstract_only",
+      "source_ids": [
+        "khan2025"
+      ]
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "agent_batch": "batch2.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}

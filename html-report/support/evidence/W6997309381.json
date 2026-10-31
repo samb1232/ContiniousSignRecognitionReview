@@ -1,0 +1,134 @@
+{
+  "paper": {
+    "title": "Vision and sensor-based signer-independent framework for Arabic sign language recognition / Ahmad Sami Abd Alkareem Al-Shamayleh",
+    "year": 2020,
+    "doi": null,
+    "openalex_url": "https://openalex.org/W6997309381"
+  },
+  "openalex_id": "W6997309381",
+  "human_decision": "not_screened",
+  "ai_decision": "uncertain",
+  "stage": "title_abstract",
+  "evidence_level": "abstract_only",
+  "source_ids": [
+    "openalex-W6997309381"
+  ],
+  "description": "Thesis develops Arabic recognition frameworks and reports an extensive systematic literature review.",
+  "reason": "The abstract describes two new recognition frameworks and an extensive systematic review. It does not establish whether that review is an independent synthesis or background only; M1 remains uncertain.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "uncertain",
+      "reason": "The abstract describes two new recognition frameworks and an extensive systematic review. It does not establish whether that review is an independent synthesis or background only; M1 remains uncertain."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Continuous Arabic sentence recognition is explicit."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Camera-based and Kinect approaches are explicit."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "openalex-W6997309381",
+      "url": "https://openalex.org/W6997309381",
+      "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+      "locator": "W6997309381 abstract_inverted_index (reconstructed abstract)",
+      "passage": "The thesis proposes two recognition frameworks and says an extensive systematic literature review establishes taxonomies and research gaps before experimental development.",
+      "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [
+    "Repository PDF retrieval failed; role and depth of the literature review remain unresolved.",
+    "The abstract describes two new recognition frameworks and an extensive systematic review. It does not establish whether that review is an independent synthesis or background only; M1 remains uncertain."
+  ],
+  "next_action": "Inspect the thesis review chapter to resolve its role under M1; no repeat download attempted in this abstract-first pass.",
+  "classification": null,
+  "qualifying_studies": [],
+  "assessments": [],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+  },
+  "reassessment_history": [
+    {
+      "recorded_utc": "2026-10-31T17:07:01.802240+00:00",
+      "previous_assessment": {
+        "openalex_id": "W6997309381",
+        "human_decision": "not_screened",
+        "ai_decision": "uncertain",
+        "stage": "title_abstract",
+        "evidence_level": "abstract_only",
+        "source_ids": [
+          "openalex-W6997309381"
+        ],
+        "description": "Thesis develops Arabic recognition frameworks and reports an extensive systematic literature review.",
+        "reason": "Its primary contribution is methodological, but the abstract also claims a substantive synthesis. M1 cannot safely be rejected without inspecting the review chapter.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "uncertain",
+            "reason": "Unclear whether its systematic review qualifies independently or is only background to new frameworks."
+          },
+          "M2": {
+            "status": "pass",
+            "reason": "Continuous Arabic sentence recognition is explicit."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Camera-based and Kinect approaches are explicit."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "openalex-W6997309381",
+            "url": "https://openalex.org/W6997309381",
+            "path": "work/runs/20261025T080219770846Z-pilot/raw/0009.json",
+            "locator": "W6997309381 abstract_inverted_index (reconstructed abstract)",
+            "passage": "The thesis proposes two recognition frameworks and says an extensive systematic literature review establishes taxonomies and research gaps before experimental development.",
+            "sha256": "2dd3900ac953d57fbad72e8446c70d57cd13a6a6e18de507c124c39fbab6923c",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Repository PDF retrieval failed; role and depth of the literature review remain unresolved."
+        ],
+        "next_action": "Inspect the thesis review chapter against M1 and the full-text CSLR threshold.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+          "agent_batch": "batch1.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+        }
+      }
+    }
+  ],
+  "abstract_followup": {
+    "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+    "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+    "outcome": "Verdict retained",
+    "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+    "full_text_download_retried": false
+  }
+}

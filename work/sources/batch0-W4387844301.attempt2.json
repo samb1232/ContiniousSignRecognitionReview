@@ -1,0 +1,12 @@
+{
+  "source_id": "batch0-W4387844301",
+  "openalex_id": "W4387844301",
+  "url": "https://doi.org/10.1007/s00138-023-01479-y",
+  "retrieved_utc": "2026-10-31T11:31:43.759583+00:00",
+  "status": 200,
+  "final_url": "https://link.springer.com/article/10.1007/s00138-023-01479-y?error=cookies_not_supported&code=41a53871-a180-4450-a11c-2f8b52dc1925",
+  "content_type": "text/html; charset=utf-8",
+  "body": "batch0-W4387844301.html",
+  "sha256": "5fb5793ad8a55486921a061d7b9c4dcc3d1d2cba721937286eb31895fab560ca",
+  "text": "batch0-W4387844301.txt"
+}

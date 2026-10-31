@@ -1,0 +1,14 @@
+{
+  "source_id": "screen1-W7121016685-pdf",
+  "openalex_id": "W7121016685",
+  "url": "https://zenodo.org/records/18204535/files/a-comprehensive-survey-on-sign-language-recognition-advances-techniques-and-applications-IJERTV14IS080039.pdf",
+  "retrieved_utc": "2026-10-31T11:32:07.416517+00:00",
+  "status": 200,
+  "final_url": "https://zenodo.org/records/18204535/files/a-comprehensive-survey-on-sign-language-recognition-advances-techniques-and-applications-IJERTV14IS080039.pdf",
+  "content_type": "application/octet-stream",
+  "body": "screen1-W7121016685-pdf.pdf",
+  "sha256": "1d4e5689e7b20116ac424db5df57c38700c5518baeb4ad6d76e3b7340978836d",
+  "extractor": "pypdf 6.21.2",
+  "pages": 5,
+  "text": "screen1-W7121016685-pdf.txt"
+}

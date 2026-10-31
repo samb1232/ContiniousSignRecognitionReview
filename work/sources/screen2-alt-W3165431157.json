@@ -1,0 +1,14 @@
+{
+  "source_id": "screen2-alt-W3165431157",
+  "openalex_id": "W3165431157",
+  "url": "https://jier.um.edu.my/index.php/MJCS/article/download/26902/12338",
+  "retrieved_utc": "2026-10-31T11:32:26.079229+00:00",
+  "status": 200,
+  "final_url": "https://jier.um.edu.my/index.php/MJCS/article/download/26902/12338",
+  "content_type": "application/pdf",
+  "body": "screen2-alt-W3165431157.pdf",
+  "sha256": "0e9656cd9c82892b2c6342ac6830449a143bb816a464ab9dfbf80ce06002a823",
+  "extractor": "pypdf 6.21.2",
+  "pages": 38,
+  "text": "screen2-alt-W3165431157.txt"
+}

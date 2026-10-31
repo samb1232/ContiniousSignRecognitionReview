@@ -1,0 +1,7 @@
+Inspected via web PDF text on 2026-10-31; DOI 10.51889/2959-5894.2025.92.4.018.
+PDF pp.3-4: PRISMA-guided synthesis of 19 skeleton-based recognition studies.
+PDF p.5 Results: says three works address continuous recognition.
+PDF pp.9-11 Table 3: one explicitly continuous/online row [6]; [8] is labelled isolated but its metrics mention a continuous landmarks pipeline.
+PDF p.13 Quantitative meta-analysis and Table 5: continuous results come from one study with three decoding settings.
+PDF p.14 Discussion: broad model and dataset comparisons, without resolving which second prior study is CSLR.
+These inconsistent task descriptions require verification before the project threshold can be confirmed.

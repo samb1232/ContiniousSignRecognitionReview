@@ -1,0 +1,71 @@
+{
+  "paper": {
+    "title": "A Comprehensive Survey on Sign Language Recognition: Advances, Techniques and Applications",
+    "year": 2025,
+    "doi": "https://doi.org/10.5281/zenodo.18204534",
+    "openalex_url": "https://openalex.org/W7121016685"
+  },
+  "openalex_id": "W7121016685",
+  "human_decision": "not_screened",
+  "ai_decision": "include",
+  "stage": "full_text",
+  "evidence_level": "full_text",
+  "source_ids": [
+    "screen1-W7121016685-pdf"
+  ],
+  "description": "Surveys static recognition, CSLR and translation through method summaries and comparisons.",
+  "reason": "Section 3 compares distinct prior CSLR approaches. The broader survey meets the project-specific threshold.",
+  "failed_criteria": [],
+  "criteria": {
+    "M1": {
+      "status": "pass",
+      "reason": "Sections 2–3 summarize and compare earlier studies."
+    },
+    "M2": {
+      "status": "pass",
+      "reason": "Comparative table includes cross-lingual CSLR and pose-based continuous recognition."
+    },
+    "M3": {
+      "status": "pass",
+      "reason": "Reviewed CSLR systems use video and OpenPose features."
+    }
+  },
+  "evidence": [
+    {
+      "source_id": "screen1-W7121016685-pdf",
+      "url": "https://zenodo.org/records/18204535/files/a-comprehensive-survey-on-sign-language-recognition-advances-techniques-and-applications-IJERTV14IS080039.pdf",
+      "path": "work/sources/screen1-W7121016685-pdf.txt",
+      "locator": "PDF pp.2,4, Sections 2.2,2.7,3 comparative table",
+      "passage": "Section 3 contrasts Wei and Chen cross-lingual CSLR with Mocialov et al. LSTM/OpenPose recognition in advantages and limitations; preceding sections describe video-based methods.",
+      "sha256": "94e34b4e7c11a0836b36503f98e05c7ad9d3852237696980b496ba12589afff5",
+      "kind": "paraphrase"
+    }
+  ],
+  "unresolved_issues": [],
+  "next_action": "",
+  "classification": "broader",
+  "qualifying_studies": [
+    "Wei and Chen, Improving Continuous Sign Language Recognition with Cross-Lingual Signs",
+    "Mocialov et al., Towards Continuous Sign Language Recognition with Deep Learning"
+  ],
+  "assessments": [
+    {
+      "stage": "title_abstract",
+      "ai_decision": "include",
+      "evidence_level": "abstract_only",
+      "reason": "Abstract describes a synthesis with possible vision-based CSLR coverage; advance to full-text assessment."
+    }
+  ],
+  "assessment_metadata": {
+    "assessed_utc": "2026-10-31T11:36:14.134562+00:00",
+    "agent_batch": "batch1.json",
+    "model": "GPT-6 / Codex (exact runtime version unavailable)",
+    "protocol": "protocol.md",
+    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "prompt": "prompts/ai-screening-prompt.md",
+    "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+    "execution_instructions": "prompts/screening-execution.md",
+    "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+    "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+  }
+}
