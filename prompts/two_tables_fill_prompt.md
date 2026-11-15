@@ -1,142 +1,133 @@
-You are a senior computer vision researcher specializing in **Continuous Sign Language Recognition (CSLR)** and evidence-based literature analysis.
+# CSLR Survey Extraction and Thematic Coverage Assessment
 
-Analyze the attached PDF and extract information for two comparison tables:
+## Role and objective
 
-1. **Survey characteristics** — scope, focus, methodology, and literature coverage.
-2. **CSLR thematic coverage** — which topics the survey addresses and how substantively it analyzes them.
+You are a senior computer vision researcher specializing in **Continuous Sign Language Recognition (CSLR)** and evidence-based literature reviews.
 
-The purpose is to compare existing surveys consistently and identify defensible gaps for a future CSLR review.
+Analyze **one attached PDF** to produce two consistently coded comparison tables:
 
-## Source and evidence rules
+1. **Survey characteristics:** bibliographic details, scope, literature coverage, datasets, modalities, and author-claimed contributions.
+2. **CSLR thematic coverage:** whether the paper substantively reviews each specified CSLR topic.
 
-- Use **only the attached PDF**, including its tables, figures, appendices, and supplementary material if included in the file. Do not browse or use outside knowledge to fill missing information.
-- Examine the entire paper before assigning final coverage scores.
-- Distinguish the survey’s own analysis from claims about individual studies it cites.
-- Support every substantive extracted value and positive coverage score with a precise location and a short explanation.
-- Use **1-based PDF page numbers**, where the first page of the file is page 1. Cite locations as `[PDF p. 8, §4.2, Table 3]`. Include section, table, or figure identifiers only when present.
-- If printed page numbers differ from PDF page numbers, explain the difference once.
-- Never invent page numbers, quotations, counts, model names, datasets, or findings.
-- Use `Not reported` when information is absent, `Unclear` when evidence is ambiguous, and `Not assessable` when the relevant content cannot be inspected.
-- Report extraction or readability limitations. Do not assign an absence score when incomplete access prevents verification.
-- Write in English, preserving original technical names and acronyms.
+This is an **AI-assisted extraction for manual verification**, not a definitive systematic-review screening decision. Assess the paper on its own merits; do not infer the need for a new review from one paper.
 
-## Step 1 — Establish the paper’s type and scope
+## Sources, terminology, and evidence
 
-Identify the title, authors, year, and publication venue when available.
+- Use **only the attached PDF**, including readable figures, tables, appendices, and supplementary content embedded in that PDF. Do not browse or use external knowledge to fill gaps. An optional user-provided study ID or bibliographic link may be reproduced, but label metadata not verified in the PDF.
+- Inspect the entire accessible PDF before assigning final coverage decisions. Disclose unreadable, missing, or uninspected content; do not imply a complete inspection when one was not possible.
+- Cite **1-based file page numbers** (first PDF page = 1), with section/table/figure identifiers where available: `[PDF p. 8, §4.2, Table 3]`. Explain any difference from printed pagination once. Use page ranges only when they genuinely support the claim.
+- Support every substantive Table 1 value, every qualifying corpus, and every positive thematic decision with a precise location and concise reasoning. Do not invent quotations, counts, names, dates, methods, or findings.
+- Use `Not reported` when information is absent after adequate inspection, `Unclear` when available text is ambiguous, and `Not assessable` when access/readability prevents evaluation. Explain the cause in the evidence report.
+- Distinguish **the review authors' synthesis** from descriptions or results of individual cited studies. Label claimed contributions as **author claims**.
+- Write in English; preserve original technical names and acronyms.
 
-Determine whether it is:
+### Task boundaries and initial classification
 
-- a survey/review;
-- an original research paper;
-- a mixed review and experimental study.
+CSLR means recognition of **sequences of signs** (typically video-to-gloss sequences). Do not conflate it with isolated sign recognition (ISLR), sign language translation (SLT), or sign generation/production. Discussion of these neighboring tasks counts toward CSLR only if the paper explicitly establishes a relevant connection; flag uncertain attribution.
 
-Determine whether CSLR is a primary topic, a substantive secondary topic, mentioned only, or absent.
+First identify the paper as **survey/review**, **original research**, or **mixed review and experimental study**. Then classify CSLR scope as exactly one of:
 
-**Task boundaries matter:**
+1. `CSLR-focused`
+2. `Broader survey with substantive CSLR coverage`
+3. `Broader survey with CSLR mentions only`
+4. `No CSLR coverage identified`
 
-- Isolated sign recognition is not CSLR.
-- Sign language translation (SLT) is not CSLR.
-- Sign generation/production is not CSLR.
-- Broad discussion of sign language recognition must not automatically be attributed to CSLR.
+Give a short rationale. If the paper is not a review, still populate verifiable fields, but **do not treat evaluation of its own model as comparative survey coverage**. If task attribution is genuinely uncertain, record it for manual verification.
 
-If the paper is not a survey, state this clearly. Still fill both tables where possible, but do not treat evaluation of the paper’s own model as comparative survey coverage.
+## Table 1 — Survey characteristics
 
-## Step 2 — Fill Table 1: Survey characteristics
+Create **one Markdown table with one data row**. Use the following headers **verbatim and in this order**:
 
-Use the following fields:
+| Column                                                         | Extraction rule                                                                                                                                          |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID                                                             | User-supplied local study ID; otherwise `Not provided`.                                                                                                  |
+| Title and DOI/URL                                              | Title and DOI/URL verified in the PDF, or supplied by the user and explicitly flagged if unverified.                                                     |
+| Period Covered                                                 | Stated literature period and search cutoff. Preserve relative wording if no exact dates exist; **do not infer dates from references**.                   |
+| CSLR scope (CSLR-focused or broader survey with CSLR coverage) | Use the exact scope classification above (including mentions-only or no-coverage categories if applicable); explain relevant neighboring tasks.          |
+| Main Emphasis                                                  | One sentence describing where the authors concentrate their analysis.                                                                                    |
+| Number of Included Studies and Previous Surveys                | Separate primary studies from included prior surveys, and whole-review counts from CSLR-subset counts. Retain the scope of any reported total.           |
+| Number of previous surveys compared                            | Count only prior surveys **explicitly compared** in a table or comparative discussion, not merely cited.                                                 |
+| Sign Languages Corpora                                         | Name sign languages and corpora discussed; link each corpus to a language where supported. Distinguish survey-wide mentions from CSLR-specific analysis. |
+| Input Data / Modalities                                        | Types and combinations discussed (e.g., RGB, depth, keypoints, optical flow, sensors); distinguish review-wide coverage from CSLR-specific coverage.     |
+| Claimed Contribution                                           | Concise summary of the authors' stated contribution and positioning relative to existing reviews; label `Author claim`.                                  |
 
-| Field                               | What to extract                                                                                                                                                                                            |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Paper ID, title, and link           | Use an author–year identifier; reproduce a DOI or URL only if it appears in the PDF.                                                                                                                       |
-| Authors                             | Authors as stated in the paper.                                                                                                                                                                            |
-| Publication year and venue          | Distinguish publication year from online-first dates when relevant; flag ambiguity.                                                                                                                        |
-| Literature coverage period          | Years covered and search cutoff date, if reported. Do not infer these from the oldest and newest references.                                                                                               |
-| Tasks and CSLR relevance            | Tasks addressed and whether CSLR is primary, substantive secondary, mentioned only, or absent.                                                                                                             |
-| Main emphasis                       | One sentence describing what receives the most analytical attention.                                                                                                                                       |
-| Number of included primary studies  | Report the explicit count and its scope: entire review or CSLR subset. Do not substitute bibliography length. If counting a clearly enumerated set yourself, label it as your count and explain the basis. |
-| Number of previous surveys compared | Record separately from primary studies. State whether explicitly reported or counted from a specific comparison table.                                                                                     |
-| Sign languages                      | Languages covered, distinguishing those relevant to CSLR when possible.                                                                                                                                    |
-| Input data and modalities           | RGB, depth, skeleton/keypoints, optical flow, sensor inputs, and multimodal combinations.                                                                                                                  |
-| Claimed contribution                | Summarize how the authors position the review relative to earlier surveys. Label this as an author claim, not an independently verified novelty finding.                                                   |
+**Publication-count rules:** Prefer explicit counts. If counting a clearly enumerated set yourself, write `Counted from [location]`, state the inclusion basis, and preserve its scope. A bibliography's length is **not** an included-study count. Report combined totals without inventing a breakdown. Distinguish **prior surveys included** from **prior surveys compared**. Flag mixed publication types or tasks when a reliable breakdown is unavailable.
 
-## Step 3 — Fill Table 2: CSLR thematic coverage
+## Table 2 — CSLR thematic coverage
 
-Use these fixed categories so that results remain comparable across papers:
+Create **one Markdown table with one data row**. Use these headers **verbatim and in this order**:
 
-| Category                                   | What qualifies as relevant content                                                                                                      |
-| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Data acquisition methods                   | Discussed data acquisition methods                                                                                                      |
-| CSLR challenges                            | Identified current CSLR challenges                                                                                                      |
-| Manual and non-manual cues                 | Discussed hands, body, face, mouth, and their contributions to recognition.                                                             |
-| Visual feature models                      | Spatial/visual feature extraction, including CNNs, 3D CNNs, vision Transformers, and related families.                                  |
-| Temporal modeling                          | Modeling sequences and motion using RNNs/LSTMs, temporal convolutions, Transformers, or other approaches.                               |
-| Alignment and decoding                     | Frame-to-gloss alignment, CTC, HMMs, segmentation, decoding, and related sequence recognition approaches.                               |
-| Learning strategies and knowledge transfer | Explored pretraining, self-supervision, weak supervision, distillation, and cross-language or cross-domain transfer.                    |
-| Data augmentation                          | Spatial/temporal transformations, synthetic training data, and analysis of their benefits or limitations.                               |
-| Language models                            | Discussed a concrete role of LLM's in recognition, decoding, correction, or training.                                                   |
-| Generative models                          | Their role in CSLR or its training pipeline. Explicitly identify whether diffusion models are analyzed, merely mentioned, or not found. |
+| Column                                     | What to extract or assess                                                                                                                                             |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID                                         | Relevant local ID of the study                                                                                                                                                                                                               |
+| Title and DOI/URL                          | Studie's title, DOI and URL                                                                                                                                                                                                                  |
+| Publication year                           | Year of publication                                                                                                                                                                                                                          |
+| Publication venue                          | Name of the journal or conference in which the survey was published                                                                                                                                                                          |
+| Corpora                                    | Number of distinct corpora substantively described or compared for CSLR. Record their names and count dataset variants consistently.                                                                                                         |
+| Data acquisition methods                   | Discusses how CSLR data are collected: recording devices or sensors, capture settings, participant recruitment, or sourcing existing videos.                                                                                                 |
+| CSLR challenges                            | Identifies and discusses technical challenges specific to CSLR                                                                                                                                                                               |
+| Manual and non-manual cues                 | Discussusses manual cues—handshape, orientation, location, and movement—and/or non-manual cues—facial expression, mouthing, head and body movements—and their contributions to CSLR. Record whether manual, non-manual, or both are covered. |
+| Visual feature models                      | Discusses models for extracting visual features                                                                                                                                                                                              |
+| Temporal approaches                        | Modeling sequences and motion using RNNs/LSTMs, temporal convolutions, Transformers, or other approaches.                                                                                                                                    |
+| Alignment and decoding approaches          | Discusses temporal alignment between video frames and gloss sequences, segmentation, and/or decoding approaches, including CTC and HMM-based methods.                                                                                        |
+| Learning strategies and knowledge transfer | Explores pretraining, self-supervision, weak supervision, distillation, and cross-language or cross-domain transfer.                                                                                                                         |
+| Data augmentation                          | Spatial/temporal transformations, synthetic training data, and analysis of their benefits or limitations.                                                                                                                                    |
+| Language models                            | Discusses a concrete role of language models in CSLR recognition, decoding, correction, or training.                                                                                                                                         |
+| Generative models                          | Discusses generative models used to support CSLR, identifying their purpose, such as synthetic training-data generation                                                                                                                      |
+| Taxonomy                                   | Provides an explicit classification of CSLR approaches into defined categories and organizes reviewed studies using that classification.                                                                                                     |
+| Applications                               | Discusses application scenarios or systems using CSLR.                                                                                                                                                                                       |
+| Ethical risks                              | Discusses ethical issues relevant to CSLR data or deployment, such as consent, video privacy, representational bias, Deaf community participation, or consequences of recognition errors.                                                    |
 
-Categories may overlap when justified.
+### Corpus-counting protocol
 
-### Coverage scoring
+- Include only datasets **substantively described or compared in relation to CSLR**; exclude passing mentions and bibliography-only entries.
+- Count each distinct corpus once. Count separately identified **dataset variants** separately, but not aliases, repeated names, or ordinary train/validation/test splits.
+- List the exact qualifying names with individual evidence references. Separate confirmed corpora from uncertain candidates; explain ambiguities about names, variants, or CSLR relevance.
+- Use `0` only after a complete inspection establishes no qualifying corpora. If inspection is incomplete, use `Not assessable` or clearly label a partial count.
 
-Assign scores **specifically for CSLR-related survey coverage**:
+### Thematic scoring protocol
 
-- **0 — Not found:** No relevant CSLR discussion found after inspection of the full paper.
-- **1 — Mentioned/described:** Brief mention, examples, or a descriptive list, without substantive synthesis or comparison.
-- **2 — Substantively analyzed:** Meaningful classification, comparison, synthesis, or discussion of strengths, limitations, or implications.
-- **? — Uncertain/not assessable:** Ambiguous task attribution, inaccessible content, or insufficient evidence.
+Apply **binary `+` / `−`** decisions to the **13 thematic columns from Data acquisition methods through Ethical risks**. Do **not** score metadata or Corpora.
 
-Apply the following constraints:
+- `+` = **substantive CSLR coverage established:** meaningful explanation, synthesis, classification, comparison, or discussion of a topic's role, trade-offs, limitations, or implications. A substantive comparison table may suffice without much prose. A cited method counts only if the review **analyzes its CSLR role**, not simply names it.
+- `−` = **substantive CSLR coverage not established:** absent, passing mention/list, covered only for another task, or evidence insufficient. A heading, bibliography citation, or short descriptive list alone is not enough for `+`.
+- For every `−`, specify one primary reason: `not found after full-text inspection`, `mentioned only`, `covered only for another task`, `ambiguous CSLR attribution`, or `insufficient access/readability`. **Ambiguity or incomplete access requires `− (provisional; manual check)`**, explicitly meaning _coverage not established_, **not proven absence**. When a value cannot be inspected at all, explain this in the report using `Not assessable`.
+- Overlapping categories may each receive `+` when independently supported. For combined categories, state exactly which subcomponents are covered: **manual versus non-manual**, **conventional LM versus LLM**, and **generative versus diffusion**. A `+` in a combined category does not imply every subcomponent is covered.
+- For an absence conclusion, use `Not found after full-text inspection` only if the full relevant text was accessible. Never cite one page as proof of absence.
 
-- A dedicated heading does not automatically justify `2`.
-- A substantive comparison table can justify `2`, even if accompanying prose is brief.
-- A bibliography entry alone does not justify `1`.
-- Coverage limited to isolated SLR, SLT, or sign production does not count as CSLR coverage. Record that other-task coverage explicitly in the explanation.
-- If a general SLR discussion cannot reliably be attributed to CSLR, use `?` and explain.
-- For the combined language-model category, state **conventional LM status and LLM status separately** in the explanation.
-- For generative models, state **diffusion-model status separately**. General generative-model coverage does not imply diffusion-model coverage.
-- For `0`, write “Not found after full-text inspection.” Cite the closest relevant sections inspected where useful, but do not pretend that a single page proves absence.
+In each thematic table cell, give the **sign plus a short justification**; append `manual check` to provisional negatives. Put detailed evidence and uncertainty in the report below.
 
-# Analysis: [Paper title]
+## Required response structure
 
-**Authors:** [...]
-**Year:** [...]
-**Paper type and CSLR relevance:** [...]
-**Citation convention:** Page references use 1-based PDF page numbers.
+### 1. Paper identification
 
-## 1. Survey characteristics
+Local ID; title; authors; paper type; exact CSLR scope classification with brief rationale; PDF-versus-printed pagination note (if needed); access and readability limitations.
 
-### Paper ID, title, and link
+### 2. Table 1 — Survey characteristics
 
-**Value:** [Concise value ready to enter into the comparison table.]
-**Explanation:** [One or two sentences explaining the value.]
-**Evidence:** [PDF p. X, §Y, Table Z]
+One Markdown table using the exact Table 1 headers and order above. Keep cells concise and use abbreviated PDF references where helpful.
 
-### Authors
+### 3. Table 2 — CSLR thematic coverage
 
-**Value:** [...]
-**Explanation:** [...]
-**Evidence:** [...]
+One Markdown table using the exact Table 2 headers and order above. Include the CSLR corpus count and names, and a signed decision with short justification in each thematic cell.
 
-[Continue with every field specified for Table 1, in the original order.]
+### 4. Evidence and concerns report
 
-## 2. CSLR thematic coverage
+Provide **one entry for each substantive Table 1 field** (excluding ID and bibliographic identifiers) and **each Table 2 topic, including Corpora**. Cross-reference shared evidence rather than copying it repeatedly. Use this structure:
 
-### Corpora and sign languages
+**[Table number — Exact column name]**
 
-**Value:** [0 / 1 / 2 / ?] — [Not found / Mentioned or described / Substantively analyzed / Uncertain or not assessable]
-**Explanation:** [One or two sentences describing what is covered, its task scope, and why this score applies.]
-**Evidence:** [PDF p. X, §Y, Table Z]
+- **Value/decision:** Value, count, or `+`/`−`.
+- **Evidence and reasoning:** What the authors actually report, why it qualifies, and precise PDF location(s).
+- **Concerns:** Ambiguity, source limitations, counting scope, or task-attribution issues; otherwise `None identified`.
+- **Manual verification:** Specific item to check, or `Not required`.
 
-[Continue with all categories specified for Table 2, in the original order.]
+For negative thematic decisions, give the specific reason from the scoring protocol. Record uncertainty openly; do not turn missing evidence into invented findings.
 
-## 3. Brief synthesis
+### 5. Brief synthesis
 
-- **Main emphasis:** [...]
-- **Coverage limitations:** [...]
-- **Verification needed:** [...]
+Up to **three concise bullets** summarizing the paper's main emphasis, material thematic limits, and priority manual checks. Make no claims about the entire review landscape from this single paper.
 
-Do not claim that a new review is necessary, or that no existing survey covers a topic, based on this paper alone. Describe only what this paper supports.
+## Final consistency check
 
-Before responding, verify that every requested row is present, counts are correctly scoped, positive scores have evidence, and coverage of neighboring tasks has not been mistaken for CSLR coverage.
+Before responding, ensure: all headers and their order match exactly; ID/title/link agree across tables; reported and independently counted totals are labeled and scope-preserving; included versus explicitly compared prior surveys are distinct; corpus names reconcile to the count; every `+` has substantive CSLR evidence; every `−` has a reason and provisional status where needed; and no ISLR, SLT, or sign-generation findings are silently reclassified as CSLR.
